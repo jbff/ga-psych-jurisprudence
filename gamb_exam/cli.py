@@ -23,6 +23,7 @@ from gamb_exam.db import (
 from gamb_exam.generator import (
     export_mock_markdown,
     generate_exam_questions,
+    shuffle_question_options,
 )
 
 console = Console()
@@ -55,8 +56,11 @@ def handle_study(args: argparse.Namespace) -> int:
     """Handle the 'study' subcommand to run an untimed drill with instant feedback."""
     if args.domain:
         questions = get_questions_by_domain(
-            args.domain, db_path=args.db, limit=args.count
+            args.domain, db_path=args.db, limit=None
         )
+        random.shuffle(questions)
+        if args.count and len(questions) > args.count:
+            questions = questions[: args.count]
     else:
         questions = get_all_questions(db_path=args.db)
         random.shuffle(questions)
@@ -66,6 +70,8 @@ def handle_study(args: argparse.Namespace) -> int:
     if not questions:
         console.print("[yellow]No questions found for study drill.[/yellow]")
         return 0
+
+    questions = [shuffle_question_options(q) for q in questions]
 
     from gamb_exam.tui import ExamApp
 
@@ -83,6 +89,9 @@ def handle_missed(args: argparse.Namespace) -> int:
             "Take a practice exam first! [cyan](gamb-exam test)[/cyan][/yellow]"
         )
         return 0
+
+    random.shuffle(missed)
+    missed = [shuffle_question_options(q) for q in missed]
 
     from gamb_exam.tui import ExamApp
 

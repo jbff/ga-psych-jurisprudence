@@ -15,6 +15,7 @@ from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.containers import Container, Horizontal, ScrollableContainer, Vertical
 from textual.css.query import NoMatches
+from textual.timer import Timer
 from textual.widgets import (
     Button,
     DataTable,
@@ -314,7 +315,7 @@ class ExamApp(App[None]):
         self.review_filter: str = "all"
         self.review_indices: list[int] = []
         self.score_data: dict[str, Any] | None = None
-        self._timer = None
+        self._timer: Timer | None = None
 
     @property
     def is_explanation_visible(self) -> bool:

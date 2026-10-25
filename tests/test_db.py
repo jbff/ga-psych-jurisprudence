@@ -202,6 +202,15 @@ def test_get_missed_questions(tmp_db_path: Path):
     assert len(missed) == 2
     assert set(missed_ids) == {qid2, qid3}
 
+    # Session 3: candidate gets Q2 right on second attempt
+    session3 = create_session(mode="study_drill", total_questions=1, db_path=tmp_db_path)
+    save_session_answer(session3, qid2, "A", is_correct=True, db_path=tmp_db_path)
+
+    # Q2 should graduate out; now only Q3 remains in missed pool
+    updated_missed = get_missed_questions(db_path=tmp_db_path)
+    assert len(updated_missed) == 1
+    assert updated_missed[0]["id"] == qid3
+
 
 def test_foreign_key_enforcement(tmp_db_path: Path):
     """Verifies SQLite foreign key constraints are enforced."""

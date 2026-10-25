@@ -283,16 +283,20 @@ def save_session_answer(
 
 
 def get_missed_questions(db_path: Path | str | None = None) -> list[dict[str, Any]]:
-    """Retrieve distinct questions that were answered incorrectly in any session."""
+    """Retrieve distinct questions where the user's most recent answer was incorrect."""
     conn = get_connection(db_path)
     try:
         cursor = conn.cursor()
         cursor.execute(
             """
-            SELECT DISTINCT q.*
+            SELECT q.*
             FROM questions q
-            JOIN session_answers sa ON q.id = sa.question_id
-            WHERE sa.is_correct = 0
+            JOIN (
+                SELECT question_id, is_correct,
+                       ROW_NUMBER() OVER (PARTITION BY question_id ORDER BY id DESC) as rn
+                FROM session_answers
+            ) latest_sa ON q.id = latest_sa.question_id AND latest_sa.rn = 1
+            WHERE latest_sa.is_correct = 0
             ORDER BY q.id ASC
             """
         )
