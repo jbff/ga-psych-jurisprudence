@@ -3,7 +3,11 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from gamb_exam.build_assets import compile_html_to_pdf, generate_cheat_sheet
+from gamb_exam.build_assets import (
+    compile_html_to_pdf,
+    generate_cheat_sheet,
+    generate_compendium,
+)
 
 
 def test_generate_cheat_sheet(tmp_path: Path):
@@ -83,4 +87,36 @@ def test_compile_html_to_pdf_python_api(tmp_path: Path, monkeypatch: pytest.Monk
     compile_html_to_pdf(html_file, out_pdf)
     mock_weasyprint.HTML.assert_called_once_with(filename=str(html_file))
     mock_weasyprint.HTML.return_value.write_pdf.assert_called_once_with(str(out_pdf))
+
+
+def test_generate_compendium(tmp_path: Path):
+    q_md = tmp_path / "compendium_questions.md"
+    k_md = tmp_path / "compendium_key.md"
+    html_path = tmp_path / "compendium.html"
+    pdf_path = tmp_path / "compendium.pdf"
+
+    generate_compendium(q_md=q_md, k_md=k_md, html_path=html_path)
+
+    assert q_md.exists()
+    assert k_md.exists()
+    assert html_path.exists()
+
+    q_text = q_md.read_text(encoding="utf-8")
+    assert "435-Question Self-Study Compendium" in q_text
+    assert "Part I: Question Bank by Domain" in q_text
+    assert "Q1." in q_text
+    assert "Q435." in q_text
+    # Questions section must NOT reveal the correct option
+    assert "Correct Option:" not in q_text
+
+    k_text = k_md.read_text(encoding="utf-8")
+    assert "Part II: Annotated Answer Key" in k_text
+    assert "Q1" in k_text
+    assert "Q435" in k_text
+
+    # Test PDF compilation
+    compile_html_to_pdf(html_path, pdf_path)
+    assert pdf_path.exists()
+    assert pdf_path.stat().st_size > 100000  # Substantial multi-page PDF
+
 

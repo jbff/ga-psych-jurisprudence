@@ -2,11 +2,31 @@
 
 from __future__ import annotations
 
+import html
+import json
 import shutil
 import subprocess
 from pathlib import Path
 
-from gamb_exam.generator import LEGAL_DISCLAIMER
+from gamb_exam.generator import DOMAIN_DISPLAY_NAMES, LEGAL_DISCLAIMER
+
+OFFICIAL_DOMAIN_ORDER: list[str] = [
+    "prof-relationships",
+    "licensure",
+    "competence",
+    "assessment",
+    "privacy",
+    "recordkeeping",
+]
+
+DOMAIN_DESCRIPTIONS: dict[str, str] = {
+    "prof-relationships": "Rules governing dual and multiple relationships, sexual misconduct (O.C.G.A. § 16-6-5.1), conflicts of interest, supervisory responsibilities (Rule 510-5-.06), and interprofessional relationships.",
+    "licensure": "Statutory qualifications for licensure, doctoral training, pre-doctoral internships, post-doctoral supervised work experience, examination requirements, license renewal, and continuing education (Rules 510-2, 510-7, 510-8).",
+    "competence": "Scope of practice, boundaries of competence, maintenance of expertise, impairment and professional consultation, telepsychology standards, and emergency interventions (Rule 510-4, O.C.G.A. § 37-3-41).",
+    "assessment": "Selection, administration, scoring, and interpretation of psychological assessment instruments, test security, release of test data versus test materials, and forensic assessment standards (Rule 510-4, APA Standards 9.04, 9.11).",
+    "privacy": "Confidential communications, psychologist-client privilege (O.C.G.A. § 43-39-16), statutory mandatory reporting overrides for child abuse (O.C.G.A. § 19-7-5) and elder/vulnerable adult abuse (O.C.G.A. § 30-5-4).",
+    "recordkeeping": "Maintenance, retention, and disposition of psychological records (7-year retention rule for adults; 7 years post-majority for minors), fee arrangements, billing practices, and financial disclosures (Rule 510-4, APA 6.01, 6.03).",
+}
 
 PRINT_CSS = """
 @page {
@@ -324,3 +344,182 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 </html>
 """
     html_path.write_text(html_body, encoding="utf-8")
+
+
+def generate_compendium(
+    q_md: Path | None = None,
+    k_md: Path | None = None,
+    html_path: Path | None = None,
+    pool_path: Path | None = None,
+) -> None:
+    """Generate the full 435-question domain compendium booklet and back-of-book key."""
+    repo_root = Path(__file__).resolve().parent.parent
+    q_md = q_md or repo_root / "docs" / "study_materials" / "compendium_questions.md"
+    k_md = k_md or repo_root / "docs" / "study_materials" / "compendium_key.md"
+    html_path = html_path or repo_root / "docs" / "study_materials" / "compendium.html"
+    pool_path = pool_path or repo_root / "gamb_exam" / "question_pool.json"
+
+    q_md.parent.mkdir(parents=True, exist_ok=True)
+    k_md.parent.mkdir(parents=True, exist_ok=True)
+    html_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with pool_path.open("r", encoding="utf-8") as f:
+        pool_data: list[dict] = json.load(f)
+
+    # Group questions by official domain
+    questions_by_domain: dict[str, list[dict]] = {d: [] for d in OFFICIAL_DOMAIN_ORDER}
+    for item in pool_data:
+        domain = item.get("domain", "")
+        if domain in questions_by_domain:
+            questions_by_domain[domain].append(item)
+        else:
+            questions_by_domain.setdefault(domain, []).append(item)
+
+    # Deterministic sorting within each domain by item id
+    for d in questions_by_domain:
+        questions_by_domain[d].sort(key=lambda x: x.get("id", 0))
+
+    # Sequential numbering across the entire compendium (1..435)
+    ordered_questions: list[tuple[int, dict]] = []
+    q_counter = 1
+    for domain in OFFICIAL_DOMAIN_ORDER:
+        for q in questions_by_domain.get(domain, []):
+            ordered_questions.append((q_counter, q))
+            q_counter += 1
+
+    # 1. Build Part I Markdown (compendium_questions.md)
+    md_q_lines: list[str] = [
+        "# Georgia Psychology Jurisprudence Examination (GAMB)",
+        "## 435-Question Self-Study Compendium",
+        "## Part I: Question Bank by Domain",
+        "",
+        LEGAL_DISCLAIMER,
+        "",
+        "---",
+        "",
+    ]
+
+    for d_idx, domain in enumerate(OFFICIAL_DOMAIN_ORDER, 1):
+        domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
+        domain_desc = DOMAIN_DESCRIPTIONS.get(domain, "")
+        domain_qs = [item for item in ordered_questions if item[1].get("domain") == domain]
+        md_q_lines.append(f"## Domain {d_idx}: {domain_title} ({len(domain_qs)} Questions)\n")
+        if domain_desc:
+            md_q_lines.append(f"*{domain_desc}*\n")
+        for q_num, q in domain_qs:
+            q_text = q.get("question_text", "").strip()
+            options = q.get("options", {})
+            md_q_lines.append(f"### Q{q_num}. {q_text}\n")
+            for opt_key in ["A", "B", "C", "D"]:
+                opt_val = options.get(opt_key, "").strip()
+                md_q_lines.append(f"- **{opt_key})** {opt_val}")
+            md_q_lines.append("")
+
+    q_md.write_text("\n".join(md_q_lines), encoding="utf-8")
+
+    # 2. Build Part II Markdown (compendium_key.md)
+    md_k_lines: list[str] = [
+        "# Georgia Psychology Jurisprudence Examination (GAMB)",
+        "## 435-Question Self-Study Compendium",
+        "## Part II: Annotated Answer Key",
+        "",
+        LEGAL_DISCLAIMER,
+        "",
+        "---",
+        "",
+    ]
+
+    for q_num, q in ordered_questions:
+        domain = q.get("domain", "")
+        domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
+        md_k_lines.append(f"### Q{q_num} (Pool Item #{q.get('id', '')})")
+        md_k_lines.append(f"- **Domain:** {domain_title}")
+        md_k_lines.append(f"- **Correct Option:** {q.get('correct_option', '').strip()}")
+        md_k_lines.append(f"- **Source Citation:** {q.get('source_citation', '').strip()}")
+        md_k_lines.append(f"- **Explanation:** {q.get('explanation', '').strip()}")
+        md_k_lines.append("")
+
+    k_md.write_text("\n".join(md_k_lines), encoding="utf-8")
+
+    # 3. Build Combined HTML (compendium.html)
+    html_parts: list[str] = [
+        "<!DOCTYPE html>",
+        "<html>",
+        "<head>",
+        '<meta charset="utf-8">',
+        "<title>GAMB 435-Question Domain Compendium</title>",
+        f"<style>\n{PRINT_CSS}\n</style>",
+        "</head>",
+        "<body>",
+        "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
+        '<div class="badge">435-QUESTION SELF-STUDY COMPENDIUM</div>',
+        "<h2>Part I: Question Bank by Domain</h2>",
+        '<div class="disclaimer">',
+        "<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This compendium is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. and Board Rules Chapter 510.",
+        "</div>",
+    ]
+
+    for d_idx, domain in enumerate(OFFICIAL_DOMAIN_ORDER, 1):
+        domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
+        domain_desc = DOMAIN_DESCRIPTIONS.get(domain, "")
+        domain_qs = [item for item in ordered_questions if item[1].get("domain") == domain]
+        if d_idx > 1:
+            html_parts.append('<div class="page-break"></div>')
+        html_parts.append(f"<h2>Domain {d_idx}: {html.escape(domain_title)} ({len(domain_qs)} Questions)</h2>")
+        if domain_desc:
+            html_parts.append(f'<p style="color: #4a5568; font-style: italic; margin-bottom: 12pt;">{html.escape(domain_desc)}</p>')
+        for q_num, q in domain_qs:
+            q_text = q.get("question_text", "").strip()
+            options = q.get("options", {})
+            html_parts.append('<div class="question-block">')
+            html_parts.append(f'<div class="question-text">Q{q_num}. {html.escape(q_text)}</div>')
+            for opt_key in ["A", "B", "C", "D"]:
+                opt_val = options.get(opt_key, "").strip()
+                html_parts.append(f'<div class="option"><strong>{opt_key}.</strong> {html.escape(opt_val)}</div>')
+            html_parts.append("</div>")
+
+    # Section divider page
+    html_parts.extend([
+        '<div class="page-break"></div>',
+        '<div style="text-align: center; padding-top: 220pt;">',
+        '<h1 style="border-bottom: none; font-size: 24pt; color: #1a365d;">Part II: Annotated Answer Key</h1>',
+        '<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">QUESTIONS 1 &ndash; 435</div>',
+        '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Explanations</p>',
+        "</div>",
+        '<div class="page-break"></div>',
+        "<h2>Part II: Annotated Answer Key</h2>",
+        '<div class="disclaimer">',
+        "<strong>INSTRUCTIONS:</strong> Verify answers and review relevant O.C.G.A. statutory sections and Board Rules Chapter 510 citations for complete legal rationales.",
+        "</div>",
+    ])
+
+    for q_num, q in ordered_questions:
+        domain = q.get("domain", "")
+        domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
+        correct_opt = q.get("correct_option", "").strip()
+        citation = q.get("source_citation", "").strip()
+        explanation = q.get("explanation", "").strip()
+        html_parts.append('<div class="key-block">')
+        html_parts.append(
+            f'<div style="font-weight: bold; font-size: 10pt; color: #2c5282; margin-bottom: 2pt;">'
+            f'Q{q_num} &mdash; <span class="badge">{html.escape(domain_title)}</span> &mdash; '
+            f'Correct Option: <strong style="color: #2b6cb0;">{html.escape(correct_opt)}</strong>'
+            f'</div>'
+        )
+        if citation:
+            html_parts.append(
+                f'<div style="font-size: 8.5pt; color: #4a5568; margin-bottom: 2pt;">'
+                f'<strong>Citation:</strong> <em>{html.escape(citation)}</em>'
+                f'</div>'
+            )
+        if explanation:
+            html_parts.append(
+                f'<div style="font-size: 9pt; color: #2d3748;">'
+                f'<strong>Explanation:</strong> {html.escape(explanation)}'
+                f'</div>'
+            )
+        html_parts.append("</div>")
+
+    html_parts.extend(["</body>", "</html>"])
+    html_path.write_text("\n".join(html_parts), encoding="utf-8")
+
