@@ -3079,6 +3079,3 @@ def build_all_assets(
         ],
     }
 
-
-
-

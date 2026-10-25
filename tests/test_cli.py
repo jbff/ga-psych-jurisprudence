@@ -405,4 +405,3 @@ def test_build_assets_cli_failure(tmp_path: Path, monkeypatch: pytest.MonkeyPatc
     captured = capsys.readouterr()
     assert "Error building study assets: Disk full error" in captured.out
 
-
