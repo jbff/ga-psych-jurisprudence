@@ -162,6 +162,11 @@ def test_generate_practice_forms(tmp_path: Path):
     forms = generate_practice_forms(output_dir=tmp_path)
     assert len(forms) == 3
     assert set(forms.keys()) == {"A", "B", "C"}
+
+    repo_root = Path(__file__).resolve().parent.parent
+    with (repo_root / "gamb_exam" / "question_pool.json").open("r", encoding="utf-8") as f:
+        pool_by_id = {q["id"]: q for q in json.load(f)}
+
     for letter, data in forms.items():
         assert letter in ["A", "B", "C"]
         assert len(data["questions"]) == 50
@@ -177,8 +182,16 @@ def test_generate_practice_forms(tmp_path: Path):
             "privacy": 5,
             "recordkeeping": 3,
         }
+        # Check option shuffling correctness: correct answer text must be preserved
+        for q in data["questions"]:
+            orig_q = pool_by_id[q["id"]]
+            orig_correct_text = orig_q["options"][orig_q["correct_option"]].strip()
+            new_correct_text = q["options"][q["correct_option"]].strip()
+            assert orig_correct_text == new_correct_text
+
         # Check files created
         assert (tmp_path / f"practice_exam_form_{letter.lower()}.md").exists()
+        assert (tmp_path / f"practice_exam_form_{letter.lower()}.html").exists()
         pdf_path = tmp_path / f"GAMB_Practice_Exam_Form_{letter}.pdf"
         assert pdf_path.exists()
         assert pdf_path.stat().st_size > 30000
@@ -189,6 +202,74 @@ def test_generate_practice_forms(tmp_path: Path):
     ids_c = {q["id"] for q in forms["C"]["questions"]}
     assert ids_a != ids_b
     assert ids_b != ids_c
+
+
+def test_generate_practice_forms_insufficient_questions(tmp_path: Path):
+    empty_pool = tmp_path / "empty_pool.json"
+    empty_pool.write_text("[]", encoding="utf-8")
+    with pytest.raises(ValueError, match="Insufficient questions in domain"):
+        generate_practice_forms(output_dir=tmp_path, pool_path=empty_pool)
+
+
+def test_generate_practice_forms_html_escaping(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    # Mock compile_html_to_pdf to avoid heavy weasyprint rendering in unit test
+    monkeypatch.setattr("gamb_exam.build_assets.compile_html_to_pdf", lambda src, dst: dst.touch())
+
+    quotas = {
+        "prof-relationships": 14,
+        "licensure": 13,
+        "competence": 9,
+        "assessment": 6,
+        "privacy": 5,
+        "recordkeeping": 3,
+    }
+    mock_items = []
+    item_id = 1
+    for domain, count in quotas.items():
+        for i in range(count):
+            if item_id == 1:
+                q_text = "Is <script>alert('xss')</script> valid & safe?"
+                opt_a = "No <unsafe> & invalid"
+                citation = "Rule 510-4 <Statute> & § 43-39"
+                explanation = "Must escape <b>bold</b> & special characters."
+            else:
+                q_text = f"Sample question {item_id} for {domain}?"
+                opt_a = "Correct answer"
+                citation = f"Rule 510-{item_id}"
+                explanation = f"Explanation {item_id}"
+
+            mock_items.append({
+                "id": item_id,
+                "domain": domain,
+                "question_text": q_text,
+                "options": {
+                    "A": opt_a,
+                    "B": "Option B > C",
+                    "C": "Option C < D",
+                    "D": "Option D & E",
+                },
+                "correct_option": "A",
+                "source_citation": citation,
+                "explanation": explanation,
+            })
+            item_id += 1
+
+    mock_pool = tmp_path / "mock_escaped_pool.json"
+    mock_pool.write_text(json.dumps(mock_items), encoding="utf-8")
+
+    generate_practice_forms(output_dir=tmp_path, pool_path=mock_pool)
+
+    html_file = tmp_path / "practice_exam_form_a.html"
+    assert html_file.exists()
+    content = html_file.read_text(encoding="utf-8")
+
+    assert "<script>alert('xss')</script>" not in content
+    assert "&lt;script&gt;" in content
+    assert "valid &amp; safe?" in content
+    assert "No &lt;unsafe&gt; &amp; invalid" in content
+    assert "&lt;Statute&gt; &amp; § 43-39" in content
+    assert "&lt;b&gt;bold&lt;/b&gt; &amp; special characters." in content
+
 
 
 

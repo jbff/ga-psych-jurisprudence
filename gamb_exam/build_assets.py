@@ -614,11 +614,15 @@ def generate_practice_forms(
         for q in sampled_qs:
             orig_options = q.get("options", {})
             orig_correct = q.get("correct_option", "").strip().upper()
+            opt_a = (orig_options.get("A", "") or q.get("option_a", "")).strip()
+            opt_b = (orig_options.get("B", "") or q.get("option_b", "")).strip()
+            opt_c = (orig_options.get("C", "") or q.get("option_c", "")).strip()
+            opt_d = (orig_options.get("D", "") or q.get("option_d", "")).strip()
             pairs = [
-                (orig_options.get("A", "").strip(), orig_correct == "A"),
-                (orig_options.get("B", "").strip(), orig_correct == "B"),
-                (orig_options.get("C", "").strip(), orig_correct == "C"),
-                (orig_options.get("D", "").strip(), orig_correct == "D"),
+                (opt_a, orig_correct == "A"),
+                (opt_b, orig_correct == "B"),
+                (opt_c, orig_correct == "C"),
+                (opt_d, orig_correct == "D"),
             ]
             rng.shuffle(pairs)
             new_options: dict[str, str] = {}
@@ -628,6 +632,11 @@ def generate_practice_forms(
                 new_options[letter] = text
                 if is_corr:
                     new_correct = letter
+
+            if not new_correct:
+                raise ValueError(
+                    f"Question item {q.get('id')} has invalid or missing correct_option: {q.get('correct_option')}"
+                )
 
             q_proc = dict(q)
             q_proc["options"] = new_options
@@ -938,7 +947,7 @@ def generate_practice_forms(
             html_parts.append('<div class="key-block">')
             html_parts.append(
                 f'<div style="font-weight: bold; font-size: 10pt; color: #2c5282; margin-bottom: 2pt;">'
-                f'Q{idx} (Pool Item #{q.get("id", "")}) &mdash; <span class="badge">{html.escape(domain_name)}</span> &mdash; '
+                f'Q{idx} (Pool Item #{html.escape(str(q.get("id", "")))}) &mdash; <span class="badge">{html.escape(domain_name)}</span> &mdash; '
                 f'Correct Option: <strong style="color: #2b6cb0;">{html.escape(correct_opt)}</strong>'
                 f'</div>'
             )
