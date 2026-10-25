@@ -177,7 +177,7 @@ git commit -m "feat(seed): generate 4-choice question pool and populate database
 - Create: `gamb_exam/generator.py`
 - Test: `tests/test_generator.py`
 
-- [ ] **Step 1: Write unit tests for stratified generation quotas and export**
+- [x] **Step 1: Write unit tests for stratified generation quotas and export**
 
 Test:
 1. Total questions == 50.
@@ -191,21 +191,21 @@ Test:
 3. Shuffled options and distinct questions.
 4. Markdown export format.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_generator.py`  
 Expected: FAIL
 
-- [ ] **Step 3: Implement `gamb_exam/generator.py`**
+- [x] **Step 3: Implement `gamb_exam/generator.py`**
 
 Implement `generate_exam_questions(db_path, prioritize_unseen=True)` and `export_mock_markdown(questions, output_dir="mocks")`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_generator.py`  
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/generator.py tests/test_generator.py
@@ -220,16 +220,16 @@ git commit -m "feat(generator): implement stratified 50-Q exam sampler and markd
 - Create: `gamb_exam/tui.py`
 - Test: `tests/test_tui.py`
 
-- [ ] **Step 1: Write smoke tests for TUI app instantiation and session state**
+- [x] **Step 1: Write smoke tests for TUI app instantiation and session state**
 
 Verify `ExamApp` initializes with state, handles answer selection, navigation, and calculates score accurately.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_tui.py`  
 Expected: FAIL
 
-- [ ] **Step 3: Implement `gamb_exam/tui.py`**
+- [x] **Step 3: Implement `gamb_exam/tui.py`**
 
 Implement Textual/Rich TUI:
 - Header with countdown timer (60:00 for timed exam) and question tracker.
@@ -238,12 +238,12 @@ Implement Textual/Rich TUI:
 - Navigation bar (`[N] Next`, `[P] Prev`, `[F] Flag`, `[J] Jump`, `[S] Submit`).
 - Diagnostic Score Report screen displaying overall pass/fail (vs. 38 cutoff) and 6-domain breakdown table.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_tui.py`  
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/tui.py tests/test_tui.py
@@ -259,16 +259,16 @@ git commit -m "feat(tui): build full-screen Textual/Rich exam simulator and diag
 - Modify: `pyproject.toml`
 - Test: `tests/test_cli.py`
 
-- [ ] **Step 1: Write CLI command tests**
+- [x] **Step 1: Write CLI command tests**
 
 Test `test`, `study`, `missed`, `stats`, and `export` subcommands.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_cli.py`  
 Expected: FAIL
 
-- [ ] **Step 3: Implement `gamb_exam/cli.py`**
+- [x] **Step 3: Implement `gamb_exam/cli.py`**
 
 Implement CLI argument parser with subcommands:
 - `test`: Run 60-min timed 50-Q exam.
@@ -277,12 +277,12 @@ Implement CLI argument parser with subcommands:
 - `stats`: Print Rich table of cumulative historical scores & domain mastery.
 - `export`: Generate balanced 50-Q mock markdown files in `mocks/`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_cli.py`  
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/cli.py tests/test_cli.py pyproject.toml
@@ -296,7 +296,7 @@ git commit -m "feat(cli): wire entry points and subcommands for exam suite"
 **Files:**
 - Modify: `README.md`
 
-- [ ] **Step 1: Update `README.md` with full usage guide and prominent legal disclaimers**
+- [x] **Step 1: Update `README.md` with full usage guide and prominent legal disclaimers**
 
 Include:
 - Quickstart with `uv run gamb-exam test`.
@@ -304,12 +304,12 @@ Include:
 - Legal disclaimer of non-affiliation and zero liability.
 - Anki deck instructions and study corpus guide.
 
-- [ ] **Step 2: Run complete test suite**
+- [x] **Step 2: Run complete test suite**
 
 Run: `uv run pytest`  
 Expected: 100% PASS across all unit and integration tests.
 
-- [ ] **Step 3: Test CLI end-to-end (export, stats)**
+- [x] **Step 3: Test CLI end-to-end (export, stats)**
 
 Run:
 ```bash
@@ -317,7 +317,7 @@ uv run gamb-exam export
 uv run gamb-exam stats
 ```
 
-- [ ] **Step 4: Commit and push to GitHub `origin/master`**
+- [x] **Step 4: Commit and push to GitHub `origin/master`**
 
 Run:
 ```bash
