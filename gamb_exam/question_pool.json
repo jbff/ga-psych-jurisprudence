@@ -2,7 +2,7 @@
   {
     "id": 1,
     "domain": "licensure",
-    "subtopic": "",
+    "subtopic": "rules-510-2",
     "source_citation": "Rule 510-2-.01",
     "question_text": "How many days must a candidate wait before retaking a failed GAMB exam?",
     "options": {
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "domain": "licensure",
-    "subtopic": "",
+    "subtopic": "rules-510-2",
     "source_citation": "Rule 510-2-.01",
     "question_text": "What exam must be passed before taking the GAMB jurisprudence exam?",
     "options": {
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "domain": "licensure",
-    "subtopic": "",
+    "subtopic": "rules-510-2",
     "source_citation": "Rule 510-2-.01",
     "question_text": "After passing the EPPP and GAMB, what is the third licensure exam?",
     "options": {
@@ -294,7 +294,7 @@
       "A": "No; licensure is determined solely by degree accreditation and examination passing scores",
       "B": "Only if the applicant has disclosed a prior criminal conviction or disciplinary action",
       "C": "No; good moral character evaluations were eliminated under administrative simplification rules",
-      "D": "Yes"
+      "D": "Yes; good moral character is a mandatory statutory prerequisite for licensure under OCGA 43-39-8"
     },
     "correct_option": "D",
     "explanation": "O.C.G.A. § 43-39-8 explicitly specifies good moral character as a mandatory statutory prerequisite for psychology licensure in Georgia."
@@ -594,7 +594,7 @@
       "A": "20 credits, including 3 ethics credits",
       "B": "10 credits, with no ethics requirement",
       "C": "6 credits in professional ethics only",
-      "D": "None"
+      "D": "No continuing education credits are required for the first renewal cycle"
     },
     "correct_option": "D",
     "explanation": "Rule 510-8-.01 provides that licensees licensed during the second year of the biennium are exempt from continuing education requirements for their first renewal."
@@ -679,15 +679,15 @@
     "domain": "licensure",
     "subtopic": "43-39",
     "source_citation": "OCGA 43-39-13",
-    "question_text": "List one statutory ground for license revocation in Georgia psychology.",
+    "question_text": "Which of the following is a statutory ground for license revocation under OCGA 43-39-13?",
     "options": {
       "A": "Failure to join or maintain membership in the Georgia Psychological Association",
-      "B": "Fraud/deception in applying or passing exam; felony conviction; false/assumed name; habitual intemperance; negligence; violation of 43-1-19",
+      "B": "Practicing under a false or assumed name",
       "C": "Refusing to provide pro bono psychological services to indigent clients annually",
       "D": "Charging fees exceeding standard Medicare or commercial insurance reimbursement rates"
     },
     "correct_option": "B",
-    "explanation": "O.C.G.A. § 43-39-13 establishes statutory grounds for revocation or suspension, including fraud/deception, felony conviction, practicing under a false name, habitual intemperance, gross negligence, or violating O.C.G.A. § 43-1-19."
+    "explanation": "O.C.G.A. § 43-39-13 establishes statutory grounds for revocation or suspension, explicitly including practicing under a false or assumed name, fraud in applying for a license, felony conviction, habitual intemperance, and gross negligence."
   },
   {
     "id": 47,
@@ -774,7 +774,7 @@
       "A": "Mandatory suspension for a minimum of one year",
       "B": "Administrative probation with required random drug screening",
       "C": "Public reprimand and payment of a $1,000 civil fine",
-      "D": "Revoked"
+      "D": "Mandatory revocation of the professional license"
     },
     "correct_option": "D",
     "explanation": "O.C.G.A. § 16-13-111 mandates that upon a second or subsequent drug conviction, the professional license must be revoked by operation of law."
@@ -966,7 +966,7 @@
     "source_citation": "OCGA 43-39-18; OCGA 43-1-20",
     "question_text": "Must the Board prove no adequate remedy at law to get an injunction?",
     "options": {
-      "A": "No",
+      "A": "No; the Board is not required to show the lack of an adequate remedy at law to obtain an injunction",
       "B": "Yes, the Board must demonstrate irreparable harm and no adequate remedy at law",
       "C": "Yes, but only in petitions filed against non-resident corporate entities",
       "D": "Yes, unless the Attorney General certifies an immediate criminal emergency"
@@ -1026,7 +1026,7 @@
     "source_citation": "Rule 510-10-.01",
     "question_text": "May an unlicensed person supervise psychological services for training?",
     "options": {
-      "A": "No",
+      "A": "No; unlicensed individuals are strictly prohibited from supervising psychological services",
       "B": "Yes, provided the supervisor holds a master's degree in clinical mental health counseling",
       "C": "Yes, in institutional hospital settings accredited by the Joint Commission",
       "D": "Yes, if authorized by the training director and approved by an institutional review board"
@@ -1042,7 +1042,7 @@
     "question_text": "May an unlicensed person perform psychological services as an independent contractor for a licensed psychologist?",
     "options": {
       "A": "Yes, provided a formal 1099 independent contractor agreement is submitted to the Board",
-      "B": "No",
+      "B": "No; an unlicensed person may only deliver services as an employee under direct supervision, not as an independent contractor",
       "C": "Yes, provided the unlicensed person carries independent professional liability insurance",
       "D": "Yes, for up to 30 calendar days per calendar year under remote supervision"
     },
@@ -1058,7 +1058,7 @@
     "options": {
       "A": "All citizens of Georgia regardless of profession or relationship to the proceedings",
       "B": "Unlicensed complainants and adverse parties in contested administrative hearings",
-      "C": "Licensed psychologists",
+      "C": "Licensed psychologists who provide good-faith testimony or peer-review reports",
       "D": "Only state employees subpoenaed by the Division Director"
     },
     "correct_option": "C",
@@ -1369,7 +1369,7 @@
     "domain": "licensure",
     "subtopic": "31-7",
     "source_citation": "OCGA 31-7-165",
-    "question_text": "When must denial/removal of health service provider staff privileges be reported?",
+    "question_text": "What action is required when a health facility denies or revokes health service provider staff privileges?",
     "options": {
       "A": "Within 180 days to the American Psychological Association Ethics Committee",
       "B": "Within 60 days to the county medical society and district attorney",
@@ -1522,7 +1522,7 @@
     "question_text": "Is failure to cooperate with an ethics investigation itself a violation?",
     "options": {
       "A": "No; licensees may invoke Fifth Amendment rights in administrative proceedings without ethics consequences",
-      "B": "Yes",
+      "B": "Yes; failure to cooperate with a lawful Board investigation constitutes an independent disciplinary violation",
       "C": "No; cooperation is entirely voluntary under APA and Georgia Board procedural rules",
       "D": "Only if the investigation involves felony criminal charges or patient sexual abuse"
     },
@@ -1866,7 +1866,7 @@
     "source_citation": "APA 7.05 / Rule 510-4-.02",
     "question_text": "May faculty who evaluate students also provide required therapy to those students?",
     "options": {
-      "A": "No",
+      "A": "No; faculty who evaluate academic performance may not personally provide required therapy to those students",
       "B": "Yes, provided the faculty member does not assign grades in clinical practicum courses",
       "C": "Yes, if the student signs an informed consent waiving evaluative conflicts",
       "D": "Yes, whenever outside therapy resources are unavailable within a 50-mile radius"
@@ -1882,7 +1882,7 @@
     "question_text": "May psychologists have sexual relationships with students/supervisees over whom they have evaluative authority?",
     "options": {
       "A": "Yes, provided the relationship is consensual and disclosed to the department chair",
-      "B": "No",
+      "B": "No; psychologists may not engage in sexual relationships with students or supervisees over whom they hold evaluative authority",
       "C": "Yes, after a mandatory waiting period of six months from course enrollment",
       "D": "Yes, if both parties sign an institutional conflict-of-interest waiver"
     },
@@ -2032,7 +2032,7 @@
     "question_text": "May psychologists base decisions on obsolete or outdated test results?",
     "options": {
       "A": "Yes, if the older test version is less expensive for the client to purchase",
-      "B": "No",
+      "B": "No; psychologists do not base assessment decisions or recommendations on outdated tests or obsolete test data",
       "C": "Yes, provided the psychologist notes that the test was published within the past 25 years",
       "D": "Yes, in forensic evaluations where historical baselines are unavailable"
     },
@@ -2122,7 +2122,7 @@
     "question_text": "May psychologists engage in sexual intimacies with current therapy clients?",
     "options": {
       "A": "Yes, if both parties give written informed consent",
-      "B": "No",
+      "B": "No; psychologists are strictly prohibited from engaging in sexual intimacies with current therapy clients",
       "C": "Yes, provided therapy is conducted in an outpatient community setting",
       "D": "Yes, if the client initiates the sexual intimacy"
     },
@@ -2138,7 +2138,7 @@
     "options": {
       "A": "Yes, because relatives are not direct clients of the psychologist",
       "B": "Yes, provided the client gives written permission",
-      "C": "No",
+      "C": "No; psychologists may not engage in sexual intimacies with individuals known to be close relatives or significant others of current clients",
       "D": "Yes, if the relative resides in a different household from the client"
     },
     "correct_option": "C",
@@ -2154,7 +2154,7 @@
       "A": "Yes, if at least two years have elapsed since the prior sexual relationship",
       "B": "Yes, provided another psychologist conducts concurrent supervision",
       "C": "Yes, in emergency crisis situations where other providers are unavailable",
-      "D": "No"
+      "D": "No; psychologists do not accept as therapy clients persons with whom they have engaged in sexual intimacies"
     },
     "correct_option": "D",
     "explanation": "APA Ethics Code Standard 10.07 (Rule 510-4-.02) states that psychologists do not accept as therapy clients/patients persons with whom they have engaged in sexual intimacies."
@@ -2286,7 +2286,7 @@
     "source_citation": "Rule 510-5-.07",
     "question_text": "Must telepsychology meet the same standards as in-person services?",
     "options": {
-      "A": "Yes",
+      "A": "Yes; telepsychology services must adhere to the same professional standards, ethics, and rules as in-person practice",
       "B": "No; telepsychology is exempt from state confidentiality and informed consent rules",
       "C": "No; telepsychology is subject to relaxed standards of documentation and recordkeeping",
       "D": "Only when providing services to minors under 18 years of age"
@@ -2499,7 +2499,7 @@
       "A": "No; supervisees should present themselves as independent licensed practitioners",
       "B": "Only if the client specifically questions the supervisee's credentials",
       "C": "Only in inpatient psychiatric hospital facilities",
-      "D": "Yes"
+      "D": "Yes; supervisees must inform clients of their supervisory status and right to speak with the supervising psychologist"
     },
     "correct_option": "D",
     "explanation": "Rule 510-5-.06 requires that supervisees inform clients of their supervisory status and provide clients with the name and contact information of the supervising psychologist and their right to speak with them."
@@ -2558,7 +2558,7 @@
     "options": {
       "A": "The Georgia State Board of Examiners of Psychologists",
       "B": "The complaining parent",
-      "C": "The judge",
+      "C": "The presiding judge of the court making the appointment",
       "D": "The American Psychological Association Ethics Committee"
     },
     "correct_option": "C",
@@ -2586,7 +2586,7 @@
     "source_citation": "Rule 510-5-.10",
     "question_text": "Is failure to cooperate with a Board/national investigation a violation?",
     "options": {
-      "A": "Yes",
+      "A": "Yes; failure to cooperate with a lawful Board or national investigation constitutes an independent violation of Board rules",
       "B": "No; cooperation is strictly voluntary under Georgia administrative law",
       "C": "Only if the investigation involves felony criminal allegations",
       "D": "No, unless the investigator obtains a formal superior court order to compel"
@@ -2678,7 +2678,7 @@
     "options": {
       "A": "Yes, if the person discloses lack of licensure on client receipts",
       "B": "Yes, if registered as a life coach with the Secretary of State",
-      "C": "No",
+      "C": "No; rendering psychological services for a fee or remuneration without a valid Georgia license is unlawful",
       "D": "Yes, provided fees do not exceed fifty dollars per hour"
     },
     "correct_option": "C",
@@ -2694,7 +2694,7 @@
       "A": "Yes, in non-profit community clinics and crisis hotlines",
       "B": "Yes, if the unlicensed supervisor has at least 10 years of clinical experience",
       "C": "Yes, provided a licensed psychologist co-signs reports quarterly",
-      "D": "No"
+      "D": "No; an unlicensed person is strictly prohibited from supervising psychological services rendered by trainees or employees"
     },
     "correct_option": "D",
     "explanation": "Rule 510-10-.01 prohibits an unlicensed person from supervising psychological services rendered by trainees or employees."
@@ -2706,7 +2706,7 @@
     "source_citation": "Rule 510-10-.01",
     "question_text": "May an unlicensed person use titles implying licensure?",
     "options": {
-      "A": "No",
+      "A": "No; an unlicensed person may not use titles or descriptions tending to convey the impression of psychology licensure",
       "B": "Yes, if the word 'consultant' is appended to the title",
       "C": "Yes, provided the title is used exclusively in marketing brochures",
       "D": "Yes, if the individual holds a master's degree in clinical psychology"
