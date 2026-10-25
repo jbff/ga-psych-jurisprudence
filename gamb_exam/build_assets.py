@@ -4,11 +4,13 @@ from __future__ import annotations
 
 import html
 import json
+import random
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Any
 
-from gamb_exam.generator import DOMAIN_DISPLAY_NAMES, LEGAL_DISCLAIMER
+from gamb_exam.generator import DOMAIN_DISPLAY_NAMES, DOMAIN_QUOTAS, LEGAL_DISCLAIMER
 
 OFFICIAL_DOMAIN_ORDER: list[str] = [
     "prof-relationships",
@@ -530,4 +532,444 @@ def generate_compendium(
 
     html_parts.extend(["</body>", "</html>"])
     html_path.write_text("\n".join(html_parts), encoding="utf-8")
+
+
+def generate_practice_forms(
+    output_dir: Path | str | None = None,
+    md_dir: Path | str | None = None,
+    pdf_dir: Path | str | None = None,
+    pool_path: Path | str | None = None,
+) -> dict[str, dict[str, Any]]:
+    """Generate Practice Examination Booklets Forms A, B, and C with seeded sampling.
+
+    Each booklet contains:
+    - Cover page with official instructions, 60-min time limit, and passing standards
+    - Section 1: 50 multiple-choice questions (unmarked options A-D)
+    - Section 2: Self-Scoring Bubble Sheet grid / table
+    - Section 3: Answer Key, Domain Diagnostic Worksheet & Detailed Legal Citations
+
+    Args:
+        output_dir: Target directory for both markdown and PDF outputs (useful for tests).
+        md_dir: Optional specific directory for markdown booklets.
+        pdf_dir: Optional specific directory for PDF booklets.
+        pool_path: Optional path to question pool JSON file.
+
+    Returns:
+        Dict mapping form letters ("A", "B", "C") to dict containing "questions", "md_path", "pdf_path".
+    """
+    repo_root = Path(__file__).resolve().parent.parent
+    if output_dir is not None:
+        target_md_dir = Path(output_dir)
+        target_pdf_dir = Path(output_dir)
+    else:
+        target_md_dir = Path(md_dir) if md_dir is not None else repo_root / "docs" / "study_materials"
+        target_pdf_dir = Path(pdf_dir) if pdf_dir is not None else repo_root / "pdfs"
+
+    target_md_dir.mkdir(parents=True, exist_ok=True)
+    target_pdf_dir.mkdir(parents=True, exist_ok=True)
+
+    pool_file = Path(pool_path) if pool_path is not None else repo_root / "gamb_exam" / "question_pool.json"
+    with pool_file.open("r", encoding="utf-8") as f:
+        pool_data: list[dict[str, Any]] = json.load(f)
+
+    # Group questions by official domain
+    questions_by_domain: dict[str, list[dict[str, Any]]] = {d: [] for d in OFFICIAL_DOMAIN_ORDER}
+    for item in pool_data:
+        domain = item.get("domain", "")
+        if domain in questions_by_domain:
+            questions_by_domain[domain].append(item)
+        else:
+            questions_by_domain.setdefault(domain, []).append(item)
+
+    # Deterministic sorting within each domain by item id
+    for domain_items in questions_by_domain.values():
+        domain_items.sort(key=lambda x: x.get("id", 0))
+
+    form_configs: list[tuple[str, int]] = [
+        ("A", 101),
+        ("B", 202),
+        ("C", 303),
+    ]
+
+    forms_result: dict[str, dict[str, Any]] = {}
+
+    for form_letter, seed in form_configs:
+        rng = random.Random(seed)
+        sampled_qs: list[dict[str, Any]] = []
+
+        for domain in OFFICIAL_DOMAIN_ORDER:
+            quota = DOMAIN_QUOTAS.get(domain, 0)
+            candidates = questions_by_domain.get(domain, [])
+            if len(candidates) < quota:
+                raise ValueError(
+                    f"Insufficient questions in domain '{domain}': requested {quota}, found {len(candidates)}"
+                )
+            sampled_qs.extend(rng.sample(candidates, quota))
+
+        # Shuffle the 50 sampled questions across the exam
+        rng.shuffle(sampled_qs)
+
+        # Shuffle options A-D for each question, preserving correct answer tracking
+        form_questions: list[dict[str, Any]] = []
+        for q in sampled_qs:
+            orig_options = q.get("options", {})
+            orig_correct = q.get("correct_option", "").strip().upper()
+            pairs = [
+                (orig_options.get("A", "").strip(), orig_correct == "A"),
+                (orig_options.get("B", "").strip(), orig_correct == "B"),
+                (orig_options.get("C", "").strip(), orig_correct == "C"),
+                (orig_options.get("D", "").strip(), orig_correct == "D"),
+            ]
+            rng.shuffle(pairs)
+            new_options: dict[str, str] = {}
+            new_correct = ""
+            for idx, (text, is_corr) in enumerate(pairs):
+                letter = ["A", "B", "C", "D"][idx]
+                new_options[letter] = text
+                if is_corr:
+                    new_correct = letter
+
+            q_proc = dict(q)
+            q_proc["options"] = new_options
+            q_proc["correct_option"] = new_correct
+            q_proc["option_a"] = new_options["A"]
+            q_proc["option_b"] = new_options["B"]
+            q_proc["option_c"] = new_options["C"]
+            q_proc["option_d"] = new_options["D"]
+            form_questions.append(q_proc)
+
+        # 1. Build Markdown File
+        md_file = target_md_dir / f"practice_exam_form_{form_letter.lower()}.md"
+        md_lines: list[str] = [
+            "# Georgia Psychology Jurisprudence Examination (GAMB)",
+            f"## Practice Examination Booklet — Form {form_letter}",
+            f"### 50-Question Stratified Jurisprudence Simulation (Seed {seed})",
+            "",
+            LEGAL_DISCLAIMER,
+            "",
+            "---",
+            "",
+            "## Exam Instructions & Scoring Guide",
+            "",
+            "- **Time Limit:** 60 minutes (strict simulation conditions)",
+            "- **Item Count:** 50 multiple-choice questions (A, B, C, D)",
+            "- **Passing Standard:** 38 out of 50 correct (76.0%)",
+            "- **Format:** Closed-book examination. Select the single best answer for each question.",
+            "- **Official Domain Distribution:**",
+            "  - Professional Relationships: 14 questions (28%)",
+            "  - Licensure and Regulations: 13 questions (26%)",
+            "  - Competence: 9 questions (18%)",
+            "  - Assessment: 6 questions (12%)",
+            "  - Privacy and Confidentiality: 5 questions (10%)",
+            "  - Recordkeeping and Fees: 3 questions (6%)",
+            "- **Booklet Structure:**",
+            "  - **Section 1:** Examination Questions (Q1 – Q50)",
+            "  - **Section 2:** Candidate Bubble Sheet & Scoring Grid",
+            "  - **Section 3:** Answer Key, Domain Diagnostic Worksheet & Detailed Legal Citations",
+            "",
+            "---",
+            "",
+            "## Section 1: Examination Questions",
+            "",
+        ]
+
+        for idx, q in enumerate(form_questions, 1):
+            q_text = q.get("question_text", "").strip()
+            opts = q.get("options", {})
+            md_lines.append(f"### Q{idx}. {q_text}\n")
+            for opt_key in ["A", "B", "C", "D"]:
+                md_lines.append(f"- **{opt_key})** {opts.get(opt_key, '').strip()}")
+            md_lines.append("")
+
+        md_lines.extend([
+            "---",
+            "",
+            "## Section 2: Candidate Bubble Sheet & Scoring Grid",
+            "",
+            "Record your responses below. Mark only one letter per item. After completing the exam under 60-minute timed conditions, proceed to Section 3 to score your responses.",
+            "",
+            "| Q# | Candidate Response | Q# | Candidate Response |",
+            "|:--:|:------------------:|:--:|:------------------:|",
+        ])
+
+        for i in range(1, 26):
+            md_lines.append(
+                f"| {i} | [ ] A  [ ] B  [ ] C  [ ] D | {i + 25} | [ ] A  [ ] B  [ ] C  [ ] D |"
+            )
+
+        md_lines.extend([
+            "",
+            "### Candidate Scoring Summary",
+            "",
+            "| Metric | Candidate Result | Official Standard | Examination Status |",
+            "|:---|:---:|:---:|:---:|",
+            "| **Total Correct Items** | _____ / 50 | 38 / 50 items | [ ] PASS  [ ] FAIL |",
+            "| **Passing Percentage** | _____ % | 76.0% Minimum | [ ] PASS  [ ] FAIL |",
+            "",
+            "---",
+            "",
+            "## Section 3: Answer Key & Detailed Legal Citations",
+            "",
+            "> [!IMPORTANT]",
+            "> **STOP**: Do not review this section until you have completed all 50 questions under timed conditions.",
+            "",
+            "### Domain Score Diagnostic Worksheet",
+            "",
+            "| Domain | Code | Tested Items | Your Score | Target (>=70%) | Diagnostic Status |",
+            "|:---|:---|:---:|:---:|:---:|:---:|",
+            "| Professional Relationships | `prof-relationships` | 14 | / 14 | 10 / 14 (71%) | [ ] Meets Target  [ ] Needs Review |",
+            "| Licensure and Regulations | `licensure` | 13 | / 13 | 9 / 13 (69%) | [ ] Meets Target  [ ] Needs Review |",
+            "| Competence | `competence` | 9 | / 9 | 6 / 9 (67%) | [ ] Meets Target  [ ] Needs Review |",
+            "| Assessment | `assessment` | 6 | / 6 | 4 / 6 (67%) | [ ] Meets Target  [ ] Needs Review |",
+            "| Privacy and Confidentiality | `privacy` | 5 | / 5 | 4 / 5 (80%) | [ ] Meets Target  [ ] Needs Review |",
+            "| Recordkeeping and Fees | `recordkeeping` | 3 | / 3 | 2 / 3 (67%) | [ ] Meets Target  [ ] Needs Review |",
+            "| **Total Examination** | **All Domains** | **50** | **/ 50** | **38 / 50 (76%)** | **[ ] PASS  [ ] FAIL** |",
+            "",
+            "### Quick-Reference Answer Key",
+            "",
+            "| Q# | Domain | Correct Option | Legal Citation |",
+            "|:--:|:-------|:--------------:|:---------------|",
+        ])
+
+        for idx, q in enumerate(form_questions, 1):
+            domain_name = DOMAIN_DISPLAY_NAMES.get(q.get("domain", ""), q.get("domain", ""))
+            clean_cite = str(q.get("source_citation", "")).replace("|", "\\|").replace("\n", " ").strip()
+            md_lines.append(f"| {idx} | {domain_name} | **{q.get('correct_option', '')}** | {clean_cite} |")
+
+        md_lines.extend([
+            "",
+            "### Detailed Item-by-Item Review",
+            "",
+        ])
+
+        for idx, q in enumerate(form_questions, 1):
+            domain_name = DOMAIN_DISPLAY_NAMES.get(q.get("domain", ""), q.get("domain", ""))
+            md_lines.extend([
+                f"### Q{idx} (Pool Item #{q.get('id', '')})",
+                f"- **Domain:** {domain_name}",
+                f"- **Correct Option:** {q.get('correct_option', '')}",
+                f"- **Source Citation:** {q.get('source_citation', '').strip()}",
+                f"- **Explanation:** {q.get('explanation', '').strip()}",
+                "",
+            ])
+
+        md_file.write_text("\n".join(md_lines), encoding="utf-8")
+
+        # 2. Build HTML File
+        html_file = (target_pdf_dir if output_dir is not None else target_md_dir) / f"practice_exam_form_{form_letter.lower()}.html"
+        pdf_file = target_pdf_dir / f"GAMB_Practice_Exam_Form_{form_letter}.pdf"
+
+        custom_css = PRINT_CSS.replace(
+            'content: "GAMB Study Guide";',
+            f'content: "GAMB Practice Exam Booklet — Form {form_letter}";',
+        ) + """
+.bubble {
+    display: inline-block;
+    width: 13pt;
+    height: 13pt;
+    border-radius: 50%;
+    border: 1pt solid #4a5568;
+    text-align: center;
+    line-height: 13pt;
+    font-size: 7.5pt;
+    font-weight: bold;
+    margin: 0 1.5pt;
+    color: #4a5568;
+}
+.bubble-grid {
+    width: 100%;
+    margin-top: 8pt;
+    margin-bottom: 12pt;
+    font-size: 8.5pt;
+}
+.bubble-grid td {
+    padding: 3pt 6pt;
+    vertical-align: middle;
+}
+"""
+
+        html_parts: list[str] = [
+            "<!DOCTYPE html>",
+            "<html>",
+            "<head>",
+            '<meta charset="utf-8">',
+            f"<title>GAMB Practice Exam Booklet &mdash; Form {form_letter}</title>",
+            f"<style>\n{custom_css}\n</style>",
+            "</head>",
+            "<body>",
+            "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
+            f'<div class="badge" style="font-size: 10pt; padding: 3pt 8pt; margin-bottom: 10pt;">PRACTICE EXAMINATION BOOKLET &bull; FORM {form_letter}</div>',
+            '<div style="background-color: #f7fafc; border: 1pt solid #cbd5e0; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 14pt;">',
+            '<h3 style="margin-top: 0; color: #1a365d;">Examination Instructions &amp; Candidate Guidelines</h3>',
+            '<p style="margin: 4pt 0;"><strong>Time Limit:</strong> 60 minutes (strict simulation conditions)</p>',
+            '<p style="margin: 4pt 0;"><strong>Total Items:</strong> 50 multiple-choice questions (A, B, C, D)</p>',
+            '<p style="margin: 4pt 0;"><strong>Passing Standard:</strong> 38 out of 50 correct (76.0%)</p>',
+            '<p style="margin: 4pt 0;"><strong>Examination Format:</strong> Closed-book examination. Select the single best answer for each question.</p>',
+            '<p style="margin: 4pt 0;"><strong>Official Domain Composition:</strong></p>',
+            '<ul style="margin: 4pt 0 4pt 16pt; padding: 0;">',
+            '<li>Professional Relationships: 14 questions (28%)</li>',
+            '<li>Licensure and Regulations: 13 questions (26%)</li>',
+            '<li>Competence: 9 questions (18%)</li>',
+            '<li>Assessment: 6 questions (12%)</li>',
+            '<li>Privacy and Confidentiality: 5 questions (10%)</li>',
+            '<li>Recordkeeping and Fees: 3 questions (6%)</li>',
+            '</ul>',
+            '<p style="margin: 4pt 0 0 0;"><strong>Booklet Layout:</strong> Section 1: Questions (1–50) | Section 2: Bubble Sheet | Section 3: Answer Key &amp; Explanations</p>',
+            '</div>',
+            '<div class="disclaimer">',
+            '<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This practice exam is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. Title 43, Chapter 39 and Board Rules Chapter 510.',
+            '</div>',
+            '<div class="page-break"></div>',
+            f'<h2>Section 1: Examination Questions &mdash; Form {form_letter}</h2>',
+        ]
+
+        for idx, q in enumerate(form_questions, 1):
+            q_text = q.get("question_text", "").strip()
+            opts = q.get("options", {})
+            html_parts.append('<div class="question-block">')
+            html_parts.append(f'<div class="question-text">Q{idx}. {html.escape(q_text)}</div>')
+            for opt_key in ["A", "B", "C", "D"]:
+                opt_val = opts.get(opt_key, "").strip()
+                html_parts.append(f'<div class="option"><strong>{opt_key}.</strong> {html.escape(opt_val)}</div>')
+            html_parts.append('</div>')
+
+        # Section 2 HTML
+        html_parts.extend([
+            '<div class="page-break"></div>',
+            f'<h2>Section 2: Candidate Bubble Sheet &amp; Scoring Grid &mdash; Form {form_letter}</h2>',
+            '<p style="color: #4a5568; font-size: 9pt;">Record your responses by marking the circle corresponding to your selected option. Upon completing all 50 items under timed conditions, proceed to Section 3.</p>',
+            '<table class="bubble-grid">',
+            '<thead>',
+            '<tr>',
+            '<th style="width: 8%; text-align: center;">Q#</th>',
+            '<th style="width: 42%; text-align: center;">Candidate Response</th>',
+            '<th style="width: 8%; text-align: center;">Q#</th>',
+            '<th style="width: 42%; text-align: center;">Candidate Response</th>',
+            '</tr>',
+            '</thead>',
+            '<tbody>',
+        ])
+
+        for i in range(1, 26):
+            html_parts.append(
+                f'<tr>'
+                f'<td style="text-align: center; font-weight: bold;">{i}</td>'
+                f'<td style="text-align: center;">'
+                f'<span class="bubble">A</span><span class="bubble">B</span><span class="bubble">C</span><span class="bubble">D</span>'
+                f'</td>'
+                f'<td style="text-align: center; font-weight: bold;">{i + 25}</td>'
+                f'<td style="text-align: center;">'
+                f'<span class="bubble">A</span><span class="bubble">B</span><span class="bubble">C</span><span class="bubble">D</span>'
+                f'</td>'
+                f'</tr>'
+            )
+
+        html_parts.extend([
+            '</tbody>',
+            '</table>',
+            '<h3>Candidate Scoring Summary</h3>',
+            '<table>',
+            '<thead><tr><th>Metric</th><th>Candidate Result</th><th>Official Standard</th><th>Examination Status</th></tr></thead>',
+            '<tbody>',
+            '<tr><td><strong>Total Correct Items</strong></td><td>_____ / 50</td><td>38 / 50 items</td><td>[ ] PASS &nbsp; [ ] FAIL</td></tr>',
+            '<tr><td><strong>Passing Percentage</strong></td><td>_____ %</td><td>76.0% Minimum</td><td>[ ] PASS &nbsp; [ ] FAIL</td></tr>',
+            '</tbody>',
+            '</table>',
+        ])
+
+        # Section 3 HTML
+        html_parts.extend([
+            '<div class="page-break"></div>',
+            '<div style="text-align: center; padding-top: 220pt;">',
+            '<h1 style="border-bottom: none; font-size: 24pt; color: #1a365d;">Section 3: Answer Key &amp; Explanations</h1>',
+            f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">FORM {form_letter} &bull; QUESTIONS 1 &ndash; 50</div>',
+            '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Domain Diagnostic Key</p>',
+            '</div>',
+            '<div class="page-break"></div>',
+            f'<h2>Section 3: Answer Key &amp; Explanations &mdash; Form {form_letter}</h2>',
+            '<div class="disclaimer">',
+            '<strong>SCORING INSTRUCTIONS:</strong> Compare your responses from Section 2 against the key below. Mark each item correct or incorrect, then tally your domain scores in the diagnostic worksheet.',
+            '</div>',
+            '<h3>Domain Score Diagnostic Worksheet</h3>',
+            '<table>',
+            '<thead><tr><th>Domain</th><th>Code</th><th>Items</th><th>Your Score</th><th>Passing Target (&ge;70%)</th><th>Status</th></tr></thead>',
+            '<tbody>',
+            '<tr><td>Professional Relationships</td><td><code>prof-relationships</code></td><td>14</td><td>/ 14</td><td>10 / 14 (71%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr><td>Licensure and Regulations</td><td><code>licensure</code></td><td>13</td><td>/ 13</td><td>9 / 13 (69%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr><td>Competence</td><td><code>competence</code></td><td>9</td><td>/ 9</td><td>6 / 9 (67%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr><td>Assessment</td><td><code>assessment</code></td><td>6</td><td>/ 6</td><td>4 / 6 (67%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr><td>Privacy and Confidentiality</td><td><code>privacy</code></td><td>5</td><td>/ 5</td><td>4 / 5 (80%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr><td>Recordkeeping and Fees</td><td><code>recordkeeping</code></td><td>3</td><td>/ 3</td><td>2 / 3 (67%)</td><td>[ ] Target Met &nbsp; [ ] Review Needed</td></tr>',
+            '<tr style="background-color: #ebf8ff; font-weight: bold;"><td>Total Examination</td><td>All Domains</td><td>50</td><td>/ 50</td><td>38 / 50 (76%)</td><td>[ ] PASS &nbsp; [ ] FAIL</td></tr>',
+            '</tbody>',
+            '</table>',
+            '<h3>Quick-Reference Answer Key</h3>',
+            '<table>',
+            '<thead><tr><th style="width: 8%; text-align: center;">Q#</th><th style="width: 32%;">Domain</th><th style="width: 15%; text-align: center;">Correct Option</th><th style="width: 45%;">Legal Authority</th></tr></thead>',
+            '<tbody>',
+        ])
+
+        for idx, q in enumerate(form_questions, 1):
+            domain_name = DOMAIN_DISPLAY_NAMES.get(q.get("domain", ""), q.get("domain", ""))
+            citation = q.get("source_citation", "").strip()
+            correct_opt = q.get("correct_option", "").strip()
+            html_parts.append(
+                f'<tr>'
+                f'<td style="text-align: center; font-weight: bold;">{idx}</td>'
+                f'<td>{html.escape(domain_name)}</td>'
+                f'<td style="text-align: center; font-weight: bold; color: #2b6cb0;">{html.escape(correct_opt)}</td>'
+                f'<td><em>{html.escape(citation)}</em></td>'
+                f'</tr>'
+            )
+
+        html_parts.extend([
+            '</tbody>',
+            '</table>',
+            '<div class="page-break"></div>',
+            '<h3>Detailed Item-by-Item Review</h3>',
+        ])
+
+        for idx, q in enumerate(form_questions, 1):
+            domain_name = DOMAIN_DISPLAY_NAMES.get(q.get("domain", ""), q.get("domain", ""))
+            correct_opt = q.get("correct_option", "").strip()
+            citation = q.get("source_citation", "").strip()
+            explanation = q.get("explanation", "").strip()
+
+            html_parts.append('<div class="key-block">')
+            html_parts.append(
+                f'<div style="font-weight: bold; font-size: 10pt; color: #2c5282; margin-bottom: 2pt;">'
+                f'Q{idx} (Pool Item #{q.get("id", "")}) &mdash; <span class="badge">{html.escape(domain_name)}</span> &mdash; '
+                f'Correct Option: <strong style="color: #2b6cb0;">{html.escape(correct_opt)}</strong>'
+                f'</div>'
+            )
+            if citation:
+                html_parts.append(
+                    f'<div style="font-size: 8.5pt; color: #4a5568; margin-bottom: 2pt;">'
+                    f'<strong>Citation:</strong> <em>{html.escape(citation)}</em>'
+                    f'</div>'
+                )
+            if explanation:
+                html_parts.append(
+                    f'<div style="font-size: 9pt; color: #2d3748;">'
+                    f'<strong>Explanation:</strong> {html.escape(explanation)}'
+                    f'</div>'
+                )
+            html_parts.append('</div>')
+
+        html_parts.extend(["</body>", "</html>"])
+        html_file.write_text("\n".join(html_parts), encoding="utf-8")
+
+        # 3. Compile PDF
+        compile_html_to_pdf(html_file, pdf_file)
+        if output_dir is None and html_file.exists():
+            html_file.unlink()
+
+        forms_result[form_letter] = {
+            "questions": form_questions,
+            "md_path": md_file,
+            "pdf_path": pdf_file,
+        }
+
+    return forms_result
+
 

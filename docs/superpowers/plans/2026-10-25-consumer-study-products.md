@@ -116,7 +116,7 @@ git commit -m "feat(assets): implement 435-question domain compendium generator 
 - Output: `pdfs/GAMB_Practice_Exam_Form_C.pdf`
 - Output: `docs/study_materials/practice_exam_form_a.md`, `form_b.md`, `form_c.md`
 
-- [ ] **Step 1: Write failing test for practice exam forms generation**
+- [x] **Step 1: Write failing test for practice exam forms generation**
 
 Add to `tests/test_build_assets.py`:
 ```python
@@ -154,12 +154,12 @@ def test_generate_practice_forms(tmp_path: Path):
     assert ids_b != ids_c
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_build_assets.py::test_generate_practice_forms -v`  
 Expected: FAIL (`ImportError: cannot import name 'generate_practice_forms'`).
 
-- [ ] **Step 3: Implement `generate_practice_forms` in `gamb_exam/build_assets.py`**
+- [x] **Step 3: Implement `generate_practice_forms` in `gamb_exam/build_assets.py`**
 
 In `gamb_exam/build_assets.py`:
 - Use seeds 101 (Form A), 202 (Form B), 303 (Form C).
@@ -171,12 +171,12 @@ In `gamb_exam/build_assets.py`:
   - Section 3: Answer Key & Detailed Legal Citations in back.
 - Compile to vector PDF using `compile_html_to_pdf`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_build_assets.py::test_generate_practice_forms -v`  
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/build_assets.py tests/test_build_assets.py

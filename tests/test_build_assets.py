@@ -8,6 +8,7 @@ from gamb_exam.build_assets import (
     compile_html_to_pdf,
     generate_cheat_sheet,
     generate_compendium,
+    generate_practice_forms,
 )
 
 
@@ -155,6 +156,40 @@ def test_generate_compendium_html_escaping(tmp_path: Path):
     assert "Yes &gt; No" in html_content
     assert "&lt;Statute&gt;" in html_content
     assert "&lt;elements&gt; &amp; entities." in html_content
+
+
+def test_generate_practice_forms(tmp_path: Path):
+    forms = generate_practice_forms(output_dir=tmp_path)
+    assert len(forms) == 3
+    assert set(forms.keys()) == {"A", "B", "C"}
+    for letter, data in forms.items():
+        assert letter in ["A", "B", "C"]
+        assert len(data["questions"]) == 50
+        # Check quota
+        domain_counts: dict[str, int] = {}
+        for q in data["questions"]:
+            domain_counts[q["domain"]] = domain_counts.get(q["domain"], 0) + 1
+        assert domain_counts == {
+            "prof-relationships": 14,
+            "licensure": 13,
+            "competence": 9,
+            "assessment": 6,
+            "privacy": 5,
+            "recordkeeping": 3,
+        }
+        # Check files created
+        assert (tmp_path / f"practice_exam_form_{letter.lower()}.md").exists()
+        pdf_path = tmp_path / f"GAMB_Practice_Exam_Form_{letter}.pdf"
+        assert pdf_path.exists()
+        assert pdf_path.stat().st_size > 30000
+
+    # Ensure Forms A, B, and C have distinct question selections
+    ids_a = {q["id"] for q in forms["A"]["questions"]}
+    ids_b = {q["id"] for q in forms["B"]["questions"]}
+    ids_c = {q["id"] for q in forms["C"]["questions"]}
+    assert ids_a != ids_b
+    assert ids_b != ids_c
+
 
 
 
