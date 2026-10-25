@@ -7,6 +7,7 @@ legally plausible distractors and code citations, and seeds data/gamb_exam.db.
 
 from __future__ import annotations
 
+import json
 import random
 import re
 import sqlite3
@@ -32,6 +33,7 @@ OFFICIAL_DOMAINS: set[str] = {
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TSV_PATH = PROJECT_ROOT / "anki" / "gamb_deck.tsv"
+QUESTION_POOL_JSON = Path(__file__).parent / "question_pool.json"
 
 CITATION_REGEX = re.compile(
     r"\(\s*((?:OCGA|Rule|O\.C\.G\.A\.|Board|APA|Code|Ga\.)[^)]*(?:\([^)]*\)[^)]*)*)\)\.?\s*$",
@@ -521,9 +523,35 @@ def build_question_records(
 ) -> list[dict[str, Any]]:
     """Build question records with 4 distinct options and uniform key distribution.
 
-    Uniform key distribution assigns correct answer evenly across A, B, C, D
-    (via card_index % 4).
+    Loads from question_pool.json when available, otherwise falls back to
+    procedurally generating options from Anki deck cards.
     """
+    if cards is None and tsv_path is None and QUESTION_POOL_JSON.exists():
+        with open(QUESTION_POOL_JSON, "r", encoding="utf-8") as f:
+            raw_pool = json.load(f)
+
+        questions: list[dict[str, Any]] = []
+        for q in raw_pool:
+            correct_opt = q["correct_option"]
+            ans_text = q["options"].get(correct_opt, "")
+            questions.append(
+                {
+                    "id": q["id"],
+                    "domain": q["domain"],
+                    "subtopic": q.get("subtopic", "") or "",
+                    "source_citation": q["source_citation"],
+                    "question_text": q["question_text"],
+                    "option_a": q["options"]["A"],
+                    "option_b": q["options"]["B"],
+                    "option_c": q["options"]["C"],
+                    "option_d": q["options"]["D"],
+                    "correct_option": correct_opt,
+                    "explanation": q["explanation"],
+                    "answer_text": ans_text,
+                }
+            )
+        return questions
+
     if cards is None:
         cards = parse_anki_tsv(tsv_path=tsv_path)
 
