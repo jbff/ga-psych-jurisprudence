@@ -1,0 +1,1206 @@
+# DOVERSPIKE PREPARATION GUIDE — GEORGIA JURISPRUDENCE EXAMINATION
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION 
+William Doverspike, Ph.D. 
+Drdoverspike.com 
+770-913-0506 
+ 
+ 
+This article is educational in nature and is not intended for 
+distribution, publication, or commercial use. Material 
+cited, summarized, or quoted in this article is limited to the 
+purposes of commentary, criticism, reporting, teaching, 
+scholarship, and research. The author’s conceptual model, 
+philosophical commentaries, and personal opinions do not 
+reflect any official opinions or policies of the Georgia 
+Board of Examiners of Psychologists (“licensing board”) 
+or the Georgia Psychological Association (GPA) Ethics 
+Committee. This article is not intended to provide legal 
+advice. The reader is encouraged to contact an attorney for 
+legal advice regarding board rules and state laws 
+governing professional conduct. 
+ 
+Prepare for state jurisprudence examination.  
+After the national Examination for Professional 
+Practice in Psychology (EPPP-2) is passed, the 
+next step is a jurisprudence exam of laws, rules, 
+and regulations of states in which one intends to 
+practice. Candidates in Georgia are required to 
+pass the Georgia Psychology Jurisprudence 
+Exam. The following information is quoted from 
+the Psychology FAQ page of the Georgia State 
+Board of Examiners of Psychologists: 
+ 
+“The Georgia Psychology Jurisprudence Exam is a 
+computer based exam designed to assure that Georgia 
+licensees possess knowledge at a level which will allow 
+them to practice in a manner consistent with the Laws and 
+Rules of Georgia applicable to the practice of Psychology. 
+The exam consists of a timed, closed-book, multiple-choice 
+examination covering current law, rules and regulations, 
+and general provisions. After an individual’s application 
+has been approved by the Board to take the exams, 
+applicants will receive correspondence via e-mail from the 
+Board on how to register for the exams through the vendor 
+administering the exam for the Board. The ASPPB national 
+licensure exams, the EPPP Part 1 (Knowledge) and Part 2 
+(Skills), must be taken and passed first. Then an applicant 
+will be contacted by the administrating vendor for the 
+Georgia Jurisprudence exam and may then register and sit 
+for the exam on a date and time of their choice. Refer to 
+Board Rule 510-2 Licensure by Examination.”  
+(Georgia Secretary of State, 2023, Question 4).  
+ 
+ 
+ 
+Prepare for a closed-book examination. 
+The 
+closed-book 
+examination 
+contains 
+50 
+multiple-choice questions that must be completed 
+in no more than 60 minutes. A passing score 
+consists of correctly answering 38 out of 50 
+questions. 
+In 
+addition, 
+5–10 
+experimental 
+questions may be administered during the exam. 
+The experimental questions are not scored and 
+the time taken to answer them does not count 
+against the time remaining in the examination. 
+ 
+Use evidence-based study techniques.  
+A number of effective study techniques have 
+been developed by educational and school 
+psychologists. One useful technique is known as 
+the PQRST method (Preview, Question, Read, 
+State, Turn Back). This technique is also known 
+as SQRRR (Survey, Question, Read, Recite, 
+Review), designed to improve retention of 
+material that has been read (Doverspike, 2008).  
+ 
+Use knowledge and skills to manage anxiety. 
+When anxious, people often feel the urge to avoid 
+or escape the source of the anxiety. However, 
+procrastination works against candidates who 
+postpone their preparation. Use the concept of 
+opposite action, which allows the choice of 
+doings exactly the opposite of what one might 
+feel like doing. Using opposite action can allow 
+one to take a pause and, when it is appropriate, 
+make a conscious choice to do the opposite of 
+what emotions are driving one to do. Acting in 
+opposition to natural impulses sometimes means 
+simply approaching rather than avoiding the 
+things that are dreaded or feared. Furthermore, by 
+reframing 
+of 
+thoughts, 
+anxiety 
+can 
+be 
+transformed into excitement that can energize the 
+task of preparation.  
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+2 
+ 
+Use distributed learning over a period of time. 
+Distributed learning (aka, distributed practice, 
+spaced repetition, the spacing effect, or spaced 
+practice) is a learning strategy in which learning 
+are practice are broken up into a number of short 
+sessions over a longer period of time. Items in a 
+list are learned more effectively when they are 
+studied in sessions spread out over a long period 
+of time, rather than when studied over a short 
+period of time. Massed practice (which is the 
+opposite of distributed practice) consists of fewer 
+and longer training sessions. It is generally a less 
+effective method of learning. When studying for 
+any exam, spreading out study sessions more 
+frequently over a larger period of time 
+(distributed learning) results in more effective 
+learning than “cramming” or intense studying 
+over a few days before an exam (mass practice).  
+ 
+Use personality style to assist studying.  
+Although many introverts prefer studying alone 
+or with a study partner, extraverts often benefit 
+from having a study group. Old-fashioned note 
+cards and online Quizlet tests can be useful. Note 
+cards can often become more effective if they are 
+used to connect single pieces of information on 
+each card to other concepts through a concept 
+map. Whether the maps are drawn by hand or 
+created with software, they should emphasize 
+substance over form. Their purpose is to make 
+connections that help you see the content from 
+different perspectives (Berry & Chew, 2008). 
+ 
+Consider using the priority principle.  
+Practice tests can also be helpful in identifying 
+weak areas that may require extra attention. 
+Competitive 
+weightlifters 
+and 
+professional 
+bodybuilders often use the so-called priority 
+principle of training. This principle focuses on 
+training a weak muscle group or lift first in a 
+workout or first in the week, when one is fully 
+energized and fully recovered from the previous 
+training. One former competitor used this 
+principle in studying for the jurisprudence exam, 
+by essentially doing no studying at all in legal 
+and 
+regulatory 
+areas 
+that 
+were 
+already 
+overdeveloped and focusing the majority of study 
+in areas that were underdeveloped. Yes, it not 
+only worked very well, but the technique required 
+some use of opposite action, since it is easier to 
+focus studying in areas of scholarly strengths than 
+our weaknesses. 
+ 
+Consider using pre-test cards and checklists.  
+Some candidates find that it helps to hand write 
+pre-test clue cards or crib notes. Although her 
+recommendations are intended for candidates 
+preparing for the EPPP-2, APA staff writer Helen 
+Santaro (2023) provides some useful tips for 
+those preparing for exams. Santaro recommends 
+making a “cheat sheet” of concepts that are 
+frequently seen on practice tests. Learn the cheat 
+sheet so that the terms and concepts are stored in 
+memory. Set aside the notes before entering the 
+test center. When starting the exam, recommends 
+Santaro, quickly write down the facts, terms, and 
+concepts that were memorized. Do not bring 
+cards, notes, or sheets into the PSI center. 
+According to the Candidate Information Bulletin 
+(PSI Services, 2023), “You will be given a piece 
+of scratch paper and a pencil. These will be 
+returned to the proctor at the end of your 
+examination” (p. 3).  
+ 
+Preparation includes practicing self-care.  
+Learning new material, reviewing old material, 
+and managing pre-test jitters are all enhanced by 
+the practice of self-care. Although it is vogue in 
+some circles to brag about sleep deprivation, it 
+reduces learning efficiency. Because learning is 
+consolidated in the brain during sleep cycles, 
+getting sufficient sleep each night improves 
+learning.  
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+3 
+ 
+Stay current with updated information.  
+To stay informed about current developments, 
+check the websites of these three organizations: 
+(1) 
+ASPPB’s 
+EPPP-2 
+webpage 
+(https://www.asppb.net/page/EPPPPart2-Skills), 
+(2) the state psychological association (SPA) in 
+the state in which you intend to become licensed, 
+and (3) the licensing board in the state in which 
+you plan to practice.  
+ 
+In Georgia, follow the Georgia Psychological 
+Association (https://www.gapsychology.org/) and 
+the State Board of Examiners of Psychologists 
+(https://sos.ga.gov/georgia-state-board-
+examiners-psychologists). To stay current with 
+proposed changes in rules and regulations of the 
+licensing board, consider joining the Georgia 
+Secretary of State’s “Interested Parties List for 
+Proposed Rule Changes and Other Notifications” 
+(https://sos.ga.gov/form/interested-parties-list-
+proposed-rule-changes-and-other-notifications). 
+ 
+Additional 
+information 
+on 
+the 
+Georgia 
+Jurisprudence Exam can be found on the Georgia 
+Psychology 
+Jurisprudence 
+Examination: 
+Candidate Information Bulletin (PSI Services, 
+2025) 
+and 
+registration 
+for 
+the 
+Georgia 
+Psychology 
+Jurisprudence 
+Examination 
+is 
+available at this link: 
+https://test-takers.psiexams.com/gamb/test/CAC2QFW6 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+4 
+ 
+Areas of Knowledge Sampled on the Exam 
+ 
+When it comes to learning laws, rules, and 
+regulations, there is nothing worse that borrowing 
+someone’s old study materials and then later 
+learning that the laws, rules, and regulations have 
+changed. Georgia laws, rules and regulations, and 
+proposed rules can be accessed through the 
+official website of the Georgia State Board of 
+Examiners of Psychologists (“Georgia Board of 
+Psychology”), which is under the Licensing 
+Boards Division of the Georgia Secretary of 
+State’s office. See Appendix section.  
+ 
+Georgia Board of Psychology  
+ 
+Georgia Rules and Regulations 
+For access to Georgia rules and regulations for 
+the professional practice of psychology, go 
+directly to the source. The official site is under 
+the Georgia State Board of Examiners of 
+Psychologists (“licensing board”), which is under 
+the Division of Professional Licensing Boards, 
+which is under the office of the Secretary of 
+State, which is part of the Executive branch of 
+government of the State of Georgia. 
+ 
+Rules of State Board of Examiners of 
+Psychologists 
+ 
+Licensing boards live by rules, so it is important 
+to learn the rules by which they live. 
+ 
+Chapter 510-1 
+Organization 
+Chapter 510-2 
+Licensure by Examination 
+Chapter 510-3 
+Licensure by Endorsement 
+Chapter 510-4 
+Code of Ethics 
+Chapter 510-5 
+Supplemental Code of Conduct 
+Chapter 510-6 
+Disciplinary Hearings 
+Chapter 510-7 
+Renewal/Reinstatement/Inactive License 
+Chapter 510-8 
+Continuing Education Requirements 
+Chapter 510-9 
+Licenses of Limited Duration 
+Chapter 510-10 Unlicensed Practice 
+ 
+Georgia Statutory Law 
+There are two sites that provide reliable 
+information for the Official Code of Georgia 
+Annotated (OCGA).1 The Code of Georgia site 
+contains citations and dates that laws have been 
+amended. The public access LexisNexis® site 
+contains annotations and some citations of case 
+law, judicial decisions, and statutory law.  
+ 
+Code of Georgia  
+ 
+LexisNexis®  
+ 
+Georgia Case Law 
+The Georgia Jurisprudence Examination does not 
+sample from decisions of the Georgia Court of 
+Appeals, although a licensing board member may 
+ask a question during the Oral Examination.  
+ 
+In the professional practice of psychology in 
+Georgia, the most often cited case is Bradley 
+Center v. Wessner (1982), in which the Georgia 
+Supreme Court upheld an appellate decision that 
+determined a failure to exercise control over a 
+potentially violent inpatient who made a clear 
+threat toward a readily identifiable intended 
+victim. In affirming the appellate decision, on 
+October 27, 1982, the Georgia Supreme Court 
+held that the Court of Appeals properly identified 
+the legal duty in this case. An analysis of this 
+case is provided in Doverspike (2018, p. 4). The 
+court decision can be accessed at the following 
+link: 
+ 
+Bradley Center v. Wessner (1982)  
+ 
+There are a few other cases involving Georgia 
+licensed psychologists that have been decided by 
+the Georgia Supreme Court.  
+ 
+Georgia Supreme Court  
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+5 
+ 
+ 
+Notes 
+ 
+1. 
+Future 
+academicians 
+and 
+forensic 
+psychologists might find a way to integrate some 
+of this information into their responses during the 
+Oral Examination, which will be the last hurdle to 
+jump 
+for 
+those 
+who 
+pass 
+the 
+Georgia 
+Jurisprudence Examination. Do not pay attention 
+to this section unless you have APA Style Legal 
+Geek potential:  
+ 
+The section sign (§) is a symbol for referencing individual 
+numbered sections of a document, frequently used when 
+referring to legal code. The symbol can be inserted through 
+Microsoft Word through the “symbol” drop down menu. It 
+can also be added to a Word document by encoding a 
+character code of 00A7 (Unicode) or 167 (ASCII). The 
+Word shortcut key is Alt+0167. The section sign is also 
+called a section symbol, section mark, double-s, silcrow, or 
+“squiggly” mark. In some parts of Europe, it is known as a 
+paragraph mark although in the U.S. the paragraph sign is 
+known as a pile pilcrow (¶). When duplicated as §§, the 
+section sign is read as the plural “sections” (e.g. “§§ 13–
+21”), much as “pp.” (pages) is the plural of “p.”  
+ 
+2. As discussed in Paul Milich’s (2012) Law 
+Review article “Georgia Law §24-5-501 (Certain 
+communications privileged) was previously listed 
+as §24-9-21. On May 3, 2011, Governor Nathan 
+Deal signed into law House Bill 24 (HB 24) 
+bringing a new set of evidence rules to the State 
+of Georgia. The new rules went into effect on 
+January 1, 2013” (Milich, 2012, p. 1).  
+ 
+ 
+ 
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+6 
+ 
+References 
+ 
+Berry, J. W., & Chew, S. L. (2008). Improving 
+learning through interventions of student-
+generated questions and concept maps. 
+Teaching of Psychology, 35, 305–312.  
+ 
+Bradley Center, Inc. v. Wessner, et al., 161 Ga. 
+App. 576 (287 SE 2d 716) (1982a).  
+ 
+Bradley Center, Inc. v. Wessner, et al., 250 Ga. 
+199, 296 SE 2d 693 (1982b).  
+ 
+Doverspike, W. F. (2007). The so-called duty to 
+warn: 
+Protecting 
+the 
+public 
+versus 
+protecting 
+the 
+patient. 
+Georgia 
+Psychologist, 
+61(3), 
+20. 
+https://gapsychology.site-
+ym.com/associations/3558/files/GPSu07f
+ull4.pdf 
+ 
+Doverspike, W. F. (2008, December 01). How to 
+be a better reader: A key to effective 
+reading. 
+https://drwilliamdoverspike.com/files/how
+_to_be_a_better_reader.pdf 
+ 
+Doverspike, W. F. (2018). The so-called duty to 
+warn: 
+Protecting 
+the 
+public 
+versus 
+protecting 
+the 
+patient 
+(Rev. 
+ed.). 
+https://drwilliamdoverspike.com/publicati
+ons 
+This resource is an updated article, based on 
+original 2007 article, that contains some updated 
+content and citations. 
+ 
+Doverspike, W. F. (2023, April 15). How to 
+prepare for the psychology licensing 
+examination. 
+https://drwilliamdoverspike.com/files/how
+_to_prepare_for_the_psychology_licensin
+g_examination.pdf 
+ 
+ 
+ 
+ 
+Georgia Secretary of State, Georgia State Board 
+of Examiners of Psychologists. (2023). 
+Frequently asked questions related to the 
+Georgia 
+Board 
+of 
+Psychology. 
+https://sos.ga.gov/page/psychology-faq 
+ 
+Milich, P. S. (2012). Georgia’s New Evidence 
+Code: An Overview. Georgia State 
+University 
+Law 
+Review, 
+28(2), 
+3. 
+http://scholarworks.gsu.edu/gsulr/vol28/is
+s2/3 
+Paul S. Milich’s (2012) Law Review article is also 
+available at this link: 
+https://readingroom.law.gsu.edu/gsulr/vol28/iss2/3 
+ 
+PSI Services, LLC. (2023, November 13). 
+Professional Licensing Boards Division: 
+Georgia 
+Psychology 
+Jurisprudence 
+Examination: 
+Candidate 
+Information 
+Bulletin. 
+https://candidate.psiexams.com/bulletin/di
+splay_bulletin.jsp?ro=yes&actionname=8
+3&bulletinid=377&bulletinurl=.pdf 
+Under document properties, the author is listed 
+simply as Cathy.  
+ 
+Santaro, H. (2023, April). New psychology 
+licensing exam expands. Monitor on 
+Psychology, 
+54(3), 
+24–27. 
+https://www.apa.org/monitor/2023/04/psy
+chology-licensing-exam-expands 
+ 
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+7 
+ 
+ 
+Resources 
+ 
+Diligent efforts were made to provide accurate 
+information. However, state laws and regulatory 
+rules are constantly changing, so the reader is 
+encouraged to check the accuracy of information 
+and confirm by reading the source materials.  
+ 
+Georgia Psychological Association. (2023, June 
+1). EPPP2 focus group summary. 2022–
+2023 Early Career Psychologists 
+Committee. 
+https://www.gapsychology.org/ 
+This resource was created on June 5, 2023, 
+modified on June 5, 2023, and published on June 
+5, 2023 by the Georgia Psychological Association 
+(GPA). The document was prepared by the 2022–
+2023 Early Career Psychologists Committee of 
+GPA. 
+The 
+committee 
+recruited 
+licensed 
+psychologists who passed the EPPP2 to share their 
+experience in preparing for and passing the EPPPs 
+between 2021 and 2022. To learn more about this 
+resource or to join the state’s psychological 
+association, visit GPA’s official site: 
+https://www.gapsychology.org/default.aspx 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Public Domain 
+ 
+This resource does not contain any proprietary or 
+privileged information about the EPPP-2, the 
+Georgia Jurisprudence Examination, Georgia 
+laws, Georgia Rules and Regulations, or Georgia 
+Psychology Licensing Board procedures. In other 
+words, everything in this article has been 
+obtained from sources that are available to the 
+general public. Furthermore, I have no knowledge 
+of the test items and I have not been involved in 
+the construction of the EPPP-2 or the Georgia 
+Psychology Jurisprudence Examination. With the 
+exception 
+of 
+personal 
+experiences 
+and 
+information shared retrospectively with me by 
+licensed psychologists who prepared successfully 
+for the exams, the information contained in this 
+resource is available from the source documents 
+listed as reference entries. Candidates who are 
+interested in learning more about the examination 
+should contact PSI Service LLC. I receive no 
+financial 
+or 
+other 
+compensation 
+for 
+the 
+information herein.  
+ 
+William F. Doverspike, Ph.D. 
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+8 
+ 
+Appendix A: 
+Georgia Statutory Law 
+ 
+Official Code of Georgia Annotated (OCGA) 
+These sections of the Georgia Code are relevant 
+to the practice of psychology in Georgia:  
+ 
+Title 43 Professions and Businesses 
+§43-1-27 Licensee required to notify licensing authority of 
+felony conviction. 
+§43-1-19 Refusal to grant, revocation, and reinstatement of 
+licenses; surrender; probationary license.  
+ 
+Psychology Practice Act 
+§43-39-1 to §43-39-22 (This section of Georgia Law is 
+known as the Psychology Practice Act) and it 
+consists of 22 sections contained in Article 1 (20 
+sections) and Article 2 (2 sections).  
+Article 1 General Provisions (§§ 43-39-1 — 43-39-20) 
+43-39-1 Definitions. 
+43-39-2  Creation of board of examiners; immunity. 
+43-39-3  Appointment to board; qualifications; terms; 
+vacancies; removal. 
+43-39-4  Oath of office; certificate of appointment. 
+43-39-5  Officers; meetings; seal; procedures; expenses. 
+43-39-6 Authority of board to establish code of conduct 
+and of ethics, administer oaths, summon witnesses, 
+and 
+take 
+testimony; 
+issuance 
+of 
+licenses; 
+enforcement of chapter. 
+43-39-7  Practicing without a license; use of title; 
+exceptions. 
+43-39-8  Application for license; qualifications. 
+43-39-9  Examination of applicants. 
+43-39-10 Reciprocity. 
+43-39-11 [Reserved] Recordation of licenses; clerk’s fees; 
+report by clerk to joint-secretary. 
+43-39-12 Biennial renewal of licenses. 
+43-39-13 Denial, revocation, suspension, and reinstatement 
+of licenses; other disciplinary actions; hearings; 
+appeals. 
+43-39-14 Temporary and provisional licenses. 
+43-39-15 Continuing education. 
+43-39-16 Privileged communications. 
+43-39-17 Use of title “psychologist.” 
+43-39-18 Injunctions against violators. 
+43-39-19 Penalty. 
+43-39-20 Immunity from civil and criminal liability for 
+certain good faith actions.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Article 2 Psychology Interjurisdictional Compact (§§ 
+43-39-21 — 43-39-22) 
+43-39-21 Short title. 
+43-39-22 Compact terms. 
+ 
+Title 24 Evidence 
+§24-5-501 Certain communications privileged. [This 
+section of Georgia law was previously classified as 
+§24-9-21 until 01-01-2013.] 2 
+ 
+§24-9-21 [This section of Georgia Law, which was titled 
+“Certain communications privileged,” has been 
+classified 
+under 
+§24-5-501 
+(Certain 
+communications privileged) since 01-01-2013. 
+ 
+Title 19 Domestic Relations 
+§19-7-5 Reporting of child abuse; when mandated or 
+authorized; content of report; to whom made; 
+immunity from liability; report based upon 
+privileged communication; penalty for failure to 
+report; spiritual treatment for illnesses. 
+ 
+Title 16 Crimes and Offenses  
+§16-6-5.1 Improper sexual contact by employee, agent, or 
+foster parent; consent not a defense; penalty. 
+ 
+Title 16 (Crimes and Offenses), Chapter 13 (Controlled 
+Substances), 
+Article 
+5 
+(Sanctions 
+Against 
+Licensed 
+Persons 
+for 
+Offenses 
+Involving 
+Controlled Substances or Marijuana).  
+§16-13-110 to §16-13-114 
+§16-13-110 Definitions 
+§16-13-111 
+Notification 
+of 
+conviction 
+of 
+licensed 
+individual to licensing authority; reinstatement of 
+license; imposition of more stringent sanctions. 
+16-13-112 Applicability of administrative procedures 
+16-13-113. Article as supplement to power of licensing 
+authority. 
+16-13-114 Period of applicability of article.  
+ 
+ 
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+9 
+ 
+Georgia Statutory Law (continued) 
+ 
+Title 30 Handicapped Persons  
+§30-5-4 Reporting of need for protective services; manner 
+and contents of report; immunity from civil or 
+criminal liability; privileged communications. 
+ 
+Title 31 Health 
+§31-7-160 to §31-7-165 
+§31-7-160 Health Service Provider Psychologist. 
+§31-7-161 Appointment to staff of medical facility or 
+institution.  
+§31-7-162 Training and experience requirements. 
+§31-7-163 Status of present psychologist staff members. 
+§31-7-164 Limitation or revocation of staff privileges.  
+§31-7-165 Report of denial of staff privileges. 
+ 
+Title 37 Mental Health 
+§37-3-41 Emergency admission based on physician's 
+certification or court order; report by apprehending 
+officer; entry of treatment order into patient's 
+clinical record; authority of other personnel to act 
+under statute; annual reporting.  
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+10 
+ 
+Appendix B: 
+Rules and Regulations 
+ 
+Comprehensive Rules and Regulations 
+These sections of the Rules and Regulations are 
+relevant to the practice of psychology in Georgia: 
+ 
+Professional Relationships (14 Items) 
+Avoiding Harm  
+Conflicts of Interest  
+Continuity of Care: Interruption/Termination  
+Definitions of Relationships  
+Informed Consent  
+Informed Consent to Research  
+Multiple Relationships  
+Referrals, Client Consideration  
+Research and Publication Relationships  
+Services Delivered to or through Organizations  
+Sexual Misconduct: Laws  
+Sexual Misconduct: Relationships  
+Student Disclosure of Personal Information  
+Supervisory Relationships  
+Therapy Provided to Those Served by Others  
+Third-Party Requests for Services  
+ 
+Licensure and Regulations (13 Items) 
+Advertising  
+Avoiding Deceptive Statements About Credentials  
+Delegation of Work to Others  
+Disciplinary Actions  
+False and Deceptive Statements/Testimonials  
+Immunity  
+License Requirements  
+Limited Practice  
+Powers of the Licensing Board  
+Refusal to Grant/Revocation of License  
+Renewal/Reinstatement  
+Reporting Child Abuse  
+Statements by Others  
+Supervisory Requirements  
+Temporary/Provisional License  
+Unlicensed Practice  
+Use of Title  
+Violations  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Competence (9 Items) 
+Competence/Practice within Area of Expertise  
+Maintaining Competence and Continuing Education  
+Resolving Ethical Issues  
+Recognizing Impairment  
+Emergency Services  
+Electronic Transmission  
+Design of Training Programs  
+ 
+Assessment (6 Items) 
+Basis for Assessment  
+Forensic Assessment  
+Informed Consent for Testing  
+Release of Test Data  
+Scoring, Interpreting, and Explaining Test Results  
+Test Security  
+Use of Assessments  
+Use of Obsolete or Outdated Tests  
+User Qualifications  
+ 
+Privacy and Confidentiality (5 Items) 
+Limits of Confidentiality  
+Privileged Communication  
+Recordings  
+Responsibility for Confidential Information  
+Use of Confidential Information in Research  
+ 
+Recordkeeping and Fees (3 Items) 
+Accuracy in Reports to Payors  
+Bartering  
+Documentation and Maintenance of Records  
+Fees and Financial Arrangements  
+Record Retention  
+Referrals  
+Withholding Records for Nonpayment  
+ 
+ 
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+11 
+ 
+ 
+Appendix C: 
+Georgia Case Law 
+ 
+Appellate and Supreme Court Decisions 
+These decisions are relevant to the practice of 
+psychology in Georgia. Listed in alphabetical 
+order rather than the year of the decision, each of 
+the cases below is shown as a text citation and 
+then followed by a reference entry.  
+ 
+Bradley Center Inc. v. Wessner (1982) 
+Bradley Center, Inc v. William Kenneth Wessner, et al., 250 
+Ga. 199, 296 SE 2d 693 (1982).  
+Bradley Center, Inc. v. William Kenneth Wessner, et al., 
+161 Ga. App. 576, 287 SE 2d 716, (1982).  
+Georgia Supreme Court upheld an appellate 
+decision that determined a failure to exercise 
+control over a potentially violent inpatient who 
+made a clear threat toward a readily identifiable 
+intended victim. In affirming the appellate 
+decision, the Georgia Supreme Court held that the 
+Court of Appeals properly identified the legal duty 
+in this case: “Where the course of treatment of a 
+mental patient involves an exercise of “control” 
+over him by a physician who knows or should 
+know that the patient is likely to cause bodily harm 
+to others, an independent duty arises from that 
+relationship and falls upon the physician to 
+exercise that control with such reasonable care as 
+to prevent harm to others at the hands of the 
+patient.” (Bradley Center v. Wessner, 161 Ga. 
+App. 576, supra, at 581, 1982a)  
+ 
+Cooksey v. Landry, et al. (2014)  
+Crit Reon Cooksey, M.D. v. Christopher Michael Landry, et 
+al. (S14A0926) (Ga. Sup. Ct. June 30, 2014)  
+On June 30, 2014, the Georgia Supreme Court 
+reaffirmed that mental health records have a higher 
+level of privilege than other types of health 
+records, described as “nearly absolute” privilege. 
+The Court specifically indicated that this privilege 
+remains “inviolate even though the patient’s care 
+and treatment or the nature or extent of the 
+patient’s injuries are put in issue in a civil 
+proceeding.” In line with the decision of Sims v. 
+State (1984), this case is often cited as a legal 
+precedent that “the psychotherapy privilege 
+survives death.” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cranford v. Cranford (1969)  
+Peter G. Cranford v. Helen T. Cranford, 120 Ga. App. 470, 
+170 S.E.2d 844 (1969).  
+On September 30, 1969, the appellate court held 
+that the mere fact of employment [of a licensed 
+psychologist by a patient receiving psychotherapy] 
+is not protected from disclosure in court. The case 
+arose out of a suit for divorce, alimony, and child 
+support. The parties were previously before the 
+Supreme Court on appeal by the defendant (Peter 
+G. Cranford, Ph.D.) in the divorce action, and the 
+judgment of the lower court granting divorce and 
+alimony was affirmed as to the grant of divorce 
+but reversed for new trial as to the award of 
+alimony and child support. The appellant’s 
+contention on this appeal was that the law afforded 
+protection not only against the revelation of certain 
+communications between psychologist and patient, 
+but the fact of the relationship (i.e., the fact of 
+employment) as confidential. The appellate court 
+held that the mere fact of employment is not 
+protected from disclosure. 
+ 
+Garner v. Stone (1999) 
+Jack Garner v. Anthony Stone, No. 97A-320250-1 (Ga., 
+DeKalb County Super. Ct. Dec. 16, 1999.  
+Although the case was never appealed and 
+therefore never established as case law or a legal 
+precedent, on December 16, 1999, a 6-person jury 
+in a DeKalb County, Georgia, Superior Court 
+found in favor of a former police officer with 
+Gwinnett County, Georgia, who sued a licensed 
+psychologist for violating the physician-patient 
+privilege after the psychologist made a warning 
+call to an identifiable third party. This nationally 
+publicized legal case is a matter of public record 
+and has been the subject of discussion in ethics 
+training (Doverspike, 10`8, p. 7).  
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+12 
+ 
+Georgia Case Law (continued) 
+ 
+McGarrah v. Posig (2006)  
+Nancy McGarrah v. Michelle Posig, 635 S.E.2d 219 (Ga. 
+App. 2006).  
+The appellate court reversed a lower court's denial 
+of the defendant's motion for summary judgment, 
+held that the plaintiff's affidavit cannot create a 
+legal duty where none existed before, and held that 
+OCGA § 19-7-5 does not create a private cause of 
+action for damages for failure to report child 
+abuse. 
+ 
+Michaels v. Gordon (1993)  
+Michaels et al. v. Mary Gordon, Ph.D. (1993), 211 Ga.App. 
+470 [439 S.E.2d 722] (1993).  
+The Georgia Court of Appeals concluded that the 
+statutory grant of immunity applied not only to a 
+person [in this case, a licensed psychologist who 
+provided a pro bono evaluation of a 4-year old 
+child] who makes a report of child abuse, but also 
+to a person who participates in subsequent 
+proceedings connected with a child abuse report.  
+ 
+O’Heron v. Blaney (2003)  
+Thomas and Jean Blaney, et al v. Sara O’Heron and the 
+Emory Clinic. 256 Ga. App. 612, 568 S.E.2d 774, 
+2002 Ga. App. LEXIS 907 (2002).  
+Thomas and Jean Blaney, et al. v. Sara O’Heron and the 
+Emory Clinic, 263 Ga. App. 681, 588 S.E.2d 852, 
+2003 Ga. App. LEXIS 1290 (Ga. Ct. App., Oct. 
+21, 2003).  
+On June 30, 2003, the Georgia Supreme Court 
+affirmed the provision of statutory immunity 
+[related to mandated reporting of suspected child 
+abuse].  
+ 
+Schrader v. Kohout (1999)  
+Sue Schrader v. Kim Kohout, 239 Ga. App. 134, 519 S.E. 
+2d 307 (1999)  
+In response to a lawsuit filed against psychologist 
+Sue Schrader, Ph.D. and several other defendants 
+alleging 
+negligent 
+psychological 
+care 
+and 
+treatment, Schrader filed a motion for summary 
+judgment. Schrader argued that she did not have a 
+professional relationship with the plaintiff (Kim 
+Kohout), did not perform any professional services 
+for the plaintiff, and therefore owed no legal or 
+professional duty to her. Schrader had provided a 
+paid consultation group for several licensed 
+psychologists.  
+ 
+ 
+Although Schrader had called her group a 
+“supervision” group, she argued in court that it 
+was a consultation group consisting of licensed 
+colleagues over whom she had no authority or 
+control. Furthermore, she never provided treatment 
+to the defendant. The trial court denied the motion, 
+but granted a certificate of immediate review. On 
+appeal, the Georgia Court of Appeals reversed the 
+trial court’s decision and agreed with Dr. Schrader 
+that no physician-client relationship existed 
+between her and Kohout. 
+ 
+Sims v. State (1984)  
+Sims v. State, 251 Ga. 877, 311 S.E.2d 161 (Ga. 1984) 
+The Georgia Supreme Court upheld psychotherapy 
+privilege in the presence of a third party (i.e., the 
+patient’s husband, Marshall Sims, who was 
+murdered by his wife Phyllis Gail Sims). This case 
+is often cited as a legal precedent that “the 
+psychotherapy privilege survives death.”  
+ 
+State v. Herendeen et al. (2005) 
+State of Georgia v. Herendeen et al., No. S04G1788 (May 
+23, 2005)  
+State v. Herendeen, 279 Ga. 323, 613 S.E.2d 647 (2005) 
+(May 23, 2005) 
+Herendeen v. State, 268 Ga.App. 113, 601 S.E.2d 372 
+(2004) Dennis Herendeen v. State, 268 Ga. App. 113 
+(2004)  
+Dennis Herendeen, Ph.D., Samuel Haskell, Ph.D., 
+and the Psychology Center (a professional 
+corporation) appealed a trial court’s order finding 
+that their medical records were not subject to the 
+psychologist-patient 
+privilege. 
+The 
+Georgia 
+Supreme Court granted a writ of certiorari to the 
+Court of Appeals in order to review its decision 
+concerning the scope of the psychologist-patient 
+privilege provided in OCGA §§24-9-21(6) and 43-
+39-16. The Georgia Supreme Court affirmed the 
+judgment of Georgia Court of Appeals with regard 
+to the privilege and the remand for an in camera 
+review of the mental health records at issue. The 
+Court also directed that the trial court undertake 
+certain additional determinations. The decision 
+upheld the psychologist-patient psychotherapy 
+privilege even for patients who were court-ordered 
+to treatment.  
+ 
+ 
+
+HOW TO PREPARE FOR THE GEORGIA JURISPRUDENCE EXAMINATION   
+ 
+13 
+ 
+ 
+Correct Citation for Reference Entry 
+ 
+The reference entry correct citation styles for this 
+document are illustrated below. Students should 
+defer to the style preferences of their individual 
+course instructors to determine whether the 
+course instructor has preferences that are more 
+specific than those shown below: 
+ 
+American Psychological Association 
+ 
+Doverspike, W. F. (2024, October 01). How to 
+prepare for the Georgia Jurisprudence 
+Examination. 
+https://drwilliamdoverspike.com/ 
+ 
+Chicago Manual of Style / Kate Turabian 
+ 
+Doverspike, William, “How to Prepare for the 
+Georgia Jurisprudence Examination,” Oct. 
+01, 
+2024. 
+https://drwilliamdoverspike.com/ 
+ 
+Note: According to the Chicago Manual of Style, 
+blog posts are typically not included in 
+bibliographies, but can be cited in the running 
+text and/or notes. However, if a blog is cited 
+frequently, 
+you 
+may 
+include 
+it 
+in 
+the 
+bibliography.  
+ 
+Modern Language Association  
+ 
+Doverspike, William F. “How to prepare for the 
+Psychology Licensing Examination” 01 
+Oct. 2024 [Date accessed]  
+ 
+Note: MLA guidelines assume that readers can 
+track down most online sources by entering the 
+author, title, or other identifying information in a 
+search engine or a database. Consequently, MLA 
+does not require a URL in citations for online 
+sources such as websites. However, some 
+instructors still ask for it, so check with your 
+instructor to determine his or her preference.  
+ 
+ 
+ 
+ 
+ 
+Documentation 
+ 
+This document is cross-referenced to a portable 
+document file (PDF) published from this Word 
+document file: How to Prepare for the Georgia 
+Jurisprudence Examination.doc 
+ 
+Server path: 
+https://drwilliamdoverspike.com/files/how_to_pr
+epare_for_the_georgia_jurisprudence_examinatio
+n.pdf 
+ 
+Server file name:  
+how_to_prepare_for_the_georgia_jurisprudence_
+examination.pdf 
+ 
+Website tab: Publications [Student Resources] 
+Link name: 
+Prepare for GA Law Exam 
+ 
+Website tab: Presentations [Student Resources] 
+Link name: 
+Prepare for GA Law Exam 
+ 
+Workshop Presentation Deck: 
+N/A 
+ 
+Webinar Presentation Deck: 
+N/A 
+ 
+Workshop Handouts: 
+N/A 
+ 
+ 
+ 
+ 
+ 
+ 
+Published Oct. 01, 2024  |  Last updated July 1, 2026 
+ 
+Copyright © 2024 by William F. Doverspike, Ph.D. 
+Content last updated 2026. 
+ 
+ 
+The correct citation for this article is Doverspike, W. F. 
+(2024, October 01). How to prepare for the Georgia 
+Jurisprudence 
+Examination. 
+https://drwilliamdoverspike.com/ 
+ 
