@@ -16,7 +16,7 @@
 - Create: `tests/test_question_pool.py`
 - Modify: `gamb_exam/seed.py`
 
-- [ ] **Step 1: Write comprehensive question pool validation tests (`tests/test_question_pool.py`)**
+- [x] **Step 1: Write comprehensive question pool validation tests (`tests/test_question_pool.py`)**
 
 Write unit tests verifying:
 1. `gamb_exam/question_pool.json` exists and parses cleanly.
@@ -30,19 +30,19 @@ Write unit tests verifying:
 9. Semantic check: If stem asks "Who", options do not contain quantities like "hours" or "supervisees".
 10. `seed_database()` correctly imports from `question_pool.json` into SQLite.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_question_pool.py`  
 Expected: FAIL (`FileNotFoundError: gamb_exam/question_pool.json` or empty).
 
-- [ ] **Step 3: Update `gamb_exam/seed.py` to support `question_pool.json`**
+- [x] **Step 3: Update `gamb_exam/seed.py` to support `question_pool.json`**
 
 Update `gamb_exam/seed.py`:
 - `QUESTION_POOL_JSON = Path(__file__).parent / "question_pool.json"`
 - If `QUESTION_POOL_JSON.exists()`, `build_question_records()` loads directly from JSON.
 - Fallback to TSV parser if JSON does not exist.
 
-- [ ] **Step 4: Commit scaffolding**
+- [x] **Step 4: Commit scaffolding**
 
 ```bash
 git add gamb_exam/seed.py tests/test_question_pool.py
@@ -56,21 +56,21 @@ git commit -m "test(pool): add question pool integrity test suite and seed loade
 **Files:**
 - Modify: `gamb_exam/question_pool.json` (generate/update items 1–185)
 
-- [ ] **Step 1: Audit and generate items 1–60 (Batch 1: Licensure Requirements & Board Powers)**
+- [x] **Step 1: Audit and generate items 1–60 (Batch 1: Licensure Requirements & Board Powers)**
 Apply distractor standards to items 1–60 (EPPP, GAMB, oral exam, board appointments, terms, qualifications, postdoctoral hours, out-of-state practice).
 Ensure every distractor responds to the question stem with plausible regulatory alternatives.
 
-- [ ] **Step 2: Audit and generate items 61–120 (Batch 2: Board Rules & Disciplinary Actions)**
+- [x] **Step 2: Audit and generate items 61–120 (Batch 2: Board Rules & Disciplinary Actions)**
 Apply distractor standards to items 61–120 (administrative hearings, subpoena powers, judicial appeals, APA procedures, civil fines, grounds for denial).
 
-- [ ] **Step 3: Audit and generate items 121–185 (Batch 3: Telepsychology & Drug Sanctions)**
+- [x] **Step 3: Audit and generate items 121–185 (Batch 3: Telepsychology & Drug Sanctions)**
 Apply distractor standards to items 121–185 (PSYPACT, telepsychology standards, emergency temporary practice, drug offense sanctions minimum vs. maximum, reinstatement conditions).
 
-- [ ] **Step 4: Verify items 1–185**
+- [x] **Step 4: Verify items 1–185**
 
 Run automated check on items 1–185 to verify 4 distinct options, 1 correct answer, and semantic responsiveness.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/question_pool.json
@@ -84,17 +84,17 @@ git commit -m "feat(pool): audit and curate Licensure & Regulations questions (1
 **Files:**
 - Modify: `gamb_exam/question_pool.json` (update items 186–258)
 
-- [ ] **Step 1: Audit and generate items 186–225 (Batch 4: Supervisory Ratios & Boundaries)**
+- [x] **Step 1: Audit and generate items 186–225 (Batch 4: Supervisory Ratios & Boundaries)**
 Apply distractor standards to items 186–225 (maximum supervisee limits, supervisor qualifications, written supervision plans, evaluation responsibilities, multiple relationships, informed consent).
 
-- [ ] **Step 2: Audit and generate items 226–258 (Batch 5: Sexual Misconduct Criminal Penalties & Mandatory Reporting)**
+- [x] **Step 2: Audit and generate items 226–258 (Batch 5: Sexual Misconduct Criminal Penalties & Mandatory Reporting)**
 Apply distractor standards to items 226–258 (O.C.G.A. § 16-6-5.1 first and second degree improper sexual contact, victim consent not a defense, penalties, reporting colleagues, child abuse reporting § 19-7-5).
 
-- [ ] **Step 3: Verify items 186–258**
+- [x] **Step 3: Verify items 186–258**
 
 Run automated check on items 186–258 to verify option validity and responsiveness.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add gamb_exam/question_pool.json
