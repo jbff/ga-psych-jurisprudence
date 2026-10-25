@@ -1,5 +1,9 @@
 # GA Jurisprudence (GAMB) Study Kit — Audited 2026-10-24
 
+> [!WARNING]
+> **LEGAL & REGULATORY DISCLAIMER**:
+> The study materials, question pools, flashcards, and practice exams contained in this repository are **independently generated study aids** and are **NOT official examination questions** from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State and Provincial Psychology Boards (ASPPB). No guarantee, warranty, or representation is made regarding the accuracy, completeness, timeliness, or utility of these materials, or that studying them will result in a passing score on the Georgia Jurisprudence Examination (GAMB). Use of these materials is entirely at your own risk. The authors and contributors disclaim all liability for any claims, damages, direct or consequential losses, or examination failures arising from the use of or reliance upon these materials.
+
 Exam: **2026-11-06** (PSI, confirmed by J.B.). 50 MCQ, 60 min, closed book, pass = 38/50.  
 Board weighting: Prof Relationships 14 · Licensure & Regulation 13 · Competence 9 · Assessment 6 · Privacy & Confidentiality 5 · Recordkeeping & Fees 3.
 
