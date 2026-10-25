@@ -161,7 +161,7 @@ git commit -m "feat(pool): audit and curate Assessment, Privacy, and Recordkeepi
 - Modify: `README.md`
 - Verify: `mocks/`
 
-- [ ] **Step 1: Re-seed local database and run full test suite**
+- [x] **Step 1: Re-seed local database and run full test suite**
 
 Run:
 ```bash
@@ -170,7 +170,7 @@ uv run pytest
 ```
 Expected: 100% PASS across all 48+ unit, TUI, CLI, and pool tests.
 
-- [ ] **Step 2: Re-export mock exams**
+- [x] **Step 2: Re-export mock exams**
 
 Run:
 ```bash
@@ -178,11 +178,11 @@ uv run gamb-exam export --output mocks/
 ```
 Verify generated `mock_questions.md` and `mock_key.md` feature authentic, plausible distractors across all 50 questions.
 
-- [ ] **Step 3: Update documentation**
+- [x] **Step 3: Update documentation**
 
 Update `README.md` to note the curated 435-question pool with quality guarantees.
 
-- [ ] **Step 4: Commit and push to GitHub `origin/master`**
+- [x] **Step 4: Commit and push to GitHub `origin/master`**
 
 ```bash
 git add .

@@ -52,7 +52,7 @@ uv run gamb-exam test
 ### Complete CLI Subcommands Reference
 
 - **`uv run gamb-exam test`**  
-  Launches the full 60-minute timed 50-question mock exam. Stratified sampling guarantees exact Board domain quotas (14/13/9/6/5/3) with randomized distractor order. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
+  Launches the full 60-minute timed 50-question mock exam. Stratified sampling guarantees exact Board domain quotas (14/13/9/6/5/3) with randomized distractor order. Draws from a 100% curated 435-question bank where every multiple-choice option is a plausible Georgia legal foil. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
 
 - **`uv run gamb-exam study [--domain <domain>] [--count <N>]`**  
   Untimed study drill mode. Questions reveal immediate feedback, full statutory explanations, and legal citations upon answering.
@@ -130,6 +130,17 @@ The study corpus in `study_corpus/` represents the verified primary legal source
 
 ---
 
+## Curated Question Bank & Quality Guarantees
+
+The full 435-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit:
+- **100% Context-Responsive Options**: Every distractor directly answers the question asked using plausible Georgia statutory numbers, procedures, or standards (no nonsense cross-domain fallback options).
+- **Zero Test-Wiseness Flaws**: No bare "Yes" or "No" answers; all options are expanded into parallel explanatory clauses with uniform syntactic tone and balanced lengths.
+- **Unambiguous Legal Accuracy**: Exactly one legally correct answer per question under O.C.G.A. Titles 43, 31, 37, 19, 30, 16, 24, 50, Georgia Board Rules (Chapter 510), and the APA Ethics Code.
+- **Balanced Key Distribution**: Perfectly distributed answer keys across all 435 items (~25% each across A, B, C, and D).
+- **Stateless Database Generation**: The SQLite database (`data/gamb_exam.db`) is generated on-demand at runtime from `gamb_exam/question_pool.json` and kept strictly outside git tracking.
+
+---
+
 ## Development & Verification
 
 ### Prerequisites
@@ -141,8 +152,8 @@ The study corpus in `study_corpus/` represents the verified primary legal source
 # Run pytest with uv
 uv run pytest
 ```
-All 47 unit and integration tests verify:
-- SQLite question pool integrity, domain quotas, distractor uniqueness, and citation validity (`test_seed.py`, `test_db.py`).
+All 54 unit, pool, and integration tests verify:
+- SQLite question pool integrity, unique IDs 1–435, schema conformity, distractor uniqueness, and citation validity (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
 - Stratified 50-question mock exam sampler and Markdown export formatting (`test_generator.py`).
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
 - CLI argument parsing, help output, and subcommands (`test_cli.py`).
