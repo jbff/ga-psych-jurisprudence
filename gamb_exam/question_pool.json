@@ -7,12 +7,12 @@
     "question_text": "How many days must a candidate wait before retaking a failed GAMB exam?",
     "options": {
       "A": "30 days",
-      "B": "15 days",
-      "C": "45 days",
+      "B": "60 days",
+      "C": "90 days",
       "D": "14 days"
     },
     "correct_option": "A",
-    "explanation": "30 days. (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 provides that a candidate who fails the Georgia Jurisprudence Examination (GAMB) must wait at least 30 days before retaking the examination."
   },
   {
     "id": 2,
@@ -23,11 +23,11 @@
     "options": {
       "A": "The Georgia Board oral examination",
       "B": "EPPP (the national licensing exam)",
-      "C": "CPCCC (Comprehensive Psychology Competency Exam)",
+      "C": "Comprehensive Psychology Competency Examination (CPCE)",
       "D": "ABPP Specialty Board Examination"
     },
     "correct_option": "B",
-    "explanation": "EPPP (the national licensing exam). (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 requires passing the Examination for Professional Practice in Psychology (EPPP) prior to taking the Georgia jurisprudence exam (GAMB)."
   },
   {
     "id": 3,
@@ -36,13 +36,13 @@
     "source_citation": "Rule 510-2-.01",
     "question_text": "After passing the EPPP and GAMB, what is the third licensure exam?",
     "options": {
-      "A": "A valid Georgia psychology license",
-      "B": "EPPP (the national licensing exam)",
+      "A": "EPPP Part 2 (Skills)",
+      "B": "The National Psychology Jurisprudence Examination",
       "C": "The Georgia Board oral examination",
-      "D": "December 31 of even-numbered years"
+      "D": "Specialty Board Certification Examination"
     },
     "correct_option": "C",
-    "explanation": "The Georgia Board oral examination. (Rule 510-2-.01)"
+    "explanation": "Under Rule 510-2-.01, after passing the EPPP and the GAMB jurisprudence exam, the final examination requirement for licensure is the Georgia Board Oral Examination."
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "D": "60 days from the denial letter date"
     },
     "correct_option": "D",
-    "explanation": "60 days from the denial letter date. (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 provides that an applicant denied a provisional license has 60 days from the date of the notification letter to petition the Board."
   },
   {
     "id": 5,
@@ -69,10 +69,10 @@
       "A": "30 days",
       "B": "15 days",
       "C": "45 days",
-      "D": "14 days"
+      "D": "60 days"
     },
     "correct_option": "A",
-    "explanation": "30 days. (Rule 510-2-.01)"
+    "explanation": "Under Rule 510-2-.01, an applicant must respond to a Board request for additional information within 30 days or the application may be deemed abandoned."
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
       "D": "Nine members: seven licensed psychologists and two public/consumer members"
     },
     "correct_option": "B",
-    "explanation": "Six members: five licensed psychologists and one public/consumer member. (OCGA 43-39-3; Rule 510-1-.01)"
+    "explanation": "O.C.G.A. § 43-39-3 and Rule 510-1-.01 establish that the Georgia State Board of Examiners of Psychologists consists of six members: five licensed psychologists and one consumer/public member."
   },
   {
     "id": 7,
@@ -99,10 +99,10 @@
       "A": "The Secretary of State",
       "B": "The Attorney General",
       "C": "The Governor",
-      "D": "The Georgia State Board of Examiners of Psychologists"
+      "D": "The President of the Georgia Psychological Association"
     },
     "correct_option": "C",
-    "explanation": "The Governor. (OCGA 43-39-3; Rule 510-1-.01)"
+    "explanation": "O.C.G.A. § 43-39-3 provides that all members of the Georgia State Board of Examiners of Psychologists are appointed by the Governor."
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
       "D": "Five years, serving until successors are appointed"
     },
     "correct_option": "D",
-    "explanation": "Five years, serving until successors are appointed. (OCGA 43-39-3)"
+    "explanation": "O.C.G.A. § 43-39-3 specifies that board members serve five-year terms and until their qualified successors are appointed."
   },
   {
     "id": 9,
@@ -127,12 +127,12 @@
     "question_text": "What immunity do Georgia psychology board members have?",
     "options": {
       "A": "No civil liability for acts performed in good faith in official duties",
-      "B": "Summarily suspend the license if public health/safety/welfare requires",
-      "C": "Six members: five licensed psychologists and one public/consumer member",
-      "D": "APA or CPA accreditation (with exceptions for I/O and international)"
+      "B": "Qualified immunity from criminal prosecution only, with full civil tort liability",
+      "C": "Absolute immunity covering intentional torts and gross negligence in the course of proceedings",
+      "D": "Limited immunity that applies only if the Attorney General pre-approves each regulatory decision"
     },
     "correct_option": "A",
-    "explanation": "No civil liability for acts performed in good faith in official duties. (OCGA 43-39-2)"
+    "explanation": "O.C.G.A. § 43-39-2 provides that Board members have immunity from civil liability for acts performed in good faith in the performance of official duties."
   },
   {
     "id": 10,
@@ -141,13 +141,13 @@
     "source_citation": "OCGA 43-39-5; Rule 510-1-.02",
     "question_text": "How often must the board elect officers?",
     "options": {
-      "A": "12 months from issuance; non-renewable",
+      "A": "Biennially; president and secretary-treasurer",
       "B": "Annually; president and vice-president",
-      "C": "Audience, objectives, presenters, fees",
-      "D": "Apply to the board and obtain a license"
+      "C": "Semi-annually; president and vice-president",
+      "D": "Every five years concurrent with member terms"
     },
     "correct_option": "B",
-    "explanation": "Annually; president and vice-president. (OCGA 43-39-5; Rule 510-1-.02)"
+    "explanation": "O.C.G.A. § 43-39-5 and Rule 510-1-.02 provide that the Board shall elect annually from its members a president and vice-president."
   },
   {
     "id": 11,
@@ -156,13 +156,13 @@
     "source_citation": "OCGA 43-39-5",
     "question_text": "How many regular board meetings are required each year?",
     "options": {
-      "A": "The Governor",
-      "B": "At least 80%",
+      "A": "At least four",
+      "B": "At least two",
       "C": "At least one",
-      "D": "Misdemeanor"
+      "D": "At least six"
     },
     "correct_option": "C",
-    "explanation": "At least one. (OCGA 43-39-5)"
+    "explanation": "O.C.G.A. § 43-39-5 requires the Board to hold at least one regular meeting each year, though additional meetings may be called by the president or division director."
   },
   {
     "id": 12,
@@ -171,13 +171,13 @@
     "source_citation": "OCGA 43-39-7",
     "question_text": "What does 'practice of psychology' require in Georgia?",
     "options": {
-      "A": "EPPP (the national licensing exam)",
-      "B": "The Georgia Board oral examination",
-      "C": "December 31 of even-numbered years",
+      "A": "Completion of an APA-accredited doctoral degree and registered internship only",
+      "B": "A certificate of professional qualification from ASPPB without state registration",
+      "C": "Enrollment in good standing with the Department of Behavioral Health",
       "D": "A valid Georgia psychology license"
     },
     "correct_option": "D",
-    "explanation": "A valid Georgia psychology license. (OCGA 43-39-7)"
+    "explanation": "O.C.G.A. § 43-39-7 mandates that any person who wishes to engage in the practice of psychology in Georgia must obtain a valid license from the Board."
   },
   {
     "id": 13,
@@ -187,12 +187,12 @@
     "question_text": "Who may use the title 'psychologist' in Georgia?",
     "options": {
       "A": "Only persons licensed under Chapter 39 (with limited exceptions)",
-      "B": "Must earn 3 semester hours or 15 CE hours before 4th-6th retakes",
-      "C": "Superior court of the county where the unlicensed person resides",
-      "D": "Final conviction, guilty/nolo plea, or first offender treatment"
+      "B": "Any individual holding a doctoral degree in psychology from an accredited university",
+      "C": "Any professional licensed by the Georgia Composite Board of Professional Counselors",
+      "D": "Any member in good standing of the American Psychological Association"
     },
     "correct_option": "A",
-    "explanation": "Only persons licensed under Chapter 39 (with limited exceptions). (OCGA 43-39-17)"
+    "explanation": "O.C.G.A. § 43-39-17 restricts the use of the title 'psychologist' (or words implying licensure) strictly to individuals licensed under Title 43, Chapter 39, with limited statutory exceptions."
   },
   {
     "id": 14,
@@ -201,13 +201,13 @@
     "source_citation": "OCGA 43-39-1",
     "question_text": "What is 'psychological testing' defined as?",
     "options": {
-      "A": "Test data includes raw/scaled scores, client responses, and notes; test materials refers to manuals, instruments, protocols, and test questions (which must be secured)",
+      "A": "The administration of paper-and-pencil self-report questionnaires for educational placement only",
       "B": "Use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders",
-      "C": "Information and techniques sufficient to substantiate findings, including personal interviews when appropriate",
-      "D": "Purpose, test factors, test-taking abilities, situational/personal/linguistic/cultural differences"
+      "C": "Any clinical intake interview conducted by a licensed behavioral health provider to establish a psychiatric diagnosis",
+      "D": "The non-standardized observation of patient behavior used to design behavioral intervention plans"
     },
     "correct_option": "B",
-    "explanation": "Use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders. (OCGA 43-39-1)"
+    "explanation": "O.C.G.A. § 43-39-1(6) defines 'psychological testing' as the use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders."
   },
   {
     "id": 15,
@@ -216,13 +216,13 @@
     "source_citation": "OCGA 43-39-1",
     "question_text": "What is 'neuropsychological functioning'?",
     "options": {
-      "A": "Judicial or administrative rules governing their roles",
-      "B": "Clarify impact on reliability/validity and limit conclusions",
+      "A": "Medical evaluation of neurological reflexes and electroencephalography",
+      "B": "Neurological disease pathology evaluated exclusively through diagnostic neuroimaging",
       "C": "Psychological manifestations of brain functioning",
-      "D": "Only as required by law or court order"
+      "D": "Cognitive performance measured solely during psychoeducational academic evaluations"
     },
     "correct_option": "C",
-    "explanation": "Psychological manifestations of brain functioning. (OCGA 43-39-1)"
+    "explanation": "O.C.G.A. § 43-39-1(5) defines 'neuropsychological functioning' as psychological manifestations of brain functioning."
   },
   {
     "id": 16,
@@ -231,13 +231,13 @@
     "source_citation": "OCGA 43-39-1",
     "question_text": "What is 'mental abilities' in Georgia law?",
     "options": {
-      "A": "Manuals, instruments, protocols, and test questions/stimuli; excludes test data",
-      "B": "Make reasonable efforts to maintain integrity and security consistent with law",
-      "C": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings",
+      "A": "Innate academic aptitudes measured exclusively by standardized school achievement tests",
+      "B": "General cognitive intelligence quotients determined under standardized medical protocols",
+      "C": "Neurological motor functions and sensory processing evaluated in hospital settings",
       "D": "Abilities that are psychological in nature and related to the practice of psychology"
     },
     "correct_option": "D",
-    "explanation": "Abilities that are psychological in nature and related to the practice of psychology. (OCGA 43-39-1)"
+    "explanation": "O.C.G.A. § 43-39-1(4) defines 'mental abilities' as abilities that are psychological in nature and related to the practice of psychology."
   },
   {
     "id": 17,
@@ -247,12 +247,12 @@
     "question_text": "What degree is required for Georgia psychology licensure?",
     "options": {
       "A": "Doctoral degree from an APA/CPA accredited program in applied psychology (or equivalent)",
-      "B": "Active duty or separation leave within 24 months of retirement or 12 months of separation",
-      "C": "After three unsuccessful attempts, 3 semester hours or 15 CE hours before 4th-6th retakes",
-      "D": "Division Director, Professional Licensing Boards Division, Office of Secretary of State"
+      "B": "Master's degree in clinical psychology from a regionally accredited institution plus three years of experience",
+      "C": "Specialist in Education (Ed.S.) degree in school psychology with 1,500 hours of post-graduate internship",
+      "D": "Doctoral degree in any behavioral science field regardless of program accreditation"
     },
     "correct_option": "A",
-    "explanation": "Doctoral degree from an APA/CPA accredited program in applied psychology (or equivalent). (OCGA 43-39-8; Rule 510-2-.04)"
+    "explanation": "O.C.G.A. § 43-39-8 and Rule 510-2-.04 require a doctoral degree from an APA/CPA accredited program in applied psychology (clinical, counseling, school, I/O) or an equivalent program meeting Board criteria."
   },
   {
     "id": 18,
@@ -267,7 +267,7 @@
       "D": "At least four years"
     },
     "correct_option": "B",
-    "explanation": "At least two years. (OCGA 43-39-8)"
+    "explanation": "O.C.G.A. § 43-39-8 requires applicants to have at least two years of full-time qualifying supervised experience in psychology (internship plus postdoctoral SWE)."
   },
   {
     "id": 19,
@@ -276,13 +276,13 @@
     "source_citation": "OCGA 43-39-8",
     "question_text": "What happens if an applicant fails a board exam within the preceding six months?",
     "options": {
-      "A": "Annually; president and vice-president",
-      "B": "12 months from issuance; non-renewable",
+      "A": "The applicant is permanently barred from taking any future Georgia licensing examinations",
+      "B": "The applicant may be granted a temporary practice permit under supervision",
       "C": "Ineligible for licensure at that time",
-      "D": "Set by ASPPB for each administration"
+      "D": "The applicant is granted an automatic administrative waiver upon written petition"
     },
     "correct_option": "C",
-    "explanation": "Ineligible for licensure at that time. (OCGA 43-39-8)"
+    "explanation": "O.C.G.A. § 43-39-8 states that an applicant who has failed a board licensing examination within the preceding six months is ineligible for licensure at that time."
   },
   {
     "id": 20,
@@ -291,13 +291,13 @@
     "source_citation": "OCGA 43-39-8",
     "question_text": "Is good moral character required for licensure?",
     "options": {
-      "A": "No, unless specifically authorized under an emergency judicial order",
-      "B": "Only if full written disclosure is provided to and countersigned by the client in advance",
-      "C": "No; requires prior formal peer review and clearance by the Board ethics committee",
+      "A": "No; licensure is determined solely by degree accreditation and examination passing scores",
+      "B": "Only if the applicant has disclosed a prior criminal conviction or disciplinary action",
+      "C": "No; good moral character evaluations were eliminated under administrative simplification rules",
       "D": "Yes"
     },
     "correct_option": "D",
-    "explanation": "Yes. (OCGA 43-39-8)"
+    "explanation": "O.C.G.A. § 43-39-8 explicitly specifies good moral character as a mandatory statutory prerequisite for psychology licensure in Georgia."
   },
   {
     "id": 21,
@@ -312,7 +312,7 @@
       "D": "2,000 hours"
     },
     "correct_option": "A",
-    "explanation": "1,500 hours. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 requires a minimum of 1,500 hours of postdoctoral supervised work experience (SWE)."
   },
   {
     "id": 22,
@@ -321,13 +321,13 @@
     "source_citation": "Rule 510-2-.05",
     "question_text": "How long may the postdoctoral SWE extend?",
     "options": {
-      "A": "No less than 1 months and no more than 24 months",
+      "A": "No less than 6 months and no more than 12 months",
       "B": "No less than 11 months and no more than 24 months",
-      "C": "No less than 2 months and no more than 24 months",
-      "D": "No less than 3 months and no more than 24 months"
+      "C": "No less than 12 months and no more than 36 months",
+      "D": "No less than 18 months and no more than 30 months"
     },
     "correct_option": "B",
-    "explanation": "No less than 11 months and no more than 24 months. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 specifies that postdoctoral supervised work experience must be completed in no less than 11 months and no more than 24 months."
   },
   {
     "id": 23,
@@ -339,10 +339,10 @@
       "A": "Minimum 1,000 hours",
       "B": "Minimum 1,500 hours",
       "C": "Minimum 500 hours",
-      "D": "Minimum 1,750 hours"
+      "D": "Minimum 750 hours"
     },
     "correct_option": "C",
-    "explanation": "Minimum 500 hours. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 requires that the 1,500-hour postdoctoral SWE include a minimum of 500 hours of direct client/patient involvement."
   },
   {
     "id": 24,
@@ -351,13 +351,13 @@
     "source_citation": "Rule 510-2-.05",
     "question_text": "What must the SWE weekly log contain?",
     "options": {
-      "A": "Advance plans to transfer records and protect confidentiality if withdrawing from practice",
-      "B": "Only if it is not clinically contraindicated and the resulting arrangement is not exploitative",
-      "C": "Until three years after age of majority, or at least seven years after last service, whichever is later",
+      "A": "Billing codes, client insurance records, and DSM-5 diagnostic formulations",
+      "B": "Detailed psychotherapy process notes, treatment transcripts, and fee ledgers",
+      "C": "Supervisor personal evaluations, audio recordings of sessions, and client outcome metrics",
       "D": "Activities, total hours, client/patient involvement hours, and individual supervision hours"
     },
     "correct_option": "D",
-    "explanation": "Activities, total hours, client/patient involvement hours, and individual supervision hours. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 requires trainees to maintain a weekly log documenting activities, total hours, client/patient involvement hours, and individual supervision hours."
   },
   {
     "id": 25,
@@ -372,7 +372,7 @@
       "D": "At least 2,500 hours"
     },
     "correct_option": "A",
-    "explanation": "At least 2,000 hours. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 requires a predoctoral internship of at least 2,000 hours completed within 11 to 24 months."
   },
   {
     "id": 26,
@@ -384,10 +384,10 @@
       "A": "1,000 hours (I/O interns exempt)",
       "B": "500 hours (I/O interns exempt)",
       "C": "1,500 hours (I/O interns exempt)",
-      "D": "1,750 hours (I/O interns exempt)"
+      "D": "750 hours (I/O interns exempt)"
     },
     "correct_option": "B",
-    "explanation": "500 hours (I/O interns exempt). (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 requires at least 500 hours of direct client contact during the predoctoral internship for clinical and counseling interns; I/O interns are exempt from this direct contact requirement."
   },
   {
     "id": 27,
@@ -396,13 +396,13 @@
     "source_citation": "Rule 510-2-.05",
     "question_text": "What percentage of internship supervision must be by licensed psychologists?",
     "options": {
-      "A": "The Governor",
-      "B": "At least one",
+      "A": "At least 50%",
+      "B": "At least 65%",
       "C": "At least 80%",
-      "D": "Misdemeanor"
+      "D": "100%"
     },
     "correct_option": "C",
-    "explanation": "At least 80%. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 mandates that at least 80% of internship supervision must be provided by licensed psychologists."
   },
   {
     "id": 28,
@@ -417,7 +417,7 @@
       "D": "No more than three"
     },
     "correct_option": "D",
-    "explanation": "No more than three. (Rule 510-2-.05)"
+    "explanation": "Rule 510-2-.05 and Rule 510-5-.06 restrict supervisors from supervising more than three interns, fellows, or psychological assistants concurrently without prior Board approval."
   },
   {
     "id": 29,
@@ -427,12 +427,12 @@
     "question_text": "How long is a Georgia temporary psychology license valid?",
     "options": {
       "A": "12 months from issuance; non-renewable",
-      "B": "11 months from issuance; non-renewable",
-      "C": "6 months from issuance; non-renewable",
-      "D": "18 months from issuance; non-renewable"
+      "B": "6 months from issuance; renewable once",
+      "C": "24 months from issuance; non-renewable",
+      "D": "3 months from issuance; non-renewable"
     },
     "correct_option": "A",
-    "explanation": "12 months from issuance; non-renewable. (OCGA 43-39-14; Rule 510-9-.01)"
+    "explanation": "O.C.G.A. § 43-39-14 and Rule 510-9-.01 establish that a temporary license is valid for 12 months from issuance and is non-renewable."
   },
   {
     "id": 30,
@@ -447,7 +447,7 @@
       "D": "36 months unless Board grants exception; non-renewable"
     },
     "correct_option": "B",
-    "explanation": "24 months unless Board grants exception; non-renewable. (OCGA 43-39-14; Rule 510-9-.02)"
+    "explanation": "O.C.G.A. § 43-39-14 and Rule 510-9-.02 specify that a provisional license is valid for 24 months (unless an exception is granted by the Board) and is non-renewable."
   },
   {
     "id": 31,
@@ -456,13 +456,13 @@
     "source_citation": "Rule 510-2-.01",
     "question_text": "What happens if a provisional license holder fails the oral exam?",
     "options": {
-      "A": "Acts violating Board Code of Ethics or Code of Conduct, including by supervisees",
-      "B": "Application, 40 CE hours, plus passing Georgia Jurisprudence and Oral Examinations",
+      "A": "The provisional license is immediately revoked with no opportunity for re-examination",
+      "B": "The applicant must retake both the EPPP and the jurisprudence exam before oral re-examination",
       "C": "May take a second Full Board Exam after six months; a second failure means denial",
-      "D": "Only if at least one employee/officer holds a current Georgia psychology license"
+      "D": "The provisional license is automatically extended for 12 months without further examination"
     },
     "correct_option": "C",
-    "explanation": "May take a second Full Board Exam after six months; a second failure means denial. (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 provides that if a provisional license holder fails the oral exam, they may take a second Full Board Exam after a six-month waiting period; a second failure results in license denial."
   },
   {
     "id": 32,
@@ -471,13 +471,13 @@
     "source_citation": "Rule 510-7-.03",
     "question_text": "How long is an inactive license valid?",
     "options": {
-      "A": "Minimum 3 full-time academic years plus internship before doctoral degree",
-      "B": "After all doctoral degree requirements including internship are completed",
-      "C": "Refuse to grant/renew, suspend, revoke, discipline, or place on probation",
+      "A": "Up to two years, after which the license automatically lapses and is canceled",
+      "B": "Up to five years, provided the licensee completes 20 hours of continuing education annually",
+      "C": "Exactly four years, during which the licensee may practice under supervision",
       "D": "Indefinite, but the licensee may not practice or use the title in Georgia"
     },
     "correct_option": "D",
-    "explanation": "Indefinite, but the licensee may not practice or use the title in Georgia. (Rule 510-7-.03)"
+    "explanation": "Rule 510-7-.03 provides that inactive license status is indefinite, but the individual may not practice psychology or use the title 'psychologist' in Georgia while inactive."
   },
   {
     "id": 33,
@@ -487,12 +487,12 @@
     "question_text": "How frequently must Georgia psychology licenses be renewed?",
     "options": {
       "A": "Biennially",
-      "B": "At least 2",
-      "C": "1,500 hours",
-      "D": "Misdemeanor"
+      "B": "Annually",
+      "C": "Triennially",
+      "D": "Quadrennially"
     },
     "correct_option": "A",
-    "explanation": "Biennially. (OCGA 43-39-12; Rule 510-7-.01)"
+    "explanation": "O.C.G.A. § 43-39-12 and Rule 510-7-.01 state that Georgia psychology licenses are renewed biennially (every two years)."
   },
   {
     "id": 34,
@@ -501,13 +501,13 @@
     "source_citation": "Rule 510-7-.01",
     "question_text": "When do Georgia psychology licenses expire?",
     "options": {
-      "A": "A valid Georgia psychology license",
+      "A": "June 30 of odd-numbered years",
       "B": "December 31 of even-numbered years",
-      "C": "The Georgia Board oral examination",
-      "D": "EPPP (the national licensing exam)"
+      "C": "December 31 of odd-numbered years",
+      "D": "June 30 of even-numbered years"
     },
     "correct_option": "B",
-    "explanation": "December 31 of even-numbered years. (Rule 510-7-.01)"
+    "explanation": "Rule 510-7-.01 specifies that Georgia psychology licenses expire on December 31 of even-numbered years."
   },
   {
     "id": 35,
@@ -517,12 +517,12 @@
     "question_text": "How many days after expiration may a license be renewed with a late fee?",
     "options": {
       "A": "30 days",
-      "B": "45 days",
+      "B": "60 days",
       "C": "31 days",
-      "D": "15 days"
+      "D": "90 days"
     },
     "correct_option": "C",
-    "explanation": "31 days. (Rule 510-7-.01)"
+    "explanation": "Rule 510-7-.01 provides a late renewal period of 31 days (January 1 through January 31 following expiration) during which a license may be renewed with a penalty fee."
   },
   {
     "id": 36,
@@ -531,13 +531,13 @@
     "source_citation": "Rule 510-7-.01",
     "question_text": "May a psychologist practice after December 31 of an even year before renewal?",
     "options": {
-      "A": "Yes, in emergency situations where failure to act poses imminent danger to life or safety",
-      "B": "Yes, after a mandatory waiting period of two years following service termination",
-      "C": "Yes, for temporary practice not exceeding 30 calendar days per calendar year",
+      "A": "Yes, during the 31-day late penalty period as long as a renewal application is pending",
+      "B": "Yes, provided the psychologist practices exclusively in an exempt state or federal agency",
+      "C": "Yes, for up to 90 days following expiration while continuing education audits are completed",
       "D": "No; license must be in active status"
     },
     "correct_option": "D",
-    "explanation": "No; license must be in active status. (Rule 510-7-.01)"
+    "explanation": "Rule 510-7-.01 provides that a psychologist may not practice after December 31 of an even year unless their license is active; practicing while expired constitutes unlicensed practice."
   },
   {
     "id": 37,
@@ -547,12 +547,12 @@
     "question_text": "How many CE credits are required biennially for renewal?",
     "options": {
       "A": "40 credits, including 6 in professional ethics",
-      "B": "Not less than two years, 1,500 hours each year",
-      "C": "Respect confidentiality and proprietary rights",
-      "D": "May constitute basis for disciplinary sanctions"
+      "B": "30 credits, including 4 in professional ethics",
+      "C": "50 credits, including 10 in professional ethics",
+      "D": "20 credits, including 3 in professional ethics"
     },
     "correct_option": "A",
-    "explanation": "40 credits, including 6 in professional ethics. (Rule 510-8-.01)"
+    "explanation": "Rule 510-8-.01 requires 40 continuing education credits per biennium, including a minimum of 6 credits in professional ethics."
   },
   {
     "id": 38,
@@ -561,13 +561,13 @@
     "source_citation": "Rule 510-8-.01",
     "question_text": "How many ethics CE credits are required per biennium?",
     "options": {
-      "A": "Minimum 3, maximum 8 licensed participants",
+      "A": "3 credits, which may be satisfied via self-paced asynchronous reading",
       "B": "6 credits, in-person or synchronous webinar",
-      "C": "40 credits, including 6 in professional ethics",
-      "D": "Respect confidentiality and proprietary rights"
+      "C": "10 credits, including at least 5 in Georgia mental health jurisprudence",
+      "D": "4 credits, earned through any APA-approved continuing education provider"
     },
     "correct_option": "B",
-    "explanation": "6 credits, in-person or synchronous webinar. (Rule 510-8-.01)"
+    "explanation": "Rule 510-8-.01 mandates that the 6 ethics CE credits must be earned through in-person workshops or live synchronous interactive webinars."
   },
   {
     "id": 39,
@@ -576,13 +576,13 @@
     "source_citation": "Rule 510-8-.01",
     "question_text": "If licensed in the first year of the biennium, how many CE credits are required?",
     "options": {
-      "A": "3 per day, up to 6 per biennium",
-      "B": "Not necessarily for clinical work",
+      "A": "40 credits, including 6 in professional ethics",
+      "B": "10 credits, with no specific ethics requirement",
       "C": "20 credits, including 3 ethics",
-      "D": "Seven days after execution"
+      "D": "None; first-time licensees are fully exempt from the initial renewal cycle"
     },
     "correct_option": "C",
-    "explanation": "20 credits, including 3 ethics. (Rule 510-8-.01)"
+    "explanation": "Rule 510-8-.01 states that an individual licensed during the first year of the biennium must complete 20 CE credits, including 3 credits in ethics, for the initial renewal."
   },
   {
     "id": 40,
@@ -591,13 +591,13 @@
     "source_citation": "Rule 510-8-.01",
     "question_text": "If licensed in the second year of the biennium, how many CE credits are required for first renewal?",
     "options": {
-      "A": "1099",
-      "B": "W-2",
-      "C": "20",
+      "A": "20 credits, including 3 ethics credits",
+      "B": "10 credits, with no ethics requirement",
+      "C": "6 credits in professional ethics only",
       "D": "None"
     },
     "correct_option": "D",
-    "explanation": "None. (Rule 510-8-.01)"
+    "explanation": "Rule 510-8-.01 provides that licensees licensed during the second year of the biennium are exempt from continuing education requirements for their first renewal."
   },
   {
     "id": 41,
@@ -612,7 +612,7 @@
       "D": "Three years"
     },
     "correct_option": "A",
-    "explanation": "Four years. (Rule 510-8-.03)"
+    "explanation": "Rule 510-8-.03 requires licensees to maintain documentation of completed continuing education activities for four years."
   },
   {
     "id": 42,
@@ -621,13 +621,13 @@
     "source_citation": "Rule 510-8-.03",
     "question_text": "What happens if an audited licensee fails to document CE?",
     "options": {
-      "A": "License will not be renewed; may obtain credits within 30 days",
+      "A": "The license is immediately revoked with no cure period permitted",
       "B": "License will not be renewed; may obtain credits within 31 days",
-      "C": "License will not be renewed; may obtain credits within 45 days",
-      "D": "License will not be renewed; may obtain credits within 15 days"
+      "C": "The licensee is placed on indefinite probationary status without fine",
+      "D": "The licensee must re-take the EPPP examination within 6 months"
     },
     "correct_option": "B",
-    "explanation": "License will not be renewed; may obtain credits within 31 days. (Rule 510-8-.03)"
+    "explanation": "Rule 510-8-.03 states that if an audited licensee fails to document CE, the license will not be renewed, but the licensee may obtain credits within 31 days (during late renewal)."
   },
   {
     "id": 43,
@@ -639,10 +639,10 @@
       "A": "Within two years",
       "B": "Within three years",
       "C": "Within one year",
-      "D": "Within four years"
+      "D": "Within six months"
     },
     "correct_option": "C",
-    "explanation": "Within one year. (Rule 510-7-.02)"
+    "explanation": "Rule 510-7-.02 allows reinstatement of a lapsed license without re-examination if application is made within one year (12 months) of lapse."
   },
   {
     "id": 44,
@@ -652,12 +652,12 @@
     "question_text": "What is required for reinstatement within one year of lapse?",
     "options": {
       "A": "Application, 40 CE hours within one year, and penalty fee",
-      "B": "Application, 40 CE hours within three years, and penalty fee",
-      "C": "Application, 40 CE hours within four years, and penalty fee",
+      "B": "Application, 20 CE hours within two years, and penalty fee",
+      "C": "Application, retaking the jurisprudence exam, and penalty fee",
       "D": "Application, 40 CE hours within two years, and penalty fee"
     },
     "correct_option": "D",
-    "explanation": "Application, 40 CE hours within two years, and penalty fee. (Rule 510-7-.02)"
+    "explanation": "Rule 510-7-.02 requires an application, documentation of 40 CE hours completed within the preceding two years, and payment of the penalty fee for reinstatement within one year of lapse."
   },
   {
     "id": 45,
@@ -667,12 +667,12 @@
     "question_text": "What is required for reinstatement more than 12 months after lapse?",
     "options": {
       "A": "Application, 40 CE hours, plus passing Georgia Jurisprudence and Oral Examinations",
-      "B": "May take a second Full Board Exam after six months; a second failure means denial",
-      "C": "Acts violating Board Code of Ethics or Code of Conduct, including by supervisees",
-      "D": "Only if at least one employee/officer holds a current Georgia psychology license"
+      "B": "Re-taking and passing all three licensure examinations: EPPP, Jurisprudence, and Oral",
+      "C": "Submission of an application and payment of all accrued back renewal fees with no re-examination",
+      "D": "Completion of 1,500 additional hours of postdoctoral supervised work experience"
     },
     "correct_option": "A",
-    "explanation": "Application, 40 CE hours, plus passing Georgia Jurisprudence and Oral Examinations. (Rule 510-7-.02)"
+    "explanation": "Rule 510-7-.02 specifies that reinstatement more than 12 months after lapse requires an application, 40 CE hours, and re-examination on both the Georgia Jurisprudence and Oral examinations."
   },
   {
     "id": 46,
@@ -681,13 +681,13 @@
     "source_citation": "OCGA 43-39-13",
     "question_text": "List one statutory ground for license revocation in Georgia psychology.",
     "options": {
-      "A": "The Georgia Composite Board of Professional Counselors, Social Workers, and Marriage and Family Therapists has sole authority under Chapter 10A",
+      "A": "Failure to join or maintain membership in the Georgia Psychological Association",
       "B": "Fraud/deception in applying or passing exam; felony conviction; false/assumed name; habitual intemperance; negligence; violation of 43-1-19",
-      "C": "American Red Cross, ICISF, APA/Georgia Psychological Association Disaster Response Network, or other nationally recognized networks",
-      "D": "When under direct supervision and responsibility of a licensed psychologist, without representing themselves as psychologists"
+      "C": "Refusing to provide pro bono psychological services to indigent clients annually",
+      "D": "Charging fees exceeding standard Medicare or commercial insurance reimbursement rates"
     },
     "correct_option": "B",
-    "explanation": "Fraud/deception in applying or passing exam; felony conviction; false/assumed name; habitual intemperance; negligence; violation of 43-1-19. (OCGA 43-39-13)"
+    "explanation": "O.C.G.A. § 43-39-13 establishes statutory grounds for revocation or suspension, including fraud/deception, felony conviction, practicing under a false name, habitual intemperance, gross negligence, or violating O.C.G.A. § 43-1-19."
   },
   {
     "id": 47,
@@ -696,13 +696,13 @@
     "source_citation": "OCGA 43-39-13",
     "question_text": "What may the Board require if it believes a licensee is impaired?",
     "options": {
-      "A": "The licensing board, division director, or appropriate prosecuting attorney",
-      "B": "Anyone holding any state-issued license/permit/certification for an occupation",
+      "A": "Mandatory surrender of license within 48 hours without administrative hearing",
+      "B": "Immediate referral to the county district attorney for criminal competency assessment",
       "C": "Mental/physical exam by Board-designated practitioner; production of records",
-      "D": "Incompetence, neglect of duty, malfeasance, or crime involving moral turpitude"
+      "D": "Re-examination on the national EPPP examination within 30 days"
     },
     "correct_option": "C",
-    "explanation": "Mental/physical exam by Board-designated practitioner; production of records. (OCGA 43-39-13)"
+    "explanation": "O.C.G.A. § 43-39-13 empowers the Board to require an impaired licensee to submit to a mental or physical examination by a Board-designated practitioner and to produce medical records."
   },
   {
     "id": 48,
@@ -711,13 +711,13 @@
     "source_citation": "OCGA 43-39-13",
     "question_text": "What may the Board do if a licensee refuses a directed impairment exam?",
     "options": {
-      "A": "No civil liability for acts performed in good faith in official duties",
-      "B": "Six members: five licensed psychologists and one public/consumer member",
-      "C": "APA or CPA accreditation (with exceptions for I/O and international)",
+      "A": "Fine the licensee up to $10,000 without further board action",
+      "B": "Issue a public reprimand while allowing unrestricted practice to continue",
+      "C": "Automatically convert the license to active emeritus status",
       "D": "Summarily suspend the license if public health/safety/welfare requires"
     },
     "correct_option": "D",
-    "explanation": "Summarily suspend the license if public health/safety/welfare requires. (OCGA 43-39-13)"
+    "explanation": "O.C.G.A. § 43-39-13 authorizes the Board to summarily suspend a license if a licensee refuses a directed examination and public health, safety, or welfare requires emergency action."
   },
   {
     "id": 49,
@@ -727,12 +727,12 @@
     "question_text": "Are impairment exam results privileged from board proceedings?",
     "options": {
       "A": "No; admissible despite any privilege claim",
-      "B": "Yes, if approved by a majority vote of the Georgia State Board of Examiners",
-      "C": "Yes, provided all identifying client information is completely redacted or disguised",
-      "D": "Yes, under the physician-psychologist collaborative practice exception"
+      "B": "Yes; protected by the statutory psychologist-patient privilege under OCGA 43-39-16",
+      "C": "Yes; admissible only if the licensee explicitly waives physician-patient confidentiality in writing",
+      "D": "Yes; privileged unless a superior court judge issues an ex parte unsealing order"
     },
     "correct_option": "A",
-    "explanation": "No; admissible despite any privilege claim. (OCGA 43-39-13)"
+    "explanation": "O.C.G.A. § 43-39-13 provides that results of Board-ordered impairment examinations are admissible in Board disciplinary proceedings notwithstanding any claim of privilege."
   },
   {
     "id": 50,
@@ -747,7 +747,7 @@
       "D": "30 days"
     },
     "correct_option": "B",
-    "explanation": "10 days. (OCGA 43-1-27; OCGA 16-13-111)"
+    "explanation": "O.C.G.A. § 43-1-27 and O.C.G.A. § 16-13-111 require a licensee to notify the licensing board in writing within 10 days of any felony or drug conviction."
   },
   {
     "id": 51,
@@ -756,13 +756,13 @@
     "source_citation": "OCGA 16-13-111",
     "question_text": "What is the minimum license suspension for a first controlled-substance/marijuana conviction?",
     "options": {
-      "A": "Not less than two months",
-      "B": "Not less than four months",
+      "A": "Not less than one month",
+      "B": "Not less than six months",
       "C": "Not less than three months",
-      "D": "Not less than five months"
+      "D": "Not less than twelve months"
     },
     "correct_option": "C",
-    "explanation": "Not less than three months. (OCGA 16-13-111)"
+    "explanation": "O.C.G.A. § 16-13-111 provides that a first conviction for a controlled substance or marijuana offense results in a license suspension of not less than three months."
   },
   {
     "id": 52,
@@ -771,13 +771,13 @@
     "source_citation": "OCGA 16-13-111",
     "question_text": "What happens to the license upon a second or subsequent drug conviction?",
     "options": {
-      "A": "30 days",
-      "B": "31 days",
-      "C": "10 days",
+      "A": "Mandatory suspension for a minimum of one year",
+      "B": "Administrative probation with required random drug screening",
+      "C": "Public reprimand and payment of a $1,000 civil fine",
       "D": "Revoked"
     },
     "correct_option": "D",
-    "explanation": "Revoked. (OCGA 16-13-111)"
+    "explanation": "O.C.G.A. § 16-13-111 mandates that upon a second or subsequent drug conviction, the professional license must be revoked by operation of law."
   },
   {
     "id": 53,
@@ -787,12 +787,12 @@
     "question_text": "What is the penalty for failure to notify the licensing authority of a drug conviction?",
     "options": {
       "A": "Grounds for revocation",
-      "B": "Non-renewable 6 months",
-      "C": "Grounds for discipline",
-      "D": "Licensed psychologists"
+      "B": "A mandatory $500 civil fine with no license action",
+      "C": "Automatic 30-day administrative suspension",
+      "D": "Requirement to complete 10 additional ethics CE credits"
     },
     "correct_option": "A",
-    "explanation": "Grounds for revocation. (OCGA 16-13-111)"
+    "explanation": "O.C.G.A. § 16-13-111 specifies that failure of a licensed individual to notify the licensing authority of a conviction within 10 days is itself independent grounds for revocation."
   },
   {
     "id": 54,
@@ -801,13 +801,13 @@
     "source_citation": "OCGA 16-13-114",
     "question_text": "When does the controlled-substance sanction article apply?",
     "options": {
-      "A": "The division director under the board's seal",
+      "A": "Offenses committed on or after January 1, 1980",
       "B": "Offenses committed on or after July 1, 1990",
-      "C": "Lapsed; reinstatement is at Board discretion",
-      "D": "Immunity from any civil or criminal liability"
+      "C": "Offenses committed on or after July 1, 2000",
+      "D": "Offenses committed on or after January 1, 2010"
     },
     "correct_option": "B",
-    "explanation": "Offenses committed on or after July 1, 1990. (OCGA 16-13-114)"
+    "explanation": "O.C.G.A. § 16-13-114 provides that Article 4 of Chapter 13 (licensed-person drug sanctions) applies to offenses committed on or after July 1, 1990."
   },
   {
     "id": 55,
@@ -816,13 +816,13 @@
     "source_citation": "OCGA 43-1-19",
     "question_text": "For what crimes may a Georgia professional board deny/revoke a license?",
     "options": {
-      "A": "State Board of Examiners of Psychologists",
-      "B": "Apply to the board and obtain a license",
+      "A": "Any misdemeanor traffic violation or infraction",
+      "B": "Only federal civil rights violations adjudicated in federal court",
       "C": "Felony or crime involving moral turpitude",
-      "D": "Offenses committed on or after July 1, 1990"
+      "D": "Non-violent misdemeanors not punishable by incarceration"
     },
     "correct_option": "C",
-    "explanation": "Felony or crime involving moral turpitude. (OCGA 43-1-19)"
+    "explanation": "O.C.G.A. § 43-1-19 authorizes professional licensing boards to discipline or revoke a license upon conviction of any felony or any crime involving moral turpitude."
   },
   {
     "id": 56,
@@ -831,13 +831,13 @@
     "source_citation": "OCGA 43-1-19",
     "question_text": "Does a felony include out-of-state felonies for Georgia board purposes?",
     "options": {
-      "A": "Only for endorsement applicants with at least ten years of continuous active licensure",
-      "B": "No; requires prior formal peer review and clearance by the Board ethics committee",
-      "C": "No, unless the Board waives the requirement upon formal written application",
+      "A": "No; Georgia professional licensing boards have jurisdiction only over felonies committed within Georgia",
+      "B": "Only if the out-of-state felony resulted in actual incarceration exceeding one year",
+      "C": "Only if the other state's licensing board has already revoked the professional license",
       "D": "Yes, if the offense would be a felony in Georgia"
     },
     "correct_option": "D",
-    "explanation": "Yes, if the offense would be a felony in Georgia. (OCGA 43-1-19)"
+    "explanation": "O.C.G.A. § 43-1-19 provides that conviction of a felony in another state constitutes grounds for disciplinary action if the underlying acts would constitute a felony under Georgia law."
   },
   {
     "id": 57,
@@ -847,12 +847,12 @@
     "question_text": "What disciplinary finding standard applies to the Georgia psychology board?",
     "options": {
       "A": "Majority of the entire board",
-      "B": "Only endorsement applicants",
-      "C": "500 hours (I/O interns exempt)",
-      "D": "Practice psychology in Georgia"
+      "B": "Unanimous vote of all board members present",
+      "C": "Two-thirds vote of a quorum of board members",
+      "D": "Simple majority of board members present at the hearing"
     },
     "correct_option": "A",
-    "explanation": "Majority of the entire board. (OCGA 43-1-19; Rule 510-6-.02)"
+    "explanation": "O.C.G.A. § 43-1-19 and Rule 510-6-.02 require a finding by a majority of the entire Board to impose disciplinary sanctions."
   },
   {
     "id": 58,
@@ -861,13 +861,13 @@
     "source_citation": "OCGA 43-1-19; OCGA 43-39-13",
     "question_text": "What sanctions may the Board impose?",
     "options": {
-      "A": "Indefinite, but the licensee may not practice or use the title in Georgia",
+      "A": "Criminal misdemeanor incarceration up to 12 months in county jail",
       "B": "Refuse to grant/renew, suspend, revoke, discipline, or place on probation",
-      "C": "Reported by the facility to the State Board of Examiners of Psychologists",
-      "D": "After all doctoral degree requirements including internship are completed"
+      "C": "Imposition of punitive damages payable directly to complaining clients",
+      "D": "Issuance of permanent arrest warrants executed by the Division Director"
     },
     "correct_option": "B",
-    "explanation": "Refuse to grant/renew, suspend, revoke, discipline, or place on probation. (OCGA 43-1-19; OCGA 43-39-13)"
+    "explanation": "O.C.G.A. § 43-1-19 and § 43-39-13 list authorized administrative sanctions: refuse to grant or renew, suspend, revoke, publicly or privately reprimand, or place on probation."
   },
   {
     "id": 59,
@@ -876,13 +876,13 @@
     "source_citation": "Rule 510-5-.11",
     "question_text": "What must a psychologist report to the Board within 30 days?",
     "options": {
-      "A": "Superior court of the county where the division director maintains offices (Fulton County)",
-      "B": "Someone who passed all written exams and completed all requirements except SWE and oral exam",
+      "A": "Any change in office hourly fee schedules or accepted insurance networks",
+      "B": "Initiation of an informal client fee dispute or refund negotiation",
       "C": "Sanctions/discipline by any lawful authority; voluntary surrender of any psychology license",
-      "D": "Statements must be based on professional knowledge and not imply a professional relationship"
+      "D": "The hiring of any new non-clinical administrative office personnel"
     },
     "correct_option": "C",
-    "explanation": "Sanctions/discipline by any lawful authority; voluntary surrender of any psychology license. (Rule 510-5-.11)"
+    "explanation": "Rule 510-5-.11 requires psychologists to report in writing within 30 days any disciplinary sanctions imposed by any lawful licensing authority or the voluntary surrender of any psychology license."
   },
   {
     "id": 60,
@@ -891,13 +891,13 @@
     "source_citation": "OCGA 43-39-16",
     "question_text": "What privilege applies to psychologist-client communications in Georgia?",
     "options": {
-      "A": "Husband-wife communications",
-      "B": "After obtaining permission",
-      "C": "Risks to privacy and limits of confidentiality",
+      "A": "Physician-patient privilege under common law",
+      "B": "Work-product doctrine applicable to civil litigation",
+      "C": "Qualified peer review immunity under hospital regulations",
       "D": "Same as attorney-client privilege"
     },
     "correct_option": "D",
-    "explanation": "Same as attorney-client privilege. (OCGA 43-39-16)"
+    "explanation": "O.C.G.A. § 43-39-16 provides that confidential communications between a licensed psychologist and client are placed upon the same basis as those provided by law between attorney and client."
   },
   {
     "id": 61,
@@ -907,12 +907,12 @@
     "question_text": "Which Georgia evidence code section lists psychologist-patient privilege?",
     "options": {
       "A": "OCGA 24-9-21(6)",
-      "B": "After obtaining permission",
-      "C": "Husband-wife communications",
-      "D": "Same as attorney-client privilege"
+      "B": "OCGA 24-9-21(1)",
+      "C": "OCGA 24-9-21(3)",
+      "D": "OCGA 24-9-21(5)"
     },
     "correct_option": "A",
-    "explanation": "OCGA 24-9-21(6). (OCGA 24-9-21)"
+    "explanation": "O.C.G.A. § 24-9-21(6) (and modern § 24-5-501(a)(6)) explicitly establishes the psychologist-patient privilege in the Georgia Evidence Code."
   },
   {
     "id": 62,
@@ -921,13 +921,13 @@
     "source_citation": "OCGA 24-9-21",
     "question_text": "What other professionals' communications are privileged under OCGA 24-9-21?",
     "options": {
-      "A": "Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent",
+      "A": "Attorneys, clergy, and certified public accountants only",
       "B": "Psychiatrist-patient; licensed clinical social worker, clinical nurse specialist psych/mental health, marriage and family therapist, professional counselor during psychotherapeutic relationship",
-      "C": "Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary",
-      "D": "At outset and thereafter as new circumstances warrant, unless not feasible or contraindicated"
+      "C": "Physical therapists, occupational therapists, speech-language pathologists, and medical assistants",
+      "D": "Registered nurses, hospital administrators, medical records clerks, and case managers"
     },
     "correct_option": "B",
-    "explanation": "Psychiatrist-patient; licensed clinical social worker, clinical nurse specialist psych/mental health, marriage and family therapist, professional counselor during psychotherapeutic relationship. (OCGA 24-9-21)"
+    "explanation": "O.C.G.A. § 24-9-21 provides confidential communication privileges for psychiatrists, LCSWs, psychiatric CNSs, MFTs, and LPCs during psychotherapeutic relationships, on par with attorney-client and psychologist-patient privilege."
   },
   {
     "id": 63,
@@ -936,13 +936,13 @@
     "source_citation": "OCGA 43-39-19",
     "question_text": "What is the misdemeanor penalty for unlicensed practice of psychology?",
     "options": {
-      "A": "Fine $250-$1,000 and/or imprisonment up to 12 months",
-      "B": "Fine $500-$1,000 and/or imprisonment up to 12 months",
+      "A": "Fine $500-$5,000 and/or imprisonment up to 24 months",
+      "B": "Fine $1,000-$5,000 and mandatory community service of 100 hours",
       "C": "Fine $100-$1,000 and/or imprisonment up to 12 months",
-      "D": "Fine $1,000-$1,000 and/or imprisonment up to 12 months"
+      "D": "Fine not to exceed $500 and no possibility of imprisonment"
     },
     "correct_option": "C",
-    "explanation": "Fine $100-$1,000 and/or imprisonment up to 12 months. (OCGA 43-39-19)"
+    "explanation": "O.C.G.A. § 43-39-19 provides that any person practicing psychology without a valid license is guilty of a misdemeanor punishable by a fine of $100 to $1,000, imprisonment up to 12 months, or both."
   },
   {
     "id": 64,
@@ -951,13 +951,13 @@
     "source_citation": "OCGA 43-39-18",
     "question_text": "Who may bring an injunction for unlicensed practice?",
     "options": {
-      "A": "10 years",
-      "B": "At least 2",
-      "C": "Biennially",
+      "A": "The Georgia Psychological Association",
+      "B": "Any aggrieved consumer or client",
+      "C": "The Georgia Department of Public Health",
       "D": "The Board"
     },
     "correct_option": "D",
-    "explanation": "The Board. (OCGA 43-39-18)"
+    "explanation": "O.C.G.A. § 43-39-18 provides that the State Board of Examiners of Psychologists may bring an action to enjoin any person from engaging in the unlicensed practice of psychology."
   },
   {
     "id": 65,
@@ -967,12 +967,12 @@
     "question_text": "Must the Board prove no adequate remedy at law to get an injunction?",
     "options": {
       "A": "No",
-      "B": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "C": "Yes, after a mandatory waiting period of two years following service termination",
-      "D": "Yes, provided all identifying client information is completely redacted or disguised"
+      "B": "Yes, the Board must demonstrate irreparable harm and no adequate remedy at law",
+      "C": "Yes, but only in petitions filed against non-resident corporate entities",
+      "D": "Yes, unless the Attorney General certifies an immediate criminal emergency"
     },
     "correct_option": "A",
-    "explanation": "No. (OCGA 43-39-18; OCGA 43-1-20)"
+    "explanation": "O.C.G.A. § 43-39-18 and § 43-1-20 provide that the Board is not required to show that there is no adequate remedy at law to obtain an injunction against unlicensed practice."
   },
   {
     "id": 66,
@@ -981,13 +981,13 @@
     "source_citation": "OCGA 43-39-18",
     "question_text": "Where is an unlicensed practice injunction filed?",
     "options": {
-      "A": "Incompetence, neglect of duty, malfeasance, or crime involving moral turpitude",
+      "A": "Superior Court of Fulton County exclusively in all instances",
       "B": "County where the person resides or where corporation maintains principal office",
-      "C": "Acts violating Board Code of Ethics or Code of Conduct, including by supervisees",
-      "D": "Anyone holding any state-issued license/permit/certification for an occupation"
+      "C": "The municipal court of the city where the unauthorized service occurred",
+      "D": "The Georgia Court of Appeals by direct original petition"
     },
     "correct_option": "B",
-    "explanation": "County where the person resides or where corporation maintains principal office. (OCGA 43-39-18)"
+    "explanation": "O.C.G.A. § 43-39-18 provides that an injunction action is filed in the superior court of the county where the person resides or where the corporation maintains its principal office."
   },
   {
     "id": 67,
@@ -996,13 +996,13 @@
     "source_citation": "Rule 510-10-.02",
     "question_text": "May a business entity imply it practices psychology?",
     "options": {
-      "A": "Acts violating Board Code of Ethics or Code of Conduct, including by supervisees",
-      "B": "County where the person resides or where corporation maintains principal office",
+      "A": "Yes, provided the corporate charter is registered with the Secretary of State as a professional corporation",
+      "B": "Yes, if at least 51% of corporate stock is held by licensed healthcare providers of any discipline",
       "C": "Only if at least one employee/officer holds a current Georgia psychology license",
-      "D": "May take a second Full Board Exam after six months; a second failure means denial"
+      "D": "No; business entities are strictly prohibited from offering psychological services under any circumstances"
     },
     "correct_option": "C",
-    "explanation": "Only if at least one employee/officer holds a current Georgia psychology license. (Rule 510-10-.02)"
+    "explanation": "Rule 510-10-.02 provides that a firm, partnership, or corporation may not imply it renders psychological services unless at least one partner, officer, or employee holds a current Georgia psychology license."
   },
   {
     "id": 68,
@@ -1011,13 +1011,13 @@
     "source_citation": "OCGA 43-39-7",
     "question_text": "What activities are exempt from licensure under OCGA 43-39-7?",
     "options": {
-      "A": "The Georgia Composite Board of Professional Counselors, Social Workers, and Marriage and Family Therapists has sole authority under Chapter 10A",
-      "B": "Fraud/deception in applying or passing exam; felony conviction; false/assumed name; habitual intemperance; negligence; violation of 43-1-19",
-      "C": "American Red Cross, ICISF, APA/Georgia Psychological Association Disaster Response Network, or other nationally recognized networks",
+      "A": "Any master's-level therapist billing third-party insurance payers independently",
+      "B": "Out-of-state psychologists providing permanent remote teletherapy to Georgia residents",
+      "C": "Hospital pastoral counselors providing psychotropic medication management",
       "D": "School psychologists in accredited schools (no fees); teaching/research (no direct services); state employees pre-1996/1997; religious orgs; doctoral psychologists under licensed supervision"
     },
     "correct_option": "D",
-    "explanation": "School psychologists in accredited schools (no fees); teaching/research (no direct services); state employees pre-1996/1997; religious orgs; doctoral psychologists under licensed supervision. (OCGA 43-39-7)"
+    "explanation": "O.C.G.A. § 43-39-7 sets forth explicit statutory exemptions: school psychologists in accredited schools (without private fees), university teaching/research (without direct services), grandfathered state employees, religious practitioners, and supervised postdoctoral trainees."
   },
   {
     "id": 69,
@@ -1027,12 +1027,12 @@
     "question_text": "May an unlicensed person supervise psychological services for training?",
     "options": {
       "A": "No",
-      "B": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "C": "Yes, in emergency situations where failure to act poses imminent danger to life or safety",
-      "D": "Yes, if authorized under an explicit court order or judicial subpoena"
+      "B": "Yes, provided the supervisor holds a master's degree in clinical mental health counseling",
+      "C": "Yes, in institutional hospital settings accredited by the Joint Commission",
+      "D": "Yes, if authorized by the training director and approved by an institutional review board"
     },
     "correct_option": "A",
-    "explanation": "No. (Rule 510-10-.01)"
+    "explanation": "Rule 510-10-.01 strictly prohibits an unlicensed person from supervising psychological services for training or licensure purposes."
   },
   {
     "id": 70,
@@ -1041,13 +1041,13 @@
     "source_citation": "Rule 510-10-.01",
     "question_text": "May an unlicensed person perform psychological services as an independent contractor for a licensed psychologist?",
     "options": {
-      "A": "Yes, provided notice is given to the Secretary of State within 14 calendar days",
+      "A": "Yes, provided a formal 1099 independent contractor agreement is submitted to the Board",
       "B": "No",
-      "C": "Yes, for temporary practice not exceeding 30 calendar days per calendar year",
-      "D": "Yes, in emergency situations where failure to act poses imminent danger to life or safety"
+      "C": "Yes, provided the unlicensed person carries independent professional liability insurance",
+      "D": "Yes, for up to 30 calendar days per calendar year under remote supervision"
     },
     "correct_option": "B",
-    "explanation": "No. (Rule 510-10-.01)"
+    "explanation": "Rule 510-10-.01 prohibits an unlicensed person from rendering psychological services as an independent contractor for a licensed psychologist; psychological services by unlicensed staff may only be performed as a bona fide employee under direct supervision."
   },
   {
     "id": 71,
@@ -1056,13 +1056,13 @@
     "source_citation": "OCGA 43-39-20",
     "question_text": "Who is immune from civil/criminal liability for good-faith board testimony or peer-review reports?",
     "options": {
-      "A": "Non-renewable 6 months",
-      "B": "Grounds for discipline",
+      "A": "All citizens of Georgia regardless of profession or relationship to the proceedings",
+      "B": "Unlicensed complainants and adverse parties in contested administrative hearings",
       "C": "Licensed psychologists",
-      "D": "Grounds for revocation"
+      "D": "Only state employees subpoenaed by the Division Director"
     },
     "correct_option": "C",
-    "explanation": "Licensed psychologists. (OCGA 43-39-20)"
+    "explanation": "O.C.G.A. § 43-39-20 provides immunity from civil or criminal liability to licensed psychologists who provide good-faith testimony to the Board or submit peer review reports."
   },
   {
     "id": 72,
@@ -1071,13 +1071,13 @@
     "source_citation": "OCGA 43-39-20",
     "question_text": "Are supervising/monitoring psychologists liable to the monitored psychologist?",
     "options": {
-      "A": "Yes, provided full written informed consent is documented in the client record",
-      "B": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "C": "Yes, if authorized under an explicit court order or judicial subpoena",
+      "A": "Yes, under vicarious liability and common law respondeat superior doctrine",
+      "B": "Yes, if the monitored psychologist suffers economic loss from board action",
+      "C": "Only if the supervising psychologist receives monetary compensation for supervision",
       "D": "No, if acting in good faith without fraud or malice"
     },
     "correct_option": "D",
-    "explanation": "No, if acting in good faith without fraud or malice. (OCGA 43-39-20)"
+    "explanation": "O.C.G.A. § 43-39-20 provides that a psychologist appointed by the Board to monitor or supervise another licensee is not liable to the monitored psychologist for acts performed in good faith without fraud or malice."
   },
   {
     "id": 73,
@@ -1087,12 +1087,12 @@
     "question_text": "What is the licensure option for out-of-state licensees?",
     "options": {
       "A": "Licensure by endorsement",
-      "B": "Reserved (repealed 1986)",
-      "C": "Written or oral or both",
-      "D": "ASPPB IPC and PSYPACT TAP"
+      "B": "Licensure by automatic grandfathering",
+      "C": "Licensure by reciprocal waiver without application",
+      "D": "Licensure by provisional emergency declaration"
     },
     "correct_option": "A",
-    "explanation": "Licensure by endorsement. (Rule 510-3-.01)"
+    "explanation": "Rule 510-3-.01 provides for licensure by endorsement for applicants licensed in other jurisdictions who meet Georgia statutory and rule equivalency standards."
   },
   {
     "id": 74,
@@ -1101,13 +1101,13 @@
     "source_citation": "Rule 510-3-.02",
     "question_text": "How many years of licensure qualifies an applicant as a Senior Psychologist for endorsement?",
     "options": {
-      "A": "1 year",
+      "A": "5 years",
       "B": "10 years",
-      "C": "2 years",
-      "D": "3 years"
+      "C": "15 years",
+      "D": "20 years"
     },
     "correct_option": "B",
-    "explanation": "10 years. (Rule 510-3-.02)"
+    "explanation": "Rule 510-3-.02 defines a 'Senior Psychologist' for endorsement as an applicant with at least 10 years of continuous active licensure in good standing in another jurisdiction."
   },
   {
     "id": 75,
@@ -1116,13 +1116,13 @@
     "source_citation": "Rule 510-3-.02",
     "question_text": "What CPQ holders are deemed to meet Georgia licensure requirements?",
     "options": {
-      "A": "Someone who passed all written exams and completed all requirements except SWE and oral exam",
-      "B": "Statements must be based on professional knowledge and not imply a professional relationship",
+      "A": "ASPPB CPQ holders are granted immediate active Georgia licensure without examination",
+      "B": "CPQ holders must complete 1,500 additional hours of postdoctoral Georgia supervision",
       "C": "ASPPB Certificate of Professional Qualification holders who pass jurisprudence and oral exams",
-      "D": "Sanctions/discipline by any lawful authority; voluntary surrender of any psychology license"
+      "D": "CPQ holders must re-take and pass the national EPPP examination at the current pass point"
     },
     "correct_option": "C",
-    "explanation": "ASPPB Certificate of Professional Qualification holders who pass jurisprudence and oral exams. (Rule 510-3-.02)"
+    "explanation": "Rule 510-3-.02 provides that holders of the ASPPB Certificate of Professional Qualification (CPQ) meet basic doctoral and experience requirements but must pass the Georgia Jurisprudence and Oral Examinations."
   },
   {
     "id": 76,
@@ -1131,13 +1131,13 @@
     "source_citation": "OCGA 19-7-5",
     "question_text": "Who is a mandated reporter of child abuse in Georgia?",
     "options": {
-      "A": "Only in specified low-risk settings or where permitted by law",
-      "B": "Another appropriate professional to deal with emergency needs",
-      "C": "Abuse other than by accidental means, neglect, or exploitation",
+      "A": "Only sworn law enforcement officers and hospital emergency physicians",
+      "B": "Only school principals and public child welfare caseworkers",
+      "C": "Only licensed physicians, dentists, and certified emergency medical technicians",
       "D": "Any person required under 19-7-5(c), including psychologists"
     },
     "correct_option": "D",
-    "explanation": "Any person required under 19-7-5(c), including psychologists. (OCGA 19-7-5)"
+    "explanation": "O.C.G.A. § 19-7-5(c) lists mandated reporters of child abuse in Georgia, explicitly including psychologists, school psychologists, and other healthcare/mental health professionals."
   },
   {
     "id": 77,
@@ -1147,12 +1147,12 @@
     "question_text": "What is 'child' under Georgia child abuse law?",
     "options": {
       "A": "Any person under 18 years of age",
-      "B": "Any person under 1 year of age",
-      "C": "Any person under 2 years of age",
-      "D": "Any person under 3 years of age"
+      "B": "Any person under 16 years of age",
+      "C": "Any person under 14 years of age",
+      "D": "Any person under 21 years of age enrolled in secondary school"
     },
     "correct_option": "A",
-    "explanation": "Any person under 18 years of age. (OCGA 19-7-5)"
+    "explanation": "O.C.G.A. § 19-7-5 defines a 'child' as any person under 18 years of age."
   },
   {
     "id": 78,
@@ -1161,13 +1161,13 @@
     "source_citation": "OCGA 19-7-5",
     "question_text": "What is 'child abuse' under Georgia law?",
     "options": {
-      "A": "Nature of services, that they are mandated, and limits of confidentiality",
+      "A": "Reasonable corporal punishment administered by a parent or legal guardian",
       "B": "Physical injury or death inflicted by a parent/custodian/other caretaker",
-      "C": "Contact involving intimate parts of either person for sexual gratification",
-      "D": "Content, goals/objectives, stipends/benefits, completion requirements"
+      "C": "Normal childhood conflicts between siblings that cause emotional distress",
+      "D": "Truancy or willful refusal to attend public school without parental consent"
     },
     "correct_option": "B",
-    "explanation": "Physical injury or death inflicted by a parent/custodian/other caretaker. (OCGA 19-7-5)"
+    "explanation": "O.C.G.A. § 19-7-5 defines 'child abuse' as non-accidental physical injury, sexual abuse/exploitation, or severe neglect inflicted by a parent, guardian, or caretaker."
   },
   {
     "id": 79,
@@ -1176,13 +1176,13 @@
     "source_citation": "OCGA 30-5-4",
     "question_text": "Who must report suspected abuse/neglect/exploitation of a disabled adult or elder person?",
     "options": {
-      "A": "Knowingly engaging in sexual contact (excluding sexually explicit conduct) with a psychotherapy client; punished as high and aggravated misdemeanor (felony 1-5 years on 2nd conviction)",
-      "B": "Age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law",
+      "A": "Only adult protective services caseworkers and nursing home directors",
+      "B": "Only probate judges and designated county law enforcement officers",
       "C": "Mandated child abuse reporters, therapists, day-care personnel, coroners, EMS personnel, clergy, facility staff, financial institution employees, and any other person may report",
-      "D": "Knowingly engaging in sexually explicit conduct with a person who is the subject of actual or purported psychotherapy treatment or counseling"
+      "D": "Only hospital medical staff attending to physical injuries in an emergency department"
     },
     "correct_option": "C",
-    "explanation": "Mandated child abuse reporters, therapists, day-care personnel, coroners, EMS personnel, clergy, facility staff, financial institution employees, and any other person may report. (OCGA 30-5-4)"
+    "explanation": "O.C.G.A. § 30-5-4 specifies mandated reporters for abuse, neglect, or exploitation of disabled adults or elder persons, including child abuse reporters, mental health providers, medical staff, clergy, and facility personnel."
   },
   {
     "id": 80,
@@ -1191,13 +1191,13 @@
     "source_citation": "OCGA 30-5-4",
     "question_text": "To whom must reports of disabled adult/elder abuse be made?",
     "options": {
-      "A": "When no longer needed, not likely to benefit, or being harmed; also if threatened",
-      "B": "Best interests of clients/patients, with consent and subject to law/contract",
-      "C": "The staff person notifies the person in charge or designee, who then reports",
+      "A": "Exclusively to the Georgia composite medical board within 24 hours",
+      "B": "The Department of Community Health and the Secretary of State",
+      "C": "The Georgia State Board of Examiners of Psychologists",
       "D": "Adult protection agency and appropriate law enforcement or prosecuting attorney"
     },
     "correct_option": "D",
-    "explanation": "Adult protection agency and appropriate law enforcement or prosecuting attorney. (OCGA 30-5-4)"
+    "explanation": "O.C.G.A. § 30-5-4 requires reports of abuse, neglect, or exploitation of a disabled adult or elder person to be made to the Adult Protection Agency (DFCS/DAS) and appropriate law enforcement or prosecuting attorney."
   },
   {
     "id": 81,
@@ -1207,12 +1207,12 @@
     "question_text": "Are reports of disabled adult/elder abuse immune from liability?",
     "options": {
       "A": "Yes, good-faith reporters are immune from civil/criminal liability",
-      "B": "No; strictly prohibited under Georgia statutory law and Board rules",
-      "C": "Only after completing 20 additional hours of continuing education in professional ethics",
-      "D": "No, unless specifically authorized under an emergency judicial order"
+      "B": "No; reporters may be sued for defamation if the investigation substantiates no abuse",
+      "C": "Only if the reporter obtained an advance written opinion from legal counsel",
+      "D": "Immune from civil damages only, but subject to criminal misdemeanor prosecution"
     },
     "correct_option": "A",
-    "explanation": "Yes, good-faith reporters are immune from civil/criminal liability. (OCGA 30-5-4)"
+    "explanation": "O.C.G.A. § 30-5-4 provides that any person who in good faith makes a report of suspected elder or disabled adult abuse has immunity from any civil or criminal liability."
   },
   {
     "id": 82,
@@ -1221,13 +1221,13 @@
     "source_citation": "OCGA 16-6-5.1",
     "question_text": "What is 'sexual contact' under OCGA 16-6-5.1?",
     "options": {
-      "A": "Nature of services, that they are mandated, and limits of confidentiality",
+      "A": "Non-physical verbal comments or sexual innuendos delivered during a therapy session",
       "B": "Contact involving intimate parts of either person for sexual gratification",
-      "C": "Physical injury or death inflicted by a parent/custodian/other caretaker",
-      "D": "Any other person with reasonable cause to believe abuse/neglect/exploitation"
+      "C": "Any consensual social dating relationship established two years after termination",
+      "D": "Standard physical touch involved in taking vital signs or neurological reflexes"
     },
     "correct_option": "B",
-    "explanation": "Contact involving intimate parts of either person for sexual gratification. (OCGA 16-6-5.1)"
+    "explanation": "O.C.G.A. § 16-6-5.1 defines 'sexual contact' as any contact involving the intimate parts of either person for the purpose of sexual gratification."
   },
   {
     "id": 83,
@@ -1236,13 +1236,13 @@
     "source_citation": "OCGA 16-6-5.1",
     "question_text": "What is 'psychotherapy' under OCGA 16-6-5.1?",
     "options": {
-      "A": "When it could impair objectivity, competence, or effectiveness, or risk exploitation or harm",
-      "B": "Protect confidentiality and not withhold data from competent professionals seeking reanalysis",
+      "A": "Academic instruction and tutoring in psychology delivered in university settings",
+      "B": "General life coaching and organizational consulting for corporate executives",
       "C": "Professional treatment or counseling of a mental or emotional illness, symptom, or condition",
-      "D": "Refrain from the role if it could impair objectivity or expose others to harm/exploitation"
+      "D": "Career counseling and vocational interest inventory administration"
     },
     "correct_option": "C",
-    "explanation": "Professional treatment or counseling of a mental or emotional illness, symptom, or condition. (OCGA 16-6-5.1)"
+    "explanation": "O.C.G.A. § 16-6-5.1 defines 'psychotherapy' as the professional treatment, assessment, or counseling of a mental or emotional illness, symptom, or condition."
   },
   {
     "id": 84,
@@ -1251,13 +1251,13 @@
     "source_citation": "OCGA 16-6-5.1",
     "question_text": "What are 'intimate parts' under OCGA 16-6-5.1?",
     "options": {
-      "A": "Cooperate to serve clients effectively and appropriately",
-      "B": "Do not publish previously published data as original",
-      "C": "The student, except under exceptional circumstances",
+      "A": "Hands, wrists, forearms, shoulders, and neck",
+      "B": "Face, hair, ears, and temples",
+      "C": "Feet, ankles, and lower legs below the knee",
       "D": "Genital area, groin, inner thighs, buttocks, or breasts"
     },
     "correct_option": "D",
-    "explanation": "Genital area, groin, inner thighs, buttocks, or breasts. (OCGA 16-6-5.1)"
+    "explanation": "O.C.G.A. § 16-6-5.1 defines 'intimate parts' as the genital area, groin, inner thighs, buttocks, or breasts."
   },
   {
     "id": 85,
@@ -1267,12 +1267,12 @@
     "question_text": "What is a 'health service provider psychologist'?",
     "options": {
       "A": "Licensed psychologist meeting training/experience criteria who delivers direct preventive, assessment, and therapeutic services to impaired or at-risk individuals",
-      "B": "Order by a health service provider psychologist for care/treatment in a medical facility, excluding meds, nursing assessments, or medical procedures",
-      "C": "A written report detailing apprehension circumstances, which becomes part of the clinical record with the certificate or court order",
-      "D": "Telepsychology must adhere to the exact same legal, ethical, and clinical standards as in-person psychological practice"
+      "B": "Any licensed psychologist who maintains active commercial insurance panel contracts",
+      "C": "A psychologist employed exclusively as a hospital chief executive officer or administrator",
+      "D": "A researcher conducting clinical psychopharmacology trials in an academic medical center"
     },
     "correct_option": "A",
-    "explanation": "Licensed psychologist meeting training/experience criteria who delivers direct preventive, assessment, and therapeutic services to impaired or at-risk individuals. (OCGA 31-7-160)"
+    "explanation": "O.C.G.A. § 31-7-160 defines a 'health service provider psychologist' as a licensed psychologist meeting training and experience standards who provides direct preventive, assessment, or therapeutic services to impaired or at-risk individuals."
   },
   {
     "id": 86,
@@ -1281,13 +1281,13 @@
     "source_citation": "OCGA 31-7-160",
     "question_text": "What is a 'psychologist's order'?",
     "options": {
-      "A": "Licensed psychologist meeting training/experience criteria who delivers direct preventive, assessment, and therapeutic services to impaired or at-risk individuals",
+      "A": "A prescription for Schedule II controlled psychotropic substances",
       "B": "Order by a health service provider psychologist for care/treatment in a medical facility, excluding meds, nursing assessments, or medical procedures",
-      "C": "A written report detailing apprehension circumstances, which becomes part of the clinical record with the certificate or court order",
-      "D": "Telepsychology must adhere to the exact same legal, ethical, and clinical standards as in-person psychological practice"
+      "C": "A judicial mandate issued by a superior court ordering psychiatric commitment",
+      "D": "A directive instructing registered nurses to perform surgical diagnostic procedures"
     },
     "correct_option": "B",
-    "explanation": "Order by a health service provider psychologist for care/treatment in a medical facility, excluding meds, nursing assessments, or medical procedures. (OCGA 31-7-160)"
+    "explanation": "O.C.G.A. § 31-7-160 defines a 'psychologist's order' as an order for care, treatment, or diagnostic assessment in a medical facility, expressly excluding medication orders, nursing assessments, or invasive medical procedures."
   },
   {
     "id": 87,
@@ -1296,13 +1296,13 @@
     "source_citation": "OCGA 31-7-162",
     "question_text": "How many hours of supervised health-service experience are required?",
     "options": {
-      "A": "Not less than three years, 1,500 hours each year",
-      "B": "Not less than four years, 1,500 hours each year",
+      "A": "Not less than one year, 1,000 hours total",
+      "B": "Not less than three years, 2,000 hours each year",
       "C": "Not less than two years, 1,500 hours each year",
-      "D": "Not less than five years, 1,500 hours each year"
+      "D": "Not less than four years, 1,200 hours each year"
     },
     "correct_option": "C",
-    "explanation": "Not less than two years, 1,500 hours each year. (OCGA 31-7-162)"
+    "explanation": "O.C.G.A. § 31-7-162 requires an applicant for health service provider status to have not less than two years of full-time supervised experience in health service psychology (at least 1,500 hours each year)."
   },
   {
     "id": 88,
@@ -1311,13 +1311,13 @@
     "source_citation": "OCGA 31-7-162",
     "question_text": "How many supportive recommendation letters are required for health service provider status?",
     "options": {
-      "A": "Maximum 6 per biennium for two 3-hour workshops",
-      "B": "May constitute basis for disciplinary sanctions",
-      "C": "Maximum 12 per biennium for two 6-hour workshops",
+      "A": "One letter from an APA-accredited doctoral program director",
+      "B": "Three letters from licensed psychiatrists with active hospital admitting privileges",
+      "C": "Four letters from members of the Georgia State Board of Examiners",
       "D": "Two from health service providers in psychology"
     },
     "correct_option": "D",
-    "explanation": "Two from health service providers in psychology. (OCGA 31-7-162)"
+    "explanation": "O.C.G.A. § 31-7-162 requires two supportive letters of recommendation from health service providers in psychology."
   },
   {
     "id": 89,
@@ -1327,12 +1327,12 @@
     "question_text": "Must health service provider experience include inpatient work?",
     "options": {
       "A": "A substantial portion must be in an inpatient setting",
-      "B": "Live online interactive video conferences in real time",
-      "C": "Take reasonable steps to correct or minimize the misuse",
-      "D": "Current active Georgia license or PSYPACT authorization"
+      "B": "No; all experience may be completed in private outpatient independent practice",
+      "C": "Only if the psychologist intends to prescribe psychoactive medications",
+      "D": "Inpatient work is strictly prohibited during predoctoral and postdoctoral training"
     },
     "correct_option": "A",
-    "explanation": "A substantial portion must be in an inpatient setting. (OCGA 31-7-162)"
+    "explanation": "O.C.G.A. § 31-7-162 requires that a substantial portion of the qualifying health-service experience be completed in an inpatient facility setting."
   },
   {
     "id": 90,
@@ -1341,13 +1341,13 @@
     "source_citation": "OCGA 31-7-161",
     "question_text": "Who must be designated responsible for medical aspects of a patient admitted by a psychologist?",
     "options": {
-      "A": "I/O fellows",
+      "A": "The hospital risk management officer",
       "B": "A physician",
-      "C": "72 hours",
-      "D": "Annually"
+      "C": "The clinical nurse specialist",
+      "D": "The supervising psychologist"
     },
     "correct_option": "B",
-    "explanation": "A physician. (OCGA 31-7-161)"
+    "explanation": "O.C.G.A. § 31-7-161 requires that when a patient is admitted by a psychologist to a healthcare facility, a physician must be designated as responsible for all medical aspects of the patient's care."
   },
   {
     "id": 91,
@@ -1356,13 +1356,13 @@
     "source_citation": "OCGA 31-7-161",
     "question_text": "May an RN or LPN execute a psychologist's order?",
     "options": {
-      "A": "Only when practicing under the direct supervision of a licensed physician or psychiatrist",
-      "B": "Only for endorsement applicants with at least ten years of continuous active licensure",
+      "A": "No; nurses may only execute orders issued directly by licensed physicians",
+      "B": "Only after obtaining secondary written approval from the hospital ethics board",
       "C": "Yes; they may confer with the psychologist",
-      "D": "No, unless specifically authorized under an emergency judicial order"
+      "D": "Only in designated psychiatric emergency departments during night shifts"
     },
     "correct_option": "C",
-    "explanation": "Yes; they may confer with the psychologist. (OCGA 31-7-161)"
+    "explanation": "O.C.G.A. § 31-7-161 authorizes registered nurses and licensed practical nurses to execute psychologist orders within their scope of practice, conferring with the psychologist as needed."
   },
   {
     "id": 92,
@@ -1371,13 +1371,13 @@
     "source_citation": "OCGA 31-7-165",
     "question_text": "When must denial/removal of health service provider staff privileges be reported?",
     "options": {
-      "A": "Refuse to grant/renew, suspend, revoke, discipline, or place on probation",
-      "B": "Minimum 3 full-time academic years plus internship before doctoral degree",
-      "C": "Indefinite, but the licensee may not practice or use the title in Georgia",
+      "A": "Within 180 days to the American Psychological Association Ethics Committee",
+      "B": "Within 60 days to the county medical society and district attorney",
+      "C": "Privileges actions are internal hospital matters and need not be reported",
       "D": "Reported by the facility to the State Board of Examiners of Psychologists"
     },
     "correct_option": "D",
-    "explanation": "Reported by the facility to the State Board of Examiners of Psychologists. (OCGA 31-7-165)"
+    "explanation": "O.C.G.A. § 31-7-165 requires medical facilities to report the denial, restriction, or revocation of health service provider staff privileges to the State Board of Examiners of Psychologists."
   },
   {
     "id": 93,
@@ -1392,7 +1392,7 @@
       "D": "12 hours"
     },
     "correct_option": "A",
-    "explanation": "48 hours. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 requires that a physician personally examine the individual within the 48 hours immediately preceding the execution of an involuntary admission certificate."
   },
   {
     "id": 94,
@@ -1401,13 +1401,13 @@
     "source_citation": "OCGA 37-3-41",
     "question_text": "How long is a physician's involuntary-treatment certificate valid?",
     "options": {
-      "A": "Seven days after issuance",
+      "A": "48 hours after execution",
       "B": "Seven days after execution",
-      "C": "Chapters 510-4 and 510-5",
-      "D": "At least one year prior"
+      "C": "14 days after execution",
+      "D": "30 days after execution"
     },
     "correct_option": "B",
-    "explanation": "Seven days after execution. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 provides that a physician's involuntary admission certificate expires seven days after its date of execution."
   },
   {
     "id": 95,
@@ -1422,7 +1422,7 @@
       "D": "24 hours"
     },
     "correct_option": "C",
-    "explanation": "72 hours. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 requires a peace officer who receives a physician's certificate to take the person into custody within 72 hours."
   },
   {
     "id": 96,
@@ -1431,13 +1431,13 @@
     "source_citation": "OCGA 37-3-41",
     "question_text": "How many affiants are required for a court order for involuntary examination if no unexpired physician certificate?",
     "options": {
-      "A": "No more than three",
-      "B": "3 for current biennium",
-      "C": "At least one year prior",
+      "A": "At least one person",
+      "B": "At least three persons",
+      "C": "At least four persons",
       "D": "At least two persons"
     },
     "correct_option": "D",
-    "explanation": "At least two persons. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 provides that a court order for involuntary examination without a physician certificate requires affidavits from at least two persons."
   },
   {
     "id": 97,
@@ -1452,7 +1452,7 @@
       "D": "12 hours"
     },
     "correct_option": "A",
-    "explanation": "48 hours. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 requires that the affiants for a court order have personally observed the individual within the preceding 48 hours."
   },
   {
     "id": 98,
@@ -1461,13 +1461,13 @@
     "source_citation": "OCGA 37-3-41",
     "question_text": "How long is a court order for involuntary examination valid?",
     "options": {
-      "A": "Chapters 510-4 and 510-5",
+      "A": "48 hours after issuance",
       "B": "Seven days after issuance",
-      "C": "Seven days after execution",
-      "D": "At least one year prior"
+      "C": "14 days after issuance",
+      "D": "30 days after issuance"
     },
     "correct_option": "B",
-    "explanation": "Seven days after issuance. (OCGA 37-3-41)"
+    "explanation": "O.C.G.A. § 37-3-41 specifies that a court order for involuntary examination expires seven days after its date of issuance."
   },
   {
     "id": 99,
@@ -1476,13 +1476,13 @@
     "source_citation": "APA 1.01 / Rule 510-4-.02",
     "question_text": "What must psychologists do if they learn of misuse of their work?",
     "options": {
-      "A": "Current Georgia or equivalent license; not under disciplinary order",
-      "B": "Correct via correction, retraction, erratum, or other appropriate means",
+      "A": "Immediately file a civil tort suit for intellectual property infringement",
+      "B": "Report the misuser to local criminal law enforcement authorities within 24 hours",
       "C": "Take reasonable steps to correct or minimize misuse/misrepresentation",
-      "D": "Unique concerns: technology used, boundaries, response procedures, risks"
+      "D": "Resign immediately from all professional associations and academic positions"
     },
     "correct_option": "C",
-    "explanation": "Take reasonable steps to correct or minimize misuse/misrepresentation. (APA 1.01 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 1.01 (adopted in Rule 510-4-.02) requires psychologists who learn of misuse or misrepresentation of their work to take reasonable steps to correct or minimize it."
   },
   {
     "id": 100,
@@ -1491,13 +1491,13 @@
     "source_citation": "APA 1.02 / Rule 510-4-.02",
     "question_text": "What should psychologists do when ethics conflict with law?",
     "options": {
-      "A": "Education, training, supervised experience, consultation, study, or professional experience",
-      "B": "Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties",
-      "C": "Attempt informal resolution with the individual if appropriate and confidentiality permits",
+      "A": "Ethics always supersede law; disobey the law regardless of legal consequence",
+      "B": "Immediately file an emergency constitutional injunction in federal district court",
+      "C": "Disregard ethical standards entirely without acknowledging the ethical commitment",
       "D": "Make known commitment to Ethics Code and attempt to resolve; if unresolvable, may follow law"
     },
     "correct_option": "D",
-    "explanation": "Make known commitment to Ethics Code and attempt to resolve; if unresolvable, may follow law. (APA 1.02 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 1.02 (Rule 510-4-.02) directs psychologists whose ethical responsibilities conflict with law to make known their commitment to the Ethics Code and take steps to resolve the conflict; if unresolvable, they may adhere to the requirements of the law."
   },
   {
     "id": 101,
@@ -1507,12 +1507,12 @@
     "question_text": "When must psychologists report ethical violations?",
     "options": {
       "A": "When substantial harm has occurred or is likely and informal resolution is inappropriate or fails",
-      "B": "Through continuing education, consultation, and other procedures consistent with current standards",
-      "C": "Consult knowledgeable colleagues, state/national ethics committees, or appropriate authorities",
-      "D": "Exam, records, referral to Colleague Assistance Program, rehabilitation, practice restrictions"
+      "B": "For any technical ethics violation regardless of severity, harm, or confidentiality",
+      "C": "Only after a formal criminal indictment has been returned by a grand jury",
+      "D": "Never; psychologists have no affirmative obligation to report colleague misconduct"
     },
     "correct_option": "A",
-    "explanation": "When substantial harm has occurred or is likely and informal resolution is inappropriate or fails. (APA 1.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 1.05 (Rule 510-4-.02) requires formal reporting of ethical violations when an apparent violation has substantially harmed or is likely to substantially harm a person and informal resolution is not appropriate or fails."
   },
   {
     "id": 102,
@@ -1521,13 +1521,13 @@
     "source_citation": "APA 1.06 / Rule 510-4-.02",
     "question_text": "Is failure to cooperate with an ethics investigation itself a violation?",
     "options": {
-      "A": "No, unless the Board waives the requirement upon formal written application",
+      "A": "No; licensees may invoke Fifth Amendment rights in administrative proceedings without ethics consequences",
       "B": "Yes",
-      "C": "No; requires prior formal peer review and clearance by the Board ethics committee",
-      "D": "Only in inpatient psychiatric facilities or hospitals accredited by JCAHO"
+      "C": "No; cooperation is entirely voluntary under APA and Georgia Board procedural rules",
+      "D": "Only if the investigation involves felony criminal charges or patient sexual abuse"
     },
     "correct_option": "B",
-    "explanation": "Yes. (APA 1.06 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 1.06 and Rule 510-5-.10 provide that failure to cooperate with an ethics investigation or Board inquiry is itself an independent ethical and regulatory violation."
   },
   {
     "id": 103,
@@ -1536,13 +1536,13 @@
     "source_citation": "APA 2.01 / Rule 510-4-.02",
     "question_text": "What is the basis for the boundaries of psychologists' competence?",
     "options": {
-      "A": "Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties",
-      "B": "Make known commitment to Ethics Code and attempt to resolve; if unresolvable, may follow law",
+      "A": "Personal lived experience and subjective self-assessment of capability",
+      "B": "Completion of any undergraduate psychology degree program",
       "C": "Education, training, supervised experience, consultation, study, or professional experience",
-      "D": "Persons are competent, have no exploitative multiple relationship, and perform competently"
+      "D": "Possession of a general state business license and malpractice insurance"
     },
     "correct_option": "C",
-    "explanation": "Education, training, supervised experience, consultation, study, or professional experience. (APA 2.01 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 2.01 (Rule 510-4-.02) specifies that psychologists provide services within the boundaries of their competence based on education, training, supervised experience, consultation, study, or professional experience."
   },
   {
     "id": 104,
@@ -1551,13 +1551,13 @@
     "source_citation": "APA 2.02 / Rule 510-4-.02",
     "question_text": "When may psychologists provide services in an emergency without prior competence?",
     "options": {
-      "A": "Through continuing education, consultation, and other procedures consistent with current standards",
-      "B": "When substantial harm has occurred or is likely and informal resolution is inappropriate or fails",
-      "C": "Employee is subject to employer's direction of time, manner, and method; independent contractor controls those",
+      "A": "At any time, provided the psychologist charges discounted pro bono fee rates",
+      "B": "Only if a licensed physician is physically present in the treatment room",
+      "C": "Under no circumstances; practicing outside competence is strictly prohibited even in emergencies",
       "D": "When other mental health services are unavailable and they make reasonable efforts to obtain competence"
     },
     "correct_option": "D",
-    "explanation": "When other mental health services are unavailable and they make reasonable efforts to obtain competence. (APA 2.02 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 2.02 (Rule 510-4-.02) allows psychologists to provide emergency services for which they lack full competence when other services are unavailable, provided they discontinue services as soon as the emergency ends or appropriate services become available."
   },
   {
     "id": 105,
@@ -1567,12 +1567,12 @@
     "question_text": "Must psychologists maintain competence?",
     "options": {
       "A": "Yes; undertake ongoing efforts",
-      "B": "Only with prior written authorization and credentialing from the Georgia State Board",
-      "C": "No, unless the Board waives the requirement upon formal written application",
-      "D": "Only when practicing under the direct supervision of a licensed physician or psychiatrist"
+      "B": "No; competence is permanently established upon initial doctoral graduation and licensure",
+      "C": "Only if required by an employer or health insurance managed care organization",
+      "D": "Only during the first five years of independent clinical practice"
     },
     "correct_option": "A",
-    "explanation": "Yes; undertake ongoing efforts. (APA 2.03 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 2.03 (Rule 510-4-.02) requires psychologists to undertake ongoing efforts to develop and maintain their professional competence."
   },
   {
     "id": 106,
@@ -1581,13 +1581,13 @@
     "source_citation": "APA 2.05 / Rule 510-4-.02",
     "question_text": "What must psychologists ensure when delegating work?",
     "options": {
-      "A": "Attempt informal resolution with the individual if appropriate and confidentiality permits",
+      "A": "Delegatees must carry independent professional liability insurance policies",
       "B": "Persons are competent, have no exploitative multiple relationship, and perform competently",
-      "C": "The supervising psychologist retains full, complete, ultimate authority and responsibility",
-      "D": "Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties"
+      "C": "Delegatees must be licensed independent practitioners in another health field",
+      "D": "Delegation is permitted only to tenured university faculty or hospital staff"
     },
     "correct_option": "B",
-    "explanation": "Persons are competent, have no exploitative multiple relationship, and perform competently. (APA 2.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 2.05 (Rule 510-4-.02) requires psychologists delegating work to avoid delegating to persons with multiple relationships and to authorize only services they are competent to perform."
   },
   {
     "id": 107,
@@ -1596,13 +1596,13 @@
     "source_citation": "APA 3.01 / Rule 510-4-.02",
     "question_text": "On what bases may psychologists not discriminate?",
     "options": {
-      "A": "Mandated child abuse reporters, therapists, day-care personnel, coroners, EMS personnel, clergy, facility staff, financial institution employees, and any other person may report",
-      "B": "Knowingly engaging in sexual contact (excluding sexually explicit conduct) with a psychotherapy client; punished as high and aggravated misdemeanor (felony 1-5 years on 2nd conviction)",
+      "A": "Solely on the basis of a client's ability to pay out-of-pocket private cash rates",
+      "B": "Client clinical diagnosis or DSM-5 diagnostic category",
       "C": "Age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law",
-      "D": "Knowingly engaging in sexually explicit conduct with a person who is the subject of actual or purported psychotherapy treatment or counseling"
+      "D": "Geographic county of residence or distance from the psychologist's office"
     },
     "correct_option": "C",
-    "explanation": "Age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law. (APA 3.01 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 3.01 (Rule 510-4-.02) prohibits unfair discrimination based on age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law."
   },
   {
     "id": 108,
@@ -1611,13 +1611,13 @@
     "source_citation": "APA 3.05 / Rule 510-4-.02",
     "question_text": "When should psychologists avoid a multiple relationship?",
     "options": {
-      "A": "Professional treatment or counseling of a mental or emotional illness, symptom, or condition",
-      "B": "Protect confidentiality and not withhold data from competent professionals seeking reanalysis",
-      "C": "Refrain from the role if it could impair objectivity or expose others to harm/exploitation",
+      "A": "Any time a client and psychologist share any common acquaintance or social club",
+      "B": "Only when the client expressly objects in writing to the dual relationship",
+      "C": "Whenever a psychologist accepts a holiday gift valued under twenty-five dollars",
       "D": "When it could impair objectivity, competence, or effectiveness, or risk exploitation or harm"
     },
     "correct_option": "D",
-    "explanation": "When it could impair objectivity, competence, or effectiveness, or risk exploitation or harm. (APA 3.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 3.05 (Rule 510-4-.02) requires psychologists to refrain from entering multiple relationships that could reasonably be expected to impair objectivity, competence, or effectiveness, or cause exploitation or harm."
   },
   {
     "id": 109,
@@ -1626,13 +1626,13 @@
     "source_citation": "APA 3.07 / Rule 510-4-.02",
     "question_text": "What must psychologists clarify at the outset of third-party-requested services?",
     "options": {
-      "A": "Role, who is the client, probable uses of information, and limits of confidentiality",
-      "B": "Nature/anticipated course of therapy, fees, third parties, limits of confidentiality",
-      "C": "Experimental nature, control group services, assignment method, alternatives, costs",
-      "D": "The organization, unless a separate professional relationship with an individual exists"
+      "A": "The specific billing codes to be submitted to commercial health insurance",
+      "B": "The identity of all expert witnesses who may testify in subsequent litigation",
+      "C": "Role, who is the client, probable uses of information, and limits of confidentiality",
+      "D": "The complete psychometric test battery to be administered during assessment"
     },
-    "correct_option": "A",
-    "explanation": "Role, who is the client, probable uses of information, and limits of confidentiality. (APA 3.07 / Rule 510-4-.02)"
+    "correct_option": "C",
+    "explanation": "APA Ethics Code Standard 3.07 (Rule 510-4-.02) requires psychologists providing third-party-requested services to clarify at the outset the nature of the relationship, who the client is, probable uses of findings, and limits of confidentiality."
   },
   {
     "id": 110,
@@ -1641,13 +1641,13 @@
     "source_citation": "APA 3.10 / Rule 510-4-.02",
     "question_text": "What must informed consent include?",
     "options": {
-      "A": "Felony punishable by 1 to 25 years imprisonment and fine up to $100,000 (10 to 30 years if victim is under 16)",
-      "B": "Nature/procedures, risks/benefits, limits of confidentiality, fees, third parties, opportunity to ask questions",
-      "C": "Nature/objectives, recipients, clients, relationships, uses of information, access, limits of confidentiality",
-      "D": "Supervisee status, supervisor name and contact info, and client right to confer with the supervising psychologist"
+      "A": "Guarantees of complete symptom cure and successful therapeutic outcome",
+      "B": "An irrevocable waiver of the client's right to file board ethics complaints",
+      "C": "Mandatory agreement to participate in ongoing academic research studies",
+      "D": "Nature/procedures, risks/benefits, limits of confidentiality, fees, third parties, opportunity to ask questions"
     },
-    "correct_option": "B",
-    "explanation": "Nature/procedures, risks/benefits, limits of confidentiality, fees, third parties, opportunity to ask questions. (APA 3.10 / Rule 510-4-.02)"
+    "correct_option": "D",
+    "explanation": "APA Ethics Code Standard 3.10 and 10.01 (Rule 510-4-.02) mandate that informed consent cover the nature and anticipated course of services, risks/benefits, fees, involvement of third parties, limits of confidentiality, and opportunity to ask questions."
   },
   {
     "id": 111,
@@ -1656,13 +1656,13 @@
     "source_citation": "APA 3.12 / Rule 510-4-.02",
     "question_text": "What must psychologists plan for when interrupting psychological services?",
     "options": {
-      "A": "Naturalistic public observation with no identification/harm, or deception with debriefing consent",
-      "B": "Nature/objectives, recipients, clients, relationships, uses of information, access, limits of confidentiality",
-      "C": "Facilitating services in event of illness, death, unavailability, relocation, or financial limitations",
-      "D": "Felony punishable by 1 to 25 years imprisonment and fine up to $100,000 (10 to 30 years if victim is under 16)"
+      "A": "Transferring all active clinical files to the local county courthouse for storage",
+      "B": "Facilitating services in event of illness, death, unavailability, relocation, or financial limitations",
+      "C": "Immediately refunding all historical fees collected throughout the entire treatment course",
+      "D": "Automatically terminating all clients without notice upon reaching age sixty-five"
     },
-    "correct_option": "C",
-    "explanation": "Facilitating services in event of illness, death, unavailability, relocation, or financial limitations. (APA 3.12 / Rule 510-4-.02)"
+    "correct_option": "B",
+    "explanation": "APA Ethics Code Standard 3.12 (Rule 510-4-.02) requires psychologists to make reasonable efforts to facilitate service continuation in the event psychological services are interrupted by factors such as illness, death, unavailability, relocation, or financial limitations."
   },
   {
     "id": 112,
@@ -1671,13 +1671,13 @@
     "source_citation": "APA 4.01 / Rule 510-4-.02",
     "question_text": "What is psychologists' primary obligation regarding confidentiality?",
     "options": {
-      "A": "Prior permission from the client or their legal representative",
-      "B": "Only if disguised, consented in writing, or legally authorized",
-      "C": "Only information germane to the purpose of the communication",
+      "A": "Absolute confidentiality with zero exceptions under any circumstances",
+      "B": "Maintaining confidentiality only until the client terminates active therapy",
+      "C": "Disclosing client information upon informal request by law enforcement officers",
       "D": "Take reasonable precautions to protect confidential information"
     },
     "correct_option": "D",
-    "explanation": "Take reasonable precautions to protect confidential information. (APA 4.01 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 4.01 (Rule 510-4-.02) provides that psychologists have a primary obligation and must take reasonable precautions to protect confidential information."
   },
   {
     "id": 113,
@@ -1687,12 +1687,12 @@
     "question_text": "When must psychologists discuss limits of confidentiality?",
     "options": {
       "A": "At the outset of the relationship and thereafter as circumstances warrant",
-      "B": "Provide services, obtain consultation, protect from harm, obtain payment",
-      "C": "Only appropriate scientific or professional purposes with concerned persons",
-      "D": "Take reasonable precautions to protect confidential information"
+      "B": "Only after a breach of confidentiality or legal subpoena has actually occurred",
+      "C": "Exclusively at the termination session when closing the clinical chart",
+      "D": "Only if the client explicitly inquires about confidentiality policies"
     },
     "correct_option": "A",
-    "explanation": "At the outset of the relationship and thereafter as circumstances warrant. (APA 4.02 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 4.02 (Rule 510-4-.02) requires psychologists to discuss the relevant limits of confidentiality at the outset of the relationship and thereafter as new circumstances warrant."
   },
   {
     "id": 114,
@@ -1701,13 +1701,13 @@
     "source_citation": "APA 4.03 / Rule 510-4-.02",
     "question_text": "When may psychologists record voices/images of clients?",
     "options": {
-      "A": "Husband-wife communications",
+      "A": "At any time without notice if used solely for educational purposes",
       "B": "After obtaining permission",
-      "C": "Same as attorney-client privilege",
-      "D": "OCGA 24-9-21(6)"
+      "C": "Only when authorized by an ex parte judicial wiretap warrant",
+      "D": "Whenever conducting court-ordered forensic child custody evaluations"
     },
     "correct_option": "B",
-    "explanation": "After obtaining permission. (APA 4.03 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 4.03 (Rule 510-4-.02) requires psychologists to obtain permission from clients or their legal representatives prior to recording voices or images."
   },
   {
     "id": 115,
@@ -1716,13 +1716,13 @@
     "source_citation": "APA 4.05 / Rule 510-4-.02",
     "question_text": "What standard governs disclosures of confidential information without consent?",
     "options": {
-      "A": "At outset and thereafter as new circumstances warrant, unless not feasible or contraindicated",
-      "B": "Relationship arising between patient and LCSW/CNS/MFT/LPC using psychotherapeutic techniques",
+      "A": "Psychologists may disclose confidential information whenever requested by family members",
+      "B": "Disclosures without consent are strictly prohibited under every statutory provision",
       "C": "Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary",
-      "D": "Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent"
+      "D": "Disclosures are permitted whenever advantageous to the psychologist's academic research"
     },
     "correct_option": "C",
-    "explanation": "Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary. (APA 4.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 4.05 (Rule 510-4-.02) permits disclosures without consent only as mandated by law or permitted by law for a valid purpose, disclosing only the minimum necessary information."
   },
   {
     "id": 116,
@@ -1731,13 +1731,13 @@
     "source_citation": "APA 4.06 / Rule 510-4-.02",
     "question_text": "What must psychologists do before consulting about a client?",
     "options": {
-      "A": "Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary",
-      "B": "At outset and thereafter as new circumstances warrant, unless not feasible or contraindicated",
-      "C": "Relationship arising between patient and LCSW/CNS/MFT/LPC using psychotherapeutic techniques",
+      "A": "Obtain a notarized release signed by the client and both of the client's parents",
+      "B": "Disclose the client's full legal name, social security number, and home address",
+      "C": "Conduct the consultation exclusively in public professional peer review meetings",
       "D": "Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent"
     },
     "correct_option": "D",
-    "explanation": "Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent. (APA 4.06 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 4.06 (Rule 510-4-.02) requires that when consulting with colleagues, psychologists do not disclose confidential identifying information without prior consent and disclose information only to the extent necessary."
   },
   {
     "id": 117,
@@ -1747,12 +1747,12 @@
     "question_text": "What must paid advertisements by psychologists be?",
     "options": {
       "A": "Identified or clearly recognizable as paid advertisements",
-      "B": "Application, 40 CE hours within two years, and penalty fee",
-      "C": "After passing the national exam and while completing SWE",
-      "D": "Letter from instructor or official APA/CPA/GPA certificate"
+      "B": "Pre-approved by the Georgia State Board of Examiners prior to publication",
+      "C": "Accompanied by full disclosure of all client fees and billing dispute policies",
+      "D": "Published exclusively in peer-reviewed scientific psychology journals"
     },
     "correct_option": "A",
-    "explanation": "Identified or clearly recognizable as paid advertisements. (APA 5.02 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 5.02(c) (Rule 510-4-.02) provides that paid advertisements regarding psychologists' services must be identified or clearly recognizable as such."
   },
   {
     "id": 118,
@@ -1761,13 +1761,13 @@
     "source_citation": "APA 5.05 / Rule 510-4-.02",
     "question_text": "From whom may psychologists not solicit testimonials?",
     "options": {
-      "A": "Take constitutional oath and file it with the Governor",
+      "A": "Professional colleagues who have attended the psychologist's CE workshops",
       "B": "Current therapy clients/patients or vulnerable persons",
-      "C": "24 months unless Board grants exception; non-renewable",
-      "D": "Submit application for reinstatement per Rule 510-7-.02"
+      "C": "Former academic professors from the psychologist's doctoral training program",
+      "D": "Community leaders and local public officials who know the psychologist's character"
     },
     "correct_option": "B",
-    "explanation": "Current therapy clients/patients or vulnerable persons. (APA 5.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 5.05 (Rule 510-4-.02) prohibits psychologists from soliciting testimonials from current therapy clients or other persons who because of particular circumstances are vulnerable to undue influence."
   },
   {
     "id": 119,
@@ -1776,13 +1776,13 @@
     "source_citation": "APA 5.06 / Rule 510-4-.02",
     "question_text": "May psychologists engage in uninvited in-person solicitation of therapy clients?",
     "options": {
-      "A": "Yes, at the independent clinical discretion of the licensed psychologist",
-      "B": "Yes, provided full written informed consent is documented in the client record",
+      "A": "Yes; in-person solicitation is protected commercial speech under the First Amendment",
+      "B": "Yes, provided the psychologist offers free initial diagnostic consultations",
       "C": "No, except for collateral contacts or disaster/community outreach",
-      "D": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated"
+      "D": "Yes, in hospital waiting rooms and emergency departments"
     },
     "correct_option": "C",
-    "explanation": "No, except for collateral contacts or disaster/community outreach. (APA 5.06 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 5.06 (Rule 510-4-.02) prohibits uninvited in-person solicitation of business from actual or potential therapy clients, except for collateral contacts to implement therapy or disaster/community outreach."
   },
   {
     "id": 120,
@@ -1791,13 +1791,13 @@
     "source_citation": "APA 6.03 / Rule 510-4-.02",
     "question_text": "May psychologists withhold records solely because payment has not been received?",
     "options": {
-      "A": "Yes, if authorized under an explicit court order or judicial subpoena",
-      "B": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "C": "Yes, upon formal written petition and prior approval by the Georgia State Board",
+      "A": "Yes; psychologists retain an absolute common-law artisan lien on all records until paid",
+      "B": "Yes, provided the outstanding fee balance has been formally referred to a collection agency",
+      "C": "Yes, except when the client is involved in active bankruptcy proceedings",
       "D": "No, not records needed for emergency treatment"
     },
     "correct_option": "D",
-    "explanation": "No, not records needed for emergency treatment. (APA 6.03 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 6.03 (Rule 510-4-.02) explicitly provides that psychologists may not withhold records under their control that are requested and needed for a client's emergency treatment solely because payment has not been received."
   },
   {
     "id": 121,
@@ -1807,12 +1807,12 @@
     "question_text": "What must fee agreements specify?",
     "options": {
       "A": "Compensation and billing arrangements as early as feasible",
-      "B": "Only if not clinically contraindicated and not exploitative",
-      "C": "Inform the person and provide opportunity to pay promptly",
-      "D": "Nature of service, fees, provider identity, findings, diagnosis"
+      "B": "Fixed sliding scale fees determined exclusively by federal poverty guidelines",
+      "C": "Guarantees that fees will never increase throughout the lifetime of the client",
+      "D": "Mandatory pre-payment for all therapy sessions six months in advance"
     },
     "correct_option": "A",
-    "explanation": "Compensation and billing arrangements as early as feasible. (APA 6.04 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 6.04 (Rule 510-4-.02) requires that as early as feasible in a professional or scientific relationship, psychologists and recipients reach an agreement specifying compensation and billing arrangements."
   },
   {
     "id": 122,
@@ -1821,13 +1821,13 @@
     "source_citation": "APA 6.05 / Rule 510-4-.02",
     "question_text": "May psychologists barter with clients?",
     "options": {
-      "A": "Compensation and billing arrangements as early as feasible",
+      "A": "Bartering is strictly prohibited under all circumstances in Georgia psychology",
       "B": "Only if not clinically contraindicated and not exploitative",
-      "C": "Inform the person and provide opportunity to pay promptly",
-      "D": "Nature of service, fees, provider identity, findings, diagnosis"
+      "C": "Yes, provided bartered services are exchanged at 50% fair market cash value",
+      "D": "Yes, but only for tangible goods and never for personal or professional services"
     },
     "correct_option": "B",
-    "explanation": "Only if not clinically contraindicated and not exploitative. (APA 6.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 6.05 (Rule 510-4-.02) permits bartering with clients only if it is not clinically contraindicated and the resulting arrangement is not exploitative."
   },
   {
     "id": 123,
@@ -1836,13 +1836,13 @@
     "source_citation": "APA 6.06 / Rule 510-4-.02",
     "question_text": "What must reports to payers accurately reflect?",
     "options": {
-      "A": "Only if not clinically contraindicated and not exploitative",
-      "B": "Compensation and billing arrangements as early as feasible",
+      "A": "Any billing code that maximizes insurance reimbursement for the client",
+      "B": "Generalized medical codes that conceal mental health diagnoses",
       "C": "Nature of service, fees, provider identity, findings, diagnosis",
-      "D": "Inform the person and provide opportunity to pay promptly"
+      "D": "Detailed psychotherapy process transcripts and client personal diary entries"
     },
     "correct_option": "C",
-    "explanation": "Nature of service, fees, provider identity, findings, diagnosis. (APA 6.06 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 6.06 (Rule 510-4-.02) requires reports to payers to accurately state the nature of the service provided, fees, identity of the provider, findings, and diagnosis."
   },
   {
     "id": 124,
@@ -1851,13 +1851,13 @@
     "source_citation": "APA 7.04 / Rule 510-4-.02",
     "question_text": "May psychologists require students to disclose personal sexual history?",
     "options": {
-      "A": "Yes, after a mandatory waiting period of two years following service termination",
-      "B": "Yes, under the physician-psychologist collaborative practice exception",
-      "C": "Yes, provided full written informed consent is documented in the client record",
+      "A": "Yes; complete personal disclosure is mandatory in all accredited clinical psychology programs",
+      "B": "Yes, provided the disclosure occurs during group supervision sessions",
+      "C": "Yes, whenever faculty members believe it will enhance clinical empathy",
       "D": "No, except if required in admissions materials or necessary to evaluate impairment"
     },
     "correct_option": "D",
-    "explanation": "No, except if required in admissions materials or necessary to evaluate impairment. (APA 7.04 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 7.04 (Rule 510-4-.02) prohibits requiring students to disclose personal sexual history unless clearly identified in program admissions materials or necessary to evaluate an impaired student."
   },
   {
     "id": 125,
@@ -1867,12 +1867,12 @@
     "question_text": "May faculty who evaluate students also provide required therapy to those students?",
     "options": {
       "A": "No",
-      "B": "Yes, if authorized under an explicit court order or judicial subpoena",
-      "C": "Yes, provided full written informed consent is documented in the client record",
-      "D": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated"
+      "B": "Yes, provided the faculty member does not assign grades in clinical practicum courses",
+      "C": "Yes, if the student signs an informed consent waiving evaluative conflicts",
+      "D": "Yes, whenever outside therapy resources are unavailable within a 50-mile radius"
     },
     "correct_option": "A",
-    "explanation": "No. (APA 7.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 7.05 (Rule 510-4-.02) prohibits faculty who are responsible for evaluating students' academic performance from personally providing mandatory psychotherapy to those students."
   },
   {
     "id": 126,
@@ -1881,13 +1881,13 @@
     "source_citation": "APA 7.07 / Rule 510-4-.02",
     "question_text": "May psychologists have sexual relationships with students/supervisees over whom they have evaluative authority?",
     "options": {
-      "A": "Yes, if authorized under an explicit court order or judicial subpoena",
+      "A": "Yes, provided the relationship is consensual and disclosed to the department chair",
       "B": "No",
-      "C": "Yes, after a mandatory waiting period of two years following service termination",
-      "D": "Yes, for temporary practice not exceeding 30 calendar days per calendar year"
+      "C": "Yes, after a mandatory waiting period of six months from course enrollment",
+      "D": "Yes, if both parties sign an institutional conflict-of-interest waiver"
     },
     "correct_option": "B",
-    "explanation": "No. (APA 7.07 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 7.07 (Rule 510-4-.02) strictly prohibits psychologists from engaging in sexual relationships with students or supervisees who are in their department, agency, or training center or over whom they have evaluative authority."
   },
   {
     "id": 127,
@@ -1896,13 +1896,13 @@
     "source_citation": "APA 8.05 / Rule 510-4-.02",
     "question_text": "When may psychologists dispense with informed consent for research?",
     "options": {
-      "A": "Another appropriate professional to deal with emergency needs",
-      "B": "Abuse other than by accidental means, neglect, or exploitation",
+      "A": "In any research study funded by state or federal research grants",
+      "B": "Whenever obtaining consent would reduce the statistical power of the sample",
       "C": "Only in specified low-risk settings or where permitted by law",
-      "D": "Any person required under 19-7-5(c), including psychologists"
+      "D": "Psychologists may never dispense with informed consent in any research setting"
     },
     "correct_option": "C",
-    "explanation": "Only in specified low-risk settings or where permitted by law. (APA 8.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 8.05 (Rule 510-4-.02) permits dispensing with informed consent only where research would not reasonably be expected to create distress or harm (e.g. normal educational practices, anonymous questionnaires, naturalistic observation) or where permitted by law."
   },
   {
     "id": 128,
@@ -1911,13 +1911,13 @@
     "source_citation": "APA 8.07 / Rule 510-4-.02",
     "question_text": "When is deception in research prohibited?",
     "options": {
-      "A": "Do not present another's work or data as one's own, even if cited",
-      "B": "Harassment/demeaning behavior based on protected characteristics",
-      "C": "Actual performance on relevant and established program requirements",
+      "A": "Whenever the research study involves undergraduate college students",
+      "B": "When the study investigates social psychology or cognitive heuristics",
+      "C": "Whenever research results will be published in peer-reviewed journals",
       "D": "When expected to cause physical pain or severe emotional distress"
     },
     "correct_option": "D",
-    "explanation": "When expected to cause physical pain or severe emotional distress. (APA 8.07 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 8.07 (Rule 510-4-.02) explicitly forbids deception in research that is reasonably expected to cause physical pain or severe emotional distress."
   },
   {
     "id": 129,
@@ -1927,12 +1927,12 @@
     "question_text": "What must psychologists do after using deception in research?",
     "options": {
       "A": "Explain deception as early as feasible and allow withdrawal of data",
-      "B": "Actual performance on relevant and established program requirements",
-      "C": "Content, goals/objectives, stipends/benefits, completion requirements",
-      "D": "When expected to cause physical pain or severe emotional distress"
+      "B": "Maintain deception indefinitely to prevent contamination of future study cohorts",
+      "C": "Notify the institutional review board within 24 hours of each debriefing session",
+      "D": "Pay each participant double the standard monetary research compensation"
     },
     "correct_option": "A",
-    "explanation": "Explain deception as early as feasible and allow withdrawal of data. (APA 8.07 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 8.07 (Rule 510-4-.02) requires psychologists to explain any deception as early as feasible (preferably at conclusion of participation, but no later than data collection conclusion) and permit participants to withdraw their data."
   },
   {
     "id": 130,
@@ -1941,13 +1941,13 @@
     "source_citation": "APA 8.11 / Rule 510-4-.02",
     "question_text": "What is the plagiarism rule?",
     "options": {
-      "A": "When expected to cause physical pain or severe emotional distress",
+      "A": "Presenting another's work is permitted if paraphrased without citation",
       "B": "Do not present another's work or data as one's own, even if cited",
-      "C": "Harassment/demeaning behavior based on protected characteristics",
-      "D": "Actual performance on relevant and established program requirements"
+      "C": "Plagiarism rules apply only to published books and not journal articles or dissertations",
+      "D": "Borrowing up to 25% of another's text without attribution is considered fair use"
     },
     "correct_option": "B",
-    "explanation": "Do not present another's work or data as one's own, even if cited. (APA 8.11 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 8.11 (Rule 510-4-.02) provides that psychologists do not present portions of another's work or data as their own, even if the other work or data source is cited occasionally."
   },
   {
     "id": 131,
@@ -1956,13 +1956,13 @@
     "source_citation": "APA 8.12 / Rule 510-4-.02",
     "question_text": "Who should be principal author on a dissertation-based article?",
     "options": {
-      "A": "Do not publish previously published data as original",
-      "B": "Inform affected individuals/groups at the outset",
+      "A": "The department chairperson who secured grant funding for the laboratory",
+      "B": "The dissertation faculty advisor who supervised the research design",
       "C": "The student, except under exceptional circumstances",
-      "D": "Genital area, groin, inner thighs, buttocks, or breasts"
+      "D": "Authorship must always be listed strictly alphabetically regardless of contribution"
     },
     "correct_option": "C",
-    "explanation": "The student, except under exceptional circumstances. (APA 8.12 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 8.12 (Rule 510-4-.02) provides that except under exceptional circumstances, a student is listed as principal author on any multiple-authored article substantially based on the student's doctoral dissertation."
   },
   {
     "id": 132,
@@ -1971,13 +1971,13 @@
     "source_citation": "APA 9.01 / Rule 510-4-.02",
     "question_text": "What must psychologists base assessment opinions on?",
     "options": {
-      "A": "Clarify impact on reliability/validity and limit conclusions",
-      "B": "Established validity and reliability; if not, describe limitations",
-      "C": "Purpose, norms, validity, reliability, applications, qualifications",
-      "D": "Information and techniques sufficient to substantiate findings"
+      "A": "Intuitive clinical impressions gathered during an informal initial meeting",
+      "B": "Testimonials and collateral reports from interested third-party family members",
+      "C": "Information and techniques sufficient to substantiate findings",
+      "D": "Statistical averages of the demographic group without individualized testing"
     },
-    "correct_option": "D",
-    "explanation": "Information and techniques sufficient to substantiate findings. (APA 9.01 / Rule 510-4-.02)"
+    "correct_option": "C",
+    "explanation": "APA Ethics Code Standard 9.01 (Rule 510-4-.02) requires psychologists to base opinions contained in recommendations, reports, and evaluative statements on information and techniques sufficient to substantiate their findings."
   },
   {
     "id": 133,
@@ -1987,12 +1987,12 @@
     "question_text": "What is 'test data' under the APA Ethics Code?",
     "options": {
       "A": "Raw and scaled scores, client responses, and psychologist notes/recordings during examination",
-      "B": "Currently licensed Georgia psychologist; students/trainees under direct licensed supervision",
-      "C": "Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist",
-      "D": "Avoid multiple/conflicting roles; if unavoidable, clarify role expectations and confidentiality"
+      "B": "Published psychometric test manuals, test protocols, stimuli, and test questions",
+      "C": "Peer-reviewed validation studies evaluating norm samples and reliability coefficients",
+      "D": "Billing codes, clinical appointment logs, and fee payment receipts"
     },
     "correct_option": "A",
-    "explanation": "Raw and scaled scores, client responses, and psychologist notes/recordings during examination. (APA 9.04 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 9.04 (Rule 510-4-.02) defines 'test data' as raw and scaled scores, client/patient responses to test questions or stimuli, and psychologists' notes and recordings concerning client statements and behavior during examination."
   },
   {
     "id": 134,
@@ -2001,13 +2001,13 @@
     "source_citation": "APA 9.04 / Rule 510-4-.02",
     "question_text": "To whom may test data be released without a client release?",
     "options": {
-      "A": "Psychological manifestations of brain functioning",
-      "B": "Only as required by law or court order",
-      "C": "Judicial or administrative rules governing their roles",
-      "D": "The psychologist only"
+      "A": "Any family member who pays for the psychological evaluation",
+      "B": "The client's employer upon submission of a formal workplace inquiry",
+      "C": "Only as required by law or court order",
+      "D": "Any licensed healthcare professional requesting records by telephone"
     },
-    "correct_option": "B",
-    "explanation": "Only as required by law or court order. (APA 9.04 / Rule 510-4-.02)"
+    "correct_option": "C",
+    "explanation": "APA Ethics Code Standard 9.04 (Rule 510-4-.02) provides that in the absence of a client/patient release, psychologists provide test data only as required by law or court order."
   },
   {
     "id": 135,
@@ -2016,13 +2016,13 @@
     "source_citation": "APA 9.02 / Rule 510-4-.02",
     "question_text": "What must assessment instruments have for the population tested?",
     "options": {
-      "A": "Purpose, norms, validity, reliability, applications, qualifications",
-      "B": "Integrity of psychometric properties and conditions of administration",
-      "C": "Established validity and reliability; if not, describe limitations",
-      "D": "Information and techniques sufficient to substantiate findings"
+      "A": "Established validity and reliability; if not, describe limitations",
+      "B": "Formal endorsement and certification by the Georgia Department of Education",
+      "C": "Public-domain status allowing unrestricted photocopying of test stimuli",
+      "D": "Universal cultural applicability without need for normative adaptations"
     },
-    "correct_option": "C",
-    "explanation": "Established validity and reliability; if not, describe limitations. (APA 9.02 / Rule 510-4-.02)"
+    "correct_option": "A",
+    "explanation": "APA Ethics Code Standard 9.02 (Rule 510-4-.02) requires assessment instruments to have established validity and reliability for the population tested; when validity/reliability is not established, psychologists describe strengths and limitations of test results."
   },
   {
     "id": 136,
@@ -2031,13 +2031,13 @@
     "source_citation": "APA 9.08 / Rule 510-4-.02",
     "question_text": "May psychologists base decisions on obsolete or outdated test results?",
     "options": {
-      "A": "Yes, if conducted under the direct supervision of a Board-approved licensed psychologist",
-      "B": "Yes, provided notice is given to the Secretary of State within 14 calendar days",
-      "C": "Yes, for temporary practice not exceeding 30 calendar days per calendar year",
-      "D": "No"
+      "A": "Yes, if the older test version is less expensive for the client to purchase",
+      "B": "No",
+      "C": "Yes, provided the psychologist notes that the test was published within the past 25 years",
+      "D": "Yes, in forensic evaluations where historical baselines are unavailable"
     },
-    "correct_option": "D",
-    "explanation": "No. (APA 9.08 / Rule 510-4-.02)"
+    "correct_option": "B",
+    "explanation": "APA Ethics Code Standard 9.08 (Rule 510-4-.02) prohibits psychologists from basing assessment decisions, interventions, or recommendations on outdated tests or obsolete test data."
   },
   {
     "id": 137,
@@ -2047,12 +2047,12 @@
     "question_text": "What does 'test materials' include?",
     "options": {
       "A": "Manuals, instruments, protocols, and test questions/stimuli; excludes test data",
-      "B": "Make reasonable efforts to maintain integrity and security consistent with law",
-      "C": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings",
-      "D": "Truthfully, honestly, candidly, and fairly describe the basis for testimony"
+      "B": "Raw and scaled scores, client test answer sheets, and clinical interview notes",
+      "C": "Psychotherapy process notes and audio recordings of clinical intake sessions",
+      "D": "Billing statements, superbills, and insurance explanation of benefits forms"
     },
     "correct_option": "A",
-    "explanation": "Manuals, instruments, protocols, and test questions/stimuli; excludes test data. (APA 9.11 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 9.11 (Rule 510-4-.02) defines 'test materials' as manuals, instruments, protocols, and test questions or stimuli, explicitly excluding test data as defined in Standard 9.04."
   },
   {
     "id": 138,
@@ -2061,13 +2061,13 @@
     "source_citation": "APA 9.11 / Rule 510-4-.02",
     "question_text": "What is psychologists' responsibility regarding test security?",
     "options": {
-      "A": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings",
-      "B": "Make reasonable efforts to maintain integrity and security consistent with law",
-      "C": "Manuals, instruments, protocols, and test questions/stimuli; excludes test data",
-      "D": "Truthfully, honestly, candidly, and fairly describe the basis for testimony"
+      "A": "Test questions and protocols should be made available online for public transparency",
+      "B": "Release test manuals and test protocols to attorneys upon receipt of a standard civil subpoena",
+      "C": "Make reasonable efforts to maintain integrity and security consistent with law",
+      "D": "Discard all test protocols immediately after scoring to prevent third-party access"
     },
-    "correct_option": "B",
-    "explanation": "Make reasonable efforts to maintain integrity and security consistent with law. (APA 9.11 / Rule 510-4-.02)"
+    "correct_option": "C",
+    "explanation": "APA Ethics Code Standard 9.11 (Rule 510-4-.02) requires psychologists to make reasonable efforts to maintain the integrity and security of test materials consistent with law and contractual obligations."
   },
   {
     "id": 139,
@@ -2076,13 +2076,13 @@
     "source_citation": "APA 9.07 / Rule 510-4-.02",
     "question_text": "May psychologists promote assessment use by unqualified persons?",
     "options": {
-      "A": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "B": "Yes, if authorized under an explicit court order or judicial subpoena",
-      "C": "No, except for training with appropriate supervision",
-      "D": "Yes, provided full written informed consent is documented in the client record"
+      "A": "Yes, whenever unqualified persons purchase automated computer scoring software",
+      "B": "Yes, to reduce clinical assessment backlogs in public community clinics",
+      "C": "Yes, provided the unqualified person charges reduced administrative fees",
+      "D": "No, except for training with appropriate supervision"
     },
-    "correct_option": "C",
-    "explanation": "No, except for training with appropriate supervision. (APA 9.07 / Rule 510-4-.02)"
+    "correct_option": "D",
+    "explanation": "APA Ethics Code Standard 9.07 (Rule 510-4-.02) prohibits psychologists from promoting the use of psychological assessment techniques by unqualified persons, except when conducted for training purposes with appropriate supervision."
   },
   {
     "id": 140,
@@ -2091,13 +2091,13 @@
     "source_citation": "APA 9.10 / Rule 510-4-.02",
     "question_text": "Must explanations of assessment results be provided?",
     "options": {
-      "A": "Only during a declared state of public health emergency by the Governor",
-      "B": "Only with prior written authorization and credentialing from the Georgia State Board",
-      "C": "No; this constitutes an unwaivable conflict of interest under Board ethics rules",
+      "A": "Explanations are discretionary and psychologists may refuse to explain results at will",
+      "B": "Only if the examinee pays an additional separate consultation fee for explanation",
+      "C": "Never in forensic, pre-employment, or security screening evaluations",
       "D": "Yes, unless the relationship precludes it and this was explained in advance"
     },
     "correct_option": "D",
-    "explanation": "Yes, unless the relationship precludes it and this was explained in advance. (APA 9.10 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 9.10 (Rule 510-4-.02) requires psychologists to take reasonable steps to ensure that explanations of results are given, unless the nature of the relationship precludes providing an explanation (e.g. employment screening) and this was clearly explained to the person in advance."
   },
   {
     "id": 141,
@@ -2107,12 +2107,12 @@
     "question_text": "What information must be included in informed consent to therapy?",
     "options": {
       "A": "Nature/anticipated course of therapy, fees, third parties, limits of confidentiality",
-      "B": "Role, who is the client, probable uses of information, and limits of confidentiality",
-      "C": "Experimental nature, control group services, assignment method, alternatives, costs",
-      "D": "When no longer needed, not likely to benefit, or being harmed; also if threatened"
+      "B": "Absolute guarantees of complete cure and permanent relief from symptoms",
+      "C": "An agreement that the client will not consult other healthcare professionals",
+      "D": "Detailed resumes and personal background disclosures of the psychologist"
     },
     "correct_option": "A",
-    "explanation": "Nature/anticipated course of therapy, fees, third parties, limits of confidentiality. (APA 10.01 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.01 (Rule 510-4-.02) mandates that informed consent to therapy inform clients about the nature and anticipated course of therapy, fees, involvement of third parties, and limits of confidentiality."
   },
   {
     "id": 142,
@@ -2121,13 +2121,13 @@
     "source_citation": "APA 10.05 / Rule 510-4-.02",
     "question_text": "May psychologists engage in sexual intimacies with current therapy clients?",
     "options": {
-      "A": "Yes, under the physician-psychologist collaborative practice exception",
+      "A": "Yes, if both parties give written informed consent",
       "B": "No",
-      "C": "Yes, if approved by a majority vote of the Georgia State Board of Examiners",
-      "D": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated"
+      "C": "Yes, provided therapy is conducted in an outpatient community setting",
+      "D": "Yes, if the client initiates the sexual intimacy"
     },
     "correct_option": "B",
-    "explanation": "No. (APA 10.05 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.05 and Rule 510-5-.03 strictly prohibit psychologists from engaging in sexual intimacies with current therapy clients/patients."
   },
   {
     "id": 143,
@@ -2136,13 +2136,13 @@
     "source_citation": "APA 10.06 / Rule 510-4-.02",
     "question_text": "May psychologists have sexual intimacies with close relatives/significant others of current clients?",
     "options": {
-      "A": "Yes, at the independent clinical discretion of the licensed psychologist",
-      "B": "Yes, provided notice is given to the Secretary of State within 14 calendar days",
+      "A": "Yes, because relatives are not direct clients of the psychologist",
+      "B": "Yes, provided the client gives written permission",
       "C": "No",
-      "D": "Yes, upon formal written petition and prior approval by the Georgia State Board"
+      "D": "Yes, if the relative resides in a different household from the client"
     },
     "correct_option": "C",
-    "explanation": "No. (APA 10.06 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.06 (Rule 510-4-.02) strictly prohibits sexual intimacies with individuals known to be close relatives, guardians, or significant others of current clients/patients."
   },
   {
     "id": 144,
@@ -2151,13 +2151,13 @@
     "source_citation": "APA 10.07 / Rule 510-4-.02",
     "question_text": "May psychologists accept as clients persons with whom they had prior sexual intimacies?",
     "options": {
-      "A": "Yes, in emergency situations where failure to act poses imminent danger to life or safety",
-      "B": "Yes, upon formal written petition and prior approval by the Georgia State Board",
-      "C": "Yes, if conducted under the direct supervision of a Board-approved licensed psychologist",
+      "A": "Yes, if at least two years have elapsed since the prior sexual relationship",
+      "B": "Yes, provided another psychologist conducts concurrent supervision",
+      "C": "Yes, in emergency crisis situations where other providers are unavailable",
       "D": "No"
     },
     "correct_option": "D",
-    "explanation": "No. (APA 10.07 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.07 (Rule 510-4-.02) states that psychologists do not accept as therapy clients/patients persons with whom they have engaged in sexual intimacies."
   },
   {
     "id": 145,
@@ -2168,11 +2168,11 @@
     "options": {
       "A": "At least two years",
       "B": "At least one year",
-      "C": "At least three years",
-      "D": "At least four years"
+      "C": "At least five years",
+      "D": "At least six months"
     },
     "correct_option": "A",
-    "explanation": "At least two years. (APA 10.08 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.08 (Rule 510-4-.02) prohibits sexual intimacies with former clients/patients for at least two years after cessation or termination of therapy."
   },
   {
     "id": 146,
@@ -2181,13 +2181,13 @@
     "source_citation": "APA 10.08 / Rule 510-4-.02",
     "question_text": "After two years, who bears the burden of showing no exploitation with a former client sexual relationship?",
     "options": {
-      "A": "At least two years",
+      "A": "The former client who alleges exploitation",
       "B": "The psychologist",
-      "C": "Three months",
-      "D": "Six months"
+      "C": "The Georgia State Board of Examiners",
+      "D": "The American Psychological Association Ethics Committee"
     },
     "correct_option": "B",
-    "explanation": "The psychologist. (APA 10.08 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.08 (Rule 510-4-.02) explicitly places the burden on the psychologist to demonstrate that there has been no exploitation, in light of all relevant factors."
   },
   {
     "id": 147,
@@ -2196,13 +2196,13 @@
     "source_citation": "APA 10.10 / Rule 510-4-.02",
     "question_text": "When should psychologists terminate therapy?",
     "options": {
-      "A": "Experimental nature, control group services, assignment method, alternatives, costs",
-      "B": "Adult protection agency and appropriate law enforcement or prosecuting attorney",
+      "A": "Exclusively when the client exhausts private health insurance benefits",
+      "B": "Whenever the client expresses disagreement with the psychologist's personal beliefs",
       "C": "When no longer needed, not likely to benefit, or being harmed; also if threatened",
-      "D": "Nature/anticipated course of therapy, fees, third parties, limits of confidentiality"
+      "D": "Only when the psychologist retires or relocates to another state"
     },
     "correct_option": "C",
-    "explanation": "When no longer needed, not likely to benefit, or being harmed; also if threatened. (APA 10.10 / Rule 510-4-.02)"
+    "explanation": "APA Ethics Code Standard 10.10 (Rule 510-4-.02) directs psychologists to terminate therapy when it becomes reasonably clear that the client no longer needs the service, is not likely to benefit, or is being harmed, and permits termination if threatened or endangered by the client."
   },
   {
     "id": 148,
@@ -2211,13 +2211,13 @@
     "source_citation": "Rule 510-5-.01",
     "question_text": "What chapters constitute the Georgia psychology Code of Ethics and Supplemental Code of Conduct?",
     "options": {
-      "A": "At least one year prior",
-      "B": "Seven days after issuance",
-      "C": "3 for current biennium",
+      "A": "Chapters 510-1 and 510-2",
+      "B": "Chapters 510-2 and 510-3",
+      "C": "Chapters 510-6 and 510-7",
       "D": "Chapters 510-4 and 510-5"
     },
     "correct_option": "D",
-    "explanation": "Chapters 510-4 and 510-5. (Rule 510-5-.01)"
+    "explanation": "Rule 510-5-.01 establishes that Chapter 510-4 (Code of Ethics) and Chapter 510-5 (Supplemental Code of Conduct) constitute the ethical standards and rules of conduct for Georgia psychologists."
   },
   {
     "id": 149,
@@ -2227,12 +2227,12 @@
     "question_text": "Do the Georgia codes apply to applicants and students?",
     "options": {
       "A": "Yes; they apply to all licensees and applicants, including conduct during required education/training/employment",
-      "B": "No; strictly prohibited under Georgia statutory law and Board rules",
-      "C": "No, unless specifically authorized under an emergency judicial order",
-      "D": "Only if the psychologist has completed a minimum of two years of postdoctoral experience"
+      "B": "No; the codes apply strictly to fully licensed psychologists holding active licenses",
+      "C": "No; students and applicants are governed solely by university honor codes",
+      "D": "Only to postdoctoral fellows who have completed doctoral degrees"
     },
     "correct_option": "A",
-    "explanation": "Yes; they apply to all licensees and applicants, including conduct during required education/training/employment. (Rule 510-5-.01)"
+    "explanation": "Rule 510-5-.01 provides that the Georgia Code of Ethics and Code of Conduct apply to all licensees and applicants for licensure, including conduct during education, training, and employment required for licensure."
   },
   {
     "id": 150,
@@ -2241,13 +2241,13 @@
     "source_citation": "Rule 510-5-.02",
     "question_text": "Who is the client when a corporation is the contracting party?",
     "options": {
-      "A": "Nature/anticipated course of therapy, fees, third parties, limits of confidentiality",
+      "A": "Every individual employee of the corporation who participates in services",
       "B": "The organization, unless a separate professional relationship with an individual exists",
-      "C": "Role, who is the client, probable uses of information, and limits of confidentiality",
-      "D": "Refrain from the role if it could impair objectivity or expose others to harm/exploitation"
+      "C": "The individual CEO or president of the contracting corporation",
+      "D": "The Georgia Department of Labor"
     },
     "correct_option": "B",
-    "explanation": "The organization, unless a separate professional relationship with an individual exists. (Rule 510-5-.02)"
+    "explanation": "Rule 510-5-.02 provides that when a corporation or organizational entity is the contracting party, the organization is the client, unless a separate professional relationship with an individual employee is formally established."
   },
   {
     "id": 151,
@@ -2256,13 +2256,13 @@
     "source_citation": "Rule 510-5-.02",
     "question_text": "What is 'telepsychology' in Georgia rules?",
     "options": {
-      "A": "Unique concerns: technology used, boundaries, response procedures, risks",
-      "B": "Correct via correction, retraction, erratum, or other appropriate means",
+      "A": "The automated computerized scoring of personality assessment instruments",
+      "B": "The broadcasting of educational mental health lectures on public television",
       "C": "Provision of psychological services using telecommunication technologies",
-      "D": "Obtain sufficient training to ensure competence and engage in consultation"
+      "D": "The electronic billing and filing of healthcare insurance claims"
     },
     "correct_option": "C",
-    "explanation": "Provision of psychological services using telecommunication technologies. (Rule 510-5-.02)"
+    "explanation": "Rule 510-5-.02 defines 'telepsychology' as the provision of psychological services using telecommunication technologies (e.g. video conferencing, telephone, secure electronic communication)."
   },
   {
     "id": 152,
@@ -2271,13 +2271,13 @@
     "source_citation": "Rule 510-5-.07",
     "question_text": "What is required to practice telepsychology in Georgia?",
     "options": {
-      "A": "Take reasonable steps to correct or minimize the misuse",
-      "B": "Within 72 hours after receiving the certificate or order",
-      "C": "Live online interactive video conferences in real time",
+      "A": "A national telebehavioral health certificate with no state license",
+      "B": "A valid license in any U.S. state without notification or PSYPACT authority",
+      "C": "Registration with the Federal Communications Commission (FCC)",
       "D": "Current active Georgia license or PSYPACT authorization"
     },
     "correct_option": "D",
-    "explanation": "Current active Georgia license or PSYPACT authorization. (Rule 510-5-.07)"
+    "explanation": "Rule 510-5-.07 requires any individual practicing telepsychology with clients located in Georgia to possess a current, active Georgia psychology license or valid PSYPACT authorization to practice interjurisdictional telepsychology (APIT)."
   },
   {
     "id": 153,
@@ -2287,12 +2287,12 @@
     "question_text": "Must telepsychology meet the same standards as in-person services?",
     "options": {
       "A": "Yes",
-      "B": "No; this constitutes an unwaivable conflict of interest under Board ethics rules",
-      "C": "No; requires prior formal peer review and clearance by the Board ethics committee",
-      "D": "No, unless the Board waives the requirement upon formal written application"
+      "B": "No; telepsychology is exempt from state confidentiality and informed consent rules",
+      "C": "No; telepsychology is subject to relaxed standards of documentation and recordkeeping",
+      "D": "Only when providing services to minors under 18 years of age"
     },
     "correct_option": "A",
-    "explanation": "Yes. (Rule 510-5-.07)"
+    "explanation": "Rule 510-5-.07 specifies that telepsychology services must adhere to the exact same legal, ethical, and clinical practice standards as in-person psychological practice in Georgia."
   },
   {
     "id": 154,
@@ -2301,13 +2301,13 @@
     "source_citation": "Rule 510-5-.07",
     "question_text": "What PSYPACT credentials allow interjurisdictional telepsychology?",
     "options": {
-      "A": "The supervising psychologist personally",
+      "A": "ASPPB Interjurisdictional Practice Certificate (IPC) and TAP authorization",
       "B": "ASPPB E.Passport and APIT authorization",
-      "C": "Maximum 10 per course, 20 per biennium",
-      "D": "Maximum 5 per article, 10 per biennium"
+      "C": "Certificate of Professional Qualification (CPQ) and Georgia temporary license",
+      "D": "ABPP Specialty Diploma and National Register Health Service Psychologist credential"
     },
     "correct_option": "B",
-    "explanation": "ASPPB E.Passport and APIT authorization. (Rule 510-5-.07)"
+    "explanation": "Rule 510-5-.07 and PSYPACT rules establish that interjurisdictional telepsychology requires an ASPPB E.Passport and Authority to Practice Interjurisdictional Telepsychology (APIT)."
   },
   {
     "id": 155,
@@ -2316,13 +2316,13 @@
     "source_citation": "Rule 510-9-.03",
     "question_text": "How often must IPC and TAP be renewed under PSYPACT?",
     "options": {
-      "A": "48 hours",
-      "B": "72 hours",
+      "A": "Biennially (every two years)",
+      "B": "Every three years",
       "C": "Annually",
-      "D": "I/O fellows"
+      "D": "Every five years"
     },
     "correct_option": "C",
-    "explanation": "Annually. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 and PSYPACT regulations require ASPPB credentials (IPC, E.Passport) and PSYPACT authorities (TAP, APIT) to be renewed annually."
   },
   {
     "id": 156,
@@ -2331,13 +2331,13 @@
     "source_citation": "Rule 510-5-.05",
     "question_text": "What must a psychologist do when impaired and in a professional relationship?",
     "options": {
-      "A": "Licensed psychology, medicine (psychiatry/neurology/relevant medical field)",
-      "B": "Obtain sufficient training to ensure competence and engage in consultation",
-      "C": "Unique concerns: technology used, boundaries, response procedures, risks",
+      "A": "Continue practicing while self-medicating with over-the-counter pharmaceuticals",
+      "B": "Disclose full personal diagnostic details to all current clients in therapy",
+      "C": "Delegate all clinical decision-making to administrative office receptionists",
       "D": "Terminate appropriately, notify client in writing, and assist with referral"
     },
     "correct_option": "D",
-    "explanation": "Terminate appropriately, notify client in writing, and assist with referral. (Rule 510-5-.05)"
+    "explanation": "Rule 510-5-.05 requires an impaired psychologist who is in an active professional relationship to terminate appropriately, notify the client in writing, and assist the client in finding alternative professional services."
   },
   {
     "id": 157,
@@ -2347,12 +2347,12 @@
     "question_text": "What may the Board require of an impaired licensee?",
     "options": {
       "A": "Exam, records, referral to Colleague Assistance Program, rehabilitation, practice restrictions",
-      "B": "Consult knowledgeable colleagues, state/national ethics committees, or appropriate authorities",
-      "C": "License application, examinations, billing, services, reports, and any other practice activity",
-      "D": "Make known commitment to Ethics Code and attempt to resolve; if unresolvable, may follow law"
+      "B": "Immediate lifetime revocation with no opportunity for rehabilitation or reapplication",
+      "C": "Automatic criminal prosecution in superior court for reckless endangerment",
+      "D": "Mandatory 500 hours of uncompensated community service in a public hospital"
     },
     "correct_option": "A",
-    "explanation": "Exam, records, referral to Colleague Assistance Program, rehabilitation, practice restrictions. (Rule 510-5-.05)"
+    "explanation": "Rule 510-5-.05 authorizes the Board to require an impaired licensee to undergo physical/mental examination, produce records, refer to a Colleague Assistance Program, undergo rehabilitation, and accept practice restrictions."
   },
   {
     "id": 158,
@@ -2361,13 +2361,13 @@
     "source_citation": "Rule 510-5-.05",
     "question_text": "What happens if an impaired licensee refuses evaluation/rehabilitation?",
     "options": {
-      "A": "Maximum 6 per biennium for two 3-hour workshops",
+      "A": "The Board must dismiss all pending complaints with prejudice",
       "B": "May constitute basis for disciplinary sanctions",
-      "C": "Two from health service providers in psychology",
-      "D": "Maximum 12 per biennium for two 6-hour workshops"
+      "C": "The licensee is granted an automatic 12-month leave of absence",
+      "D": "The matter is referred to the APA Ethics Committee for binding arbitration"
     },
     "correct_option": "B",
-    "explanation": "May constitute basis for disciplinary sanctions. (Rule 510-5-.05)"
+    "explanation": "Rule 510-5-.05 provides that refusal of an impaired licensee to submit to directed evaluation, treatment, or rehabilitation may constitute independent grounds for disciplinary action or summary suspension."
   },
   {
     "id": 159,
@@ -2376,13 +2376,13 @@
     "source_citation": "Rule 510-5-.04",
     "question_text": "How long must adult psychological records be maintained?",
     "options": {
-      "A": "One year after the last date of service",
-      "B": "Two years after the last date of service",
+      "A": "Three years after the last date of service",
+      "B": "Five years after the last date of service",
       "C": "Seven years after the last date of service",
-      "D": "Three years after the last date of service"
+      "D": "Ten years after the last date of service"
     },
     "correct_option": "C",
-    "explanation": "Seven years after the last date of service. (Rule 510-5-.04)"
+    "explanation": "Rule 510-5-.04 requires psychological records for adult clients to be retained for a minimum of seven (7) years after the last date of professional service."
   },
   {
     "id": 160,
@@ -2391,13 +2391,13 @@
     "source_citation": "Rule 510-5-.04",
     "question_text": "How long must minor records be maintained?",
     "options": {
-      "A": "Until one year after age of majority, or at least seven years after last service, whichever is later",
-      "B": "Until two years after age of majority, or at least seven years after last service, whichever is later",
-      "C": "Until four years after age of majority, or at least seven years after last service, whichever is later",
-      "D": "Until three years after age of majority, or at least seven years after last service, whichever is later"
+      "A": "Until age 18, regardless of when services were provided",
+      "B": "Exactly seven years from the date of service, regardless of age",
+      "C": "Until three years after age of majority, or at least seven years after last service, whichever is later",
+      "D": "Five years after the minor reaches age 21"
     },
-    "correct_option": "D",
-    "explanation": "Until three years after age of majority, or at least seven years after last service, whichever is later. (Rule 510-5-.04)"
+    "correct_option": "C",
+    "explanation": "Rule 510-5-.04 provides that records of minor clients must be maintained until three years after the minor reaches the age of majority (i.e. age 21), or at least seven years after the last service date, whichever is later."
   },
   {
     "id": 161,
@@ -2407,12 +2407,12 @@
     "question_text": "What must records include?",
     "options": {
       "A": "Identifying/contact data, fees/billing, informed consent, diagnosis/basis, plan, dates/services, interventions, assessment",
-      "B": "To facilitate later services, replicate research, meet institutional requirements, ensure accurate billing, comply with law",
-      "C": "Until three years after age of majority, or at least seven years after last service, whichever is later",
-      "D": "Only if it is not clinically contraindicated and the resulting arrangement is not exploitative"
+      "B": "Complete transcripts of all spoken dialogue and personal feelings of the therapist",
+      "C": "Client personal tax returns and detailed credit card account histories",
+      "D": "Photographs of the client and personal contact details of all extended family members"
     },
     "correct_option": "A",
-    "explanation": "Identifying/contact data, fees/billing, informed consent, diagnosis/basis, plan, dates/services, interventions, assessment. (Rule 510-5-.04)"
+    "explanation": "Rule 510-5-.04 enumerates required record components: identifying and contact information, fee/billing records, informed consent, diagnosis/clinical basis, treatment plan, dates and nature of services, interventions, and assessment results."
   },
   {
     "id": 162,
@@ -2421,13 +2421,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "What must psychologists do with records after termination?",
     "options": {
-      "A": "Limited to the minimum necessary to achieve the purpose",
-      "B": "Continue to treat client information as confidential",
-      "C": "Risks to privacy and limits of confidentiality",
-      "D": "Only information germane to the purpose of the communication"
+      "A": "Publicly auction closed files to recover uncollected co-payments",
+      "B": "Discard records immediately upon termination to protect client privacy",
+      "C": "Transfer all clinical files to the Georgia Psychological Association archives",
+      "D": "Continue to treat client information as confidential"
     },
-    "correct_option": "B",
-    "explanation": "Continue to treat client information as confidential. (Rule 510-5-.06)"
+    "correct_option": "D",
+    "explanation": "Rule 510-5-.06 provides that the obligation to maintain client confidentiality continues indefinitely after termination of the professional relationship and after closure of records."
   },
   {
     "id": 163,
@@ -2436,13 +2436,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "How many supervision hours are required per 20 hours of face-to-face clinical contact?",
     "options": {
-      "A": "At least one-half",
-      "B": "40 per biennium",
+      "A": "Minimum two hours",
+      "B": "Minimum three hours",
       "C": "Minimum one hour",
-      "D": "No more than three"
+      "D": "Minimum four hours"
     },
     "correct_option": "C",
-    "explanation": "Minimum one hour. (Rule 510-5-.06)"
+    "explanation": "Rule 510-5-.06 requires a minimum of one (1) hour of individual face-to-face supervision for every 20 hours of face-to-face clinical client contact rendered by a supervisee."
   },
   {
     "id": 164,
@@ -2451,13 +2451,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "How many supervisees may a psychologist supervise concurrently without Board approval?",
     "options": {
-      "A": "No more than two",
-      "B": "No more than four",
+      "A": "No more than one",
+      "B": "No more than two",
       "C": "No more than five",
       "D": "No more than three"
     },
     "correct_option": "D",
-    "explanation": "No more than three. (Rule 510-5-.06)"
+    "explanation": "Rule 510-5-.06 restricts psychologists from supervising more than three (3) psychological supervisees/trainees concurrently without prior written Board approval."
   },
   {
     "id": 165,
@@ -2466,13 +2466,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "Who must make the diagnosis when clinical services are rendered by a supervisee?",
     "options": {
-      "A": "The supervising psychologist personally",
-      "B": "ASPPB E.Passport and APIT authorization",
-      "C": "Maximum 10 per course, 20 per biennium",
-      "D": "Maximum 5 per article, 10 per biennium"
+      "A": "The supervisee, with post-hoc cosignature on billing invoices",
+      "B": "The supervising psychologist personally",
+      "C": "The client's primary care physician",
+      "D": "A consensus panel of practicum students"
     },
-    "correct_option": "A",
-    "explanation": "The supervising psychologist personally. (Rule 510-5-.06)"
+    "correct_option": "B",
+    "explanation": "Rule 510-5-.06 mandates that the supervising psychologist personally determine and formulate all diagnoses for clients seen by a supervisee."
   },
   {
     "id": 166,
@@ -2481,13 +2481,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "Who may select and interpret psychological tests in a supervisory setting?",
     "options": {
-      "A": "The psychologist",
-      "B": "The psychologist only",
-      "C": "The judge",
-      "D": "Only as required by law or court order"
+      "A": "The supervisee independently without supervisor input",
+      "B": "Any psychometrician or testing technician employed by the practice",
+      "C": "The psychologist only",
+      "D": "The insurance company care manager authorizing testing hours"
     },
-    "correct_option": "B",
-    "explanation": "The psychologist only. (Rule 510-5-.06)"
+    "correct_option": "C",
+    "explanation": "Rule 510-5-.06 requires that the selection and interpretation of psychological tests remain the non-delegable responsibility of the supervising psychologist."
   },
   {
     "id": 167,
@@ -2496,13 +2496,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "Must a supervisee inform clients of their role and right to speak with the supervisor?",
     "options": {
-      "A": "No, unless approved by a two-thirds majority of the Georgia State Board",
-      "B": "Only when practicing under the direct supervision of a licensed physician or psychiatrist",
-      "C": "Yes",
-      "D": "Only if full written disclosure is provided to and countersigned by the client in advance"
+      "A": "No; supervisees should present themselves as independent licensed practitioners",
+      "B": "Only if the client specifically questions the supervisee's credentials",
+      "C": "Only in inpatient psychiatric hospital facilities",
+      "D": "Yes"
     },
-    "correct_option": "C",
-    "explanation": "Yes. (Rule 510-5-.06)"
+    "correct_option": "D",
+    "explanation": "Rule 510-5-.06 requires that supervisees inform clients of their supervisory status and provide clients with the name and contact information of the supervising psychologist and their right to speak with them."
   },
   {
     "id": 168,
@@ -2511,13 +2511,13 @@
     "source_citation": "Rule 510-5-.06",
     "question_text": "Who is responsible for supervisees' professional acts?",
     "options": {
-      "A": "Persons are competent, have no exploitative multiple relationship, and perform competently",
-      "B": "Attempt informal resolution with the individual if appropriate and confidentiality permits",
-      "C": "Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties",
-      "D": "The supervising psychologist retains full, complete, ultimate authority and responsibility"
+      "A": "The supervisee carries sole legal and ethical liability as an independent adult",
+      "B": "The supervising psychologist retains full, complete, ultimate authority and responsibility",
+      "C": "Liability is shared equally among all faculty members of the supervisee's university",
+      "D": "The client assumes all risk upon signing the initial intake disclosure form"
     },
-    "correct_option": "D",
-    "explanation": "The supervising psychologist retains full, complete, ultimate authority and responsibility. (Rule 510-5-.06)"
+    "correct_option": "B",
+    "explanation": "Rule 510-5-.06 provides that the supervising psychologist retains full, complete, and ultimate professional authority and legal responsibility for all acts and services rendered by a supervisee."
   },
   {
     "id": 169,
@@ -2526,13 +2526,13 @@
     "source_citation": "Rule 510-5-.08",
     "question_text": "Must a forensic psychologist personally examine the individual before testifying about psychological characteristics?",
     "options": {
-      "A": "Yes, unless examination is not feasible; then limit conclusions",
-      "B": "No; this constitutes an unwaivable conflict of interest under Board ethics rules",
-      "C": "Only in inpatient psychiatric facilities or hospitals accredited by JCAHO",
-      "D": "No, unless approved by a two-thirds majority of the Georgia State Board"
+      "A": "Personal examination is never required; reviewing records is always legally sufficient",
+      "B": "Yes, unless examination is not feasible; then limit conclusions",
+      "C": "No; forensic psychologists may testify based solely on hypothetical questions",
+      "D": "Yes, with zero exceptions; failing to examine bars any testimony whatsoever"
     },
-    "correct_option": "A",
-    "explanation": "Yes, unless examination is not feasible; then limit conclusions. (Rule 510-5-.08)"
+    "correct_option": "B",
+    "explanation": "Rule 510-5-.08 requires forensic psychologists to conduct a personal examination before testifying regarding psychological characteristics, unless examination is not feasible despite reasonable efforts, in which case they must clarify the impact and limit their conclusions."
   },
   {
     "id": 170,
@@ -2541,13 +2541,13 @@
     "source_citation": "Rule 510-5-.08",
     "question_text": "What standard governs court-appointed custody psychologists' good faith?",
     "options": {
-      "A": "Make reasonable efforts to maintain integrity and security consistent with law",
-      "B": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings",
-      "C": "Manuals, instruments, protocols, and test questions/stimuli; excludes test data",
-      "D": "Truthfully, honestly, candidly, and fairly describe the basis for testimony"
+      "A": "Diagnostic and Statistical Manual of Mental Disorders (DSM-5)",
+      "B": "Federal Rules of Evidence Rule 702",
+      "C": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings",
+      "D": "Georgia Rules of Professional Conduct for Attorneys"
     },
-    "correct_option": "B",
-    "explanation": "APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings. (Rule 510-5-.08)"
+    "correct_option": "C",
+    "explanation": "Rule 510-5-.08 provides that court-appointed custody evaluators who adhere to the APA's Guidelines for Child Custody Evaluations in Family Law Proceedings are presumed to have acted in good faith."
   },
   {
     "id": 171,
@@ -2556,13 +2556,13 @@
     "source_citation": "Rule 510-5-.08",
     "question_text": "Who determines whether a court-appointed custody psychologist acted in bad faith?",
     "options": {
-      "A": "The psychologist",
-      "B": "The psychologist only",
+      "A": "The Georgia State Board of Examiners of Psychologists",
+      "B": "The complaining parent",
       "C": "The judge",
-      "D": "Only as required by law or court order"
+      "D": "The American Psychological Association Ethics Committee"
     },
     "correct_option": "C",
-    "explanation": "The judge. (Rule 510-5-.08)"
+    "explanation": "Rule 510-5-.08 states that whether a court-appointed child custody evaluator acted in bad faith is determined exclusively by the judge presiding over the case."
   },
   {
     "id": 172,
@@ -2571,13 +2571,13 @@
     "source_citation": "Rule 510-5-.10",
     "question_text": "May a Georgia psychologist supervise someone who surrendered a license due to discipline?",
     "options": {
-      "A": "Yes, for temporary practice not exceeding 30 calendar days per calendar year",
-      "B": "Yes, after a mandatory waiting period of two years following service termination",
-      "C": "Yes, at the independent clinical discretion of the licensed psychologist",
-      "D": "No, unless Board waives/modifies for extraordinary circumstances"
+      "A": "Yes, automatically after a six-month waiting period",
+      "B": "No, unless Board waives/modifies for extraordinary circumstances",
+      "C": "Yes, provided the supervisee practices exclusively in private outpatient clinics",
+      "D": "Yes, if the supervisee signs an agreement not to bill commercial insurance"
     },
-    "correct_option": "D",
-    "explanation": "No, unless Board waives/modifies for extraordinary circumstances. (Rule 510-5-.10)"
+    "correct_option": "B",
+    "explanation": "Rule 510-5-.10 prohibits a Georgia psychologist from employing or supervising any individual who has surrendered a psychology license under disciplinary proceedings, unless the Board modifies this restriction for extraordinary circumstances."
   },
   {
     "id": 173,
@@ -2587,12 +2587,12 @@
     "question_text": "Is failure to cooperate with a Board/national investigation a violation?",
     "options": {
       "A": "Yes",
-      "B": "Only if the psychologist has completed a minimum of two years of postdoctoral experience",
-      "C": "No, unless the Board waives the requirement upon formal written application",
-      "D": "Only in inpatient psychiatric facilities or hospitals accredited by JCAHO"
+      "B": "No; cooperation is strictly voluntary under Georgia administrative law",
+      "C": "Only if the investigation involves felony criminal allegations",
+      "D": "No, unless the investigator obtains a formal superior court order to compel"
     },
     "correct_option": "A",
-    "explanation": "Yes. (Rule 510-5-.10)"
+    "explanation": "Rule 510-5-.10 establishes that failure to cooperate with a lawful investigation by the Board or a recognized national psychology committee constitutes an independent violation of Board rules."
   },
   {
     "id": 174,
@@ -2604,10 +2604,10 @@
       "A": "At least 10 days",
       "B": "At least 5 days",
       "C": "At least 14 days",
-      "D": "At least 15 days"
+      "D": "At least 30 days"
     },
     "correct_option": "B",
-    "explanation": "At least 5 days. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 requires an out-of-state psychologist intending to practice temporarily in Georgia to submit written notice to the Board at least five (5) days prior to the start of practice."
   },
   {
     "id": 175,
@@ -2617,12 +2617,12 @@
     "question_text": "What is the maximum days per calendar year for limited practice in Georgia?",
     "options": {
       "A": "15 days",
-      "B": "45 days",
+      "B": "60 days",
       "C": "30 days",
-      "D": "14 days"
+      "D": "90 days"
     },
     "correct_option": "C",
-    "explanation": "30 days. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 limits temporary practice by an out-of-state licensee to a maximum of 30 days per calendar year."
   },
   {
     "id": 176,
@@ -2631,13 +2631,13 @@
     "source_citation": "Rule 510-9-.03",
     "question_text": "What disaster response networks are exempt from Georgia licensure?",
     "options": {
-      "A": "When under direct supervision and responsibility of a licensed psychologist, without representing themselves as psychologists",
-      "B": "Fraud/deception in applying or passing exam; felony conviction; false/assumed name; habitual intemperance; negligence; violation of 43-1-19",
-      "C": "No more than 30 days per calendar year, provided the other jurisdiction has equal/greater standards and notice is provided",
+      "A": "Any private corporate employee assistance program network",
+      "B": "Local municipal neighborhood watch and community civic clubs",
+      "C": "Commercial telehealth platforms providing crisis counseling for a fee",
       "D": "American Red Cross, ICISF, APA/Georgia Psychological Association Disaster Response Network, or other nationally recognized networks"
     },
     "correct_option": "D",
-    "explanation": "American Red Cross, ICISF, APA/Georgia Psychological Association Disaster Response Network, or other nationally recognized networks. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 exempts out-of-state psychologists practicing as volunteer disaster responders affiliated with the American Red Cross, ICISF, APA/GPA Disaster Response Network, or other recognized disaster relief organizations."
   },
   {
     "id": 177,
@@ -2647,12 +2647,12 @@
     "question_text": "What credentials are needed for temporary in-person practice under PSYPACT?",
     "options": {
       "A": "ASPPB IPC and PSYPACT TAP",
-      "B": "Licensure by endorsement",
-      "C": "Reserved (repealed 1986)",
-      "D": "Not less than three months"
+      "B": "ASPPB E.Passport and APIT authorization",
+      "C": "CPQ and Georgia temporary license",
+      "D": "ABPP Diploma and National Register credential"
     },
     "correct_option": "A",
-    "explanation": "ASPPB IPC and PSYPACT TAP. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 provides that temporary in-person face-to-face practice under PSYPACT requires an ASPPB Interjurisdictional Practice Certificate (IPC) and PSYPACT Temporary Authorization to Practice (TAP)."
   },
   {
     "id": 178,
@@ -2663,11 +2663,11 @@
     "options": {
       "A": "Up to 15 days per calendar year",
       "B": "Up to 30 days per calendar year",
-      "C": "Up to 45 days per calendar year",
-      "D": "Up to 14 days per calendar year"
+      "C": "Up to 60 days per calendar year",
+      "D": "Up to 90 days per calendar year"
     },
     "correct_option": "B",
-    "explanation": "Up to 30 days per calendar year. (Rule 510-9-.03)"
+    "explanation": "Rule 510-9-.03 and PSYPACT compact rules allow psychologists holding TAP to practice in-person in a receiving compact state for up to 30 days per calendar year."
   },
   {
     "id": 179,
@@ -2676,13 +2676,13 @@
     "source_citation": "Rule 510-10-.01",
     "question_text": "May an unlicensed person render psychological services for a fee?",
     "options": {
-      "A": "Yes, if approved by a majority vote of the Georgia State Board of Examiners",
-      "B": "Yes, if authorized under an explicit court order or judicial subpoena",
+      "A": "Yes, if the person discloses lack of licensure on client receipts",
+      "B": "Yes, if registered as a life coach with the Secretary of State",
       "C": "No",
-      "D": "Yes, under the physician-psychologist collaborative practice exception"
+      "D": "Yes, provided fees do not exceed fifty dollars per hour"
     },
     "correct_option": "C",
-    "explanation": "No. (Rule 510-10-.01)"
+    "explanation": "Rule 510-10-.01 prohibits an unlicensed individual from rendering psychological services for a fee or remuneration in Georgia."
   },
   {
     "id": 180,
@@ -2691,13 +2691,13 @@
     "source_citation": "Rule 510-10-.01",
     "question_text": "May an unlicensed person supervise psychological services?",
     "options": {
-      "A": "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
-      "B": "Yes, provided all identifying client information is completely redacted or disguised",
-      "C": "Yes, under the physician-psychologist collaborative practice exception",
+      "A": "Yes, in non-profit community clinics and crisis hotlines",
+      "B": "Yes, if the unlicensed supervisor has at least 10 years of clinical experience",
+      "C": "Yes, provided a licensed psychologist co-signs reports quarterly",
       "D": "No"
     },
     "correct_option": "D",
-    "explanation": "No. (Rule 510-10-.01)"
+    "explanation": "Rule 510-10-.01 prohibits an unlicensed person from supervising psychological services rendered by trainees or employees."
   },
   {
     "id": 181,
@@ -2707,12 +2707,12 @@
     "question_text": "May an unlicensed person use titles implying licensure?",
     "options": {
       "A": "No",
-      "B": "Yes, if conducted under the direct supervision of a Board-approved licensed psychologist",
-      "C": "Yes, upon formal written petition and prior approval by the Georgia State Board",
-      "D": "Yes, provided notice is given to the Secretary of State within 14 calendar days"
+      "B": "Yes, if the word 'consultant' is appended to the title",
+      "C": "Yes, provided the title is used exclusively in marketing brochures",
+      "D": "Yes, if the individual holds a master's degree in clinical psychology"
     },
     "correct_option": "A",
-    "explanation": "No. (Rule 510-10-.01)"
+    "explanation": "Rule 510-10-.01 prohibits an unlicensed person from using any title or description tending to convey the impression that they are licensed to practice psychology in Georgia."
   },
   {
     "id": 182,
@@ -2721,13 +2721,13 @@
     "source_citation": "Rule 510-10-.03",
     "question_text": "Who may administer and interpret psychological tests?",
     "options": {
-      "A": "Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist",
+      "A": "Any healthcare provider holding a valid Georgia medical or nursing license",
       "B": "Currently licensed Georgia psychologist; students/trainees under direct licensed supervision",
-      "C": "Raw and scaled scores, client responses, and psychologist notes/recordings during examination",
-      "D": "Avoid multiple/conflicting roles; if unavoidable, clarify role expectations and confidentiality"
+      "C": "Certified school counselors and licensed life coaches independently",
+      "D": "Any business consultant who has completed test publisher certification"
     },
     "correct_option": "B",
-    "explanation": "Currently licensed Georgia psychologist; students/trainees under direct licensed supervision. (Rule 510-10-.03)"
+    "explanation": "Rule 510-10-.03 specifies that psychological tests may only be selected, administered, and interpreted by a currently licensed Georgia psychologist or students/trainees under direct licensed supervision."
   },
   {
     "id": 183,
@@ -2736,13 +2736,13 @@
     "source_citation": "Rule 510-2-.01",
     "question_text": "After how many failed EPPP attempts must additional coursework be completed?",
     "options": {
-      "A": "Active duty or separation leave within 24 months of retirement or 12 months of separation",
-      "B": "Doctoral degree from an APA/CPA accredited program in applied psychology (or equivalent)",
+      "A": "After two unsuccessful attempts, 1 semester hour or 5 CE hours",
+      "B": "After five unsuccessful attempts, 6 semester hours or 30 CE hours",
       "C": "After three unsuccessful attempts, 3 semester hours or 15 CE hours before 4th-6th retakes",
-      "D": "Superior court of the county where the division director maintains offices (Fulton County)"
+      "D": "After one unsuccessful attempt, 2 semester hours or 10 CE hours"
     },
     "correct_option": "C",
-    "explanation": "After three unsuccessful attempts, 3 semester hours or 15 CE hours before 4th-6th retakes. (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 provides that after three failed EPPP attempts, an applicant must complete 3 semester hours of coursework or 15 CE hours before being permitted to retake the exam (attempts 4-6)."
   },
   {
     "id": 184,
@@ -2751,13 +2751,13 @@
     "source_citation": "Rule 510-2-.01",
     "question_text": "After how many failed EPPP attempts are 9 semester hours required?",
     "options": {
-      "A": "Up to 30 days per calendar year",
-      "B": "Scheduled for a Full Board Exam",
-      "C": "Practice psychology in Georgia",
+      "A": "After three unsuccessful attempts",
+      "B": "After four unsuccessful attempts",
+      "C": "After five unsuccessful attempts",
       "D": "After six unsuccessful attempts"
     },
     "correct_option": "D",
-    "explanation": "After six unsuccessful attempts. (Rule 510-2-.01)"
+    "explanation": "Rule 510-2-.01 requires an applicant who fails the EPPP six times to complete 9 semester hours of graduate coursework before retaking the examination."
   },
   {
     "id": 185,
@@ -2769,10 +2769,10 @@
       "A": "One year from approval/completion of postdoctoral SWE",
       "B": "Two years from approval/completion of postdoctoral SWE",
       "C": "Three years from approval/completion of postdoctoral SWE",
-      "D": "Four years from approval/completion of postdoctoral SWE"
+      "D": "Six months from approval/completion of postdoctoral SWE"
     },
     "correct_option": "A",
-    "explanation": "One year from approval/completion of postdoctoral SWE. (Rule 510-2-.06)"
+    "explanation": "Rule 510-2-.06 provides that an approved application for licensure remains valid for one year from the date of approval or one year from the date of completion of postdoctoral SWE."
   },
   {
     "id": 186,
@@ -5376,13 +5376,13 @@
     "source_citation": "OCGA 16-13-111",
     "question_text": "Are the drug sanctions minimum or maximum?",
     "options": {
-      "A": "Authority to establish a code of conduct and ethics",
-      "B": "Aid prosecuting attorneys in enforcing the chapter",
+      "A": "Mandatory fixed; sanctions must be applied verbatim with no administrative variation permitted",
+      "B": "Maximum; boards are prohibited from imposing penalties beyond the statutory schedule",
       "C": "Minimum; boards may impose more stringent sanctions",
-      "D": "18 semester hours in addition to the 50 core hours"
+      "D": "Advisory; licensing boards retain complete discretion whether to enforce or waive sanctions"
     },
     "correct_option": "C",
-    "explanation": "Minimum; boards may impose more stringent sanctions. (OCGA 16-13-111)"
+    "explanation": "O.C.G.A. § 16-13-111 specifies that statutory sanctions for drug convictions are minimum standards; licensing boards retain full authority to impose more stringent sanctions or additional conditions."
   },
   {
     "id": 360,
