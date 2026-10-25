@@ -108,17 +108,17 @@ git commit -m "feat(pool): audit and curate Professional Relationships questions
 **Files:**
 - Modify: `gamb_exam/question_pool.json` (update items 259–362)
 
-- [ ] **Step 1: Audit and generate items 259–310 (Batch 6: Scope of Practice & Continuing Education)**
+- [x] **Step 1: Audit and generate items 259–310 (Batch 6: Scope of Practice & Continuing Education)**
 Apply distractor standards to items 259–310 (40 CE credits per biennium, 6 ethics hours, Area I vs. Area II limits, competence boundaries, consulting specialists, delegating duties).
 
-- [ ] **Step 2: Audit and generate items 311–362 (Batch 7: Impairment, Emergency Commitment & Hospital Privileges)**
+- [x] **Step 2: Audit and generate items 311–362 (Batch 7: Impairment, Emergency Commitment & Hospital Privileges)**
 Apply distractor standards to items 311–362 (O.C.G.A. § 37-3-41 Form 1013 involuntary examination authority, peace officer duties, hospital practice § 31-7-164, mental/physical incompetence evaluations).
 
-- [ ] **Step 3: Verify items 259–362**
+- [x] **Step 3: Verify items 259–362**
 
 Run automated check on items 259–362 to verify option validity and responsiveness.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add gamb_exam/question_pool.json
