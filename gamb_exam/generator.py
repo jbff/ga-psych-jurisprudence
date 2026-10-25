@@ -6,7 +6,10 @@ import random
 from pathlib import Path
 from typing import Any
 
-from gamb_exam.db import get_connection
+from gamb_exam.db import (
+    ensure_db_initialized,
+    get_connection,
+)
 
 DOMAIN_QUOTAS: dict[str, int] = {
     "prof-relationships": 14,
@@ -94,6 +97,7 @@ def generate_exam_questions(
     Returns:
         List of 50 sampled question dicts.
     """
+    ensure_db_initialized(db_path)
     _rng = rng if rng is not None else random.Random()
     conn = get_connection(db_path)
     if rng is not None:

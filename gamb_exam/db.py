@@ -78,6 +78,38 @@ def init_db(db_path: Path | str | None = None) -> None:
         conn.close()
 
 
+def ensure_db_initialized(db_path: Path | str | None = None) -> bool:
+    """Ensure database schema exists and is seeded with questions.
+
+    If database does not exist or has 0 questions, initializes the schema and
+    seeds the question pool from the Anki study deck.
+    Returns True if seeding was performed, False if already populated.
+    """
+    target_path = DEFAULT_DB_PATH if db_path is None else db_path
+    if str(target_path) == ":memory:":
+        init_db(target_path)
+        return False
+
+    init_db(target_path)
+    conn = get_connection(target_path)
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT count(*) FROM questions")
+        row = cursor.fetchone()
+        count = row[0] if row else 0
+    except sqlite3.OperationalError:
+        count = 0
+    finally:
+        conn.close()
+
+    if count == 0:
+        from gamb_exam.seed import seed_database
+
+        seed_database(db_path=target_path)
+        return True
+    return False
+
+
 def insert_question(question_dict: dict[str, Any], db_path: Path | str | None = None) -> int:
     """Insert a question into the database and return its primary key ID."""
     conn = get_connection(db_path)

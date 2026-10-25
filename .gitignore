@@ -13,3 +13,6 @@ build/
 .vscode/
 .idea/
 *.swp
+data/
+*.db
+*.sqlite*

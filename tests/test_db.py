@@ -235,3 +235,22 @@ def test_default_db_path(tmp_path: Path, monkeypatch):
     conn = get_connection()
     assert mock_db.exists()
     conn.close()
+
+
+def test_ensure_db_initialized(tmp_path: Path):
+    """Verifies ensure_db_initialized initializes schema and seeds questions on demand."""
+    from gamb_exam.db import ensure_db_initialized, get_all_questions
+
+    test_db = tmp_path / "auto_seed.db"
+    assert not test_db.exists()
+
+    # First call: creates and seeds database
+    seeded = ensure_db_initialized(test_db)
+    assert seeded is True
+    assert test_db.exists()
+    questions = get_all_questions(test_db)
+    assert len(questions) == 435
+
+    # Second call: idempotent, already initialized
+    seeded_again = ensure_db_initialized(test_db)
+    assert seeded_again is False

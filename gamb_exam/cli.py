@@ -14,6 +14,7 @@ from rich.table import Table
 
 from gamb_exam.db import (
     DEFAULT_DB_PATH,
+    ensure_db_initialized,
     get_all_questions,
     get_missed_questions,
     get_questions_by_domain,
@@ -54,6 +55,7 @@ def handle_test(args: argparse.Namespace) -> int:
 
 def handle_study(args: argparse.Namespace) -> int:
     """Handle the 'study' subcommand to run an untimed drill with instant feedback."""
+    ensure_db_initialized(args.db)
     if args.domain:
         questions = get_questions_by_domain(
             args.domain, db_path=args.db, limit=None
@@ -82,6 +84,7 @@ def handle_study(args: argparse.Namespace) -> int:
 
 def handle_missed(args: argparse.Namespace) -> int:
     """Handle the 'missed' subcommand to drill previously failed questions."""
+    ensure_db_initialized(args.db)
     missed = get_missed_questions(db_path=args.db)
     if not missed:
         console.print(
@@ -102,7 +105,7 @@ def handle_missed(args: argparse.Namespace) -> int:
 
 def handle_stats(args: argparse.Namespace) -> int:
     """Handle the 'stats' subcommand to display past session results."""
-    init_db(args.db)
+    ensure_db_initialized(args.db)
     sessions = get_session_history(db_path=args.db, limit=args.limit)
     if not sessions:
         console.print(
