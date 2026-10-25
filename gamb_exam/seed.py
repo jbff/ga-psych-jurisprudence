@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import random
 import re
+import sqlite3
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -37,23 +38,67 @@ CITATION_REGEX = re.compile(
     re.IGNORECASE,
 )
 
-ROBUST_FALLBACKS: list[str] = [
+POLAR_QUESTION_STARTS = re.compile(
+    r"^(can|may|is|are|does|do|must|should|could|would|shall)\b",
+    re.IGNORECASE,
+)
+
+POLAR_NO_DISTRACTORS: list[str] = [
+    "Yes, provided full written informed consent is documented in the client record",
+    "Yes, upon formal written petition and prior approval by the Georgia State Board",
+    "Yes, if authorized under an explicit court order or judicial subpoena",
+    "Yes, at the independent clinical discretion of the licensed psychologist",
+    "Yes, provided the arrangement is documented in writing and is not clinically contraindicated",
+    "Yes, in emergency situations where failure to act poses imminent danger to life or safety",
+    "Yes, if conducted under the direct supervision of a Board-approved licensed psychologist",
+    "Yes, for temporary practice not exceeding 30 calendar days per calendar year",
+    "Yes, provided all identifying client information is completely redacted or disguised",
+    "Yes, after a mandatory waiting period of two years following service termination",
+    "Yes, if approved by a majority vote of the Georgia State Board of Examiners",
+    "Yes, under the physician-psychologist collaborative practice exception",
+    "Yes, provided notice is given to the Secretary of State within 14 calendar days",
+    "Yes, with advance written notification to the Board and client waiver of privilege",
+]
+
+POLAR_YES_DISTRACTORS: list[str] = [
+    "No; strictly prohibited under Georgia statutory law and Board rules",
+    "No, unless specifically authorized under an emergency judicial order",
+    "Only with prior written authorization and credentialing from the Georgia State Board",
+    "Only if the psychologist has completed a minimum of two years of postdoctoral experience",
+    "Only in inpatient psychiatric facilities or hospitals accredited by JCAHO",
+    "Only if full written disclosure is provided to and countersigned by the client in advance",
+    "No, unless the Board waives the requirement upon formal written application",
+    "Only when practicing under the direct supervision of a licensed physician or psychiatrist",
+    "No; this constitutes an unwaivable conflict of interest under Board ethics rules",
+    "Only during a declared state of public health emergency by the Governor",
+    "No; requires prior formal peer review and clearance by the Board ethics committee",
+    "Only for endorsement applicants with at least ten years of continuous active licensure",
+    "No, unless approved by a two-thirds majority of the Georgia State Board",
+    "Only after completing 20 additional hours of continuing education in professional ethics",
+]
+
+POLAR_ANSWER_PREFIX = re.compile(
+    r"^(yes|no)([;,\.]|\s*$)",
+    re.IGNORECASE,
+)
+
+NON_POLAR_FALLBACKS: list[str] = [
     "At the discretion of the psychologist with annual Board notification",
     "Subject to formal peer review and written approval of the Board",
     "Within 30 calendar days of formal notice by certified mail",
-    "Only in inpatient psychiatric facilities accredited by JCAHO",
-    "Only under the direct supervision of a licensed psychologist",
-    "Requires approval by a two-thirds majority of the Georgia Board",
+    "In inpatient psychiatric facilities accredited by JCAHO",
+    "Under the direct supervision of a licensed psychologist",
+    "Upon approval by a two-thirds majority of the Georgia Board",
     "Within 60 calendar days of the administrative determination",
-    "Only after completing 20 additional hours of continuing education",
-    "No, unless specifically authorized under a court order",
-    "Yes, provided full written informed consent is documented in the record",
+    "Following completion of 20 additional hours of continuing education",
+    "Administrative review and written clearance by the Division Director",
+    "Formal documentation maintained in the permanent supervisory file",
 ]
 
 
 def normalize_text(text: str) -> str:
     """Normalize text by stripping trailing punctuation, whitespace, and lowercasing."""
-    return re.sub(r"[\.;:!?,\\s]+$", "", text.strip().lower())
+    return text.strip().rstrip(".;:!?,").strip().lower()
 
 
 def parse_anki_tsv(tsv_path: Path | str | None = None) -> list[dict[str, Any]]:
@@ -111,6 +156,12 @@ def parse_anki_tsv(tsv_path: Path | str | None = None) -> list[dict[str, Any]]:
                 citation = "Ga. Comp. R. & Regs. r. 510-1 et seq."
             raw_answer = back
 
+        # Card 425 fix: ensure fine reads "$500.00" even if source TSV has dropped digits
+        if "not to exceed 00.00" in back:
+            back = back.replace("not to exceed 00.00", "not to exceed $500.00")
+        if "not to exceed 00.00" in raw_answer:
+            raw_answer = raw_answer.replace("not to exceed 00.00", "not to exceed $500.00")
+
         clean_answer = re.sub(r"[\.;:\s]+$", "", raw_answer).strip()
 
         cards.append(
@@ -142,21 +193,93 @@ def generate_distractors(
 
     candidates: list[str] = []
 
-    # 1. Numeric / Duration / Quantity substitution
+    # 1. Quantitative phrases: "No more than X", "No less than X", "Not less than X"
+    m_no_more = re.search(
+        r"\b(no\s+more\s+than|no\s+less\s+than|not\s+less\s+than)\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b",
+        ans,
+        re.IGNORECASE,
+    )
+    if m_no_more:
+        num_tok = m_no_more.group(2)
+        word_map = {
+            "one": 1,
+            "two": 2,
+            "three": 3,
+            "four": 4,
+            "five": 5,
+            "six": 6,
+            "seven": 7,
+            "eight": 8,
+            "nine": 9,
+            "ten": 10,
+        }
+        num_to_word = {
+            1: "one",
+            2: "two",
+            3: "three",
+            4: "four",
+            5: "five",
+            6: "six",
+            7: "seven",
+            8: "eight",
+            9: "nine",
+            10: "ten",
+        }
+        if num_tok.lower() in word_map:
+            val = word_map[num_tok.lower()]
+            alt_pool = [2, 3, 4, 5, 6, 7]
+            alts = [num_to_word[n] for n in alt_pool if n != val]
+            for alt in alts[:4]:
+                candidates.append(
+                    ans[: m_no_more.start(2)] + alt + ans[m_no_more.end(2) :]
+                )
+        elif num_tok.isdigit():
+            val = int(num_tok)
+            alt_pool_num = [1, 2, 3, 4, 5, 6]
+            alts_num = [str(n) for n in alt_pool_num if n != val]
+            for alt in alts_num[:4]:
+                candidates.append(
+                    ans[: m_no_more.start(2)] + alt + ans[m_no_more.end(2) :]
+                )
+
+    if "no less than once each month" in ans.lower():
+        candidates.extend(
+            [
+                "No less than once each week",
+                "No less than once every two weeks",
+                "No less than once every 60 days",
+            ]
+        )
+
+    # 2. Dollars pattern (with cents support for e.g. $500.00)
+    m_dollars = re.search(r"\$([\d,]+(?:\.\d\d)?)", ans)
+    if m_dollars and not candidates:
+        val_str = m_dollars.group(1).replace(",", "")
+        has_cents = "." in val_str
+        float_val = float(val_str)
+        dollar_pool = [250.0, 500.0, 1000.0, 2500.0, 5000.0]
+        dollar_alts = [d for d in dollar_pool if abs(d - float_val) > 0.01]
+        for alt in dollar_alts[:4]:
+            formatted = f"${alt:,.2f}" if has_cents else f"${int(alt):,}"
+            candidates.append(
+                ans[: m_dollars.start()] + formatted + ans[m_dollars.end() :]
+            )
+
+    # 3. Numeric / Duration / Quantity substitution
     # Days pattern
     m_days = re.search(
         r"\b(\d+)\s+((?:calendar\s+|business\s+)?(?:days|day))\b",
         ans,
         re.IGNORECASE,
     )
-    if m_days:
+    if m_days and not candidates:
         val = int(m_days.group(1))
-        unit = m_days.group(2)
         day_pool = [10, 14, 15, 30, 45, 60, 90, 120, 180, 365]
         alt_vals = sorted([d for d in day_pool if d != val], key=lambda d: abs(d - val))
         for alt in alt_vals[:4]:
+            unit_str = "day" if alt == 1 else "days"
             candidates.append(
-                ans[: m_days.start()] + f"{alt} {unit}" + ans[m_days.end() :]
+                ans[: m_days.start()] + f"{alt} {unit_str}" + ans[m_days.end() :]
             )
 
     # Hours pattern
@@ -169,16 +292,16 @@ def generate_distractors(
         raw_num = m_hours.group(1).replace(",", "")
         if raw_num.isdigit():
             val = int(raw_num)
-            unit = m_hours.group(2)
             if val > 100:
                 hour_pool = [500, 1000, 1500, 1750, 2000, 2500]
                 alt_vals = sorted(
                     [h for h in hour_pool if h != val], key=lambda h: abs(h - val)
                 )
                 for alt in alt_vals[:4]:
+                    unit_str = "hour" if alt == 1 else "hours"
                     candidates.append(
                         ans[: m_hours.start()]
-                        + f"{alt:,} {unit}"
+                        + f"{alt:,} {unit_str}"
                         + ans[m_hours.end() :]
                     )
             else:
@@ -188,13 +311,14 @@ def generate_distractors(
                     key=lambda h: abs(h - val),
                 )
                 for alt in alt_vals[:4]:
+                    unit_str = "hour" if alt == 1 else "hours"
                     candidates.append(
                         ans[: m_hours.start()]
-                        + f"{alt} {unit}"
+                        + f"{alt} {unit_str}"
                         + ans[m_hours.end() :]
                     )
 
-    # Years pattern
+    # Years pattern with proper pluralization and capitalization
     m_years = re.search(
         r"\b(\d+|one|two|three|four|five|six|seven|ten)\s+(years|year)\b",
         ans,
@@ -214,32 +338,39 @@ def generate_distractors(
         val_str = m_years.group(1).lower()
         val_norm = word_to_num.get(val_str, val_str)
         is_word = val_str in word_to_num
-        unit = m_years.group(2)
-        year_pool_words = ["Two", "Three", "Four", "Five", "Seven", "Ten"]
+        is_start = m_years.start() == 0
+        year_pool_words = ["one", "two", "three", "four", "five", "seven", "ten"]
         year_pool_nums = ["1", "2", "3", "5", "7", "10"]
         if is_word:
-            alt_vals_word = [y for y in year_pool_words if y.lower() != val_str]
+            alt_vals_word = [y for y in year_pool_words if y != val_str]
             for alt in alt_vals_word[:4]:
+                unit_str = "year" if alt == "one" else "years"
+                word_str = alt.capitalize() if is_start else alt.lower()
                 candidates.append(
-                    ans[: m_years.start()] + f"{alt} {unit}" + ans[m_years.end() :]
+                    ans[: m_years.start()]
+                    + f"{word_str} {unit_str}"
+                    + ans[m_years.end() :]
                 )
         else:
             alt_vals_num = [y for y in year_pool_nums if y != val_norm]
             for alt in alt_vals_num[:4]:
+                unit_str = "year" if alt == "1" else "years"
                 candidates.append(
-                    ans[: m_years.start()] + f"{alt} {unit}" + ans[m_years.end() :]
+                    ans[: m_years.start()]
+                    + f"{alt} {unit_str}"
+                    + ans[m_years.end() :]
                 )
 
     # Months pattern
     m_months = re.search(r"\b(\d+)\s+(months|month)\b", ans, re.IGNORECASE)
     if m_months and not candidates:
         val = int(m_months.group(1))
-        unit = m_months.group(2)
         month_pool = [3, 6, 11, 12, 18, 24, 36]
         alt_vals = sorted([m for m in month_pool if m != val], key=lambda m: abs(m - val))
         for alt in alt_vals[:4]:
+            unit_str = "month" if alt == 1 else "months"
             candidates.append(
-                ans[: m_months.start()] + f"{alt} {unit}" + ans[m_months.end() :]
+                ans[: m_months.start()] + f"{alt} {unit_str}" + ans[m_months.end() :]
             )
 
     # Members pattern
@@ -257,18 +388,18 @@ def generate_distractors(
             ]
         )
 
-    # Dollars pattern
-    m_dollars = re.search(r"\$([\d,]+)", ans)
-    if m_dollars and not candidates:
-        val_str = m_dollars.group(1).replace(",", "")
-        dollar_pool = ["$250", "$500", "$1,000", "$2,500", "$5,000"]
-        alt_vals_str = [d for d in dollar_pool if d.replace("$", "").replace(",", "") != val_str]
-        for alt in alt_vals_str[:4]:
+    # Percent pattern
+    m_percent = re.search(r"\b(\d+)%\b", ans)
+    if m_percent and not candidates:
+        val = int(m_percent.group(1))
+        pct_pool = [10, 20, 25, 50, 75, 80]
+        pct_alts = [p for p in pct_pool if p != val]
+        for alt in pct_alts[:4]:
             candidates.append(
-                ans[: m_dollars.start()] + alt + ans[m_dollars.end() :]
+                ans[: m_percent.start()] + f"{alt}%" + ans[m_percent.end() :]
             )
 
-    # 2. Entity / Role answers
+    # 4. Entity / Role answers
     if norm_ans.startswith("the governor") or ans == "The Governor":
         candidates.extend(
             [
@@ -305,29 +436,33 @@ def generate_distractors(
             ]
         )
 
-    # 3. Yes / No answers
-    is_yes = bool(re.match(r"^yes([;,\.\s]|$)", norm_ans))
-    is_no = bool(re.match(r"^no([;,\.\s]|$)", norm_ans))
-    if is_yes:
-        candidates.extend(
-            [
-                "No; strictly prohibited under Georgia law and Board rules",
-                "Only with prior written authorization from the Georgia State Board",
-                "Only under an emergency judicial order or formal court subpoena",
-            ]
-        )
-    elif is_no:
-        candidates.extend(
-            [
-                "Yes, provided full written informed consent is documented in the client file",
-                "Yes, at the independent clinical discretion of the licensed psychologist",
-                "Yes, upon formal petition and written approval by the Board",
-            ]
-        )
+    # 5. Polar Yes/No handling
+    # Apply polar Yes/No distractors ONLY IF:
+    # - Question begins with polar auxiliary verb, OR
+    # - Answer strictly starts with Yes/No followed by punctuation or end-of-string
+    # (and not quantitative expressions like 'No more than', 'No less than', etc.)
+    m_no_strictly = bool(
+        re.match(r"^no([;,\.]|\s*$)", norm_ans)
+    ) and not bool(re.match(r"^no\s+(more|less|later|earlier)\s+than\b", norm_ans))
+    m_yes_strictly = bool(re.match(r"^yes([;,\.]|\s*$)", norm_ans))
+    is_polar_q = bool(POLAR_QUESTION_STARTS.match(front))
+    is_polar = (is_polar_q or m_no_strictly or m_yes_strictly) and (
+        m_no_strictly or m_yes_strictly
+    )
 
-    # 4. Domain pool matching
+    rng = random.Random(index * 47 + 19)
+
+    if is_polar and m_no_strictly:
+        shuffled_no = list(POLAR_NO_DISTRACTORS)
+        rng.shuffle(shuffled_no)
+        candidates.extend(shuffled_no)
+    elif is_polar and m_yes_strictly:
+        shuffled_yes = list(POLAR_YES_DISTRACTORS)
+        rng.shuffle(shuffled_yes)
+        candidates.extend(shuffled_yes)
+
+    # 6. Domain pool matching
     same_dom_cards = pool_by_domain.get(domain, [])
-    rng = random.Random(index * 37 + 11)
     shuffled_pool = list(same_dom_cards)
     rng.shuffle(shuffled_pool)
 
@@ -336,6 +471,11 @@ def generate_distractors(
 
     for c in shuffled_pool:
         c_ans = c["answer_text"]
+        c_is_polar = bool(POLAR_ANSWER_PREFIX.match(c_ans.strip()))
+        if not is_polar and c_is_polar:
+            continue
+        if is_polar and not c_is_polar:
+            continue
         if normalize_text(c_ans) != norm_ans:
             candidates.append(c_ans)
 
@@ -343,10 +483,23 @@ def generate_distractors(
     for other_dom, clist in pool_by_domain.items():
         if other_dom != domain:
             for c in clist:
-                candidates.append(c["answer_text"])
+                c_ans = c["answer_text"]
+                c_is_polar = bool(POLAR_ANSWER_PREFIX.match(c_ans.strip()))
+                if not is_polar and c_is_polar:
+                    continue
+                if is_polar and not c_is_polar:
+                    continue
+                if normalize_text(c_ans) != norm_ans:
+                    candidates.append(c_ans)
 
     # Append robust fallbacks
-    candidates.extend(ROBUST_FALLBACKS)
+    if is_polar:
+        if m_no_strictly:
+            candidates.extend(POLAR_NO_DISTRACTORS)
+        else:
+            candidates.extend(POLAR_YES_DISTRACTORS)
+    else:
+        candidates.extend(NON_POLAR_FALLBACKS)
 
     # Deduplicate and pick exactly 3
     final: list[str] = []
@@ -425,24 +578,34 @@ def seed_database(
     db_path: Path | str | None = None,
     tsv_path: Path | str | None = None,
 ) -> int:
-    """Initialize database and seed all 435 question records.
+    """Initialize database and seed all 435 question records idempotently.
 
-    Returns the count of seeded questions.
+    Builds records before modifying the database.
+    Resets the autoincrement primary key sequence so IDs start at 1.
     """
     target_db = DEFAULT_DB_PATH if db_path is None else Path(db_path)
     init_db(target_db)
 
-    # Ensure idempotency: clear existing questions table
+    # 1. Build question records BEFORE modifying the database
+    questions = build_question_records(tsv_path=tsv_path)
+
+    # 2. Reset database tables and sqlite_sequence
     conn = get_connection(target_db)
     try:
         with conn:
             cursor = conn.cursor()
             cursor.execute("DELETE FROM session_answers")
             cursor.execute("DELETE FROM questions")
+            try:
+                cursor.execute(
+                    "DELETE FROM sqlite_sequence WHERE name IN ('questions', 'session_answers')"
+                )
+            except sqlite3.OperationalError:
+                pass
     finally:
         conn.close()
 
-    questions = build_question_records(tsv_path=tsv_path)
+    # 3. Insert fresh questions
     return insert_questions(questions, db_path=target_db)
 
 
