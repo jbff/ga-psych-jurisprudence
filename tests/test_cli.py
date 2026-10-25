@@ -1,5 +1,6 @@
 """Unit tests for the CLI interface and entry points (gamb_exam.cli)."""
 
+import sqlite3
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -28,7 +29,7 @@ def test_db_with_questions(tmp_db_path: Path) -> Path:
     ]
     q_id = 1
     for domain, count in domains:
-        for i in range(count):
+        for _ in range(count):
             insert_question(
                 {
                     "domain": domain,
@@ -61,6 +62,16 @@ def test_cli_help(capsys: pytest.CaptureFixture[str]):
     )
 
 
+def test_cli_version(capsys: pytest.CaptureFixture[str]):
+    """Verifies --version returns exit code 0 and prints version string."""
+    from gamb_exam.cli import main
+
+    ret = main(["--version"])
+    assert ret == 0
+    captured = capsys.readouterr()
+    assert "gamb-exam 1.0.0" in captured.out
+
+
 def test_cli_no_args_prints_help(capsys: pytest.CaptureFixture[str]):
     """Verifies running main with no arguments displays help and returns 0."""
     from gamb_exam.cli import main
@@ -81,7 +92,7 @@ def test_cli_test_command(tmp_db_path: Path):
         patch(
             "gamb_exam.cli.generate_exam_questions", return_value=mock_questions
         ) as mock_gen,
-        patch("gamb_exam.cli.ExamApp") as mock_app_cls,
+        patch("gamb_exam.tui.ExamApp") as mock_app_cls,
     ):
         mock_app_instance = MagicMock()
         mock_app_cls.return_value = mock_app_instance
@@ -103,12 +114,29 @@ def test_cli_test_command(tmp_db_path: Path):
         mock_app_instance.run.assert_called_once()
 
 
+def test_cli_test_command_unseeded_error(
+    tmp_db_path: Path, capsys: pytest.CaptureFixture[str]
+):
+    """Verifies graceful error handling when DB is unseeded or missing."""
+    from gamb_exam.cli import main
+
+    with patch(
+        "gamb_exam.cli.generate_exam_questions",
+        side_effect=ValueError("Insufficient questions in domain 'licensure'"),
+    ):
+        ret = main(["test", "--db", str(tmp_db_path)])
+        assert ret == 1
+        captured = capsys.readouterr()
+        assert "Error generating practice exam" in captured.out
+        assert "Database may be missing or unseeded" in captured.out
+
+
 def test_cli_study_command(test_db_with_questions: Path):
     """Verifies main(['study']) invokes ExamApp.run() with mode='study_drill'."""
     from gamb_exam.cli import main
 
     # Test unfiltered study command
-    with patch("gamb_exam.cli.ExamApp") as mock_app_cls:
+    with patch("gamb_exam.tui.ExamApp") as mock_app_cls:
         mock_app_instance = MagicMock()
         mock_app_cls.return_value = mock_app_instance
 
@@ -121,7 +149,7 @@ def test_cli_study_command(test_db_with_questions: Path):
         mock_app_instance.run.assert_called_once()
 
     # Test domain-filtered study command
-    with patch("gamb_exam.cli.ExamApp") as mock_app_cls:
+    with patch("gamb_exam.tui.ExamApp") as mock_app_cls:
         mock_app_instance = MagicMock()
         mock_app_cls.return_value = mock_app_instance
 
@@ -145,6 +173,22 @@ def test_cli_study_command(test_db_with_questions: Path):
         mock_app_instance.run.assert_called_once()
 
 
+def test_cli_study_command_shuffles(test_db_with_questions: Path):
+    """Verifies unfiltered study command shuffles questions before slicing."""
+    from gamb_exam.cli import main
+
+    with (
+        patch("random.shuffle") as mock_shuffle,
+        patch("gamb_exam.tui.ExamApp") as mock_app_cls,
+    ):
+        mock_app_instance = MagicMock()
+        mock_app_cls.return_value = mock_app_instance
+
+        ret = main(["study", "--db", str(test_db_with_questions), "--count", "10"])
+        assert ret == 0
+        mock_shuffle.assert_called_once()
+
+
 def test_cli_missed_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):
     """Verifies behavior when no missed questions exist vs when missed questions exist."""
     from gamb_exam.cli import main
@@ -152,7 +196,7 @@ def test_cli_missed_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str
     init_db(tmp_db_path)
 
     # 1. No missed questions
-    with patch("gamb_exam.cli.ExamApp") as mock_app_cls:
+    with patch("gamb_exam.tui.ExamApp") as mock_app_cls:
         ret = main(["missed", "--db", str(tmp_db_path)])
         assert ret == 0
         mock_app_cls.assert_not_called()
@@ -184,7 +228,7 @@ def test_cli_missed_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str
         db_path=tmp_db_path,
     )
 
-    with patch("gamb_exam.cli.ExamApp") as mock_app_cls:
+    with patch("gamb_exam.tui.ExamApp") as mock_app_cls:
         mock_app_instance = MagicMock()
         mock_app_cls.return_value = mock_app_instance
 
@@ -210,7 +254,7 @@ def test_cli_stats_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]
     captured = capsys.readouterr()
     assert "No exam" in captured.out or "history" in captured.out.lower()
 
-    # 2. Populated sessions
+    # 2. Populated sessions: 1 passed, 1 failed, 1 incomplete
     s1 = create_session(mode="timed_exam", total_questions=50, db_path=tmp_db_path)
     complete_session(
         session_id=s1,
@@ -231,19 +275,23 @@ def test_cli_stats_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]
         db_path=tmp_db_path,
     )
 
+    # Incomplete session (never completed, passed=None)
+    create_session(mode="timed_exam", total_questions=50, db_path=tmp_db_path)
+
     ret = main(["stats", "--db", str(tmp_db_path)])
     assert ret == 0
     captured = capsys.readouterr()
     # History table items
     assert "PASS" in captured.out
     assert "FAIL" in captured.out
+    assert "INCOMPLETE" in captured.out
     assert "80.0%" in captured.out
     assert "70.0%" in captured.out
-    # Summary line
-    assert "Total exams" in captured.out
-    assert "Passing exams" in captured.out
-    assert "Pass rate" in captured.out
-    assert "Average score" in captured.out
+    # Summary line: 3 total, 2 completed, 1 passed -> 50.0% pass rate
+    assert "Total exams: 3" in captured.out
+    assert "Passing exams: 1" in captured.out
+    assert "Pass rate: 50.0%" in captured.out
+    assert "Average score: 75.0%" in captured.out
 
 
 def test_cli_export_command(
@@ -274,13 +322,30 @@ def test_cli_export_command(
     assert "mock_test1_key.md" in captured.out
 
 
+def test_cli_export_command_unseeded_error(
+    tmp_db_path: Path, capsys: pytest.CaptureFixture[str]
+):
+    """Verifies graceful error handling on export when DB query fails."""
+    from gamb_exam.cli import main
+
+    with patch(
+        "gamb_exam.cli.generate_exam_questions",
+        side_effect=sqlite3.OperationalError("no such table: questions"),
+    ):
+        ret = main(["export", "--db", str(tmp_db_path)])
+        assert ret == 1
+        captured = capsys.readouterr()
+        assert "Error exporting mock exam" in captured.out
+        assert "Database may be missing or unseeded" in captured.out
+
+
 def test_cli_keyboard_interrupt():
     """Verifies KeyboardInterrupt returns exit code 0 cleanly."""
     from gamb_exam.cli import main
 
     with (
         patch("gamb_exam.cli.generate_exam_questions", return_value=[{"id": 1}]),
-        patch("gamb_exam.cli.ExamApp") as mock_app_cls,
+        patch("gamb_exam.tui.ExamApp") as mock_app_cls,
     ):
         mock_app_instance = MagicMock()
         mock_app_instance.run.side_effect = KeyboardInterrupt()

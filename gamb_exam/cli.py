@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import random
+import sqlite3
 import sys
 from collections.abc import Sequence
 from pathlib import Path
@@ -23,7 +24,6 @@ from gamb_exam.generator import (
     export_mock_markdown,
     generate_exam_questions,
 )
-from gamb_exam.tui import ExamApp
 
 console = Console()
 
@@ -31,11 +31,21 @@ console = Console()
 def handle_test(args: argparse.Namespace) -> int:
     """Handle the 'test' subcommand to run a timed 50-question simulation."""
     rng = random.Random(args.seed) if args.seed is not None else None
-    questions = generate_exam_questions(
-        db_path=args.db,
-        prioritize_unseen=not args.no_unseen,
-        rng=rng,
-    )
+    try:
+        questions = generate_exam_questions(
+            db_path=args.db,
+            prioritize_unseen=not args.no_unseen,
+            rng=rng,
+        )
+    except (ValueError, sqlite3.Error) as err:
+        console.print(
+            f"[bold red]Error generating practice exam:[/bold red] {err}\n"
+            "[yellow]Database may be missing or unseeded. Run question seeding first![/yellow]"
+        )
+        return 1
+
+    from gamb_exam.tui import ExamApp
+
     app = ExamApp(questions=questions, mode="timed_exam", db_path=args.db)
     app.run()
     return 0
@@ -49,12 +59,15 @@ def handle_study(args: argparse.Namespace) -> int:
         )
     else:
         questions = get_all_questions(db_path=args.db)
+        random.shuffle(questions)
         if args.count and len(questions) > args.count:
             questions = questions[: args.count]
 
     if not questions:
         console.print("[yellow]No questions found for study drill.[/yellow]")
         return 0
+
+    from gamb_exam.tui import ExamApp
 
     app = ExamApp(questions=questions, mode="study_drill", db_path=args.db)
     app.run()
@@ -70,6 +83,8 @@ def handle_missed(args: argparse.Namespace) -> int:
             "Take a practice exam first! [cyan](gamb-exam test)[/cyan][/yellow]"
         )
         return 0
+
+    from gamb_exam.tui import ExamApp
 
     app = ExamApp(questions=missed, mode="study_drill", db_path=args.db)
     app.run()
@@ -88,13 +103,13 @@ def handle_stats(args: argparse.Namespace) -> int:
         return 0
 
     table = Table(title="Georgia Jurisprudence Exam History")
-    table.add_column("Session ID", justify="right", style="cyan")
-    table.add_column("Date/Time", justify="center")
+    table.add_column("Session ID", justify="right", style="cyan", no_wrap=True)
+    table.add_column("Date/Time", justify="center", no_wrap=True)
     table.add_column("Mode", justify="center")
-    table.add_column("Score", justify="center")
-    table.add_column("Percentage", justify="right")
-    table.add_column("Status", justify="center")
-    table.add_column("Time Spent", justify="right")
+    table.add_column("Score", justify="center", no_wrap=True)
+    table.add_column("Percentage", justify="right", no_wrap=True)
+    table.add_column("Status", justify="center", no_wrap=True)
+    table.add_column("Time Spent", justify="right", no_wrap=True)
 
     for s in sessions:
         score_val = s.get("score")
@@ -136,8 +151,11 @@ def handle_stats(args: argparse.Namespace) -> int:
     console.print()
 
     total_exams = len(sessions)
-    passing_exams = sum(1 for s in sessions if s.get("passed") in (True, 1))
-    pass_rate = (passing_exams / total_exams * 100.0) if total_exams > 0 else 0.0
+    completed_sessions = [s for s in sessions if s.get("passed") is not None]
+    passing_exams = sum(1 for s in completed_sessions if s.get("passed") in (True, 1))
+    pass_rate = (
+        (passing_exams / len(completed_sessions) * 100.0) if completed_sessions else 0.0
+    )
     pcts = [s["percentage"] for s in sessions if s.get("percentage") is not None]
     avg_score = (sum(pcts) / len(pcts)) if pcts else 0.0
 
@@ -152,12 +170,20 @@ def handle_stats(args: argparse.Namespace) -> int:
 
 def handle_export(args: argparse.Namespace) -> int:
     """Handle the 'export' subcommand to generate markdown mock exams and answer keys."""
-    questions = generate_exam_questions(db_path=args.db)
-    q_path, k_path = export_mock_markdown(
-        questions,
-        output_dir=args.output,
-        mock_id=args.mock_id,
-    )
+    try:
+        questions = generate_exam_questions(db_path=args.db)
+        q_path, k_path = export_mock_markdown(
+            questions,
+            output_dir=args.output,
+            mock_id=args.mock_id,
+        )
+    except (ValueError, sqlite3.Error) as err:
+        console.print(
+            f"[bold red]Error exporting mock exam:[/bold red] {err}\n"
+            "[yellow]Database may be missing or unseeded. Run question seeding first![/yellow]"
+        )
+        return 1
+
     console.print("[bold green]Successfully exported mock exam:[/bold green]")
     console.print(f"  [bold]Questions:[/bold] [cyan]{q_path}[/cyan]", soft_wrap=True)
     console.print(f"  [bold]Answer Key:[/bold] [cyan]{k_path}[/cyan]", soft_wrap=True)
@@ -169,6 +195,12 @@ def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="gamb-exam",
         description="Georgia Psychology Jurisprudence Examination Simulator and Study Suite",
+    )
+    parser.add_argument(
+        "--version",
+        action="version",
+        version="gamb-exam 1.0.0",
+        help="Show program's version number and exit",
     )
     subparsers = parser.add_subparsers(dest="subcommand", help="Available subcommands")
 
