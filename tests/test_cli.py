@@ -353,3 +353,56 @@ def test_cli_keyboard_interrupt():
 
         ret = main(["test"])
         assert ret == 0
+
+
+def test_build_assets_cli_help(capsys: pytest.CaptureFixture[str]):
+    """Verifies main(['build-assets', '--help']) returns 0 and outputs expected text."""
+    from gamb_exam.cli import main
+
+    exit_code = main(["build-assets", "--help"])
+    assert exit_code == 0
+    captured = capsys.readouterr()
+    assert "build-assets" in captured.out
+    assert "--output-dir" in captured.out
+
+
+def test_build_assets_cli_execution(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    """Verifies main(['build-assets', '--output-dir', ...]) generates all expected assets."""
+    from gamb_exam.cli import main
+
+    def mock_compile_html_to_pdf(html_path: Path, pdf_path: Path) -> None:
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        pdf_path.touch()
+
+    monkeypatch.setattr("gamb_exam.build_assets.compile_html_to_pdf", mock_compile_html_to_pdf)
+
+    exit_code = main(["build-assets", "--output-dir", str(tmp_path)])
+    assert exit_code == 0
+
+    assert (tmp_path / "pdfs" / "GAMB_Statutory_Cheat_Sheet.pdf").exists()
+    assert (tmp_path / "pdfs" / "GAMB_435_Question_Compendium.pdf").exists()
+    assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_A.pdf").exists()
+    assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_B.pdf").exists()
+    assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_C.pdf").exists()
+    assert (tmp_path / "docs" / "study_materials" / "cheat_sheet.md").exists()
+    assert (tmp_path / "docs" / "study_materials" / "compendium_questions.md").exists()
+    assert (tmp_path / "docs" / "study_materials" / "compendium_key.md").exists()
+    assert (tmp_path / "docs" / "study_materials" / "practice_exam_form_a.md").exists()
+    assert (tmp_path / "web" / "index.html").exists()
+
+
+def test_build_assets_cli_failure(tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]):
+    """Verifies main(['build-assets']) returns 1 on error and prints failure message."""
+    from gamb_exam.cli import main
+
+    monkeypatch.setattr(
+        "gamb_exam.build_assets.build_all_assets",
+        MagicMock(side_effect=RuntimeError("Disk full error")),
+    )
+
+    exit_code = main(["build-assets", "--output-dir", str(tmp_path)])
+    assert exit_code == 1
+    captured = capsys.readouterr()
+    assert "Error building study assets: Disk full error" in captured.out
+
+

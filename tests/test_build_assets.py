@@ -5,6 +5,7 @@ from unittest.mock import MagicMock
 import pytest
 
 from gamb_exam.build_assets import (
+    build_all_assets,
     compile_html_to_pdf,
     generate_cheat_sheet,
     generate_compendium,
@@ -361,6 +362,27 @@ def test_generate_web_quizzer_storage_and_accessibility(tmp_path: Path):
     assert "document.createElement('button')" in content
     assert "aria-label" in content
     assert "beforeunload" in content
+
+
+def test_build_all_assets(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    monkeypatch.setattr(
+        "gamb_exam.build_assets.compile_html_to_pdf",
+        lambda src, dst: (dst.parent.mkdir(parents=True, exist_ok=True), dst.touch()),
+    )
+
+    artifacts = build_all_assets(output_dir=tmp_path)
+    assert "pdfs" in artifacts
+    assert "docs" in artifacts
+    assert "web" in artifacts
+
+    assert len(artifacts["pdfs"]) == 5
+    assert len(artifacts["docs"]) == 6
+    assert len(artifacts["web"]) == 1
+
+    for paths in artifacts.values():
+        for p in paths:
+            assert p.exists()
+
 
 
 

@@ -201,6 +201,36 @@ def handle_export(args: argparse.Namespace) -> int:
     return 0
 
 
+def handle_build_assets(args: argparse.Namespace) -> int:
+    """Handle the 'build-assets' subcommand to generate all study products."""
+    from gamb_exam.build_assets import build_all_assets
+
+    output_dir = args.output_dir
+    console.print(
+        f"[bold cyan]Building all GAMB study products into:[/bold cyan] {output_dir}"
+    )
+
+    try:
+        artifacts = build_all_assets(output_dir=output_dir)
+    except (RuntimeError, ValueError, OSError, KeyError) as err:
+        console.print(f"[bold red]Error building study assets:[/bold red] {err}")
+        return 1
+
+    table = Table(title="Generated GAMB Study Products")
+    table.add_column("Category", style="cyan", no_wrap=True)
+    table.add_column("Product", style="bold")
+    table.add_column("Location", style="dim")
+
+    for category, paths in artifacts.items():
+        for path in paths:
+            table.add_row(category.upper(), path.name, str(path))
+
+    console.print(table)
+    console.print()
+    console.print("[bold green]All study products built successfully![/bold green]")
+    return 0
+
+
 def create_parser() -> argparse.ArgumentParser:
     """Create and configure the main argument parser."""
     parser = argparse.ArgumentParser(
@@ -328,6 +358,19 @@ def create_parser() -> argparse.ArgumentParser:
         help="Optional identifier or number suffix for generated mock files",
     )
     export_parser.set_defaults(func=handle_export)
+
+    # 6. build-assets
+    build_parser = subparsers.add_parser(
+        "build-assets",
+        help="Build all consumer study products (PDFs, Markdown, Web Quizzer)",
+    )
+    build_parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("."),
+        help="Target directory for generated study products (default: .)",
+    )
+    build_parser.set_defaults(func=handle_build_assets)
 
     return parser
 

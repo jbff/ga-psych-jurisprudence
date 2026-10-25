@@ -192,59 +192,11 @@ git commit -m "feat(assets): implement practice exam forms A, B, and C generatio
 - Modify: `tests/test_build_assets.py`
 - Output: `web/index.html`
 
-- [ ] **Step 1: Write failing test for web quizzer compilation**
-
-Add to `tests/test_build_assets.py`:
-```python
-from gamb_exam.build_assets import generate_web_quizzer
-
-def test_generate_web_quizzer(tmp_path: Path):
-    web_file = tmp_path / "index.html"
-    generate_web_quizzer(output_path=web_file)
-
-    assert web_file.exists()
-    content = web_file.read_text(encoding="utf-8")
-    assert "<!DOCTYPE html>" in content
-    assert "Georgia Psychology Jurisprudence Examination" in content
-    assert "PSI Exam Simulation" in content
-    assert "Domain Study Drill" in content
-    assert "Missed Questions" in content
-    assert "const QUESTION_BANK =" in content
-    # Check that all 435 questions are serialized
-    assert '"id": 1' in content
-    assert '"id": 435' in content
-    assert "localStorage" in content
-```
-
-- [ ] **Step 2: Run test to verify it fails**
-
-Run: `uv run pytest tests/test_build_assets.py::test_generate_web_quizzer -v`  
-Expected: FAIL (`ImportError: cannot import name 'generate_web_quizzer'`).
-
-- [ ] **Step 3: Implement `generate_web_quizzer` in `gamb_exam/build_assets.py`**
-
-In `gamb_exam/build_assets.py`:
-- Ingest `gamb_exam/question_pool.json`.
-- Render a self-contained, zero-dependency HTML5 application with:
-  - **Embedded JSON**: `const QUESTION_BANK = [...]` containing all 435 questions with `id`, `domain`, `subtopic`, `source_citation`, `question_text`, `options`, `correct_option`, `explanation`.
-  - **CSS Styling**: High-contrast, clean typography, responsive on mobile and desktop, card-based layout, instant green/red answer highlighting, modal/jump grid, dark/light toggle.
-  - **JS Engine**:
-    - Mode 1: PSI Timed Simulation (50 questions, 60-minute countdown timer, domain quotas 14/13/9/6/5/3, question flag toggle `[F]`, jump grid, 38/50 76% score report, review mode).
-    - Mode 2: Domain Study Drill (filter by any of the 6 domains, instant reveal with statutory citations & explanations on click).
-    - Mode 3: Missed Questions Drill (reads from browser `localStorage` to practice previously missed questions).
-    - Desktop keyboard shortcuts (`A`, `B`, `C`, `D`, `N`, `P`, `F`).
-
-- [ ] **Step 4: Run test to verify it passes**
-
-Run: `uv run pytest tests/test_build_assets.py::test_generate_web_quizzer -v`  
-Expected: PASS.
-
-- [ ] **Step 5: Commit**
-
-```bash
-git add gamb_exam/build_assets.py tests/test_build_assets.py
-git commit -m "feat(assets): implement zero-install standalone web quizzer"
-```
+- [x] **Step 1: Write failing test for web quizzer compilation**
+- [x] **Step 2: Run test to verify it fails**
+- [x] **Step 3: Implement `generate_web_quizzer` in `gamb_exam/build_assets.py`**
+- [x] **Step 4: Run test to verify it passes**
+- [x] **Step 5: Commit**
 
 ---
 
@@ -254,48 +206,11 @@ git commit -m "feat(assets): implement zero-install standalone web quizzer"
 - Modify: `gamb_exam/cli.py`
 - Modify: `tests/test_cli.py`
 
-- [ ] **Step 1: Write failing test for `build-assets` CLI command**
-
-Add to `tests/test_cli.py`:
-```python
-def test_build_assets_cli_help(capsys):
-    from gamb_exam.cli import main
-    exit_code = main(["build-assets", "--help"])
-    assert exit_code == 0
-    captured = capsys.readouterr()
-    assert "build-assets" in captured.out
-    assert "--output-dir" in captured.out
-
-def test_build_assets_cli_execution(tmp_path, monkeypatch):
-    from gamb_exam.cli import main
-    exit_code = main(["build-assets", "--output-dir", str(tmp_path)])
-    assert exit_code == 0
-    assert (tmp_path / "pdfs" / "GAMB_Statutory_Cheat_Sheet.pdf").exists()
-    assert (tmp_path / "pdfs" / "GAMB_435_Question_Compendium.pdf").exists()
-    assert (tmp_path / "web" / "index.html").exists()
-```
-
-- [ ] **Step 2: Run test to verify it fails**
-
-Run: `uv run pytest tests/test_cli.py::test_build_assets_cli_help -v`  
-Expected: FAIL (`unrecognized arguments: build-assets`).
-
-- [ ] **Step 3: Integrate `build-assets` into `gamb_exam/cli.py`**
-
-In `gamb_exam/cli.py`:
-- Add `handle_build_assets(args: argparse.Namespace) -> int`:
-  - Calls `build_all_assets(output_dir=args.output_dir)`.
-  - Prints rich status messages with paths to generated PDFs, Markdown sources, and `web/index.html`.
-- Add parser in `create_parser()`:
-  - `build_parser = subparsers.add_parser("build-assets", help="Build all consumer study products (PDFs, Markdown, Web Quizzer)")`
-  - `--output-dir` (default: repository root).
-
-- [ ] **Step 4: Run test to verify it passes**
-
-Run: `uv run pytest tests/test_cli.py::test_build_assets_cli_help tests/test_cli.py::test_build_assets_cli_execution -v`  
-Expected: PASS.
-
-- [ ] **Step 5: Commit**
+- [x] **Step 1: Write failing test for `build-assets` CLI command**
+- [x] **Step 2: Run test to verify it fails**
+- [x] **Step 3: Integrate `build-assets` into `gamb_exam/cli.py`**
+- [x] **Step 4: Run test to verify it passes**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/cli.py tests/test_cli.py

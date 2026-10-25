@@ -2981,4 +2981,104 @@ def generate_web_quizzer(
     return output_path
 
 
+def build_all_assets(
+    output_dir: Path | str,
+    pool_path: Path | str | None = None,
+) -> dict[str, list[Path]]:
+    """Coordinate full generation of all consumer study products.
+
+    Creates subdirectories under `output_dir`:
+    - `pdfs/`:
+        - `GAMB_Statutory_Cheat_Sheet.pdf`
+        - `GAMB_435_Question_Compendium.pdf`
+        - `GAMB_Practice_Exam_Form_A.pdf`
+        - `GAMB_Practice_Exam_Form_B.pdf`
+        - `GAMB_Practice_Exam_Form_C.pdf`
+    - `docs/study_materials/`:
+        - `cheat_sheet.md`
+        - `compendium_questions.md`
+        - `compendium_key.md`
+        - `practice_exam_form_a.md`
+        - `practice_exam_form_b.md`
+        - `practice_exam_form_c.md`
+    - `web/`:
+        - `index.html`
+
+    Args:
+        output_dir: Root directory where output directories (pdfs, docs, web) will be created.
+        pool_path: Optional path to questions pool JSON file.
+
+    Returns:
+        Dict mapping asset category ("pdfs", "docs", "web") to list of generated Path objects.
+    """
+    out_dir = Path(output_dir)
+    repo_root = Path(__file__).resolve().parent.parent
+    pool_file = Path(pool_path) if pool_path is not None else repo_root / "gamb_exam" / "question_pool.json"
+
+    pdfs_dir = out_dir / "pdfs"
+    docs_dir = out_dir / "docs" / "study_materials"
+    web_dir = out_dir / "web"
+
+    pdfs_dir.mkdir(parents=True, exist_ok=True)
+    docs_dir.mkdir(parents=True, exist_ok=True)
+    web_dir.mkdir(parents=True, exist_ok=True)
+
+    # 1. Cheat Sheet
+    cheat_sheet_md = docs_dir / "cheat_sheet.md"
+    cheat_sheet_html = docs_dir / "cheat_sheet.html"
+    cheat_sheet_pdf = pdfs_dir / "GAMB_Statutory_Cheat_Sheet.pdf"
+    generate_cheat_sheet(md_path=cheat_sheet_md, html_path=cheat_sheet_html)
+    compile_html_to_pdf(cheat_sheet_html, cheat_sheet_pdf)
+    if cheat_sheet_html.exists():
+        cheat_sheet_html.unlink()
+
+    # 2. Compendium
+    compendium_q_md = docs_dir / "compendium_questions.md"
+    compendium_k_md = docs_dir / "compendium_key.md"
+    compendium_html = docs_dir / "compendium.html"
+    compendium_pdf = pdfs_dir / "GAMB_435_Question_Compendium.pdf"
+    generate_compendium(
+        q_md=compendium_q_md,
+        k_md=compendium_k_md,
+        html_path=compendium_html,
+        pool_path=pool_file,
+    )
+    compile_html_to_pdf(compendium_html, compendium_pdf)
+    if compendium_html.exists():
+        compendium_html.unlink()
+
+    # 3. Practice Forms A, B, C
+    forms = generate_practice_forms(
+        md_dir=docs_dir,
+        pdf_dir=pdfs_dir,
+        pool_path=pool_file,
+    )
+
+    # 4. Web Quizzer
+    web_index = web_dir / "index.html"
+    generate_web_quizzer(output_path=web_index, pool_path=pool_file)
+
+    return {
+        "pdfs": [
+            cheat_sheet_pdf,
+            compendium_pdf,
+            forms["A"]["pdf_path"],
+            forms["B"]["pdf_path"],
+            forms["C"]["pdf_path"],
+        ],
+        "docs": [
+            cheat_sheet_md,
+            compendium_q_md,
+            compendium_k_md,
+            forms["A"]["md_path"],
+            forms["B"]["md_path"],
+            forms["C"]["md_path"],
+        ],
+        "web": [
+            web_index,
+        ],
+    }
+
+
+
 
