@@ -17,14 +17,14 @@
 - Create: `LICENSE`
 - Modify: `README.md`
 
-- [ ] **Step 1: Initialize git repository and configure default branch to master**
+- [x] **Step 1: Initialize git repository and configure default branch to master**
 
 Run:
 ```bash
 git init -b master
 ```
 
-- [ ] **Step 2: Create .gitignore**
+- [x] **Step 2: Create .gitignore**
 
 Write `.gitignore`:
 ```
@@ -39,18 +39,18 @@ build/
 *.log
 ```
 
-- [ ] **Step 3: Create LICENSE with MIT terms and full legal disclaimer**
+- [x] **Step 3: Create LICENSE with MIT terms and full legal disclaimer**
 
 Write `LICENSE` including MIT terms and prominent non-affiliation / no-liability disclaimer for exam results.
 
-- [ ] **Step 4: Create remote repository on GitHub and set origin**
+- [x] **Step 4: Create remote repository on GitHub and set origin**
 
 Run:
 ```bash
 gh repo create jbff/ga-psych-jurisprudence --public --source=. --remote=origin || git remote add origin git@github.com:jbff/ga-psych-jurisprudence.git
 ```
 
-- [ ] **Step 5: Initial git commit**
+- [x] **Step 5: Initial git commit**
 
 Run:
 ```bash
@@ -68,11 +68,11 @@ git commit -m "chore: initial commit of GA psychology jurisprudence study kit an
 - Create: `tests/__init__.py`
 - Create: `tests/conftest.py`
 
-- [ ] **Step 1: Create `pyproject.toml`**
+- [x] **Step 1: Create `pyproject.toml`**
 
 Define project metadata, dependencies (`rich>=13.0`, `textual>=0.50.0`), dev dependencies (`pytest`), and console script entry point `gamb-exam = "gamb_exam.cli:main"`.
 
-- [ ] **Step 2: Create virtual environment and sync dependencies using `uv`**
+- [x] **Step 2: Create virtual environment and sync dependencies using `uv`**
 
 Run:
 ```bash
@@ -80,11 +80,11 @@ uv venv
 uv pip install rich textual pytest
 ```
 
-- [ ] **Step 3: Create basic package markers and test configuration**
+- [x] **Step 3: Create basic package markers and test configuration**
 
 Create `gamb_exam/__init__.py` (`__version__ = "1.0.0"`), `tests/__init__.py`, and `tests/conftest.py`.
 
-- [ ] **Step 4: Verify pytest works under `uv run`**
+- [x] **Step 4: Verify pytest works under `uv run`**
 
 Run:
 ```bash
@@ -92,7 +92,7 @@ uv run pytest
 ```
 Expected: `no tests ran in ...` (exited 5 or 0)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add pyproject.toml gamb_exam/__init__.py tests/
@@ -107,25 +107,25 @@ git commit -m "build: initialize uv environment and package configuration"
 - Create: `gamb_exam/db.py`
 - Test: `tests/test_db.py`
 
-- [ ] **Step 1: Write unit test for database initialization and CRUD operations**
+- [x] **Step 1: Write unit test for database initialization and CRUD operations**
 
 Test `init_db(db_path)`, inserting a question, fetching by domain, and recording an exam session.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_db.py`  
 Expected: `ModuleNotFoundError: No module named 'gamb_exam.db'`
 
-- [ ] **Step 3: Implement `gamb_exam/db.py`**
+- [x] **Step 3: Implement `gamb_exam/db.py`**
 
 Implement `get_connection(db_path)`, `init_db(db_path)`, `insert_question(...)`, `create_session(...)`, `save_answers(...)`, and `get_history(...)`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_db.py`  
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/db.py tests/test_db.py
@@ -140,20 +140,20 @@ git commit -m "feat(db): implement SQLite database schema and session persistenc
 - Create: `gamb_exam/seed.py`
 - Test: `tests/test_seed.py`
 
-- [ ] **Step 1: Write test for seed generation and question validity**
+- [x] **Step 1: Write test for seed generation and question validity**
 
 Verify that seed processing generates 4 distinct options (A, B, C, D) per question, with exactly one correct option, a non-empty explanation, and valid domain tags matching the 6 Board domains.
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_seed.py`  
 Expected: FAIL
 
-- [ ] **Step 3: Implement `gamb_exam/seed.py`**
+- [x] **Step 3: Implement `gamb_exam/seed.py`**
 
 Read `anki/gamb_deck.tsv`, transform the 435 cards into 4-choice questions with legally plausible distractors and code citations, and insert them into `data/gamb_exam.db`.
 
-- [ ] **Step 4: Run test to verify it passes and seed the database**
+- [x] **Step 4: Run test to verify it passes and seed the database**
 
 Run:
 ```bash
@@ -162,7 +162,7 @@ uv run python -m gamb_exam.seed
 ```
 Expected: 435 questions inserted into `data/gamb_exam.db`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/seed.py tests/test_seed.py data/gamb_exam.db
