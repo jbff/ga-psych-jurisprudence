@@ -9,6 +9,7 @@ from gamb_exam.build_assets import (
     generate_cheat_sheet,
     generate_compendium,
     generate_practice_forms,
+    generate_web_quizzer,
 )
 
 
@@ -269,6 +270,50 @@ def test_generate_practice_forms_html_escaping(tmp_path: Path, monkeypatch: pyte
     assert "No &lt;unsafe&gt; &amp; invalid" in content
     assert "&lt;Statute&gt; &amp; § 43-39" in content
     assert "&lt;b&gt;bold&lt;/b&gt; &amp; special characters." in content
+
+
+def test_generate_web_quizzer(tmp_path: Path):
+    web_file = tmp_path / "index.html"
+    generate_web_quizzer(output_path=web_file)
+
+    assert web_file.exists()
+    content = web_file.read_text(encoding="utf-8")
+    assert "<!DOCTYPE html>" in content
+    assert "Georgia Psychology Jurisprudence Examination" in content
+    assert "PSI Exam Simulation" in content
+    assert "Domain Study Drill" in content
+    assert "Missed Questions" in content
+    assert "const QUESTION_BANK =" in content
+    # Check that all 435 questions are serialized
+    assert '"id": 1' in content
+    assert '"id": 435' in content
+    assert "localStorage" in content
+
+
+def test_generate_web_quizzer_custom_pool(tmp_path: Path):
+    mock_pool = tmp_path / "mock_pool.json"
+    mock_pool.write_text(
+        json.dumps([
+            {
+                "id": 999,
+                "domain": "licensure",
+                "question_text": "Custom question?",
+                "options": {"A": "1", "B": "2", "C": "3", "D": "4"},
+                "correct_option": "B",
+                "source_citation": "Rule 510-2-.01",
+                "explanation": "Custom explanation.",
+            }
+        ]),
+        encoding="utf-8",
+    )
+    web_file = tmp_path / "nested" / "quizzer.html"
+    generate_web_quizzer(output_path=web_file, pool_path=mock_pool)
+
+    assert web_file.exists()
+    content = web_file.read_text(encoding="utf-8")
+    assert '"id": 999' in content
+    assert "Custom question?" in content
+
 
 
 

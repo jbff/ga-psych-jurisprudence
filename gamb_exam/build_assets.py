@@ -982,3 +982,1927 @@ def generate_practice_forms(
     return forms_result
 
 
+WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georgia Psychology Jurisprudence Examination — PSI Simulator &amp; Study Drill</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --border-color: #cbd5e1;
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --primary-light: #eff6ff;
+      --success: #15803d;
+      --success-bg: #f0fdf4;
+      --success-border: #86efac;
+      --danger: #b91c1c;
+      --danger-bg: #fef2f2;
+      --danger-border: #fca5a5;
+      --warning: #b45309;
+      --warning-bg: #fffbeb;
+      --warning-border: #fcd34d;
+      --flag-color: #d97706;
+      --badge-bg: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      --radius: 8px;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #0b1120;
+      --card-bg: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --border-color: #334155;
+      --primary: #3b82f6;
+      --primary-hover: #60a5fa;
+      --primary-light: #172554;
+      --success: #22c55e;
+      --success-bg: #052e16;
+      --success-border: #166534;
+      --danger: #ef4444;
+      --danger-bg: #450a0a;
+      --danger-border: #991b1b;
+      --warning: #f59e0b;
+      --warning-bg: #451a03;
+      --warning-border: #92400e;
+      --flag-color: #fbbf24;
+      --badge-bg: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.1rem;
+    }
+
+    .brand p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-tab {
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-tab:hover {
+      background-color: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .nav-tab.active {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-icon {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      border-radius: var(--radius);
+      padding: 0.45rem 0.65rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: all 0.15s ease;
+    }
+
+    .btn-icon:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    main {
+      flex: 1;
+      max-width: 950px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      background-color: var(--badge-bg);
+      color: var(--text-secondary);
+      letter-spacing: 0.02em;
+    }
+
+    .badge-primary {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .badge-warning {
+      background-color: var(--warning-bg);
+      color: var(--warning);
+      border: 1px solid var(--warning-border);
+    }
+
+    .badge-success {
+      background-color: var(--success-bg);
+      color: var(--success);
+      border: 1px solid var(--success-border);
+    }
+
+    .badge-danger {
+      background-color: var(--danger-bg);
+      color: var(--danger);
+      border: 1px solid var(--danger-border);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.925rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+
+    .btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--card-bg);
+      border-color: var(--border-color);
+      color: var(--text-primary);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background-color: var(--badge-bg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    .btn-outline:hover:not(:disabled) {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-danger {
+      background-color: var(--danger);
+      color: #ffffff;
+    }
+
+    .btn-danger:hover:not(:disabled) {
+      opacity: 0.9;
+    }
+
+    .btn-sm {
+      padding: 0.35rem 0.65rem;
+      font-size: 0.825rem;
+    }
+
+    .question-prompt {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0.85rem 0 1.25rem 0;
+      line-height: 1.5;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .option-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      width: 100%;
+      text-align: left;
+      background-color: var(--card-bg);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      line-height: 1.45;
+      transition: all 0.15s ease;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background-color: var(--primary-light);
+    }
+
+    .option-letter {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.825rem;
+      background-color: var(--badge-bg);
+      color: var(--text-secondary);
+      margin-top: 2px;
+      transition: all 0.15s ease;
+    }
+
+    .option-text {
+      flex: 1;
+    }
+
+    .option-btn.selected {
+      border-color: var(--primary);
+      background-color: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .option-btn.selected .option-letter {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .option-btn.correct {
+      border-color: var(--success-border) !important;
+      background-color: var(--success-bg) !important;
+      color: var(--success) !important;
+      font-weight: 600;
+    }
+
+    .option-btn.correct .option-letter {
+      background-color: var(--success) !important;
+      color: #ffffff !important;
+    }
+
+    .option-btn.incorrect {
+      border-color: var(--danger-border) !important;
+      background-color: var(--danger-bg) !important;
+      color: var(--danger) !important;
+    }
+
+    .option-btn.incorrect .option-letter {
+      background-color: var(--danger) !important;
+      color: #ffffff !important;
+    }
+
+    .feedback-box {
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--primary);
+      background-color: var(--primary-light);
+    }
+
+    .feedback-box.is-correct {
+      border-left-color: var(--success);
+      background-color: var(--success-bg);
+    }
+
+    .feedback-box.is-incorrect {
+      border-left-color: var(--danger);
+      background-color: var(--danger-bg);
+    }
+
+    .feedback-status {
+      font-weight: 700;
+      font-size: 0.975rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .feedback-status.correct {
+      color: var(--success);
+    }
+
+    .feedback-status.incorrect {
+      color: var(--danger);
+    }
+
+    .citation-line {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .explanation-text {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .exam-status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-bottom: 0.85rem;
+      margin-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .timer-display {
+      font-size: 1.15rem;
+      font-weight: 700;
+      font-family: monospace;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .jump-grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 0.4rem;
+      margin: 1.25rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .jump-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .grid-cell {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.15s ease;
+    }
+
+    .grid-cell:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .grid-cell.answered {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .grid-cell.current {
+      box-shadow: 0 0 0 2px var(--card-bg), 0 0 0 4px var(--primary);
+      font-weight: 700;
+    }
+
+    .grid-cell.flagged::after {
+      content: "⚑";
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      font-size: 0.7rem;
+      color: var(--flag-color);
+    }
+
+    .grid-cell.answered.flagged::after {
+      color: #fbbf24;
+    }
+
+    .grid-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .legend-box {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      border: 1px solid var(--border-color);
+    }
+
+    .legend-box.unanswered {
+      background-color: var(--card-bg);
+    }
+
+    .legend-box.answered {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .legend-box.flagged {
+      background-color: var(--card-bg);
+      border-color: var(--flag-color);
+      position: relative;
+    }
+
+    .legend-box.flagged::after {
+      content: "⚑";
+      font-size: 0.65rem;
+      color: var(--flag-color);
+      position: absolute;
+      top: -1px;
+      left: 2px;
+    }
+
+    .legend-box.current {
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .report-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+      font-size: 0.9rem;
+    }
+
+    .report-table th, .report-table td {
+      padding: 0.65rem 0.75rem;
+      border: 1px solid var(--border-color);
+      text-align: left;
+    }
+
+    .report-table th {
+      background-color: var(--badge-bg);
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .report-table tr:nth-child(even) td {
+      background-color: var(--primary-light);
+    }
+
+    .report-total-row {
+      font-weight: 700;
+      background-color: var(--primary-light) !important;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(2px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      max-width: 640px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .modal-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .modal-close {
+      background: transparent;
+      border: none;
+      font-size: 1.35rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      line-height: 1;
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+
+    .shortcuts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .shortcut-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9rem;
+    }
+
+    kbd {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      font-family: monospace;
+      font-weight: 600;
+      color: var(--text-primary);
+      background-color: var(--badge-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .domain-filters-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .filter-btn {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 0.4rem 0.75rem;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      padding: 1.25rem;
+      margin-top: auto;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .footer-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .actions-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .actions-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+    }
+
+    .empty-state h3 {
+      font-size: 1.35rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-state p {
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <h1>Georgia Psychology Jurisprudence Examination</h1>
+      <p>Candidate Study Quizzer &amp; PSI Simulation System</p>
+    </div>
+    <nav class="nav-tabs">
+      <button class="nav-tab active" id="tab-psi" onclick="switchMode('psi')">
+        <span>⏱️</span> PSI Exam Simulation
+      </button>
+      <button class="nav-tab" id="tab-drill" onclick="switchMode('drill')">
+        <span>📚</span> Domain Study Drill
+      </button>
+      <button class="nav-tab" id="tab-missed" onclick="switchMode('missed')">
+        <span>⚠️</span> Missed Questions <span class="badge" id="missed-badge">0</span>
+      </button>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-icon" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌙 Dark</button>
+      <button class="btn-icon" onclick="openShortcutsModal()" title="Keyboard Shortcuts">⌨️ Shortcuts</button>
+    </div>
+  </div>
+</header>
+
+<main id="app-container">
+  <!-- Dynamic Views Injected by JS -->
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>LEGAL DISCLAIMER:</strong> __LEGAL_DISCLAIMER__</p>
+    <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
+  </div>
+</footer>
+
+<!-- Modals -->
+<div class="modal-overlay" id="jump-grid-modal" onclick="handleModalBackdropClick(event, 'jump-grid-modal')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 class="modal-title">PSI Exam Jump Grid</h3>
+      <button class="modal-close" onclick="closeJumpGrid()">&times;</button>
+    </div>
+    <div class="grid-legend">
+      <div class="legend-item"><span class="legend-box unanswered"></span> Unanswered</div>
+      <div class="legend-item"><span class="legend-box answered"></span> Answered</div>
+      <div class="legend-item"><span class="legend-box flagged"></span> Flagged</div>
+      <div class="legend-item"><span class="legend-box current"></span> Current</div>
+    </div>
+    <div class="jump-grid" id="jump-grid-container"></div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeJumpGrid()">Close Grid</button>
+      <button class="btn btn-primary" onclick="confirmSubmitPsiExam()">Submit Exam</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="shortcuts-modal" onclick="handleModalBackdropClick(event, 'shortcuts-modal')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 class="modal-title">Keyboard Shortcuts</h3>
+      <button class="modal-close" onclick="closeShortcutsModal()">&times;</button>
+    </div>
+    <div class="shortcuts-list">
+      <div class="shortcut-item"><span>Select option A, B, C, or D</span><div><kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> or <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></div></div>
+      <div class="shortcut-item"><span>Advance to next question</span><div><kbd>N</kbd> or <kbd>&rarr;</kbd></div></div>
+      <div class="shortcut-item"><span>Go to previous question</span><div><kbd>P</kbd> or <kbd>&larr;</kbd></div></div>
+      <div class="shortcut-item"><span>Toggle question flag (PSI simulation)</span><div><kbd>F</kbd></div></div>
+      <div class="shortcut-item"><span>Confirm / Advance in study drill</span><div><kbd>Enter</kbd></div></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeShortcutsModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// QUESTION BANK AND METADATA
+const QUESTION_BANK = __QUESTION_BANK_JSON__;
+const DOMAIN_NAMES = __DOMAIN_DISPLAY_NAMES_JSON__;
+const DOMAIN_QUOTAS = __DOMAIN_QUOTAS_JSON__;
+const PASS_SCORE = 38; // 38 / 50 (76%)
+
+// STATE MANAGEMENT
+const state = {
+  mode: 'psi', // 'psi' | 'drill' | 'missed'
+  psi: {
+    status: 'intro', // 'intro' | 'active' | 'results' | 'review'
+    questions: [],
+    currentIndex: 0,
+    answers: {},
+    flagged: {},
+    timerSeconds: 3600,
+    timerInterval: null,
+    lastResults: null,
+    reviewFilter: 'all', // 'all' | 'missed'
+    reviewIndices: [],
+    reviewCurrentPos: 0
+  },
+  drill: {
+    domain: 'all',
+    questions: [],
+    currentIndex: 0,
+    answered: {},
+    shuffled: false
+  },
+  missed: {
+    questions: [],
+    currentIndex: 0,
+    answered: {}
+  }
+};
+
+// STORAGE UTILITIES
+function getMissedQuestions() {
+  try {
+    const raw = localStorage.getItem('gamb_missed_questions');
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveMissedQuestions(ids) {
+  try {
+    const unique = [...new Set(ids)];
+    localStorage.setItem('gamb_missed_questions', JSON.stringify(unique));
+    updateMissedBadge();
+  } catch (e) {
+    console.error("Failed to save missed questions to localStorage", e);
+  }
+}
+
+function addMissedQuestion(id) {
+  const current = getMissedQuestions();
+  if (!current.includes(id)) {
+    current.push(id);
+    saveMissedQuestions(current);
+  }
+}
+
+function removeMissedQuestion(id) {
+  const current = getMissedQuestions().filter(item => item !== id);
+  saveMissedQuestions(current);
+}
+
+function clearAllMissedQuestions() {
+  saveMissedQuestions([]);
+}
+
+function updateMissedBadge() {
+  const badge = document.getElementById('missed-badge');
+  if (badge) {
+    const count = getMissedQuestions().length;
+    badge.textContent = count;
+    badge.style.display = count > 0 ? 'inline-flex' : 'none';
+  }
+}
+
+// THEME HANDLING
+function initTheme() {
+  const saved = localStorage.getItem('gamb_theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  updateThemeButton();
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('gamb_theme', newTheme);
+  updateThemeButton();
+}
+
+function updateThemeButton() {
+  const btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  btn.innerHTML = isDark ? '<span>☀️</span> Light' : '<span>🌙</span> Dark';
+}
+
+// UTILITIES
+function escapeHtml(str) {
+  if (str === undefined || str === null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function formatTime(totalSecs) {
+  const m = Math.floor(totalSecs / 60);
+  const s = totalSecs % 60;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+// MODE SWITCHING
+function switchMode(newMode) {
+  state.mode = newMode;
+  document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+  const activeTab = document.getElementById('tab-' + newMode);
+  if (activeTab) activeTab.classList.add('active');
+
+  if (newMode === 'drill' && state.drill.questions.length === 0) {
+    initDrillQuestions();
+  } else if (newMode === 'missed') {
+    initMissedQuestions();
+  }
+
+  render();
+}
+
+// ==========================================
+// PSI EXAM SIMULATION
+// ==========================================
+function startPsiExam() {
+  const byDomain = {};
+  for (const d of Object.keys(DOMAIN_QUOTAS)) byDomain[d] = [];
+  for (const q of QUESTION_BANK) {
+    if (byDomain[q.domain]) byDomain[q.domain].push(q);
+  }
+
+  const selected = [];
+  for (const [dom, quota] of Object.entries(DOMAIN_QUOTAS)) {
+    const pool = [...byDomain[dom]];
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    selected.push(...pool.slice(0, quota));
+  }
+
+  for (let i = selected.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [selected[i], selected[j]] = [selected[j], selected[i]];
+  }
+
+  // Shuffle options to prevent position bias
+  state.psi.questions = selected.map(q => {
+    const origKeys = ["A", "B", "C", "D"];
+    const origCorrectText = q.options[q.correct_option];
+    const shuffledKeys = [...origKeys];
+    for (let i = shuffledKeys.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledKeys[i], shuffledKeys[j]] = [shuffledKeys[j], shuffledKeys[i]];
+    }
+    const newOptions = {};
+    let newCorrect = "A";
+    origKeys.forEach((key, idx) => {
+      const srcKey = shuffledKeys[idx];
+      newOptions[key] = q.options[srcKey];
+      if (newOptions[key] === origCorrectText) {
+        newCorrect = key;
+      }
+    });
+    return {
+      ...q,
+      options: newOptions,
+      correct_option: newCorrect
+    };
+  });
+
+  state.psi.currentIndex = 0;
+  state.psi.answers = {};
+  state.psi.flagged = {};
+  state.psi.timerSeconds = 3600; // 60 minutes
+  state.psi.status = 'active';
+
+  if (state.psi.timerInterval) clearInterval(state.psi.timerInterval);
+  state.psi.timerInterval = setInterval(() => {
+    state.psi.timerSeconds--;
+    updatePsiTimer();
+    if (state.psi.timerSeconds <= 0) {
+      clearInterval(state.psi.timerInterval);
+      alert("Time has expired (60 minutes). Your examination will now be submitted.");
+      submitPsiExam();
+    }
+  }, 1000);
+
+  render();
+}
+
+function updatePsiTimer() {
+  const timerEl = document.getElementById('psi-timer');
+  if (!timerEl) return;
+  timerEl.textContent = '⏱️ ' + formatTime(state.psi.timerSeconds);
+  if (state.psi.timerSeconds < 300) {
+    timerEl.style.color = 'var(--danger)';
+    timerEl.style.fontWeight = 'bold';
+  } else if (state.psi.timerSeconds < 600) {
+    timerEl.style.color = 'var(--warning)';
+  } else {
+    timerEl.style.color = 'inherit';
+  }
+}
+
+function selectPsiOption(letter) {
+  if (state.psi.status !== 'active') return;
+  state.psi.answers[state.psi.currentIndex] = letter;
+  render();
+}
+
+function togglePsiFlag() {
+  if (state.psi.status !== 'active') return;
+  const idx = state.psi.currentIndex;
+  state.psi.flagged[idx] = !state.psi.flagged[idx];
+  render();
+}
+
+function psiNext() {
+  if (state.psi.currentIndex < state.psi.questions.length - 1) {
+    state.psi.currentIndex++;
+    render();
+  }
+}
+
+function psiPrev() {
+  if (state.psi.currentIndex > 0) {
+    state.psi.currentIndex--;
+    render();
+  }
+}
+
+function confirmSubmitPsiExam() {
+  closeJumpGrid();
+  const answeredCount = Object.keys(state.psi.answers).length;
+  const unanswered = 50 - answeredCount;
+  if (unanswered > 0) {
+    if (!confirm(`You have ${unanswered} unanswered question(s). Are you sure you want to finish and submit your examination?`)) {
+      return;
+    }
+  } else {
+    if (!confirm("Are you ready to submit your examination and view your diagnostic score report?")) {
+      return;
+    }
+  }
+  submitPsiExam();
+}
+
+function submitPsiExam() {
+  if (state.psi.timerInterval) clearInterval(state.psi.timerInterval);
+
+  let score = 0;
+  const missedIds = [];
+  const domainScores = {};
+  for (const d of Object.keys(DOMAIN_QUOTAS)) {
+    domainScores[d] = { correct: 0, total: DOMAIN_QUOTAS[d] };
+  }
+
+  state.psi.questions.forEach((q, idx) => {
+    const userAns = state.psi.answers[idx];
+    if (userAns === q.correct_option) {
+      score++;
+      if (domainScores[q.domain]) domainScores[q.domain].correct++;
+    } else {
+      missedIds.push(q.id);
+    }
+  });
+
+  // Record missed questions
+  missedIds.forEach(id => addMissedQuestion(id));
+
+  state.psi.lastResults = {
+    score: score,
+    total: 50,
+    percentage: Math.round((score / 50) * 100),
+    passed: score >= PASS_SCORE,
+    domainScores: domainScores,
+    missedIds: missedIds
+  };
+
+  state.psi.status = 'results';
+  render();
+}
+
+function startPsiReview(filter) {
+  state.psi.reviewFilter = filter;
+  if (filter === 'missed') {
+    state.psi.reviewIndices = state.psi.questions
+      .map((q, idx) => (state.psi.answers[idx] !== q.correct_option ? idx : null))
+      .filter(idx => idx !== null);
+  } else {
+    state.psi.reviewIndices = state.psi.questions.map((_, idx) => idx);
+  }
+  state.psi.reviewCurrentPos = 0;
+  state.psi.status = 'review';
+  render();
+}
+
+function psiReviewNext() {
+  if (state.psi.reviewCurrentPos < state.psi.reviewIndices.length - 1) {
+    state.psi.reviewCurrentPos++;
+    render();
+  }
+}
+
+function psiReviewPrev() {
+  if (state.psi.reviewCurrentPos > 0) {
+    state.psi.reviewCurrentPos--;
+    render();
+  }
+}
+
+function openJumpGrid() {
+  const container = document.getElementById('jump-grid-container');
+  if (!container) return;
+
+  container.innerHTML = '';
+  for (let i = 0; i < 50; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'grid-cell';
+    cell.textContent = i + 1;
+
+    if (state.psi.answers[i] !== undefined) cell.classList.add('answered');
+    if (state.psi.flagged[i]) cell.classList.add('flagged');
+    if (i === state.psi.currentIndex) cell.classList.add('current');
+
+    cell.onclick = () => {
+      state.psi.currentIndex = i;
+      closeJumpGrid();
+      render();
+    };
+    container.appendChild(cell);
+  }
+
+  document.getElementById('jump-grid-modal').classList.add('open');
+}
+
+function closeJumpGrid() {
+  document.getElementById('jump-grid-modal').classList.remove('open');
+}
+
+// ==========================================
+// DOMAIN STUDY DRILL
+// ==========================================
+function initDrillQuestions() {
+  let list = [];
+  if (state.drill.domain === 'all') {
+    list = [...QUESTION_BANK];
+  } else {
+    list = QUESTION_BANK.filter(q => q.domain === state.drill.domain);
+  }
+
+  if (state.drill.shuffled) {
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+  }
+  state.drill.questions = list;
+  state.drill.currentIndex = 0;
+}
+
+function setDrillDomain(dom) {
+  state.drill.domain = dom;
+  initDrillQuestions();
+  render();
+}
+
+function toggleDrillShuffle() {
+  state.drill.shuffled = !state.drill.shuffled;
+  initDrillQuestions();
+  render();
+}
+
+function selectDrillOption(letter) {
+  const currentQ = state.drill.questions[state.drill.currentIndex];
+  if (!currentQ || state.drill.answered[currentQ.id]) return;
+
+  state.drill.answered[currentQ.id] = letter;
+  if (letter !== currentQ.correct_option) {
+    addMissedQuestion(currentQ.id);
+  }
+  render();
+}
+
+function drillNext() {
+  if (state.drill.currentIndex < state.drill.questions.length - 1) {
+    state.drill.currentIndex++;
+    render();
+  }
+}
+
+function drillPrev() {
+  if (state.drill.currentIndex > 0) {
+    state.drill.currentIndex--;
+    render();
+  }
+}
+
+function drillJump(index) {
+  if (index >= 0 && index < state.drill.questions.length) {
+    state.drill.currentIndex = index;
+    render();
+  }
+}
+
+// ==========================================
+// MISSED QUESTIONS DRILL
+// ==========================================
+function initMissedQuestions() {
+  const missedIds = getMissedQuestions();
+  state.missed.questions = QUESTION_BANK.filter(q => missedIds.includes(q.id));
+  if (state.missed.currentIndex >= state.missed.questions.length) {
+    state.missed.currentIndex = Math.max(0, state.missed.questions.length - 1);
+  }
+}
+
+function selectMissedOption(letter) {
+  const currentQ = state.missed.questions[state.missed.currentIndex];
+  if (!currentQ || state.missed.answered[currentQ.id]) return;
+
+  state.missed.answered[currentQ.id] = letter;
+  render();
+}
+
+function missedNext() {
+  if (state.missed.currentIndex < state.missed.questions.length - 1) {
+    state.missed.currentIndex++;
+    render();
+  }
+}
+
+function missedPrev() {
+  if (state.missed.currentIndex > 0) {
+    state.missed.currentIndex--;
+    render();
+  }
+}
+
+function removeCurrentMissed(id) {
+  removeMissedQuestion(id);
+  initMissedQuestions();
+  render();
+}
+
+function handleClearAllMissed() {
+  if (confirm("Are you sure you want to clear all missed questions from your local review queue?")) {
+    clearAllMissedQuestions();
+    initMissedQuestions();
+    render();
+  }
+}
+
+// ==========================================
+// MODALS & KEYBOARD
+// ==========================================
+function openShortcutsModal() {
+  document.getElementById('shortcuts-modal').classList.add('open');
+}
+
+function closeShortcutsModal() {
+  document.getElementById('shortcuts-modal').classList.remove('open');
+}
+
+function handleModalBackdropClick(event, modalId) {
+  if (event.target && event.target.id === modalId) {
+    document.getElementById(modalId).classList.remove('open');
+  }
+}
+
+window.addEventListener('keydown', (e) => {
+  if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+  const key = e.key.toUpperCase();
+
+  if (key === 'ESCAPE') {
+    closeJumpGrid();
+    closeShortcutsModal();
+    return;
+  }
+
+  if (state.mode === 'psi') {
+    if (state.psi.status === 'active') {
+      if (['A', 'B', 'C', 'D'].includes(key)) selectPsiOption(key);
+      else if (key === '1') selectPsiOption('A');
+      else if (key === '2') selectPsiOption('B');
+      else if (key === '3') selectPsiOption('C');
+      else if (key === '4') selectPsiOption('D');
+      else if (key === 'F') togglePsiFlag();
+      else if (key === 'N' || e.key === 'ArrowRight') psiNext();
+      else if (key === 'P' || e.key === 'ArrowLeft') psiPrev();
+      else if (key === 'ENTER') psiNext();
+    } else if (state.psi.status === 'review') {
+      if (key === 'N' || key === 'ENTER' || e.key === 'ArrowRight') psiReviewNext();
+      else if (key === 'P' || e.key === 'ArrowLeft') psiReviewPrev();
+    }
+  } else if (state.mode === 'drill') {
+    if (['A', 'B', 'C', 'D'].includes(key)) selectDrillOption(key);
+    else if (key === '1') selectDrillOption('A');
+    else if (key === '2') selectDrillOption('B');
+    else if (key === '3') selectDrillOption('C');
+    else if (key === '4') selectDrillOption('D');
+    else if (key === 'N' || key === 'ENTER' || e.key === 'ArrowRight') drillNext();
+    else if (key === 'P' || e.key === 'ArrowLeft') drillPrev();
+  } else if (state.mode === 'missed') {
+    if (['A', 'B', 'C', 'D'].includes(key)) selectMissedOption(key);
+    else if (key === '1') selectMissedOption('A');
+    else if (key === '2') selectMissedOption('B');
+    else if (key === '3') selectMissedOption('C');
+    else if (key === '4') selectMissedOption('D');
+    else if (key === 'N' || key === 'ENTER' || e.key === 'ArrowRight') missedNext();
+    else if (key === 'P' || e.key === 'ArrowLeft') missedPrev();
+  }
+});
+
+// ==========================================
+// RENDERERS
+// ==========================================
+function render() {
+  const container = document.getElementById('app-container');
+  if (!container) return;
+
+  if (state.mode === 'psi') {
+    renderPsi(container);
+  } else if (state.mode === 'drill') {
+    renderDrill(container);
+  } else if (state.mode === 'missed') {
+    renderMissed(container);
+  }
+
+  updateMissedBadge();
+}
+
+function renderPsi(container) {
+  if (state.psi.status === 'intro') {
+    container.innerHTML = `
+      <div class="card" style="max-width: 780px; margin: 1.5rem auto;">
+        <h2 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.75rem;">PSI Exam Simulation</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1rem;">
+          This timed simulation replicates the exact examination environment administered by PSI Services for the Georgia Board of Examiners of Psychologists.
+        </p>
+
+        <div style="background-color: var(--primary-light); border-left: 4px solid var(--primary); padding: 1rem 1.25rem; border-radius: var(--radius); margin-bottom: 1.5rem;">
+          <h4 style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">Official Examination Parameters</h4>
+          <ul style="margin-left: 1.25rem; color: var(--text-secondary); font-size: 0.925rem; line-height: 1.6;">
+            <li><strong>50 Multiple-Choice Questions:</strong> Sampled strictly according to official Georgia Board domain quotas.</li>
+            <li><strong>60-Minute Countdown Timer:</strong> Real-time timer with alerts when under 10 and 5 minutes.</li>
+            <li><strong>76% Passing Score Target:</strong> Must achieve at least 38 out of 50 correct answers to pass.</li>
+            <li><strong>Navigation &amp; Review:</strong> Ability to flag items, jump across questions via a 5x10 grid, and review all answers post-submission.</li>
+            <li><strong>Targeted Remediation:</strong> Missed questions are automatically saved to your browser review queue.</li>
+          </ul>
+        </div>
+
+        <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Domain Distribution Quotas</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.65rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Professional Relationships:</strong> 14 items (28%)
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Licensure and Regulations:</strong> 13 items (26%)
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Competence:</strong> 9 items (18%)
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Assessment:</strong> 6 items (12%)
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Privacy &amp; Confidentiality:</strong> 5 items (10%)
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.875rem;">
+            <strong>Recordkeeping &amp; Fees:</strong> 3 items (6%)
+          </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 0.5rem;">
+          <button class="btn btn-primary" style="padding: 0.8rem 2.2rem; font-size: 1.05rem;" onclick="startPsiExam()">
+            Begin Timed Simulation (50 Questions)
+          </button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (state.psi.status === 'active') {
+    const q = state.psi.questions[state.psi.currentIndex];
+    const userAns = state.psi.answers[state.psi.currentIndex];
+    const isFlagged = !!state.psi.flagged[state.psi.currentIndex];
+    const answeredCount = Object.keys(state.psi.answers).length;
+    const domainName = DOMAIN_NAMES[q.domain] || q.domain;
+
+    container.innerHTML = `
+      <div class="card">
+        <div class="exam-status-bar">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: var(--primary);">Question ${state.psi.currentIndex + 1}</span>
+            <span style="color: var(--text-muted); font-size: 0.95rem;"> of 50</span>
+          </div>
+          <div class="timer-display" id="psi-timer">
+            ⏱️ ${formatTime(state.psi.timerSeconds)}
+          </div>
+          <div class="actions-group">
+            <button class="btn btn-sm ${isFlagged ? 'btn-warning' : 'btn-outline'}" onclick="togglePsiFlag()" title="Toggle flag [F]">
+              ${isFlagged ? '🚩 Flagged' : '⚑ Flag [F]'}
+            </button>
+            <button class="btn btn-sm btn-secondary" onclick="openJumpGrid()" title="Open 5x10 Question Jump Grid">
+              ☰ Grid (${answeredCount}/50)
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.4rem; margin-bottom: 0.75rem;">
+          <span class="badge badge-primary">${escapeHtml(domainName)}</span>
+          ${q.subtopic ? `<span class="badge">${escapeHtml(q.subtopic)}</span>` : ''}
+        </div>
+
+        <div class="question-prompt">${escapeHtml(q.question_text)}</div>
+
+        <div class="options-list">
+          ${["A", "B", "C", "D"].map(letter => `
+            <button class="option-btn ${userAns === letter ? 'selected' : ''}" onclick="selectPsiOption('${letter}')">
+              <span class="option-letter">${letter}</span>
+              <span class="option-text">${escapeHtml(q.options[letter])}</span>
+            </button>
+          `).join('')}
+        </div>
+
+        <div class="actions-footer">
+          <div class="actions-group">
+            <button class="btn btn-secondary" onclick="psiPrev()" ${state.psi.currentIndex === 0 ? 'disabled' : ''}>
+              &larr; Previous [P]
+            </button>
+            <button class="btn btn-secondary" onclick="psiNext()" ${state.psi.currentIndex === 49 ? 'disabled' : ''}>
+              Next [N] &rarr;
+            </button>
+          </div>
+          <div>
+            <button class="btn btn-primary" onclick="confirmSubmitPsiExam()">
+              Submit Exam
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    updatePsiTimer();
+    return;
+  }
+
+  if (state.psi.status === 'results') {
+    const res = state.psi.lastResults;
+    const passed = res.passed;
+
+    container.innerHTML = `
+      <div class="card" style="max-width: 820px; margin: 1.5rem auto;">
+        <div style="text-align: center; padding: 1.5rem 1rem; border-radius: var(--radius); background-color: ${passed ? 'var(--success-bg)' : 'var(--danger-bg)'}; border: 1.5px solid ${passed ? 'var(--success-border)' : 'var(--danger-border)'}; margin-bottom: 1.5rem;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: ${passed ? 'var(--success)' : 'var(--danger)'}; margin-bottom: 0.35rem;">
+            ${passed ? '✓ PASSED' : '✗ DID NOT PASS'}
+          </div>
+          <div style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">
+            Score: ${res.score} / 50 &bull; ${res.percentage}%
+          </div>
+          <div style="font-size: 0.95rem; color: var(--text-secondary);">
+            Official Georgia Passing Threshold: <strong>38 / 50 (76%)</strong>
+          </div>
+        </div>
+
+        <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.75rem;">Diagnostic Domain Breakdown</h3>
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th style="width: 15%; text-align: center;">Score</th>
+              <th style="width: 25%; text-align: center;">Target (&ge;70%)</th>
+              <th style="width: 20%; text-align: center;">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${Object.entries(res.domainScores).map(([dom, data]) => {
+              const domName = DOMAIN_NAMES[dom] || dom;
+              const targetMet = (data.correct / data.total) >= 0.7;
+              return `
+                <tr>
+                  <td><strong>${escapeHtml(domName)}</strong></td>
+                  <td style="text-align: center;">${data.correct} / ${data.total}</td>
+                  <td style="text-align: center;">&ge;70%</td>
+                  <td style="text-align: center;">
+                    <span class="badge ${targetMet ? 'badge-success' : 'badge-warning'}">
+                      ${targetMet ? 'Target Met' : 'Review Needed'}
+                    </span>
+                  </td>
+                </tr>
+              `;
+            }).join('')}
+            <tr class="report-total-row">
+              <td><strong>Total Examination</strong></td>
+              <td style="text-align: center;"><strong>${res.score} / 50</strong></td>
+              <td style="text-align: center;"><strong>&ge;76% (38/50)</strong></td>
+              <td style="text-align: center;">
+                <span class="badge ${passed ? 'badge-success' : 'badge-danger'}">
+                  ${passed ? 'PASS' : 'FAIL'}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        ${res.missedIds.length > 0 ? `
+          <div style="background-color: var(--warning-bg); border: 1px solid var(--warning-border); border-radius: var(--radius); padding: 0.85rem 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--warning);">
+            <strong>Remediation Note:</strong> All ${res.missedIds.length} missed question(s) have been saved to your <strong>Missed Questions</strong> queue for targeted practice.
+          </div>
+        ` : ''}
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; padding-top: 0.5rem;">
+          <button class="btn btn-primary" onclick="startPsiReview('all')">
+            Review All 50 Questions
+          </button>
+          ${res.missedIds.length > 0 ? `
+            <button class="btn btn-secondary" onclick="startPsiReview('missed')">
+              Review Missed Only (${res.missedIds.length})
+            </button>
+          ` : ''}
+          <button class="btn btn-outline" onclick="startPsiExam()">
+            Retake New Exam Simulation
+          </button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (state.psi.status === 'review') {
+    const qIdx = state.psi.reviewIndices[state.psi.reviewCurrentPos];
+    const q = state.psi.questions[qIdx];
+    const userAns = state.psi.answers[qIdx];
+    const isCorrect = userAns === q.correct_option;
+    const domainName = DOMAIN_NAMES[q.domain] || q.domain;
+
+    container.innerHTML = `
+      <div class="card">
+        <div class="exam-status-bar">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: var(--primary);">
+              Review Item ${state.psi.reviewCurrentPos + 1}
+            </span>
+            <span style="color: var(--text-muted); font-size: 0.95rem;">
+              of ${state.psi.reviewIndices.length} (${state.psi.reviewFilter === 'missed' ? 'Missed Only' : 'All Items'})
+            </span>
+          </div>
+          <div>
+            <button class="btn btn-sm btn-secondary" onclick="state.psi.status = 'results'; render();">
+              &larr; Back to Score Report
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.4rem; margin-bottom: 0.75rem;">
+          <span class="badge badge-primary">${escapeHtml(domainName)}</span>
+          <span class="badge ${isCorrect ? 'badge-success' : 'badge-danger'}">
+            ${isCorrect ? '✓ Correct' : '✗ Incorrect'}
+          </span>
+          ${q.subtopic ? `<span class="badge">${escapeHtml(q.subtopic)}</span>` : ''}
+        </div>
+
+        <div class="question-prompt">${escapeHtml(q.question_text)}</div>
+
+        <div class="options-list">
+          ${["A", "B", "C", "D"].map(letter => {
+            const isTarget = letter === q.correct_option;
+            const isUser = letter === userAns;
+            let optClass = '';
+            if (isTarget) optClass = 'correct';
+            else if (isUser && !isCorrect) optClass = 'incorrect';
+
+            return `
+              <div class="option-btn ${optClass}" style="cursor: default;">
+                <span class="option-letter">${letter}</span>
+                <span class="option-text">
+                  ${escapeHtml(q.options[letter])}
+                  ${isTarget ? ' <strong style="color: var(--success);">&bull; Correct Answer</strong>' : ''}
+                  ${isUser && !isTarget ? ' <strong style="color: var(--danger);">&bull; Your Selection</strong>' : ''}
+                  ${isUser && isTarget ? ' <strong style="color: var(--success);">&bull; Your Selection</strong>' : ''}
+                </span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+        <div class="feedback-box ${isCorrect ? 'is-correct' : 'is-incorrect'}">
+          <div class="feedback-status ${isCorrect ? 'correct' : 'incorrect'}">
+            ${isCorrect ? '✓ Correct' : `✗ Incorrect (You selected ${userAns || 'None'})`}
+          </div>
+          <div class="citation-line">Legal Citation: ${escapeHtml(q.source_citation)}</div>
+          <div class="explanation-text">${escapeHtml(q.explanation)}</div>
+        </div>
+
+        <div class="actions-footer">
+          <div class="actions-group">
+            <button class="btn btn-secondary" onclick="psiReviewPrev()" ${state.psi.reviewCurrentPos === 0 ? 'disabled' : ''}>
+              &larr; Previous [P]
+            </button>
+            <button class="btn btn-secondary" onclick="psiReviewNext()" ${state.psi.reviewCurrentPos === state.psi.reviewIndices.length - 1 ? 'disabled' : ''}>
+              Next [N] &rarr;
+            </button>
+          </div>
+          <div>
+            <button class="btn btn-primary" onclick="state.psi.status = 'results'; render();">
+              Finish Review
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+}
+
+function renderDrill(container) {
+  if (state.drill.questions.length === 0) {
+    initDrillQuestions();
+  }
+
+  const currentQ = state.drill.questions[state.drill.currentIndex];
+  const answeredChoice = currentQ ? state.drill.answered[currentQ.id] : null;
+  const isAnswered = answeredChoice !== undefined;
+  const isCorrect = isAnswered && answeredChoice === currentQ.correct_option;
+  const domainName = currentQ ? (DOMAIN_NAMES[currentQ.domain] || currentQ.domain) : '';
+
+  container.innerHTML = `
+    <div>
+      <div class="domain-filters-bar">
+        <button class="filter-btn ${state.drill.domain === 'all' ? 'active' : ''}" onclick="setDrillDomain('all')">
+          All Domains (${QUESTION_BANK.length})
+        </button>
+        ${Object.entries(DOMAIN_NAMES).map(([dom, name]) => {
+          const count = QUESTION_BANK.filter(q => q.domain === dom).length;
+          return `
+            <button class="filter-btn ${state.drill.domain === dom ? 'active' : ''}" onclick="setDrillDomain('${dom}')">
+              ${escapeHtml(name)} (${count})
+            </button>
+          `;
+        }).join('')}
+      </div>
+
+      <div class="card">
+        <div class="exam-status-bar">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: var(--primary);">
+              Drill Item ${state.drill.currentIndex + 1}
+            </span>
+            <span style="color: var(--text-muted); font-size: 0.95rem;">
+              of ${state.drill.questions.length}
+            </span>
+          </div>
+          <div class="actions-group">
+            <button class="btn btn-sm ${state.drill.shuffled ? 'btn-primary' : 'btn-outline'}" onclick="toggleDrillShuffle()">
+              🔀 Shuffle: ${state.drill.shuffled ? 'ON' : 'OFF'}
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.4rem; margin-bottom: 0.75rem;">
+          <span class="badge badge-primary">${escapeHtml(domainName)}</span>
+          ${currentQ.subtopic ? `<span class="badge">${escapeHtml(currentQ.subtopic)}</span>` : ''}
+          <span class="badge">Item #${currentQ.id}</span>
+        </div>
+
+        <div class="question-prompt">${escapeHtml(currentQ.question_text)}</div>
+
+        <div class="options-list">
+          ${["A", "B", "C", "D"].map(letter => {
+            let optClass = '';
+            if (isAnswered) {
+              if (letter === currentQ.correct_option) optClass = 'correct';
+              else if (letter === answeredChoice) optClass = 'incorrect';
+            }
+
+            return `
+              <button class="option-btn ${optClass}" onclick="selectDrillOption('${letter}')" ${isAnswered ? 'disabled' : ''}>
+                <span class="option-letter">${letter}</span>
+                <span class="option-text">${escapeHtml(currentQ.options[letter])}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+
+        ${isAnswered ? `
+          <div class="feedback-box ${isCorrect ? 'is-correct' : 'is-incorrect'}">
+            <div class="feedback-status ${isCorrect ? 'correct' : 'incorrect'}">
+              ${isCorrect ? '✓ Correct!' : `✗ Incorrect (Correct answer is Option ${currentQ.correct_option})`}
+            </div>
+            <div class="citation-line">Legal Citation: ${escapeHtml(currentQ.source_citation)}</div>
+            <div class="explanation-text">${escapeHtml(currentQ.explanation)}</div>
+          </div>
+        ` : ''}
+
+        <div class="actions-footer">
+          <div class="actions-group">
+            <button class="btn btn-secondary" onclick="drillPrev()" ${state.drill.currentIndex === 0 ? 'disabled' : ''}>
+              &larr; Previous [P]
+            </button>
+            <button class="btn ${isAnswered ? 'btn-primary' : 'btn-secondary'}" onclick="drillNext()" ${state.drill.currentIndex === state.drill.questions.length - 1 ? 'disabled' : ''}>
+              Next [N / Enter] &rarr;
+            </button>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
+            <span>Jump to:</span>
+            <input type="number" min="1" max="${state.drill.questions.length}" value="${state.drill.currentIndex + 1}"
+              style="width: 60px; padding: 0.3rem 0.4rem; border: 1px solid var(--border-color); border-radius: 4px; background: var(--card-bg); color: var(--text-primary);"
+              onchange="drillJump(parseInt(this.value, 10) - 1)">
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderMissed(container) {
+  initMissedQuestions();
+  const list = state.missed.questions;
+
+  if (list.length === 0) {
+    container.innerHTML = `
+      <div class="card empty-state" style="max-width: 650px; margin: 2rem auto;">
+        <div style="font-size: 3rem; margin-bottom: 0.75rem;">🎉</div>
+        <h3>No Missed Questions Saved</h3>
+        <p>Your local remediation queue is completely clean! Whenever you miss an item during a <strong>PSI Exam Simulation</strong> or <strong>Domain Study Drill</strong>, it will automatically appear here for focused review.</p>
+        <div style="display: flex; justify-content: center; gap: 0.75rem;">
+          <button class="btn btn-primary" onclick="switchMode('psi')">Take PSI Simulation</button>
+          <button class="btn btn-secondary" onclick="switchMode('drill')">Practice Domain Drill</button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const currentQ = list[state.missed.currentIndex];
+  const answeredChoice = currentQ ? state.missed.answered[currentQ.id] : null;
+  const isAnswered = answeredChoice !== undefined;
+  const isCorrect = isAnswered && answeredChoice === currentQ.correct_option;
+  const domainName = currentQ ? (DOMAIN_NAMES[currentQ.domain] || currentQ.domain) : '';
+
+  container.innerHTML = `
+    <div class="card">
+      <div class="exam-status-bar">
+        <div>
+          <span style="font-weight: 700; font-size: 1.05rem; color: var(--danger);">
+            Missed Queue: Question ${state.missed.currentIndex + 1}
+          </span>
+          <span style="color: var(--text-muted); font-size: 0.95rem;">
+            of ${list.length}
+          </span>
+        </div>
+        <div class="actions-group">
+          <button class="btn btn-sm btn-outline" onclick="removeCurrentMissed(${currentQ.id})" title="Remove this question from missed queue once mastered">
+            ✓ Mastered (Remove)
+          </button>
+          <button class="btn btn-sm btn-danger" onclick="handleClearAllMissed()">
+            Clear All
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 0.4rem; margin-bottom: 0.75rem;">
+        <span class="badge badge-primary">${escapeHtml(domainName)}</span>
+        ${currentQ.subtopic ? `<span class="badge">${escapeHtml(currentQ.subtopic)}</span>` : ''}
+        <span class="badge badge-warning">Missed Item #${currentQ.id}</span>
+      </div>
+
+      <div class="question-prompt">${escapeHtml(currentQ.question_text)}</div>
+
+      <div class="options-list">
+        ${["A", "B", "C", "D"].map(letter => {
+          let optClass = '';
+          if (isAnswered) {
+            if (letter === currentQ.correct_option) optClass = 'correct';
+            else if (letter === answeredChoice) optClass = 'incorrect';
+          }
+
+          return `
+            <button class="option-btn ${optClass}" onclick="selectMissedOption('${letter}')" ${isAnswered ? 'disabled' : ''}>
+              <span class="option-letter">${letter}</span>
+              <span class="option-text">${escapeHtml(currentQ.options[letter])}</span>
+            </button>
+          `;
+        }).join('')}
+      </div>
+
+      ${isAnswered ? `
+        <div class="feedback-box ${isCorrect ? 'is-correct' : 'is-incorrect'}">
+          <div class="feedback-status ${isCorrect ? 'correct' : 'incorrect'}">
+            ${isCorrect ? '✓ Correct! Great job!' : `✗ Incorrect (Correct answer is Option ${currentQ.correct_option})`}
+          </div>
+          <div class="citation-line">Legal Citation: ${escapeHtml(currentQ.source_citation)}</div>
+          <div class="explanation-text">${escapeHtml(currentQ.explanation)}</div>
+        </div>
+      ` : ''}
+
+      <div class="actions-footer">
+        <div class="actions-group">
+          <button class="btn btn-secondary" onclick="missedPrev()" ${state.missed.currentIndex === 0 ? 'disabled' : ''}>
+            &larr; Previous [P]
+          </button>
+          <button class="btn ${isAnswered ? 'btn-primary' : 'btn-secondary'}" onclick="missedNext()" ${state.missed.currentIndex === list.length - 1 ? 'disabled' : ''}>
+            Next [N / Enter] &rarr;
+          </button>
+        </div>
+        <div>
+          ${isCorrect ? `
+            <button class="btn btn-sm btn-primary" onclick="removeCurrentMissed(${currentQ.id})">
+              ✓ Remove from Queue &amp; Continue
+            </button>
+          ` : ''}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// INITIALIZATION
+window.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  updateMissedBadge();
+  render();
+});
+</script>
+</body>
+</html>
+"""
+
+
+def generate_web_quizzer(
+    output_path: Path,
+    pool_path: Path | None = None,
+) -> Path:
+    """Generate self-contained standalone HTML5 quizzer application.
+
+    Embeds all 435 curated questions with JSON, pure native responsive CSS (light/dark mode),
+    and a JavaScript engine supporting PSI Exam Simulation (50 items matching quotas, 60-min timer,
+    5x10 jump grid, 38/50 pass scoring, review mode), Domain Study Drill (instant green/red feedback,
+    statutory citations, explanations), and Missed Questions drill with browser localStorage persistence.
+    """
+    if pool_path is None:
+        repo_root = Path(__file__).resolve().parent.parent
+        pool_path = repo_root / "gamb_exam" / "question_pool.json"
+
+    with pool_path.open("r", encoding="utf-8") as f:
+        questions: list[dict[str, Any]] = json.load(f)
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    questions_json = json.dumps(questions, indent=2, ensure_ascii=False)
+    # Prevent closing script tag injection
+    questions_json = questions_json.replace("</script>", "<\\/script>")
+
+    domain_names_json = json.dumps(DOMAIN_DISPLAY_NAMES, ensure_ascii=False)
+    domain_quotas_json = json.dumps(DOMAIN_QUOTAS, ensure_ascii=False)
+
+    rendered_html = (
+        WEB_QUIZZER_HTML_TEMPLATE
+        .replace("__QUESTION_BANK_JSON__", questions_json)
+        .replace("__DOMAIN_DISPLAY_NAMES_JSON__", domain_names_json)
+        .replace("__DOMAIN_QUOTAS_JSON__", domain_quotas_json)
+        .replace("__LEGAL_DISCLAIMER__", html.escape(LEGAL_DISCLAIMER))
+    )
+
+    output_path.write_text(rendered_html, encoding="utf-8")
+    return output_path
+
+
+
