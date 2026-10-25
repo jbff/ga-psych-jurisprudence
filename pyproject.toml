@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gamb-exam"
+version = "1.0.0"
+description = "Georgia Psychology Jurisprudence Examination Simulator and Study Kit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0",
+    "textual>=0.50.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+gamb-exam = "gamb_exam.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gamb_exam"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
