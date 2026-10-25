@@ -132,21 +132,21 @@ git commit -m "feat(pool): audit and curate Competence questions (259-362)"
 **Files:**
 - Modify: `gamb_exam/question_pool.json` (update items 363–435)
 
-- [ ] **Step 1: Audit and generate items 363–392 (Batch 8: Psychological Assessment & Testing)**
+- [x] **Step 1: Audit and generate items 363–392 (Batch 8: Psychological Assessment & Testing)**
 Apply distractor standards to items 363–392 (O.C.G.A. § 43-39-1 definition of psychological testing, test security, raw data release vs. test protocols, third-party observers, obsolete tests, computerized interpretations).
 
-- [ ] **Step 2: Audit and generate items 393–414 (Batch 9A: Privacy, Confidentiality, & Privilege)**
+- [x] **Step 2: Audit and generate items 393–414 (Batch 9A: Privacy, Confidentiality, & Privilege)**
 Apply distractor standards to items 393–414 (O.C.G.A. § 43-39-16 attorney-client privilege level, exceptions, court-ordered evaluations, Bradley Center duty to warn, elder abuse § 30-5-4 privilege override).
 
-- [ ] **Step 3: Audit and generate items 415–435 (Batch 9B: Recordkeeping & Fees)**
+- [x] **Step 3: Audit and generate items 415–435 (Batch 9B: Recordkeeping & Fees)**
 Apply distractor standards to items 415–435 (7-year adult record retention, minor records to age 22 / 7 years, financial arrangements, fee disputes, collection agencies, withholding records for nonpayment).
 
-- [ ] **Step 4: Verify complete pool (all 435 questions)**
+- [x] **Step 4: Verify complete pool (all 435 questions)**
 
 Run: `uv run pytest tests/test_question_pool.py`  
 Expected: 100% PASS across all 435 questions.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add gamb_exam/question_pool.json
