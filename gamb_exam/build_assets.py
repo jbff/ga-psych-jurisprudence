@@ -2,12 +2,9 @@
 
 from __future__ import annotations
 
-import json
-import os
 import shutil
 import subprocess
 from pathlib import Path
-from typing import Any
 
 from gamb_exam.generator import LEGAL_DISCLAIMER
 
@@ -145,22 +142,28 @@ tr:nth-child(even) td {
 
 def compile_html_to_pdf(html_path: Path, pdf_path: Path) -> None:
     """Compile an HTML file to PDF using WeasyPrint with graceful error handling."""
+    if not html_path.exists():
+        raise FileNotFoundError(f"HTML source file not found: {html_path}")
+
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     weasyprint_bin = shutil.which("weasyprint")
     if weasyprint_bin:
         cmd = [weasyprint_bin, str(html_path), str(pdf_path)]
-        res = subprocess.run(cmd, capture_output=True, text=True)
+        res = subprocess.run(cmd, capture_output=True, text=True, check=False)
         if res.returncode != 0:
-            raise RuntimeError(f"WeasyPrint failed ({res.returncode}): {res.stderr}")
+            raise RuntimeError(f"WeasyPrint failed ({res.returncode}): {res.stderr.strip()}")
     else:
         try:
             import weasyprint
-
-            weasyprint.HTML(filename=str(html_path)).write_pdf(str(pdf_path))
         except ImportError as err:
             raise RuntimeError(
                 "Neither weasyprint CLI binary nor weasyprint Python package is available"
             ) from err
+
+        try:
+            weasyprint.HTML(filename=str(html_path)).write_pdf(str(pdf_path))
+        except Exception as err:
+            raise RuntimeError(f"WeasyPrint rendering failed: {err}") from err
 
 
 def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
