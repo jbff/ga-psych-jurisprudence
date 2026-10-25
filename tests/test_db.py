@@ -5,7 +5,6 @@ from pathlib import Path
 import pytest
 
 from gamb_exam.db import (
-    DEFAULT_DB_PATH,
     complete_session,
     create_session,
     get_all_questions,
@@ -16,6 +15,7 @@ from gamb_exam.db import (
     get_session_history,
     init_db,
     insert_question,
+    insert_questions,
     save_session_answer,
 )
 
@@ -91,6 +91,26 @@ def test_insert_and_fetch_question(tmp_db_path: Path):
     # Fetch all questions
     all_questions = get_all_questions(db_path=tmp_db_path)
     assert len(all_questions) == 3
+
+
+def test_bulk_insert_questions(tmp_db_path: Path):
+    """Verifies batch insertion of questions via insert_questions."""
+    init_db(tmp_db_path)
+
+    # Empty batch returns 0
+    assert insert_questions([], db_path=tmp_db_path) == 0
+    assert len(get_all_questions(db_path=tmp_db_path)) == 0
+
+    batch = [
+        sample_question_data(domain="competence", stem_suffix=f"batch_{i}")
+        for i in range(5)
+    ]
+    count = insert_questions(batch, db_path=tmp_db_path)
+    assert count == 5
+
+    stored = get_all_questions(db_path=tmp_db_path)
+    assert len(stored) == 5
+    assert [q["question_text"] for q in stored] == [q["question_text"] for q in batch]
 
 
 def test_session_lifecycle(tmp_db_path: Path):

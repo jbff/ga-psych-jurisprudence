@@ -110,6 +110,49 @@ def insert_question(question_dict: dict[str, Any], db_path: Path | str | None = 
         conn.close()
 
 
+def insert_questions(question_dicts: list[dict[str, Any]], db_path: Path | str | None = None) -> int:
+    """Insert multiple questions into the database in a single transaction.
+
+    Returns the count of questions inserted.
+    """
+    if not question_dicts:
+        return 0
+
+    rows = [
+        (
+            q["domain"],
+            q.get("subtopic"),
+            q["source_citation"],
+            q["question_text"],
+            q["option_a"],
+            q["option_b"],
+            q["option_c"],
+            q["option_d"],
+            q["correct_option"],
+            q["explanation"],
+        )
+        for q in question_dicts
+    ]
+
+    conn = get_connection(db_path)
+    try:
+        with conn:
+            cursor = conn.cursor()
+            cursor.executemany(
+                """
+                INSERT INTO questions (
+                    domain, subtopic, source_citation, question_text,
+                    option_a, option_b, option_c, option_d,
+                    correct_option, explanation
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                rows,
+            )
+            return cursor.rowcount
+    finally:
+        conn.close()
+
+
 def get_question_by_id(question_id: int, db_path: Path | str | None = None) -> dict[str, Any] | None:
     """Retrieve a single question by its primary key ID."""
     conn = get_connection(db_path)
