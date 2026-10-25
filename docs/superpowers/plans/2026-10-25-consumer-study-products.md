@@ -225,7 +225,7 @@ git commit -m "feat(cli): add build-assets subcommand"
 - Modify: `README.md`
 - Generate: `pdfs/*.pdf`, `web/index.html`, `docs/study_materials/*.md`
 
-- [ ] **Step 1: Execute full asset build in workspace**
+- [x] **Step 1: Execute full asset build in workspace**
 
 Run:
 ```bash
@@ -233,7 +233,7 @@ uv run gamb-exam build-assets
 ```
 Expected: All 5 PDF files generated in `pdfs/`, `web/index.html` generated in `web/`, Markdown study packets in `docs/study_materials/`.
 
-- [ ] **Step 2: Verify all assets**
+- [x] **Step 2: Verify all assets**
 
 Verify:
 ```bash
@@ -241,7 +241,7 @@ ls -lh pdfs/ web/ docs/study_materials/
 ```
 Ensure all 5 PDFs are non-empty (>10KB) and `web/index.html` is intact.
 
-- [ ] **Step 3: Update `README.md` with Consumer Products Section**
+- [x] **Step 3: Update `README.md` with Consumer Products Section**
 
 Add a prominent top-level **"📦 Study Products & Downloads (No Installation Required)"** section immediately below the disclaimer:
 - Direct links to `pdfs/GAMB_Statutory_Cheat_Sheet.pdf`.
@@ -251,7 +251,7 @@ Add a prominent top-level **"📦 Study Products & Downloads (No Installation Re
 - Clear guide for Anki flashcard deck (`anki/gamb_deck.tsv`).
 - Terminal simulator instructions for technical users.
 
-- [ ] **Step 4: Run full test suite**
+- [x] **Step 4: Run full test suite**
 
 Run:
 ```bash
@@ -259,7 +259,7 @@ uv run pytest
 ```
 Expected: 100% PASS across all unit, cli, db, generator, pool, seed, tui, and build_assets tests.
 
-- [ ] **Step 5: Commit and push to GitHub origin/master**
+- [x] **Step 5: Commit and push to GitHub origin/master**
 
 ```bash
 git add pdfs/ web/ docs/ README.md
