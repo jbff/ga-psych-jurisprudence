@@ -86,7 +86,8 @@ uv run gamb-exam test
 | `[S]` | Submit exam (prompts confirmation with warning if unanswered questions remain) | Exam |
 | `[Q]` | Quit application | Global |
 | `[B]` or `[Esc]` | Return to diagnostic score report | Review Mode |
-| `[M]` | Toggle filter to review missed questions only | Review Mode |
+| `[R]` | Review all exam questions with citations & explanations | Post-Exam Results |
+| `[M]` | Review missed questions only | Post-Exam Results |
 
 ---
 

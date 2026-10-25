@@ -29,407 +29,407 @@ Use this worksheet to calculate your domain scores and diagnose areas needing fu
 
 | Q# | Domain | Answer | Citation | Explanation |
 |:--:|:-------|:------:|:---------|:------------|
-| 1 | assessment | B | APA 9.04 / Rule 510-4-.02 | Raw and scaled scores, client responses, and psychologist notes/recordings during examination. (APA 9.04 / Rule 510-4-.02) |
-| 2 | privacy | A | APA 4.06 / Rule 510-4-.02 | Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent. (APA 4.06 / Rule 510-4-.02) |
-| 3 | licensure | A | OCGA 43-39-17 | Only persons licensed under Chapter 39 (with limited exceptions). (OCGA 43-39-17) |
-| 4 | prof-relationships | B | APA 3.02 | Sexual solicitation, advances, or verbal/nonverbal sexual conduct that is unwelcome/offensive or creates hostile environment. (APA 3.02) |
-| 5 | competence | B | Rule 510-5-.07 | ASPPB E.Passport and APIT authorization. (Rule 510-5-.07) |
-| 6 | assessment | D | Rule 510-10-.03 | Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist. (Rule 510-10-.03) |
-| 7 | licensure | C | Rule 510-3-.02 | Active duty or separation leave within 24 months of retirement or 12 months of separation. (Rule 510-3-.02) |
-| 8 | prof-relationships | C | APA 3.10 / Rule 510-4-.02 | Nature/procedures, risks/benefits, limits of confidentiality, fees, third parties, opportunity to ask questions. (APA 3.10 / Rule 510-4-.02) |
-| 9 | prof-relationships | D | APA 3.05 / Rule 510-4-.02 | When it could impair objectivity, competence, or effectiveness, or risk exploitation or harm. (APA 3.05 / Rule 510-4-.02) |
-| 10 | competence | A | APA 2.06 | Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties. (APA 2.06) |
-| 11 | prof-relationships | B | OCGA 16-6-5.1(f) | Felony punishable by 1 to 25 years imprisonment and fine up to 00,000 (10 to 30 years if victim is under 16). (OCGA 16-6-5.1(f)) |
-| 12 | privacy | B | APA 4.02 / Rule 510-4-.02 | At the outset of the relationship and thereafter as circumstances warrant. (APA 4.02 / Rule 510-4-.02) |
-| 13 | prof-relationships | C | OCGA 30-5-4 | Abuse other than by accidental means, neglect, or exploitation. (OCGA 30-5-4) |
-| 14 | prof-relationships | C | OCGA 30-5-4 | Yes, but not while acting as fiduciary for assets held in that capacity. (OCGA 30-5-4) |
-| 15 | recordkeeping | A | Rule 510-8-.03 | Four years. (Rule 510-8-.03) |
-| 16 | licensure | B | Rule 510-2-.05 | At least 80%. (Rule 510-2-.05) |
-| 17 | privacy | C | APA 4.03 / Rule 510-4-.02 | After obtaining permission. (APA 4.03 / Rule 510-4-.02) |
-| 18 | licensure | B | Rule 510-9-.02 | No, but holder has right to appear before Board. (Rule 510-9-.02) |
-| 19 | prof-relationships | C | Rule 510-5-.06(3)(a)(4); Rule 510-2-.05 | Supervisee status, supervisor name and contact info, and client right to confer with the supervising psychologist. (Rule 510-5-.06(3)(a)(4); Rule 510-2-.05) |
-| 20 | competence | C | Rule 510-5-.07 | Yes. (Rule 510-5-.07) |
-| 21 | competence | A | OCGA 37-3-41(c) | A written report detailing apprehension circumstances, which becomes part of the clinical record with the certificate or court order. (OCGA 37-3-41(c)) |
-| 22 | licensure | A | OCGA 43-1-20 | The licensing board, division director, or appropriate prosecuting attorney. (OCGA 43-1-20) |
-| 23 | competence | D | Rule 510-2-.05 | Licensed psychology, medicine (psychiatry/neurology/relevant medical field). (Rule 510-2-.05) |
-| 24 | licensure | B | OCGA 43-39-6 | The division director under the board's seal. (OCGA 43-39-6) |
-| 25 | prof-relationships | B | APA 3.06 | Refrain from the role if it could impair objectivity or expose others to harm/exploitation. (APA 3.06) |
-| 26 | licensure | A | OCGA 43-39-7(8); Rule 510-9-.03 | No more than 30 days per calendar year, provided the other jurisdiction has equal/greater standards and notice is provided. (OCGA 43-39-7(8); Rule 510-9-.03) |
-| 27 | licensure | A | Rule 510-2-.01 | After passing all exams and within 2 months of completing SWE. (Rule 510-2-.01) |
-| 28 | licensure | C | Rule 510-9-.04 | Retired or inactive licensees in good standing, not currently practicing. (Rule 510-9-.04) |
-| 29 | licensure | D | Rule 510-3-.01 | Licensure by endorsement. (Rule 510-3-.01) |
-| 30 | competence | A | OCGA 37-3-41 | 48 hours. (OCGA 37-3-41) |
-| 31 | licensure | B | APA 5.05 / Rule 510-4-.02 | Current therapy clients/patients or vulnerable persons. (APA 5.05 / Rule 510-4-.02) |
-| 32 | assessment | D | APA 2.01f | Judicial or administrative rules governing their roles. (APA 2.01f) |
-| 33 | recordkeeping | B | APA 6.02 | Use coding to avoid personal identifiers when access is not consented. (APA 6.02) |
-| 34 | assessment | B | Rule 510-5-.08 | APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings. (Rule 510-5-.08) |
-| 35 | licensure | B | Rule 510-2-.05 | 1,500 hours. (Rule 510-2-.05) |
-| 36 | competence | D | Rule 510-2-.05 | I/O fellows. (Rule 510-2-.05) |
-| 37 | competence | A | OCGA 31-7-161 | Yes; they may confer with the psychologist. (OCGA 31-7-161) |
-| 38 | recordkeeping | C | APA 6.03 / Rule 510-4-.02 | No, not records needed for emergency treatment. (APA 6.03 / Rule 510-4-.02) |
-| 39 | privacy | A | APA 4.05 / Rule 510-4-.02 | Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary. (APA 4.05 / Rule 510-4-.02) |
-| 40 | competence | B | Rule 510-8-.02 | Minimum 3, maximum 8 licensed participants. (Rule 510-8-.02) |
-| 41 | prof-relationships | C | APA 3.01 / Rule 510-4-.02 | Age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law. (APA 3.01 / Rule 510-4-.02) |
-| 42 | prof-relationships | D | APA 8.02 | Experimental nature, control group services, assignment method, alternatives, costs. (APA 8.02) |
-| 43 | privacy | B | OCGA 24-9-21 | Husband-wife communications. (OCGA 24-9-21) |
-| 44 | assessment | C | Rule 510-5-.08 | Truthfully, honestly, candidly, and fairly describe the basis for testimony. (Rule 510-5-.08) |
-| 45 | prof-relationships | B | APA 3.11 | Inform affected individuals/groups at the outset. (APA 3.11) |
-| 46 | prof-relationships | D | APA 7.05 | Select unaffiliated practitioners. (APA 7.05) |
-| 47 | prof-relationships | C | APA 8.03 | Naturalistic public observation with no identification/harm, or deception with debriefing consent. (APA 8.03) |
-| 48 | prof-relationships | A | OCGA 30-5-4 | Adult protection agency and appropriate law enforcement or prosecuting attorney. (OCGA 30-5-4) |
-| 49 | licensure | D | Rule 510-2-.01 | EPPP (the national licensing exam). (Rule 510-2-.01) |
-| 50 | assessment | B | APA 9.07 / Rule 510-4-.02 | No, except for training with appropriate supervision. (APA 9.07 / Rule 510-4-.02) |
+| 1 | prof-relationships | C | APA 10.01 / Rule 510-4-.02 | Nature/anticipated course of therapy, fees, third parties, limits of confidentiality. (APA 10.01 / Rule 510-4-.02) |
+| 2 | competence | B | Rule 510-9-.04 | 20 hours in the two years immediately prior to application. (Rule 510-9-.04) |
+| 3 | licensure | B | Rule 510-7-.02 | Application, 40 CE hours within two years, and penalty fee. (Rule 510-7-.02) |
+| 4 | privacy | C | Rule 510-5-.06 | Continue to treat client information as confidential. (Rule 510-5-.06) |
+| 5 | prof-relationships | A | APA 10.06 / Rule 510-4-.02 | No. (APA 10.06 / Rule 510-4-.02) |
+| 6 | recordkeeping | A | Rule 510-4-.02 Standard 6.05; Rule 510-5-.01 | Only if it is not clinically contraindicated and the resulting arrangement is not exploitative. (Rule 510-4-.02 Standard 6.05; Rule 510-5-.01) |
+| 7 | privacy | A | APA 4.04 | Only appropriate scientific or professional purposes with concerned persons. (APA 4.04) |
+| 8 | competence | C | OCGA 37-3-41(d) | Yes; under OCGA 37-3-41(d), a licensed psychologist may perform any act specified by the section to be performed by a physician, with equal legal authority. (OCGA 37-3-41(d)) |
+| 9 | licensure | D | OCGA 43-1-19 | Yes, if not satisfied with qualifications; applicant may appear if desired. (OCGA 43-1-19) |
+| 10 | competence | A | Rule 510-8-.02 | Minimum 3, maximum 8 licensed participants. (Rule 510-8-.02) |
+| 11 | competence | D | OCGA 31-7-160 | No; psychologist's order excludes prescribing medications. (OCGA 31-7-160) |
+| 12 | competence | C | APA 1.01 / Rule 510-4-.02 | Take reasonable steps to correct or minimize the misuse. (APA 1.01 / Rule 510-4-.02) |
+| 13 | privacy | B | APA 4.04 | Only information germane to the purpose of the communication. (APA 4.04) |
+| 14 | licensure | D | OCGA 43-1-19 | Refuse to grant, revoke, discipline, or impose probationary license. (OCGA 43-1-19) |
+| 15 | prof-relationships | B | APA 3.06 | Refrain from the role if it could impair objectivity or expose others to harm/exploitation. (APA 3.06) |
+| 16 | licensure | D | OCGA 43-1-19 | Yes. (OCGA 43-1-19) |
+| 17 | licensure | D | OCGA 43-39-3 | Five years, serving until successors are appointed. (OCGA 43-39-3) |
+| 18 | competence | C | OCGA 43-39-15 | At least one year prior. (OCGA 43-39-15) |
+| 19 | licensure | B | Rule 510-2-.05 | A trainee title such as 'intern' or 'resident'. (Rule 510-2-.05) |
+| 20 | licensure | B | Rule 510-9-.03 | 30 days. (Rule 510-9-.03) |
+| 21 | prof-relationships | C | APA 3.10 | Written or oral consent, permission, and assent. (APA 3.10) |
+| 22 | assessment | C | Rule 510-10-.03 | Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist. (Rule 510-10-.03) |
+| 23 | prof-relationships | B | APA 10.07 / Rule 510-4-.02 | No. (APA 10.07 / Rule 510-4-.02) |
+| 24 | licensure | B | OCGA 43-39-17 | Only persons licensed under Chapter 39 (with limited exceptions). (OCGA 43-39-17) |
+| 25 | assessment | A | APA 2.01f | Judicial or administrative rules governing their roles. (APA 2.01f) |
+| 26 | prof-relationships | A | APA 3.12 / Rule 510-4-.02 | Facilitating services in event of illness, death, unavailability, relocation, or financial limitations. (APA 3.12 / Rule 510-4-.02) |
+| 27 | licensure | A | APA 5.04 | Statements must be based on professional knowledge and not imply a professional relationship. (APA 5.04) |
+| 28 | competence | B | OCGA 37-3-41 | Seven days after execution. (OCGA 37-3-41) |
+| 29 | prof-relationships | C | OCGA 16-6-5.1 | Professional treatment or counseling of a mental or emotional illness, symptom, or condition. (OCGA 16-6-5.1) |
+| 30 | recordkeeping | B | Rule 510-2-.05 | No less than once each month. (Rule 510-2-.05) |
+| 31 | prof-relationships | B | OCGA 19-7-5 | Six months. (OCGA 19-7-5) |
+| 32 | prof-relationships | D | APA 3.10 | Nature of services, that they are mandated, and limits of confidentiality. (APA 3.10) |
+| 33 | prof-relationships | A | APA 3.10 | Explanation, assent, consideration of preferences/best interests, permission from legally authorized person if permitted. (APA 3.10) |
+| 34 | assessment | C | OCGA 43-39-1 | Use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders. (OCGA 43-39-1) |
+| 35 | licensure | B | Rule 510-2-.04 | 12 hours/week x 15 weeks/semester x 3 semesters = 540. (Rule 510-2-.04) |
+| 36 | assessment | B | APA 9.07 / Rule 510-4-.02 | No, except for training with appropriate supervision. (APA 9.07 / Rule 510-4-.02) |
+| 37 | recordkeeping | B | Rule 510-2-.05 | All written reports and insurance claims of interns/unlicensed fellows. (Rule 510-2-.05) |
+| 38 | licensure | D | OCGA 43-39-7 | A valid Georgia psychology license. (OCGA 43-39-7) |
+| 39 | assessment | C | APA 9.09 | The psychologist. (APA 9.09) |
+| 40 | competence | B | Rule 510-5-.05 | Exam, records, referral to Colleague Assistance Program, rehabilitation, practice restrictions. (Rule 510-5-.05) |
+| 41 | prof-relationships | B | APA 7.02 | Content, goals/objectives, stipends/benefits, completion requirements. (APA 7.02) |
+| 42 | licensure | C | Rule 510-2-.01 | May take a second Full Board Exam after six months; a second failure means denial. (Rule 510-2-.01) |
+| 43 | prof-relationships | B | OCGA 30-5-4 | Mandated child abuse reporters, therapists, day-care personnel, coroners, EMS personnel, clergy, facility staff, financial institution employees, and any other person may report. (OCGA 30-5-4) |
+| 44 | privacy | C | OCGA 24-9-21 | Psychiatrist-patient; licensed clinical social worker, clinical nurse specialist psych/mental health, marriage and family therapist, professional counselor during psychotherapeutic relationship. (OCGA 24-9-21) |
+| 45 | competence | A | APA 1.07 | No. (APA 1.07) |
+| 46 | privacy | D | APA 4.02 | At outset and thereafter as new circumstances warrant, unless not feasible or contraindicated. (APA 4.02) |
+| 47 | prof-relationships | D | OCGA 16-6-5.1(c)(6),(g) | Knowingly engaging in sexual contact (excluding sexually explicit conduct) with a psychotherapy client; punished as high and aggravated misdemeanor (felony 1-5 years on 2nd conviction). (OCGA 16-6-5.1(c)(6),(g)) |
+| 48 | assessment | A | Rule 510-5-.07 | Integrity of psychometric properties and conditions of administration. (Rule 510-5-.07) |
+| 49 | licensure | A | Rule 510-7-.03 | Practice psychology or use the title 'psychologist' in Georgia. (Rule 510-7-.03) |
+| 50 | prof-relationships | B | APA 8.11 / Rule 510-4-.02 | Do not present another's work or data as one's own, even if cited. (APA 8.11 / Rule 510-4-.02) |
 
 ---
 
 ## Detailed Item-by-Item Review
 
 ### Question 1
-- **Domain:** `assessment`
-- **Question:** What is 'test data' under the APA Ethics Code?
-- **Correct Answer:** B
-- **Citation:** APA 9.04 / Rule 510-4-.02
-- **Explanation:** Raw and scaled scores, client responses, and psychologist notes/recordings during examination. (APA 9.04 / Rule 510-4-.02)
+- **Domain:** `prof-relationships`
+- **Question:** What information must be included in informed consent to therapy?
+- **Correct Answer:** C
+- **Citation:** APA 10.01 / Rule 510-4-.02
+- **Explanation:** Nature/anticipated course of therapy, fees, third parties, limits of confidentiality. (APA 10.01 / Rule 510-4-.02)
 
 ### Question 2
-- **Domain:** `privacy`
-- **Question:** What must psychologists do before consulting about a client?
-- **Correct Answer:** A
-- **Citation:** APA 4.06 / Rule 510-4-.02
-- **Explanation:** Not disclose identifying information unless consent obtained or unavoidable, and limit to necessary extent. (APA 4.06 / Rule 510-4-.02)
+- **Domain:** `competence`
+- **Question:** What CE is required for volunteer service license?
+- **Correct Answer:** B
+- **Citation:** Rule 510-9-.04
+- **Explanation:** 20 hours in the two years immediately prior to application. (Rule 510-9-.04)
 
 ### Question 3
 - **Domain:** `licensure`
-- **Question:** Who may use the title 'psychologist' in Georgia?
-- **Correct Answer:** A
-- **Citation:** OCGA 43-39-17
-- **Explanation:** Only persons licensed under Chapter 39 (with limited exceptions). (OCGA 43-39-17)
+- **Question:** What is required for reinstatement within one year of lapse?
+- **Correct Answer:** B
+- **Citation:** Rule 510-7-.02
+- **Explanation:** Application, 40 CE hours within two years, and penalty fee. (Rule 510-7-.02)
 
 ### Question 4
-- **Domain:** `prof-relationships`
-- **Question:** What constitutes sexual harassment under APA ethics?
-- **Correct Answer:** B
-- **Citation:** APA 3.02
-- **Explanation:** Sexual solicitation, advances, or verbal/nonverbal sexual conduct that is unwelcome/offensive or creates hostile environment. (APA 3.02)
+- **Domain:** `privacy`
+- **Question:** What must psychologists do with records after termination?
+- **Correct Answer:** C
+- **Citation:** Rule 510-5-.06
+- **Explanation:** Continue to treat client information as confidential. (Rule 510-5-.06)
 
 ### Question 5
-- **Domain:** `competence`
-- **Question:** What PSYPACT credentials allow interjurisdictional telepsychology?
-- **Correct Answer:** B
-- **Citation:** Rule 510-5-.07
-- **Explanation:** ASPPB E.Passport and APIT authorization. (Rule 510-5-.07)
+- **Domain:** `prof-relationships`
+- **Question:** May psychologists have sexual intimacies with close relatives/significant others of current clients?
+- **Correct Answer:** A
+- **Citation:** APA 10.06 / Rule 510-4-.02
+- **Explanation:** No. (APA 10.06 / Rule 510-4-.02)
 
 ### Question 6
-- **Domain:** `assessment`
-- **Question:** What is required for students/trainees to administer/interpret psychological tests?
-- **Correct Answer:** D
-- **Citation:** Rule 510-10-.03
-- **Explanation:** Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist. (Rule 510-10-.03)
+- **Domain:** `recordkeeping`
+- **Question:** When is bartering for psychological services ethically permissible under Board rules?
+- **Correct Answer:** A
+- **Citation:** Rule 510-4-.02 Standard 6.05; Rule 510-5-.01
+- **Explanation:** Only if it is not clinically contraindicated and the resulting arrangement is not exploitative. (Rule 510-4-.02 Standard 6.05; Rule 510-5-.01)
 
 ### Question 7
-- **Domain:** `licensure`
-- **Question:** What defines a 'transitioning service member' for expedited endorsement?
-- **Correct Answer:** C
-- **Citation:** Rule 510-3-.02
-- **Explanation:** Active duty or separation leave within 24 months of retirement or 12 months of separation. (Rule 510-3-.02)
+- **Domain:** `privacy`
+- **Question:** For what purposes may confidential information be discussed?
+- **Correct Answer:** A
+- **Citation:** APA 4.04
+- **Explanation:** Only appropriate scientific or professional purposes with concerned persons. (APA 4.04)
 
 ### Question 8
-- **Domain:** `prof-relationships`
-- **Question:** What must informed consent include?
+- **Domain:** `competence`
+- **Question:** Does a licensed psychologist have legal authority to execute a certificate for emergency involuntary mental health admission (Form 1013)?
 - **Correct Answer:** C
-- **Citation:** APA 3.10 / Rule 510-4-.02
-- **Explanation:** Nature/procedures, risks/benefits, limits of confidentiality, fees, third parties, opportunity to ask questions. (APA 3.10 / Rule 510-4-.02)
+- **Citation:** OCGA 37-3-41(d)
+- **Explanation:** Yes; under OCGA 37-3-41(d), a licensed psychologist may perform any act specified by the section to be performed by a physician, with equal legal authority. (OCGA 37-3-41(d))
 
 ### Question 9
-- **Domain:** `prof-relationships`
-- **Question:** When should psychologists avoid a multiple relationship?
+- **Domain:** `licensure`
+- **Question:** May a board deny a license without a prior hearing?
 - **Correct Answer:** D
-- **Citation:** APA 3.05 / Rule 510-4-.02
-- **Explanation:** When it could impair objectivity, competence, or effectiveness, or risk exploitation or harm. (APA 3.05 / Rule 510-4-.02)
+- **Citation:** OCGA 43-1-19
+- **Explanation:** Yes, if not satisfied with qualifications; applicant may appear if desired. (OCGA 43-1-19)
 
 ### Question 10
 - **Domain:** `competence`
-- **Question:** What must psychologists do when they become aware of personal problems affecting work?
+- **Question:** How many psychologists must be in a group consultation group?
 - **Correct Answer:** A
-- **Citation:** APA 2.06
-- **Explanation:** Obtain consultation/assistance and determine whether to limit, suspend, or terminate duties. (APA 2.06)
+- **Citation:** Rule 510-8-.02
+- **Explanation:** Minimum 3, maximum 8 licensed participants. (Rule 510-8-.02)
 
 ### Question 11
-- **Domain:** `prof-relationships`
-- **Question:** What is the penalty for improper sexual contact by a psychotherapist in the first degree under OCGA 16-6-5.1?
-- **Correct Answer:** B
-- **Citation:** OCGA 16-6-5.1(f)
-- **Explanation:** Felony punishable by 1 to 25 years imprisonment and fine up to 00,000 (10 to 30 years if victim is under 16). (OCGA 16-6-5.1(f))
+- **Domain:** `competence`
+- **Question:** Can a health service provider psychologist order medications?
+- **Correct Answer:** D
+- **Citation:** OCGA 31-7-160
+- **Explanation:** No; psychologist's order excludes prescribing medications. (OCGA 31-7-160)
 
 ### Question 12
-- **Domain:** `privacy`
-- **Question:** When must psychologists discuss limits of confidentiality?
-- **Correct Answer:** B
-- **Citation:** APA 4.02 / Rule 510-4-.02
-- **Explanation:** At the outset of the relationship and thereafter as circumstances warrant. (APA 4.02 / Rule 510-4-.02)
+- **Domain:** `competence`
+- **Question:** What must psychologists do when their work is misused?
+- **Correct Answer:** C
+- **Citation:** APA 1.01 / Rule 510-4-.02
+- **Explanation:** Take reasonable steps to correct or minimize the misuse. (APA 1.01 / Rule 510-4-.02)
 
 ### Question 13
-- **Domain:** `prof-relationships`
-- **Question:** What type of abuse triggers mandatory reporting for disabled adults/elders?
-- **Correct Answer:** C
-- **Citation:** OCGA 30-5-4
-- **Explanation:** Abuse other than by accidental means, neglect, or exploitation. (OCGA 30-5-4)
+- **Domain:** `privacy`
+- **Question:** What must psychologists include in written/oral reports?
+- **Correct Answer:** B
+- **Citation:** APA 4.04
+- **Explanation:** Only information germane to the purpose of the communication. (APA 4.04)
 
 ### Question 14
-- **Domain:** `prof-relationships`
-- **Question:** Are financial institution employees mandatory reporters of elder exploitation?
-- **Correct Answer:** C
-- **Citation:** OCGA 30-5-4
-- **Explanation:** Yes, but not while acting as fiduciary for assets held in that capacity. (OCGA 30-5-4)
+- **Domain:** `licensure`
+- **Question:** What may a professional licensing board do upon a finding of violation?
+- **Correct Answer:** D
+- **Citation:** OCGA 43-1-19
+- **Explanation:** Refuse to grant, revoke, discipline, or impose probationary license. (OCGA 43-1-19)
 
 ### Question 15
-- **Domain:** `recordkeeping`
-- **Question:** How long must CE documentation be retained?
-- **Correct Answer:** A
-- **Citation:** Rule 510-8-.03
-- **Explanation:** Four years. (Rule 510-8-.03)
-
-### Question 16
-- **Domain:** `licensure`
-- **Question:** What percentage of internship supervision must be by licensed psychologists?
-- **Correct Answer:** B
-- **Citation:** Rule 510-2-.05
-- **Explanation:** At least 80%. (Rule 510-2-.05)
-
-### Question 17
-- **Domain:** `privacy`
-- **Question:** When may psychologists record voices/images of clients?
-- **Correct Answer:** C
-- **Citation:** APA 4.03 / Rule 510-4-.02
-- **Explanation:** After obtaining permission. (APA 4.03 / Rule 510-4-.02)
-
-### Question 18
-- **Domain:** `licensure`
-- **Question:** Is provisional license revocation a contested case under the APA?
-- **Correct Answer:** B
-- **Citation:** Rule 510-9-.02
-- **Explanation:** No, but holder has right to appear before Board. (Rule 510-9-.02)
-
-### Question 19
-- **Domain:** `prof-relationships`
-- **Question:** What must a supervisee inform a client before providing psychological services?
-- **Correct Answer:** C
-- **Citation:** Rule 510-5-.06(3)(a)(4); Rule 510-2-.05
-- **Explanation:** Supervisee status, supervisor name and contact info, and client right to confer with the supervising psychologist. (Rule 510-5-.06(3)(a)(4); Rule 510-2-.05)
-
-### Question 20
-- **Domain:** `competence`
-- **Question:** Must telepsychology meet the same standards as in-person services?
-- **Correct Answer:** C
-- **Citation:** Rule 510-5-.07
-- **Explanation:** Yes. (Rule 510-5-.07)
-
-### Question 21
-- **Domain:** `competence`
-- **Question:** What must a peace officer execute when taking a person into custody and delivering them under OCGA 37-3-41?
-- **Correct Answer:** A
-- **Citation:** OCGA 37-3-41(c)
-- **Explanation:** A written report detailing apprehension circumstances, which becomes part of the clinical record with the certificate or court order. (OCGA 37-3-41(c))
-
-### Question 22
-- **Domain:** `licensure`
-- **Question:** Who may bring an action to enjoin unlicensed practice generally?
-- **Correct Answer:** A
-- **Citation:** OCGA 43-1-20
-- **Explanation:** The licensing board, division director, or appropriate prosecuting attorney. (OCGA 43-1-20)
-
-### Question 23
-- **Domain:** `competence`
-- **Question:** What professions may serve as secondary supervisors?
-- **Correct Answer:** D
-- **Citation:** Rule 510-2-.05
-- **Explanation:** Licensed psychology, medicine (psychiatry/neurology/relevant medical field). (Rule 510-2-.05)
-
-### Question 24
-- **Domain:** `licensure`
-- **Question:** Who attests licenses issued by the board?
-- **Correct Answer:** B
-- **Citation:** OCGA 43-39-6
-- **Explanation:** The division director under the board's seal. (OCGA 43-39-6)
-
-### Question 25
 - **Domain:** `prof-relationships`
 - **Question:** What must psychologists do when a conflict of interest arises?
 - **Correct Answer:** B
 - **Citation:** APA 3.06
 - **Explanation:** Refrain from the role if it could impair objectivity or expose others to harm/exploitation. (APA 3.06)
 
-### Question 26
+### Question 16
 - **Domain:** `licensure`
-- **Question:** Under OCGA 43-39-7(8), how many days per year may an out-of-state licensed psychologist practice in Georgia without a Georgia license?
-- **Correct Answer:** A
-- **Citation:** OCGA 43-39-7(8); Rule 510-9-.03
-- **Explanation:** No more than 30 days per calendar year, provided the other jurisdiction has equal/greater standards and notice is provided. (OCGA 43-39-7(8); Rule 510-9-.03)
-
-### Question 27
-- **Domain:** `licensure`
-- **Question:** When may the oral exam be scheduled?
-- **Correct Answer:** A
-- **Citation:** Rule 510-2-.01
-- **Explanation:** After passing all exams and within 2 months of completing SWE. (Rule 510-2-.01)
-
-### Question 28
-- **Domain:** `licensure`
-- **Question:** Who may obtain a volunteer service license?
-- **Correct Answer:** C
-- **Citation:** Rule 510-9-.04
-- **Explanation:** Retired or inactive licensees in good standing, not currently practicing. (Rule 510-9-.04)
-
-### Question 29
-- **Domain:** `licensure`
-- **Question:** What is the licensure option for out-of-state licensees?
+- **Question:** Is a plea of nolo contendere considered a conviction for board purposes?
 - **Correct Answer:** D
-- **Citation:** Rule 510-3-.01
-- **Explanation:** Licensure by endorsement. (Rule 510-3-.01)
+- **Citation:** OCGA 43-1-19
+- **Explanation:** Yes. (OCGA 43-1-19)
 
-### Question 30
-- **Domain:** `competence`
-- **Question:** Within how many hours must a physician have personally examined a person before executing an involuntary-treatment certificate?
-- **Correct Answer:** A
-- **Citation:** OCGA 37-3-41
-- **Explanation:** 48 hours. (OCGA 37-3-41)
-
-### Question 31
+### Question 17
 - **Domain:** `licensure`
-- **Question:** From whom may psychologists not solicit testimonials?
-- **Correct Answer:** B
-- **Citation:** APA 5.05 / Rule 510-4-.02
-- **Explanation:** Current therapy clients/patients or vulnerable persons. (APA 5.05 / Rule 510-4-.02)
+- **Question:** What is the term length for Georgia psychology board members?
+- **Correct Answer:** D
+- **Citation:** OCGA 43-39-3
+- **Explanation:** Five years, serving until successors are appointed. (OCGA 43-39-3)
 
-### Question 32
+### Question 18
+- **Domain:** `competence`
+- **Question:** When must CE rules be promulgated before implementation?
+- **Correct Answer:** C
+- **Citation:** OCGA 43-39-15
+- **Explanation:** At least one year prior. (OCGA 43-39-15)
+
+### Question 19
+- **Domain:** `licensure`
+- **Question:** What title must interns use?
+- **Correct Answer:** B
+- **Citation:** Rule 510-2-.05
+- **Explanation:** A trainee title such as 'intern' or 'resident'. (Rule 510-2-.05)
+
+### Question 20
+- **Domain:** `licensure`
+- **Question:** What is the maximum days per calendar year for limited practice in Georgia?
+- **Correct Answer:** B
+- **Citation:** Rule 510-9-.03
+- **Explanation:** 30 days. (Rule 510-9-.03)
+
+### Question 21
+- **Domain:** `prof-relationships`
+- **Question:** What must be documented regarding consent?
+- **Correct Answer:** C
+- **Citation:** APA 3.10
+- **Explanation:** Written or oral consent, permission, and assent. (APA 3.10)
+
+### Question 22
+- **Domain:** `assessment`
+- **Question:** What is required for students/trainees to administer/interpret psychological tests?
+- **Correct Answer:** C
+- **Citation:** Rule 510-10-.03
+- **Explanation:** Satisfy statutory/rule requirements and be under direct supervision of licensed psychologist. (Rule 510-10-.03)
+
+### Question 23
+- **Domain:** `prof-relationships`
+- **Question:** May psychologists accept as clients persons with whom they had prior sexual intimacies?
+- **Correct Answer:** B
+- **Citation:** APA 10.07 / Rule 510-4-.02
+- **Explanation:** No. (APA 10.07 / Rule 510-4-.02)
+
+### Question 24
+- **Domain:** `licensure`
+- **Question:** Who may use the title 'psychologist' in Georgia?
+- **Correct Answer:** B
+- **Citation:** OCGA 43-39-17
+- **Explanation:** Only persons licensed under Chapter 39 (with limited exceptions). (OCGA 43-39-17)
+
+### Question 25
 - **Domain:** `assessment`
 - **Question:** What must psychologists know before assuming forensic roles?
-- **Correct Answer:** D
+- **Correct Answer:** A
 - **Citation:** APA 2.01f
 - **Explanation:** Judicial or administrative rules governing their roles. (APA 2.01f)
 
-### Question 33
-- **Domain:** `recordkeeping`
-- **Question:** What must psychologists do when entering records into databases?
+### Question 26
+- **Domain:** `prof-relationships`
+- **Question:** What must psychologists plan for when interrupting psychological services?
+- **Correct Answer:** A
+- **Citation:** APA 3.12 / Rule 510-4-.02
+- **Explanation:** Facilitating services in event of illness, death, unavailability, relocation, or financial limitations. (APA 3.12 / Rule 510-4-.02)
+
+### Question 27
+- **Domain:** `licensure`
+- **Question:** What precaution applies to media presentations by psychologists?
+- **Correct Answer:** A
+- **Citation:** APA 5.04
+- **Explanation:** Statements must be based on professional knowledge and not imply a professional relationship. (APA 5.04)
+
+### Question 28
+- **Domain:** `competence`
+- **Question:** How long is a physician's involuntary-treatment certificate valid?
 - **Correct Answer:** B
-- **Citation:** APA 6.02
-- **Explanation:** Use coding to avoid personal identifiers when access is not consented. (APA 6.02)
+- **Citation:** OCGA 37-3-41
+- **Explanation:** Seven days after execution. (OCGA 37-3-41)
+
+### Question 29
+- **Domain:** `prof-relationships`
+- **Question:** What is 'psychotherapy' under OCGA 16-6-5.1?
+- **Correct Answer:** C
+- **Citation:** OCGA 16-6-5.1
+- **Explanation:** Professional treatment or counseling of a mental or emotional illness, symptom, or condition. (OCGA 16-6-5.1)
+
+### Question 30
+- **Domain:** `recordkeeping`
+- **Question:** How often must interns update client files?
+- **Correct Answer:** B
+- **Citation:** Rule 510-2-.05
+- **Explanation:** No less than once each month. (Rule 510-2-.05)
+
+### Question 31
+- **Domain:** `prof-relationships`
+- **Question:** What is the minimum period for failure to communicate/visit/support to show abandonment?
+- **Correct Answer:** B
+- **Citation:** OCGA 19-7-5
+- **Explanation:** Six months. (OCGA 19-7-5)
+
+### Question 32
+- **Domain:** `prof-relationships`
+- **Question:** What must be disclosed when services are court ordered?
+- **Correct Answer:** D
+- **Citation:** APA 3.10
+- **Explanation:** Nature of services, that they are mandated, and limits of confidentiality. (APA 3.10)
+
+### Question 33
+- **Domain:** `prof-relationships`
+- **Question:** What must informed consent include for persons legally incapable of consent?
+- **Correct Answer:** A
+- **Citation:** APA 3.10
+- **Explanation:** Explanation, assent, consideration of preferences/best interests, permission from legally authorized person if permitted. (APA 3.10)
 
 ### Question 34
 - **Domain:** `assessment`
-- **Question:** What standard governs court-appointed custody psychologists' good faith?
-- **Correct Answer:** B
-- **Citation:** Rule 510-5-.08
-- **Explanation:** APA's 2010 Guidelines for Child Custody Evaluations in Family Law Proceedings. (Rule 510-5-.08)
+- **Question:** What is 'psychological testing' defined as?
+- **Correct Answer:** C
+- **Citation:** OCGA 43-39-1
+- **Explanation:** Use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders. (OCGA 43-39-1)
 
 ### Question 35
 - **Domain:** `licensure`
-- **Question:** What is the minimum postdoctoral supervised work experience hours required?
+- **Question:** How is the 540-hour equivalency calculated?
 - **Correct Answer:** B
-- **Citation:** Rule 510-2-.05
-- **Explanation:** 1,500 hours. (Rule 510-2-.05)
+- **Citation:** Rule 510-2-.04
+- **Explanation:** 12 hours/week x 15 weeks/semester x 3 semesters = 540. (Rule 510-2-.04)
 
 ### Question 36
-- **Domain:** `competence`
-- **Question:** Who is exempt from the 1-hour-per-30-hours SWE supervision ratio?
-- **Correct Answer:** D
-- **Citation:** Rule 510-2-.05
-- **Explanation:** I/O fellows. (Rule 510-2-.05)
-
-### Question 37
-- **Domain:** `competence`
-- **Question:** May an RN or LPN execute a psychologist's order?
-- **Correct Answer:** A
-- **Citation:** OCGA 31-7-161
-- **Explanation:** Yes; they may confer with the psychologist. (OCGA 31-7-161)
-
-### Question 38
-- **Domain:** `recordkeeping`
-- **Question:** May psychologists withhold records solely because payment has not been received?
-- **Correct Answer:** C
-- **Citation:** APA 6.03 / Rule 510-4-.02
-- **Explanation:** No, not records needed for emergency treatment. (APA 6.03 / Rule 510-4-.02)
-
-### Question 39
-- **Domain:** `privacy`
-- **Question:** What standard governs disclosures of confidential information without consent?
-- **Correct Answer:** A
-- **Citation:** APA 4.05 / Rule 510-4-.02
-- **Explanation:** Only as mandated by law or permitted by law for valid purposes, limited to the minimum necessary. (APA 4.05 / Rule 510-4-.02)
-
-### Question 40
-- **Domain:** `competence`
-- **Question:** How many psychologists must be in a group consultation group?
-- **Correct Answer:** B
-- **Citation:** Rule 510-8-.02
-- **Explanation:** Minimum 3, maximum 8 licensed participants. (Rule 510-8-.02)
-
-### Question 41
-- **Domain:** `prof-relationships`
-- **Question:** On what bases may psychologists not discriminate?
-- **Correct Answer:** C
-- **Citation:** APA 3.01 / Rule 510-4-.02
-- **Explanation:** Age, gender, gender identity, race, ethnicity, culture, national origin, religion, sexual orientation, disability, socioeconomic status, or any basis proscribed by law. (APA 3.01 / Rule 510-4-.02)
-
-### Question 42
-- **Domain:** `prof-relationships`
-- **Question:** What must intervention research informed consent clarify?
-- **Correct Answer:** D
-- **Citation:** APA 8.02
-- **Explanation:** Experimental nature, control group services, assignment method, alternatives, costs. (APA 8.02)
-
-### Question 43
-- **Domain:** `privacy`
-- **Question:** Which family communication is privileged under Georgia evidence law?
-- **Correct Answer:** B
-- **Citation:** OCGA 24-9-21
-- **Explanation:** Husband-wife communications. (OCGA 24-9-21)
-
-### Question 44
-- **Domain:** `assessment`
-- **Question:** How should forensic psychologists testify?
-- **Correct Answer:** C
-- **Citation:** Rule 510-5-.08
-- **Explanation:** Truthfully, honestly, candidly, and fairly describe the basis for testimony. (Rule 510-5-.08)
-
-### Question 45
-- **Domain:** `prof-relationships`
-- **Question:** What must psychologists do if organizational roles preclude disclosure?
-- **Correct Answer:** B
-- **Citation:** APA 3.11
-- **Explanation:** Inform affected individuals/groups at the outset. (APA 3.11)
-
-### Question 46
-- **Domain:** `prof-relationships`
-- **Question:** What option must students have when therapy is a program requirement?
-- **Correct Answer:** D
-- **Citation:** APA 7.05
-- **Explanation:** Select unaffiliated practitioners. (APA 7.05)
-
-### Question 47
-- **Domain:** `prof-relationships`
-- **Question:** When may recording voices/images in research occur without prior consent?
-- **Correct Answer:** C
-- **Citation:** APA 8.03
-- **Explanation:** Naturalistic public observation with no identification/harm, or deception with debriefing consent. (APA 8.03)
-
-### Question 48
-- **Domain:** `prof-relationships`
-- **Question:** To whom must reports of disabled adult/elder abuse be made?
-- **Correct Answer:** A
-- **Citation:** OCGA 30-5-4
-- **Explanation:** Adult protection agency and appropriate law enforcement or prosecuting attorney. (OCGA 30-5-4)
-
-### Question 49
-- **Domain:** `licensure`
-- **Question:** What exam must be passed before taking the GAMB jurisprudence exam?
-- **Correct Answer:** D
-- **Citation:** Rule 510-2-.01
-- **Explanation:** EPPP (the national licensing exam). (Rule 510-2-.01)
-
-### Question 50
 - **Domain:** `assessment`
 - **Question:** May psychologists promote assessment use by unqualified persons?
 - **Correct Answer:** B
 - **Citation:** APA 9.07 / Rule 510-4-.02
 - **Explanation:** No, except for training with appropriate supervision. (APA 9.07 / Rule 510-4-.02)
+
+### Question 37
+- **Domain:** `recordkeeping`
+- **Question:** What must internship supervisors co-sign?
+- **Correct Answer:** B
+- **Citation:** Rule 510-2-.05
+- **Explanation:** All written reports and insurance claims of interns/unlicensed fellows. (Rule 510-2-.05)
+
+### Question 38
+- **Domain:** `licensure`
+- **Question:** What does 'practice of psychology' require in Georgia?
+- **Correct Answer:** D
+- **Citation:** OCGA 43-39-7
+- **Explanation:** A valid Georgia psychology license. (OCGA 43-39-7)
+
+### Question 39
+- **Domain:** `assessment`
+- **Question:** Who retains responsibility for automated test scoring/interpretation?
+- **Correct Answer:** C
+- **Citation:** APA 9.09
+- **Explanation:** The psychologist. (APA 9.09)
+
+### Question 40
+- **Domain:** `competence`
+- **Question:** What may the Board require of an impaired licensee?
+- **Correct Answer:** B
+- **Citation:** Rule 510-5-.05
+- **Explanation:** Exam, records, referral to Colleague Assistance Program, rehabilitation, practice restrictions. (Rule 510-5-.05)
+
+### Question 41
+- **Domain:** `prof-relationships`
+- **Question:** What must education/training program descriptions include?
+- **Correct Answer:** B
+- **Citation:** APA 7.02
+- **Explanation:** Content, goals/objectives, stipends/benefits, completion requirements. (APA 7.02)
+
+### Question 42
+- **Domain:** `licensure`
+- **Question:** What happens if a provisional license holder fails the oral exam?
+- **Correct Answer:** C
+- **Citation:** Rule 510-2-.01
+- **Explanation:** May take a second Full Board Exam after six months; a second failure means denial. (Rule 510-2-.01)
+
+### Question 43
+- **Domain:** `prof-relationships`
+- **Question:** Who must report suspected abuse/neglect/exploitation of a disabled adult or elder person?
+- **Correct Answer:** B
+- **Citation:** OCGA 30-5-4
+- **Explanation:** Mandated child abuse reporters, therapists, day-care personnel, coroners, EMS personnel, clergy, facility staff, financial institution employees, and any other person may report. (OCGA 30-5-4)
+
+### Question 44
+- **Domain:** `privacy`
+- **Question:** What other professionals' communications are privileged under OCGA 24-9-21?
+- **Correct Answer:** C
+- **Citation:** OCGA 24-9-21
+- **Explanation:** Psychiatrist-patient; licensed clinical social worker, clinical nurse specialist psych/mental health, marriage and family therapist, professional counselor during psychotherapeutic relationship. (OCGA 24-9-21)
+
+### Question 45
+- **Domain:** `competence`
+- **Question:** May psychologists file ethics complaints recklessly?
+- **Correct Answer:** A
+- **Citation:** APA 1.07
+- **Explanation:** No. (APA 1.07)
+
+### Question 46
+- **Domain:** `privacy`
+- **Question:** When must psychologists discuss confidentiality limits?
+- **Correct Answer:** D
+- **Citation:** APA 4.02
+- **Explanation:** At outset and thereafter as new circumstances warrant, unless not feasible or contraindicated. (APA 4.02)
+
+### Question 47
+- **Domain:** `prof-relationships`
+- **Question:** What constitutes improper sexual contact by a psychotherapist in the second degree, and what is its penalty?
+- **Correct Answer:** D
+- **Citation:** OCGA 16-6-5.1(c)(6),(g)
+- **Explanation:** Knowingly engaging in sexual contact (excluding sexually explicit conduct) with a psychotherapy client; punished as high and aggravated misdemeanor (felony 1-5 years on 2nd conviction). (OCGA 16-6-5.1(c)(6),(g))
+
+### Question 48
+- **Domain:** `assessment`
+- **Question:** What must be preserved when psychological tests are administered via telepsychology?
+- **Correct Answer:** A
+- **Citation:** Rule 510-5-.07
+- **Explanation:** Integrity of psychometric properties and conditions of administration. (Rule 510-5-.07)
+
+### Question 49
+- **Domain:** `licensure`
+- **Question:** What must a licensee not do while on inactive status?
+- **Correct Answer:** A
+- **Citation:** Rule 510-7-.03
+- **Explanation:** Practice psychology or use the title 'psychologist' in Georgia. (Rule 510-7-.03)
+
+### Question 50
+- **Domain:** `prof-relationships`
+- **Question:** What is the plagiarism rule?
+- **Correct Answer:** B
+- **Citation:** APA 8.11 / Rule 510-4-.02
+- **Explanation:** Do not present another's work or data as one's own, even if cited. (APA 8.11 / Rule 510-4-.02)
