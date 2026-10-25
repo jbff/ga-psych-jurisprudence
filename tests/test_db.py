@@ -2,6 +2,7 @@
 
 import sqlite3
 from pathlib import Path
+
 import pytest
 
 from gamb_exam.db import (

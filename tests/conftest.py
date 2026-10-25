@@ -1,6 +1,7 @@
 """Shared fixtures and configuration for pytest."""
 
 from pathlib import Path
+
 import pytest
 
 

@@ -1,9 +1,10 @@
 """Tests for the Terminal User Interface (TUI) Simulator (gamb_exam.tui)."""
 
-import pytest
 from pathlib import Path
 
-from gamb_exam.db import init_db, insert_question, get_connection
+import pytest
+
+from gamb_exam.db import get_connection, init_db, insert_question
 from gamb_exam.tui import ExamApp
 
 
@@ -104,6 +105,10 @@ async def test_answer_selection_and_navigation(sample_questions: list[dict]):
         assert app.answers[1] == "B"
         assert app.current_index == 0
         assert app.answers[0] == "A"
+
+        # Test Enter key advances to next question
+        await pilot.press("enter")
+        assert app.current_index == 1
 
 
 @pytest.mark.asyncio
@@ -241,6 +246,34 @@ async def test_confirmation_on_unanswered_submit(tmp_path: Path, sample_question
 
 
 @pytest.mark.asyncio
+async def test_submit_cancellation_via_escape(tmp_path: Path, sample_questions: list[dict]):
+    """Test cancelling submit confirmation prompt with Escape key."""
+    db_file = tmp_path / "test_gamb.db"
+    init_db(db_file)
+    app = ExamApp(questions=sample_questions, mode="timed_exam", db_path=db_file)
+    async with app.run_test() as pilot:
+        # Answer question 0
+        await pilot.press("b")
+
+        # Press 's' triggers confirmation warning
+        await pilot.press("s")
+        assert app.confirming_submit is True
+        assert app.is_completed is False
+
+        # Press 'escape' cancels confirmation cleanly
+        await pilot.press("escape")
+        assert app.confirming_submit is False
+        assert app.is_completed is False
+
+        # Verify options are not overwritten during confirmation
+        await pilot.press("s")
+        assert app.confirming_submit is True
+        # Pressing an option key when confirming should be blocked by guard
+        await pilot.press("a")
+        assert app.answers[0] == "B"  # Preserved original answer
+
+
+@pytest.mark.asyncio
 async def test_jump_to_question(sample_questions: list[dict]):
     """Test jumping directly to a specific question via jump grid."""
     app = ExamApp(questions=sample_questions, mode="timed_exam")
@@ -315,10 +348,9 @@ def test_score_cutoff_calculation():
     assert score_data["passed"] is False
 
 
-
 @pytest.mark.asyncio
 async def test_review_mode_after_submission(tmp_path: Path, sample_questions: list[dict]):
-    """Test entering review mode after submitting the exam."""
+    """Test entering review mode after submitting the exam and returning via 'b'."""
     db_file = tmp_path / "test_gamb.db"
     init_db(db_file)
     app = ExamApp(questions=sample_questions, mode="timed_exam", db_path=db_file)
@@ -329,12 +361,40 @@ async def test_review_mode_after_submission(tmp_path: Path, sample_questions: li
         await pilot.press("s")  # confirm submit
         assert app.is_completed is True
 
+        # Results screen should have navigation buttons hidden
+        assert app.query_one("#btn-prev").display is False
+        assert app.query_one("#btn-next").display is False
+
         # Press 'm' to review missed questions
         await pilot.press("m")
         assert app.review_mode is True
         assert app.review_filter == "missed"
 
+        # Press 'b' in review mode returns to results screen
+        await pilot.press("b")
+        assert app.review_mode is False
+        assert app.query_one("#results-container").display is True
+
         # Press 'r' to review all questions
         await pilot.press("r")
         assert app.review_mode is True
         assert app.review_filter == "all"
+
+        # Press 'escape' in review mode also returns to results screen
+        await pilot.press("escape")
+        assert app.review_mode is False
+
+
+@pytest.mark.asyncio
+async def test_timer_expiration_auto_submit(tmp_path: Path, sample_questions: list[dict]):
+    """Test auto-submission when countdown timer reaches zero."""
+    db_file = tmp_path / "test_gamb.db"
+    init_db(db_file)
+    app = ExamApp(questions=sample_questions, mode="timed_exam", time_limit_seconds=2, db_path=db_file)
+    async with app.run_test():
+        assert app.is_completed is False
+        app.time_remaining = 1
+        app.timer_tick()
+        assert app.time_remaining == 0
+        assert app.is_completed is True
+        assert app.score_data is not None

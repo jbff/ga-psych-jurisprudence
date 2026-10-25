@@ -1,18 +1,16 @@
 """Unit tests for question pool population and distractor generation engine."""
 
-from pathlib import Path
 import re
-import sqlite3
-import pytest
+from pathlib import Path
 
+from gamb_exam.db import get_connection
 from gamb_exam.seed import (
     OFFICIAL_DOMAINS,
+    build_question_records,
     normalize_text,
     parse_anki_tsv,
-    build_question_records,
     seed_database,
 )
-from gamb_exam.db import get_connection
 
 
 def test_normalize_text():

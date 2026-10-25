@@ -7,12 +7,14 @@ score calculation against official 76% (38/50) cutoffs, and SQLite persistence.
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
-from typing import Any
+from typing import Any, ClassVar
 
 from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.containers import Container, Horizontal, ScrollableContainer, Vertical
+from textual.css.query import NoMatches
 from textual.widgets import (
     Button,
     DataTable,
@@ -22,17 +24,17 @@ from textual.widgets import (
 )
 
 from gamb_exam.db import (
-    DEFAULT_DB_PATH,
     complete_session,
     create_session,
     save_session_answer,
 )
 from gamb_exam.generator import (
     DOMAIN_DISPLAY_NAMES,
-    DOMAIN_QUOTAS,
     PASSING_PERCENT,
     PASSING_SCORE,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class ContentStatic(Static):
@@ -258,7 +260,7 @@ class ExamApp(App[None]):
     }
     """
 
-    BINDINGS = [
+    BINDINGS: ClassVar[list[Binding]] = [
         Binding("a", "select_option('A')", "Select A", show=False),
         Binding("1", "select_option('A')", "Select A", show=False),
         Binding("b", "select_option('B')", "Select B", show=False),
@@ -269,6 +271,7 @@ class ExamApp(App[None]):
         Binding("4", "select_option('D')", "Select D", show=False),
         Binding("n", "next_question", "Next"),
         Binding("right", "next_question", "Next", show=False),
+        Binding("enter", "next_question", "Next", show=False),
         Binding("p", "prev_question", "Prev"),
         Binding("left", "prev_question", "Prev", show=False),
         Binding("f", "toggle_flag", "Flag"),
@@ -316,11 +319,7 @@ class ExamApp(App[None]):
     @property
     def is_explanation_visible(self) -> bool:
         """Return True when answer feedback and statutory citations should be exposed."""
-        if self.review_mode:
-            return True
-        if self.mode == "study_drill" and self.current_index in self.answers:
-            return True
-        return False
+        return self.review_mode or (self.mode == "study_drill" and self.current_index in self.answers)
 
     def compose(self) -> ComposeResult:
         with Horizontal(id="header-bar"):
@@ -409,7 +408,7 @@ class ExamApp(App[None]):
             timer_widget = self.query_one("#header-timer", Label)
             tracker_widget = self.query_one("#header-tracker", Label)
             flag_widget = self.query_one("#header-flag", Label)
-        except Exception:
+        except NoMatches:
             return
 
         if self.mode == "timed_exam":
@@ -441,32 +440,53 @@ class ExamApp(App[None]):
             exam_c = self.query_one("#exam-container")
             jump_c = self.query_one("#jump-grid-container")
             results_c = self.query_one("#results-container")
+            btn_prev = self.query_one("#btn-prev")
+            btn_next = self.query_one("#btn-next")
+            btn_flag = self.query_one("#btn-flag")
+            btn_jump = self.query_one("#btn-jump")
             btn_submit = self.query_one("#btn-submit")
             btn_back_results = self.query_one("#btn-back-results")
-        except Exception:
+        except NoMatches:
             return
 
         if self.jump_grid_open:
             exam_c.display = False
             jump_c.display = True
             results_c.display = False
+            btn_prev.display = False
+            btn_next.display = False
+            btn_flag.display = False
+            btn_jump.display = True
+            btn_submit.display = False
             btn_back_results.display = False
         elif self.is_completed and not self.review_mode:
             exam_c.display = False
             jump_c.display = False
             results_c.display = True
+            btn_prev.display = False
+            btn_next.display = False
+            btn_flag.display = False
+            btn_jump.display = False
             btn_submit.display = False
             btn_back_results.display = False
         elif self.review_mode:
             exam_c.display = True
             jump_c.display = False
             results_c.display = False
+            btn_prev.display = True
+            btn_next.display = True
+            btn_flag.display = False
+            btn_jump.display = False
             btn_submit.display = False
             btn_back_results.display = True
         else:
             exam_c.display = True
             jump_c.display = False
             results_c.display = False
+            btn_prev.display = True
+            btn_next.display = True
+            btn_flag.display = True
+            btn_jump.display = True
             btn_submit.display = True
             btn_back_results.display = False
 
@@ -541,7 +561,7 @@ class ExamApp(App[None]):
             unanswered = len(self.questions) - len(self.answers)
             self.query_one("#confirm-text", Label).update(
                 f"⚠️ Warning: {unanswered} question(s) remain unanswered!\n"
-                "Press [S] again to confirm submission, or [C] / navigation to cancel."
+                "Press [S] again to confirm submission, or [Esc] to cancel."
             )
         else:
             confirm_panel.display = False
@@ -552,7 +572,7 @@ class ExamApp(App[None]):
         for idx in range(len(self.questions)):
             try:
                 btn = self.query_one(f"#jump-btn-{idx}", Button)
-            except Exception:
+            except NoMatches:
                 continue
 
             ans = self.answers.get(idx)
@@ -613,7 +633,7 @@ class ExamApp(App[None]):
 
     def submit_exam(self, force: bool = False) -> None:
         """Submit the exam and calculate diagnostic results.
-        
+
         Prompts confirmation if unanswered questions remain unless force=True.
         """
         if self.is_completed:
@@ -680,7 +700,7 @@ class ExamApp(App[None]):
                     db_path=self.db_path,
                 )
         except Exception:
-            pass
+            logger.exception("Failed to persist exam session to database")
 
     def update_results_view(self) -> None:
         if self.score_data is None:
@@ -717,7 +737,7 @@ class ExamApp(App[None]):
         )
 
         table.clear()
-        for dom_key, stats in self.score_data["domain_stats"].items():
+        for stats in self.score_data["domain_stats"].values():
             status_text = "Mastery (>=76%)" if stats["mastery"] else "Needs Review (<76%)"
             table.add_row(
                 stats["name"],
@@ -729,15 +749,20 @@ class ExamApp(App[None]):
 
     # Actions
     def action_select_option(self, option: str) -> None:
+        if self.confirming_submit or self.jump_grid_open:
+            return
         if self.is_completed and not self.review_mode:
             return
         if self.review_mode:
+            if option.upper() == "B":
+                self.action_back_to_results()
             return
-        self.confirming_submit = False
         self.answers[self.current_index] = option.upper()
         self.update_question_view()
 
     def action_next_question(self) -> None:
+        if self.jump_grid_open or (self.is_completed and not self.review_mode):
+            return
         self.confirming_submit = False
         if self.review_mode:
             if self.review_indices:
@@ -753,6 +778,8 @@ class ExamApp(App[None]):
         self.update_question_view()
 
     def action_prev_question(self) -> None:
+        if self.jump_grid_open or (self.is_completed and not self.review_mode):
+            return
         self.confirming_submit = False
         if self.review_mode:
             if self.review_indices:
@@ -768,6 +795,8 @@ class ExamApp(App[None]):
         self.update_question_view()
 
     def action_toggle_flag(self) -> None:
+        if self.jump_grid_open or (self.is_completed and not self.review_mode):
+            return
         self.confirming_submit = False
         if self.current_index in self.flags:
             self.flags.remove(self.current_index)
@@ -776,6 +805,8 @@ class ExamApp(App[None]):
         self.update_header()
 
     def action_toggle_jump(self) -> None:
+        if self.is_completed and not self.review_mode:
+            return
         self.confirming_submit = False
         self.jump_grid_open = not self.jump_grid_open
         self.update_layout_visibility()
