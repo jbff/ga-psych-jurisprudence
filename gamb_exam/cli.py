@@ -19,7 +19,6 @@ from gamb_exam.db import (
     get_missed_questions,
     get_questions_by_domain,
     get_session_history,
-    init_db,
 )
 from gamb_exam.generator import (
     export_mock_markdown,

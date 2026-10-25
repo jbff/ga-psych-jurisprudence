@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from unittest.mock import MagicMock
 
@@ -118,5 +119,42 @@ def test_generate_compendium(tmp_path: Path):
     compile_html_to_pdf(html_path, pdf_path)
     assert pdf_path.exists()
     assert pdf_path.stat().st_size > 100000  # Substantial multi-page PDF
+
+
+def test_generate_compendium_html_escaping(tmp_path: Path):
+    mock_pool = tmp_path / "mock_pool.json"
+    mock_pool.write_text(
+        json.dumps([
+            {
+                "id": 1,
+                "domain": "prof-relationships",
+                "question_text": "Is <script>alert('xss')</script> allowed & safe?",
+                "options": {
+                    "A": "No <tag> & unsafe",
+                    "B": "Yes > No",
+                    "C": "Option \"C\"",
+                    "D": "Option 'D'",
+                },
+                "correct_option": "A",
+                "source_citation": "Rule 510-4 & O.C.G.A. § 16-6-5.1 <Statute>",
+                "explanation": "Must escape <elements> & entities.",
+            }
+        ]),
+        encoding="utf-8",
+    )
+    q_md = tmp_path / "q.md"
+    k_md = tmp_path / "k.md"
+    html_path = tmp_path / "out.html"
+
+    generate_compendium(q_md=q_md, k_md=k_md, html_path=html_path, pool_path=mock_pool)
+
+    html_content = html_path.read_text(encoding="utf-8")
+    assert "<script>alert('xss')</script>" not in html_content
+    assert "&lt;script&gt;" in html_content
+    assert "&lt;tag&gt; &amp; unsafe" in html_content
+    assert "Yes &gt; No" in html_content
+    assert "&lt;Statute&gt;" in html_content
+    assert "&lt;elements&gt; &amp; entities." in html_content
+
 
 

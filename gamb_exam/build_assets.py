@@ -376,21 +376,29 @@ def generate_compendium(
             questions_by_domain.setdefault(domain, []).append(item)
 
     # Deterministic sorting within each domain by item id
-    for d in questions_by_domain:
-        questions_by_domain[d].sort(key=lambda x: x.get("id", 0))
+    for domain_items in questions_by_domain.values():
+        domain_items.sort(key=lambda x: x.get("id", 0))
 
-    # Sequential numbering across the entire compendium (1..435)
+    extra_domains = [d for d in questions_by_domain if d not in OFFICIAL_DOMAIN_ORDER]
+    all_domains = list(OFFICIAL_DOMAIN_ORDER) + extra_domains
+
+    # Sequential numbering across the entire compendium (1..N)
     ordered_questions: list[tuple[int, dict]] = []
+    ordered_by_domain: dict[str, list[tuple[int, dict]]] = {d: [] for d in all_domains}
     q_counter = 1
-    for domain in OFFICIAL_DOMAIN_ORDER:
+    for domain in all_domains:
         for q in questions_by_domain.get(domain, []):
-            ordered_questions.append((q_counter, q))
+            item = (q_counter, q)
+            ordered_questions.append(item)
+            ordered_by_domain[domain].append(item)
             q_counter += 1
+
+    total_qs = len(ordered_questions)
 
     # 1. Build Part I Markdown (compendium_questions.md)
     md_q_lines: list[str] = [
         "# Georgia Psychology Jurisprudence Examination (GAMB)",
-        "## 435-Question Self-Study Compendium",
+        f"## {total_qs}-Question Self-Study Compendium",
         "## Part I: Question Bank by Domain",
         "",
         LEGAL_DISCLAIMER,
@@ -399,10 +407,10 @@ def generate_compendium(
         "",
     ]
 
-    for d_idx, domain in enumerate(OFFICIAL_DOMAIN_ORDER, 1):
+    for d_idx, domain in enumerate(all_domains, 1):
         domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
         domain_desc = DOMAIN_DESCRIPTIONS.get(domain, "")
-        domain_qs = [item for item in ordered_questions if item[1].get("domain") == domain]
+        domain_qs = ordered_by_domain.get(domain, [])
         md_q_lines.append(f"## Domain {d_idx}: {domain_title} ({len(domain_qs)} Questions)\n")
         if domain_desc:
             md_q_lines.append(f"*{domain_desc}*\n")
@@ -420,7 +428,7 @@ def generate_compendium(
     # 2. Build Part II Markdown (compendium_key.md)
     md_k_lines: list[str] = [
         "# Georgia Psychology Jurisprudence Examination (GAMB)",
-        "## 435-Question Self-Study Compendium",
+        f"## {total_qs}-Question Self-Study Compendium",
         "## Part II: Annotated Answer Key",
         "",
         LEGAL_DISCLAIMER,
@@ -447,22 +455,22 @@ def generate_compendium(
         "<html>",
         "<head>",
         '<meta charset="utf-8">',
-        "<title>GAMB 435-Question Domain Compendium</title>",
+        f"<title>GAMB {total_qs}-Question Domain Compendium</title>",
         f"<style>\n{PRINT_CSS}\n</style>",
         "</head>",
         "<body>",
         "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
-        '<div class="badge">435-QUESTION SELF-STUDY COMPENDIUM</div>',
+        f'<div class="badge">{total_qs}-QUESTION SELF-STUDY COMPENDIUM</div>',
         "<h2>Part I: Question Bank by Domain</h2>",
         '<div class="disclaimer">',
         "<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This compendium is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. and Board Rules Chapter 510.",
         "</div>",
     ]
 
-    for d_idx, domain in enumerate(OFFICIAL_DOMAIN_ORDER, 1):
+    for d_idx, domain in enumerate(all_domains, 1):
         domain_title = DOMAIN_DISPLAY_NAMES.get(domain, domain)
         domain_desc = DOMAIN_DESCRIPTIONS.get(domain, "")
-        domain_qs = [item for item in ordered_questions if item[1].get("domain") == domain]
+        domain_qs = ordered_by_domain.get(domain, [])
         if d_idx > 1:
             html_parts.append('<div class="page-break"></div>')
         html_parts.append(f"<h2>Domain {d_idx}: {html.escape(domain_title)} ({len(domain_qs)} Questions)</h2>")
@@ -483,7 +491,7 @@ def generate_compendium(
         '<div class="page-break"></div>',
         '<div style="text-align: center; padding-top: 220pt;">',
         '<h1 style="border-bottom: none; font-size: 24pt; color: #1a365d;">Part II: Annotated Answer Key</h1>',
-        '<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">QUESTIONS 1 &ndash; 435</div>',
+        f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">QUESTIONS 1 &ndash; {total_qs}</div>',
         '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Explanations</p>',
         "</div>",
         '<div class="page-break"></div>',
