@@ -315,6 +315,55 @@ def test_generate_web_quizzer_custom_pool(tmp_path: Path):
     assert "Custom question?" in content
 
 
+def test_generate_web_quizzer_script_tag_escaping(tmp_path: Path):
+    mock_pool = tmp_path / "xss_pool.json"
+    mock_pool.write_text(
+        json.dumps([
+            {
+                "id": 1001,
+                "domain": "licensure",
+                "question_text": "What about </SCRIPT> tag injection and </script> test?",
+                "options": {
+                    "A": "safe",
+                    "B": "unsafe </Script>",
+                    "C": "3",
+                    "D": "4",
+                },
+                "correct_option": "A",
+                "source_citation": "Rule 510-2",
+                "explanation": "Dangerous </script><script>alert(1)</script>",
+            }
+        ]),
+        encoding="utf-8",
+    )
+    web_file = tmp_path / "quizzer_xss.html"
+    generate_web_quizzer(output_path=web_file, pool_path=mock_pool)
+
+    assert web_file.exists()
+    content = web_file.read_text(encoding="utf-8")
+    # Verify no unescaped closing script tags in JSON block
+    script_block = content.split("<script>")[1].split("</script>")[0]
+    assert "</SCRIPT>" not in script_block
+    assert "</Script>" not in script_block
+    assert "</script>" not in script_block
+    assert r"<\/script>" in script_block
+
+
+def test_generate_web_quizzer_storage_and_accessibility(tmp_path: Path):
+    web_file = tmp_path / "quizzer_a11y.html"
+    generate_web_quizzer(output_path=web_file)
+
+    content = web_file.read_text(encoding="utf-8")
+    # In-memory storage fallback
+    assert "const storage =" in content
+    assert "window.localStorage" in content
+    # Jump grid accessibility
+    assert "document.createElement('button')" in content
+    assert "aria-label" in content
+    assert "beforeunload" in content
+
+
+
 
 
 

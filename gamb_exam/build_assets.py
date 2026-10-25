@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import json
 import random
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -1431,6 +1432,12 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
     }
 
     @media (max-width: 640px) {
+      main {
+        padding: 1rem 0.5rem;
+      }
+      .card {
+        padding: 1rem;
+      }
       .jump-grid {
         grid-template-columns: repeat(5, 1fr);
       }
@@ -1450,6 +1457,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
       cursor: pointer;
       position: relative;
       transition: all 0.15s ease;
+      font-family: inherit;
     }
 
     .grid-cell:hover {
@@ -1849,10 +1857,34 @@ const state = {
   }
 };
 
-// STORAGE UTILITIES
+// STORAGE UTILITIES WITH SAFE FALLBACK (Private Browsing / file:// origins / quota errors)
+const storage = {
+  _mem: {},
+  get(key) {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        return window.localStorage.getItem(key);
+      }
+    } catch (e) {
+      // In private browsing or file:// context, use in-memory fallback
+    }
+    return Object.prototype.hasOwnProperty.call(this._mem, key) ? this._mem[key] : null;
+  },
+  set(key, val) {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        window.localStorage.setItem(key, val);
+      }
+    } catch (e) {
+      // In private browsing or quota exceeded, use in-memory fallback
+    }
+    this._mem[key] = String(val);
+  }
+};
+
 function getMissedQuestions() {
   try {
-    const raw = localStorage.getItem('gamb_missed_questions');
+    const raw = storage.get('gamb_missed_questions');
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? parsed : [];
@@ -1864,10 +1896,10 @@ function getMissedQuestions() {
 function saveMissedQuestions(ids) {
   try {
     const unique = [...new Set(ids)];
-    localStorage.setItem('gamb_missed_questions', JSON.stringify(unique));
+    storage.set('gamb_missed_questions', JSON.stringify(unique));
     updateMissedBadge();
   } catch (e) {
-    console.error("Failed to save missed questions to localStorage", e);
+    console.error("Failed to save missed questions", e);
   }
 }
 
@@ -1899,11 +1931,15 @@ function updateMissedBadge() {
 
 // THEME HANDLING
 function initTheme() {
-  const saved = localStorage.getItem('gamb_theme');
-  if (saved) {
-    document.documentElement.setAttribute('data-theme', saved);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+  try {
+    const saved = storage.get('gamb_theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {
+    // Graceful fallback
   }
   updateThemeButton();
 }
@@ -1912,7 +1948,7 @@ function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme') || 'light';
   const newTheme = current === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('gamb_theme', newTheme);
+  storage.set('gamb_theme', newTheme);
   updateThemeButton();
 }
 
@@ -1984,7 +2020,6 @@ function startPsiExam() {
   // Shuffle options to prevent position bias
   state.psi.questions = selected.map(q => {
     const origKeys = ["A", "B", "C", "D"];
-    const origCorrectText = q.options[q.correct_option];
     const shuffledKeys = [...origKeys];
     for (let i = shuffledKeys.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -1995,7 +2030,7 @@ function startPsiExam() {
     origKeys.forEach((key, idx) => {
       const srcKey = shuffledKeys[idx];
       newOptions[key] = q.options[srcKey];
-      if (newOptions[key] === origCorrectText) {
+      if (srcKey === q.correct_option) {
         newCorrect = key;
       }
     });
@@ -2018,7 +2053,9 @@ function startPsiExam() {
     updatePsiTimer();
     if (state.psi.timerSeconds <= 0) {
       clearInterval(state.psi.timerInterval);
+      state.psi.timerInterval = null;
       alert("Time has expired (60 minutes). Your examination will now be submitted.");
+      switchMode('psi');
       submitPsiExam();
     }
   }, 1000);
@@ -2084,7 +2121,10 @@ function confirmSubmitPsiExam() {
 }
 
 function submitPsiExam() {
-  if (state.psi.timerInterval) clearInterval(state.psi.timerInterval);
+  if (state.psi.timerInterval) {
+    clearInterval(state.psi.timerInterval);
+    state.psi.timerInterval = null;
+  }
 
   let score = 0;
   const missedIds = [];
@@ -2128,6 +2168,10 @@ function startPsiReview(filter) {
   } else {
     state.psi.reviewIndices = state.psi.questions.map((_, idx) => idx);
   }
+  if (state.psi.reviewIndices.length === 0) {
+    state.psi.reviewIndices = state.psi.questions.map((_, idx) => idx);
+    state.psi.reviewFilter = 'all';
+  }
   state.psi.reviewCurrentPos = 0;
   state.psi.status = 'review';
   render();
@@ -2153,9 +2197,11 @@ function openJumpGrid() {
 
   container.innerHTML = '';
   for (let i = 0; i < 50; i++) {
-    const cell = document.createElement('div');
+    const cell = document.createElement('button');
+    cell.type = 'button';
     cell.className = 'grid-cell';
     cell.textContent = i + 1;
+    cell.setAttribute('aria-label', `Question ${i + 1}`);
 
     if (state.psi.answers[i] !== undefined) cell.classList.add('answered');
     if (state.psi.flagged[i]) cell.classList.add('flagged');
@@ -2235,8 +2281,10 @@ function drillPrev() {
 }
 
 function drillJump(index) {
-  if (index >= 0 && index < state.drill.questions.length) {
+  if (!isNaN(index) && index >= 0 && index < state.drill.questions.length) {
     state.drill.currentIndex = index;
+    render();
+  } else {
     render();
   }
 }
@@ -2502,7 +2550,8 @@ function renderPsi(container) {
         </div>
 
         <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.75rem;">Diagnostic Domain Breakdown</h3>
-        <table class="report-table">
+        <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.25rem 0;">
+        <table class="report-table" style="margin: 0;">
           <thead>
             <tr>
               <th>Domain</th>
@@ -2540,6 +2589,7 @@ function renderPsi(container) {
             </tr>
           </tbody>
         </table>
+        </div>
 
         ${res.missedIds.length > 0 ? `
           <div style="background-color: var(--warning-bg); border: 1px solid var(--warning-border); border-radius: var(--radius); padding: 0.85rem 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--warning);">
@@ -2657,7 +2707,18 @@ function renderDrill(container) {
   }
 
   const currentQ = state.drill.questions[state.drill.currentIndex];
-  const answeredChoice = currentQ ? state.drill.answered[currentQ.id] : null;
+  if (!currentQ) {
+    container.innerHTML = `
+      <div class="card empty-state" style="max-width: 650px; margin: 2rem auto;">
+        <h3>No Questions Available</h3>
+        <p>No questions found matching the selected domain filter.</p>
+        <button class="btn btn-primary" onclick="setDrillDomain('all')">View All Domains</button>
+      </div>
+    `;
+    return;
+  }
+
+  const answeredChoice = state.drill.answered[currentQ.id];
   const isAnswered = answeredChoice !== undefined;
   const isCorrect = isAnswered && answeredChoice === currentQ.correct_option;
   const domainName = currentQ ? (DOMAIN_NAMES[currentQ.domain] || currentQ.domain) : '';
@@ -2854,6 +2915,13 @@ function renderMissed(container) {
 }
 
 // INITIALIZATION
+window.addEventListener('beforeunload', (e) => {
+  if (state.mode === 'psi' && state.psi.status === 'active') {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   initTheme();
   updateMissedBadge();
@@ -2887,11 +2955,19 @@ def generate_web_quizzer(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     questions_json = json.dumps(questions, indent=2, ensure_ascii=False)
-    # Prevent closing script tag injection
-    questions_json = questions_json.replace("</script>", "<\\/script>")
+    # Prevent closing script tag injection case-insensitively
+    questions_json = re.sub(r"(?i)</script>", r"<\\/script>", questions_json)
 
-    domain_names_json = json.dumps(DOMAIN_DISPLAY_NAMES, ensure_ascii=False)
-    domain_quotas_json = json.dumps(DOMAIN_QUOTAS, ensure_ascii=False)
+    domain_names_json = re.sub(
+        r"(?i)</script>",
+        r"<\\/script>",
+        json.dumps(DOMAIN_DISPLAY_NAMES, ensure_ascii=False),
+    )
+    domain_quotas_json = re.sub(
+        r"(?i)</script>",
+        r"<\\/script>",
+        json.dumps(DOMAIN_QUOTAS, ensure_ascii=False),
+    )
 
     rendered_html = (
         WEB_QUIZZER_HTML_TEMPLATE
