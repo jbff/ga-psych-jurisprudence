@@ -2,6 +2,7 @@
 ## Practice Examination Booklet — Form A
 ### 50-Question Stratified Jurisprudence Simulation (Seed 101)
 > **Question Pool Version:** 1.0 (Release Date: 10/25/2026)
+> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:

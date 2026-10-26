@@ -243,3 +243,10 @@ All 72 unit, pool, CLI, TUI, and asset build tests verify:
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
 - CLI argument parsing, help output, and subcommands (`test_cli.py`).
 - PDF stylesheet compilation, HTML generation, Markdown export, and single-file web quizzer bundling (`test_build_assets.py`).
+
+---
+
+## Author & Copyright
+
+&copy; 2026 [John B. Fleming, PhD](http://johnbflemingphd.com). All rights reserved.
+

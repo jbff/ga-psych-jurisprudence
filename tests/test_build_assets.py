@@ -31,6 +31,8 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "40 hours" in content
     assert "Question Pool" in content
     assert "10/25/2026" in content
+    assert "John B. Fleming, PhD" in content
+    assert "http://johnbflemingphd.com" in content
 
     html_content = html_path.read_text(encoding="utf-8")
     assert "Georgia Psychology Jurisprudence Examination" in html_content
@@ -40,6 +42,8 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "40 hours" in html_content
     assert "Question Pool" in html_content
     assert "10/25/2026" in html_content
+    assert "John B. Fleming, PhD" in html_content
+    assert "http://johnbflemingphd.com" in html_content
 
     # Test PDF compilation
     compile_html_to_pdf(html_path, pdf_path)
@@ -114,6 +118,8 @@ def test_generate_compendium(tmp_path: Path):
     assert "Part I: Question Bank by Domain" in q_text
     assert "Question Pool" in q_text
     assert "10/25/2026" in q_text
+    assert "John B. Fleming, PhD" in q_text
+    assert "http://johnbflemingphd.com" in q_text
     assert "Q1." in q_text
     assert "Q435." in q_text
     # Questions section must NOT reveal the correct option
@@ -123,8 +129,14 @@ def test_generate_compendium(tmp_path: Path):
     assert "Part II: Annotated Answer Key" in k_text
     assert "Question Pool" in k_text
     assert "10/25/2026" in k_text
+    assert "John B. Fleming, PhD" in k_text
+    assert "http://johnbflemingphd.com" in k_text
     assert "Q1" in k_text
     assert "Q435" in k_text
+
+    html_text = html_path.read_text(encoding="utf-8")
+    assert "John B. Fleming, PhD" in html_text
+    assert "http://johnbflemingphd.com" in html_text
 
     # Test PDF compilation
     compile_html_to_pdf(html_path, pdf_path)
@@ -200,8 +212,14 @@ def test_generate_practice_forms(tmp_path: Path):
             assert orig_correct_text == new_correct_text
 
         # Check files created
-        assert (tmp_path / f"practice_exam_form_{letter.lower()}.md").exists()
-        assert (tmp_path / f"practice_exam_form_{letter.lower()}.html").exists()
+        md_file = tmp_path / f"practice_exam_form_{letter.lower()}.md"
+        html_file = tmp_path / f"practice_exam_form_{letter.lower()}.html"
+        assert md_file.exists()
+        assert html_file.exists()
+        assert "John B. Fleming, PhD" in md_file.read_text(encoding="utf-8")
+        assert "http://johnbflemingphd.com" in md_file.read_text(encoding="utf-8")
+        assert "John B. Fleming, PhD" in html_file.read_text(encoding="utf-8")
+        assert "http://johnbflemingphd.com" in html_file.read_text(encoding="utf-8")
         pdf_path = tmp_path / f"GAMB_Practice_Exam_Form_{letter}.pdf"
         assert pdf_path.exists()
         assert pdf_path.stat().st_size > 30000
@@ -293,6 +311,8 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "Domain Study Drill" in content
     assert "Missed Questions" in content
     assert "Question Pool v1.0 (10/25/2026)" in content
+    assert "John B. Fleming, PhD" in content
+    assert "http://johnbflemingphd.com" in content
     assert "const QUESTION_BANK =" in content
     # Check that all 435 questions are serialized
     assert '"id": 1' in content

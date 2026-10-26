@@ -54,7 +54,13 @@ PRINT_PAGE_RULE = f"""
         font-size: 8pt;
         color: #718096;
     }}
-    @bottom-center {{
+    @bottom-left {{
+        content: "© 2026 John B. Fleming, PhD • http://johnbflemingphd.com";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #718096;
+    }}
+    @bottom-right {{
         content: "Page " counter(page) " of " counter(pages);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         font-size: 8pt;
@@ -176,6 +182,18 @@ tr:nth-child(even) td {
 .page-break {
     page-break-before: always;
 }
+
+.author-attribution {
+    font-size: 8.5pt;
+    color: #4a5568;
+    margin-top: 4pt;
+    margin-bottom: 8pt;
+}
+
+.author-attribution a {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
 """
 
 
@@ -212,7 +230,8 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 
     md_content = f"""# Georgia Psychology Jurisprudence Examination (GAMB)
 ## High-Yield Statutory Quick-Reference Cheat Sheet
-> **Question Pool:** Version {POOL_VERSION} (Date: {POOL_DATE})
+> **Question Pool:** Version {POOL_VERSION} (Date: {POOL_DATE})  
+> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)
 
 {LEGAL_DISCLAIMER}
 
@@ -294,8 +313,11 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>
 <div class="badge">STATUTORY QUICK-REFERENCE CRAM SHEET</div>
 <div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>
-<div class="meta-info" style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 8pt;">
+<div class="meta-info" style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 4pt;">
 <strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE}
+</div>
+<div class="author-attribution">
+&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a>
 </div>
 <div class="disclaimer">
 <strong>LEGAL & REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
@@ -425,6 +447,7 @@ def generate_compendium(
         f"## {total_qs}-Question Self-Study Compendium",
         "## Part I: Question Bank by Domain",
         f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
+        "> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)",
         "",
         LEGAL_DISCLAIMER,
         "",
@@ -456,6 +479,7 @@ def generate_compendium(
         f"## {total_qs}-Question Self-Study Compendium",
         "## Part II: Annotated Answer Key",
         f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
+        "> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)",
         "",
         LEGAL_DISCLAIMER,
         "",
@@ -488,7 +512,8 @@ def generate_compendium(
         "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
         f'<div class="badge">{total_qs}-QUESTION SELF-STUDY COMPENDIUM</div>',
         f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} &bull; {POOL_DATE}</div>',
-        f'<div style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 6pt;"><strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE} &bull; <strong>Total Questions:</strong> {total_qs}</div>',
+        f'<div style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 4pt;"><strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE} &bull; <strong>Total Questions:</strong> {total_qs}</div>',
+        '<div class="author-attribution">&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a></div>',
         "<h2>Part I: Question Bank by Domain</h2>",
         '<div class="disclaimer">',
         "<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This compendium is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. and Board Rules Chapter 510.",
@@ -522,6 +547,7 @@ def generate_compendium(
         f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">QUESTIONS 1 &ndash; {total_qs}</div>',
         f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>',
         '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Explanations</p>',
+        '<div class="author-attribution" style="margin-top: 10pt;">&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a></div>',
         "</div>",
         '<div class="page-break"></div>',
         "<h2>Part II: Annotated Answer Key</h2>",
@@ -681,6 +707,7 @@ def generate_practice_forms(
             f"## Practice Examination Booklet — Form {form_letter}",
             f"### 50-Question Stratified Jurisprudence Simulation (Seed {seed})",
             f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
+            "> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)",
             "",
             LEGAL_DISCLAIMER,
             "",
@@ -840,6 +867,7 @@ def generate_practice_forms(
             '<div style="background-color: #f7fafc; border: 1pt solid #cbd5e0; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 14pt;">',
             '<h3 style="margin-top: 0; color: #1a365d;">Examination Instructions &amp; Candidate Guidelines</h3>',
             f'<p style="margin: 4pt 0;"><strong>Question Pool:</strong> Version {POOL_VERSION} (Release Date: {POOL_DATE})</p>',
+            '<p style="margin: 4pt 0;"><strong>Author &amp; Copyright:</strong> &copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a></p>',
             '<p style="margin: 4pt 0;"><strong>Time Limit:</strong> 60 minutes (strict simulation conditions)</p>',
             '<p style="margin: 4pt 0;"><strong>Total Items:</strong> 50 multiple-choice questions (A, B, C, D)</p>',
             '<p style="margin: 4pt 0;"><strong>Passing Standard:</strong> 38 out of 50 correct (76.0%)</p>',
@@ -924,6 +952,7 @@ def generate_practice_forms(
             f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">FORM {form_letter} &bull; QUESTIONS 1 &ndash; 50</div>',
             f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>',
             '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Domain Diagnostic Key</p>',
+            '<div class="author-attribution" style="margin-top: 10pt;">&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a></div>',
             '</div>',
             '<div class="page-break"></div>',
             f'<h2>Section 3: Answer Key &amp; Explanations &mdash; Form {form_letter}</h2>',
@@ -1807,6 +1836,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="footer-inner">
     <p><strong>LEGAL DISCLAIMER:</strong> __LEGAL_DISCLAIMER__</p>
     <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; <strong>Question Pool:</strong> Version 1.0 (10/25/2026) &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
+    <p>&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com" target="_blank" rel="noopener" style="color: var(--primary);">http://johnbflemingphd.com</a></p>
   </div>
 </footer>
 

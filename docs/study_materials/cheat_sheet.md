@@ -1,6 +1,7 @@
 # Georgia Psychology Jurisprudence Examination (GAMB)
 ## High-Yield Statutory Quick-Reference Cheat Sheet
-> **Question Pool:** Version 1.0 (Date: 10/25/2026)
+> **Question Pool:** Version 1.0 (Date: 10/25/2026)  
+> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:
