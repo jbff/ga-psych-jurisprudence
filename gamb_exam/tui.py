@@ -15,6 +15,7 @@ from typing import Any, ClassVar
 from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.containers import Container, Horizontal, ScrollableContainer, Vertical
+from textual.content import Content
 from textual.css.query import NoMatches
 from textual.timer import Timer
 from textual.widgets import (
@@ -103,6 +104,8 @@ class ExamApp(App[None]):
     #exam-container {
         height: 1fr;
         padding: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     #meta-container {
@@ -131,14 +134,18 @@ class ExamApp(App[None]):
     }
 
     #options-container {
+        width: 100%;
         margin: 1 0;
         height: auto;
     }
 
-    .option-btn {
+    #options-container Button, .option-btn {
         width: 100%;
+        height: auto;
         margin-bottom: 1;
         text-align: left;
+        content-align: left top;
+        text-wrap: wrap;
     }
 
     #explanation-panel {
@@ -538,10 +545,14 @@ class ExamApp(App[None]):
 
         for letter in ("A", "B", "C", "D"):
             btn = self.query_one(f"#option-{letter.lower()}", Button)
-            opt_text = q.get(f"option_{letter.lower()}", "")
+            opt_text = (
+                q.get(f"option_{letter.lower()}")
+                or q.get("options", {}).get(letter)
+                or ""
+            )
             is_selected = selected_opt == letter
             marker = "[x]" if is_selected else "[ ]"
-            btn.label = f"{marker} [{letter}] {opt_text}"
+            btn.label = Content.from_text(f"{marker} [{letter}] {opt_text}", markup=False)
 
             if show_feedback:
                 if letter == correct_opt:

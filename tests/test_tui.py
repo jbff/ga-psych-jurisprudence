@@ -449,3 +449,76 @@ async def test_timer_expiration_auto_submit(tmp_path: Path, sample_questions: li
         assert app.time_remaining == 0
         assert app.is_completed is True
         assert app.score_data is not None
+
+
+@pytest.mark.asyncio
+async def test_option_choices_left_justified_and_preserved(sample_questions: list[dict]):
+    """Test that multiple choice buttons are left-justified and markup tags are preserved."""
+    app = ExamApp(questions=sample_questions, mode="timed_exam")
+    async with app.run_test(size=(80, 24)) as pilot:
+        for letter in ("a", "b", "c", "d"):
+            btn = app.query_one(f"#option-{letter}")
+            assert btn.styles.text_align == "left"
+            assert btn.styles.content_align == ("left", "top")
+            assert btn.styles.text_wrap == "wrap"
+
+        btn_a = app.query_one("#option-a")
+        btn_b = app.query_one("#option-b")
+        # Verify bracket markers [ ] and [A], [B] are intact and not stripped as markup
+        assert "[ ] [A] Master's degree" in btn_a.label.plain
+        assert "[ ] [B] Doctoral degree" in btn_b.label.plain
+
+        # Select option B
+        await pilot.press("b")
+        assert "[x] [B] Doctoral degree" in btn_b.label.plain
+        assert "[ ] [A] Master's degree" in btn_a.label.plain
+
+
+@pytest.mark.asyncio
+async def test_option_choices_wrap_long_text_without_truncation():
+    """Test that answer choices longer than terminal width wrap cleanly across lines without truncation."""
+    long_opt_text = (
+        "A comprehensive statutory requirement requiring candidate verification, "
+        "supervised clinical hours under Board approved supervisor, and complete documentation "
+        "retained for the prescribed legal period without truncation or clipping."
+    )
+    long_questions = [
+        {
+            "id": 1,
+            "domain": "licensure",
+            "subtopic": "Qualifications",
+            "source_citation": "O.C.G.A. § 43-39-8",
+            "question_text": "What is the detailed statutory requirement?",
+            "option_a": long_opt_text,
+            "option_b": "Short choice B",
+            "option_c": "Short choice C",
+            "option_d": "Short choice D",
+            "correct_option": "A",
+            "explanation": "Detailed explanation.",
+        }
+    ]
+
+    # Test standard terminal width (80 columns)
+    app = ExamApp(questions=long_questions, mode="study_drill")
+    async with app.run_test(size=(80, 24)) as pilot:
+        btn_a = app.query_one("#option-a")
+        # Multi-line height due to wrapping
+        assert btn_a.size.height >= 2
+        rendered_text = " ".join(btn_a.render_line(y).text.strip() for y in range(btn_a.size.height))
+        # Ensure start and end of string are intact
+        assert "[ ] [A] A comprehensive" in rendered_text
+        assert "without truncation or clipping." in rendered_text
+
+        # Select A and verify it updates properly while wrapped
+        await pilot.press("a")
+        rendered_selected = " ".join(btn_a.render_line(y).text.strip() for y in range(btn_a.size.height))
+        assert "[x] [A] A comprehensive" in rendered_selected
+
+    # Test narrower terminal width (50 columns) - should wrap into even more lines
+    app_narrow = ExamApp(questions=long_questions, mode="study_drill")
+    async with app_narrow.run_test(size=(50, 24)):
+        btn_a_narrow = app_narrow.query_one("#option-a")
+        assert btn_a_narrow.size.height >= 4
+        rendered_narrow = " ".join(btn_a_narrow.render_line(y).text.strip() for y in range(btn_a_narrow.size.height))
+        assert "[ ] [A] A comprehensive" in rendered_narrow
+        assert "without truncation or clipping." in rendered_narrow
