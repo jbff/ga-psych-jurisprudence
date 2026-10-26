@@ -29,6 +29,8 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "O.C.G.A. § 19-7-5" in content
     assert "O.C.G.A. § 43-39-16" in content
     assert "40 hours" in content
+    assert "Question Pool" in content
+    assert "10/25/2026" in content
 
     html_content = html_path.read_text(encoding="utf-8")
     assert "Georgia Psychology Jurisprudence Examination" in html_content
@@ -36,6 +38,8 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "O.C.G.A. § 19-7-5" in html_content
     assert "O.C.G.A. § 43-39-16" in html_content
     assert "40 hours" in html_content
+    assert "Question Pool" in html_content
+    assert "10/25/2026" in html_content
 
     # Test PDF compilation
     compile_html_to_pdf(html_path, pdf_path)
@@ -108,6 +112,8 @@ def test_generate_compendium(tmp_path: Path):
     q_text = q_md.read_text(encoding="utf-8")
     assert "435-Question Self-Study Compendium" in q_text
     assert "Part I: Question Bank by Domain" in q_text
+    assert "Question Pool" in q_text
+    assert "10/25/2026" in q_text
     assert "Q1." in q_text
     assert "Q435." in q_text
     # Questions section must NOT reveal the correct option
@@ -115,6 +121,8 @@ def test_generate_compendium(tmp_path: Path):
 
     k_text = k_md.read_text(encoding="utf-8")
     assert "Part II: Annotated Answer Key" in k_text
+    assert "Question Pool" in k_text
+    assert "10/25/2026" in k_text
     assert "Q1" in k_text
     assert "Q435" in k_text
 
@@ -284,6 +292,7 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "PSI Exam Simulation" in content
     assert "Domain Study Drill" in content
     assert "Missed Questions" in content
+    assert "Question Pool v1.0 (10/25/2026)" in content
     assert "const QUESTION_BANK =" in content
     # Check that all 435 questions are serialized
     assert '"id": 1' in content

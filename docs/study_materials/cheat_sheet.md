@@ -1,5 +1,6 @@
 # Georgia Psychology Jurisprudence Examination (GAMB)
 ## High-Yield Statutory Quick-Reference Cheat Sheet
+> **Question Pool:** Version 1.0 (Date: 10/25/2026)
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:

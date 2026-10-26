@@ -12,6 +12,13 @@ from pathlib import Path
 from typing import Any
 
 from gamb_exam.generator import DOMAIN_DISPLAY_NAMES, DOMAIN_QUOTAS, LEGAL_DISCLAIMER
+from gamb_exam.seed import (
+    QUESTION_POOL_DATE,
+    QUESTION_POOL_VERSION,
+)
+
+POOL_VERSION: str = QUESTION_POOL_VERSION
+POOL_DATE: str = QUESTION_POOL_DATE
 
 OFFICIAL_DOMAIN_ORDER: list[str] = [
     "prof-relationships",
@@ -31,23 +38,32 @@ DOMAIN_DESCRIPTIONS: dict[str, str] = {
     "recordkeeping": "Maintenance, retention, and disposition of psychological records (7-year retention rule for adults; 7 years post-majority for minors), fee arrangements, billing practices, and financial disclosures (Rule 510-4, APA 6.01, 6.03).",
 }
 
-PRINT_CSS = """
-@page {
+PRINT_PAGE_RULE = f"""
+@page {{
     size: letter;
     margin: 0.75in 0.75in 0.85in 0.75in;
-    @top-right {
+    @top-left {{
         content: "GAMB Study Guide";
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         font-size: 8pt;
         color: #718096;
-    }
-    @bottom-center {
+    }}
+    @top-right {{
+        content: "Question Pool v{POOL_VERSION} ({POOL_DATE})";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #718096;
+    }}
+    @bottom-center {{
         content: "Page " counter(page) " of " counter(pages);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         font-size: 8pt;
         color: #718096;
-    }
-}
+    }}
+}}
+"""
+
+PRINT_CSS = PRINT_PAGE_RULE + """
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -196,6 +212,7 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 
     md_content = f"""# Georgia Psychology Jurisprudence Examination (GAMB)
 ## High-Yield Statutory Quick-Reference Cheat Sheet
+> **Question Pool:** Version {POOL_VERSION} (Date: {POOL_DATE})
 
 {LEGAL_DISCLAIMER}
 
@@ -276,6 +293,10 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <body>
 <h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>
 <div class="badge">STATUTORY QUICK-REFERENCE CRAM SHEET</div>
+<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>
+<div class="meta-info" style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 8pt;">
+<strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE}
+</div>
 <div class="disclaimer">
 <strong>LEGAL & REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
 </div>
@@ -403,6 +424,7 @@ def generate_compendium(
         "# Georgia Psychology Jurisprudence Examination (GAMB)",
         f"## {total_qs}-Question Self-Study Compendium",
         "## Part I: Question Bank by Domain",
+        f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
         "",
         LEGAL_DISCLAIMER,
         "",
@@ -433,6 +455,7 @@ def generate_compendium(
         "# Georgia Psychology Jurisprudence Examination (GAMB)",
         f"## {total_qs}-Question Self-Study Compendium",
         "## Part II: Annotated Answer Key",
+        f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
         "",
         LEGAL_DISCLAIMER,
         "",
@@ -464,6 +487,8 @@ def generate_compendium(
         "<body>",
         "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
         f'<div class="badge">{total_qs}-QUESTION SELF-STUDY COMPENDIUM</div>',
+        f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} &bull; {POOL_DATE}</div>',
+        f'<div style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 6pt;"><strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE} &bull; <strong>Total Questions:</strong> {total_qs}</div>',
         "<h2>Part I: Question Bank by Domain</h2>",
         '<div class="disclaimer">',
         "<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This compendium is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. and Board Rules Chapter 510.",
@@ -495,6 +520,7 @@ def generate_compendium(
         '<div style="text-align: center; padding-top: 220pt;">',
         '<h1 style="border-bottom: none; font-size: 24pt; color: #1a365d;">Part II: Annotated Answer Key</h1>',
         f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">QUESTIONS 1 &ndash; {total_qs}</div>',
+        f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>',
         '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Explanations</p>',
         "</div>",
         '<div class="page-break"></div>',
@@ -654,6 +680,7 @@ def generate_practice_forms(
             "# Georgia Psychology Jurisprudence Examination (GAMB)",
             f"## Practice Examination Booklet — Form {form_letter}",
             f"### 50-Question Stratified Jurisprudence Simulation (Seed {seed})",
+            f"> **Question Pool Version:** {POOL_VERSION} (Release Date: {POOL_DATE})",
             "",
             LEGAL_DISCLAIMER,
             "",
@@ -808,9 +835,11 @@ def generate_practice_forms(
             "</head>",
             "<body>",
             "<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>",
-            f'<div class="badge" style="font-size: 10pt; padding: 3pt 8pt; margin-bottom: 10pt;">PRACTICE EXAMINATION BOOKLET &bull; FORM {form_letter}</div>',
+            f'<div class="badge" style="font-size: 10pt; padding: 3pt 8pt; margin-bottom: 6pt;">PRACTICE EXAMINATION BOOKLET &bull; FORM {form_letter}</div>',
+            f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; font-size: 10pt; padding: 3pt 8pt; margin-bottom: 10pt; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>',
             '<div style="background-color: #f7fafc; border: 1pt solid #cbd5e0; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 14pt;">',
             '<h3 style="margin-top: 0; color: #1a365d;">Examination Instructions &amp; Candidate Guidelines</h3>',
+            f'<p style="margin: 4pt 0;"><strong>Question Pool:</strong> Version {POOL_VERSION} (Release Date: {POOL_DATE})</p>',
             '<p style="margin: 4pt 0;"><strong>Time Limit:</strong> 60 minutes (strict simulation conditions)</p>',
             '<p style="margin: 4pt 0;"><strong>Total Items:</strong> 50 multiple-choice questions (A, B, C, D)</p>',
             '<p style="margin: 4pt 0;"><strong>Passing Standard:</strong> 38 out of 50 correct (76.0%)</p>',
@@ -847,7 +876,7 @@ def generate_practice_forms(
         html_parts.extend([
             '<div class="page-break"></div>',
             f'<h2>Section 2: Candidate Bubble Sheet &amp; Scoring Grid &mdash; Form {form_letter}</h2>',
-            '<p style="color: #4a5568; font-size: 9pt;">Record your responses by marking the circle corresponding to your selected option. Upon completing all 50 items under timed conditions, proceed to Section 3.</p>',
+            f'<p style="color: #4a5568; font-size: 9pt;">Record your responses by marking the circle corresponding to your selected option. Form {form_letter} &bull; Question Pool v{POOL_VERSION} ({POOL_DATE}). Upon completing all 50 items under timed conditions, proceed to Section 3.</p>',
             '<table class="bubble-grid">',
             '<thead>',
             '<tr>',
@@ -893,6 +922,7 @@ def generate_practice_forms(
             '<div style="text-align: center; padding-top: 220pt;">',
             '<h1 style="border-bottom: none; font-size: 24pt; color: #1a365d;">Section 3: Answer Key &amp; Explanations</h1>',
             f'<div class="badge" style="font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt;">FORM {form_letter} &bull; QUESTIONS 1 &ndash; 50</div>',
+            f'<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; font-size: 10pt; margin-top: 8pt; padding: 3pt 8pt; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>',
             '<p style="font-size: 11pt; color: #4a5568; margin-top: 14pt;">Official Legal Authorities, Source Citations, and Domain Diagnostic Key</p>',
             '</div>',
             '<div class="page-break"></div>',
@@ -1749,7 +1779,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="header-inner">
     <div class="brand">
       <h1>Georgia Psychology Jurisprudence Examination</h1>
-      <p>Candidate Study Quizzer &amp; PSI Simulation System</p>
+      <p>Candidate Study Quizzer &amp; PSI Simulation System &bull; <span class="badge" style="background: rgba(43, 108, 176, 0.15); color: var(--primary); font-size: 0.75rem; padding: 1px 6px; border-radius: 9999px;">Question Pool v1.0 (10/25/2026)</span></p>
     </div>
     <nav class="nav-tabs">
       <button class="nav-tab active" id="tab-psi" onclick="switchMode('psi')">
@@ -1776,7 +1806,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <footer>
   <div class="footer-inner">
     <p><strong>LEGAL DISCLAIMER:</strong> __LEGAL_DISCLAIMER__</p>
-    <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
+    <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; <strong>Question Pool:</strong> Version 1.0 (10/25/2026) &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
   </div>
 </footer>
 

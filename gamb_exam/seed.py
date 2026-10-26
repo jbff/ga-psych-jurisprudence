@@ -34,6 +34,22 @@ OFFICIAL_DOMAINS: set[str] = {
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TSV_PATH = PROJECT_ROOT / "anki" / "gamb_deck.tsv"
 QUESTION_POOL_JSON = Path(__file__).parent / "question_pool.json"
+QUESTION_POOL_METADATA_JSON = Path(__file__).parent / "question_pool_metadata.json"
+QUESTION_POOL_VERSION = "1.0"
+QUESTION_POOL_DATE = "10/25/2026"
+
+
+def get_pool_metadata() -> dict[str, Any]:
+    """Return question pool metadata including version and release date."""
+    if QUESTION_POOL_METADATA_JSON.exists():
+        with open(QUESTION_POOL_METADATA_JSON, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {
+        "version": QUESTION_POOL_VERSION,
+        "date": QUESTION_POOL_DATE,
+        "total_questions": 435,
+        "description": "Georgia Psychology Jurisprudence Examination curated question bank",
+    }
 
 CITATION_REGEX = re.compile(
     r"\(\s*((?:OCGA|Rule|O\.C\.G\.A\.|Board|APA|Code|Ga\.)[^)]*(?:\([^)]*\)[^)]*)*)\)\.?\s*$",

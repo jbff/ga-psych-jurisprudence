@@ -1,6 +1,7 @@
 # Georgia Psychology Jurisprudence Examination (GAMB)
 ## 435-Question Self-Study Compendium
 ## Part II: Annotated Answer Key
+> **Question Pool Version:** 1.0 (Release Date: 10/25/2026)
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:

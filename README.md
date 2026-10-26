@@ -12,7 +12,7 @@ A comprehensive, rigorously audited jurisprudence examination study kit, printab
 
 ## 📦 Study Products & Downloads (No Installation Required)
 
-Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately.
+Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 1.0 (Release Date: 10/25/2026)**.
 
 ### Summary of Available Study Formats
 
@@ -216,7 +216,8 @@ The study corpus in `study_corpus/` represents the verified primary legal source
 
 ## Curated Question Bank & Quality Guarantees
 
-The full 435-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit:
+The full 435-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit and is officially versioned:
+- **Versioned Pool Standard**: Labeled **Version 1.0 (Release Date: 10/25/2026)** with schema metadata in `gamb_exam/question_pool_metadata.json`. All generated PDF documents, markdown booklets, and the web application display this version in running headers and cover pages.
 - **100% Context-Responsive Options**: Every distractor directly answers the question asked using plausible Georgia statutory numbers, procedures, or standards (no nonsense cross-domain fallback options).
 - **Zero Test-Wiseness Flaws**: No bare "Yes" or "No" answers; all options are expanded into parallel explanatory clauses with uniform syntactic tone and balanced lengths.
 - **Unambiguous Legal Accuracy**: Exactly one legally correct answer per question under O.C.G.A. Titles 43, 31, 37, 19, 30, 16, 24, 50, Georgia Board Rules (Chapter 510), and the APA Ethics Code.

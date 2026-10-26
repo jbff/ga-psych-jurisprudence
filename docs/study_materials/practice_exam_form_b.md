@@ -1,6 +1,7 @@
 # Georgia Psychology Jurisprudence Examination (GAMB)
 ## Practice Examination Booklet — Form B
 ### 50-Question Stratified Jurisprudence Simulation (Seed 202)
+> **Question Pool Version:** 1.0 (Release Date: 10/25/2026)
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:
