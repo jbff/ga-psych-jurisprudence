@@ -8,6 +8,7 @@ score calculation against official 76% (38/50) cutoffs, and SQLite persistence.
 from __future__ import annotations
 
 import logging
+import time
 from pathlib import Path
 from typing import Any, ClassVar
 
@@ -304,7 +305,9 @@ class ExamApp(App[None]):
         self.current_index: int = 0
         self.answers: dict[int, str] = {}
         self.flags: set[int] = set()
-        self.question_times: dict[int, int] = {}
+        self.question_times: dict[int, float] = {}
+        self.session_start_time: float = time.monotonic()
+        self.question_entered_at: float = time.monotonic()
 
         self.session_id: int | None = None
         self.is_completed: bool = False
@@ -387,18 +390,33 @@ class ExamApp(App[None]):
         table = self.query_one("#results-table", DataTable)
         table.add_columns("Domain", "Correct", "Total", "Percentage", "Status")
 
-        if self.mode == "timed_exam":
-            self._timer = self.set_interval(1.0, self.timer_tick)
+        self.session_start_time = time.monotonic()
+        self.question_entered_at = time.monotonic()
+        self._timer = self.set_interval(1.0, self.timer_tick)
 
         self.update_header()
         self.update_layout_visibility()
         self.update_question_view()
 
+    def _record_question_time(self) -> None:
+        """Accurately accumulate wall-clock time spent on the active question."""
+        if self.is_completed:
+            return
+        now = time.monotonic()
+        if self.question_entered_at is not None:
+            elapsed = now - self.question_entered_at
+            if elapsed > 0:
+                self.question_times[self.current_index] = (
+                    self.question_times.get(self.current_index, 0.0) + elapsed
+                )
+        self.question_entered_at = now
+
     def timer_tick(self) -> None:
         if self.is_completed:
             return
-        self.question_times[self.current_index] = self.question_times.get(self.current_index, 0) + 1
-        if self.time_remaining > 0:
+        if not self.jump_grid_open:
+            self._record_question_time()
+        if self.mode == "timed_exam" and self.time_remaining > 0:
             self.time_remaining -= 1
             self.update_header()
             if self.time_remaining <= 0:
@@ -646,6 +664,7 @@ class ExamApp(App[None]):
             self.update_question_view()
             return
 
+        self._record_question_time()
         self.score_data = self.calculate_score()
         self.is_completed = True
         self.confirming_submit = False
@@ -662,11 +681,18 @@ class ExamApp(App[None]):
 
     def _persist_to_db(self) -> None:
         try:
-            time_spent = (
-                self.time_limit_seconds - self.time_remaining
-                if self.mode == "timed_exam"
-                else sum(self.question_times.values())
-            )
+            self._record_question_time()
+            elapsed_session = round(time.monotonic() - self.session_start_time)
+            total_q_time = round(sum(self.question_times.values()))
+            if self.mode == "timed_exam":
+                time_spent = max(
+                    self.time_limit_seconds - self.time_remaining,
+                    elapsed_session,
+                    total_q_time,
+                )
+            else:
+                time_spent = max(elapsed_session, total_q_time)
+
             if self.session_id is None:
                 self.session_id = create_session(
                     mode=self.mode,
@@ -678,7 +704,8 @@ class ExamApp(App[None]):
                 selected = self.answers.get(idx)
                 is_correct = selected == q.get("correct_option")
                 flagged = idx in self.flags
-                q_time = self.question_times.get(idx, 0)
+                raw_time = self.question_times.get(idx, 0.0)
+                q_time = max(1, round(raw_time)) if raw_time > 0 else 0
                 q_id = q.get("id")
                 if q_id is not None:
                     save_session_answer(
@@ -765,6 +792,8 @@ class ExamApp(App[None]):
         if self.jump_grid_open or (self.is_completed and not self.review_mode):
             return
         self.confirming_submit = False
+        if not self.review_mode and not self.is_completed:
+            self._record_question_time()
         if self.review_mode:
             if self.review_indices:
                 try:
@@ -782,6 +811,8 @@ class ExamApp(App[None]):
         if self.jump_grid_open or (self.is_completed and not self.review_mode):
             return
         self.confirming_submit = False
+        if not self.review_mode and not self.is_completed:
+            self._record_question_time()
         if self.review_mode:
             if self.review_indices:
                 try:
@@ -809,6 +840,11 @@ class ExamApp(App[None]):
         if self.is_completed and not self.review_mode:
             return
         self.confirming_submit = False
+        if not self.review_mode and not self.is_completed:
+            if not self.jump_grid_open:
+                self._record_question_time()
+            else:
+                self.question_entered_at = time.monotonic()
         self.jump_grid_open = not self.jump_grid_open
         self.update_layout_visibility()
         if self.jump_grid_open:
@@ -818,7 +854,10 @@ class ExamApp(App[None]):
 
     def jump_to_question(self, index: int) -> None:
         if 0 <= index < len(self.questions):
+            if not self.review_mode and not self.is_completed and not self.jump_grid_open:
+                self._record_question_time()
             self.current_index = index
+            self.question_entered_at = time.monotonic()
             self.jump_grid_open = False
             self.confirming_submit = False
             self.update_layout_visibility()

@@ -187,6 +187,7 @@ async def test_submission_and_scoring(tmp_path: Path, sample_questions: list[dic
         assert session_row["percentage"] == 80.0
         assert session_row["passed"] == 1
         assert session_row["mode"] == "timed_exam"
+        assert session_row["time_spent_seconds"] >= 1
 
         answers = conn.execute(
             "SELECT * FROM session_answers WHERE session_id = ? ORDER BY id ASC", (app.session_id,)
@@ -195,6 +196,56 @@ async def test_submission_and_scoring(tmp_path: Path, sample_questions: list[dic
         # Verify 4 correct, 1 incorrect
         correct_count = sum(1 for a in answers if a["is_correct"] == 1)
         assert correct_count == 4
+        # Verify each answered question recorded positive time spent
+        for a in answers:
+            assert a["time_spent_seconds"] >= 1
+    finally:
+        conn.close()
+
+
+@pytest.mark.asyncio
+async def test_study_drill_persistence_and_time_spent(tmp_path: Path, sample_questions: list[dict]):
+    """Test that study_drill mode records accurate non-zero time_spent_seconds in database."""
+    db_file = tmp_path / "test_gamb_drill.db"
+    init_db(db_file)
+    for q in sample_questions:
+        insert_question(q, db_file)
+
+    app = ExamApp(questions=sample_questions, mode="study_drill", db_path=db_file)
+    async with app.run_test() as pilot:
+        # Answer Q0: 'b'
+        await pilot.press("b")
+        await pilot.press("n")
+
+        # Answer Q1: 'b'
+        await pilot.press("b")
+        await pilot.press("n")
+
+        # Answer Q2: 'c'
+        await pilot.press("c")
+
+        # Force submit with unanswered remaining
+        await pilot.press("s", "s")
+        assert app.is_completed is True
+
+    conn = get_connection(db_file)
+    try:
+        session_row = conn.execute("SELECT * FROM exam_sessions WHERE id = ?", (app.session_id,)).fetchone()
+        assert session_row is not None
+        assert session_row["mode"] == "study_drill"
+        assert session_row["time_spent_seconds"] >= 1
+
+        answers = conn.execute(
+            "SELECT * FROM session_answers WHERE session_id = ? ORDER BY id ASC", (app.session_id,)
+        ).fetchall()
+        assert len(answers) == 5
+        # Questions 0, 1, 2 were answered and should have time_spent_seconds >= 1
+        assert answers[0]["time_spent_seconds"] >= 1
+        assert answers[1]["time_spent_seconds"] >= 1
+        assert answers[2]["time_spent_seconds"] >= 1
+        # Questions 3, 4 were never visited, so should be 0
+        assert answers[3]["time_spent_seconds"] == 0
+        assert answers[4]["time_spent_seconds"] == 0
     finally:
         conn.close()
 
