@@ -46,6 +46,17 @@ LEGAL_DISCLAIMER: str = (
     "direct or consequential losses, or examination failures arising from the use of or reliance upon these materials."
 )
 
+LEGAL_DISCLAIMER_HTML: str = (
+    "The study materials, question pools, flashcards, and practice exams contained in this repository "
+    "are <strong>independently generated study aids</strong> and are <strong>NOT official examination questions</strong> "
+    "from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State "
+    "and Provincial Psychology Boards (ASPPB). No guarantee, warranty, or representation is made regarding "
+    "the accuracy, completeness, timeliness, or utility of these materials, or that studying them will "
+    "result in a passing score on the Georgia Jurisprudence Examination (GAMB). Use of these materials is "
+    "entirely at your own risk. The authors and contributors disclaim all liability for any claims, damages, "
+    "direct or consequential losses, or examination failures arising from the use of or reliance upon these materials."
+)
+
 
 def shuffle_question_options(
     question: dict[str, Any], rng: random.Random | None = None

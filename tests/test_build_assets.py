@@ -313,6 +313,13 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "Question Pool v1.0 (10/25/2026)" in content
     assert "John B. Fleming, PhD" in content
     assert "http://johnbflemingphd.com" in content
+    # Ensure legal disclaimer rendered as proper HTML without unrendered Markdown
+    assert "[!WARNING]" not in content
+    assert "**" not in content
+    assert "&gt; " not in content
+    assert "<strong>independently generated study aids</strong>" in content
+    assert "<strong>NOT official examination questions</strong>" in content
+    assert "LEGAL &amp; REGULATORY DISCLAIMER:" in content
     assert "const QUESTION_BANK =" in content
     # Check that all 435 questions are serialized
     assert '"id": 1' in content
