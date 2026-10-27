@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import random
 import sqlite3
 from pathlib import Path
 from typing import Any
@@ -353,3 +354,61 @@ def get_session_history(db_path: Path | str | None = None, limit: int = 20) -> l
         return [dict(row) for row in cursor.fetchall()]
     finally:
         conn.close()
+
+
+def get_study_questions(
+    domain: str | None = None,
+    limit: int | None = 50,
+    prioritize_unseen: bool = True,
+    rng: random.Random | None = None,
+    db_path: Path | str | None = None,
+) -> list[dict[str, Any]]:
+    """Retrieve study questions, optionally filtered by domain and prioritized by unseen/least-answered status.
+
+    When prioritize_unseen=True, questions answered fewer times across prior sessions
+    appear before frequently answered questions, using random tie-breaking.
+    If the number of completely unstudied questions is fewer than limit,
+    questions with lowest answer counts backfill the remaining slots.
+    """
+    conn = get_connection(db_path)
+    if rng is not None:
+        conn.create_function(
+            "RANDOM",
+            0,
+            lambda: rng.randint(-9223372036854775808, 9223372036854775807),
+        )
+
+    try:
+        cursor = conn.cursor()
+        params: list[Any] = []
+        where_clause = ""
+        if domain is not None:
+            where_clause = "WHERE q.domain = ?"
+            params.append(domain)
+
+        if prioritize_unseen:
+            query = f"""
+                SELECT q.*, COUNT(sa.id) AS times_answered
+                FROM questions q
+                LEFT JOIN session_answers sa ON q.id = sa.question_id
+                {where_clause}
+                GROUP BY q.id
+                ORDER BY times_answered ASC, RANDOM()
+            """
+        else:
+            query = f"""
+                SELECT q.*
+                FROM questions q
+                {where_clause}
+                ORDER BY RANDOM()
+            """
+
+        if limit is not None:
+            query += " LIMIT ?"
+            params.append(limit)
+
+        cursor.execute(query, params)
+        return [dict(row) for row in cursor.fetchall()]
+    finally:
+        conn.close()
+

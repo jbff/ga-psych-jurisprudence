@@ -254,3 +254,55 @@ def test_ensure_db_initialized(tmp_path: Path):
     # Second call: idempotent, already initialized
     seeded_again = ensure_db_initialized(test_db)
     assert seeded_again is False
+
+
+def test_get_study_questions_unseen_prioritization(tmp_db_path: Path):
+    """Verifies get_study_questions prioritizes questions with zero answers before answered ones."""
+    init_db(tmp_db_path)
+    # Insert 4 questions in prof-relationships
+    for i in range(1, 5):
+        insert_question(
+            sample_question_data(domain="prof-relationships", stem_suffix=str(i)),
+            db_path=tmp_db_path,
+        )
+
+    # Answer questions 1 and 2
+    sess_id = create_session(db_path=tmp_db_path)
+    save_session_answer(session_id=sess_id, question_id=1, selected_option="A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(session_id=sess_id, question_id=2, selected_option="B", is_correct=False, db_path=tmp_db_path)
+
+    # Retrieve 2 questions with prioritize_unseen=True
+    from gamb_exam.db import get_study_questions
+
+    study_qs = get_study_questions(domain="prof-relationships", limit=2, prioritize_unseen=True, db_path=tmp_db_path)
+    assert len(study_qs) == 2
+    # Questions 3 and 4 have 0 answers, so both must be selected
+    study_ids = {q["id"] for q in study_qs}
+    assert study_ids == {3, 4}
+
+
+def test_get_study_questions_backfill_and_no_unseen(tmp_db_path: Path):
+    """Verifies graceful backfill when count exceeds unseen and verify prioritize_unseen=False."""
+    init_db(tmp_db_path)
+    for i in range(1, 4):
+        insert_question(
+            sample_question_data(domain="licensure", stem_suffix=str(i)),
+            db_path=tmp_db_path,
+        )
+
+    # Question 1 answered twice, question 2 answered once, question 3 answered zero times
+    sess_id = create_session(db_path=tmp_db_path)
+    save_session_answer(session_id=sess_id, question_id=1, selected_option="A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(session_id=sess_id, question_id=1, selected_option="A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(session_id=sess_id, question_id=2, selected_option="A", is_correct=True, db_path=tmp_db_path)
+
+    from gamb_exam.db import get_study_questions
+
+    # Request all 3: order must be question 3 (0 answers), then question 2 (1 answer), then question 1 (2 answers)
+    study_qs = get_study_questions(domain="licensure", limit=3, prioritize_unseen=True, db_path=tmp_db_path)
+    assert [q["id"] for q in study_qs] == [3, 2, 1]
+
+    # Test prioritize_unseen=False returns all questions without errors
+    random_qs = get_study_questions(domain=None, limit=3, prioritize_unseen=False, db_path=tmp_db_path)
+    assert len(random_qs) == 3
+
