@@ -8,6 +8,13 @@
 
 A comprehensive, rigorously audited jurisprudence examination study kit, printable PDF library, zero-install offline web quizzer, and interactive terminal simulator for psychologists preparing for the **Georgia Jurisprudence Examination (GAMB)** administered via PSI Services.
 
+> [!IMPORTANT]
+> **Noncommercial License & Terms of Use**:
+> The study materials, question pool, and software provided in this repository are licensed under the **[PolyForm Noncommercial License 1.0.0](LICENSE.md)**.
+> - **Personal Noncommercial Study**: Licensure candidates and students may read, run, and study these materials for personal examination preparation.
+> - **Commercial Exploitation Prohibited**: Third parties may not sell, paywall, monetize, bundle, or use any part of these materials (PDFs, questions, software, or web tools) for commercial courses, paid prep services, or resale.
+> - **Commercial Rights Reserved**: All commercial exploitation rights are exclusively reserved by author [John B. Fleming, PhD](http://johnbflemingphd.com), who reserves the right to package, sell, or offer compiled study products, online simulators, or future versions under separate commercial terms.
+
 ---
 
 ## 📦 Study Products & Downloads (No Installation Required)
@@ -249,4 +256,15 @@ All 72 unit, pool, CLI, TUI, and asset build tests verify:
 ## Author & Copyright
 
 &copy; 2026 [John B. Fleming, PhD](http://johnbflemingphd.com). All rights reserved.
+
+---
+
+## License & Terms of Use
+
+This repository and its contents are licensed under the **[PolyForm Noncommercial License 1.0.0](LICENSE.md)**.
+
+- **Noncommercial Use Only**: Candidates, students, and educators may study and run these repository materials for personal, noncommercial examination preparation.
+- **Commercial Rights Reserved**: All commercial rights—including the right to sell compiled PDF packages, printed materials, question bank licenses, paid courses, or monetized online test simulators—are strictly and exclusively reserved by John B. Fleming, PhD.
+- **Right to Commercialize or Withhold Future Products**: The author reserves the right to package, sell, or offer future versions, compiled artifacts, or interactive platforms under separate commercial terms.
+
 

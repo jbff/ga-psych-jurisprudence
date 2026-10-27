@@ -7,6 +7,7 @@ name = "gamb-exam"
 version = "1.0.0"
 description = "Georgia Psychology Jurisprudence Examination Simulator and Study Kit"
 readme = "README.md"
+license = { text = "PolyForm Noncommercial License 1.0.0" }
 requires-python = ">=3.10"
 dependencies = [
     "rich>=13.0",
@@ -16,6 +17,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
+    "pytest-asyncio>=0.21.0",
 ]
 
 [project.scripts]
