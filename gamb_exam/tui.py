@@ -48,6 +48,13 @@ class ContentStatic(Static):
         return self.content
 
 
+class OptionButton(Button):
+    """Multiple-choice option button that dynamically updates layout geometry on label changes."""
+
+    def watch_label(self) -> None:
+        self.refresh(layout=True)
+
+
 class ExamApp(App[None]):
     """Textual Terminal User Interface for the Georgia Jurisprudence Practice Exam."""
 
@@ -139,7 +146,7 @@ class ExamApp(App[None]):
         height: auto;
     }
 
-    #options-container Button, .option-btn {
+    #options-container OptionButton, #options-container Button, .option-btn {
         width: 100%;
         height: auto;
         margin-bottom: 1;
@@ -350,10 +357,10 @@ class ExamApp(App[None]):
                 yield ContentStatic("", id="question-text")
 
                 with Vertical(id="options-container"):
-                    yield Button("", id="option-a", classes="option-btn")
-                    yield Button("", id="option-b", classes="option-btn")
-                    yield Button("", id="option-c", classes="option-btn")
-                    yield Button("", id="option-d", classes="option-btn")
+                    yield OptionButton("", id="option-a", classes="option-btn")
+                    yield OptionButton("", id="option-b", classes="option-btn")
+                    yield OptionButton("", id="option-c", classes="option-btn")
+                    yield OptionButton("", id="option-d", classes="option-btn")
 
                 with Vertical(id="explanation-panel"):
                     yield ContentStatic("", id="explanation-badge")
@@ -553,6 +560,7 @@ class ExamApp(App[None]):
             is_selected = selected_opt == letter
             marker = "[x]" if is_selected else "[ ]"
             btn.label = Content.from_text(f"{marker} [{letter}] {opt_text}", markup=False)
+            btn.refresh(layout=True)
 
             if show_feedback:
                 if letter == correct_opt:
@@ -566,6 +574,12 @@ class ExamApp(App[None]):
                     btn.variant = "primary"
                 else:
                     btn.variant = "default"
+
+        try:
+            self.query_one("#options-container").refresh(layout=True)
+            self.query_one("#exam-container", ScrollableContainer).scroll_to(y=0, animate=False)
+        except NoMatches:
+            pass
 
         exp_panel = self.query_one("#explanation-panel")
         if show_feedback:

@@ -522,3 +522,53 @@ async def test_option_choices_wrap_long_text_without_truncation():
         rendered_narrow = " ".join(btn_a_narrow.render_line(y).text.strip() for y in range(btn_a_narrow.size.height))
         assert "[ ] [A] A comprehensive" in rendered_narrow
         assert "without truncation or clipping." in rendered_narrow
+
+
+@pytest.mark.asyncio
+async def test_option_choices_dynamic_height_on_question_navigation():
+    """Test that navigating from short-option questions to long-option questions dynamically resizes options."""
+    questions = [
+        {
+            "id": 1,
+            "domain": "licensure",
+            "question_text": "Short question 1?",
+            "option_a": "Short A",
+            "option_b": "Short B",
+            "option_c": "Short C",
+            "option_d": "Short D",
+            "correct_option": "A",
+        },
+        {
+            "id": 2,
+            "domain": "licensure",
+            "question_text": "Question 2 with multiple rows required for options?",
+            "option_a": "A multi-line option that spans across multiple rows in the terminal display to ensure that no words are clipped or truncated.",
+            "option_b": "Another multi-line option spanning several rows to verify layout updates cleanly upon navigation.",
+            "option_c": "Short C",
+            "option_d": "Short D",
+            "correct_option": "B",
+        },
+    ]
+    app = ExamApp(questions=questions, mode="timed_exam")
+    async with app.run_test(size=(80, 24)) as pilot:
+        btn_a = app.query_one("#option-a")
+        btn_b = app.query_one("#option-b")
+        assert btn_a.size.height == 1
+        assert btn_b.size.height == 1
+
+        # Advance to question 2: long options dynamically resize
+        await pilot.press("n")
+        assert app.current_index == 1
+        assert btn_a.size.height >= 2
+        assert btn_b.size.height >= 2
+
+        rendered_a = " ".join(btn_a.render_line(y).text.strip() for y in range(btn_a.size.height))
+        assert "clipped or truncated." in rendered_a
+        rendered_b = " ".join(btn_b.render_line(y).text.strip() for y in range(btn_b.size.height))
+        assert "upon navigation." in rendered_b
+
+        # Navigate back to question 1: options return to height 1
+        await pilot.press("p")
+        assert app.current_index == 0
+        assert btn_a.size.height == 1
+        assert btn_b.size.height == 1
