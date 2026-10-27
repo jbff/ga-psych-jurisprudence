@@ -21,7 +21,7 @@ A comprehensive, rigorously audited jurisprudence examination study kit, printab
 
 Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 1.0 (Release Date: 10/25/2026)**.
 
-### Summary of Available Study Formats
+### 📚 Downloadable Study Packets & Flashcards
 
 | Product | Format | Description | Direct Access / Link |
 | :--- | :---: | :--- | :--- |
@@ -32,10 +32,15 @@ Everything required to master the Georgia Jurisprudence Examination is packaged 
 | **Practice Exam Form B** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form B PDF](pdfs/GAMB_Practice_Exam_Form_B.pdf) |
 | **Practice Exam Form C** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form C PDF](pdfs/GAMB_Practice_Exam_Form_C.pdf) |
 | **Anki Flashcard Deck** | `TSV` | 435 atomic flashcards for Anki, AnkiDroid, and AnkiMobile. | [anki/gamb_deck.tsv](anki/gamb_deck.tsv) |
-| **Interactive Web Quizzer** | `index.html` | Timed 50-q PSI exam simulator, domain study drill, and missed question review. Runs 100% offline on any phone or laptop browser. | [web/index.html](web/index.html) |
-| **Terminal Simulator (CLI/TUI)** | Python | Full PSI exam simulation for technical users and developers. | `uv run gamb-exam test` |
 
 *(Note: Raw Markdown versions of all study guides and exam forms are also available in [`docs/study_materials/`](docs/study_materials/).)*
+
+### 💻 Interactive Test Engines & Simulators
+
+| Product | Format | Description | Direct Access / Run Command |
+| :--- | :---: | :--- | :--- |
+| **Interactive Web Quizzer** | `index.html` | Timed 50-q PSI exam simulator, domain study drill, and missed question review. Runs 100% offline in any browser. | [web/index.html](web/index.html) |
+| **Terminal Simulator (CLI/TUI)** | `Python` | Full-screen terminal exam simulation with live countdown timer, flag tracking, jump grid, and score diagnostics. | `uv run gamb-exam test` |
 
 ---
 
