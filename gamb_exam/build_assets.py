@@ -2064,6 +2064,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
       </button>
     </nav>
     <div class="header-actions">
+      <button class="btn btn-secondary btn-sm" onclick="openStatsModal()" title="Study &amp; Exam Statistics">📊 Stats</button>
       <button class="btn-icon" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌙 Dark</button>
       <button class="btn-icon" onclick="openShortcutsModal()" title="Keyboard Shortcuts">⌨️ Shortcuts</button>
     </div>
@@ -2122,6 +2123,16 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
   </div>
 </div>
 
+<div class="modal-overlay" id="stats-modal" onclick="handleModalBackdropClick(event, 'stats-modal')">
+  <div class="modal-box" style="max-width: 680px;">
+    <div class="modal-header">
+      <h3 class="modal-title">📊 Study &amp; Exam Statistics</h3>
+      <button class="modal-close" onclick="closeStatsModal()">&times;</button>
+    </div>
+    <div id="stats-modal-content"></div>
+  </div>
+</div>
+
 <script>
 // QUESTION BANK AND METADATA
 const QUESTION_BANK = __QUESTION_BANK_JSON__;
@@ -2150,7 +2161,8 @@ const state = {
     questions: [],
     currentIndex: 0,
     answered: {},
-    shuffled: false
+    shuffled: false,
+    prioritizeUnseen: true
   },
   missed: {
     questions: [],
@@ -2229,6 +2241,75 @@ function updateMissedBadge() {
     badge.textContent = count;
     badge.style.display = count > 0 ? 'inline-flex' : 'none';
   }
+}
+
+// ==========================================
+// LOCAL STORAGE STATS ENGINE
+// ==========================================
+function getStats() {
+  try {
+    const raw = storage.get('gamb_stats');
+    if (!raw) return { questions: {}, sessions: [] };
+    const parsed = JSON.parse(raw);
+    return {
+      questions: (parsed && parsed.questions && typeof parsed.questions === 'object' && !Array.isArray(parsed.questions)) ? parsed.questions : {},
+      sessions: (parsed && Array.isArray(parsed.sessions)) ? parsed.sessions : []
+    };
+  } catch (e) {
+    return { questions: {}, sessions: [] };
+  }
+}
+
+function saveStats(stats) {
+  try {
+    storage.set('gamb_stats', JSON.stringify(stats));
+  } catch (e) {
+    console.error("Failed to save stats", e);
+  }
+}
+
+function recordQuestionAttempt(questionId, isCorrect) {
+  const stats = getStats();
+  const prev = stats.questions[questionId] || {};
+  stats.questions[questionId] = {
+    timesAnswered: (prev.timesAnswered || 0) + 1,
+    timesCorrect: (prev.timesCorrect || 0) + (isCorrect ? 1 : 0),
+    lastAnswered: Date.now()
+  };
+  saveStats(stats);
+}
+
+function recordExamSession(score, total, passed) {
+  const stats = getStats();
+  stats.sessions.push({
+    date: new Date().toISOString(),
+    score: score,
+    total: total,
+    passed: passed,
+    percentage: Math.round((score / total) * 100)
+  });
+  saveStats(stats);
+}
+
+function resetStudyProgress() {
+  const stats = getStats();
+  stats.questions = {};
+  saveStats(stats);
+  if (state.mode === 'drill') {
+    initDrillQuestions();
+  }
+  render();
+}
+
+function clearAllSimulatorData() {
+  saveStats({ questions: {}, sessions: [] });
+  clearAllMissedQuestions();
+  initMissedQuestions();
+  if (state.mode === 'drill') {
+    initDrillQuestions();
+  }
+  updateMissedBadge();
+  render();
 }
 
 // THEME HANDLING
@@ -2437,6 +2518,9 @@ function submitPsiExam() {
 
   state.psi.questions.forEach((q, idx) => {
     const userAns = state.psi.answers[idx];
+    if (userAns !== undefined) {
+      recordQuestionAttempt(q.id, userAns === q.correct_option);
+    }
     if (userAns === q.correct_option) {
       score++;
       if (domainScores[q.domain]) domainScores[q.domain].correct++;
@@ -2445,6 +2529,9 @@ function submitPsiExam() {
     }
   });
 
+  const passed = score >= PASS_SCORE;
+  recordExamSession(score, 50, passed);
+
   // Record missed questions
   missedIds.forEach(id => addMissedQuestion(id));
 
@@ -2452,7 +2539,7 @@ function submitPsiExam() {
     score: score,
     total: 50,
     percentage: Math.round((score / 50) * 100),
-    passed: score >= PASS_SCORE,
+    passed: passed,
     domainScores: domainScores,
     missedIds: missedIds
   };
@@ -2535,7 +2622,15 @@ function initDrillQuestions() {
     list = QUESTION_BANK.filter(q => q.domain === state.drill.domain);
   }
 
-  if (state.drill.shuffled) {
+  const stats = getStats();
+  if (state.drill.prioritizeUnseen) {
+    list.sort((a, b) => {
+      const countA = (stats.questions[a.id] && stats.questions[a.id].timesAnswered) || 0;
+      const countB = (stats.questions[b.id] && stats.questions[b.id].timesAnswered) || 0;
+      if (countA !== countB) return countA - countB;
+      return Math.random() - 0.5;
+    });
+  } else if (state.drill.shuffled) {
     for (let i = list.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [list[i], list[j]] = [list[j], list[i]];
@@ -2557,12 +2652,20 @@ function toggleDrillShuffle() {
   render();
 }
 
+function toggleDrillPrioritizeUnseen() {
+  state.drill.prioritizeUnseen = !state.drill.prioritizeUnseen;
+  initDrillQuestions();
+  render();
+}
+
 function selectDrillOption(letter) {
   const currentQ = state.drill.questions[state.drill.currentIndex];
   if (!currentQ || state.drill.answered[currentQ.id]) return;
 
   state.drill.answered[currentQ.id] = letter;
-  if (letter !== currentQ.correct_option) {
+  const isCorrect = letter === currentQ.correct_option;
+  recordQuestionAttempt(currentQ.id, isCorrect);
+  if (!isCorrect) {
     addMissedQuestion(currentQ.id);
   }
   render();
@@ -2607,6 +2710,7 @@ function selectMissedOption(letter) {
   if (!currentQ || state.missed.answered[currentQ.id]) return;
 
   state.missed.answered[currentQ.id] = letter;
+  recordQuestionAttempt(currentQ.id, letter === currentQ.correct_option);
   render();
 }
 
@@ -2649,6 +2753,176 @@ function closeShortcutsModal() {
   document.getElementById('shortcuts-modal').classList.remove('open');
 }
 
+function openStatsModal() {
+  renderStatsModalContent();
+  document.getElementById('stats-modal').classList.add('open');
+}
+
+function closeStatsModal() {
+  document.getElementById('stats-modal').classList.remove('open');
+}
+
+function handleResetStudyProgress() {
+  if (confirm("Reset study progress? All questions will be treated as unseen.")) {
+    resetStudyProgress();
+    renderStatsModalContent();
+  }
+}
+
+function handleClearAllData() {
+  if (confirm("Are you sure? This will delete all study history, exam history, and missed questions.")) {
+    clearAllSimulatorData();
+    renderStatsModalContent();
+  }
+}
+
+function renderStatsModalContent() {
+  const contentEl = document.getElementById('stats-modal-content');
+  if (!contentEl) return;
+
+  const stats = getStats();
+  const totalQuestions = QUESTION_BANK.length;
+  let studiedCount = 0;
+
+  for (const q of QUESTION_BANK) {
+    const qStat = stats.questions[q.id];
+    if (qStat && qStat.timesAnswered > 0) {
+      studiedCount++;
+    }
+  }
+
+  const coveragePct = totalQuestions > 0 ? ((studiedCount / totalQuestions) * 100).toFixed(1) : '0.0';
+  const unstudiedCount = totalQuestions - studiedCount;
+
+  // Domain breakdown
+  const domainRows = Object.entries(DOMAIN_NAMES).map(([domKey, domName]) => {
+    const domainQuestions = QUESTION_BANK.filter(q => q.domain === domKey);
+    const domainTotal = domainQuestions.length;
+    let domainStudied = 0;
+    let domainTimesAnswered = 0;
+    let domainTimesCorrect = 0;
+
+    for (const q of domainQuestions) {
+      const qStat = stats.questions[q.id];
+      if (qStat && qStat.timesAnswered > 0) {
+        domainStudied++;
+        domainTimesAnswered += qStat.timesAnswered;
+        domainTimesCorrect += (qStat.timesCorrect || 0);
+      }
+    }
+
+    const covPct = domainTotal > 0 ? ((domainStudied / domainTotal) * 100).toFixed(1) : '0.0';
+    const accPct = domainTimesAnswered > 0 ? ((domainTimesCorrect / domainTimesAnswered) * 100).toFixed(1) + '%' : '—';
+    const accDetail = domainTimesAnswered > 0 ? ` (${domainTimesCorrect}/${domainTimesAnswered})` : '';
+
+    return `
+      <tr>
+        <td style="font-weight: 500;">${escapeHtml(domName)}</td>
+        <td style="min-width: 140px;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 3px;">
+            <span>${domainStudied} / ${domainTotal}</span>
+            <span style="font-weight: 600;">${covPct}%</span>
+          </div>
+          <div style="background: var(--border-color); border-radius: 9999px; height: 6px; width: 100%; overflow: hidden;">
+            <div style="background: var(--primary); height: 100%; width: ${covPct}%;"></div>
+          </div>
+        </td>
+        <td style="text-align: right; font-weight: 600;">${accPct}<span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">${accDetail}</span></td>
+      </tr>
+    `;
+  }).join('');
+
+  // Exam sessions
+  const sessions = stats.sessions || [];
+  const totalExams = sessions.length;
+  let avgScoreStr = '—';
+  let passRateStr = '—';
+
+  if (totalExams > 0) {
+    const avgScore = sessions.reduce((acc, s) => acc + ((s.score / (s.total || 50)) * 100), 0) / totalExams;
+    avgScoreStr = avgScore.toFixed(1) + '%';
+    const passedCount = sessions.filter(s => s.passed).length;
+    passRateStr = ((passedCount / totalExams) * 100).toFixed(1) + '%';
+  }
+
+  const recentSessions = [...sessions].reverse().slice(0, 5);
+
+  contentEl.innerHTML = `
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem;">
+      <div class="card" style="padding: 0.75rem; text-align: center; border: 1px solid var(--border-color); box-shadow: none;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Bank Questions</div>
+        <div style="font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin-top: 0.25rem;">${totalQuestions}</div>
+      </div>
+      <div class="card" style="padding: 0.75rem; text-align: center; border: 1px solid var(--border-color); box-shadow: none;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Questions Studied</div>
+        <div style="font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-top: 0.25rem;">${studiedCount}</div>
+      </div>
+      <div class="card" style="padding: 0.75rem; text-align: center; border: 1px solid var(--border-color); box-shadow: none;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Coverage</div>
+        <div style="font-size: 1.4rem; font-weight: 700; color: var(--success); margin-top: 0.25rem;">${coveragePct}%</div>
+      </div>
+      <div class="card" style="padding: 0.75rem; text-align: center; border: 1px solid var(--border-color); box-shadow: none;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Unstudied Remaining</div>
+        <div style="font-size: 1.4rem; font-weight: 700; color: var(--warning); margin-top: 0.25rem;">${unstudiedCount}</div>
+      </div>
+    </div>
+
+    <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">Domain Breakdown</h4>
+    <table class="report-table" style="margin-top: 0.25rem; margin-bottom: 1.25rem;">
+      <thead>
+        <tr>
+          <th>Domain</th>
+          <th>Coverage</th>
+          <th style="text-align: right;">Accuracy</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${domainRows}
+      </tbody>
+    </table>
+
+    <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">PSI Exam Simulation History</h4>
+    <div style="display: flex; gap: 1.25rem; font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-secondary); flex-wrap: wrap;">
+      <span><strong>Exams Taken:</strong> ${totalExams}</span>
+      <span><strong>Average Score:</strong> ${avgScoreStr}</span>
+      <span><strong>Pass Rate:</strong> ${passRateStr}</span>
+    </div>
+    ${recentSessions.length > 0 ? `
+      <table class="report-table" style="margin-top: 0.25rem; margin-bottom: 1.25rem;">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Score</th>
+            <th style="text-align: right;">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${recentSessions.map(s => {
+            const dateStr = s.date ? new Date(s.date).toLocaleDateString() + ' ' + new Date(s.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—';
+            return `
+              <tr>
+                <td>${escapeHtml(dateStr)}</td>
+                <td>${s.score} / ${s.total} (${s.percentage}%)</td>
+                <td style="text-align: right;">
+                  <span class="badge ${s.passed ? 'badge-success' : 'badge-danger'}">${s.passed ? 'PASS' : 'FAIL'}</span>
+                </td>
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    ` : `<p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">No PSI exam simulation sessions recorded yet.</p>`}
+
+    <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;">
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <button class="btn btn-secondary btn-sm" onclick="handleResetStudyProgress()">Reset Study History</button>
+        <button class="btn btn-danger btn-sm" onclick="handleClearAllData()">Clear All Simulator Data</button>
+      </div>
+      <button class="btn btn-primary btn-sm" onclick="closeStatsModal()">Close</button>
+    </div>
+  `;
+}
+
 function handleModalBackdropClick(event, modalId) {
   if (event.target && event.target.id === modalId) {
     document.getElementById(modalId).classList.remove('open');
@@ -2662,6 +2936,7 @@ window.addEventListener('keydown', (e) => {
   if (key === 'ESCAPE') {
     closeJumpGrid();
     closeShortcutsModal();
+    closeStatsModal();
     return;
   }
 
@@ -3052,6 +3327,7 @@ function renderDrill(container) {
             </span>
           </div>
           <div class="actions-group">
+            <button class="btn ${state.drill.prioritizeUnseen ? 'btn-primary' : 'btn-outline'} btn-sm" onclick="toggleDrillPrioritizeUnseen()">${state.drill.prioritizeUnseen ? 'Prioritize Unseen: ON' : 'Prioritize Unseen: OFF'}</button>
             <button class="btn btn-sm ${state.drill.shuffled ? 'btn-primary' : 'btn-outline'}" onclick="toggleDrillShuffle()">
               🔀 Shuffle: ${state.drill.shuffled ? 'ON' : 'OFF'}
             </button>

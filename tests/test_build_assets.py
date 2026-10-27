@@ -390,6 +390,9 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert '"id": 1' in content
     assert '"id": 435' in content
     assert "localStorage" in content
+    assert 'id="stats-modal"' in content
+    assert "gamb_stats" in content
+    assert "toggleDrillPrioritizeUnseen" in content
 
 
 def test_generate_web_quizzer_custom_pool(tmp_path: Path):

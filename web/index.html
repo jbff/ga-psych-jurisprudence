@@ -7492,7 +7492,7 @@ function getStats() {
     if (!raw) return { questions: {}, sessions: [] };
     const parsed = JSON.parse(raw);
     return {
-      questions: (parsed && typeof parsed.questions === 'object' && !Array.isArray(parsed.questions)) ? parsed.questions : {},
+      questions: (parsed && parsed.questions && typeof parsed.questions === 'object' && !Array.isArray(parsed.questions)) ? parsed.questions : {},
       sessions: (parsed && Array.isArray(parsed.sessions)) ? parsed.sessions : []
     };
   } catch (e) {
@@ -8079,7 +8079,7 @@ function renderStatsModalContent() {
   let passRateStr = '—';
 
   if (totalExams > 0) {
-    const avgScore = sessions.reduce((acc, s) => acc + ((s.score / s.total) * 100), 0) / totalExams;
+    const avgScore = sessions.reduce((acc, s) => acc + ((s.score / (s.total || 50)) * 100), 0) / totalExams;
     avgScoreStr = avgScore.toFixed(1) + '%';
     const passedCount = sessions.filter(s => s.passed).length;
     passRateStr = ((passedCount / totalExams) * 100).toFixed(1) + '%';
@@ -8567,7 +8567,7 @@ function renderDrill(container) {
             </span>
           </div>
           <div class="actions-group">
-            <button class="btn btn-secondary btn-sm" onclick="toggleDrillPrioritizeUnseen()">${state.drill.prioritizeUnseen ? 'Prioritize Unseen: ON' : 'Prioritize Unseen: OFF'}</button>
+            <button class="btn ${state.drill.prioritizeUnseen ? 'btn-primary' : 'btn-outline'} btn-sm" onclick="toggleDrillPrioritizeUnseen()">${state.drill.prioritizeUnseen ? 'Prioritize Unseen: ON' : 'Prioritize Unseen: OFF'}</button>
             <button class="btn btn-sm ${state.drill.shuffled ? 'btn-primary' : 'btn-outline'}" onclick="toggleDrillShuffle()">
               🔀 Shuffle: ${state.drill.shuffled ? 'ON' : 'OFF'}
             </button>
