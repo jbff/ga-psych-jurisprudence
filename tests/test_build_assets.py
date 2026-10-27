@@ -9,6 +9,7 @@ from gamb_exam.build_assets import (
     compile_html_to_pdf,
     generate_cheat_sheet,
     generate_compendium,
+    generate_numbers_cheat_sheet,
     generate_practice_forms,
     generate_web_quizzer,
 )
@@ -29,6 +30,13 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "O.C.G.A. § 19-7-5" in content
     assert "O.C.G.A. § 43-39-16" in content
     assert "40 hours" in content
+    assert "48 hours" in content
+    assert "7 days" in content
+    assert "72 hours" in content
+    assert "10 days" in content
+    assert "5 days" in content
+    assert "30 days" in content
+    assert "540 hours" in content
     assert "Question Pool" in content
     assert "10/25/2026" in content
     assert "John B. Fleming, PhD" in content
@@ -40,6 +48,13 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "O.C.G.A. § 19-7-5" in html_content
     assert "O.C.G.A. § 43-39-16" in html_content
     assert "40 hours" in html_content
+    assert "48 hours" in html_content
+    assert "7 days" in html_content
+    assert "72 hours" in html_content
+    assert "10 days" in html_content
+    assert "5 days" in html_content
+    assert "30 days" in html_content
+    assert "540 hours" in html_content
     assert "Question Pool" in html_content
     assert "10/25/2026" in html_content
     assert "John B. Fleming, PhD" in html_content
@@ -49,6 +64,56 @@ def test_generate_cheat_sheet(tmp_path: Path):
     compile_html_to_pdf(html_path, pdf_path)
     assert pdf_path.exists()
     assert pdf_path.stat().st_size > 5000  # Non-trivial PDF size
+
+
+def test_generate_numbers_cheat_sheet(tmp_path: Path):
+    md_path = tmp_path / "numbers_cheat_sheet.md"
+    html_path = tmp_path / "numbers_cheat_sheet.html"
+    pdf_path = tmp_path / "numbers_cheat_sheet.pdf"
+
+    generate_numbers_cheat_sheet(md_path=md_path, html_path=html_path)
+
+    assert md_path.exists()
+    assert html_path.exists()
+    content = md_path.read_text(encoding="utf-8")
+    assert "Numbers, Deadlines & Supervision Ratios" in content
+    assert "24 Hours" in content
+    assert "48 Hours" in content
+    assert "72 Hours" in content
+    assert "5 Days" in content
+    assert "7 Days" in content
+    assert "10 Days" in content
+    assert "30 Days" in content
+    assert "31 Days" in content
+    assert "60 Days" in content
+    assert "120 Days" in content
+    assert "11 to 24 Months" in content
+    assert "540 hours" in content
+    assert "1,500 hours" in content
+    assert "1:30" in content
+    assert "1:20" in content
+
+    html_content = html_path.read_text(encoding="utf-8")
+    assert "Numbers, Deadlines & Supervision Ratios" in html_content
+    assert "24 Hours" in html_content
+    assert "48 Hours" in html_content
+    assert "72 Hours" in html_content
+    assert "5 Days" in html_content
+    assert "7 Days" in html_content
+    assert "10 Days" in html_content
+    assert "30 Days" in html_content
+    assert "31 Days" in html_content
+    assert "60 Days" in html_content
+    assert "120 Days" in html_content
+    assert "11 to 24 Months" in html_content
+    assert "540 hours" in html_content
+    assert "1,500 hours" in html_content
+    assert "1:30" in html_content
+    assert "1:20" in html_content
+
+    compile_html_to_pdf(html_path, pdf_path)
+    assert pdf_path.exists()
+    assert pdf_path.stat().st_size > 5000
 
 
 def test_compile_html_to_pdf_missing_source(tmp_path: Path):
@@ -411,8 +476,8 @@ def test_build_all_assets(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
     assert "docs" in artifacts
     assert "web" in artifacts
 
-    assert len(artifacts["pdfs"]) == 5
-    assert len(artifacts["docs"]) == 6
+    assert len(artifacts["pdfs"]) == 6
+    assert len(artifacts["docs"]) == 7
     assert len(artifacts["web"]) == 1
 
     for paths in artifacts.values():

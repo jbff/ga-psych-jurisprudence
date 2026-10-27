@@ -242,7 +242,7 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 
 ---
 
-### 1. Licensure, Supervision & Continuing Education (Rule 510-8 & 510-2)
+### 1. Licensure, Supervision, Examination & Continuing Education (Rules 510-2, 510-3, 510-7, 510-8)
 
 | Parameter | Statutory / Rule Requirement | Legal Authority |
 | :--- | :--- | :--- |
@@ -253,10 +253,16 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 | **Academic Coursework CE** | 10 hrs per semester course (max 20 hrs per biennium) | Rule 510-8-.02 |
 | **Peer-Reviewed Authorship CE** | 10 hrs for 1st or 2nd author of peer-reviewed article | Rule 510-8-.02 |
 | **First-Time Workshop Presentation** | 1 hr CE per hour taught (max 6 hrs per presentation) | Rule 510-8-.02 |
-| **Pre-Doctoral Internship** | Minimum **1,500 hours** in an organized training program | Rule 510-2-.04 |
-| **Post-Doctoral SWE** | Minimum **1,500 hours** (or 2,000 hrs if prior to deg conferral) | Rule 510-2-.05 |
+| **Pre-Doctoral Internship** | Minimum **1,500 hours** in an organized training program; minimum **500 hours** direct client contact | Rule 510-2-.04 |
+| **Doctoral Residency** | Minimum **1 year** full-time or **540 hours** in-person coursework on campus | Rule 510-2-.04 |
+| **Post-Doctoral SWE** | Minimum **1,500 hours** over **11 to 24 months**; minimum **500 hours** direct client contact | Rule 510-2-.05 |
+| **Supervision Ratios** | **1:30** SWE ratio (1 hr supervision per 30 hrs experience); **1:20** clinical ratio (1 hr per 20 hrs direct service) | Rule 510-5-.06 |
 | **Max Supervisees** | Maximum **3 supervisees** concurrently without prior Board approval | Rule 510-5-.06 |
-| **License Expiration & Late Period** | Dec 31 of even years; 31-day late penalty period (Jan 1–31) | Rule 510-7-.01 |
+| **Senior Psychologist Endorsement** | **10 years** continuous unblemished licensure; **3 years** continuous practice equivalency (30 hrs/wk, 50 wks/yr) | Rule 510-3-.02 |
+| **GAMB Retake Waiting Period** | Minimum **30 days** waiting period required before retaking failed jurisprudence exam | Rule 510-2-.01 |
+| **EPPP Remediation** | 3 attempts require **3 semester hours** or **15 CE hours**; 6 attempts require **9 semester hours** or **45 CE hours** | Rule 510-2-.01 |
+| **License Expiration & Late Period** | Dec 31 of even years; **31 days** late penalty renewal period (Jan 1–31) | Rule 510-7-.01 |
+| **CE Audit Compliance Cure** | **31 days** to submit proof and cure deficiency upon notice of audit failure | Rule 510-8-.03 |
 | **Reinstatement After Lapse** | Formal application, fees, and 40 CE hours within past 2 years | Rule 510-7-.03 |
 
 ---
@@ -269,9 +275,10 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 | **Child Abuse Privilege** | Psychologist-client privilege is **abrogated**; cannot shield child abuse. | O.C.G.A. § 19-7-5(f) |
 | **Child Abuse Penalty** | Knowing and willful failure to report is a **misdemeanor**. | O.C.G.A. § 19-7-5(h) |
 | **Child Abuse Immunity** | Broad **good-faith immunity** from civil and criminal liability. | O.C.G.A. § 19-7-5(f) |
-| **Elder / Disabled Abuse** | Mandatory reporting of abuse, neglect, or exploitation to Adult Protective Services (DHS) or police. Law enforcement must forward report within 24 hrs. Privilege abrogated. | **O.C.G.A. § 30-5-4** |
-| **Involuntary Exam (Form 1013)** | Licensed psychologists have statutory authority to execute Form 1013 certificate upon determining imminent danger or grave disability. | **O.C.G.A. § 37-3-41** |
-| **Peace Officer 1013 Execution** | Peace officers must take individual into custody within **72 hours** of certificate execution and deliver to emergency receiving facility. | O.C.G.A. § 37-3-41(a) |
+| **Elder / Disabled Adult Abuse** | Mandatory reporting immediately of abuse, neglect, or exploitation to Adult Protective Services (DHS) or police. Law enforcement must forward report within **24 hours**. Privilege abrogated. | **O.C.G.A. § 30-5-4** |
+| **Involuntary Exam (Form 1013)** | Licensed psychologists have statutory authority to execute Form 1013 certificate upon determining imminent danger or grave disability following personal examination within preceding **48 hours**; certificate valid for **7 days**. | **O.C.G.A. § 37-3-41(a)** |
+| **Peace Officer 1013 Execution** | Peace officers must take individual into custody within **72 hours** of receiving certificate and deliver to emergency receiving facility. | O.C.G.A. § 37-3-41(a) |
+| **Court Apprehension Order** | Personal observation by 2 affiants within preceding **48 hours**; court order valid for **7 days** if unexecuted. | O.C.G.A. § 37-3-41(b) |
 
 ---
 
@@ -280,10 +287,10 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 | Subject | Statutory Standard | Authority |
 | :--- | :--- | :--- |
 | **Confidential Communications** | Communications between licensed psychologist and client are placed on the **identical legal basis as attorney-client privilege**. | **O.C.G.A. § 43-39-16**; § 24-5-501 |
-| **Sexual Misconduct (1st Degree)** | Sexual intercourse, cunnilingus, fellatio, or anilingus with a client/patient: **Felony (1 to 25 years imprisonment, up to $100,000 fine)**. | **O.C.G.A. § 16-6-5.1** |
+| **Sexual Misconduct (1st Degree)** | Sexual intercourse, cunnilingus, fellatio, or anilingus with a client/patient: **Felony (1 to 25 years imprisonment, up to $100,000 fine)**. Consent not a defense. | **O.C.G.A. § 16-6-5.1** |
 | **Sexual Misconduct (2nd Degree)** | Any other sexual contact with a client/patient: **Misdemeanor of a high and aggravated nature**. | O.C.G.A. § 16-6-5.1 |
 | **Defense of Consent** | **Consent of the victim is NOT a defense** to prosecution for psychotherapist sexual misconduct under Georgia law. | O.C.G.A. § 16-6-5.1(b) |
-| **Former Client Sexual Contact** | Prohibited for at least **2 years** following cessation of professional services under APA Ethics Code (Standard 10.08). | Rule 510-4-.02 |
+| **Former Client Sexual Contact** | Prohibited for at least **2 years** following cessation of professional services under APA Ethics Code (Standard 10.08). | Rule 510-4-.02; APA Standard 10.08 |
 
 ---
 
@@ -292,14 +299,15 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 | Topic | Legal Rule | Authority |
 | :--- | :--- | :--- |
 | **Adult Record Retention** | Minimum **7 years** following date of last clinical service. | APA 6.01; Rule 510-4 |
-| **Minor Record Retention** | Minimum **7 years past the age of majority** (age 25 total). | APA 6.01; Rule 510-4 |
+| **Minor Record Retention** | Minimum **7 years past the age of majority** (**age 25** total). | APA 6.01; Rule 510-4 |
 | **Withholding Emergency Records** | **Prohibited**: Records needed for emergency treatment cannot be withheld solely for nonpayment of fees. | APA Standard 6.03 |
 | **Bartering** | Permissible **only if not clinically contraindicated** and not exploitative. | APA Standard 6.05 |
 | **Test Data vs. Test Materials** | Test data (raw scores, answers) releasable with client consent; Test materials (manuals, test booklets) protected to preserve test security. | APA Standards 9.04, 9.11 |
-| **Out-of-State Practice** | Non-resident licensed psychologists may practice in Georgia up to **30 days per calendar year** with Board notification/approval. | O.C.G.A. § 43-39-7(8) |
-| **PSYPACT Practice** | Unlimited telepsychology under E.Passport; up to 30 days temporary in-person practice under Interjurisdictional Practice Certificate (IPC). | O.C.G.A. § 43-39-20 |
-| **Board Civil Fines** | Maximum civil fine not to exceed **$500.00 per violation**. | O.C.G.A. § 43-1-19(d)(7) |
-| **Unlicensed Practice Penalty** | Criminal misdemeanor: **$100 to $1,000 fine and/or up to 12 months jail**. | O.C.G.A. § 43-39-17 |
+| **Out-of-State Practice** | Non-resident licensed psychologists may practice in Georgia up to **30 days per calendar year**; requires at least **5 days** prior written notice to Board. | O.C.G.A. § 43-39-7(8); Rule 510-9-.03 |
+| **PSYPACT Practice** | Unlimited telepsychology under E.Passport; up to **30 days** temporary in-person practice per calendar year under Interjurisdictional Practice Certificate (IPC). | O.C.G.A. § 43-39-20 |
+| **Mandatory Conviction Notice** | Mandatory written notification to Board within **10 days** of any felony or controlled substance conviction. | O.C.G.A. § 43-1-27; § 16-13-111 |
+| **Board Civil Fines** | Maximum civil fine not to exceed **$500 per violation**. | O.C.G.A. § 43-1-19(d)(7) |
+| **Unlicensed Practice Penalty** | Criminal misdemeanor: **$100 to $1,000 fine and/or up to 12 months jail**. | O.C.G.A. § 43-39-17, § 43-39-19 |
 | **Appeal of Board Decision** | Appeal must be filed in **Superior Court of Fulton County** under the Georgia Administrative Procedure Act ("any evidence" standard). | O.C.G.A. § 43-39-13; § 50-13-19 |
 """
     md_path.write_text(md_content, encoding="utf-8")
@@ -325,10 +333,10 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 &copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a>
 </div>
 <div class="disclaimer">
-<strong>LEGAL & REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
+<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
 </div>
 
-<h2>1. Licensure, Supervision & Continuing Education (Rule 510-8 & 510-2)</h2>
+<h2>1. Licensure, Supervision, Examination &amp; Continuing Education (Rules 510-2, 510-3, 510-7, 510-8)</h2>
 <table>
 <thead><tr><th>Parameter</th><th>Statutory / Rule Requirement</th><th>Legal Authority</th></tr></thead>
 <tbody>
@@ -339,56 +347,268 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <tr><td><strong>Academic Coursework CE</strong></td><td>10 hrs per semester course (max 20 hrs per biennium)</td><td>Rule 510-8-.02</td></tr>
 <tr><td><strong>Peer-Reviewed Authorship CE</strong></td><td>10 hrs for 1st or 2nd author of peer-reviewed article</td><td>Rule 510-8-.02</td></tr>
 <tr><td><strong>First-Time Workshop Presentation</strong></td><td>1 hr CE per hour taught (max 6 hrs per presentation)</td><td>Rule 510-8-.02</td></tr>
-<tr><td><strong>Pre-Doctoral Internship</strong></td><td>Minimum <strong>1,500 hours</strong> in an organized training program</td><td>Rule 510-2-.04</td></tr>
-<tr><td><strong>Post-Doctoral SWE</strong></td><td>Minimum <strong>1,500 hours</strong> (or 2,000 hrs if prior to deg conferral)</td><td>Rule 510-2-.05</td></tr>
+<tr><td><strong>Pre-Doctoral Internship</strong></td><td>Minimum <strong>1,500 hours</strong> in an organized training program; minimum <strong>500 hours</strong> direct client contact</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>Doctoral Residency</strong></td><td>Minimum <strong>1 year</strong> full-time or <strong>540 hours</strong> in-person coursework on campus</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>Post-Doctoral SWE</strong></td><td>Minimum <strong>1,500 hours</strong> over <strong>11 to 24 months</strong>; minimum <strong>500 hours</strong> direct client contact</td><td>Rule 510-2-.05</td></tr>
+<tr><td><strong>Supervision Ratios</strong></td><td><strong>1:30</strong> SWE ratio (1 hr supervision per 30 hrs experience); <strong>1:20</strong> clinical ratio (1 hr per 20 hrs direct service)</td><td>Rule 510-5-.06</td></tr>
 <tr><td><strong>Max Supervisees</strong></td><td>Maximum <strong>3 supervisees</strong> concurrently without prior Board approval</td><td>Rule 510-5-.06</td></tr>
-<tr><td><strong>License Expiration & Late Period</strong></td><td>Dec 31 of even years; 31-day late penalty period (Jan 1–31)</td><td>Rule 510-7-.01</td></tr>
+<tr><td><strong>Senior Psychologist Endorsement</strong></td><td><strong>10 years</strong> continuous unblemished licensure; <strong>3 years</strong> continuous practice equivalency (30 hrs/wk, 50 wks/yr)</td><td>Rule 510-3-.02</td></tr>
+<tr><td><strong>GAMB Retake Waiting Period</strong></td><td>Minimum <strong>30 days</strong> waiting period required before retaking failed jurisprudence exam</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>EPPP Remediation</strong></td><td>3 attempts require <strong>3 semester hours</strong> or <strong>15 CE hours</strong>; 6 attempts require <strong>9 semester hours</strong> or <strong>45 CE hours</strong></td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>License Expiration &amp; Late Period</strong></td><td>Dec 31 of even years; <strong>31 days</strong> late penalty renewal period (Jan 1&ndash;31)</td><td>Rule 510-7-.01</td></tr>
+<tr><td><strong>CE Audit Compliance Cure</strong></td><td><strong>31 days</strong> to submit proof and cure deficiency upon notice of audit failure</td><td>Rule 510-8-.03</td></tr>
 <tr><td><strong>Reinstatement After Lapse</strong></td><td>Formal application, fees, and 40 CE hours within past 2 years</td><td>Rule 510-7-.03</td></tr>
 </tbody>
 </table>
 
-<h2>2. Mandatory Reporting Overrides & Emergency Commitment</h2>
+<h2>2. Mandatory Reporting Overrides &amp; Emergency Commitment</h2>
 <table>
-<thead><tr><th>Category</th><th>Legal Rule & Action Required</th><th>Statute</th></tr></thead>
+<thead><tr><th>Category</th><th>Legal Rule &amp; Action Required</th><th>Statute</th></tr></thead>
 <tbody>
 <tr><td><strong>Child Abuse Reporting</strong></td><td>Mandatory reporting <strong>immediately</strong>, and in no case later than <strong>24 hours</strong> after forming suspicion. Report to DFCS or local law enforcement/prosecutor.</td><td><strong>O.C.G.A. § 19-7-5</strong></td></tr>
 <tr><td><strong>Child Abuse Privilege</strong></td><td>Psychologist-client privilege is <strong>abrogated</strong>; cannot shield child abuse.</td><td>O.C.G.A. § 19-7-5(f)</td></tr>
 <tr><td><strong>Child Abuse Penalty</strong></td><td>Knowing and willful failure to report is a <strong>misdemeanor</strong>.</td><td>O.C.G.A. § 19-7-5(h)</td></tr>
 <tr><td><strong>Child Abuse Immunity</strong></td><td>Broad <strong>good-faith immunity</strong> from civil and criminal liability.</td><td>O.C.G.A. § 19-7-5(f)</td></tr>
-<tr><td><strong>Elder / Disabled Abuse</strong></td><td>Mandatory reporting of abuse, neglect, or exploitation to Adult Protective Services (DHS) or police. Law enforcement must forward report within 24 hrs. Privilege abrogated.</td><td><strong>O.C.G.A. § 30-5-4</strong></td></tr>
-<tr><td><strong>Involuntary Exam (Form 1013)</strong></td><td>Licensed psychologists have statutory authority to execute Form 1013 certificate upon determining imminent danger or grave disability.</td><td><strong>O.C.G.A. § 37-3-41</strong></td></tr>
-<tr><td><strong>Peace Officer 1013 Execution</strong></td><td>Peace officers must take individual into custody within <strong>72 hours</strong> of certificate execution and deliver to emergency receiving facility.</td><td>O.C.G.A. § 37-3-41(a)</td></tr>
+<tr><td><strong>Elder / Disabled Adult Abuse</strong></td><td>Mandatory reporting immediately of abuse, neglect, or exploitation to Adult Protective Services (DHS) or police. Law enforcement must forward report within <strong>24 hours</strong>. Privilege abrogated.</td><td><strong>O.C.G.A. § 30-5-4</strong></td></tr>
+<tr><td><strong>Involuntary Exam (Form 1013)</strong></td><td>Licensed psychologists have statutory authority to execute Form 1013 certificate upon determining imminent danger or grave disability following personal examination within preceding <strong>48 hours</strong>; certificate valid for <strong>7 days</strong>.</td><td><strong>O.C.G.A. § 37-3-41(a)</strong></td></tr>
+<tr><td><strong>Peace Officer 1013 Execution</strong></td><td>Peace officers must take individual into custody within <strong>72 hours</strong> of receiving certificate and deliver to emergency receiving facility.</td><td>O.C.G.A. § 37-3-41(a)</td></tr>
+<tr><td><strong>Court Apprehension Order</strong></td><td>Personal observation by 2 affiants within preceding <strong>48 hours</strong>; court order valid for <strong>7 days</strong> if unexecuted.</td><td>O.C.G.A. § 37-3-41(b)</td></tr>
 </tbody>
 </table>
 
 <div class="page-break"></div>
 
-<h2>3. Confidentiality, Privilege & Prohibited Relationships</h2>
+<h2>3. Confidentiality, Privilege &amp; Prohibited Relationships</h2>
 <table>
 <thead><tr><th>Subject</th><th>Statutory Standard</th><th>Authority</th></tr></thead>
 <tbody>
 <tr><td><strong>Confidential Communications</strong></td><td>Communications between licensed psychologist and client are placed on the <strong>identical legal basis as attorney-client privilege</strong>.</td><td><strong>O.C.G.A. § 43-39-16</strong>; § 24-5-501</td></tr>
-<tr><td><strong>Sexual Misconduct (1st Degree)</strong></td><td>Sexual intercourse, cunnilingus, fellatio, or anilingus with a client/patient: <strong>Felony (1 to 25 years imprisonment, up to $100,000 fine)</strong>.</td><td><strong>O.C.G.A. § 16-6-5.1</strong></td></tr>
+<tr><td><strong>Sexual Misconduct (1st Degree)</strong></td><td>Sexual intercourse, cunnilingus, fellatio, or anilingus with a client/patient: <strong>Felony (1 to 25 years imprisonment, up to $100,000 fine)</strong>. Consent not a defense.</td><td><strong>O.C.G.A. § 16-6-5.1</strong></td></tr>
 <tr><td><strong>Sexual Misconduct (2nd Degree)</strong></td><td>Any other sexual contact with a client/patient: <strong>Misdemeanor of a high and aggravated nature</strong>.</td><td>O.C.G.A. § 16-6-5.1</td></tr>
 <tr><td><strong>Defense of Consent</strong></td><td><strong>Consent of the victim is NOT a defense</strong> to prosecution for psychotherapist sexual misconduct under Georgia law.</td><td>O.C.G.A. § 16-6-5.1(b)</td></tr>
-<tr><td><strong>Former Client Sexual Contact</strong></td><td>Prohibited for at least <strong>2 years</strong> following cessation of professional services under APA Ethics Code (Standard 10.08).</td><td>Rule 510-4-.02</td></tr>
+<tr><td><strong>Former Client Sexual Contact</strong></td><td>Prohibited for at least <strong>2 years</strong> following cessation of professional services under APA Ethics Code (Standard 10.08).</td><td>Rule 510-4-.02; APA Standard 10.08</td></tr>
 </tbody>
 </table>
 
-<h2>4. Recordkeeping, Practice Limits & Disciplinary Penalties</h2>
+<h2>4. Recordkeeping, Practice Limits &amp; Disciplinary Penalties</h2>
 <table>
 <thead><tr><th>Topic</th><th>Legal Rule</th><th>Authority</th></tr></thead>
 <tbody>
 <tr><td><strong>Adult Record Retention</strong></td><td>Minimum <strong>7 years</strong> following date of last clinical service.</td><td>APA 6.01; Rule 510-4</td></tr>
-<tr><td><strong>Minor Record Retention</strong></td><td>Minimum <strong>7 years past the age of majority</strong> (age 25 total).</td><td>APA 6.01; Rule 510-4</td></tr>
+<tr><td><strong>Minor Record Retention</strong></td><td>Minimum <strong>7 years past the age of majority</strong> (<strong>age 25</strong> total).</td><td>APA 6.01; Rule 510-4</td></tr>
 <tr><td><strong>Withholding Emergency Records</strong></td><td><strong>Prohibited</strong>: Records needed for emergency treatment cannot be withheld solely for nonpayment of fees.</td><td>APA Standard 6.03</td></tr>
 <tr><td><strong>Bartering</strong></td><td>Permissible <strong>only if not clinically contraindicated</strong> and not exploitative.</td><td>APA Standard 6.05</td></tr>
 <tr><td><strong>Test Data vs. Test Materials</strong></td><td>Test data (raw scores, answers) releasable with client consent; Test materials (manuals, test booklets) protected to preserve test security.</td><td>APA Standards 9.04, 9.11</td></tr>
-<tr><td><strong>Out-of-State Practice</strong></td><td>Non-resident licensed psychologists may practice in Georgia up to <strong>30 days per calendar year</strong> with Board notification/approval.</td><td>O.C.G.A. § 43-39-7(8)</td></tr>
-<tr><td><strong>PSYPACT Practice</strong></td><td>Unlimited telepsychology under E.Passport; up to 30 days temporary in-person practice under Interjurisdictional Practice Certificate (IPC).</td><td>O.C.G.A. § 43-39-20</td></tr>
-<tr><td><strong>Board Civil Fines</strong></td><td>Maximum civil fine not to exceed <strong>$500.00 per violation</strong>.</td><td>O.C.G.A. § 43-1-19(d)(7)</td></tr>
-<tr><td><strong>Unlicensed Practice Penalty</strong></td><td>Criminal misdemeanor: <strong>$100 to $1,000 fine and/or up to 12 months jail</strong>.</td><td>O.C.G.A. § 43-39-17</td></tr>
-<tr><td><strong>Appeal of Board Decision</strong></td><td>Appeal must be filed in <strong>Superior Court of Fulton County</strong> under the Georgia Administrative Procedure Act ("any evidence" standard).</td><td>O.C.G.A. § 43-39-13; § 50-13-19</td></tr>
+<tr><td><strong>Out-of-State Practice</strong></td><td>Non-resident licensed psychologists may practice in Georgia up to <strong>30 days per calendar year</strong>; requires at least <strong>5 days</strong> prior written notice to Board.</td><td>O.C.G.A. § 43-39-7(8); Rule 510-9-.03</td></tr>
+<tr><td><strong>PSYPACT Practice</strong></td><td>Unlimited telepsychology under E.Passport; up to <strong>30 days</strong> temporary in-person practice per calendar year under Interjurisdictional Practice Certificate (IPC).</td><td>O.C.G.A. § 43-39-20</td></tr>
+<tr><td><strong>Mandatory Conviction Notice</strong></td><td>Mandatory written notification to Board within <strong>10 days</strong> of any felony or controlled substance conviction.</td><td>O.C.G.A. § 43-1-27; § 16-13-111</td></tr>
+<tr><td><strong>Board Civil Fines</strong></td><td>Maximum civil fine not to exceed <strong>$500 per violation</strong>.</td><td>O.C.G.A. § 43-1-19(d)(7)</td></tr>
+<tr><td><strong>Unlicensed Practice Penalty</strong></td><td>Criminal misdemeanor: <strong>$100 to $1,000 fine and/or up to 12 months jail</strong>.</td><td>O.C.G.A. § 43-39-17, § 43-39-19</td></tr>
+<tr><td><strong>Appeal of Board Decision</strong></td><td>Appeal must be filed in <strong>Superior Court of Fulton County</strong> under the Georgia Administrative Procedure Act (&quot;any evidence&quot; standard).</td><td>O.C.G.A. § 43-39-13; § 50-13-19</td></tr>
+</tbody>
+</table>
+</body>
+</html>
+"""
+    html_path.write_text(html_body, encoding="utf-8")
+
+
+def generate_numbers_cheat_sheet(md_path: Path, html_path: Path) -> None:
+    """Generate the Numbers, Deadlines & Supervision Ratios Quick-Reference Cram Sheet in Markdown and HTML."""
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    html_path.parent.mkdir(parents=True, exist_ok=True)
+
+    md_content = f"""# Georgia Psychology Jurisprudence Examination (GAMB)
+## Numbers, Deadlines & Supervision Ratios Quick-Reference Cram Sheet
+> **Question Pool:** Version {POOL_VERSION} (Date: {POOL_DATE})  
+> **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)
+
+{LEGAL_DISCLAIMER}
+
+---
+
+### Table 1: The Clock — Hours
+
+| Timeframe | Statutory / Regulatory Rule | Legal Authority |
+| :--- | :--- | :--- |
+| **24 Hours** | **Child abuse reporting deadline**: Psychologists must report suspected child abuse immediately and in no case later than **24 Hours** after forming reasonable cause. | O.C.G.A. § 19-7-5(e) |
+| **24 Hours** | **Elder & disabled adult abuse report forwarding**: Law enforcement agency receiving elder/disabled adult abuse report must forward it within **24 Hours** to Adult Protective Services (APS) and prosecuting attorney. | O.C.G.A. § 30-5-4(e) |
+| **48 Hours** | **Form 1013 involuntary examination certificate**: Psychologist must have personally examined the individual within the preceding **48 Hours** before issuing certificate. | O.C.G.A. § 37-3-41(a) |
+| **48 Hours** | **Court apprehension order petition**: Two affiants must have personally observed the individual's condition within the preceding **48 Hours** before filing affidavit with probate court. | O.C.G.A. § 37-3-41(b) |
+| **72 Hours** | **Form 1013 peace officer custody execution**: Peace officer receiving Form 1013 certificate must execute apprehension and transport to an emergency receiving facility within **72 Hours**. | O.C.G.A. § 37-3-41(a) |
+
+---
+
+### Table 2: The Calendar — Days
+
+| Timeframe | Statutory / Regulatory Rule | Legal Authority |
+| :--- | :--- | :--- |
+| **5 Days** | **Out-of-state temporary practice notice**: Non-resident licensed psychologists must provide at least **5 Days** prior written notice to the Board before commencing practice (max 30 days/calendar year). | Rule 510-9-.03; O.C.G.A. § 43-39-7(8) |
+| **7 Days** | **Form 1013 certificate validity**: Form 1013 involuntary examination certificate expires and is valid for no more than **7 Days** from date of execution. | O.C.G.A. § 37-3-41(a) |
+| **7 Days** | **Court apprehension order validity**: Probate court order authorizing peace officer custody for evaluation expires **7 Days** after issuance if unexecuted. | O.C.G.A. § 37-3-41(b) |
+| **10 Days** | **Felony conviction reporting**: Licensees must notify the Board in writing within **10 Days** of any felony conviction or guilty/nolo plea. | O.C.G.A. § 43-1-27 |
+| **10 Days** | **Controlled substance conviction reporting**: Mandatory written notification to Board within **10 Days** of conviction for any violation under Georgia Controlled Substances Act. | O.C.G.A. § 16-13-111 |
+| **30 Days** | **GAMB re-examination waiting period**: Applicants who fail the Georgia Jurisprudence Exam must wait a minimum of **30 Days** before re-examination. | Rule 510-2-.01 |
+| **30 Days** | **Out-of-state temporary practice limit**: Non-resident licensed psychologists permitted temporary practice in Georgia up to **30 Days** per calendar year. | O.C.G.A. § 43-39-7(8); Rule 510-9-.03 |
+| **30 Days** | **PSYPACT IPC temporary practice limit**: In-person practice under Interjurisdictional Practice Certificate permitted up to **30 Days** per calendar year per member state. | O.C.G.A. § 43-39-20 |
+| **30 Days** | **Application deficiency response**: Applicant must respond within **30 Days** to Board requests for supplementary application materials. | Rule 510-2-.01 |
+| **30 Days** | **Out-of-state disciplinary notification**: Licensee must report any disciplinary action or license surrender in another jurisdiction within **30 Days**. | Rule 510-3-.01 |
+| **31 Days** | **Biennial license late renewal penalty period**: Licenses expire Dec 31 of even years; late renewal period with penalty fee runs for **31 Days** (January 1–31). | Rule 510-7-.01 |
+| **31 Days** | **CE audit compliance cure window**: Licensees selected for CE audit have **31 Days** from notice to submit compliance documentation or cure deficiencies. | Rule 510-8-.03 |
+| **60 Days** | **Petition for reconsideration after license denial**: Applicant denied provisional license or endorsement has **60 Days** from notification letter date to petition Board. | Rule 510-2-.01 |
+| **120 Days** | **Emergency Board rules duration**: Emergency rules adopted by the Board to address imminent peril to public health/safety remain effective for up to **120 Days**. | O.C.G.A. § 50-13-4(b) |
+
+---
+
+### Table 3: Months & Years
+
+| Timeframe | Statutory / Regulatory Rule | Legal Authority |
+| :--- | :--- | :--- |
+| **6 Months** | **Work sample age for oral examination**: Clinical work samples submitted for the Board oral examination must be no older than **6 Months**. | Rule 510-2-.01 |
+| **6 Months** | **Volunteer license validity**: Temporary volunteer license issued for pro bono/charitable services remains valid for up to **6 Months**. | Rule 510-9-.02 |
+| **11 to 24 Months** | **Postdoctoral SWE completion window**: The 1,500 hours of postdoctoral Supervised Work Experience must be completed within a period of **11 to 24 Months**. | Rule 510-2-.05 |
+| **11 to 24 Months** | **Pre-doctoral internship completion window**: The 1,500 hours of pre-doctoral internship must be completed in no less than 11 months and no more than 24 months. | Rule 510-2-.04 |
+| **12 Months / 1 Year** | **Doctoral residency requirement**: Completion of minimum 1 year (12 months) full-time continuous residency on campus (or 540 hours coursework). | Rule 510-2-.04 |
+| **12 Months / 1 Year** | **Temporary license validity**: Temporary license issued pending full licensure or examination is valid for up to **12 Months** (1 year). | O.C.G.A. § 43-39-14 |
+| **12 Months / 1 Year** | **Lapsed license reinstatement window**: A lapsed license may be reinstated within **12 Months** upon payment of penalty fees and documentation of 40 CE hours. | Rule 510-7-.03 |
+| **12 Months / 1 Year** | **Unlicensed practice maximum imprisonment**: Misdemeanor unlicensed practice carries penalty of up to **12 Months** imprisonment. | O.C.G.A. § 43-39-17, § 43-39-19 |
+| **24 Months / 2 Years** | **Provisional psychology license validity**: Provisional license is valid for up to **24 Months** (2 years) while completing SWE. | Rule 510-2-.05 |
+| **24 Months / 2 Years** | **Biennial license renewal cycle**: Psychology licenses renew every **24 Months** (2 years) on December 31 of even years. | Rule 510-7-.01 |
+| **24 Months / 2 Years** | **Former client sexual intimacies moratorium**: Prohibited from sexual intimacies with former clients for at least **24 Months** (2 years) post-termination. | Rule 510-4-.02; APA Standard 10.08 |
+| **3 Years** | **Senior psychologist practice equivalency**: **3 Years** of continuous full-time practice (min 30 hrs/wk, 50 wks/yr) accepted in lieu of formal SWE. | Rule 510-3-.02 |
+| **5 Years** | **Georgia Board member term**: Members of the State Board of Examiners of Psychologists are appointed by the Governor to serve a **5 Years** term. | O.C.G.A. § 43-39-2 |
+| **7 Years / Age 25** | **Adult clinical record retention**: Clinical records for adult patients must be retained for at least **7 Years** from last date of service. | APA Standard 6.01; Rule 510-4 |
+| **7 Years / Age 25** | **Minor clinical record retention**: Clinical records for minor patients must be retained for at least **7 Years** past the age of majority (18 + 7 = **Age 25**). | APA Standard 6.01; Rule 510-4 |
+| **10 Years** | **Senior Psychologist endorsement qualification**: Minimum **10 Years** of continuous, unblemished licensure required for senior psychologist endorsement. | Rule 510-3-.02 |
+
+---
+
+### Table 4: Training Hours, Supervision Ratios & Board Standards
+
+| Category / Parameter | Statutory / Regulatory Requirement | Legal Authority |
+| :--- | :--- | :--- |
+| **Supervision: SWE Ratio** | Minimum 1 hour of individual face-to-face supervision per 30 hours of Supervised Work Experience (**1:30**). | Rule 510-5-.06; Rule 510-2-.05 |
+| **Supervision: Clinical Ratio** | Minimum 1 hour of supervision per 20 hours of direct face-to-face clinical service (**1:20**). | Rule 510-5-.06 |
+| **Supervision: Max Supervisees** | Maximum of **3 supervisees** concurrently without prior Board approval. | Rule 510-5-.06 |
+| **CE: Total Biennial Hours** | **40 hours** of approved continuing education every 2-year biennium. | Rule 510-8-.01 |
+| **CE: Ethics Requirement** | Minimum **6 hours** in professional ethics (Area I, live/synchronous). | Rule 510-8-.01 |
+| **CE: Area I (Live/Interactive)** | Minimum **20 hours** required; all 40 hours may be taken in Area I. | Rule 510-8-.02 |
+| **CE: Area II (Self-Study)** | Maximum **16 hours** allowed per biennium. | Rule 510-8-.02 |
+| **Training: Pre-Doc Internship** | Minimum **1,500 hours** in an organized doctoral internship program. | Rule 510-2-.04 |
+| **Training: Post-Doc SWE** | Minimum **1,500 hours** of postdoctoral supervised work experience (or 2,000 hrs prior to conferral). | Rule 510-2-.05 |
+| **Training: Direct Client Contact** | Minimum **500 hours** direct client contact during internship and minimum **500 hours** during postdoc SWE. | Rule 510-2-.04; Rule 510-2-.05 |
+| **Residency Coursework Hours** | Minimum **540 hours** of in-person coursework (12 hrs/wk x 15 wks x 3 semesters) or 1 full-time year. | Rule 510-2-.04 |
+| **EPPP Remediation: 3 Attempts** | 3 EPPP failures require **3 semester hours** or **15 CE hours** in weak areas before retaking. | Rule 510-2-.01 |
+| **EPPP Remediation: 6 Attempts** | 6 EPPP failures require **9 semester hours** or **45 CE hours** in weak areas before retaking. | Rule 510-2-.01 |
+| **Board Composition & Members** | **6 Board Members** (5 licensed psychologists + 1 consumer member appointed by Governor; 5-yr term). | O.C.G.A. § 43-39-2 |
+| **Board Quorum** | **Quorum 4** members required to conduct official Board business. | O.C.G.A. § 43-39-4 |
+| **Passing Scores** | **75%** passing score on GAMB Jurisprudence; **75%** on Board Oral Exam; scaled score 500 on EPPP Part 1 & 2. | Rule 510-2-.01 |
+| **Board Civil Fines** | Maximum civil penalty up to **$500 Max Civil Fine** per violation. | O.C.G.A. § 43-1-19(d)(7) |
+"""
+    md_path.write_text(md_content, encoding="utf-8")
+
+    html_body = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GAMB Numbers, Deadlines & Supervision Ratios Quick-Reference Cram Sheet</title>
+<style>
+{PRINT_CSS}
+</style>
+</head>
+<body>
+<h1>Georgia Psychology Jurisprudence Examination (GAMB)</h1>
+<div class="badge">NUMBERS, DEADLINES &amp; SUPERVISION RATIOS QUICK-REFERENCE CRAM SHEET</div>
+<div class="badge" style="background-color: #ebf8ff; color: #2b6cb0; margin-left: 4pt;">QUESTION POOL v{POOL_VERSION} ({POOL_DATE})</div>
+<div class="meta-info" style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 4pt;">
+<strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE}
+</div>
+<div class="author-attribution">
+&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a>
+</div>
+<div class="disclaimer">
+<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
+</div>
+
+<h2>Table 1: The Clock &mdash; Hours</h2>
+<table>
+<thead><tr><th>Timeframe</th><th>Statutory / Regulatory Rule</th><th>Legal Authority</th></tr></thead>
+<tbody>
+<tr><td><strong>24 Hours</strong></td><td><strong>Child abuse reporting deadline</strong>: Psychologists must report suspected child abuse immediately and in no case later than <strong>24 Hours</strong> after forming reasonable cause.</td><td>O.C.G.A. § 19-7-5(e)</td></tr>
+<tr><td><strong>24 Hours</strong></td><td><strong>Elder &amp; disabled adult abuse report forwarding</strong>: Law enforcement agency receiving elder/disabled adult abuse report must forward it within <strong>24 Hours</strong> to Adult Protective Services (APS) and prosecuting attorney.</td><td>O.C.G.A. § 30-5-4(e)</td></tr>
+<tr><td><strong>48 Hours</strong></td><td><strong>Form 1013 involuntary examination certificate</strong>: Psychologist must have personally examined the individual within the preceding <strong>48 Hours</strong> before issuing certificate.</td><td>O.C.G.A. § 37-3-41(a)</td></tr>
+<tr><td><strong>48 Hours</strong></td><td><strong>Court apprehension order petition</strong>: Two affiants must have personally observed the individual's condition within the preceding <strong>48 Hours</strong> before filing affidavit with probate court.</td><td>O.C.G.A. § 37-3-41(b)</td></tr>
+<tr><td><strong>72 Hours</strong></td><td><strong>Form 1013 peace officer custody execution</strong>: Peace officer receiving Form 1013 certificate must execute apprehension and transport to an emergency receiving facility within <strong>72 Hours</strong>.</td><td>O.C.G.A. § 37-3-41(a)</td></tr>
+</tbody>
+</table>
+
+<h2>Table 2: The Calendar &mdash; Days</h2>
+<table>
+<thead><tr><th>Timeframe</th><th>Statutory / Regulatory Rule</th><th>Legal Authority</th></tr></thead>
+<tbody>
+<tr><td><strong>5 Days</strong></td><td><strong>Out-of-state temporary practice notice</strong>: Non-resident licensed psychologists must provide at least <strong>5 Days</strong> prior written notice to the Board before commencing practice (max 30 days/calendar year).</td><td>Rule 510-9-.03; O.C.G.A. § 43-39-7(8)</td></tr>
+<tr><td><strong>7 Days</strong></td><td><strong>Form 1013 certificate validity</strong>: Form 1013 involuntary examination certificate expires and is valid for no more than <strong>7 Days</strong> from date of execution.</td><td>O.C.G.A. § 37-3-41(a)</td></tr>
+<tr><td><strong>7 Days</strong></td><td><strong>Court apprehension order validity</strong>: Probate court order authorizing peace officer custody for evaluation expires <strong>7 Days</strong> after issuance if unexecuted.</td><td>O.C.G.A. § 37-3-41(b)</td></tr>
+<tr><td><strong>10 Days</strong></td><td><strong>Felony conviction reporting</strong>: Licensees must notify the Board in writing within <strong>10 Days</strong> of any felony conviction or guilty/nolo plea.</td><td>O.C.G.A. § 43-1-27</td></tr>
+<tr><td><strong>10 Days</strong></td><td><strong>Controlled substance conviction reporting</strong>: Mandatory written notification to Board within <strong>10 Days</strong> of conviction for any violation under Georgia Controlled Substances Act.</td><td>O.C.G.A. § 16-13-111</td></tr>
+<tr><td><strong>30 Days</strong></td><td><strong>GAMB re-examination waiting period</strong>: Applicants who fail the Georgia Jurisprudence Exam must wait a minimum of <strong>30 Days</strong> before re-examination.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>30 Days</strong></td><td><strong>Out-of-state temporary practice limit</strong>: Non-resident licensed psychologists permitted temporary practice in Georgia up to <strong>30 Days</strong> per calendar year.</td><td>O.C.G.A. § 43-39-7(8); Rule 510-9-.03</td></tr>
+<tr><td><strong>30 Days</strong></td><td><strong>PSYPACT IPC temporary practice limit</strong>: In-person practice under Interjurisdictional Practice Certificate permitted up to <strong>30 Days</strong> per calendar year per member state.</td><td>O.C.G.A. § 43-39-20</td></tr>
+<tr><td><strong>30 Days</strong></td><td><strong>Application deficiency response</strong>: Applicant must respond within <strong>30 Days</strong> to Board requests for supplementary application materials.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>30 Days</strong></td><td><strong>Out-of-state disciplinary notification</strong>: Licensee must report any disciplinary action or license surrender in another jurisdiction within <strong>30 Days</strong>.</td><td>Rule 510-3-.01</td></tr>
+<tr><td><strong>31 Days</strong></td><td><strong>Biennial license late renewal penalty period</strong>: Licenses expire Dec 31 of even years; late renewal period with penalty fee runs for <strong>31 Days</strong> (January 1&ndash;31).</td><td>Rule 510-7-.01</td></tr>
+<tr><td><strong>31 Days</strong></td><td><strong>CE audit compliance cure window</strong>: Licensees selected for CE audit have <strong>31 Days</strong> from notice to submit compliance documentation or cure deficiencies.</td><td>Rule 510-8-.03</td></tr>
+<tr><td><strong>60 Days</strong></td><td><strong>Petition for reconsideration after license denial</strong>: Applicant denied provisional license or endorsement has <strong>60 Days</strong> from notification letter date to petition Board.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>120 Days</strong></td><td><strong>Emergency Board rules duration</strong>: Emergency rules adopted by the Board to address imminent peril to public health/safety remain effective for up to <strong>120 Days</strong>.</td><td>O.C.G.A. § 50-13-4(b)</td></tr>
+</tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>Table 3: Months &amp; Years</h2>
+<table>
+<thead><tr><th>Timeframe</th><th>Statutory / Regulatory Rule</th><th>Legal Authority</th></tr></thead>
+<tbody>
+<tr><td><strong>6 Months</strong></td><td><strong>Work sample age for oral examination</strong>: Clinical work samples submitted for the Board oral examination must be no older than <strong>6 Months</strong>.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>6 Months</strong></td><td><strong>Volunteer license validity</strong>: Temporary volunteer license issued for pro bono/charitable services remains valid for up to <strong>6 Months</strong>.</td><td>Rule 510-9-.02</td></tr>
+<tr><td><strong>11 to 24 Months</strong></td><td><strong>Postdoctoral SWE completion window</strong>: The 1,500 hours of postdoctoral Supervised Work Experience must be completed within a period of <strong>11 to 24 Months</strong>.</td><td>Rule 510-2-.05</td></tr>
+<tr><td><strong>11 to 24 Months</strong></td><td><strong>Pre-doctoral internship completion window</strong>: The 1,500 hours of pre-doctoral internship must be completed in no less than 11 months and no more than 24 months.</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>12 Months / 1 Year</strong></td><td><strong>Doctoral residency requirement</strong>: Completion of minimum 1 year (12 months) full-time continuous residency on campus (or 540 hours coursework).</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>12 Months / 1 Year</strong></td><td><strong>Temporary license validity</strong>: Temporary license issued pending full licensure or examination is valid for up to <strong>12 Months</strong> (1 year).</td><td>O.C.G.A. § 43-39-14</td></tr>
+<tr><td><strong>12 Months / 1 Year</strong></td><td><strong>Lapsed license reinstatement window</strong>: A lapsed license may be reinstated within <strong>12 Months</strong> upon payment of penalty fees and documentation of 40 CE hours.</td><td>Rule 510-7-.03</td></tr>
+<tr><td><strong>12 Months / 1 Year</strong></td><td><strong>Unlicensed practice maximum imprisonment</strong>: Misdemeanor unlicensed practice carries penalty of up to <strong>12 Months</strong> imprisonment.</td><td>O.C.G.A. § 43-39-17, § 43-39-19</td></tr>
+<tr><td><strong>24 Months / 2 Years</strong></td><td><strong>Provisional psychology license validity</strong>: Provisional license is valid for up to <strong>24 Months</strong> (2 years) while completing SWE.</td><td>Rule 510-2-.05</td></tr>
+<tr><td><strong>24 Months / 2 Years</strong></td><td><strong>Biennial license renewal cycle</strong>: Psychology licenses renew every <strong>24 Months</strong> (2 years) on December 31 of even years.</td><td>Rule 510-7-.01</td></tr>
+<tr><td><strong>24 Months / 2 Years</strong></td><td><strong>Former client sexual intimacies moratorium</strong>: Prohibited from sexual intimacies with former clients for at least <strong>24 Months</strong> (2 years) post-termination.</td><td>Rule 510-4-.02; APA Standard 10.08</td></tr>
+<tr><td><strong>3 Years</strong></td><td><strong>Senior psychologist practice equivalency</strong>: <strong>3 Years</strong> of continuous full-time practice (min 30 hrs/wk, 50 wks/yr) accepted in lieu of formal SWE.</td><td>Rule 510-3-.02</td></tr>
+<tr><td><strong>5 Years</strong></td><td><strong>Georgia Board member term</strong>: Members of the State Board of Examiners of Psychologists are appointed by the Governor to serve a <strong>5 Years</strong> term.</td><td>O.C.G.A. § 43-39-2</td></tr>
+<tr><td><strong>7 Years / Age 25</strong></td><td><strong>Adult clinical record retention</strong>: Clinical records for adult patients must be retained for at least <strong>7 Years</strong> from last date of service.</td><td>APA Standard 6.01; Rule 510-4</td></tr>
+<tr><td><strong>7 Years / Age 25</strong></td><td><strong>Minor clinical record retention</strong>: Clinical records for minor patients must be retained for at least <strong>7 Years</strong> past the age of majority (18 + 7 = <strong>Age 25</strong>).</td><td>APA Standard 6.01; Rule 510-4</td></tr>
+<tr><td><strong>10 Years</strong></td><td><strong>Senior Psychologist endorsement qualification</strong>: Minimum <strong>10 Years</strong> of continuous, unblemished licensure required for senior psychologist endorsement.</td><td>Rule 510-3-.02</td></tr>
+</tbody>
+</table>
+
+<h2>Table 4: Training Hours, Supervision Ratios &amp; Board Standards</h2>
+<table>
+<thead><tr><th>Category / Parameter</th><th>Statutory / Regulatory Requirement</th><th>Legal Authority</th></tr></thead>
+<tbody>
+<tr><td><strong>Supervision: SWE Ratio</strong></td><td>Minimum 1 hour of individual face-to-face supervision per 30 hours of Supervised Work Experience (<strong>1:30</strong>).</td><td>Rule 510-5-.06; Rule 510-2-.05</td></tr>
+<tr><td><strong>Supervision: Clinical Ratio</strong></td><td>Minimum 1 hour of supervision per 20 hours of direct face-to-face clinical service (<strong>1:20</strong>).</td><td>Rule 510-5-.06</td></tr>
+<tr><td><strong>Supervision: Max Supervisees</strong></td><td>Maximum of <strong>3 supervisees</strong> concurrently without prior Board approval.</td><td>Rule 510-5-.06</td></tr>
+<tr><td><strong>CE: Total Biennial Hours</strong></td><td><strong>40 hours</strong> of approved continuing education every 2-year biennium.</td><td>Rule 510-8-.01</td></tr>
+<tr><td><strong>CE: Ethics Requirement</strong></td><td>Minimum <strong>6 hours</strong> in professional ethics (Area I, live/synchronous).</td><td>Rule 510-8-.01</td></tr>
+<tr><td><strong>CE: Area I (Live/Interactive)</strong></td><td>Minimum <strong>20 hours</strong> required; all 40 hours may be taken in Area I.</td><td>Rule 510-8-.02</td></tr>
+<tr><td><strong>CE: Area II (Self-Study)</strong></td><td>Maximum <strong>16 hours</strong> allowed per biennium.</td><td>Rule 510-8-.02</td></tr>
+<tr><td><strong>Training: Pre-Doc Internship</strong></td><td>Minimum <strong>1,500 hours</strong> in an organized doctoral internship program.</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>Training: Post-Doc SWE</strong></td><td>Minimum <strong>1,500 hours</strong> of postdoctoral supervised work experience (or 2,000 hrs prior to conferral).</td><td>Rule 510-2-.05</td></tr>
+<tr><td><strong>Training: Direct Client Contact</strong></td><td>Minimum <strong>500 hours</strong> direct client contact during internship and minimum <strong>500 hours</strong> during postdoc SWE.</td><td>Rule 510-2-.04; Rule 510-2-.05</td></tr>
+<tr><td><strong>Residency Coursework Hours</strong></td><td>Minimum <strong>540 hours</strong> of in-person coursework (12 hrs/wk x 15 wks x 3 semesters) or 1 full-time year.</td><td>Rule 510-2-.04</td></tr>
+<tr><td><strong>EPPP Remediation: 3 Attempts</strong></td><td>3 EPPP failures require <strong>3 semester hours</strong> or <strong>15 CE hours</strong> in weak areas before retaking.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>EPPP Remediation: 6 Attempts</strong></td><td>6 EPPP failures require <strong>9 semester hours</strong> or <strong>45 CE hours</strong> in weak areas before retaking.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>Board Composition &amp; Members</strong></td><td><strong>6 Board Members</strong> (5 licensed psychologists + 1 consumer member appointed by Governor; 5-yr term).</td><td>O.C.G.A. § 43-39-2</td></tr>
+<tr><td><strong>Board Quorum</strong></td><td><strong>Quorum 4</strong> members required to conduct official Board business.</td><td>O.C.G.A. § 43-39-4</td></tr>
+<tr><td><strong>Passing Scores</strong></td><td><strong>75%</strong> passing score on GAMB Jurisprudence; <strong>75%</strong> on Board Oral Exam; scaled score 500 on EPPP Part 1 &amp; 2.</td><td>Rule 510-2-.01</td></tr>
+<tr><td><strong>Board Civil Fines</strong></td><td>Maximum civil penalty up to <strong>$500 Max Civil Fine</strong> per violation.</td><td>O.C.G.A. § 43-1-19(d)(7)</td></tr>
 </tbody>
 </table>
 </body>
@@ -3097,7 +3317,16 @@ def build_all_assets(
     if cheat_sheet_html.exists():
         cheat_sheet_html.unlink()
 
-    # 2. Compendium
+    # 2. Numbers & Deadlines Cram Sheet
+    numbers_cheat_sheet_md = docs_dir / "numbers_cheat_sheet.md"
+    numbers_cheat_sheet_html = docs_dir / "numbers_cheat_sheet.html"
+    numbers_cheat_sheet_pdf = pdfs_dir / "GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf"
+    generate_numbers_cheat_sheet(md_path=numbers_cheat_sheet_md, html_path=numbers_cheat_sheet_html)
+    compile_html_to_pdf(numbers_cheat_sheet_html, numbers_cheat_sheet_pdf)
+    if numbers_cheat_sheet_html.exists():
+        numbers_cheat_sheet_html.unlink()
+
+    # 3. Compendium
     compendium_q_md = docs_dir / "compendium_questions.md"
     compendium_k_md = docs_dir / "compendium_key.md"
     compendium_html = docs_dir / "compendium.html"
@@ -3112,20 +3341,21 @@ def build_all_assets(
     if compendium_html.exists():
         compendium_html.unlink()
 
-    # 3. Practice Forms A, B, C
+    # 4. Practice Forms A, B, C
     forms = generate_practice_forms(
         md_dir=docs_dir,
         pdf_dir=pdfs_dir,
         pool_path=pool_file,
     )
 
-    # 4. Web Quizzer
+    # 5. Web Quizzer
     web_index = web_dir / "index.html"
     generate_web_quizzer(output_path=web_index, pool_path=pool_file)
 
     return {
         "pdfs": [
             cheat_sheet_pdf,
+            numbers_cheat_sheet_pdf,
             compendium_pdf,
             forms["A"]["pdf_path"],
             forms["B"]["pdf_path"],
@@ -3133,6 +3363,7 @@ def build_all_assets(
         ],
         "docs": [
             cheat_sheet_md,
+            numbers_cheat_sheet_md,
             compendium_q_md,
             compendium_k_md,
             forms["A"]["md_path"],
