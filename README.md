@@ -25,20 +25,68 @@ Everything required to master the Georgia Jurisprudence Examination is packaged 
 
 | Product | Format | Description | Direct Access / Link |
 | :--- | :---: | :--- | :--- |
-| **Interactive Web Quizzer** | `index.html` | Timed 50-q PSI exam simulator, domain study drill, and missed question review. Runs 100% offline on any phone or laptop browser. | [web/index.html](web/index.html) |
-| **Statutory Cheat Sheet** | `PDF` | High-yield 3-page summary of all critical numbers, CE caps, timeframes, penalties, and exceptions. | [Download Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf) |
+| **Numbers & Deadlines Cram Sheet** | `PDF` | Chronological fast-lookup tables for every statutory hour, day, month, year, and supervision ratio on the exam. | [Download Numbers Cheat Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf) |
+| **Statutory Cheat Sheet** | `PDF` | Thematic deep-dive cross-referencing O.C.G.A. Titles 16, 19, 30, 37, 43, 50 and Board Rules Chapter 510. | [Download Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf) |
 | **435-Question Compendium** | `PDF` | Complete self-study worktext organized by domain (Part I: Questions without answers; Part II: Back-of-book annotated key & citations). | [Download Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf) |
 | **Practice Exam Form A** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form A PDF](pdfs/GAMB_Practice_Exam_Form_A.pdf) |
 | **Practice Exam Form B** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form B PDF](pdfs/GAMB_Practice_Exam_Form_B.pdf) |
 | **Practice Exam Form C** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form C PDF](pdfs/GAMB_Practice_Exam_Form_C.pdf) |
 | **Anki Flashcard Deck** | `TSV` | 435 atomic flashcards for Anki, AnkiDroid, and AnkiMobile. | [anki/gamb_deck.tsv](anki/gamb_deck.tsv) |
+| **Interactive Web Quizzer** | `index.html` | Timed 50-q PSI exam simulator, domain study drill, and missed question review. Runs 100% offline on any phone or laptop browser. | [web/index.html](web/index.html) |
 | **Terminal Simulator (CLI/TUI)** | Python | Full PSI exam simulation for technical users and developers. | `uv run gamb-exam test` |
 
 *(Note: Raw Markdown versions of all study guides and exam forms are also available in [`docs/study_materials/`](docs/study_materials/).)*
 
 ---
 
-### 🌐 1. Interactive Web Quizzer (`web/index.html`)
+### 📄 1. Printable & Tablet PDF Study Packets (`pdfs/`)
+
+Typeset with professional CSS Paged Media standards for crisp printing or digital tablet markup (Apple Books, GoodNotes, Notability, Adobe Acrobat):
+
+- **[Numbers & Deadlines Cram Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/numbers_cheat_sheet.md)):
+  - Chronological fast-lookup tables isolating all statutory hours, days, months, years, and ratios tested on the exam.
+  - **The Clock (Hours)**: 24h child abuse reporting (§ 19-7-5) and elder abuse report forwarding (§ 30-5-4); 48h Form 1013 involuntary exam window (§ 37-3-41(a)) and court affiant observation window (§ 37-3-41(b)); 72h peace officer Form 1013 execution window (§ 37-3-41(a)).
+  - **The Calendar (Days)**: 5d advance notice for out-of-state temporary practice (Rule 510-9-.03); 7d Form 1013 certificate and court order expiration (§ 37-3-41); 10d mandatory felony and drug conviction notification (§ 43-1-27, § 16-13-111); 30d GAMB re-examination wait period (Rule 510-2-.01), 30d out-of-state practice limit (§ 43-39-7), and 30d PSYPACT IPC limit (§ 43-39-20); 31d late license renewal grace period (Rule 510-7-.01) and CE audit cure window (Rule 510-8-.03); 60d provisional license reconsideration petition deadline (Rule 510-2-.01); 120d emergency rule maximum duration (§ 50-13-4(b)).
+  - **Months & Years**: 6 mo oral exam work sample validity (Rule 510-2-.01); 11–24 mo postdoctoral SWE completion window (Rule 510-2-.05); 12 mo temporary license duration (§ 43-39-14); 24 mo / 2 yr provisional license duration and former client sexual contact moratorium; 3 yr endorsement practice equivalent; 5 yr Board member terms; 7 yr adult record retention (and minor retention to age 25); 10 yr Senior Psychologist endorsement threshold.
+  - **Supervision & Standards**: 1:30 SWE ratio; 1:20 clinical contact ratio; max 3 supervisees concurrently; 500 direct client hours; 540 in-person residency hours; 3-attempt and 6-attempt EPPP remediation; 6 Board members (quorum of 4); 75% passing cutoff.
+- **[Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/cheat_sheet.md)):
+  - Comprehensive thematic synthesis organized across 4 major regulatory domains:
+    1. *Licensure, Supervision & Continuing Education* (Rules 510-2, 510-3, 510-8).
+    2. *Mandatory Reporting & Emergency Involuntary Commitment* (§§ 37-3-41, 19-7-5, 30-5-4).
+    3. *Confidentiality, Evidentiary Privilege & Prohibited Relationships* (§§ 43-39-16, 16-6-5.1, Rule 510-4).
+    4. *Recordkeeping, Practice Limits & Disciplinary Penalties* (§§ 43-39, 43-1, 16-13, 50-13).
+- **[435-Question Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf)** (Comprehensive Worktext):
+  - **Part I (Question Bank)**: All 435 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
+  - **Part II (Annotated Answer Key)**: Located in the back of the book, providing the correct option, primary statutory citation, and detailed legal rationale for every question.
+- **Practice Exam Booklets ([Form A](pdfs/GAMB_Practice_Exam_Form_A.pdf), [Form B](pdfs/GAMB_Practice_Exam_Form_B.pdf), [Form C](pdfs/GAMB_Practice_Exam_Form_C.pdf))**:
+  - Three distinct, non-overlapping 50-question mock exams generated with stratified blueprint quotas (14/13/9/6/5/3).
+  - Each booklet includes:
+    1. Official cover sheet with test administration instructions and 76% passing threshold.
+    2. 50 exam questions without answers.
+    3. Self-scoring bubble sheet grid for recording your responses.
+    4. Back-of-book answer key and detailed legal rationales for self-grading.
+
+---
+
+### 🗂️ 2. Spaced-Repetition Anki Flashcards (`anki/gamb_deck.tsv`)
+
+A curated deck of 435 atomic flashcards formatted for [Anki](https://apps.ankiweb.net/), [AnkiDroid](https://play.google.com/store/apps/details?id=com.ichi2.anki), and [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387).
+
+- **How to Import into Desktop Anki:**
+  1. Open Anki (2.1+), select **File > Import...**
+  2. Select [`anki/gamb_deck.tsv`](anki/gamb_deck.tsv).
+  3. Set **Type** to `Basic` and target deck to `GA Jurisprudence GAMB`.
+  4. Ensure field mapping is: Field 1 → `Front`, Field 2 → `Back`, Field 3 → `Tags`.
+  5. Check "Allow HTML in fields" and click **Import**.
+- **How to Study on Mobile:**
+  - Sync your desktop Anki collection to your free [AnkiWeb](https://ankiweb.net) account.
+  - Open **AnkiDroid** (Android) or **AnkiMobile** (iOS) and tap **Sync**.
+  - Or study directly in any mobile web browser via [AnkiWeb](https://ankiweb.net).
+- Full details and field mapping notes can be found in [`anki/README_import.md`](anki/README_import.md).
+
+---
+
+### 🌐 3. Interactive Web Quizzer (`web/index.html`)
 
 A standalone, self-contained single-file web application with all 435 questions, distractors, legal rationales, and statutory citations embedded directly in the file. It runs completely offline with zero installation or external network requests.
 
@@ -58,44 +106,6 @@ A standalone, self-contained single-file web application with all 435 questions,
   - **Domain Study Drill Mode:** Untimed practice filtered by any of the 6 official Georgia jurisprudence domains with immediate feedback and statutory citations.
   - **Missed Question Remediation:** Automatically remembers every question you miss using browser `localStorage` (100% private and persistent on your device).
   - **Accessibility & Themes:** Built-in Light and Dark modes, readable typography, and full keyboard navigation (`1`–`4` or `A`–`D`, `Next`, `Prev`, `Flag`).
-
----
-
-### 📄 2. Printable & Tablet PDF Study Packets (`pdfs/`)
-
-Typeset with professional CSS Paged Media standards for crisp printing or digital tablet markup (Apple Books, GoodNotes, Notability, Adobe Acrobat):
-
-- **[Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf)** (3 pages):
-  - Ultra-high-yield synthesis of every statutory number, deadline, CE cap, and exception on the exam.
-  - Highlights: 40 hrs CE (6 ethics, 3 psychopharmacology, 16 async max), 7-year adult record retention (7 yrs past age of majority for minors), 2-year post-termination sexual intimacy ban, mandatory child abuse reporting (§ 19-7-5: immediate oral report + 24-hr written report), elder abuse reporting (§ 30-5-4), and psychologist-patient privilege (§ 43-39-16).
-- **[435-Question Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf)** (Comprehensive Worktext):
-  - **Part I (Question Bank)**: All 435 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
-  - **Part II (Annotated Answer Key)**: Located in the back of the book, providing the correct option, primary statutory citation, and detailed legal rationale for every question.
-- **Practice Exam Booklets ([Form A](pdfs/GAMB_Practice_Exam_Form_A.pdf), [Form B](pdfs/GAMB_Practice_Exam_Form_B.pdf), [Form C](pdfs/GAMB_Practice_Exam_Form_C.pdf))**:
-  - Three distinct, non-overlapping 50-question mock exams generated with stratified blueprint quotas (14/13/9/6/5/3).
-  - Each booklet includes:
-    1. Official cover sheet with test administration instructions and 76% passing threshold.
-    2. 50 exam questions without answers.
-    3. Self-scoring bubble sheet grid for recording your responses.
-    4. Back-of-book answer key and detailed legal rationales for self-grading.
-
----
-
-### 🗂️ 3. Spaced-Repetition Anki Flashcards (`anki/gamb_deck.tsv`)
-
-A curated deck of 435 atomic flashcards formatted for [Anki](https://apps.ankiweb.net/), [AnkiDroid](https://play.google.com/store/apps/details?id=com.ichi2.anki), and [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387).
-
-- **How to Import into Desktop Anki:**
-  1. Open Anki (2.1+), select **File > Import...**
-  2. Select [`anki/gamb_deck.tsv`](anki/gamb_deck.tsv).
-  3. Set **Type** to `Basic` and target deck to `GA Jurisprudence GAMB`.
-  4. Ensure field mapping is: Field 1 → `Front`, Field 2 → `Back`, Field 3 → `Tags`.
-  5. Check "Allow HTML in fields" and click **Import**.
-- **How to Study on Mobile:**
-  - Sync your desktop Anki collection to your free [AnkiWeb](https://ankiweb.net) account.
-  - Open **AnkiDroid** (Android) or **AnkiMobile** (iOS) and tap **Sync**.
-  - Or study directly in any mobile web browser via [AnkiWeb](https://ankiweb.net).
-- Full details and field mapping notes can be found in [`anki/README_import.md`](anki/README_import.md).
 
 ---
 
@@ -244,7 +254,7 @@ The full 435-question examination pool (`gamb_exam/question_pool.json`) has unde
 # Run pytest with uv
 uv run pytest
 ```
-All 72 unit, pool, CLI, TUI, and asset build tests verify:
+All 78 unit, pool, CLI, TUI, and asset build tests verify:
 - SQLite question pool integrity, unique IDs 1–435, schema conformity, distractor uniqueness, and citation validity (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
 - Stratified 50-question mock exam sampler and Markdown export formatting (`test_generator.py`).
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
