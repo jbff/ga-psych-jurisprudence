@@ -2,7 +2,7 @@
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:
-> The study materials, question pools, flashcards, and practice exams contained in this repository are **independently generated study aids** and are **NOT official examination questions** from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State and Provincial Psychology Boards (ASPPB). No guarantee, warranty, or representation is made regarding the accuracy, completeness, timeliness, or utility of these materials, or that studying them will result in a passing score on the Georgia Jurisprudence Examination (GAMB). Use of these materials is entirely at your own risk. The authors and contributors disclaim all liability for any claims, damages, direct or consequential losses, or examination failures arising from the use of or reliance upon these materials.
+> The study materials, question pools, flashcards, reference sheets, and practice exams contained in this repository are **independently authored study aids** and are **NOT official examination materials** from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State and Provincial Psychology Boards (ASPPB). While based on public statutory and regulatory texts (O.C.G.A. and Georgia Board Rules Chapter 510), these materials **have not been verified, reviewed, or approved by any licensing board, testing vendor, or regulatory authority**. Absolutely no claim, warranty, or representation is made that this content is official, correct, current, or complete, or that studying it will result in a passing score on the Georgia Jurisprudence Examination (GAMB). Laws and regulations change, and these materials may contain errors or omissions. Use of these materials is entirely at your own risk. The author and contributors disclaim all liability for any claims, damages, direct or consequential losses, examination outcomes, or reliance upon these materials.
 
 ---
 
@@ -227,7 +227,7 @@ uv run gamb-exam test
 
 ## Study Corpus & Source Materials
 
-The study corpus in `study_corpus/` represents the verified primary legal sources governing the practice of psychology in Georgia. Every document has been audited for statutory currency:
+The study corpus in `study_corpus/` contains reference copies of Georgia statutes and administrative rules governing the practice of psychology in Georgia:
 
 - **`study_corpus/STATUTES_OC_GA.md`**: Complete, unabridged primary text of all 44 Georgia Code sections on the Board reference list (Title 43 Ch. 39 Psychologists, Title 43 Ch. 1 General Provisions, Title 19 Ch. 7 Child Abuse Reporting, Title 30 Ch. 5 Disabled Adults, Title 31 Health, Title 37 Mental Health, Title 16 Crimes, Title 24 Evidence, Title 50 Open Records).
 - **`study_corpus/RULES_510_FULL.md`**: Complete official text of the Rules and Regulations of the State of Georgia, Department 510 (State Board of Examiners of Psychologists), Chapters 510-1 through 510-10, including the complete Code of Conduct.

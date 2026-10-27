@@ -382,8 +382,8 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "[!WARNING]" not in content
     assert "**" not in content
     assert "&gt; " not in content
-    assert "<strong>independently generated study aids</strong>" in content
-    assert "<strong>NOT official examination questions</strong>" in content
+    assert "<strong>independently authored study aids</strong>" in content
+    assert "<strong>NOT official examination materials</strong>" in content
     assert "LEGAL &amp; REGULATORY DISCLAIMER:" in content
     assert "const QUESTION_BANK =" in content
     # Check that all 435 questions are serialized

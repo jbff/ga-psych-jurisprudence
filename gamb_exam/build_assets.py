@@ -25,6 +25,12 @@ from gamb_exam.seed import (
 POOL_VERSION: str = QUESTION_POOL_VERSION
 POOL_DATE: str = QUESTION_POOL_DATE
 
+HTML_LEGAL_DISCLAIMER_BLOCK: str = (
+    f'<div class="disclaimer">\n'
+    f'<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> {LEGAL_DISCLAIMER_HTML}\n'
+    f'</div>'
+)
+
 OFFICIAL_DOMAIN_ORDER: list[str] = [
     "prof-relationships",
     "licensure",
@@ -102,6 +108,7 @@ h2 {
     border-bottom: 1pt solid #e2e8f0;
     padding-bottom: 2pt;
     page-break-after: avoid;
+    break-after: avoid;
 }
 
 h3 {
@@ -110,6 +117,7 @@ h3 {
     margin-top: 10pt;
     margin-bottom: 4pt;
     page-break-after: avoid;
+    break-after: avoid;
 }
 
 table {
@@ -117,13 +125,23 @@ table {
     border-collapse: collapse;
     margin-top: 6pt;
     margin-bottom: 10pt;
-    page-break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
     font-size: 9pt;
+}
+
+tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
 }
 
 th, td {
     border: 1pt solid #cbd5e0;
-    padding: 4pt 6pt;
+    padding: 3.5pt 5.5pt;
     text-align: left;
     vertical-align: top;
 }
@@ -332,9 +350,7 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <div class="author-attribution">
 &copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a>
 </div>
-<div class="disclaimer">
-<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
-</div>
+{HTML_LEGAL_DISCLAIMER_BLOCK}
 
 <h2>1. Licensure, Supervision, Examination &amp; Continuing Education (Rules 510-2, 510-3, 510-7, 510-8)</h2>
 <table>
@@ -361,6 +377,8 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 </tbody>
 </table>
 
+<div class="page-break"></div>
+
 <h2>2. Mandatory Reporting Overrides &amp; Emergency Commitment</h2>
 <table>
 <thead><tr><th>Category</th><th>Legal Rule &amp; Action Required</th><th>Statute</th></tr></thead>
@@ -376,8 +394,6 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 </tbody>
 </table>
 
-<div class="page-break"></div>
-
 <h2>3. Confidentiality, Privilege &amp; Prohibited Relationships</h2>
 <table>
 <thead><tr><th>Subject</th><th>Statutory Standard</th><th>Authority</th></tr></thead>
@@ -389,6 +405,8 @@ def generate_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <tr><td><strong>Former Client Sexual Contact</strong></td><td>Prohibited for at least <strong>2 years</strong> following cessation of professional services under APA Ethics Code (Standard 10.08).</td><td>Rule 510-4-.02; APA Standard 10.08</td></tr>
 </tbody>
 </table>
+
+<div class="page-break"></div>
 
 <h2>4. Recordkeeping, Practice Limits &amp; Disciplinary Penalties</h2>
 <table>
@@ -526,9 +544,7 @@ def generate_numbers_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <div class="author-attribution">
 &copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a>
 </div>
-<div class="disclaimer">
-<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This reference sheet is an independently authored study aid and is NOT official examination material from the Georgia Board or PSI Services. Verified against O.C.G.A. and Board Rules Chapter 510.
-</div>
+{HTML_LEGAL_DISCLAIMER_BLOCK}
 
 <h2>Table 1: The Clock &mdash; Hours</h2>
 <table>
@@ -587,6 +603,8 @@ def generate_numbers_cheat_sheet(md_path: Path, html_path: Path) -> None:
 <tr><td><strong>10 Years</strong></td><td><strong>Senior Psychologist endorsement qualification</strong>: Minimum <strong>10 Years</strong> of continuous, unblemished licensure required for senior psychologist endorsement.</td><td>Rule 510-3-.02</td></tr>
 </tbody>
 </table>
+
+<div class="page-break"></div>
 
 <h2>Table 4: Training Hours, Supervision Ratios &amp; Board Standards</h2>
 <table>
@@ -740,9 +758,7 @@ def generate_compendium(
         f'<div style="font-size: 8.5pt; color: #4a5568; margin-top: 4pt; margin-bottom: 4pt;"><strong>Question Pool:</strong> Version {POOL_VERSION} &bull; <strong>Release Date:</strong> {POOL_DATE} &bull; <strong>Total Questions:</strong> {total_qs}</div>',
         '<div class="author-attribution">&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com">http://johnbflemingphd.com</a></div>',
         "<h2>Part I: Question Bank by Domain</h2>",
-        '<div class="disclaimer">',
-        "<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This compendium is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. and Board Rules Chapter 510.",
-        "</div>",
+        HTML_LEGAL_DISCLAIMER_BLOCK,
     ]
 
     for d_idx, domain in enumerate(all_domains, 1):
@@ -1014,6 +1030,8 @@ def generate_practice_forms(
             "| Recordkeeping and Fees | `recordkeeping` | 3 | / 3 | 2 / 3 (67%) | [ ] Meets Target  [ ] Needs Review |",
             "| **Total Examination** | **All Domains** | **50** | **/ 50** | **38 / 50 (76%)** | **[ ] PASS  [ ] FAIL** |",
             "",
+            "---",
+            "",
             "### Quick-Reference Answer Key",
             "",
             "| Q# | Domain | Correct Option | Legal Citation |",
@@ -1108,9 +1126,7 @@ def generate_practice_forms(
             '</ul>',
             '<p style="margin: 4pt 0 0 0;"><strong>Booklet Layout:</strong> Section 1: Questions (1–50) | Section 2: Bubble Sheet | Section 3: Answer Key &amp; Explanations</p>',
             '</div>',
-            '<div class="disclaimer">',
-            '<strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> This practice exam is an independently authored study aid and is NOT official examination material from the Georgia State Board of Examiners of Psychologists or PSI Services LLC. Verified against O.C.G.A. Title 43, Chapter 39 and Board Rules Chapter 510.',
-            '</div>',
+            HTML_LEGAL_DISCLAIMER_BLOCK,
             '<div class="page-break"></div>',
             f'<h2>Section 1: Examination Questions &mdash; Form {form_letter}</h2>',
         ]
@@ -1197,6 +1213,7 @@ def generate_practice_forms(
             '<tr style="background-color: #ebf8ff; font-weight: bold;"><td>Total Examination</td><td>All Domains</td><td>50</td><td>/ 50</td><td>38 / 50 (76%)</td><td>[ ] PASS &nbsp; [ ] FAIL</td></tr>',
             '</tbody>',
             '</table>',
+            '<div class="page-break"></div>',
             '<h3>Quick-Reference Answer Key</h3>',
             '<table>',
             '<thead><tr><th style="width: 8%; text-align: center;">Q#</th><th style="width: 32%;">Domain</th><th style="width: 15%; text-align: center;">Correct Option</th><th style="width: 45%;">Legal Authority</th></tr></thead>',

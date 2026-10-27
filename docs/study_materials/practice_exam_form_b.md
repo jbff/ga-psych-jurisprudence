@@ -6,7 +6,7 @@
 
 > [!WARNING]
 > **LEGAL & REGULATORY DISCLAIMER**:
-> The study materials, question pools, flashcards, and practice exams contained in this repository are **independently generated study aids** and are **NOT official examination questions** from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State and Provincial Psychology Boards (ASPPB). No guarantee, warranty, or representation is made regarding the accuracy, completeness, timeliness, or utility of these materials, or that studying them will result in a passing score on the Georgia Jurisprudence Examination (GAMB). Use of these materials is entirely at your own risk. The authors and contributors disclaim all liability for any claims, damages, direct or consequential losses, or examination failures arising from the use of or reliance upon these materials.
+> The study materials, question pools, flashcards, reference sheets, and practice exams contained in this repository are **independently authored study aids** and are **NOT official examination materials** from the Georgia State Board of Examiners of Psychologists, PSI Services LLC, or the Association of State and Provincial Psychology Boards (ASPPB). While based on public statutory and regulatory texts (O.C.G.A. and Georgia Board Rules Chapter 510), these materials **have not been verified, reviewed, or approved by any licensing board, testing vendor, or regulatory authority**. Absolutely no claim, warranty, or representation is made that this content is official, correct, current, or complete, or that studying it will result in a passing score on the Georgia Jurisprudence Examination (GAMB). Laws and regulations change, and these materials may contain errors or omissions. Use of these materials is entirely at your own risk. The author and contributors disclaim all liability for any claims, damages, direct or consequential losses, examination outcomes, or reliance upon these materials.
 
 ---
 
@@ -441,6 +441,8 @@ Record your responses below. Mark only one letter per item. After completing the
 | Privacy and Confidentiality | `privacy` | 5 | / 5 | 4 / 5 (80%) | [ ] Meets Target  [ ] Needs Review |
 | Recordkeeping and Fees | `recordkeeping` | 3 | / 3 | 2 / 3 (67%) | [ ] Meets Target  [ ] Needs Review |
 | **Total Examination** | **All Domains** | **50** | **/ 50** | **38 / 50 (76%)** | **[ ] PASS  [ ] FAIL** |
+
+---
 
 ### Quick-Reference Answer Key
 
