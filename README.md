@@ -49,17 +49,10 @@ Everything required to master the Georgia Jurisprudence Examination is packaged 
 Typeset with professional CSS Paged Media standards for crisp printing or digital tablet markup (Apple Books, GoodNotes, Notability, Adobe Acrobat):
 
 - **[Numbers & Deadlines Cram Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/numbers_cheat_sheet.md)):
-  - Chronological fast-lookup tables isolating all statutory hours, days, months, years, and ratios tested on the exam.
-  - **The Clock (Hours)**: 24h child abuse reporting (§ 19-7-5) and elder abuse report forwarding (§ 30-5-4); 48h Form 1013 involuntary exam window (§ 37-3-41(a)) and court affiant observation window (§ 37-3-41(b)); 72h peace officer Form 1013 execution window (§ 37-3-41(a)).
-  - **The Calendar (Days)**: 5d advance notice for out-of-state temporary practice (Rule 510-9-.03); 7d Form 1013 certificate and court order expiration (§ 37-3-41); 10d mandatory felony and drug conviction notification (§ 43-1-27, § 16-13-111); 30d GAMB re-examination wait period (Rule 510-2-.01), 30d out-of-state practice limit (§ 43-39-7), and 30d PSYPACT IPC limit (§ 43-39-20); 31d late license renewal grace period (Rule 510-7-.01) and CE audit cure window (Rule 510-8-.03); 60d provisional license reconsideration petition deadline (Rule 510-2-.01); 120d emergency rule maximum duration (§ 50-13-4(b)).
-  - **Months & Years**: 6 mo oral exam work sample validity (Rule 510-2-.01); 11–24 mo postdoctoral SWE completion window (Rule 510-2-.05); 12 mo temporary license duration (§ 43-39-14); 24 mo / 2 yr provisional license duration and former client sexual contact moratorium; 3 yr endorsement practice equivalent; 5 yr Board member terms; 7 yr adult record retention (and minor retention to age 25); 10 yr Senior Psychologist endorsement threshold.
-  - **Supervision & Standards**: 1:30 SWE ratio; 1:20 clinical contact ratio; max 3 supervisees concurrently; 500 direct client hours; 540 in-person residency hours; 3-attempt and 6-attempt EPPP remediation; 6 Board members (quorum of 4); 75% passing cutoff.
+  - Fast-lookup chronological cram sheet designed specifically for memorizing numerical test items.
+  - Groups every testable statutory timeframe into four clean tables: **The Clock (Hours)** for emergency commitments and mandatory reporting; **The Calendar (Days)** for application deadlines, temporary practice limits, conviction notices, and late renewal grace periods; **Months & Years** for training completion windows, license durations, and record retention; and **Supervision & Standards** for supervision ratios, CE caps, and passing cutoffs.
 - **[Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/cheat_sheet.md)):
-  - Comprehensive thematic synthesis organized across 4 major regulatory domains:
-    1. *Licensure, Supervision & Continuing Education* (Rules 510-2, 510-3, 510-8).
-    2. *Mandatory Reporting & Emergency Involuntary Commitment* (§§ 37-3-41, 19-7-5, 30-5-4).
-    3. *Confidentiality, Evidentiary Privilege & Prohibited Relationships* (§§ 43-39-16, 16-6-5.1, Rule 510-4).
-    4. *Recordkeeping, Practice Limits & Disciplinary Penalties* (§§ 43-39, 43-1, 16-13, 50-13).
+  - Thematic quick-reference summary cross-referencing Georgia Code and Board rules across 4 core domains: *Licensure, Supervision & Continuing Education*; *Mandatory Reporting & Emergency Involuntary Commitment*; *Confidentiality, Evidentiary Privilege & Prohibited Relationships*; and *Recordkeeping, Practice Limits & Disciplinary Penalties*.
 - **[435-Question Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf)** (Comprehensive Worktext):
   - **Part I (Question Bank)**: All 435 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
   - **Part II (Annotated Answer Key)**: Located in the back of the book, providing the correct option, primary statutory citation, and detailed legal rationale for every question.
