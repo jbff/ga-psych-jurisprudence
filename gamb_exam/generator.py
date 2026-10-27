@@ -98,7 +98,7 @@ def shuffle_question_options(
 
 def generate_exam_questions(
     db_path: Path | str | None = None,
-    prioritize_unseen: bool = True,
+    prioritize_unseen: bool = False,
     shuffle_options: bool = True,
     rng: random.Random | None = None,
 ) -> list[dict[str, Any]]:
@@ -106,7 +106,7 @@ def generate_exam_questions(
 
     Args:
         db_path: Path to the SQLite database. If None, uses DEFAULT_DB_PATH.
-        prioritize_unseen: If True, prioritizes questions answered least often in prior sessions.
+        prioritize_unseen: If True, prioritizes questions answered least often in prior sessions (default False).
         shuffle_options: If True, shuffles options A, B, C, D dynamically.
         rng: Optional Random instance for deterministic generation.
 

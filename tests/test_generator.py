@@ -89,7 +89,7 @@ def test_shuffle_options_false():
 
 
 def test_prioritize_unseen(tmp_db_path: Path):
-    """Verifies prioritize_unseen=True prioritizes questions with fewest prior answers."""
+    """Verifies prioritize_unseen=True prioritizes questions with fewest prior answers and default is False."""
     seed_database(tmp_db_path)
 
     # Inspect questions in 'recordkeeping' domain (quota = 3, total = 21)
@@ -115,7 +115,11 @@ def test_prioritize_unseen(tmp_db_path: Path):
             db_path=tmp_db_path,
         )
 
-    # Generate exam questions with prioritize_unseen=True
+    # Default generate_exam_questions has prioritize_unseen=False
+    default_questions = generate_exam_questions(db_path=tmp_db_path)
+    assert len(default_questions) == 50
+
+    # Explicitly generate exam questions with prioritize_unseen=True
     questions = generate_exam_questions(db_path=tmp_db_path, prioritize_unseen=True)
     generated_rk_ids = {q["id"] for q in questions if q["domain"] == "recordkeeping"}
 
