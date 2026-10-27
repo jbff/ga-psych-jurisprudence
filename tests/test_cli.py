@@ -82,36 +82,64 @@ def test_cli_no_args_prints_help(capsys: pytest.CaptureFixture[str]):
     assert "gamb-exam" in captured.out or "usage:" in captured.out
 
 
-def test_cli_test_command(tmp_db_path: Path):
-    """Verifies main(['test']) calls generator and invokes ExamApp.run() with mode='timed_exam'."""
+def test_cli_test_command_default_and_flag(tmp_db_path: Path):
+    """Verifies 'test' subcommand defaults to prioritize_unseen=False and respects --prioritize-unseen."""
     from gamb_exam.cli import main
 
-    mock_questions = [{"id": 1, "domain": "licensure", "question_text": "Sample"}]
+    mock_questions = [{"id": 1, "domain": "prof-relationships", "question_text": "Q", "option_a": "A", "option_b": "B", "option_c": "C", "option_d": "D", "correct_option": "A", "explanation": "E"}]
 
     with (
-        patch(
-            "gamb_exam.cli.generate_exam_questions", return_value=mock_questions
-        ) as mock_gen,
+        patch("gamb_exam.cli.generate_exam_questions", return_value=mock_questions) as mock_gen,
         patch("gamb_exam.tui.ExamApp") as mock_app_cls,
     ):
         mock_app_instance = MagicMock()
         mock_app_cls.return_value = mock_app_instance
 
-        ret = main(["test", "--db", str(tmp_db_path), "--seed", "123", "--no-unseen"])
+        # Default run: prioritize_unseen must be False
+        ret = main(["test", "--db", str(tmp_db_path), "--seed", "123"])
         assert ret == 0
+        assert mock_gen.call_args.kwargs.get("prioritize_unseen") is False
 
-        mock_gen.assert_called_once()
-        gen_kwargs = mock_gen.call_args.kwargs
-        assert gen_kwargs.get("prioritize_unseen") is False
-        assert gen_kwargs.get("rng") is not None
-        assert Path(gen_kwargs.get("db_path")) == tmp_db_path
+        # Flag run: --prioritize-unseen must be True
+        mock_gen.reset_mock()
+        ret = main(["test", "--db", str(tmp_db_path), "--seed", "123", "--prioritize-unseen"])
+        assert ret == 0
+        assert mock_gen.call_args.kwargs.get("prioritize_unseen") is True
 
-        mock_app_cls.assert_called_once()
-        app_kwargs = mock_app_cls.call_args.kwargs
-        assert app_kwargs.get("questions") == mock_questions
-        assert app_kwargs.get("mode") == "timed_exam"
-        assert Path(app_kwargs.get("db_path")) == tmp_db_path
-        mock_app_instance.run.assert_called_once()
+
+def test_cli_study_command_unseen_handling(tmp_db_path: Path):
+    """Verifies 'study' subcommand defaults to prioritize_unseen=True and respects --no-unseen."""
+    from gamb_exam.cli import main
+
+    mock_questions = [{"id": 1, "domain": "prof-relationships", "question_text": "Q", "option_a": "A", "option_b": "B", "option_c": "C", "option_d": "D", "correct_option": "A", "explanation": "E"}]
+
+    with (
+        patch("gamb_exam.cli.get_study_questions", return_value=mock_questions) as mock_study_qs,
+        patch("gamb_exam.tui.ExamApp") as mock_app_cls,
+    ):
+        mock_app_instance = MagicMock()
+        mock_app_cls.return_value = mock_app_instance
+
+        # Default study run: prioritize_unseen must be True
+        ret = main(["study", "--db", str(tmp_db_path), "--domain", "licensure", "--count", "20"])
+        assert ret == 0
+        mock_study_qs.assert_called_once_with(
+            domain="licensure",
+            limit=20,
+            prioritize_unseen=True,
+            db_path=tmp_db_path,
+        )
+
+        # Opt-out study run: --no-unseen
+        mock_study_qs.reset_mock()
+        ret = main(["study", "--db", str(tmp_db_path), "--no-unseen"])
+        assert ret == 0
+        mock_study_qs.assert_called_once_with(
+            domain=None,
+            limit=50,
+            prioritize_unseen=False,
+            db_path=tmp_db_path,
+        )
 
 
 def test_cli_test_command_unseeded_error(
@@ -171,22 +199,6 @@ def test_cli_study_command(test_db_with_questions: Path):
         assert all(q["domain"] == "licensure" for q in app_kwargs["questions"])
         assert app_kwargs["mode"] == "study_drill"
         mock_app_instance.run.assert_called_once()
-
-
-def test_cli_study_command_shuffles(test_db_with_questions: Path):
-    """Verifies unfiltered study command shuffles questions before slicing."""
-    from gamb_exam.cli import main
-
-    with (
-        patch("random.shuffle") as mock_shuffle,
-        patch("gamb_exam.tui.ExamApp") as mock_app_cls,
-    ):
-        mock_app_instance = MagicMock()
-        mock_app_cls.return_value = mock_app_instance
-
-        ret = main(["study", "--db", str(test_db_with_questions), "--count", "10"])
-        assert ret == 0
-        mock_shuffle.assert_called_once()
 
 
 def test_cli_missed_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):

@@ -15,10 +15,9 @@ from rich.table import Table
 from gamb_exam.db import (
     DEFAULT_DB_PATH,
     ensure_db_initialized,
-    get_all_questions,
     get_missed_questions,
-    get_questions_by_domain,
     get_session_history,
+    get_study_questions,
 )
 from gamb_exam.generator import (
     export_mock_markdown,
@@ -35,7 +34,7 @@ def handle_test(args: argparse.Namespace) -> int:
     try:
         questions = generate_exam_questions(
             db_path=args.db,
-            prioritize_unseen=not args.no_unseen,
+            prioritize_unseen=args.prioritize_unseen,
             rng=rng,
         )
     except (ValueError, sqlite3.Error) as err:
@@ -55,18 +54,12 @@ def handle_test(args: argparse.Namespace) -> int:
 def handle_study(args: argparse.Namespace) -> int:
     """Handle the 'study' subcommand to run an untimed drill with instant feedback."""
     ensure_db_initialized(args.db)
-    if args.domain:
-        questions = get_questions_by_domain(
-            args.domain, db_path=args.db, limit=None
-        )
-        random.shuffle(questions)
-        if args.count and len(questions) > args.count:
-            questions = questions[: args.count]
-    else:
-        questions = get_all_questions(db_path=args.db)
-        random.shuffle(questions)
-        if args.count and len(questions) > args.count:
-            questions = questions[: args.count]
+    questions = get_study_questions(
+        domain=args.domain,
+        limit=args.count,
+        prioritize_unseen=not args.no_unseen,
+        db_path=args.db,
+    )
 
     if not questions:
         console.print("[yellow]No questions found for study drill.[/yellow]")
@@ -257,10 +250,10 @@ def create_parser() -> argparse.ArgumentParser:
         help=f"Path to SQLite database file (default: {DEFAULT_DB_PATH})",
     )
     test_parser.add_argument(
-        "--no-unseen",
+        "--prioritize-unseen",
         action="store_true",
         default=False,
-        help="Disable unseen question prioritization",
+        help="Prioritize questions answered least often in prior sessions",
     )
     test_parser.add_argument(
         "--seed",
@@ -299,6 +292,12 @@ def create_parser() -> argparse.ArgumentParser:
         type=int,
         default=50,
         help="Number of questions to include in the study drill (default: 50)",
+    )
+    study_parser.add_argument(
+        "--no-unseen",
+        action="store_true",
+        default=False,
+        help="Disable unseen question prioritization and sample randomly",
     )
     study_parser.set_defaults(func=handle_study)
 
