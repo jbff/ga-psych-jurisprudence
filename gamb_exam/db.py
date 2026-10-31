@@ -453,3 +453,31 @@ def get_study_progress(db_path: Path | str | None = None) -> list[dict[str, Any]
     finally:
         conn.close()
 
+
+def get_last_wrong_questions(db_path: Path | str | None = None) -> list[dict[str, Any]]:
+    """Return questions whose most recent answered attempt was incorrect.
+
+    Unlike get_missed_questions, skipped rows are excluded before ranking so a
+    later skip cannot mask or replace an earlier wrong answer.
+    """
+    conn = get_connection(db_path)
+    try:
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT q.*
+            FROM questions q
+            JOIN (
+                SELECT question_id, is_correct,
+                       ROW_NUMBER() OVER (PARTITION BY question_id ORDER BY id DESC) AS rn
+                FROM session_answers
+                WHERE selected_option IS NOT NULL
+            ) latest ON q.id = latest.question_id AND latest.rn = 1
+            WHERE latest.is_correct = 0
+            ORDER BY q.domain ASC, q.id ASC
+            """
+        )
+        return [dict(row) for row in cursor.fetchall()]
+    finally:
+        conn.close()
+

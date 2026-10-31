@@ -10,6 +10,7 @@ from gamb_exam.db import (
     create_session,
     get_all_questions,
     get_connection,
+    get_last_wrong_questions,
     get_missed_questions,
     get_question_by_id,
     get_questions_by_domain,
@@ -349,4 +350,34 @@ def test_get_study_progress(tmp_db_path: Path):
     assert privacy["seen_items"] == 0
     assert privacy["clean_items"] == 0
     assert privacy["ever_wrong_items"] == 0
+
+
+def test_get_last_wrong_questions(tmp_db_path: Path):
+    """Returns questions whose most recent answered attempt was wrong, ignoring skips."""
+    init_db(tmp_db_path)
+
+    q1 = insert_question(sample_question_data("competence", "Q1"), db_path=tmp_db_path)
+    q2 = insert_question(sample_question_data("assessment", "Q2"), db_path=tmp_db_path)
+    q3 = insert_question(sample_question_data("privacy", "Q3"), db_path=tmp_db_path)
+    q4 = insert_question(sample_question_data("recordkeeping", "Q4"), db_path=tmp_db_path)
+    q5 = insert_question(sample_question_data("licensure", "Q5"), db_path=tmp_db_path)
+
+    s1 = create_session(mode="study_drill", total_questions=5, db_path=tmp_db_path)
+    save_session_answer(s1, q1, "B", is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q2, "B", is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q3, None, is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q4, "D", is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q5, "A", is_correct=True, db_path=tmp_db_path)
+
+    s2 = create_session(mode="timed_exam", total_questions=3, db_path=tmp_db_path)
+    save_session_answer(s2, q1, "A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(s2, q2, None, is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s2, q5, None, is_correct=False, db_path=tmp_db_path)
+
+    missed = get_last_wrong_questions(db_path=tmp_db_path)
+
+    # q1 graduated out (last answered correct); q3 never answered;
+    # q5's later skip does not count as its last answered attempt.
+    assert [q["id"] for q in missed] == [q2, q4]
+    assert missed[0]["question_text"] == "What is the rule regarding dual relationships in scenario Q2?"
 
