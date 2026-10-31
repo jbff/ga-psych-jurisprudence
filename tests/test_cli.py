@@ -419,3 +419,136 @@ def test_build_assets_cli_failure(tmp_path: Path, monkeypatch: pytest.MonkeyPatc
     captured = capsys.readouterr()
     assert "Error building study assets: Disk full error" in captured.out
 
+
+def test_cli_progress_command_empty(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):
+    """Progress with no answers prints zeroed stats and exits 0.
+
+    handle_progress calls ensure_db_initialized, so an empty DB is auto-seeded
+    with the 435-question pool; the learned counts still start at zero.
+    """
+    from gamb_exam.cli import main
+
+    init_db(tmp_db_path)
+
+    ret = main(["progress", "--db", str(tmp_db_path)])
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "Items studied: 0 / 435 (0.0%)" in out
+    assert "Clean: 0 (0.0%)" in out
+    assert "Ever wrong: 0 (0.0%)" in out
+    assert "Competence" in out
+
+
+def test_cli_progress_command(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):
+    """Progress reports seen/clean/ever-wrong counts and percentages."""
+    from gamb_exam.cli import main
+
+    init_db(tmp_db_path)
+    q1 = insert_question(
+        {
+            "domain": "competence",
+            "subtopic": "ethics",
+            "source_citation": "O.C.G.A. § 43-39-1",
+            "question_text": "Competence question?",
+            "option_a": "A",
+            "option_b": "B",
+            "option_c": "C",
+            "option_d": "D",
+            "correct_option": "A",
+            "explanation": "Because.",
+        },
+        db_path=tmp_db_path,
+    )
+    q2 = insert_question(
+        {
+            "domain": "assessment",
+            "subtopic": "testing",
+            "source_citation": "O.C.G.A. § 43-39-2",
+            "question_text": "Assessment question?",
+            "option_a": "A",
+            "option_b": "B",
+            "option_c": "C",
+            "option_d": "D",
+            "correct_option": "A",
+            "explanation": "Because.",
+        },
+        db_path=tmp_db_path,
+    )
+    s1 = create_session(mode="study_drill", total_questions=2, db_path=tmp_db_path)
+    save_session_answer(s1, q1, "B", is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q2, "A", is_correct=True, db_path=tmp_db_path)
+
+    ret = main(["progress", "--db", str(tmp_db_path)])
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "Items studied: 2 / 2 (100.0%)" in out
+    assert "Clean: 1 (50.0%)" in out
+    assert "Ever wrong: 1 (50.0%)" in out
+    assert "Competence" in out
+    assert "Assessment" in out
+
+
+def test_cli_progress_missed_list(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):
+    """--missed lists last-answered-wrong questions and clears when graduated."""
+    from gamb_exam.cli import main
+
+    init_db(tmp_db_path)
+    q1 = insert_question(
+        {
+            "domain": "competence",
+            "subtopic": "ethics",
+            "source_citation": "O.C.G.A. § 43-39-1",
+            "question_text": "Dual relationship rule?",
+            "option_a": "A",
+            "option_b": "B",
+            "option_c": "C",
+            "option_d": "D",
+            "correct_option": "A",
+            "explanation": "Because.",
+        },
+        db_path=tmp_db_path,
+    )
+    s1 = create_session(mode="study_drill", total_questions=1, db_path=tmp_db_path)
+    save_session_answer(s1, q1, "B", is_correct=False, db_path=tmp_db_path)
+
+    ret = main(["progress", "--db", str(tmp_db_path), "--missed"])
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "Currently Missed" in out
+    assert "Dual" in out
+
+    s2 = create_session(mode="study_drill", total_questions=1, db_path=tmp_db_path)
+    save_session_answer(s2, q1, "A", is_correct=True, db_path=tmp_db_path)
+
+    ret = main(["progress", "--db", str(tmp_db_path), "--missed"])
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "No questions currently missed." in out
+
+
+def test_cli_progress_unknown_domain(tmp_db_path: Path, capsys: pytest.CaptureFixture[str]):
+    """An unrecognized domain slug is shown after the canonical six without error."""
+    from gamb_exam.cli import main
+
+    init_db(tmp_db_path)
+    insert_question(
+        {
+            "domain": "new-domain",
+            "subtopic": "misc",
+            "source_citation": "O.C.G.A. § 43-39-9",
+            "question_text": "New domain question?",
+            "option_a": "A",
+            "option_b": "B",
+            "option_c": "C",
+            "option_d": "D",
+            "correct_option": "A",
+            "explanation": "Because.",
+        },
+        db_path=tmp_db_path,
+    )
+
+    ret = main(["progress", "--db", str(tmp_db_path)])
+    assert ret == 0
+    out = capsys.readouterr().out
+    assert "new-domain" in out
+

@@ -15,11 +15,15 @@ from rich.table import Table
 from gamb_exam.db import (
     DEFAULT_DB_PATH,
     ensure_db_initialized,
+    get_last_wrong_questions,
     get_missed_questions,
     get_session_history,
+    get_study_progress,
     get_study_questions,
 )
 from gamb_exam.generator import (
+    DOMAIN_DISPLAY_NAMES,
+    DOMAIN_QUOTAS,
     export_mock_markdown,
     generate_exam_questions,
     shuffle_question_options,
@@ -172,6 +176,95 @@ def handle_stats(args: argparse.Namespace) -> int:
     return 0
 
 
+def _truncate(text: str, limit: int = 80) -> str:
+    """Collapse whitespace and truncate to limit characters with an ellipsis."""
+    normalized = " ".join(text.split())
+    if len(normalized) <= limit:
+        return normalized
+    return normalized[: limit - 1].rstrip() + "…"
+
+
+def handle_progress(args: argparse.Namespace) -> int:
+    """Handle the 'progress' subcommand to display cumulative per-item study stats."""
+    ensure_db_initialized(args.db)
+    rows = get_study_progress(db_path=args.db)
+    by_domain = {row["domain"]: row for row in rows}
+
+    ordered_domains = list(DOMAIN_QUOTAS.keys())
+    ordered_domains += sorted(d for d in by_domain if d not in DOMAIN_QUOTAS)
+
+    data = []
+    for domain in ordered_domains:
+        row = by_domain.get(domain)
+        if row is None:
+            total = seen = clean = wrong = 0
+        else:
+            total = row["total_items"]
+            seen = row["seen_items"]
+            clean = row["clean_items"]
+            wrong = row["ever_wrong_items"]
+        data.append((domain, total, seen, clean, wrong))
+
+    total_items = sum(item[1] for item in data)
+    seen_total = sum(item[2] for item in data)
+    clean_total = sum(item[3] for item in data)
+    wrong_total = sum(item[4] for item in data)
+
+    coverage_total = f"{seen_total / total_items * 100:.1f}%" if total_items else "0.0%"
+    clean_pct = f"{clean_total / seen_total * 100:.1f}%" if seen_total else "0.0%"
+    wrong_pct = f"{wrong_total / seen_total * 100:.1f}%" if seen_total else "0.0%"
+    console.print(
+        f"[bold]Items studied:[/bold] {seen_total} / {total_items} ({coverage_total}) | "
+        f"[bold]Clean:[/bold] {clean_total} ({clean_pct}) | "
+        f"[bold]Ever wrong:[/bold] {wrong_total} ({wrong_pct})"
+    )
+    console.print()
+
+    table = Table(title="Study Progress by Domain")
+    table.add_column("Category", style="bold")
+    table.add_column("Seen / Total", justify="right", no_wrap=True)
+    table.add_column("Coverage", justify="right", no_wrap=True)
+    table.add_column("Clean", justify="right", no_wrap=True)
+    table.add_column("Ever Wrong", justify="right", no_wrap=True)
+    table.add_column("% Ever Wrong", justify="right", no_wrap=True)
+
+    for domain, total, seen, clean, wrong in data:
+        coverage = f"{seen / total * 100:.1f}%" if total else "—"
+        pct_wrong = f"{wrong / seen * 100:.1f}%" if seen else "—"
+        table.add_row(
+            DOMAIN_DISPLAY_NAMES.get(domain, domain),
+            f"{seen} / {total}",
+            coverage,
+            str(clean),
+            str(wrong),
+            pct_wrong,
+        )
+
+    console.print(table)
+
+    if args.missed:
+        console.print()
+        missed = get_last_wrong_questions(db_path=args.db)
+        if not missed:
+            console.print("[dim]No questions currently missed.[/dim]")
+            return 0
+        missed_table = Table(title="Currently Missed Questions (last answered wrong)")
+        missed_table.add_column("ID", justify="right", style="cyan", no_wrap=True)
+        missed_table.add_column("Category", no_wrap=True)
+        missed_table.add_column("Question")
+        missed_table.add_column("Citation", style="dim")
+        for q in missed:
+            missed_table.add_row(
+                str(q["id"]),
+                DOMAIN_DISPLAY_NAMES.get(q["domain"], q["domain"]),
+                _truncate(q["question_text"]),
+                q["source_citation"],
+            )
+        console.print(missed_table)
+
+    return 0
+
+
 def handle_export(args: argparse.Namespace) -> int:
     """Handle the 'export' subcommand to generate markdown mock exams and answer keys."""
     try:
@@ -314,7 +407,26 @@ def create_parser() -> argparse.ArgumentParser:
     )
     missed_parser.set_defaults(func=handle_missed)
 
-    # 4. stats
+    # 4. progress
+    progress_parser = subparsers.add_parser(
+        "progress",
+        help="View cumulative per-item study progress broken down by domain",
+    )
+    progress_parser.add_argument(
+        "--db",
+        type=Path,
+        default=DEFAULT_DB_PATH,
+        help=f"Path to SQLite database file (default: {DEFAULT_DB_PATH})",
+    )
+    progress_parser.add_argument(
+        "--missed",
+        action="store_true",
+        default=False,
+        help="Also list questions whose most recent answered attempt was wrong",
+    )
+    progress_parser.set_defaults(func=handle_progress)
+
+    # 5. stats
     stats_parser = subparsers.add_parser(
         "stats",
         help="View past exam session statistics and performance history",
@@ -333,7 +445,7 @@ def create_parser() -> argparse.ArgumentParser:
     )
     stats_parser.set_defaults(func=handle_stats)
 
-    # 5. export
+    # 6. export
     export_parser = subparsers.add_parser(
         "export",
         help="Export a 50-question mock exam and answer key to Markdown",
@@ -358,7 +470,7 @@ def create_parser() -> argparse.ArgumentParser:
     )
     export_parser.set_defaults(func=handle_export)
 
-    # 6. build-assets
+    # 7. build-assets
     build_parser = subparsers.add_parser(
         "build-assets",
         help="Build all consumer study products (PDFs, Markdown, Web Quizzer)",

@@ -128,6 +128,9 @@ uv run gamb-exam missed
 # View historical performance diagnostics and pass/fail record
 uv run gamb-exam stats
 
+# View cumulative per-item study progress by domain
+uv run gamb-exam progress --missed
+
 # Regenerate all study PDFs, docs, and web quizzer
 uv run gamb-exam build-assets
 ```
@@ -194,6 +197,9 @@ uv run gamb-exam test
 
 - **`uv run gamb-exam stats`**  
   Displays a rich diagnostic summary table of all completed practice exam sessions, scores, pass/fail status, and domain mastery percentages stored in your local session history.
+
+- **`uv run gamb-exam progress [--missed]`**  
+  Cumulative per-item study statistics across all practice sessions. Shows how many distinct questions you have seen in each domain, how many you have never answered wrong ("clean"), and how many you have ever answered wrong. The `--missed` flag also lists questions whose most recent answered attempt was wrong.
 
 - **`uv run gamb-exam export [--output mocks/]`**  
   Generates a fresh, balanced 50-question mock exam in printable/viewable Markdown format (`mock_questions.md`) alongside a complete annotated answer key (`mock_key.md`) with legal citations and explanations.
