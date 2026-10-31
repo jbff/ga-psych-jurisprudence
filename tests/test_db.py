@@ -14,6 +14,7 @@ from gamb_exam.db import (
     get_question_by_id,
     get_questions_by_domain,
     get_session_history,
+    get_study_progress,
     init_db,
     insert_question,
     insert_questions,
@@ -305,4 +306,47 @@ def test_get_study_questions_backfill_and_no_unseen(tmp_db_path: Path):
     # Test prioritize_unseen=False returns all questions without errors
     random_qs = get_study_questions(domain=None, limit=3, prioritize_unseen=False, db_path=tmp_db_path)
     assert len(random_qs) == 3
+
+
+def test_get_study_progress(tmp_db_path: Path):
+    """Aggregates seen/clean/ever-wrong item counts per domain, ignoring skips."""
+    init_db(tmp_db_path)
+
+    q1 = insert_question(sample_question_data("competence", "Q1"), db_path=tmp_db_path)
+    q2 = insert_question(sample_question_data("competence", "Q2"), db_path=tmp_db_path)
+    q3 = insert_question(sample_question_data("assessment", "Q3"), db_path=tmp_db_path)
+    q4 = insert_question(sample_question_data("assessment", "Q4"), db_path=tmp_db_path)
+    insert_question(sample_question_data("privacy", "Q5"), db_path=tmp_db_path)
+    q6 = insert_question(sample_question_data("privacy", "Q6"), db_path=tmp_db_path)
+
+    s1 = create_session(mode="study_drill", total_questions=5, db_path=tmp_db_path)
+    save_session_answer(s1, q1, "A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(s1, q2, "B", is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q3, None, is_correct=False, db_path=tmp_db_path)
+    save_session_answer(s1, q4, "A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(s1, q6, None, is_correct=False, db_path=tmp_db_path)
+
+    s2 = create_session(mode="timed_exam", total_questions=2, db_path=tmp_db_path)
+    save_session_answer(s2, q2, "A", is_correct=True, db_path=tmp_db_path)
+    save_session_answer(s2, q3, "C", is_correct=False, db_path=tmp_db_path)
+
+    progress = {row["domain"]: row for row in get_study_progress(db_path=tmp_db_path)}
+
+    comp = progress["competence"]
+    assert comp["total_items"] == 2
+    assert comp["seen_items"] == 2
+    assert comp["clean_items"] == 1
+    assert comp["ever_wrong_items"] == 1
+
+    assess = progress["assessment"]
+    assert assess["total_items"] == 2
+    assert assess["seen_items"] == 2
+    assert assess["clean_items"] == 1
+    assert assess["ever_wrong_items"] == 1
+
+    privacy = progress["privacy"]
+    assert privacy["total_items"] == 2
+    assert privacy["seen_items"] == 0
+    assert privacy["clean_items"] == 0
+    assert privacy["ever_wrong_items"] == 0
 

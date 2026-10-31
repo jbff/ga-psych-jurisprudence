@@ -412,3 +412,44 @@ def get_study_questions(
     finally:
         conn.close()
 
+
+def get_study_progress(db_path: Path | str | None = None) -> list[dict[str, Any]]:
+    """Return per-domain counts of seen, clean, and ever-wrong questions.
+
+    Skipped answers (selected_option IS NULL) are ignored entirely.
+    """
+    conn = get_connection(db_path)
+    try:
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT q.domain,
+                   COUNT(DISTINCT q.id) AS total_items,
+                   COUNT(DISTINCT CASE WHEN sa.selected_option IS NOT NULL
+                                       THEN q.id END) AS seen_items,
+                   COUNT(DISTINCT CASE WHEN sa.selected_option IS NOT NULL
+                                        AND sa.is_correct = 0
+                                       THEN q.id END) AS ever_wrong_items
+            FROM questions q
+            LEFT JOIN session_answers sa ON sa.question_id = q.id
+            GROUP BY q.domain
+            ORDER BY q.domain
+            """
+        )
+        rows = []
+        for row in cursor.fetchall():
+            seen = row["seen_items"]
+            wrong = row["ever_wrong_items"]
+            rows.append(
+                {
+                    "domain": row["domain"],
+                    "total_items": row["total_items"],
+                    "seen_items": seen,
+                    "clean_items": seen - wrong,
+                    "ever_wrong_items": wrong,
+                }
+            )
+        return rows
+    finally:
+        conn.close()
+
