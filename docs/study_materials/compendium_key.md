@@ -1,5 +1,5 @@
 # Georgia Psychology Jurisprudence Examination (GAMB)
-## 435-Question Self-Study Compendium
+## 472-Question Self-Study Compendium
 ## Part II: Annotated Answer Key
 > **Question Pool Version:** 1.0 (Release Date: 10/25/2026)
 > **Author & Copyright:** © 2026 John B. Fleming, PhD • [http://johnbflemingphd.com](http://johnbflemingphd.com)
@@ -96,7 +96,7 @@
 
 ### Q15 (Pool Item #124)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 7.04 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 7.04 (Rule 510-4-.02) prohibits requiring students to disclose personal sexual history unless clearly identified in program admissions materials or necessary to evaluate an impaired student.
 
@@ -162,7 +162,7 @@
 
 ### Q26 (Pool Item #144)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 10.07 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 10.07 (Rule 510-4-.02) states that psychologists do not accept as therapy clients/patients persons with whom they have engaged in sexual intimacies.
 
@@ -192,7 +192,7 @@
 
 ### Q31 (Pool Item #167)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 requires that supervisees inform clients of their supervisory status and provide clients with the name and contact information of the supervising psychologist and their right to speak with them.
 
@@ -222,13 +222,13 @@
 
 ### Q36 (Pool Item #213)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** OCGA 30-5-4
 - **Explanation:** O.C.G.A. § 30-5-4(a)(1)(A)(x) explicitly includes clergy members among the statutory mandatory reporters of abuse, neglect, or exploitation of disabled adults or elder persons.
 
 ### Q37 (Pool Item #214)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** OCGA 30-5-4
 - **Explanation:** O.C.G.A. § 30-5-4(a)(1)(B) requires financial institution and investment company employees to report suspected elder exploitation, but explicitly provides that this obligation does not apply while acting as a fiduciary for assets held in that capacity.
 
@@ -246,7 +246,7 @@
 
 ### Q40 (Pool Item #264)
 - **Domain:** Professional Relationships
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 3.08
 - **Explanation:** APA Standard 3.08 provides that psychologists do not exploit persons over whom they have supervisory, evaluative, or other authority such as clients/patients, students, supervisees, research participants, and employees.
 
@@ -500,7 +500,7 @@
 - **Domain:** Licensure and Regulations
 - **Correct Option:** A
 - **Source Citation:** OCGA 43-39-2
-- **Explanation:** O.C.G.A. § 43-39-2 provides that Board members have immunity from civil liability for acts performed in good faith in the performance of official duties.
+- **Explanation:** O.C.G.A. § 43-39-18 and § 43-39-2 provide that members of the Board of Examiners of Psychologists and their investigators are immune from civil liability for acts performed in good faith in the execution of official duties.
 
 ### Q83 (Pool Item #10)
 - **Domain:** Licensure and Regulations
@@ -630,9 +630,9 @@
 
 ### Q104 (Pool Item #36)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** Rule 510-7-.01
-- **Explanation:** Rule 510-7-.01 provides that a psychologist may not practice after December 31 of an even year unless their license is active; practicing while expired constitutes unlicensed practice.
+- **Explanation:** Rule 510-7-.01 provides that a psychologist may not practice after December 31 of an even-numbered year unless their license is active; practicing while expired constitutes unlicensed practice.
 
 ### Q105 (Pool Item #42)
 - **Domain:** Licensure and Regulations
@@ -752,7 +752,7 @@
 - **Domain:** Licensure and Regulations
 - **Correct Option:** A
 - **Source Citation:** OCGA 43-39-18; OCGA 43-1-20
-- **Explanation:** O.C.G.A. § 43-39-18 and § 43-1-20 provide that the Board is not required to show that there is no adequate remedy at law to obtain an injunction against unlicensed practice.
+- **Explanation:** O.C.G.A. § 43-39-15 and § 43-1-20 provide that the Board is not required to show that there is no adequate remedy at law to obtain an injunction against unlicensed practice.
 
 ### Q125 (Pool Item #66)
 - **Domain:** Licensure and Regulations
@@ -762,7 +762,7 @@
 
 ### Q126 (Pool Item #67)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** C
+- **Correct Option:** A
 - **Source Citation:** Rule 510-10-.02
 - **Explanation:** Rule 510-10-.02 provides that a firm, partnership, or corporation may not imply it renders psychological services unless at least one partner, officer, or employee holds a current Georgia psychology license.
 
@@ -888,7 +888,7 @@
 
 ### Q147 (Pool Item #180)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** Rule 510-10-.01
 - **Explanation:** Rule 510-10-.01 prohibits an unlicensed person from supervising psychological services rendered by trainees or employees.
 
@@ -954,7 +954,7 @@
 
 ### Q158 (Pool Item #198)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** OCGA 43-1-21
 - **Explanation:** O.C.G.A. § 43-1-21 clarifies that nothing in the statute or chapter prohibits or limits the authority of the division director to disclose to any person or entity information concerning the existence of an investigation for unlicensed practice.
 
@@ -1040,7 +1040,7 @@
 - **Domain:** Licensure and Regulations
 - **Correct Option:** B
 - **Source Citation:** Rule 510-2-.04
-- **Explanation:** Rule 510-2-.04(4)(b)2 mandates that at least 2 of the 3 required academic training years (or equivalent thereof) must be completed within the program from which the doctoral degree is granted.
+- **Explanation:** Board Rule 510-2-.04 requires that of the three academic training years of graduate study required for licensure, at least two academic training years must be completed within the doctoral degree-granting program.
 
 ### Q173 (Pool Item #228)
 - **Domain:** Licensure and Regulations
@@ -1092,7 +1092,7 @@
 
 ### Q181 (Pool Item #236)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** Rule 510-2-.04
 - **Explanation:** Rule 510-2-.04(7) explicitly provides that neither internship, practicum, nor thesis courses will be considered as qualifying coursework hours toward the 18 required MR/DD specialty semester hours.
 
@@ -1110,7 +1110,7 @@
 
 ### Q184 (Pool Item #252)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** Rule 510-5-.10
 - **Explanation:** Rule 510-5-.10(1)(b)4 and (c) prohibit a licensee from supervising or employing in any capacity an individual convicted of a felony or under criminal probation, unless waived or modified by the Board upon a showing of extraordinary circumstances.
 
@@ -1266,7 +1266,7 @@
 
 ### Q210 (Pool Item #348)
 - **Domain:** Licensure and Regulations
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** OCGA 43-39-17
 - **Explanation:** O.C.G.A. § 43-39-17 explicitly makes it unlawful for any person not licensed under Chapter 39 to use the title 'psychologist' or offer psychological services, subject only to specific statutory exemptions in § 43-39-7.
 
@@ -1558,1064 +1558,1286 @@
 - **Source Citation:** OCGA 43-1-19(a)(4)
 - **Explanation:** O.C.G.A. § 43-1-19(a)(4) provides that a sentence imposed pursuant to first offender laws or a plea of nolo contendere constitutes statutory grounds for disciplinary refusal, revocation, or suspension.
 
-### Q259 (Pool Item #28)
+### Q259 (Pool Item #436)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 43-39-3(b)
+- **Explanation:** O.C.G.A. § 43-39-3(b) provides that the Governor may remove any member of the Board after notice and hearing for incompetence, neglect of duty, malfeasance in office, or commission of a crime involving moral turpitude.
+
+### Q260 (Pool Item #437)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** O.C.G.A. § 43-39-4
+- **Explanation:** O.C.G.A. § 43-39-4 mandates that immediately and before entering upon the duties of office, the members of the Board of Examiners of Psychologists shall take the constitutional oath of office and subscribe to it in writing.
+
+### Q261 (Pool Item #438)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 43-39-7(6)
+- **Explanation:** O.C.G.A. § 43-39-7(6) clarifies that nothing in Chapter 39 shall restrict licensed physicians, nurses, professional counselors, social workers, or marriage and family therapists from doing work within their scopes of practice, provided they do not use the title 'psychologist' or hold themselves out to the public as psychologists.
+
+### Q262 (Pool Item #439)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 43-39-13(a)(1)-(2)
+- **Explanation:** Under O.C.G.A. § 43-39-13(a)(1)-(2) and the Administrative Procedure Act, if a psychologist refuses to submit to a compelled physical or mental examination, the Board may summarily suspend the license pending hearing upon finding that public health, safety, or welfare imperatively requires emergency action.
+
+### Q263 (Pool Item #440)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** Ga. Comp. R. & Regs. r. 510-1-.04
+- **Explanation:** Ga. Comp. R. & Regs. r. 510-1-.04 provides that the Division Director maintains an official roster containing the names, license numbers, and addresses of all licensed psychologists, which is available to the public.
+
+### Q264 (Pool Item #442)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 19-7-5(b)(17)
+- **Explanation:** O.C.G.A. § 19-7-5(b)(17) defines sexual abuse for child abuse reporting by explicit statutory cross-reference to Title 16 offenses, including statutory rape (§ 16-6-3), child molestation (§ 16-6-4), enticing a child for indecent purposes (§ 16-6-5), and sexual assault by persons with supervisory authority (§ 16-6-5.1).
+
+### Q265 (Pool Item #443)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 19-7-5(c)(2)
+- **Explanation:** Under O.C.G.A. § 19-7-5(c)(2), when a mandatory reporter notifies a person in charge of an institution or school, that person or their designee must report, but notifying a supervisor does not relieve the professional of personal responsibility to ensure an official report is made to DFCS or law enforcement unless verified institutional protocols ensure the report was completed.
+
+### Q266 (Pool Item #444)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 16-6-3(a)
+- **Explanation:** O.C.G.A. § 16-6-3(a) defines statutory rape as sexual intercourse with any person under the age of 16 who is not the spouse of the actor.
+
+### Q267 (Pool Item #445)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-3(a)
+- **Explanation:** O.C.G.A. § 16-6-3(a) explicitly provides: 'No conviction shall be had for this offense on the unsupported testimony of the victim.' Some independent corroborating evidence is legally required.
+
+### Q268 (Pool Item #446)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** O.C.G.A. § 16-6-3(b)
+- **Explanation:** O.C.G.A. § 16-6-3(b) provides that a person convicted of statutory rape shall be punished by imprisonment for not less than one nor more than 20 years, except as otherwise provided for older offenders or close-in-age misdemeanors.
+
+### Q269 (Pool Item #447)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-3(b)
+- **Explanation:** O.C.G.A. § 16-6-3(b) mandates that if the person convicted of statutory rape is 21 years of age or older, the punishment shall be imprisonment for not less than 10 nor more than 20 years.
+
+### Q270 (Pool Item #448)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** O.C.G.A. § 16-6-3(b)
+- **Explanation:** O.C.G.A. § 16-6-3(b) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.
+
+### Q271 (Pool Item #449)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** O.C.G.A. § 16-6-3(b)
+- **Explanation:** Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
+
+### Q272 (Pool Item #450)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-4(a)
+- **Explanation:** O.C.G.A. § 16-6-4(a) provides that a person commits child molestation when doing any immoral or indecent act to or in the presence of or with any child under the age of 16 with the intent to arouse or satisfy the sexual desires of either the child or the person.
+
+### Q273 (Pool Item #451)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-4(b)
+- **Explanation:** O.C.G.A. § 16-6-4(b) provides that a person convicted of child molestation shall be punished by imprisonment for not less than 5 nor more than 20 years and shall undergo mandatory psychological counseling or therapy.
+
+### Q274 (Pool Item #452)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 16-6-4(b)
+- **Explanation:** O.C.G.A. § 16-6-4(b) provides a misdemeanor exception for child molestation if the victim is 14 or 15 years old, the offender is 18 or younger, and the offender is no more than four years older than the victim.
+
+### Q275 (Pool Item #453)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-4(c)
+- **Explanation:** O.C.G.A. § 16-6-4(c) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.
+
+### Q276 (Pool Item #454)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** O.C.G.A. § 16-6-4(c)
+- **Explanation:** O.C.G.A. § 16-6-4(c) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.
+
+### Q277 (Pool Item #455)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 16-6-4(d)
+- **Explanation:** O.C.G.A. § 16-6-4(d) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.
+
+### Q278 (Pool Item #456)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 16-6-5(a)
+- **Explanation:** O.C.G.A. § 16-6-5(a) provides that a person commits enticing a child for indecent purposes when soliciting, enticing, or taking any child under the age of 16 to any place for the purpose of child molestation or other indecent or immoral acts.
+
+### Q279 (Pool Item #457)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** A
+- **Source Citation:** O.C.G.A. § 16-6-5(a)
+- **Explanation:** Under O.C.G.A. § 16-6-5(a) and established Georgia case law, the offense of enticing a child for indecent purposes is complete once the child is solicited, enticed, or moved with the requisite intent; completion of an actual indecent or sexual act is not required.
+
+### Q280 (Pool Item #458)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 16-6-5(b)
+- **Explanation:** O.C.G.A. § 16-6-5(b) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.
+
+### Q281 (Pool Item #459)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 30-5-4(b)
+- **Explanation:** O.C.G.A. § 30-5-4(b) provides that any person required to report elder or disabled adult abuse who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.
+
+### Q282 (Pool Item #462)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 43-1-27
+- **Explanation:** O.C.G.A. § 43-1-27 authorizes and requires professional licensing boards to require applicants to submit fingerprints for state and national criminal history record checks through the Georgia Crime Information Center (GCIC) and the Federal Bureau of Investigation (FBI).
+
+### Q283 (Pool Item #463)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 4
+- **Explanation:** The PSI Candidate Information Bulletin specifies that the Georgia Psychology Jurisprudence Examination consists of 60 multiple-choice items total, comprising 50 scored questions and 10 unscored experimental (pretest) items.
+
+### Q284 (Pool Item #464)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 5
+- **Explanation:** The PSI Candidate Information Bulletin provides that candidates are allowed 60 minutes (1 hour) of testing time to complete the 60 questions on the Georgia Psychology Jurisprudence Examination.
+
+### Q285 (Pool Item #465)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 5
+- **Explanation:** The PSI Candidate Information Bulletin establishes that the passing score for the Georgia Psychology Jurisprudence Examination is 38 correct answers out of the 50 scored items, which corresponds to 76%.
+
+### Q286 (Pool Item #466)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** C
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 4
+- **Explanation:** The PSI Candidate Information Bulletin explains that candidates are given up to 15 minutes to complete a tutorial on computer testing prior to starting the exam, and this tutorial time does not count against the 60-minute examination time limit.
+
+### Q287 (Pool Item #468)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 2
+- **Explanation:** The PSI Candidate Information Bulletin states that candidates submitting examination registrations via fax must allow 4 business days for processing before calling or going online to schedule an appointment.
+
+### Q288 (Pool Item #469)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** D
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 4
+- **Explanation:** The PSI Candidate Information Bulletin specifies that any personal items left behind at the testing center that remain unclaimed after 30 days will be disposed of or donated at PSI's discretion.
+
+### Q289 (Pool Item #470)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 5
+- **Explanation:** The PSI Candidate Information Bulletin content outline distributes the 50 scored questions as follows: Professional Relationships (14), Licensure and Regulations (13), Competence (9), Assessment (6), Privacy and Confidentiality (5), and Recordkeeping and Fees (3). Professional Relationships has the highest single question quota (14 items).
+
+### Q290 (Pool Item #471)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** B
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 3
+- **Explanation:** The PSI Candidate Information Bulletin mandates that candidates present two forms of signature-bearing identification: a primary government-issued ID with photograph and signature, and a secondary ID displaying the candidate's pre-printed legal name.
+
+### Q291 (Pool Item #472)
+- **Domain:** Licensure and Regulations
+- **Correct Option:** C
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 5
+- **Explanation:** The PSI Candidate Information Bulletin explicitly provides that the Georgia Psychology Jurisprudence Examination is closed book; no reference books, legal codes, notes, or outside study aids are permitted in the testing room.
+
+### Q292 (Pool Item #28)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05 and Rule 510-5-.06 restrict supervisors from supervising more than three interns, fellows, or psychological assistants concurrently without prior Board approval.
 
-### Q260 (Pool Item #37)
+### Q293 (Pool Item #37)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.01
 - **Explanation:** Rule 510-8-.01 requires 40 continuing education credits per biennium, including a minimum of 6 credits in professional ethics.
 
-### Q261 (Pool Item #38)
+### Q294 (Pool Item #38)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-8-.01
 - **Explanation:** Rule 510-8-.01 mandates that the 6 ethics CE credits must be earned through in-person workshops or live synchronous interactive webinars.
 
-### Q262 (Pool Item #39)
+### Q295 (Pool Item #39)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.01
 - **Explanation:** Rule 510-8-.01 states that an individual licensed during the first year of the biennium must complete 20 CE credits, including 3 credits in ethics, for the initial renewal.
 
-### Q263 (Pool Item #40)
+### Q296 (Pool Item #40)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.01
-- **Explanation:** Rule 510-8-.01 provides that licensees licensed during the second year of the biennium are exempt from continuing education requirements for their first renewal.
+- **Explanation:** Board Rule 510-8-.02 explicitly provides that psychologists licensed during the second year of the renewal biennium are exempt from continuing education requirements for their first biennial renewal cycle.
 
-### Q264 (Pool Item #85)
+### Q297 (Pool Item #85)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 31-7-160
 - **Explanation:** O.C.G.A. § 31-7-160 defines a 'health service provider psychologist' as a licensed psychologist meeting training and experience standards who provides direct preventive, assessment, or therapeutic services to impaired or at-risk individuals.
 
-### Q265 (Pool Item #86)
+### Q298 (Pool Item #86)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 31-7-160
 - **Explanation:** O.C.G.A. § 31-7-160 defines a 'psychologist's order' as an order for care, treatment, or diagnostic assessment in a medical facility, expressly excluding medication orders, nursing assessments, or invasive medical procedures.
 
-### Q266 (Pool Item #87)
+### Q299 (Pool Item #87)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 31-7-162
 - **Explanation:** O.C.G.A. § 31-7-162 requires an applicant for health service provider status to have not less than two years of full-time supervised experience in health service psychology (at least 1,500 hours each year).
 
-### Q267 (Pool Item #88)
+### Q300 (Pool Item #88)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** OCGA 31-7-162
 - **Explanation:** O.C.G.A. § 31-7-162 requires two supportive letters of recommendation from health service providers in psychology.
 
-### Q268 (Pool Item #89)
+### Q301 (Pool Item #89)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 31-7-162
 - **Explanation:** O.C.G.A. § 31-7-162 requires that a substantial portion of the qualifying health-service experience be completed in an inpatient facility setting.
 
-### Q269 (Pool Item #90)
+### Q302 (Pool Item #90)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 31-7-161
 - **Explanation:** O.C.G.A. § 31-7-161 requires that when a patient is admitted by a psychologist to a healthcare facility, a physician must be designated as responsible for all medical aspects of the patient's care.
 
-### Q270 (Pool Item #91)
+### Q303 (Pool Item #91)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 31-7-161
 - **Explanation:** O.C.G.A. § 31-7-161 authorizes registered nurses and licensed practical nurses to execute psychologist orders within their scope of practice, conferring with the psychologist as needed.
 
-### Q271 (Pool Item #93)
+### Q304 (Pool Item #93)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 requires that a physician personally examine the individual within the 48 hours immediately preceding the execution of an involuntary admission certificate.
 
-### Q272 (Pool Item #94)
+### Q305 (Pool Item #94)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 provides that a physician's involuntary admission certificate expires seven days after its date of execution.
 
-### Q273 (Pool Item #95)
+### Q306 (Pool Item #95)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 requires a peace officer who receives a physician's certificate to take the person into custody within 72 hours.
 
-### Q274 (Pool Item #96)
+### Q307 (Pool Item #96)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 provides that a court order for involuntary examination without a physician certificate requires affidavits from at least two persons.
 
-### Q275 (Pool Item #97)
+### Q308 (Pool Item #97)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 requires that the affiants for a court order have personally observed the individual within the preceding 48 hours.
 
-### Q276 (Pool Item #98)
+### Q309 (Pool Item #98)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 37-3-41
 - **Explanation:** O.C.G.A. § 37-3-41 specifies that a court order for involuntary examination expires seven days after its date of issuance.
 
-### Q277 (Pool Item #99)
+### Q310 (Pool Item #99)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 1.01 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 1.01 (adopted in Rule 510-4-.02) requires psychologists who learn of misuse or misrepresentation of their work to take reasonable steps to correct or minimize it.
 
-### Q278 (Pool Item #100)
+### Q311 (Pool Item #100)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** APA 1.02 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 1.02 (Rule 510-4-.02) directs psychologists whose ethical responsibilities conflict with law to make known their commitment to the Ethics Code and take steps to resolve the conflict; if unresolvable, they may adhere to the requirements of the law.
 
-### Q279 (Pool Item #101)
+### Q312 (Pool Item #101)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** APA 1.05 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 1.05 (Rule 510-4-.02) requires formal reporting of ethical violations when an apparent violation has substantially harmed or is likely to substantially harm a person and informal resolution is not appropriate or fails.
 
-### Q280 (Pool Item #102)
+### Q313 (Pool Item #102)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** APA 1.06 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 1.06 and Rule 510-5-.10 provide that failure to cooperate with an ethics investigation or Board inquiry is itself an independent ethical and regulatory violation.
 
-### Q281 (Pool Item #103)
+### Q314 (Pool Item #103)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 2.01 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 2.01 (Rule 510-4-.02) specifies that psychologists provide services within the boundaries of their competence based on education, training, supervised experience, consultation, study, or professional experience.
 
-### Q282 (Pool Item #104)
+### Q315 (Pool Item #104)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** APA 2.02 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 2.02 (Rule 510-4-.02) allows psychologists to provide emergency services for which they lack full competence when other services are unavailable, provided they discontinue services as soon as the emergency ends or appropriate services become available.
 
-### Q283 (Pool Item #105)
+### Q316 (Pool Item #105)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** APA 2.03 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 2.03 (Rule 510-4-.02) requires psychologists to undertake ongoing efforts to develop and maintain their professional competence.
 
-### Q284 (Pool Item #106)
+### Q317 (Pool Item #106)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** APA 2.05 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 2.05 (Rule 510-4-.02) requires psychologists delegating work to avoid delegating to persons with multiple relationships and to authorize only services they are competent to perform.
 
-### Q285 (Pool Item #148)
+### Q318 (Pool Item #148)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.01
 - **Explanation:** Rule 510-5-.01 establishes that Chapter 510-4 (Code of Ethics) and Chapter 510-5 (Supplemental Code of Conduct) constitute the ethical standards and rules of conduct for Georgia psychologists.
 
-### Q286 (Pool Item #149)
+### Q319 (Pool Item #149)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.01
 - **Explanation:** Rule 510-5-.01 provides that the Georgia Code of Ethics and Code of Conduct apply to all licensees and applicants for licensure, including conduct during education, training, and employment required for licensure.
 
-### Q287 (Pool Item #151)
+### Q320 (Pool Item #151)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.02
 - **Explanation:** Rule 510-5-.02 defines 'telepsychology' as the provision of psychological services using telecommunication technologies (e.g. video conferencing, telephone, secure electronic communication).
 
-### Q288 (Pool Item #152)
+### Q321 (Pool Item #152)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07 requires any individual practicing telepsychology with clients located in Georgia to possess a current, active Georgia psychology license or valid PSYPACT authorization to practice interjurisdictional telepsychology (APIT).
 
-### Q289 (Pool Item #153)
+### Q322 (Pool Item #153)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07 specifies that telepsychology services must adhere to the exact same legal, ethical, and clinical practice standards as in-person psychological practice in Georgia.
 
-### Q290 (Pool Item #154)
+### Q323 (Pool Item #154)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07 and PSYPACT rules establish that interjurisdictional telepsychology requires an ASPPB E.Passport and Authority to Practice Interjurisdictional Telepsychology (APIT).
 
-### Q291 (Pool Item #155)
+### Q324 (Pool Item #155)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-9-.03
 - **Explanation:** Rule 510-9-.03 and PSYPACT regulations require ASPPB credentials (IPC, E.Passport) and PSYPACT authorities (TAP, APIT) to be renewed annually.
 
-### Q292 (Pool Item #156)
+### Q325 (Pool Item #156)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.05
 - **Explanation:** Rule 510-5-.05 requires an impaired psychologist who is in an active professional relationship to terminate appropriately, notify the client in writing, and assist the client in finding alternative professional services.
 
-### Q293 (Pool Item #157)
+### Q326 (Pool Item #157)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.05
 - **Explanation:** Rule 510-5-.05 authorizes the Board to require an impaired licensee to undergo physical/mental examination, produce records, refer to a Colleague Assistance Program, undergo rehabilitation, and accept practice restrictions.
 
-### Q294 (Pool Item #158)
+### Q327 (Pool Item #158)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.05
 - **Explanation:** Rule 510-5-.05 provides that refusal of an impaired licensee to submit to directed evaluation, treatment, or rehabilitation may constitute independent grounds for disciplinary action or summary suspension.
 
-### Q295 (Pool Item #163)
+### Q328 (Pool Item #163)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 requires a minimum of one (1) hour of individual face-to-face supervision for every 20 hours of face-to-face clinical client contact rendered by a supervisee.
 
-### Q296 (Pool Item #164)
+### Q329 (Pool Item #164)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 restricts psychologists from supervising more than three (3) psychological supervisees/trainees concurrently without prior written Board approval.
 
-### Q297 (Pool Item #165)
+### Q330 (Pool Item #165)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 mandates that the supervising psychologist personally determine and formulate all diagnoses for clients seen by a supervisee.
 
-### Q298 (Pool Item #168)
+### Q331 (Pool Item #168)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 provides that the supervising psychologist retains full, complete, and ultimate professional authority and legal responsibility for all acts and services rendered by a supervisee.
 
-### Q299 (Pool Item #189)
+### Q332 (Pool Item #189)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a) provides that a maximum of 20 continuing education credits per biennium may be earned through Area I (Academic, which encompasses graduate academic coursework, teaching/instruction, and scholarly publications).
 
-### Q300 (Pool Item #190)
+### Q333 (Pool Item #190)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(b) establishes that if a psychologist claims CE credit in Area II (Ongoing Group Consultation), they must complete a minimum of 10 credits and may earn at most 20 credits per biennium.
 
-### Q301 (Pool Item #191)
+### Q334 (Pool Item #191)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(c) allows a licensee to earn up to all 40 required biennial continuing education credits through Area III (Approved Sponsored Continuing Education).
 
-### Q302 (Pool Item #192)
+### Q335 (Pool Item #192)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(b) requires that an Area II group consultation group consist of a minimum of 3 psychologists (including the licensed leader) and up to a maximum of 8 licensed participants.
 
-### Q303 (Pool Item #193)
+### Q336 (Pool Item #193)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(6) provides that serving as a member of the GPA Ethics Committee or the State Board of Examiners of Psychologists for an entire biennium awards 6 ethics CE credits, fulfilling the full biennial ethics requirement.
 
-### Q304 (Pool Item #194)
+### Q337 (Pool Item #194)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(5) provides that successful completion of the board examination of the American Board of Professional Psychology (ABPP) satisfies all continuing education requirements in the biennium during which the examination is passed.
 
-### Q305 (Pool Item #216)
+### Q338 (Pool Item #216)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 31-7-160
 - **Explanation:** O.C.G.A. § 31-7-160(2) defines a 'psychologist's order' for care and treatment in a medical facility and explicitly excludes the ordering or prescribing of medications.
 
-### Q306 (Pool Item #217)
+### Q339 (Pool Item #217)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 31-7-160
 - **Explanation:** O.C.G.A. § 31-7-160(2) specifies that a psychologist's order for care and treatment in a medical facility does not include ordering nursing assessments or interventions.
 
-### Q307 (Pool Item #218)
+### Q340 (Pool Item #218)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 31-7-160
 - **Explanation:** O.C.G.A. § 31-7-160(2) explicitly provides that care and treatment rendered under a psychologist's order in a medical facility does not include ordering medical procedures.
 
-### Q308 (Pool Item #219)
+### Q341 (Pool Item #219)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 31-7-161
 - **Explanation:** O.C.G.A. § 31-7-161 provides that health service provider psychologists appointed to a medical facility staff are eligible to hold membership and serve on committees of the medical or professional staff consistent with their licensure and competence.
 
-### Q309 (Pool Item #220)
+### Q342 (Pool Item #220)
 - **Domain:** Competence
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** OCGA 31-7-163
 - **Explanation:** O.C.G.A. § 31-7-163 is a grandfathering clause establishing that nothing in the health service provider psychologist article prohibits a psychologist currently on hospital staff or employed by a hospital from continuing to work in that capacity.
 
-### Q310 (Pool Item #221)
+### Q343 (Pool Item #221)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 31-7-164
 - **Explanation:** O.C.G.A. § 31-7-164 provides that a medical facility may limit, restrict, or revoke a psychologist's privileges for reasons including violation of facility rules, provided those rules are applied in good faith and without discrimination.
 
-### Q311 (Pool Item #237)
+### Q344 (Pool Item #237)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07(5)(c) requires telepsychology informed consent to address unique remote service concerns, including technologies used, professional boundaries, procedures for responding to electronic communications, and transmission risks.
 
-### Q312 (Pool Item #238)
+### Q345 (Pool Item #238)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07(5)(c) mandates that psychologists obtain and document written informed consent from clients specifically addressing the unique concerns relevant to telepsychology services.
 
-### Q313 (Pool Item #239)
+### Q346 (Pool Item #239)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07(5)(a)3 requires psychologists providing telepsychology to identify and learn how to access relevant and appropriate emergency resources in the client's local area, such as emergency response contacts.
 
-### Q314 (Pool Item #240)
+### Q347 (Pool Item #240)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Board Rule 510-5-.07(2) and (5)(b)1 mandate that the provision of telepsychology must meet the same legal, ethical, and professional standards of care that are required when providing in-person psychological services.
 
-### Q315 (Pool Item #247)
+### Q348 (Pool Item #247)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.09
 - **Explanation:** Rule 510-5-.09(1)(a) provides that psychologists have an obligation to be familiar with applicable ethics codes, and lack of awareness or misunderstanding of a standard is not itself a defense to a charge of unprofessional conduct.
 
-### Q316 (Pool Item #248)
+### Q349 (Pool Item #248)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.09
 - **Explanation:** Rule 510-5-.09(1)(b) mandates that when a psychologist is uncertain whether an action violates the codes, they must consult with colleagues knowledgeable about ethics, state or national psychology ethics committees, or appropriate authorities.
 
-### Q317 (Pool Item #249)
+### Q350 (Pool Item #249)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.09
 - **Explanation:** Rule 510-5-.09(2) broadly prohibits fraud, misrepresentation, or deception in obtaining a license, passing exams, assisting another, billing, providing services, reporting evaluation results, or conducting any activity related to practice.
 
-### Q318 (Pool Item #259)
+### Q351 (Pool Item #259)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-9-.04
 - **Explanation:** Rule 510-9-.04(e)(2) mandates proof of meeting 20 hours of continuing education requirements for licensure renewal in the two years immediately prior to application for a volunteer service license.
 
-### Q319 (Pool Item #262)
+### Q352 (Pool Item #262)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** APA 2.06
 - **Explanation:** APA Standard 2.06(b) (Rule 510-4-.02) specifies that when psychologists become aware of personal problems that may interfere with performing duties, they take appropriate measures, such as obtaining professional consultation or assistance, and determine whether they should limit, suspend, or terminate duties.
 
-### Q320 (Pool Item #283)
+### Q353 (Pool Item #283)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 8.10
 - **Explanation:** APA Standard 8.10(a) states unequivocally: 'Psychologists do not fabricate data.'
 
-### Q321 (Pool Item #284)
+### Q354 (Pool Item #284)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** APA 8.10
 - **Explanation:** APA Standard 8.10(b) mandates that if psychologists discover significant errors in their published data, they take reasonable steps to correct such errors in a correction, retraction, erratum, or other appropriate publication means.
 
-### Q322 (Pool Item #287)
+### Q355 (Pool Item #287)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 8.15
 - **Explanation:** APA Standard 8.15 requires psychologists who review material submitted for presentation, publication, grant, or research proposal review to respect the confidentiality of and proprietary rights in such information.
 
-### Q323 (Pool Item #291)
+### Q356 (Pool Item #291)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(4)(a) requires at least one hour of individual face-to-face supervision for every 30 hours of supervised work experience, provided during the week of service or the immediately following week.
 
-### Q324 (Pool Item #292)
+### Q357 (Pool Item #292)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(4)(a) permits individual supervision to occur either in person or through real-time face-to-face video teleconferencing.
 
-### Q325 (Pool Item #293)
+### Q358 (Pool Item #293)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(4)(c) provides specialized supervision rules for Industrial/Organizational (I/O) psychology fellows, exempting them from the standard 1 hour per 30 hours clinical ratio.
 
-### Q326 (Pool Item #294)
+### Q359 (Pool Item #294)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(4)(c) specifies that for I/O fellows, the supervisor and fellow must meet face-to-face at least twice a month for a minimum total of four hours per month.
 
-### Q327 (Pool Item #295)
+### Q360 (Pool Item #295)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(4)(c) requires that at least one-half of the hours spent by an I/O fellow in supervised work experience must involve client activities.
 
-### Q328 (Pool Item #296)
+### Q361 (Pool Item #296)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(2)(c) mandates that the SWE contract clearly set forth the goals, content of the training experience, and criteria for determining quality and quantity of work.
 
-### Q329 (Pool Item #297)
+### Q362 (Pool Item #297)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(2) clarifies that the supervisor does not necessarily have to be on-site at all times for clinical work, but must maintain active oversight and be readily accessible for consultation and emergencies.
 
-### Q330 (Pool Item #298)
+### Q363 (Pool Item #298)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(1)(d),(2)(d) provides that supervisors must hold a current Georgia license (or equivalent license in the jurisdiction of practice) in good standing and not be under a current disciplinary order.
 
-### Q331 (Pool Item #299)
+### Q364 (Pool Item #299)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(1)(g),(2)(g) establishes that a secondary supervisor may provide no more than 20% of the required supervision during internship or postdoctoral SWE.
 
-### Q332 (Pool Item #300)
+### Q365 (Pool Item #300)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(1)(g) specifies that secondary supervisors may be licensed psychologists or licensed physicians in psychiatry, neurology, or other relevant medical specialty.
 
-### Q333 (Pool Item #310)
+### Q366 (Pool Item #310)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** APA 1.01 / Rule 510-4-.02
 - **Explanation:** APA Standard 1.01 (Rule 510-4-.02) specifies that if psychologists learn of misuse or misrepresentation of their work, they take reasonable steps to correct or minimize the misuse or misrepresentation.
 
-### Q334 (Pool Item #311)
+### Q367 (Pool Item #311)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 1.04
 - **Explanation:** APA Standard 1.04 provides that when psychologists believe that there may have been an ethical violation by another psychologist, they attempt to resolve the issue by bringing it to the attention of that individual, if an informal resolution appears appropriate and confidentiality rights are not violated.
 
-### Q335 (Pool Item #312)
+### Q368 (Pool Item #312)
 - **Domain:** Competence
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 1.07
 - **Explanation:** APA Standard 1.07 provides that psychologists do not file or encourage the filing of ethics complaints that are made with reckless disregard for or willful ignorance of facts that would disprove the allegation.
 
-### Q336 (Pool Item #313)
+### Q369 (Pool Item #313)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** APA 1.08
 - **Explanation:** APA Standard 1.08 provides that psychologists do not deny persons employment, advancement, admissions, or tenure based solely upon their having made or their being the subject of an ethics complaint.
 
-### Q337 (Pool Item #315)
+### Q370 (Pool Item #315)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** APA 2.04
 - **Explanation:** APA Standard 2.04 mandates that psychologists' work is based upon established scientific and professional knowledge of the discipline.
 
-### Q338 (Pool Item #316)
+### Q371 (Pool Item #316)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** APA 2.06
 - **Explanation:** APA Standard 2.06(a) requires psychologists to refrain from initiating an activity when they know or should know that there is a substantial likelihood that their personal problems will prevent them from performing work-related activities in a competent manner.
 
-### Q339 (Pool Item #330)
+### Q372 (Pool Item #330)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.03
 - **Explanation:** Rule 510-5-.03 requires that psychologists maintain competence in their areas of practice and undertake new areas of practice only after obtaining appropriate education, training, and professional consultation to ensure competence.
 
-### Q340 (Pool Item #331)
+### Q373 (Pool Item #331)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.03
 - **Explanation:** Rule 510-5-.03 mandates that psychologists maintain competency in their areas of practice through continuing education, consultation, study, and other procedures consistent with higher standards of the profession.
 
-### Q341 (Pool Item #335)
+### Q374 (Pool Item #335)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.02
 - **Explanation:** Rule 510-5-.02 distinguishes an employee from an independent contractor based on control: an employer controls and directs the time, manner, and method of an employee's work, whereas an independent contractor retains control over those aspects.
 
-### Q342 (Pool Item #336)
+### Q375 (Pool Item #336)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.02
 - **Explanation:** Rule 510-5-.02 clarifies that an independent contractor provides psychological services under their own license and authority, rather than in an employer-directed or delegated supervisory relationship.
 
-### Q343 (Pool Item #337)
+### Q376 (Pool Item #337)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.02
 - **Explanation:** Rule 510-5-.02 notes that the issuance of an IRS Form W-2 generally characterizes an employer-employee relationship where the employer exercises control and withholds taxes.
 
-### Q344 (Pool Item #338)
+### Q377 (Pool Item #338)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.02
 - **Explanation:** Rule 510-5-.02 notes that independent contractors generally receive an IRS Form 1099, indicating that they control their own work and are responsible for their own self-employment taxes.
 
-### Q345 (Pool Item #346)
+### Q378 (Pool Item #346)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 43-39-15
 - **Explanation:** O.C.G.A. § 43-39-15(b) authorizes the Board to waive continuing professional education requirements in cases of certified illness, disability, hardship, or other appropriate circumstances.
 
-### Q346 (Pool Item #347)
+### Q379 (Pool Item #347)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 43-39-15
 - **Explanation:** O.C.G.A. § 43-39-15(c) mandates that rules establishing continuing education requirements must be adopted and promulgated by the Board at least one year prior to the implementation of the requirements.
 
-### Q347 (Pool Item #376)
+### Q380 (Pool Item #376)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(3) explicitly defines 'synchronous activities' as live online interactive video conferences in real time.
 
-### Q348 (Pool Item #377)
+### Q381 (Pool Item #377)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(4) defines 'asynchronous activities' as online courses or recordings of previously held programs that one can access on one's own schedule.
 
-### Q349 (Pool Item #378)
+### Q382 (Pool Item #378)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a)3 allows a maximum of 5 CE credits per article for first or second authoring, for a total of up to 10 CE credits per biennium.
 
-### Q350 (Pool Item #379)
+### Q383 (Pool Item #379)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a)2 allows a maximum of 10 CE credits per course for first-time teaching of a semester-long course, with a maximum of 20 CE credits per biennium.
 
-### Q351 (Pool Item #380)
+### Q384 (Pool Item #380)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a)2 provides that each hour of first-time approved workshop presentation counts for 1 hour of CE, with a maximum of 12 CE credits per biennium allowed for two 6-hour workshops.
 
-### Q352 (Pool Item #381)
+### Q385 (Pool Item #381)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a)2 provides that a maximum of 6 CE credits each biennium is allowed for presenting two 3-hour workshops for the first time.
 
-### Q353 (Pool Item #382)
+### Q386 (Pool Item #382)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(a)1 specifies that taking and passing graduate-level psychology courses allows a maximum of 20 CE credits per biennium.
 
-### Q354 (Pool Item #383)
+### Q387 (Pool Item #383)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(b) provides that if a licensee claims Area II ongoing group consultation, they must earn a minimum of 10 and can earn a maximum of 20 CE credits per biennium.
 
-### Q355 (Pool Item #384)
+### Q388 (Pool Item #384)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(6) provides that a psychologist serving on a Board oral examination subcommittee will be awarded 3 ethics CE credits for each day of service, up to a maximum of 6 CE credits per biennium.
 
-### Q356 (Pool Item #385)
+### Q389 (Pool Item #385)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(6) states that a psychologist who serves as a peer reviewer for the Board regarding an alleged violation earns 3 ethics CE credits for the current biennium upon Board acknowledgment and submission of a written report.
 
-### Q357 (Pool Item #386)
+### Q390 (Pool Item #386)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-8-.02
 - **Explanation:** Rule 510-8-.02(7)(c) mandates that required documentation for Area III is an official certificate of attendance/participation issued by the CE presenter/sponsoring organization including date, title, location, and hours.
 
-### Q358 (Pool Item #405)
+### Q391 (Pool Item #405)
 - **Domain:** Competence
 - **Correct Option:** C
 - **Source Citation:** OCGA 37-3-41(d)
 - **Explanation:** O.C.G.A. § 37-3-41(d) explicitly authorizes any licensed psychologist, clinical social worker, or clinical nurse specialist to perform any act specified in the section to be performed by a physician, including executing a Form 1013 certificate.
 
-### Q359 (Pool Item #406)
+### Q392 (Pool Item #406)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** OCGA 37-3-41(c)
 - **Explanation:** O.C.G.A. § 37-3-41(c) mandates that any peace officer taking a person into custody shall execute a written report detailing the circumstances, which along with the certificate or court order becomes part of the patient's clinical record.
 
-### Q360 (Pool Item #407)
+### Q393 (Pool Item #407)
 - **Domain:** Competence
 - **Correct Option:** A
 - **Source Citation:** OCGA 37-3-41(a),(b)
 - **Explanation:** O.C.G.A. § 37-3-41(a) mandates that any peace officer, within 72 hours after receiving such certificate, shall make diligent efforts to take into custody the person named and deliver them forthwith to the nearest emergency receiving facility.
 
-### Q361 (Pool Item #420)
+### Q394 (Pool Item #420)
 - **Domain:** Competence
 - **Correct Option:** B
 - **Source Citation:** OCGA 43-39-1(7)
 - **Explanation:** O.C.G.A. § 43-39-1(7) explicitly provides that nothing in this paragraph shall be construed as permitting the administration or prescription of drugs or in any way infringing upon or restricting the practice of medicine.
 
-### Q362 (Pool Item #435)
+### Q395 (Pool Item #435)
 - **Domain:** Competence
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07 provides that the practice of telepsychology is subject to the same standard of care and professional, legal, and ethical responsibilities as in-person psychological practice.
 
-### Q363 (Pool Item #14)
+### Q396 (Pool Item #14)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** OCGA 43-39-1
 - **Explanation:** O.C.G.A. § 43-39-1(6) defines 'psychological testing' as the use of assessment instruments to measure mental abilities, personality, or neuropsychological functioning and to diagnose/evaluate mental disorders.
 
-### Q364 (Pool Item #15)
+### Q397 (Pool Item #15)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** OCGA 43-39-1
 - **Explanation:** O.C.G.A. § 43-39-1(5) defines 'neuropsychological functioning' as psychological manifestations of brain functioning.
 
-### Q365 (Pool Item #16)
+### Q398 (Pool Item #16)
 - **Domain:** Assessment
 - **Correct Option:** D
 - **Source Citation:** OCGA 43-39-1
 - **Explanation:** O.C.G.A. § 43-39-1(4) defines 'mental abilities' as abilities that are psychological in nature and related to the practice of psychology.
 
-### Q366 (Pool Item #132)
+### Q399 (Pool Item #132)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** APA 9.01 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.01 (Rule 510-4-.02) requires psychologists to base opinions contained in recommendations, reports, and evaluative statements on information and techniques sufficient to substantiate their findings.
 
-### Q367 (Pool Item #133)
+### Q400 (Pool Item #133)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** APA 9.04 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.04 (Rule 510-4-.02) defines 'test data' as raw and scaled scores, client/patient responses to test questions or stimuli, and psychologists' notes and recordings concerning client statements and behavior during examination.
 
-### Q368 (Pool Item #134)
+### Q401 (Pool Item #134)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** APA 9.04 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.04 (Rule 510-4-.02) provides that in the absence of a client/patient release, psychologists provide test data only as required by law or court order.
 
-### Q369 (Pool Item #135)
+### Q402 (Pool Item #135)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** APA 9.02 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.02 (Rule 510-4-.02) requires assessment instruments to have established validity and reliability for the population tested; when validity/reliability is not established, psychologists describe strengths and limitations of test results.
 
-### Q370 (Pool Item #136)
+### Q403 (Pool Item #136)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** APA 9.08 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.08 (Rule 510-4-.02) prohibits psychologists from basing assessment decisions, interventions, or recommendations on outdated tests or obsolete test data.
 
-### Q371 (Pool Item #137)
+### Q404 (Pool Item #137)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** APA 9.11 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.11 (Rule 510-4-.02) defines 'test materials' as manuals, instruments, protocols, and test questions or stimuli, explicitly excluding test data as defined in Standard 9.04.
 
-### Q372 (Pool Item #138)
+### Q405 (Pool Item #138)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** APA 9.11 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.11 (Rule 510-4-.02) requires psychologists to make reasonable efforts to maintain the integrity and security of test materials consistent with law and contractual obligations.
 
-### Q373 (Pool Item #139)
+### Q406 (Pool Item #139)
 - **Domain:** Assessment
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 9.07 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.07 (Rule 510-4-.02) prohibits psychologists from promoting the use of psychological assessment techniques by unqualified persons, except when conducted for training purposes with appropriate supervision.
 
-### Q374 (Pool Item #140)
+### Q407 (Pool Item #140)
 - **Domain:** Assessment
-- **Correct Option:** D
+- **Correct Option:** A
 - **Source Citation:** APA 9.10 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 9.10 (Rule 510-4-.02) requires psychologists to take reasonable steps to ensure that explanations of results are given, unless the nature of the relationship precludes providing an explanation (e.g. employment screening) and this was clearly explained to the person in advance.
 
-### Q375 (Pool Item #166)
+### Q408 (Pool Item #166)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 requires that the selection and interpretation of psychological tests remain the non-delegable responsibility of the supervising psychologist.
 
-### Q376 (Pool Item #169)
+### Q409 (Pool Item #169)
 - **Domain:** Assessment
-- **Correct Option:** B
+- **Correct Option:** A
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08 requires forensic psychologists to conduct a personal examination before testifying regarding psychological characteristics, unless examination is not feasible despite reasonable efforts, in which case they must clarify the impact and limit their conclusions.
 
-### Q377 (Pool Item #170)
+### Q410 (Pool Item #170)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08 provides that court-appointed custody evaluators who adhere to the APA's Guidelines for Child Custody Evaluations in Family Law Proceedings are presumed to have acted in good faith.
 
-### Q378 (Pool Item #171)
+### Q411 (Pool Item #171)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08 states that whether a court-appointed child custody evaluator acted in bad faith is determined exclusively by the judge presiding over the case.
 
-### Q379 (Pool Item #182)
+### Q412 (Pool Item #182)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** Rule 510-10-.03
 - **Explanation:** Rule 510-10-.03 specifies that psychological tests may only be selected, administered, and interpreted by a currently licensed Georgia psychologist or students/trainees under direct licensed supervision.
 
-### Q380 (Pool Item #241)
+### Q413 (Pool Item #241)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07(5)(g)3 provides that when assessment is conducted via telepsychology, psychologists ensure that the integrity of the psychometric properties of the test and the conditions of administration indicated in the test manual are preserved.
 
-### Q381 (Pool Item #243)
+### Q414 (Pool Item #243)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08(1) requires that forensic assessments, recommendations, and reports be based on information and techniques (including personal interviews of the individual, when appropriate) sufficient to provide appropriate substantiation for findings.
 
-### Q382 (Pool Item #244)
+### Q415 (Pool Item #244)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08(2) specifies that when an examination is not feasible despite reasonable efforts, psychologists must clarify the impact of their limited information on the reliability and validity of their reports and testimony, and appropriately limit the nature and extent of their conclusions.
 
-### Q383 (Pool Item #245)
+### Q416 (Pool Item #245)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08(3) mandates that in forensic testimony and reports, psychologists testify truthfully, honestly, and candidly and describe fairly the basis for their testimony and conclusions.
 
-### Q384 (Pool Item #246)
+### Q417 (Pool Item #246)
 - **Domain:** Assessment
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.08
 - **Explanation:** Rule 510-5-.08(5) requires psychologists to avoid multiple and potentially conflicting roles in forensic matters, and when serving in more than one role is unavoidable, to clarify role expectations and the extent of confidentiality in advance.
 
-### Q385 (Pool Item #288)
+### Q418 (Pool Item #288)
 - **Domain:** Assessment
 - **Correct Option:** D
 - **Source Citation:** APA 9.06
 - **Explanation:** APA Standard 9.06 mandates that when interpreting assessment results (including automated interpretations), psychologists consider assessment purpose, test factors, test-taking abilities, and situational, personal, linguistic, and cultural differences.
 
-### Q386 (Pool Item #289)
+### Q419 (Pool Item #289)
 - **Domain:** Assessment
 - **Correct Option:** A
 - **Source Citation:** APA 9.09
 - **Explanation:** APA Standard 9.09(a) requires psychologists offering assessment or scoring services to other professionals to accurately describe the purpose, norms, validity, reliability, applications, and special qualifications applicable to their use.
 
-### Q387 (Pool Item #290)
+### Q420 (Pool Item #290)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** APA 9.09
 - **Explanation:** APA Standard 9.09(c) explicitly establishes that psychologists retain responsibility for the appropriate application, interpretation, and use of assessment instruments, whether they score and interpret tests themselves or use automated or other services.
 
-### Q388 (Pool Item #314)
+### Q421 (Pool Item #314)
 - **Domain:** Assessment
 - **Correct Option:** B
 - **Source Citation:** APA 2.01f
 - **Explanation:** APA Standard 2.01(f) requires that when assuming forensic roles, psychologists are or become reasonably familiar with the judicial or administrative rules governing their roles.
 
-### Q389 (Pool Item #397)
+### Q422 (Pool Item #397)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** Rule 510-10-.03
 - **Explanation:** Rule 510-10-.03(2) provides that students, trainees, or assistants satisfying statutory and rule requirements may administer and interpret psychological tests under the direct supervision of a currently licensed psychologist.
 
-### Q390 (Pool Item #398)
+### Q423 (Pool Item #398)
 - **Domain:** Assessment
 - **Correct Option:** D
 - **Source Citation:** Rule 510-10-.03
 - **Explanation:** Rule 510-10-.03(2)(b) explicitly provides that educational and vocational tests, interest inventories, and academic achievement tests are not entirely within the domain of the profession of psychology alone.
 
-### Q391 (Pool Item #421)
+### Q424 (Pool Item #421)
 - **Domain:** Assessment
 - **Correct Option:** C
 - **Source Citation:** OCGA 43-39-1(7)
 - **Explanation:** O.C.G.A. § 43-39-1(7) states that while psychologists may describe assessments as psychological in nature, 'any such description or labeling shall not be construed to alter the meaning of psychological testing as defined in paragraph (6)'.
 
-### Q392 (Pool Item #434)
+### Q425 (Pool Item #434)
 - **Domain:** Assessment
 - **Correct Option:** D
 - **Source Citation:** Rule 510-4-.02 Standard 9.04, 9.11
 - **Explanation:** APA Standards 9.04 and 9.11 distinguish between test data (raw and scaled scores, client responses, and notes) and test materials (manuals, instruments, protocols, and test questions, which psychologists must maintain secure).
 
-### Q393 (Pool Item #49)
+### Q426 (Pool Item #49)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** OCGA 43-39-13
 - **Explanation:** O.C.G.A. § 43-39-13 provides that results of Board-ordered impairment examinations are admissible in Board disciplinary proceedings notwithstanding any claim of privilege.
 
-### Q394 (Pool Item #60)
+### Q427 (Pool Item #60)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** OCGA 43-39-16
 - **Explanation:** O.C.G.A. § 43-39-16 provides that confidential communications between a licensed psychologist and client are placed upon the same basis as those provided by law between attorney and client.
 
-### Q395 (Pool Item #61)
+### Q428 (Pool Item #61)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** OCGA 24-9-21
 - **Explanation:** O.C.G.A. § 24-9-21(6) (and modern § 24-5-501(a)(6)) explicitly establishes the psychologist-patient privilege in the Georgia Evidence Code.
 
-### Q396 (Pool Item #62)
+### Q429 (Pool Item #62)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** B
 - **Source Citation:** OCGA 24-9-21
 - **Explanation:** O.C.G.A. § 24-9-21 provides confidential communication privileges for psychiatrists, LCSWs, psychiatric CNSs, MFTs, and LPCs during psychotherapeutic relationships, on par with attorney-client and psychologist-patient privilege.
 
-### Q397 (Pool Item #112)
+### Q430 (Pool Item #112)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** APA 4.01 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 4.01 (Rule 510-4-.02) provides that psychologists have a primary obligation and must take reasonable precautions to protect confidential information.
 
-### Q398 (Pool Item #113)
+### Q431 (Pool Item #113)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** APA 4.02 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 4.02 (Rule 510-4-.02) requires psychologists to discuss the relevant limits of confidentiality at the outset of the relationship and thereafter as new circumstances warrant.
 
-### Q399 (Pool Item #114)
+### Q432 (Pool Item #114)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** B
 - **Source Citation:** APA 4.03 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 4.03 (Rule 510-4-.02) requires psychologists to obtain permission from clients or their legal representatives prior to recording voices or images.
 
-### Q400 (Pool Item #115)
+### Q433 (Pool Item #115)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** C
 - **Source Citation:** APA 4.05 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 4.05 (Rule 510-4-.02) permits disclosures without consent only as mandated by law or permitted by law for a valid purpose, disclosing only the minimum necessary information.
 
-### Q401 (Pool Item #116)
+### Q434 (Pool Item #116)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** APA 4.06 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 4.06 (Rule 510-4-.02) requires that when consulting with colleagues, psychologists do not disclose confidential identifying information without prior consent and disclose information only to the extent necessary.
 
-### Q402 (Pool Item #162)
+### Q435 (Pool Item #162)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** Rule 510-5-.06
 - **Explanation:** Rule 510-5-.06 provides that the obligation to maintain client confidentiality continues indefinitely after termination of the professional relationship and after closure of records.
 
-### Q403 (Pool Item #265)
+### Q436 (Pool Item #265)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** APA 4.04
 - **Explanation:** APA Standard 4.04(a) mandates that in order to minimize intrusions on privacy, psychologists include in written and oral reports and consultations only information germane to the purpose for which the communication is made.
 
-### Q404 (Pool Item #266)
+### Q437 (Pool Item #266)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** B
 - **Source Citation:** APA 4.07
 - **Explanation:** APA Standard 4.07 provides that psychologists do not disclose confidential, personally identifiable client information in writings, lectures, or public media unless they take reasonable steps to disguise the person or organization, obtain written consent, or have legal authorization.
 
-### Q405 (Pool Item #325)
+### Q438 (Pool Item #325)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** APA 4.02
 - **Explanation:** APA Standard 4.02(a) provides that psychologists discuss with persons and organizations the relevant limits of confidentiality and foreseeable uses of information at the outset of the relationship and thereafter as new circumstances may warrant, unless not feasible or contraindicated.
 
-### Q406 (Pool Item #326)
+### Q439 (Pool Item #326)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** B
 - **Source Citation:** APA 4.02
 - **Explanation:** APA Standard 4.02(c) requires psychologists who offer services, products, or information via electronic transmission to inform clients/patients of the risks to privacy and limits of confidentiality.
 
-### Q407 (Pool Item #327)
+### Q440 (Pool Item #327)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** C
 - **Source Citation:** APA 4.04
 - **Explanation:** APA Standard 4.04(b) provides that psychologists discuss confidential information obtained in their work only for appropriate scientific or professional purposes and only with persons clearly concerned with such matters.
 
-### Q408 (Pool Item #328)
+### Q441 (Pool Item #328)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** APA 4.05
 - **Explanation:** APA Standard 4.05(b) allows disclosure without consent only as mandated by law, or where permitted by law for a valid purpose such as to: (1) provide needed professional services; (2) obtain appropriate professional consultations; (3) protect the client/patient, psychologist, or others from harm; or (4) obtain payment for services (in which instance disclosure is limited to the minimum necessary).
 
-### Q409 (Pool Item #329)
+### Q442 (Pool Item #329)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** A
 - **Source Citation:** APA 4.05
 - **Explanation:** APA Standard 4.05(b)(4) specifies that when disclosing confidential information to obtain payment for services, disclosure is limited to the minimum that is necessary to achieve the purpose.
 
-### Q410 (Pool Item #355)
+### Q443 (Pool Item #355)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** C
 - **Source Citation:** OCGA 24-9-21
 - **Explanation:** O.C.G.A. § 24-5-501 (formerly § 24-9-21) lists communications between husband and wife among privileged communications that cannot be compelled on grounds of public policy.
 
-### Q411 (Pool Item #356)
+### Q444 (Pool Item #356)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** OCGA 24-9-21
 - **Explanation:** O.C.G.A. § 24-5-501(b) (formerly § 24-9-21) defines the psychotherapeutic relationship as the relationship arising between a patient and a licensed clinical social worker, clinical nurse specialist in psychiatric/mental health, marriage and family therapist, or professional counselor using psychotherapeutic techniques.
 
-### Q412 (Pool Item #402)
+### Q445 (Pool Item #402)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** D
 - **Source Citation:** OCGA 19-7-5(g)
 - **Explanation:** O.C.G.A. § 19-7-5(g) explicitly mandates that child abuse must be reported notwithstanding that the reasonable cause is based upon communication otherwise privileged by law (with a narrow exception solely for clergy confession).
 
-### Q413 (Pool Item #413)
+### Q446 (Pool Item #413)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** C
 - **Source Citation:** OCGA 30-5-4(d)
 - **Explanation:** O.C.G.A. § 30-5-4(d) provides that suspected abuse, neglect, or exploitation must be reported notwithstanding that the communication is otherwise made privileged or confidential by law (excepting solely clergy confessions).
 
-### Q414 (Pool Item #433)
+### Q447 (Pool Item #433)
 - **Domain:** Privacy and Confidentiality
 - **Correct Option:** C
 - **Source Citation:** Rule 510-4-.02 Standard 4.03
 - **Explanation:** APA Standard 4.03 (Rule 510-4-.02) requires psychologists to obtain permission from all clients/patients or their legal representatives prior to recording their voices or images.
 
-### Q415 (Pool Item #24)
+### Q448 (Pool Item #460)
+- **Domain:** Privacy and Confidentiality
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 24-5-501(a)(6)
+- **Explanation:** Under O.C.G.A. § 24-5-501(a)(6) and established Georgia jurisprudence, the statutory psychologist-patient privilege does not attach to court-ordered evaluations where the examinee is given prior notice that the evaluation is for the court and not confidential.
+
+### Q449 (Pool Item #461)
+- **Domain:** Privacy and Confidentiality
+- **Correct Option:** D
+- **Source Citation:** O.C.G.A. § 24-5-501(a)(8)
+- **Explanation:** Under O.C.G.A. § 24-5-501(a)(8), confidential communications between a patient and members of a multidisciplinary mental health treatment team retain their privileged status; consulting with treatment team members does not waive the privilege.
+
+### Q450 (Pool Item #24)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** D
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05 requires trainees to maintain a weekly log documenting activities, total hours, client/patient involvement hours, and individual supervision hours.
 
-### Q416 (Pool Item #41)
+### Q451 (Pool Item #41)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** A
 - **Source Citation:** Rule 510-8-.03
 - **Explanation:** Rule 510-8-.03 requires licensees to maintain documentation of completed continuing education activities for four years.
 
-### Q417 (Pool Item #120)
+### Q452 (Pool Item #120)
 - **Domain:** Recordkeeping and Fees
-- **Correct Option:** D
+- **Correct Option:** C
 - **Source Citation:** APA 6.03 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 6.03 (Rule 510-4-.02) explicitly provides that psychologists may not withhold records under their control that are requested and needed for a client's emergency treatment solely because payment has not been received.
 
-### Q418 (Pool Item #121)
+### Q453 (Pool Item #121)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** A
 - **Source Citation:** APA 6.04 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 6.04 (Rule 510-4-.02) requires that as early as feasible in a professional or scientific relationship, psychologists and recipients reach an agreement specifying compensation and billing arrangements.
 
-### Q419 (Pool Item #122)
+### Q454 (Pool Item #122)
 - **Domain:** Recordkeeping and Fees
-- **Correct Option:** B
+- **Correct Option:** A
 - **Source Citation:** APA 6.05 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 6.05 (Rule 510-4-.02) permits bartering with clients only if it is not clinically contraindicated and the resulting arrangement is not exploitative.
 
-### Q420 (Pool Item #123)
+### Q455 (Pool Item #123)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** APA 6.06 / Rule 510-4-.02
 - **Explanation:** APA Ethics Code Standard 6.06 (Rule 510-4-.02) requires reports to payers to accurately state the nature of the service provided, fees, identity of the provider, findings, and diagnosis.
 
-### Q421 (Pool Item #159)
+### Q456 (Pool Item #159)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.04
 - **Explanation:** Rule 510-5-.04 requires psychological records for adult clients to be retained for a minimum of seven (7) years after the last date of professional service.
 
-### Q422 (Pool Item #160)
+### Q457 (Pool Item #160)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** Rule 510-5-.04
 - **Explanation:** Rule 510-5-.04 provides that records of minor clients must be maintained until three years after the minor reaches the age of majority (i.e. age 21), or at least seven years after the last service date, whichever is later.
 
-### Q423 (Pool Item #161)
+### Q458 (Pool Item #161)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** A
 - **Source Citation:** Rule 510-5-.04
 - **Explanation:** Rule 510-5-.04 enumerates required record components: identifying and contact information, fee/billing records, informed consent, diagnosis/clinical basis, treatment plan, dates and nature of services, interventions, and assessment results.
 
-### Q424 (Pool Item #207)
+### Q459 (Pool Item #207)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** Rule 510-1-.05; Rule 510-2-.01
 - **Explanation:** Board Rule 510-1-.05 explicitly provides that application fees are non-refundable.
 
-### Q425 (Pool Item #208)
+### Q460 (Pool Item #208)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** D
 - **Source Citation:** Rule 510-1-.05
 - **Explanation:** Rule 510-1-.05 states that any request for refund of fees other than application fees must be made in writing and must be received within one year of the date on which the fee was received by the Board.
 
-### Q426 (Pool Item #242)
+### Q461 (Pool Item #242)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** B
 - **Source Citation:** Rule 510-5-.07
 - **Explanation:** Rule 510-5-.07(5)(e)2 provides that when keeping records of email, online messaging, and other work using telecommunication technologies, psychologists are cognizant that preserving the actual communication may be preferable to summarization.
 
-### Q427 (Pool Item #271)
+### Q462 (Pool Item #271)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** APA 6.01
 - **Explanation:** APA Standard 6.01 specifies that psychologists create and maintain records to facilitate provision of services later, allow replication of research, meet institutional requirements, ensure accuracy of billing/payments, and ensure compliance with law.
 
-### Q428 (Pool Item #272)
+### Q463 (Pool Item #272)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** D
 - **Source Citation:** APA 6.02
 - **Explanation:** APA Standard 6.02(b) provides that if confidential information concerning service recipients is entered into databases accessible to persons whose access has not been consented to, psychologists use coding or other techniques to avoid personal identifiers.
 
-### Q429 (Pool Item #273)
+### Q464 (Pool Item #273)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** A
 - **Source Citation:** APA 6.02
 - **Explanation:** APA Standard 6.02(c) requires psychologists to make plans in advance to facilitate the appropriate transfer and to protect the confidentiality of records and data in the event of their withdrawal from positions or practice.
 
-### Q430 (Pool Item #274)
+### Q465 (Pool Item #274)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** B
 - **Source Citation:** APA 6.04
 - **Explanation:** APA Standard 6.04(a),(d) specifies that as early as is feasible in a professional or scientific relationship, psychologists reach an agreement specifying compensation and billing arrangements, and discuss anticipated limitations to services due to financing.
 
-### Q431 (Pool Item #275)
+### Q466 (Pool Item #275)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** APA 6.04
 - **Explanation:** APA Standard 6.04(e) mandates that if psychologists intend to use collection agencies or legal measures to collect unpaid fees, they first inform the person that such measures will be taken and provide that person an opportunity to prompt payment.
 
-### Q432 (Pool Item #302)
+### Q467 (Pool Item #302)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** B
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(1)(b),(2)(b) requires the supervising psychologist to co-sign all written reports, evaluations, and insurance/billing claims produced by interns and unlicensed postdoctoral fellows.
 
-### Q433 (Pool Item #303)
+### Q468 (Pool Item #303)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** C
 - **Source Citation:** Rule 510-2-.05
 - **Explanation:** Rule 510-2-.05(1)(h) requires that client files maintained by trainees must be updated no less than once each month.
 
-### Q434 (Pool Item #431)
+### Q469 (Pool Item #431)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** A
 - **Source Citation:** Rule 510-4-.02 Standard 6.03
 - **Explanation:** APA Standard 6.03 (Rule 510-4-.02) explicitly states that psychologists may not withhold records under their control that are requested and needed for a client's/patient's emergency treatment solely because payment has not been received.
 
-### Q435 (Pool Item #432)
+### Q470 (Pool Item #432)
 - **Domain:** Recordkeeping and Fees
 - **Correct Option:** B
 - **Source Citation:** Rule 510-4-.02 Standard 6.05; Rule 510-5-.01
 - **Explanation:** APA Standard 6.05 (Rule 510-4-.02) specifies that psychologists may barter only if (1) it is not clinically contraindicated, and (2) the resulting arrangement is not exploitative.
+
+### Q471 (Pool Item #441)
+- **Domain:** Recordkeeping and Fees
+- **Correct Option:** D
+- **Source Citation:** Ga. Comp. R. & Regs. r. 510-1-.05
+- **Explanation:** Ga. Comp. R. & Regs. r. 510-1-.05 explicitly provides that all fees paid to the Georgia State Board of Examiners of Psychologists are non-refundable and non-transferable.
+
+### Q472 (Pool Item #467)
+- **Domain:** Recordkeeping and Fees
+- **Correct Option:** B
+- **Source Citation:** PSI Candidate Information Bulletin #1755 (2023), p. 2
+- **Explanation:** The PSI Candidate Information Bulletin specifies that the examination fee is $85 for each examination attempt (initial examination or re-examination), which is non-refundable and non-transferable.

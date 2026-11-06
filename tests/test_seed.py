@@ -98,12 +98,12 @@ def test_question_record_structure():
             == q["answer_text"].strip().rstrip(".;:!?,").lower()
         ), f"Question {i} correct option text '{selected_option_text}' does not match answer '{q['answer_text']}'"
 
-    # Key distribution should be reasonably uniform (~25% each across 435 questions)
-    # 435 / 4 = 108.75. Each should be between 80 and 140.
+    # Key distribution should be reasonably uniform (~25% each across 472 questions)
+    # 472 / 4 = 118. Each should be between 80 and 150.
     for key, count in key_counts.items():
         assert (
-            80 <= count <= 140
-        ), f"Key distribution unbalanced for {key}: count={count} out of 435"
+            80 <= count <= 150
+        ), f"Key distribution unbalanced for {key}: count={count} out of 472"
 
 
 def test_quantitative_no_distractors():

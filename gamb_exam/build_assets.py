@@ -3560,7 +3560,7 @@ def generate_web_quizzer(
 
 
 def build_all_assets(
-    output_dir: Path | str,
+    output_dir: Path | str | None = None,
     pool_path: Path | str | None = None,
 ) -> dict[str, list[Path]]:
     """Coordinate full generation of all consumer study products.
@@ -3584,13 +3584,14 @@ def build_all_assets(
 
     Args:
         output_dir: Root directory where output directories (pdfs, docs, web) will be created.
+            Defaults to repository root if None.
         pool_path: Optional path to questions pool JSON file.
 
     Returns:
         Dict mapping asset category ("pdfs", "docs", "web") to list of generated Path objects.
     """
-    out_dir = Path(output_dir)
     repo_root = Path(__file__).resolve().parent.parent
+    out_dir = Path(output_dir) if output_dir is not None else repo_root
     pool_file = Path(pool_path) if pool_path is not None else repo_root / "gamb_exam" / "question_pool.json"
 
     pdfs_dir = out_dir / "pdfs"
@@ -3667,4 +3668,14 @@ def build_all_assets(
             web_index,
         ],
     }
+
+
+if __name__ == "__main__":
+    import sys
+
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    results = build_all_assets(output_dir=target)
+    total_count = sum(len(v) for v in results.values())
+    print(f"Successfully generated {total_count} study products across {len(results)} categories.")
+
 

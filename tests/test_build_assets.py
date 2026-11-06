@@ -187,6 +187,7 @@ def test_generate_compendium(tmp_path: Path):
     assert "http://johnbflemingphd.com" in q_text
     assert "Q1." in q_text
     assert "Q435." in q_text
+    assert "Q472." in q_text
     # Questions section must NOT reveal the correct option
     assert "Correct Option:" not in q_text
 
@@ -198,6 +199,7 @@ def test_generate_compendium(tmp_path: Path):
     assert "http://johnbflemingphd.com" in k_text
     assert "Q1" in k_text
     assert "Q435" in k_text
+    assert "Q472" in k_text
 
     html_text = html_path.read_text(encoding="utf-8")
     assert "John B. Fleming, PhD" in html_text
@@ -386,9 +388,10 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "<strong>NOT official examination materials</strong>" in content
     assert "LEGAL &amp; REGULATORY DISCLAIMER:" in content
     assert "const QUESTION_BANK =" in content
-    # Check that all 435 questions are serialized
+    # Check that all questions are serialized
     assert '"id": 1' in content
     assert '"id": 435' in content
+    assert '"id": 472' in content
     assert "localStorage" in content
     assert 'id="stats-modal"' in content
     assert "gamb_stats" in content

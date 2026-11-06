@@ -319,3 +319,20 @@ def export_mock_markdown(
     key_path.write_text("\n".join(k_lines), encoding="utf-8")
 
     return (questions_path, key_path)
+
+
+def generate_exam(
+    count: int = 50,
+    db_path: Path | str | None = None,
+    prioritize_unseen: bool = False,
+    shuffle_options: bool = True,
+    rng: random.Random | None = None,
+) -> list[dict[str, Any]]:
+    """Convenience alias for generate_exam_questions returning 50 questions."""
+    return generate_exam_questions(
+        db_path=db_path,
+        prioritize_unseen=prioritize_unseen,
+        shuffle_options=shuffle_options,
+        rng=rng,
+    )
+

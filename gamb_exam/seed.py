@@ -625,7 +625,7 @@ def seed_database(
     db_path: Path | str | None = None,
     tsv_path: Path | str | None = None,
 ) -> int:
-    """Initialize database and seed all 435 question records idempotently.
+    """Initialize database and seed all question records idempotently.
 
     Builds records before modifying the database.
     Resets the autoincrement primary key sequence so IDs start at 1.
