@@ -8,7 +8,7 @@
 
 ---
 
-A comprehensive, rigorously audited jurisprudence examination study kit, printable PDF library, zero-install offline web quizzer, and interactive terminal simulator for psychologists preparing for the **Georgia Jurisprudence Examination (GAMB)** administered via PSI Services.
+A structured, independently developed jurisprudence examination study kit, printable PDF library, zero-install offline web quizzer, and interactive terminal simulator designed to assist psychologists preparing for the **Georgia Jurisprudence Examination (GAMB)** administered via PSI Services.
 
 > [!IMPORTANT]
 > **Noncommercial License & Terms of Use**:
@@ -21,15 +21,15 @@ A comprehensive, rigorously audited jurisprudence examination study kit, printab
 
 ## 📦 Study Products & Downloads (No Installation Required)
 
-Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 2.0 (Release Date: 11/06/2026)** and systematically mapped against our **205-item Atomic Fact Inventory** (`data/fact_inventory.json`).
+The study aids provided in this repository are packaged in ready-to-use, zero-dependency consumer formats to support candidate preparation. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 2.0 (Release Date: 11/06/2026)** and structured around our **205-item Atomic Fact Inventory** (`data/fact_inventory.json`).
 
 ### 📚 Downloadable Study Packets & Flashcards
 
 | Product | Format | Description | Direct Access / Link |
 | :--- | :---: | :--- | :--- |
-| **Numbers & Deadlines Cram Sheet** | `PDF` | Chronological fast-lookup tables for every statutory hour, day, month, year, and supervision ratio on the exam. | [Download Numbers Cheat Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf) |
+| **Numbers & Deadlines Cram Sheet** | `PDF` | Chronological fast-lookup tables compiling statutory hours, days, months, years, and supervision ratios identified in the study corpus. | [Download Numbers Cheat Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf) |
 | **Statutory Cheat Sheet** | `PDF` | Thematic deep-dive cross-referencing O.C.G.A. Titles 16, 19, 30, 37, 43, 50 and Board Rules Chapter 510. | [Download Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf) |
-| **472-Question Compendium** | `PDF` | Complete self-study worktext organized by domain (Part I: Questions without answers; Part II: Back-of-book annotated key & citations). | [Download Compendium PDF](pdfs/GAMB_Question_Compendium.pdf) |
+| **472-Question Compendium** | `PDF` | Self-study question compendium organized by domain (Part I: Questions without answers; Part II: Back-of-book annotated key & citations). | [Download Compendium PDF](pdfs/GAMB_Question_Compendium.pdf) |
 | **Practice Exam Form A** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form A PDF](pdfs/GAMB_Practice_Exam_Form_A.pdf) |
 | **Practice Exam Form B** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form B PDF](pdfs/GAMB_Practice_Exam_Form_B.pdf) |
 | **Practice Exam Form C** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form C PDF](pdfs/GAMB_Practice_Exam_Form_C.pdf) |
@@ -52,10 +52,10 @@ Typeset with professional CSS Paged Media standards for crisp printing or digita
 
 - **[Numbers & Deadlines Cram Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/numbers_cheat_sheet.md)):
   - Fast-lookup chronological cram sheet designed specifically for memorizing numerical test items.
-  - Groups every testable statutory timeframe into four clean tables: **The Clock (Hours)** for emergency commitments and mandatory reporting; **The Calendar (Days)** for application deadlines, temporary practice limits, conviction notices, and late renewal grace periods; **Months & Years** for training completion windows, license durations, and record retention; and **Supervision & Standards** for supervision ratios, CE caps, and passing cutoffs.
+  - Compiles key statutory timeframes identified in the rules and code into four tables: **The Clock (Hours)** for emergency commitments and mandatory reporting; **The Calendar (Days)** for application deadlines, temporary practice limits, conviction notices, and late renewal grace periods; **Months & Years** for training completion windows, license durations, and record retention; and **Supervision & Standards** for supervision ratios, CE caps, and passing cutoffs.
 - **[Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/cheat_sheet.md)):
   - Thematic quick-reference summary cross-referencing Georgia Code and Board rules across 4 core domains: *Licensure, Supervision & Continuing Education*; *Mandatory Reporting & Emergency Involuntary Commitment*; *Confidentiality, Evidentiary Privilege & Prohibited Relationships*; and *Recordkeeping, Practice Limits & Disciplinary Penalties*.
-- **[472-Question Compendium PDF](pdfs/GAMB_Question_Compendium.pdf)** (Comprehensive Worktext):
+- **[472-Question Compendium PDF](pdfs/GAMB_Question_Compendium.pdf)** (Question Compendium):
   - **Part I (Question Bank)**: All 472 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
   - **Part II (Annotated Answer Key)**: Located in the back of the book, providing the correct option, primary statutory citation, and detailed legal rationale for every question.
 - **Practice Exam Booklets ([Form A](pdfs/GAMB_Practice_Exam_Form_A.pdf), [Form B](pdfs/GAMB_Practice_Exam_Form_B.pdf), [Form C](pdfs/GAMB_Practice_Exam_Form_C.pdf))**:
@@ -184,7 +184,7 @@ uv run gamb-exam test
 ### Complete CLI Subcommands Reference
 
 - **`uv run gamb-exam test`**  
-  Launches the full 60-minute timed 50-question mock exam. Stratified sampling guarantees exact Board domain quotas (14/13/9/6/5/3) with randomized distractor order. Draws from a 100% curated 472-question bank where every multiple-choice option is a plausible Georgia legal foil. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
+  Launches a 60-minute timed 50-question mock exam. Stratified sampling applies Board domain blueprint proportions (14/13/9/6/5/3) with randomized distractor order. Draws from a curated 472-question bank where distractors are drafted to reflect plausible Georgia legal standards and statutory numbers. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
 
 - **`uv run gamb-exam study [--domain <domain>] [--count <N>]`**  
   Untimed study drill mode. Questions reveal immediate feedback, full statutory explanations, and legal citations upon answering.
@@ -231,9 +231,9 @@ uv run gamb-exam test
 
 ## Study Corpus & Source Materials
 
-The study corpus in `study_corpus/` and modular source repository in `sources/` contain complete, unabridged reference copies of all Georgia statutes, administrative rules, and incorporated authorities governing the practice of psychology in Georgia:
+The study corpus in `study_corpus/` and modular source repository in `sources/` provide reference copies of key Georgia statutes, administrative rules, and incorporated authorities relevant to the examination syllabus:
 
-- **`study_corpus/STATUTES_OC_GA.md`**: Complete, unabridged primary text of all **48 Georgia Code sections** governing the exam—including all 44 sections on the Board's reference list plus the **4 critical 1-hop incorporated satellite statutes** audited in Version 2.0:
+- **`study_corpus/STATUTES_OC_GA.md`**: Reference text of **48 Georgia Code sections** compiled for examination study—including the 44 sections from the Board's published reference list alongside 4 key 1-hop incorporated satellite statutes added in Version 2.0:
   - **Title 43 Ch. 39**: Georgia Psychology Practice Act (O.C.G.A. §§ 43-39-1 through 43-39-20).
   - **Title 43 Ch. 1**: General Provisions for Professional Licensing Boards (§§ 43-1-19 through 43-1-25, and § 43-1-27 felony notification).
   - **Title 19 Ch. 7**: Mandatory Child Abuse Reporting (§ 19-7-5, with 2025 recodification notes).
@@ -250,24 +250,24 @@ The study corpus in `study_corpus/` and modular source repository in `sources/` 
   - **Title 37 Ch. 3**: Examination, Treatment, and Involuntary Patients (§ 37-3-41 Form 1013 emergency admission authority).
   - **Title 16 Ch. 13**: Controlled Substances license sanctions (§§ 16-13-110 through 16-13-114).
   - **Title 50 Ch. 13 & 18**: Georgia Administrative Procedure Act and Open Records Act provisions referenced in board hearings and child abuse record confidentiality.
-- **`study_corpus/RULES_510_FULL.md`**: Complete official text of the Rules and Regulations of the State of Georgia, Department 510 (State Board of Examiners of Psychologists), Chapters 510-1 through 510-10, including Chapter 510-4 (APA Ethics Code) and Chapter 510-5 (Supplemental Code of Conduct).
+- **`study_corpus/RULES_510_FULL.md`**: Official reference text of the Rules and Regulations of the State of Georgia, Department 510 (State Board of Examiners of Psychologists), Chapters 510-1 through 510-10, including Chapter 510-4 (APA Ethics Code) and Chapter 510-5 (Supplemental Code of Conduct).
 - **`study_corpus/EXAM_SYLLABUS_AND_TOPIC_MAPPING.md`**: Detailed mapping linking each of the 6 exam domains to statutory and administrative rule sections.
-- **`data/fact_inventory.json`**: Comprehensive inventory of **205 atomic testable legal and regulatory facts** systematically extracted from primary sources during the curriculum audit, each tagged with statutory citations, machine domain slugs, question IDs, and Anki card tags.
+- **`data/fact_inventory.json`**: Structured inventory of **205 atomic legal and regulatory facts** identified from primary sources during our curriculum review, each mapped with statutory citations, machine domain slugs, question IDs, and Anki card tags.
 - **`sources/`**: Modular directory preserving individual statute files (`sources/ocga_43-39/`, `sources/ocga_satellites/`), Department 510 official rules, and PSI Candidate Bulletin #1755.
 - **`MANIFEST.md`**: Full audit manifest, line/word counts, and verification status for all primary source files.
 
 ---
 
-## Curated Question Bank & Quality Guarantees
+## Curated Question Bank & Design Standards
 
-The full 472-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit and is officially versioned:
+The full 472-question examination pool (`gamb_exam/question_pool.json`) has undergone structured editorial review and is officially versioned:
 - **Versioned Pool Standard**: Labeled **Version 2.0 (Release Date: 11/06/2026)** with schema metadata in `gamb_exam/question_pool_metadata.json`. All generated PDF documents, markdown booklets, and the web application display this version in running headers and cover pages.
-- **100% Atomic Fact Coverage**: Every question in the pool is mapped 1:1 to an atomic legal fact in `data/fact_inventory.json` with bidirectional verification.
-- **Distractor Renovation & Zero Giveaway Bias**: Polar questions have been systematically renovated to eliminate giveaway distractors (no 3-Yes/1-No or 1-Yes/3-No options; strictly balanced 2-Yes/2-No with distinct legal rationales or declarative non-polar choices).
-- **100% Context-Responsive Options**: Every distractor directly answers the question asked using plausible Georgia statutory numbers, procedures, or standards (no nonsense cross-domain fallback options).
-- **Zero Test-Wiseness Flaws**: No bare "Yes" or "No" answers; all options are expanded into parallel explanatory clauses with uniform syntactic tone and balanced lengths.
-- **Unambiguous Legal Accuracy**: Exactly one legally correct answer per question under O.C.G.A. Titles 43, 31, 37, 19, 30, 16, 24, 50, Georgia Board Rules (Chapter 510), and the APA Ethics Code.
-- **Balanced Key Distribution**: Perfectly distributed answer keys across all 472 items (~25% each across A, B, C, and D).
+- **Targeted Atomic Fact Alignment**: Each question in the pool is designed to align directly with an identified atomic fact in `data/fact_inventory.json` with bidirectional traceability across questions and flashcards.
+- **Distractor Review & Balanced Alternatives**: Polar questions have been reviewed and structured to avoid obvious giveaway distractors (avoiding 3-Yes/1-No or 1-Yes/3-No imbalances; utilizing balanced 2-Yes/2-No formulations with distinct legal rationales or declarative non-polar choices).
+- **Context-Responsive Options**: Distractors are drafted to address the question prompt directly using plausible Georgia statutory numbers, procedures, or standards, avoiding arbitrary or non-contextual fallback choices.
+- **Syntax and Distractor Balance**: Avoids bare "Yes" or "No" answers; options are written with parallel explanatory clauses, uniform syntactic tone, and comparable lengths.
+- **Grounded Legal Rationale**: Each question is keyed to a specific statutory citation or administrative rule under O.C.G.A., Georgia Board Rules (Chapter 510), or the APA Ethics Code, with an intended single best answer supported by legal rationale.
+- **Balanced Key Distribution**: Answer keys are roughly evenly distributed across all 472 items (~25% each across A, B, C, and D) to prevent position bias.
 - **Stateless Database Generation**: The SQLite database (`data/gamb_exam.db`) is generated on-demand at runtime from `gamb_exam/question_pool.json` and kept strictly outside git tracking.
 
 ---
@@ -284,7 +284,7 @@ The full 472-question examination pool (`gamb_exam/question_pool.json`) has unde
 uv run pytest
 ```
 All **103 unit, pool, CLI, TUI, fact inventory, and asset build tests** verify:
-- Atomic fact inventory integrity, 100% coverage across questions and flashcards, valid statutory citations, non-empty fact statements, and schema conformity (`test_fact_inventory.py`).
+- Fact inventory integrity, verifying that all 205 inventory items map to questions and flashcards in the repository with valid statutory citations and schema conformity (`test_fact_inventory.py`).
 - SQLite question pool integrity, unique IDs 1–472, schema conformity, distractor uniqueness, and polar giveaway prevention (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
 - Stratified 50-question mock exam sampler and Markdown export formatting (`test_generator.py`).
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
