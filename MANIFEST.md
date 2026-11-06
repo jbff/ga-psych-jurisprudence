@@ -1,4 +1,4 @@
-# GAMB STUDY KIT — SOURCE MANIFEST (Audited & Restored 2026-10-24)
+# GAMB STUDY KIT — SOURCE MANIFEST (Audited & Restored 2026-10-24; Re-Verified & Expanded 2026-11-06)
 
 ## Board reference list vs. what's on disk
 
@@ -24,14 +24,18 @@
 | OCGA 43-39-18 | sources/ocga_43-39/43-39-18.md | 237 | ✓ |
 | OCGA 43-39-19 | sources/ocga_43-39/43-39-19.md | 113 | ✓ |
 | OCGA 43-39-20 | sources/ocga_43-39/43-39-20.md | 225 | ✓ |
+| OCGA 16-6-3 | sources/ocga_satellites/16-6-3.md | 592 | ✓ (statutory rape; elements, victim < 16, Romeo & Juliet 16–18 misdemeanor exception; 1-hop § 19-7-5) |
+| OCGA 16-6-4 | sources/ocga_satellites/16-6-4.md | 860 | ✓ (child molestation & aggravated molestation; child < 16, sexual desire intent; 1-hop § 19-7-5) |
+| OCGA 16-6-5 | sources/ocga_satellites/16-6-5.md | 424 | ✓ (enticing child < 16 for indecent purposes; 1-hop § 19-7-5) |
 | OCGA 16-6-5.1 | sources/ocga_satellites/16-6-5_1.md | 1997 | ✓ full-text restored (1st/2nd deg sexual misconduct crimes, penalties, definitions) |
 | OCGA 16-13-110 | sources/ocga_satellites/16-13-110.md | 352 | ✓ |
 | OCGA 16-13-111 | sources/ocga_satellites/16-13-111.md | 491 | ✓ |
 | OCGA 16-13-112 | sources/ocga_satellites/16-13-112.md | 137 | ✓ |
 | OCGA 16-13-113 | sources/ocga_satellites/16-13-113.md | 166 | ✓ |
 | OCGA 16-13-114 | sources/ocga_satellites/16-13-114.md | 168 | ✓ |
-| OCGA 19-7-5 | sources/ocga_satellites/19-7-5.md | 7905 | ✓ full-text (2025 ed., 24-hr reporting mandate) |
-| OCGA 24-9-21 | sources/ocga_satellites/24-9-21.md | 291 | ✓ (psychologist-patient privilege on attorney-client basis; § 24-5-501) |
+| OCGA 19-7-5 | sources/ocga_satellites/19-7-5.md | 8234 | ✓ full-text (2025 ed., 24-hr reporting mandate; verified cross-refs for former (b)(10) now (b)(17)) |
+| OCGA 24-5-501 | sources/ocga_satellites/24-5-501.md | 524 | ✓ (privileged communications; 2013 overhaul of § 24-9-21; attorney-client & psychologist-patient) |
+| OCGA 24-9-21 | sources/ocga_satellites/24-9-21.md | 291 | ✓ (psychologist-patient privilege on attorney-client basis; predecessor to § 24-5-501) |
 | OCGA 30-5-4 | sources/ocga_satellites/30-5-4.md | 1237 | ✓ full-text restored (elder/disabled reporting, broad immunity, privilege override) |
 | OCGA 37-3-41 | sources/ocga_satellites/37-3-41.md | 871 | ✓ full-text restored (Form 1013 involuntary commitment, psychologist authority, reporting) |
 | OCGA 43-1-19 | sources/ocga_satellites/43-1-19.md | 3521 | ✓ full-text restored (disciplinary grounds (a)(1)–(11), subpoenas, sanctions, probation) |
