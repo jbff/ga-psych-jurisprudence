@@ -23,6 +23,8 @@ A structured, independently developed jurisprudence examination study kit, print
 
 The study aids provided in this repository are packaged in ready-to-use, zero-dependency consumer formats to support candidate preparation. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 2.0 (Release Date: 11/06/2026)** and structured around our **205-item Atomic Fact Inventory** (`data/fact_inventory.json`).
 
+> 💡 **Pre-Packaged Downloads Available**: You can download individual PDFs, the offline web quizzer, Anki flashcards, or the all-in-one ZIP archive (`GAMB_Study_Package_v2.0_All_Files.zip`) directly from the **[GitHub v2.0 Release](https://github.com/jbff/ga-psych-jurisprudence/releases/tag/v2.0)**.
+
 ### 📚 Downloadable Study Packets & Flashcards
 
 | Product | Format | Description | Direct Access / Link |
