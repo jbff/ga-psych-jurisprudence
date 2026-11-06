@@ -96,12 +96,80 @@ def test_question_object_structure(question_pool: list[dict]):
             f"Question {idx} explanation must be a non-empty string"
         )
 
+        # 9. fact_ids: non-empty list of string fact identifiers
+        fact_ids = q.get("fact_ids")
+        assert isinstance(fact_ids, list) and len(fact_ids) >= 1, (
+            f"Question {idx} (id={q['id']}) must have a non-empty 'fact_ids' list"
+        )
+        assert all(isinstance(fid, str) and fid.strip() for fid in fact_ids), (
+            f"Question {idx} (id={q['id']}) 'fact_ids' entries must be non-empty strings"
+        )
+
 
 def test_question_ids_unique_and_ordered(question_pool: list[dict]):
     """Verify question IDs are unique and sequential."""
     ids = [q["id"] for q in question_pool]
     assert len(ids) == len(set(ids)), "Question IDs must be unique"
     assert ids == sorted(ids), "Question IDs must be in ascending order"
+
+
+def test_no_polar_giveaways(question_pool: list[dict]):
+    """Verify that polar questions avoid giveaways.
+
+    For options that start with or contain polar indicators ('Yes' / 'No'):
+    - Rejects any question with 3 Yes / 1 No or 3 No / 1 Yes (giveaway distractors).
+    - Accepts questions where there are exactly 2 Yes choices and 2 No choices
+      (each with distinct legal rationales), or where options are declarative
+      statements without Yes/No tokens.
+    """
+    import re
+
+    def classify_opt(text: str) -> str | None:
+        t = text.strip()
+        if re.match(r"^yes\b", t, re.IGNORECASE):
+            return "YES"
+        if re.match(r"^no\s+(more|less)\s+than\b", t, re.IGNORECASE):
+            return None
+        if re.match(r"^no\b", t, re.IGNORECASE):
+            return "NO"
+        return None
+
+    defective: list[dict] = []
+    for q in question_pool:
+        qid = q["id"]
+        opts = q.get("options", {})
+        polar_types = [classify_opt(opts.get(k, "")) for k in ("A", "B", "C", "D")]
+        yes_count = polar_types.count("YES")
+        no_count = polar_types.count("NO")
+
+        if yes_count == 0 and no_count == 0:
+            continue
+        if yes_count == 2 and no_count == 2:
+            continue
+
+        defective.append({
+            "id": qid,
+            "yes": yes_count,
+            "no": no_count,
+            "stem": q.get("question_text", "")[:60],
+        })
+
+    assert not defective, (
+        f"Found {len(defective)} questions with defective/unbalanced polar distractors: {defective}"
+    )
+
+
+def test_question_fact_inventory_cross_references(question_pool: list[dict]):
+    """Verify bidirectional link integrity between question pool and fact inventory."""
+    from gamb_exam.fact_registry import load_facts
+
+    facts = load_facts()
+    fact_ids = {f["fact_id"] for f in facts}
+
+    for q in question_pool:
+        qid = q["id"]
+        for fid in q.get("fact_ids", []):
+            assert fid in fact_ids, f"Question {qid} references unknown fact_id '{fid}'"
 
 
 def test_seed_database_loads_from_question_pool(tmp_path: Path, question_pool: list[dict]):

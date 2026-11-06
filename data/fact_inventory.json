@@ -12,10 +12,22 @@
       "includes_diagnosis_and_treatment": true
     },
     "associated_question_ids": [
-      14
+      14,
+      58,
+      60,
+      345,
+      422,
+      423,
+      424
     ],
     "associated_anki_card_ids": [
-      14
+      14,
+      58,
+      60,
+      345,
+      422,
+      423,
+      424
     ],
     "audit_status": "verified"
   },
@@ -34,13 +46,21 @@
     },
     "associated_question_ids": [
       14,
+      182,
       337,
-      338
+      338,
+      397,
+      398,
+      421
     ],
     "associated_anki_card_ids": [
       14,
+      182,
       337,
-      338
+      338,
+      397,
+      398,
+      421
     ],
     "audit_status": "verified"
   },
@@ -105,11 +125,13 @@
     },
     "associated_question_ids": [
       16,
-      54
+      54,
+      420
     ],
     "associated_anki_card_ids": [
       16,
-      54
+      54,
+      420
     ],
     "audit_status": "verified"
   },
@@ -323,11 +345,13 @@
     },
     "associated_question_ids": [
       13,
+      201,
       203,
       340
     ],
     "associated_anki_card_ids": [
       13,
+      201,
       203,
       340
     ],
@@ -370,10 +394,26 @@
       ]
     },
     "associated_question_ids": [
-      17
+      17,
+      69,
+      70,
+      179,
+      180,
+      181,
+      394,
+      395,
+      396
     ],
     "associated_anki_card_ids": [
-      17
+      17,
+      69,
+      70,
+      179,
+      180,
+      181,
+      394,
+      395,
+      396
     ],
     "audit_status": "verified"
   },
@@ -507,9 +547,13 @@
       "requires_direct_supervision": true,
       "representation_as_psychologist_barred": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      418
+    ],
+    "associated_anki_card_ids": [
+      418
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-7-009",
@@ -549,11 +593,13 @@
     },
     "associated_question_ids": [
       156,
-      176
+      176,
+      417
     ],
     "associated_anki_card_ids": [
       156,
-      176
+      176,
+      417
     ],
     "audit_status": "verified"
   },
@@ -574,9 +620,13 @@
         "marital_family"
       ]
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      419
+    ],
+    "associated_anki_card_ids": [
+      419
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-8-001",
@@ -699,9 +749,13 @@
       "min_frequency_per_year": 1,
       "contracting_authorized": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      344
+    ],
+    "associated_anki_card_ids": [
+      344
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-10-001",
@@ -740,10 +794,16 @@
       "provisional_license_authorized": true
     },
     "associated_question_ids": [
-      306
+      306,
+      390,
+      391,
+      392
     ],
     "associated_anki_card_ids": [
-      306
+      306,
+      390,
+      391,
+      392
     ],
     "audit_status": "verified"
   },
@@ -829,10 +889,14 @@
       "privilege_abrogated": true
     },
     "associated_question_ids": [
-      48
+      48,
+      157,
+      158
     ],
     "associated_anki_card_ids": [
-      48
+      48,
+      157,
+      158
     ],
     "audit_status": "verified"
   },
@@ -885,10 +949,18 @@
       "requires_hearing_opportunity": true
     },
     "associated_question_ids": [
-      50
+      50,
+      57,
+      253,
+      254,
+      255
     ],
     "associated_anki_card_ids": [
-      50
+      50,
+      57,
+      253,
+      254,
+      255
     ],
     "audit_status": "verified"
   },
@@ -947,10 +1019,14 @@
     },
     "associated_question_ids": [
       64,
+      195,
+      196,
       349
     ],
     "associated_anki_card_ids": [
       64,
+      195,
+      196,
       349
     ],
     "audit_status": "verified"
@@ -1054,10 +1130,12 @@
       "civil_and_criminal_immunity": true
     },
     "associated_question_ids": [
-      68
+      68,
+      71
     ],
     "associated_anki_card_ids": [
-      68
+      68,
+      71
     ],
     "audit_status": "verified"
   },
@@ -1073,9 +1151,13 @@
       "requires_board_order": true,
       "requires_good_faith": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      72
+    ],
+    "associated_anki_card_ids": [
+      72
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-RULE-510-1-001",
@@ -1089,9 +1171,13 @@
       "location": "237 Coliseum Dr, Macon, GA",
       "administrator": "Division Director"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      399
+    ],
+    "associated_anki_card_ids": [
+      399
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-RULE-510-1-002",
@@ -1157,10 +1243,20 @@
       "retake_waiting_period_days": 30
     },
     "associated_question_ids": [
-      1
+      1,
+      5,
+      183,
+      184,
+      186,
+      367
     ],
     "associated_anki_card_ids": [
-      1
+      1,
+      5,
+      183,
+      184,
+      186,
+      367
     ],
     "audit_status": "verified"
   },
@@ -1176,10 +1272,18 @@
       "eppp_prerequisite_for_gamb": true
     },
     "associated_question_ids": [
-      2
+      2,
+      363,
+      364,
+      365,
+      366
     ],
     "associated_anki_card_ids": [
-      2
+      2,
+      363,
+      364,
+      365,
+      366
     ],
     "audit_status": "verified"
   },
@@ -1199,10 +1303,14 @@
       ]
     },
     "associated_question_ids": [
-      3
+      3,
+      187,
+      188
     ],
     "associated_anki_card_ids": [
-      3
+      3,
+      187,
+      188
     ],
     "audit_status": "verified"
   },
@@ -1222,10 +1330,12 @@
       ]
     },
     "associated_question_ids": [
-      226
+      226,
+      228
     ],
     "associated_anki_card_ids": [
-      226
+      226,
+      228
     ],
     "audit_status": "verified"
   },
@@ -1242,10 +1352,12 @@
       "full_time_on_campus": true
     },
     "associated_question_ids": [
-      227
+      227,
+      229
     ],
     "associated_anki_card_ids": [
-      227
+      227,
+      229
     ],
     "audit_status": "verified"
   },
@@ -1262,11 +1374,15 @@
     },
     "associated_question_ids": [
       25,
-      230
+      230,
+      303,
+      304
     ],
     "associated_anki_card_ids": [
       25,
-      230
+      230,
+      303,
+      304
     ],
     "audit_status": "verified"
   },
@@ -1306,11 +1422,19 @@
     },
     "associated_question_ids": [
       27,
-      232
+      232,
+      298,
+      299,
+      300,
+      302
     ],
     "associated_anki_card_ids": [
       27,
-      232
+      232,
+      298,
+      299,
+      300,
+      302
     ],
     "audit_status": "verified"
   },
@@ -1327,11 +1451,17 @@
     },
     "associated_question_ids": [
       21,
-      233
+      23,
+      233,
+      293,
+      295
     ],
     "associated_anki_card_ids": [
       21,
-      233
+      23,
+      233,
+      293,
+      295
     ],
     "audit_status": "verified"
   },
@@ -1370,12 +1500,28 @@
       "face_to_face_required": true
     },
     "associated_question_ids": [
+      24,
       28,
-      235
+      235,
+      291,
+      292,
+      294,
+      296,
+      297,
+      429,
+      430
     ],
     "associated_anki_card_ids": [
+      24,
       28,
-      235
+      235,
+      291,
+      292,
+      294,
+      296,
+      297,
+      429,
+      430
     ],
     "audit_status": "verified"
   },
@@ -1414,10 +1560,12 @@
       ]
     },
     "associated_question_ids": [
-      30
+      30,
+      301
     ],
     "associated_anki_card_ids": [
-      30
+      30,
+      301
     ],
     "audit_status": "verified"
   },
@@ -1472,9 +1620,11 @@
       "max_application_validity_years": 1
     },
     "associated_question_ids": [
+      185,
       236
     ],
     "associated_anki_card_ids": [
+      185,
       236
     ],
     "audit_status": "verified"
@@ -1492,12 +1642,20 @@
       "military_spouse_eligible": true
     },
     "associated_question_ids": [
+      73,
       74,
-      307
+      307,
+      387,
+      388,
+      389
     ],
     "associated_anki_card_ids": [
+      73,
       74,
-      307
+      307,
+      387,
+      388,
+      389
     ],
     "audit_status": "verified"
   },
@@ -1532,12 +1690,20 @@
       "incorporated_code": "APA Ethics Code"
     },
     "associated_question_ids": [
+      99,
       101,
-      308
+      148,
+      149,
+      308,
+      432
     ],
     "associated_anki_card_ids": [
+      99,
       101,
-      308
+      148,
+      149,
+      308,
+      432
     ],
     "audit_status": "verified"
   },
@@ -1553,10 +1719,12 @@
       "standard": "education_training_supervised_experience"
     },
     "associated_question_ids": [
+      100,
       102,
       309
     ],
     "associated_anki_card_ids": [
+      100,
       102,
       309
     ],
@@ -1618,10 +1786,16 @@
     },
     "associated_question_ids": [
       105,
+      247,
+      248,
+      249,
       312
     ],
     "associated_anki_card_ids": [
       105,
+      247,
+      248,
+      249,
       312
     ],
     "audit_status": "verified"
@@ -1640,10 +1814,12 @@
     },
     "associated_question_ids": [
       106,
+      262,
       313
     ],
     "associated_anki_card_ids": [
       106,
+      262,
       313
     ],
     "audit_status": "verified"
@@ -1684,10 +1860,12 @@
     },
     "associated_question_ids": [
       108,
+      263,
       315
     ],
     "associated_anki_card_ids": [
       108,
+      263,
       315
     ],
     "audit_status": "verified"
@@ -1728,10 +1906,12 @@
     },
     "associated_question_ids": [
       110,
+      264,
       317
     ],
     "associated_anki_card_ids": [
       110,
+      264,
       317
     ],
     "audit_status": "verified"
@@ -1749,10 +1929,12 @@
     },
     "associated_question_ids": [
       111,
+      141,
       318
     ],
     "associated_anki_card_ids": [
       111,
+      141,
       318
     ],
     "audit_status": "verified"
@@ -1793,11 +1975,13 @@
     },
     "associated_question_ids": [
       113,
-      320
+      320,
+      433
     ],
     "associated_anki_card_ids": [
       113,
-      320
+      320,
+      433
     ],
     "audit_status": "verified"
   },
@@ -1814,10 +1998,12 @@
     },
     "associated_question_ids": [
       114,
+      265,
       321
     ],
     "associated_anki_card_ids": [
       114,
+      265,
       321
     ],
     "audit_status": "verified"
@@ -1836,10 +2022,12 @@
     },
     "associated_question_ids": [
       115,
+      266,
       322
     ],
     "associated_anki_card_ids": [
       115,
+      266,
       322
     ],
     "audit_status": "verified"
@@ -1879,10 +2067,12 @@
     },
     "associated_question_ids": [
       117,
+      271,
       324
     ],
     "associated_anki_card_ids": [
       117,
+      271,
       324
     ],
     "audit_status": "verified"
@@ -1906,10 +2096,14 @@
     },
     "associated_question_ids": [
       118,
+      272,
+      273,
       325
     ],
     "associated_anki_card_ids": [
       118,
+      272,
+      273,
       325
     ],
     "audit_status": "verified"
@@ -1948,10 +2142,14 @@
     },
     "associated_question_ids": [
       120,
+      274,
+      275,
       326
     ],
     "associated_anki_card_ids": [
       120,
+      274,
+      275,
       326
     ],
     "audit_status": "verified"
@@ -1991,10 +2189,16 @@
     },
     "associated_question_ids": [
       122,
+      276,
+      277,
+      278,
       328
     ],
     "associated_anki_card_ids": [
       122,
+      276,
+      277,
+      278,
       328
     ],
     "audit_status": "verified"
@@ -2013,10 +2217,18 @@
     },
     "associated_question_ids": [
       123,
+      279,
+      280,
+      281,
+      282,
       329
     ],
     "associated_anki_card_ids": [
       123,
+      279,
+      280,
+      281,
+      282,
       329
     ],
     "audit_status": "verified"
@@ -2035,10 +2247,20 @@
     },
     "associated_question_ids": [
       124,
+      283,
+      284,
+      285,
+      286,
+      287,
       330
     ],
     "associated_anki_card_ids": [
       124,
+      283,
+      284,
+      285,
+      286,
+      287,
       330
     ],
     "audit_status": "verified"
@@ -2078,10 +2300,12 @@
     },
     "associated_question_ids": [
       126,
+      143,
       332
     ],
     "associated_anki_card_ids": [
       126,
+      143,
       332
     ],
     "audit_status": "verified"
@@ -2099,10 +2323,12 @@
     },
     "associated_question_ids": [
       127,
+      144,
       333
     ],
     "associated_anki_card_ids": [
       127,
+      144,
       333
     ],
     "audit_status": "verified"
@@ -2122,10 +2348,14 @@
     },
     "associated_question_ids": [
       128,
+      145,
+      146,
       334
     ],
     "associated_anki_card_ids": [
       128,
+      145,
+      146,
       334
     ],
     "audit_status": "verified"
@@ -2164,10 +2394,12 @@
     },
     "associated_question_ids": [
       130,
+      147,
       336
     ],
     "associated_anki_card_ids": [
       130,
+      147,
       336
     ],
     "audit_status": "verified"
@@ -2205,10 +2437,12 @@
       "exception_therapist_endangerment": true
     },
     "associated_question_ids": [
-      132
+      132,
+      434
     ],
     "associated_anki_card_ids": [
-      132
+      132,
+      434
     ],
     "audit_status": "verified"
   },
@@ -2225,10 +2459,12 @@
       "release_only_with_authorization": true
     },
     "associated_question_ids": [
-      133
+      133,
+      139
     ],
     "associated_anki_card_ids": [
-      133
+      133,
+      139
     ],
     "audit_status": "verified"
   },
@@ -2244,10 +2480,12 @@
       "reliance_on_obsolete_tests_prohibited": true
     },
     "associated_question_ids": [
-      134
+      134,
+      288
     ],
     "associated_anki_card_ids": [
-      134
+      134,
+      288
     ],
     "audit_status": "verified"
   },
@@ -2263,10 +2501,14 @@
       "psychologist_retains_responsibility": true
     },
     "associated_question_ids": [
-      135
+      135,
+      289,
+      290
     ],
     "associated_anki_card_ids": [
-      135
+      135,
+      289,
+      290
     ],
     "audit_status": "verified"
   },
@@ -2283,10 +2525,12 @@
       "forensic_exception": true
     },
     "associated_question_ids": [
-      136
+      136,
+      140
     ],
     "associated_anki_card_ids": [
-      136
+      136,
+      140
     ],
     "audit_status": "verified"
   },
@@ -2346,10 +2590,12 @@
       "starts_from": "last_professional_contact"
     },
     "associated_question_ids": [
+      159,
       162,
       368
     ],
     "associated_anki_card_ids": [
+      159,
       162,
       368
     ],
@@ -2368,10 +2614,12 @@
       "min_age_of_client_before_disposal": 25
     },
     "associated_question_ids": [
+      160,
       163,
       369
     ],
     "associated_anki_card_ids": [
+      160,
       163,
       369
     ],
@@ -2389,12 +2637,18 @@
       "requires_advance_records_custodian_plan": true
     },
     "associated_question_ids": [
+      142,
+      161,
       164,
-      370
+      370,
+      431
     ],
     "associated_anki_card_ids": [
+      142,
+      161,
       164,
-      370
+      370,
+      431
     ],
     "audit_status": "verified"
   },
@@ -2497,11 +2751,15 @@
     "associated_question_ids": [
       152,
       237,
+      240,
+      241,
       435
     ],
     "associated_anki_card_ids": [
       152,
       237,
+      240,
+      241,
       435
     ],
     "audit_status": "verified"
@@ -2543,11 +2801,13 @@
     },
     "associated_question_ids": [
       154,
-      239
+      239,
+      242
     ],
     "associated_anki_card_ids": [
       154,
-      239
+      239,
+      242
     ],
     "audit_status": "verified"
   },
@@ -2565,13 +2825,19 @@
     },
     "associated_question_ids": [
       170,
+      171,
       243,
-      244
+      244,
+      245,
+      246
     ],
     "associated_anki_card_ids": [
       170,
+      171,
       243,
-      244
+      244,
+      245,
+      246
     ],
     "audit_status": "verified"
   },
@@ -2588,10 +2854,18 @@
     },
     "associated_question_ids": [
       150,
+      267,
+      268,
+      269,
+      270,
       334
     ],
     "associated_anki_card_ids": [
       150,
+      267,
+      268,
+      269,
+      270,
       334
     ],
     "audit_status": "verified"
@@ -2651,10 +2925,12 @@
     },
     "associated_question_ids": [
       55,
+      59,
       350
     ],
     "associated_anki_card_ids": [
       55,
+      59,
       350
     ],
     "audit_status": "verified"
@@ -2674,13 +2950,15 @@
       172,
       173,
       250,
-      251
+      251,
+      252
     ],
     "associated_anki_card_ids": [
       172,
       173,
       250,
-      251
+      251,
+      252
     ],
     "audit_status": "verified"
   },
@@ -2697,12 +2975,14 @@
       "late_renewal_deadline": "January 31"
     },
     "associated_question_ids": [
+      33,
       34,
       35,
       372,
       373
     ],
     "associated_anki_card_ids": [
+      33,
       34,
       35,
       372,
@@ -2791,11 +3071,17 @@
     },
     "associated_question_ids": [
       39,
-      189
+      189,
+      193,
+      384,
+      385
     ],
     "associated_anki_card_ids": [
       39,
-      189
+      189,
+      193,
+      384,
+      385
     ],
     "audit_status": "verified"
   },
@@ -2813,12 +3099,32 @@
     "associated_question_ids": [
       40,
       190,
-      191
+      191,
+      194,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      386
     ],
     "associated_anki_card_ids": [
       40,
       190,
-      191
+      191,
+      194,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      386
     ],
     "audit_status": "verified"
   },
@@ -2836,10 +3142,12 @@
     },
     "associated_question_ids": [
       41,
+      42,
       192
     ],
     "associated_anki_card_ids": [
       41,
+      42,
       192
     ],
     "audit_status": "verified"
@@ -2857,10 +3165,16 @@
       "requires_prior_notice": true
     },
     "associated_question_ids": [
-      177
+      177,
+      178,
+      393,
+      416
     ],
     "associated_anki_card_ids": [
-      177
+      177,
+      178,
+      393,
+      416
     ],
     "audit_status": "verified"
   },
@@ -2878,11 +3192,19 @@
     },
     "associated_question_ids": [
       256,
-      257
+      257,
+      258,
+      259,
+      260,
+      261
     ],
     "associated_anki_card_ids": [
       256,
-      257
+      257,
+      258,
+      259,
+      260,
+      261
     ],
     "audit_status": "verified"
   },
@@ -2943,10 +3265,12 @@
       "immediate_oral_report": true
     },
     "associated_question_ids": [
-      211
+      211,
+      400
     ],
     "associated_anki_card_ids": [
-      211
+      211,
+      400
     ],
     "audit_status": "verified"
   },
@@ -2986,9 +3310,13 @@
       "initial_report": "oral_immediate",
       "written_report": "upon_request"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      401
+    ],
+    "associated_anki_card_ids": [
+      401
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-19-7-5-006",
@@ -3003,10 +3331,12 @@
       "attorney_client_exception_retained": true
     },
     "associated_question_ids": [
-      63
+      63,
+      402
     ],
     "associated_anki_card_ids": [
-      63
+      63,
+      402
     ],
     "audit_status": "verified"
   },
@@ -3023,10 +3353,12 @@
       "civil_and_criminal_immunity": true
     },
     "associated_question_ids": [
-      65
+      65,
+      404
     ],
     "associated_anki_card_ids": [
-      65
+      65,
+      404
     ],
     "audit_status": "verified"
   },
@@ -3042,9 +3374,13 @@
       "mental_state": "knowingly_and_willfully",
       "offense_level": "misdemeanor"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      403
+    ],
+    "associated_anki_card_ids": [
+      403
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-19-7-5-009",
@@ -3469,11 +3805,13 @@
     },
     "associated_question_ids": [
       79,
-      212
+      212,
+      362
     ],
     "associated_anki_card_ids": [
       79,
-      212
+      212,
+      362
     ],
     "audit_status": "verified"
   },
@@ -3494,11 +3832,15 @@
     },
     "associated_question_ids": [
       80,
-      213
+      213,
+      414,
+      415
     ],
     "associated_anki_card_ids": [
       80,
-      213
+      213,
+      414,
+      415
     ],
     "audit_status": "verified"
   },
@@ -3515,11 +3857,13 @@
     },
     "associated_question_ids": [
       81,
-      214
+      214,
+      413
     ],
     "associated_anki_card_ids": [
       81,
-      214
+      214,
+      413
     ],
     "audit_status": "verified"
   },
@@ -3572,10 +3916,14 @@
       "certificate_type": "Form 1013"
     },
     "associated_question_ids": [
-      93
+      93,
+      98,
+      405
     ],
     "associated_anki_card_ids": [
-      93
+      93,
+      98,
+      405
     ],
     "audit_status": "verified"
   },
@@ -3591,10 +3939,12 @@
       "prior_examination_window_hours": 48
     },
     "associated_question_ids": [
-      93
+      93,
+      407
     ],
     "associated_anki_card_ids": [
-      93
+      93,
+      407
     ],
     "audit_status": "verified"
   },
@@ -3610,10 +3960,12 @@
       "certificate_transport_validity_hours": 48
     },
     "associated_question_ids": [
-      94
+      94,
+      406
     ],
     "associated_anki_card_ids": [
-      94
+      94,
+      406
     ],
     "audit_status": "verified"
   },
@@ -3787,11 +4139,21 @@
     },
     "associated_question_ids": [
       55,
-      350
+      199,
+      350,
+      353,
+      426,
+      427,
+      428
     ],
     "associated_anki_card_ids": [
       55,
-      350
+      199,
+      350,
+      353,
+      426,
+      427,
+      428
     ],
     "audit_status": "verified"
   },
@@ -3810,12 +4172,14 @@
     "associated_question_ids": [
       56,
       351,
-      352
+      352,
+      425
     ],
     "associated_anki_card_ids": [
       56,
       351,
-      352
+      352,
+      425
     ],
     "audit_status": "verified"
   },
@@ -3831,9 +4195,13 @@
       "enforcement_venue": "Superior Court",
       "sanction": "contempt_of_court"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      200
+    ],
+    "associated_anki_card_ids": [
+      200
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-1-25-001",
@@ -3849,9 +4217,15 @@
         "active_investigative_files"
       ]
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      197,
+      198
+    ],
+    "associated_anki_card_ids": [
+      197,
+      198
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-1-27-001",
@@ -3886,11 +4260,21 @@
     },
     "associated_question_ids": [
       85,
-      216
+      90,
+      91,
+      92,
+      216,
+      219,
+      220
     ],
     "associated_anki_card_ids": [
       85,
-      216
+      90,
+      91,
+      92,
+      216,
+      219,
+      220
     ],
     "audit_status": "verified"
   },
@@ -3908,10 +4292,16 @@
     },
     "associated_question_ids": [
       86,
+      87,
+      88,
+      89,
       217
     ],
     "associated_anki_card_ids": [
       86,
+      87,
+      88,
+      89,
       217
     ],
     "audit_status": "verified"
@@ -3929,10 +4319,12 @@
       "civil_immunity": true
     },
     "associated_question_ids": [
-      218
+      218,
+      221
     ],
     "associated_anki_card_ids": [
-      218
+      218,
+      221
     ],
     "audit_status": "verified"
   },
@@ -3950,10 +4342,16 @@
     },
     "associated_question_ids": [
       51,
+      222,
+      223,
+      224,
       357
     ],
     "associated_anki_card_ids": [
       51,
+      222,
+      223,
+      224,
       357
     ],
     "audit_status": "verified"
@@ -3973,12 +4371,18 @@
     "associated_question_ids": [
       52,
       53,
-      358
+      358,
+      359,
+      360,
+      361
     ],
     "associated_anki_card_ids": [
       52,
       53,
-      358
+      358,
+      359,
+      360,
+      361
     ],
     "audit_status": "verified"
   },
