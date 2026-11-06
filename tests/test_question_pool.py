@@ -36,19 +36,19 @@ def test_question_pool_file_exists_and_valid_json(question_pool_path: Path):
     assert len(data) > 0, "Question pool must not be empty"
 
 
-def test_total_435_count(question_pool: list[dict]):
-    """Verify question pool contains exactly 435 questions."""
-    if len(question_pool) < 435:
-        pytest.xfail(f"Partial audit in progress: {len(question_pool)}/435 questions present")
-    assert len(question_pool) == 435
+def test_total_pool_count(question_pool: list[dict]):
+    """Verify question pool contains exactly 472 questions."""
+    if len(question_pool) < 472:
+        pytest.xfail(f"Partial audit in progress: {len(question_pool)}/472 questions present")
+    assert len(question_pool) == 472
 
 
 def test_question_object_structure(question_pool: list[dict]):
     """Verify structure and constraints of each question object in question_pool.json."""
     for idx, q in enumerate(question_pool):
-        # 1. id: integer between 1 and 435
+        # 1. id: integer between 1 and total count
         assert isinstance(q.get("id"), int), f"Question {idx} 'id' must be an int"
-        assert 1 <= q["id"] <= 435, f"Question {idx} 'id' {q['id']} outside 1..435"
+        assert 1 <= q["id"] <= len(question_pool), f"Question {idx} 'id' {q['id']} outside 1..{len(question_pool)}"
 
         # 2. domain: one of 6 official Board domains
         assert q.get("domain") in OFFICIAL_DOMAINS, (
@@ -216,7 +216,7 @@ def test_fallback_to_tsv_when_json_missing(monkeypatch, tmp_path: Path):
 
     monkeypatch.setattr(seed_mod, "QUESTION_POOL_JSON", fake_path)
     records = seed_mod.build_question_records()
-    assert len(records) == 435, f"Expected 435 fallback records, got {len(records)}"
+    assert len(records) == 472, f"Expected 472 fallback records, got {len(records)}"
 
 
 def test_question_pool_metadata():
@@ -234,7 +234,7 @@ def test_question_pool_metadata():
 
     assert meta["version"] == "1.0"
     assert meta["date"] == "10/25/2026"
-    assert meta["total_questions"] == 435
+    assert meta["total_questions"] == 472
     assert QUESTION_POOL_VERSION == "1.0"
     assert QUESTION_POOL_DATE == "10/25/2026"
 

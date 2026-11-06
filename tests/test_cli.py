@@ -433,7 +433,7 @@ def test_cli_progress_command_empty(tmp_db_path: Path, capsys: pytest.CaptureFix
     ret = main(["progress", "--db", str(tmp_db_path)])
     assert ret == 0
     out = capsys.readouterr().out
-    assert "Items studied: 0 / 435 (0.0%)" in out
+    assert "Items studied: 0 / 472 (0.0%)" in out
     assert "Clean: 0 (0.0%)" in out
     assert "Ever wrong: 0 (0.0%)" in out
     assert "Competence" in out

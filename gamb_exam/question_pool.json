@@ -1089,7 +1089,7 @@
     "correct_option": "D",
     "explanation": "O.C.G.A. § 43-39-16 provides that confidential communications between a licensed psychologist and client are placed upon the same basis as those provided by law between attorney and client.",
     "fact_ids": [
-      "FACT-43-39-1-001"
+      "FACT-43-39-16-001"
     ]
   },
   {
@@ -1145,7 +1145,7 @@
     "correct_option": "C",
     "explanation": "O.C.G.A. § 43-39-19 provides that any person practicing psychology without a valid license is guilty of a misdemeanor punishable by a fine of $100 to $1,000, imprisonment up to 12 months, or both.",
     "fact_ids": [
-      "FACT-19-7-5-006"
+      "FACT-43-39-19-001"
     ]
   },
   {
@@ -1181,7 +1181,7 @@
     "correct_option": "A",
     "explanation": "O.C.G.A. § 43-39-15 and § 43-1-20 provide that the Board is not required to show that there is no adequate remedy at law to obtain an injunction against unlicensed practice.",
     "fact_ids": [
-      "FACT-19-7-5-007"
+      "FACT-43-39-15-002"
     ]
   },
   {
@@ -7615,7 +7615,7 @@
     "correct_option": "D",
     "explanation": "O.C.G.A. § 43-39-13(b) provides that disciplinary hearings shall be conducted in accordance with Chapter 13 of Title 50, the 'Georgia Administrative Procedure Act'.",
     "fact_ids": [
-      "FACT-43-39-1-001"
+      "FACT-43-39-13-005"
     ]
   },
   {
@@ -7633,7 +7633,7 @@
     "correct_option": "A",
     "explanation": "O.C.G.A. § 43-39-13(c) mandates that Board decisions may be appealed under the APA to the superior court in the county where the division director maintains his offices.",
     "fact_ids": [
-      "FACT-43-39-1-001"
+      "FACT-43-39-13-006"
     ]
   },
   {
@@ -7651,7 +7651,7 @@
     "correct_option": "B",
     "explanation": "O.C.G.A. § 43-39-13(c) provides that 'if the findings of the board are supported by any evidence, then such findings shall be accepted by the court'.",
     "fact_ids": [
-      "FACT-43-39-1-001"
+      "FACT-43-39-13-006"
     ]
   },
   {
@@ -7850,6 +7850,672 @@
     "explanation": "Rule 510-5-.07 provides that the practice of telepsychology is subject to the same standard of care and professional, legal, and ethical responsibilities as in-person psychological practice.",
     "fact_ids": [
       "FACT-RULE-510-5-008"
+    ]
+  },
+  {
+    "id": 436,
+    "domain": "licensure",
+    "subtopic": "board-member-removal",
+    "source_citation": "O.C.G.A. § 43-39-3(b)",
+    "question_text": "Under O.C.G.A. § 43-39-3(b), who possesses the legal authority to remove a member of the Georgia State Board of Examiners of Psychologists, and under what procedural requirement?",
+    "options": {
+      "A": "The Division Director of the Professional Licensing Boards, upon thirty days written administrative notice",
+      "B": "The President of the Board, with the concurrence of a two-thirds majority of seated members",
+      "C": "The Attorney General of Georgia, upon filing a formal petition in the Superior Court of Fulton County",
+      "D": "The Governor, after notice and hearing, for incompetence, neglect of duty, malfeasance, or crime involving moral turpitude"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 43-39-3(b) provides that the Governor may remove any member of the Board after notice and hearing for incompetence, neglect of duty, malfeasance in office, or commission of a crime involving moral turpitude.",
+    "fact_ids": [
+      "FACT-43-39-3-005"
+    ]
+  },
+  {
+    "id": 437,
+    "domain": "licensure",
+    "subtopic": "board-oath-of-office",
+    "source_citation": "O.C.G.A. § 43-39-4",
+    "question_text": "Under O.C.G.A. § 43-39-4, what requirement must an appointee to the Georgia State Board of Examiners of Psychologists fulfill prior to entering upon the discharge of official duties?",
+    "options": {
+      "A": "Post a surety bond of $25,000 with the Secretary of State",
+      "B": "Take and subscribe to the constitutional oath of office",
+      "C": "Complete a 40-hour administrative law orientation course approved by the Attorney General",
+      "D": "Surrender all active clinical client files to a Board-designated custodian"
+    },
+    "correct_option": "B",
+    "explanation": "O.C.G.A. § 43-39-4 mandates that immediately and before entering upon the duties of office, the members of the Board of Examiners of Psychologists shall take the constitutional oath of office and subscribe to it in writing.",
+    "fact_ids": [
+      "FACT-43-39-4-001"
+    ]
+  },
+  {
+    "id": 438,
+    "domain": "licensure",
+    "subtopic": "other-licensed-professions-exemption",
+    "source_citation": "O.C.G.A. § 43-39-7(6)",
+    "question_text": "Under O.C.G.A. § 43-39-7(6), may allied mental health professionals (such as licensed professional counselors or clinical social workers) practice counseling without a psychology license?",
+    "options": {
+      "A": "Yes; they may practice within their lawful scopes of practice, provided they do not use the title 'psychologist' or imply they are licensed psychologists",
+      "B": "Yes; they are fully exempt from all title restrictions and may market their services as psychological consulting",
+      "C": "No; all mental health practitioners in Georgia must hold an active license issued by the Board of Examiners of Psychologists",
+      "D": "No; allied practitioners may only provide counseling under the on-site supervision of a licensed psychologist"
+    },
+    "correct_option": "A",
+    "explanation": "O.C.G.A. § 43-39-7(6) clarifies that nothing in Chapter 39 shall restrict licensed physicians, nurses, professional counselors, social workers, or marriage and family therapists from doing work within their scopes of practice, provided they do not use the title 'psychologist' or hold themselves out to the public as psychologists.",
+    "fact_ids": [
+      "FACT-43-39-7-007"
+    ]
+  },
+  {
+    "id": 439,
+    "domain": "licensure",
+    "subtopic": "summary-suspension-for-exam-records-refusal",
+    "source_citation": "O.C.G.A. § 43-39-13(a)(1)-(2)",
+    "question_text": "Under O.C.G.A. § 43-39-13(a)(1)-(2), what action may the Board take if a licensed psychologist refuses to submit to a compelled physical or mental examination?",
+    "options": {
+      "A": "Issue an immediate lifetime revocation without opportunity for administrative appeal",
+      "B": "Assess a non-appealable mandatory civil penalty of $10,000",
+      "C": "Request the local district attorney to file misdemeanor criminal contempt charges",
+      "D": "Summarily suspend the license pending hearing if the Board finds public health, safety, or welfare imperatively requires emergency action"
+    },
+    "correct_option": "D",
+    "explanation": "Under O.C.G.A. § 43-39-13(a)(1)-(2) and the Administrative Procedure Act, if a psychologist refuses to submit to a compelled physical or mental examination, the Board may summarily suspend the license pending hearing upon finding that public health, safety, or welfare imperatively requires emergency action.",
+    "fact_ids": [
+      "FACT-43-39-13-004"
+    ]
+  },
+  {
+    "id": 440,
+    "domain": "licensure",
+    "subtopic": "public-roster-of-licensees",
+    "source_citation": "Ga. Comp. R. & Regs. r. 510-1-.04",
+    "question_text": "Under Ga. Comp. R. & Regs. r. 510-1-.04, who maintains the official public roster of all licensed psychologists in Georgia, and what information does it include?",
+    "options": {
+      "A": "The Georgia Psychological Association, listing names and clinical specialty areas",
+      "B": "The Secretary of State's Division Director, listing names, license numbers, and addresses of all licensees",
+      "C": "The Fulton County Clerk of Superior Court, listing active licensees and disciplinary filings",
+      "D": "The Board Ethics Committee, listing names and confidential telephone contacts"
+    },
+    "correct_option": "B",
+    "explanation": "Ga. Comp. R. & Regs. r. 510-1-.04 provides that the Division Director maintains an official roster containing the names, license numbers, and addresses of all licensed psychologists, which is available to the public.",
+    "fact_ids": [
+      "FACT-RULE-510-1-003"
+    ]
+  },
+  {
+    "id": 441,
+    "domain": "recordkeeping",
+    "subtopic": "non-refundability-of-fees",
+    "source_citation": "Ga. Comp. R. & Regs. r. 510-1-.05",
+    "question_text": "Under Ga. Comp. R. & Regs. r. 510-1-.05, what is the legal policy governing application and examination fees paid to the Georgia State Board of Examiners of Psychologists?",
+    "options": {
+      "A": "Fees are refundable within 30 days of application withdrawal minus a 10% administrative surcharge",
+      "B": "Fees may be transferred to another licensing biennium upon formal written petition",
+      "C": "Fees are held in an interest-bearing escrow account until license issuance or formal denial",
+      "D": "All fees paid to the Board are strictly non-refundable and non-transferable"
+    },
+    "correct_option": "D",
+    "explanation": "Ga. Comp. R. & Regs. r. 510-1-.05 explicitly provides that all fees paid to the Georgia State Board of Examiners of Psychologists are non-refundable and non-transferable.",
+    "fact_ids": [
+      "FACT-RULE-510-1-004"
+    ]
+  },
+  {
+    "id": 442,
+    "domain": "licensure",
+    "subtopic": "definition-of-sexual-abuse-cross-reference",
+    "source_citation": "O.C.G.A. § 19-7-5(b)(17)",
+    "question_text": "Under O.C.G.A. § 19-7-5(b)(17), which criminal offenses are expressly incorporated into the statutory definition of child sexual abuse for mandatory reporting purposes?",
+    "options": {
+      "A": "Simple battery (§ 16-5-23), disorderly conduct (§ 16-11-39), and reckless endangerment (§ 16-5-60)",
+      "B": "Criminal trespass (§ 16-7-21), stalking (§ 16-5-90), and harassment (§ 16-11-39.1)",
+      "C": "Contributing to delinquency of a minor (§ 16-12-1), educational neglect (§ 20-2-690), and truancy (§ 20-2-701)",
+      "D": "Statutory rape (§ 16-6-3), child molestation (§ 16-6-4), enticing a child (§ 16-6-5), and sexual assault by authority (§ 16-6-5.1)"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 19-7-5(b)(17) defines sexual abuse for child abuse reporting by explicit statutory cross-reference to Title 16 offenses, including statutory rape (§ 16-6-3), child molestation (§ 16-6-4), enticing a child for indecent purposes (§ 16-6-5), and sexual assault by persons with supervisory authority (§ 16-6-5.1).",
+    "fact_ids": [
+      "FACT-19-7-5-009"
+    ]
+  },
+  {
+    "id": 443,
+    "domain": "licensure",
+    "subtopic": "institutional-reporting-duties",
+    "source_citation": "O.C.G.A. § 19-7-5(c)(2)",
+    "question_text": "Under O.C.G.A. § 19-7-5(c)(2), does a psychologist practicing in an agency or hospital satisfy the mandatory child abuse reporting obligation solely by notifying their internal clinical supervisor?",
+    "options": {
+      "A": "Yes; internal notification immediately and unconditionally transfers all statutory reporting duties to the institution's legal counsel",
+      "B": "Yes; informing a supervisor satisfies the statute provided the communication is documented in the client's electronic health record",
+      "C": "No; internal agency notification is prohibited by law, and reporters must never inform supervisors before notifying police",
+      "D": "No; internal notification does not relieve the psychologist of the personal duty to ensure a report is made to DFCS or law enforcement, unless the institution has established reporting protocols and confirms a report was made"
+    },
+    "correct_option": "D",
+    "explanation": "Under O.C.G.A. § 19-7-5(c)(2), when a mandatory reporter notifies a person in charge of an institution or school, that person or their designee must report, but notifying a supervisor does not relieve the professional of personal responsibility to ensure an official report is made to DFCS or law enforcement unless verified institutional protocols ensure the report was completed.",
+    "fact_ids": [
+      "FACT-19-7-5-011"
+    ]
+  },
+  {
+    "id": 444,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-elements",
+    "source_citation": "O.C.G.A. § 16-6-3(a)",
+    "question_text": "Under O.C.G.A. § 16-6-3(a), what are the essential legal elements of the offense of statutory rape in Georgia?",
+    "options": {
+      "A": "Engaging in sexual intercourse with any person under the age of 16 who is not the spouse of the actor",
+      "B": "Engaging in sexual contact with any person under the age of 18 without explicit parental consent",
+      "C": "Engaging in sexual intercourse with a person under the age of 14, regardless of marital status",
+      "D": "Engaging in indecent conduct with a minor under the age of 17 within a public school zone"
+    },
+    "correct_option": "A",
+    "explanation": "O.C.G.A. § 16-6-3(a) defines statutory rape as sexual intercourse with any person under the age of 16 who is not the spouse of the actor.",
+    "fact_ids": [
+      "FACT-16-6-3-001"
+    ]
+  },
+  {
+    "id": 445,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-uncorroborated-testimony-rule",
+    "source_citation": "O.C.G.A. § 16-6-3(a)",
+    "question_text": "Under O.C.G.A. § 16-6-3(a), may a criminal conviction for statutory rape be obtained solely on the uncorroborated testimony of the alleged victim?",
+    "options": {
+      "A": "Yes; Georgia evidentiary law permits conviction based entirely on the uncorroborated testimony of any victim of a sexual offense",
+      "B": "Yes; provided the victim's testimony is delivered under oath in open court and deemed credible by the jury",
+      "C": "No; conviction requires two independent eyewitnesses to the act of intercourse in addition to physical medical evidence",
+      "D": "No; Georgia statutory law explicitly mandates that no conviction for statutory rape may be had on the uncorroborated testimony of the victim alone"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-3(a) explicitly provides: 'No conviction shall be had for this offense on the unsupported testimony of the victim.' Some independent corroborating evidence is legally required.",
+    "fact_ids": [
+      "FACT-16-6-3-002"
+    ]
+  },
+  {
+    "id": 446,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-felony-penalties",
+    "source_citation": "O.C.G.A. § 16-6-3(b)",
+    "question_text": "Under O.C.G.A. § 16-6-3(b), what is the general statutory sentencing range for felony statutory rape in Georgia?",
+    "options": {
+      "A": "Imprisonment for not less than 6 months nor more than 5 years",
+      "B": "Imprisonment for not less than one nor more than 20 years",
+      "C": "Imprisonment for not less than 5 nor more than 30 years",
+      "D": "Mandatory life imprisonment without eligibility for parole"
+    },
+    "correct_option": "B",
+    "explanation": "O.C.G.A. § 16-6-3(b) provides that a person convicted of statutory rape shall be punished by imprisonment for not less than one nor more than 20 years, except as otherwise provided for older offenders or close-in-age misdemeanors.",
+    "fact_ids": [
+      "FACT-16-6-3-003"
+    ]
+  },
+  {
+    "id": 447,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-mandatory-minimum-older-offender",
+    "source_citation": "O.C.G.A. § 16-6-3(b)",
+    "question_text": "Under O.C.G.A. § 16-6-3(b), what mandatory penalty applies if a defendant convicted of statutory rape was 21 years of age or older at the time of the offense?",
+    "options": {
+      "A": "Imprisonment for not less than 2 nor more than 10 years",
+      "B": "Imprisonment for not less than 5 nor more than 15 years",
+      "C": "Mandatory life imprisonment with no probation allowed",
+      "D": "Imprisonment for not less than 10 nor more than 20 years"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-3(b) mandates that if the person convicted of statutory rape is 21 years of age or older, the punishment shall be imprisonment for not less than 10 nor more than 20 years.",
+    "fact_ids": [
+      "FACT-16-6-3-004"
+    ]
+  },
+  {
+    "id": 448,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-romeo-and-juliet-misdemeanor-exception",
+    "source_citation": "O.C.G.A. § 16-6-3(b)",
+    "question_text": "Under Georgia's 'Romeo and Juliet' provision in O.C.G.A. § 16-6-3(b), under what exact age conditions is statutory rape punished as a misdemeanor rather than a felony?",
+    "options": {
+      "A": "When the victim is 13 or 14 years old and the offender is under 17 years old and within 2 years of the victim",
+      "B": "When the victim is 14 or 15 years old and the offender is 18 years old or younger and no more than 4 years older than the victim",
+      "C": "When the victim is under 16 years old and the offender is enrolled in the same secondary school",
+      "D": "When the victim is 15 years old and the offender is under 21 years old and has no prior convictions"
+    },
+    "correct_option": "B",
+    "explanation": "O.C.G.A. § 16-6-3(b) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.",
+    "fact_ids": [
+      "FACT-16-6-3-005"
+    ]
+  },
+  {
+    "id": 449,
+    "domain": "licensure",
+    "subtopic": "statutory-rape-repeat-offender-penalties",
+    "source_citation": "O.C.G.A. § 16-6-3(b)",
+    "question_text": "Under O.C.G.A. § 16-6-3(b), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?",
+    "options": {
+      "A": "Imprisonment for 5 to 10 years with standard administrative parole eligibility",
+      "B": "Mandatory sentence of life imprisonment, or a split sentence with life probation and electronic monitoring",
+      "C": "A non-negotiable fine of $50,000 and 3 years in a county correctional diversion center",
+      "D": "Indefinite civil commitment under the Sexually Dangerous Predator Act"
+    },
+    "correct_option": "B",
+    "explanation": "Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.",
+    "fact_ids": [
+      "FACT-16-6-3-006"
+    ]
+  },
+  {
+    "id": 450,
+    "domain": "licensure",
+    "subtopic": "child-molestation-elements",
+    "source_citation": "O.C.G.A. § 16-6-4(a)",
+    "question_text": "Under O.C.G.A. § 16-6-4(a), what are the statutory elements of the offense of child molestation in Georgia?",
+    "options": {
+      "A": "Performing any physical battery upon a child under the age of 18 resulting in visible bodily injury",
+      "B": "Employing or coercing any child under the age of 17 into commercial sexual exploitation",
+      "C": "Exposing a minor under the age of 14 to violent or profane communications via electronic media",
+      "D": "Performing any immoral or indecent act to or in the presence of or with any child under the age of 16 with intent to arouse or satisfy sexual desires"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-4(a) provides that a person commits child molestation when doing any immoral or indecent act to or in the presence of or with any child under the age of 16 with the intent to arouse or satisfy the sexual desires of either the child or the person.",
+    "fact_ids": [
+      "FACT-16-6-4-001"
+    ]
+  },
+  {
+    "id": 451,
+    "domain": "licensure",
+    "subtopic": "child-molestation-felony-penalties",
+    "source_citation": "O.C.G.A. § 16-6-4(b)",
+    "question_text": "Under O.C.G.A. § 16-6-4(b), what is the felony statutory penalty for a first conviction of child molestation in Georgia?",
+    "options": {
+      "A": "Imprisonment for not less than one nor more than 5 years with discretionary community service",
+      "B": "Imprisonment for not less than 2 nor more than 10 years and restitution to DFCS",
+      "C": "Imprisonment for not less than 10 nor more than 30 years with no probation",
+      "D": "Imprisonment for not less than 5 nor more than 20 years and mandatory psychological or sex offender counseling"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-4(b) provides that a person convicted of child molestation shall be punished by imprisonment for not less than 5 nor more than 20 years and shall undergo mandatory psychological counseling or therapy.",
+    "fact_ids": [
+      "FACT-16-6-4-002"
+    ]
+  },
+  {
+    "id": 452,
+    "domain": "licensure",
+    "subtopic": "child-molestation-close-in-age-exception",
+    "source_citation": "O.C.G.A. § 16-6-4(b)",
+    "question_text": "Under O.C.G.A. § 16-6-4(b), under what statutory circumstances is child molestation punished as a misdemeanor rather than a felony?",
+    "options": {
+      "A": "If the victim is 14 or 15 years of age and the offender is 18 years of age or younger and no more than 4 years older than the victim",
+      "B": "If the victim is 12 or 13 years of age and the offender is under 16 years of age and enrolled in school",
+      "C": "If the act occurred without physical touching and both parties were under 19 years of age",
+      "D": "If the victim's parents execute a written consent waiver prior to the filing of formal criminal charges"
+    },
+    "correct_option": "A",
+    "explanation": "O.C.G.A. § 16-6-4(b) provides a misdemeanor exception for child molestation if the victim is 14 or 15 years old, the offender is 18 or younger, and the offender is no more than four years older than the victim.",
+    "fact_ids": [
+      "FACT-16-6-4-003"
+    ]
+  },
+  {
+    "id": 453,
+    "domain": "licensure",
+    "subtopic": "aggravated-child-molestation-elements-penalties",
+    "source_citation": "O.C.G.A. § 16-6-4(c)",
+    "question_text": "Under O.C.G.A. § 16-6-4(c), what distinguishes aggravated child molestation from child molestation, and what penalty applies?",
+    "options": {
+      "A": "Commission on school grounds; punishable by 10 to 20 years imprisonment",
+      "B": "Commission by an educator or therapist; punishable by 15 to 30 years imprisonment",
+      "C": "Involving electronic photography; punishable by 5 to 15 years imprisonment",
+      "D": "Involving an act of sodomy or causing physical injury to a child under 16; punishable by 25 to 50 years or life imprisonment"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-4(c) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.",
+    "fact_ids": [
+      "FACT-16-6-4-004"
+    ]
+  },
+  {
+    "id": 454,
+    "domain": "licensure",
+    "subtopic": "aggravated-child-molestation-sodomy-close-in-age-exception",
+    "source_citation": "O.C.G.A. § 16-6-4(c)",
+    "question_text": "Under O.C.G.A. § 16-6-4(c), what close-in-age misdemeanor exception applies to aggravated child molestation involving sodomy?",
+    "options": {
+      "A": "The offense is a misdemeanor if the victim is 11 or 12 years old and the offender is within 2 years of age",
+      "B": "The offense is a misdemeanor if the victim is 13, 14, or 15 years of age, the offender is 18 or younger, and the offender is no more than 4 years older",
+      "C": "The offense is a misdemeanor only if both parties were legally married at the time of the act",
+      "D": "Georgia law provides no misdemeanor exception for any offense involving aggravated child molestation"
+    },
+    "correct_option": "B",
+    "explanation": "O.C.G.A. § 16-6-4(c) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.",
+    "fact_ids": [
+      "FACT-16-6-4-005"
+    ]
+  },
+  {
+    "id": 455,
+    "domain": "licensure",
+    "subtopic": "child-molestation-electronic-transmission-jurisdiction",
+    "source_citation": "O.C.G.A. § 16-6-4(d)",
+    "question_text": "Under O.C.G.A. § 16-6-4(d), does Georgia have criminal jurisdiction over child molestation committed via electronic transmission if the defendant initiated the transmission from outside the State of Georgia?",
+    "options": {
+      "A": "Yes; Georgia courts possess subject-matter jurisdiction if the transmission was accessed or intended to be accessed by a child within Georgia",
+      "B": "Yes; provided the transmission was routed through an internet server physically located in Fulton County",
+      "C": "No; Georgia criminal jurisdiction strictly terminates at state geographic borders for all electronic communications",
+      "D": "No; extraterritorial internet transmissions fall under exclusive federal jurisdiction and cannot be prosecuted in Georgia state courts"
+    },
+    "correct_option": "A",
+    "explanation": "O.C.G.A. § 16-6-4(d) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.",
+    "fact_ids": [
+      "FACT-16-6-4-006"
+    ]
+  },
+  {
+    "id": 456,
+    "domain": "licensure",
+    "subtopic": "enticing-a-child-elements",
+    "source_citation": "O.C.G.A. § 16-6-5(a)",
+    "question_text": "Under O.C.G.A. § 16-6-5(a), what actions constitute the criminal offense of enticing a child for indecent purposes in Georgia?",
+    "options": {
+      "A": "Soliciting, enticing, or taking any child under the age of 16 to any place for the purpose of child molestation or indecent acts",
+      "B": "Transporting any person under the age of 18 across county lines without parental consent",
+      "C": "Encouraging a minor under the age of 17 to participate in truancy or school avoidance",
+      "D": "Offering alcoholic beverages or controlled substances to any person under the age of 21"
+    },
+    "correct_option": "A",
+    "explanation": "O.C.G.A. § 16-6-5(a) provides that a person commits enticing a child for indecent purposes when soliciting, enticing, or taking any child under the age of 16 to any place for the purpose of child molestation or other indecent or immoral acts.",
+    "fact_ids": [
+      "FACT-16-6-5-001"
+    ]
+  },
+  {
+    "id": 457,
+    "domain": "licensure",
+    "subtopic": "enticing-a-child-completion-upon-movement",
+    "source_citation": "O.C.G.A. § 16-6-5(a)",
+    "question_text": "Under O.C.G.A. § 16-6-5(a), is the offense of enticing a child for indecent purposes legally complete if the actor entices the child to a location but no subsequent sexual act takes place?",
+    "options": {
+      "A": "Yes; the crime is legally complete upon the act of soliciting, enticing, or moving the child with the prohibited intent, regardless of whether any sexual act occurs",
+      "B": "Yes; but only if physical touching occurred prior to reaching the destination",
+      "C": "No; the offense is legally classified as an attempt until an act of child molestation is fully consummated",
+      "D": "No; Georgia criminal law requires proof of completed sexual battery before an enticing conviction may stand"
+    },
+    "correct_option": "A",
+    "explanation": "Under O.C.G.A. § 16-6-5(a) and established Georgia case law, the offense of enticing a child for indecent purposes is complete once the child is solicited, enticed, or moved with the requisite intent; completion of an actual indecent or sexual act is not required.",
+    "fact_ids": [
+      "FACT-16-6-5-002"
+    ]
+  },
+  {
+    "id": 458,
+    "domain": "licensure",
+    "subtopic": "enticing-a-child-penalties-and-exception",
+    "source_citation": "O.C.G.A. § 16-6-5(b)",
+    "question_text": "Under O.C.G.A. § 16-6-5(b), what is the statutory penalty for felony enticing a child for indecent purposes, and what close-in-age exception applies?",
+    "options": {
+      "A": "Felony punishable by 2 to 10 years; misdemeanor if victim is 13 and offender is within 1 year",
+      "B": "Felony punishable by 5 to 20 years; misdemeanor if victim is 16 and offender is 21 or younger",
+      "C": "Felony punishable by mandatory life imprisonment with no close-in-age exception",
+      "D": "Felony punishable by 10 to 30 years; misdemeanor if victim is 14 or 15, offender is 18 or younger, and offender is no more than 4 years older"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 16-6-5(b) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.",
+    "fact_ids": [
+      "FACT-16-6-5-003"
+    ]
+  },
+  {
+    "id": 459,
+    "domain": "licensure",
+    "subtopic": "misdemeanor-penalty-failure-to-report-elder-abuse",
+    "source_citation": "O.C.G.A. § 30-5-4(b)",
+    "question_text": "Under O.C.G.A. § 30-5-4(b), what criminal penalty applies to a psychologist or other mandatory reporter who knowingly and willfully fails to report abuse, neglect, or exploitation of a disabled adult or elder person?",
+    "options": {
+      "A": "Guilty of a felony punishable by 1 to 5 years imprisonment",
+      "B": "Administrative license suspension without criminal sanctions",
+      "C": "Civil infraction punishable solely by a $500 municipal assessment",
+      "D": "Guilty of a misdemeanor"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 30-5-4(b) provides that any person required to report elder or disabled adult abuse who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.",
+    "fact_ids": [
+      "FACT-30-5-4-005"
+    ]
+  },
+  {
+    "id": 460,
+    "domain": "privacy",
+    "subtopic": "court-ordered-evaluation-privilege-exception",
+    "source_citation": "O.C.G.A. § 24-5-501(a)(6)",
+    "question_text": "Under O.C.G.A. § 24-5-501(a)(6), does the psychologist-patient privilege apply to communications made during a court-ordered psychological evaluation?",
+    "options": {
+      "A": "Yes; psychologist-patient privilege in Georgia is absolute and shields court-ordered evaluations from judicial disclosure",
+      "B": "Yes; provided the examinee signed a formal revocation of consent prior to the final evaluation session",
+      "C": "No; Georgia courts have entirely abolished psychologist privilege in all civil and criminal proceedings",
+      "D": "No; privilege does not attach to court-ordered evaluations, provided the examinee was informed prior to evaluation that communications would not be confidential"
+    },
+    "correct_option": "D",
+    "explanation": "Under O.C.G.A. § 24-5-501(a)(6) and established Georgia jurisprudence, the statutory psychologist-patient privilege does not attach to court-ordered evaluations where the examinee is given prior notice that the evaluation is for the court and not confidential.",
+    "fact_ids": [
+      "FACT-24-5-501-004"
+    ]
+  },
+  {
+    "id": 461,
+    "domain": "privacy",
+    "subtopic": "inter-provider-psychotherapy-team-privilege",
+    "source_citation": "O.C.G.A. § 24-5-501(a)(8)",
+    "question_text": "Under O.C.G.A. § 24-5-501(a)(8), is the statutory psychologist privilege waived when a psychologist consults and shares client communications with members of the multidisciplinary mental health treatment team?",
+    "options": {
+      "A": "Yes; any communication shared with a third party outside the immediate dyad constitutes an automatic legal waiver of privilege",
+      "B": "Yes; sharing clinical information waives privilege unless a judicial protective order was issued prior to team consultation",
+      "C": "No; but the privilege is retained only if the multidisciplinary team is composed entirely of licensed doctoral psychologists",
+      "D": "No; communications among members of a multidisciplinary mental health treatment team remain privileged and are not waived by necessary team consultation"
+    },
+    "correct_option": "D",
+    "explanation": "Under O.C.G.A. § 24-5-501(a)(8), confidential communications between a patient and members of a multidisciplinary mental health treatment team retain their privileged status; consulting with treatment team members does not waive the privilege.",
+    "fact_ids": [
+      "FACT-24-5-501-005"
+    ]
+  },
+  {
+    "id": 462,
+    "domain": "licensure",
+    "subtopic": "criminal-background-checks-gcic-fbi",
+    "source_citation": "O.C.G.A. § 43-1-27",
+    "question_text": "Under O.C.G.A. § 43-1-27, what criminal history background check requirement must applicants for professional psychology licensure fulfill?",
+    "options": {
+      "A": "A local county sheriff background record check covering the past 3 years of residency",
+      "B": "A self-sworn affidavit of criminal history verified by two character witnesses",
+      "C": "A commercial credit and civil litigation index search performed by an approved private vendor",
+      "D": "Fingerprinting and criminal background records checks conducted through both the GCIC and the FBI"
+    },
+    "correct_option": "D",
+    "explanation": "O.C.G.A. § 43-1-27 authorizes and requires professional licensing boards to require applicants to submit fingerprints for state and national criminal history record checks through the Georgia Crime Information Center (GCIC) and the Federal Bureau of Investigation (FBI).",
+    "fact_ids": [
+      "FACT-43-1-27-001"
+    ]
+  },
+  {
+    "id": 463,
+    "domain": "licensure",
+    "subtopic": "exam-total-questions-and-experimental-items",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "question_text": "According to the PSI Candidate Information Bulletin, how many total questions appear on the Georgia Psychology Jurisprudence Examination, and how many are scored?",
+    "options": {
+      "A": "50 total questions, all 50 scored",
+      "B": "60 total questions: 50 scored items and 10 unscored pretest/experimental items",
+      "C": "75 total questions: 60 scored items and 15 unscored items",
+      "D": "100 total questions: 80 scored items and 20 unscored items"
+    },
+    "correct_option": "B",
+    "explanation": "The PSI Candidate Information Bulletin specifies that the Georgia Psychology Jurisprudence Examination consists of 60 multiple-choice items total, comprising 50 scored questions and 10 unscored experimental (pretest) items.",
+    "fact_ids": [
+      "FACT-PSI-001"
+    ]
+  },
+  {
+    "id": 464,
+    "domain": "licensure",
+    "subtopic": "exam-time-limit-sixty-minutes",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "question_text": "According to the PSI Candidate Information Bulletin, what is the official testing time allowance for the Georgia Psychology Jurisprudence Examination?",
+    "options": {
+      "A": "45 minutes",
+      "B": "60 minutes (1 hour)",
+      "C": "90 minutes (1.5 hours)",
+      "D": "120 minutes (2 hours)"
+    },
+    "correct_option": "B",
+    "explanation": "The PSI Candidate Information Bulletin provides that candidates are allowed 60 minutes (1 hour) of testing time to complete the 60 questions on the Georgia Psychology Jurisprudence Examination.",
+    "fact_ids": [
+      "FACT-PSI-002"
+    ]
+  },
+  {
+    "id": 465,
+    "domain": "licensure",
+    "subtopic": "exam-passing-score-thirty-eight-out-of-fifty",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "question_text": "According to the PSI Candidate Information Bulletin, what is the minimum passing score required on the Georgia Psychology Jurisprudence Examination?",
+    "options": {
+      "A": "35 correct out of 50 scored items (70%)",
+      "B": "40 correct out of 50 scored items (80%)",
+      "C": "42 correct out of 50 scored items (84%)",
+      "D": "38 correct out of 50 scored items (76%)"
+    },
+    "correct_option": "D",
+    "explanation": "The PSI Candidate Information Bulletin establishes that the passing score for the Georgia Psychology Jurisprudence Examination is 38 correct answers out of the 50 scored items, which corresponds to 76%.",
+    "fact_ids": [
+      "FACT-PSI-003"
+    ]
+  },
+  {
+    "id": 466,
+    "domain": "licensure",
+    "subtopic": "computer-tutorial-time-allowance",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "question_text": "According to the PSI Candidate Information Bulletin, does the 15-minute computer tutorial provided before beginning the jurisprudence examination count against the 60-minute testing time?",
+    "options": {
+      "A": "Yes; all time spent on the computer workstation from initial login is deducted from the 60-minute exam clock",
+      "B": "Yes; candidates must complete both the tutorial and all 60 exam items within a single unified 60-minute session",
+      "C": "No; candidates receive up to 15 minutes of tutorial time, which does not count against the 60 minutes of testing time",
+      "D": "No; but candidates who skip the tutorial receive 15 bonus minutes added to their testing clock"
+    },
+    "correct_option": "C",
+    "explanation": "The PSI Candidate Information Bulletin explains that candidates are given up to 15 minutes to complete a tutorial on computer testing prior to starting the exam, and this tutorial time does not count against the 60-minute examination time limit.",
+    "fact_ids": [
+      "FACT-PSI-004"
+    ]
+  },
+  {
+    "id": 467,
+    "domain": "recordkeeping",
+    "subtopic": "examination-fee-eighty-five-dollars",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 2",
+    "question_text": "According to the PSI Candidate Information Bulletin, what is the fee to register for the Georgia Psychology Jurisprudence Examination?",
+    "options": {
+      "A": "$50 per registration",
+      "B": "$85 per registration",
+      "C": "$125 per registration",
+      "D": "$150 per registration"
+    },
+    "correct_option": "B",
+    "explanation": "The PSI Candidate Information Bulletin specifies that the examination fee is $85 for each examination attempt (initial examination or re-examination), which is non-refundable and non-transferable.",
+    "fact_ids": [
+      "FACT-PSI-006"
+    ]
+  },
+  {
+    "id": 468,
+    "domain": "licensure",
+    "subtopic": "fax-registration-processing-window",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 2",
+    "question_text": "According to the PSI Candidate Information Bulletin, how many business days must a candidate allow for PSI to process a fax registration before attempting to schedule an examination appointment?",
+    "options": {
+      "A": "1 business day",
+      "B": "2 business days",
+      "C": "10 business days",
+      "D": "4 business days"
+    },
+    "correct_option": "D",
+    "explanation": "The PSI Candidate Information Bulletin states that candidates submitting examination registrations via fax must allow 4 business days for processing before calling or going online to schedule an appointment.",
+    "fact_ids": [
+      "FACT-PSI-007"
+    ]
+  },
+  {
+    "id": 469,
+    "domain": "licensure",
+    "subtopic": "unclaimed-personal-items-disposal-thirty-days",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "question_text": "According to the PSI Candidate Information Bulletin, what is PSI's policy regarding personal items left behind by candidates at a test center?",
+    "options": {
+      "A": "Items are immediately mailed to the candidate's address on file with a postage fee",
+      "B": "Items are surrendered to the Georgia State Board of Examiners within 24 hours",
+      "C": "Items are retained indefinitely in a secure central storage facility in Macon",
+      "D": "Items unclaimed after 30 days will be disposed of or donated at PSI's discretion"
+    },
+    "correct_option": "D",
+    "explanation": "The PSI Candidate Information Bulletin specifies that any personal items left behind at the testing center that remain unclaimed after 30 days will be disposed of or donated at PSI's discretion.",
+    "fact_ids": [
+      "FACT-PSI-008"
+    ]
+  },
+  {
+    "id": 470,
+    "domain": "licensure",
+    "subtopic": "examination-content-outline-domain-distribution",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "question_text": "According to the official PSI Candidate Information Bulletin content outline, which domain accounts for the largest number of scored questions on the Georgia Psychology Jurisprudence Examination?",
+    "options": {
+      "A": "Assessment (6 scored questions)",
+      "B": "Professional Relationships (14 scored questions)",
+      "C": "Competence (9 scored questions)",
+      "D": "Licensure and Regulations (13 scored questions)"
+    },
+    "correct_option": "B",
+    "explanation": "The PSI Candidate Information Bulletin content outline distributes the 50 scored questions as follows: Professional Relationships (14), Licensure and Regulations (13), Competence (9), Assessment (6), Privacy and Confidentiality (5), and Recordkeeping and Fees (3). Professional Relationships has the highest single question quota (14 items).",
+    "fact_ids": [
+      "FACT-PSI-009"
+    ]
+  },
+  {
+    "id": 471,
+    "domain": "licensure",
+    "subtopic": "candidate-identification-requirements",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 3",
+    "question_text": "According to the PSI Candidate Information Bulletin, what identification must a candidate present at the testing center to be admitted for the examination?",
+    "options": {
+      "A": "One form of identification, which may be either a photo ID or a utility bill with current address",
+      "B": "Two forms of identification: one primary government-issued photo ID with signature, and one secondary ID with pre-printed legal name",
+      "C": "Three forms of identification, including a certified copy of the candidate's birth certificate",
+      "D": "The original doctoral diploma and an official notarized transcript from the degree-granting institution"
+    },
+    "correct_option": "B",
+    "explanation": "The PSI Candidate Information Bulletin mandates that candidates present two forms of signature-bearing identification: a primary government-issued ID with photograph and signature, and a secondary ID displaying the candidate's pre-printed legal name.",
+    "fact_ids": [
+      "FACT-PSI-010"
+    ]
+  },
+  {
+    "id": 472,
+    "domain": "licensure",
+    "subtopic": "closed-book-testing-policy",
+    "source_citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "question_text": "According to the PSI Candidate Information Bulletin, is the Georgia Psychology Jurisprudence Examination an open-book examination where candidates may consult printed copies of the Board Rules or O.C.G.A.?",
+    "options": {
+      "A": "Yes; candidates may bring unmarked printed copies of Official Code of Georgia Title 43, Chapter 39",
+      "B": "Yes; candidates are permitted to use the official Georgia Board Rules compilation provided in the test room",
+      "C": "No; the examination is strictly closed book, and candidates may not bring books, notes, or reference aids into the examination room",
+      "D": "No; candidates may only consult reference materials during the initial 15-minute tutorial session"
+    },
+    "correct_option": "C",
+    "explanation": "The PSI Candidate Information Bulletin explicitly provides that the Georgia Psychology Jurisprudence Examination is closed book; no reference books, legal codes, notes, or outside study aids are permitted in the testing room.",
+    "fact_ids": [
+      "FACT-PSI-012"
     ]
   }
 ]

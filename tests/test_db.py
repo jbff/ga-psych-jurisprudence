@@ -251,7 +251,7 @@ def test_ensure_db_initialized(tmp_path: Path):
     assert seeded is True
     assert test_db.exists()
     questions = get_all_questions(test_db)
-    assert len(questions) == 435
+    assert len(questions) == 472
 
     # Second call: idempotent, already initialized
     seeded_again = ensure_db_initialized(test_db)

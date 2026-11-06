@@ -24,9 +24,9 @@ def test_normalize_text():
 
 
 def test_parse_anki_cards():
-    """Test reading anki/gamb_deck.tsv yields 435 cards with valid fields."""
+    """Test reading anki/gamb_deck.tsv yields 472 cards with valid fields."""
     cards = parse_anki_tsv()
-    assert len(cards) == 435, f"Expected 435 cards, got {len(cards)}"
+    assert len(cards) == 472, f"Expected 472 cards, got {len(cards)}"
 
     for i, card in enumerate(cards):
         assert card["front"].strip(), f"Card {i} front must be non-empty"
@@ -54,7 +54,7 @@ def test_card_425_fine():
 def test_question_record_structure():
     """Test that every card converted into a question record has 4 distinct options and valid keys."""
     questions = build_question_records()
-    assert len(questions) == 435, f"Expected 435 questions, got {len(questions)}"
+    assert len(questions) == 472, f"Expected 472 questions, got {len(questions)}"
 
     key_counts = {"A": 0, "B": 0, "C": 0, "D": 0}
 
@@ -151,28 +151,28 @@ def test_grammatical_agreement_years():
 
 
 def test_seed_database(tmp_path: Path):
-    """Test calling seed_database inserts 435 questions with expected domain distribution."""
+    """Test calling seed_database inserts 472 questions with expected domain distribution."""
     tmp_db = tmp_path / "gamb_exam_test.db"
     seeded_count = seed_database(db_path=tmp_db)
-    assert seeded_count == 435, f"Expected 435 seeded questions, got {seeded_count}"
+    assert seeded_count == 472, f"Expected 472 seeded questions, got {seeded_count}"
 
     conn = get_connection(tmp_db)
     try:
         cursor = conn.cursor()
         cursor.execute("SELECT COUNT(*) FROM questions")
         total = cursor.fetchone()[0]
-        assert total == 435
+        assert total == 472
 
         cursor.execute("SELECT domain, COUNT(*) FROM questions GROUP BY domain")
         domain_counts = dict(cursor.fetchall())
 
         expected_distribution = {
             "prof-relationships": 73,
-            "licensure": 185,
+            "licensure": 218,
             "competence": 104,
             "assessment": 30,
-            "privacy": 22,
-            "recordkeeping": 21,
+            "privacy": 24,
+            "recordkeeping": 23,
         }
         assert domain_counts == expected_distribution, (
             f"Domain distribution mismatch: got {domain_counts}, "
@@ -187,24 +187,24 @@ def test_seed_database_idempotency(tmp_path: Path):
     tmp_db = tmp_path / "gamb_exam_idempotent.db"
 
     count1 = seed_database(db_path=tmp_db)
-    assert count1 == 435
+    assert count1 == 472
 
     conn = get_connection(tmp_db)
     cursor = conn.cursor()
     cursor.execute("SELECT MIN(id), MAX(id), COUNT(*) FROM questions")
     min_id, max_id, total = cursor.fetchone()
-    assert (min_id, max_id, total) == (1, 435, 435)
+    assert (min_id, max_id, total) == (1, 472, 472)
     conn.close()
 
     # Re-seed on the same database file
     count2 = seed_database(db_path=tmp_db)
-    assert count2 == 435
+    assert count2 == 472
 
     conn2 = get_connection(tmp_db)
     cursor2 = conn2.cursor()
     cursor2.execute("SELECT MIN(id), MAX(id), COUNT(*) FROM questions")
     min_id2, max_id2, total2 = cursor2.fetchone()
-    assert (min_id2, max_id2, total2) == (1, 435, 435), (
+    assert (min_id2, max_id2, total2) == (1, 472, 472), (
         f"Re-seeding failed to reset sequence: got min={min_id2}, max={max_id2}, total={total2}"
     )
     conn2.close()

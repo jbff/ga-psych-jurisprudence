@@ -47,12 +47,12 @@ def get_pool_metadata() -> dict[str, Any]:
     return {
         "version": QUESTION_POOL_VERSION,
         "date": QUESTION_POOL_DATE,
-        "total_questions": 435,
+        "total_questions": 472,
         "description": "Georgia Psychology Jurisprudence Examination curated question bank",
     }
 
 CITATION_REGEX = re.compile(
-    r"\(\s*((?:OCGA|Rule|O\.C\.G\.A\.|Board|APA|Code|Ga\.)[^)]*(?:\([^)]*\)[^)]*)*)\)\.?\s*$",
+    r"\(\s*((?:OCGA|Rule|O\.C\.G\.A\.|Board|APA|Code|Ga\.|PSI)[^)]*(?:\([^)]*\)[^)]*)*)\)\.?\s*$",
     re.IGNORECASE,
 )
 
@@ -157,7 +157,10 @@ def parse_anki_tsv(tsv_path: Path | str | None = None) -> list[dict[str, Any]]:
         primary_domain = next(
             (t for t in tag_tokens if t in OFFICIAL_DOMAINS), "licensure"
         )
-        subtopic = next((t for t in tag_tokens if t not in OFFICIAL_DOMAINS), None)
+        subtopic = next(
+            (t for t in tag_tokens if t not in OFFICIAL_DOMAINS and not t.startswith("fact:")),
+            None,
+        )
 
         # Extract citation and cleaned answer
         m = CITATION_REGEX.search(back)

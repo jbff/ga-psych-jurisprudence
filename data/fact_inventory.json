@@ -14,20 +14,12 @@
     "associated_question_ids": [
       14,
       58,
-      60,
-      345,
-      422,
-      423,
-      424
+      345
     ],
     "associated_anki_card_ids": [
       14,
       58,
-      60,
-      345,
-      422,
-      423,
-      424
+      345
     ],
     "audit_status": "verified"
   },
@@ -247,9 +239,13 @@
       "removal_authority": "Governor",
       "requires_notice_and_hearing": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      436
+    ],
+    "associated_anki_card_ids": [
+      436
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-4-001",
@@ -262,9 +258,13 @@
     "key_parameters": {
       "requires_oath": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      437
+    ],
+    "associated_anki_card_ids": [
+      437
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-5-001",
@@ -531,9 +531,13 @@
       "scope": "allied_mental_health",
       "title_psychologist_prohibited": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      438
+    ],
+    "associated_anki_card_ids": [
+      438
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-7-008",
@@ -932,9 +936,13 @@
       "trigger": "refusal_of_exam_or_records",
       "standard": "public_safety_imperatively_requires"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      439
+    ],
+    "associated_anki_card_ids": [
+      439
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-39-13-005",
@@ -953,14 +961,16 @@
       57,
       253,
       254,
-      255
+      255,
+      422
     ],
     "associated_anki_card_ids": [
       50,
       57,
       253,
       254,
-      255
+      255,
+      422
     ],
     "audit_status": "verified"
   },
@@ -978,11 +988,15 @@
     },
     "associated_question_ids": [
       346,
-      347
+      347,
+      423,
+      424
     ],
     "associated_anki_card_ids": [
       346,
-      347
+      347,
+      423,
+      424
     ],
     "audit_status": "verified"
   },
@@ -1044,9 +1058,11 @@
       "declared_menace_and_nuisance": true
     },
     "associated_question_ids": [
+      65,
       66
     ],
     "associated_anki_card_ids": [
+      65,
       66
     ],
     "audit_status": "verified"
@@ -1064,11 +1080,13 @@
       "disclosure_cannot_be_compelled": true
     },
     "associated_question_ids": [
+      60,
       61,
       62,
       355
     ],
     "associated_anki_card_ids": [
+      60,
       61,
       62,
       355
@@ -1110,9 +1128,11 @@
       "max_imprisonment_months": 12
     },
     "associated_question_ids": [
+      63,
       67
     ],
     "associated_anki_card_ids": [
+      63,
       67
     ],
     "audit_status": "verified"
@@ -1211,9 +1231,13 @@
       "publicly_accessible": true,
       "maintained_by": "Division Director"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      440
+    ],
+    "associated_anki_card_ids": [
+      440
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-RULE-510-1-004",
@@ -1227,9 +1251,13 @@
       "non_refundable": true,
       "non_transferable": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      441
+    ],
+    "associated_anki_card_ids": [
+      441
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-RULE-510-2-001",
@@ -3331,11 +3359,9 @@
       "attorney_client_exception_retained": true
     },
     "associated_question_ids": [
-      63,
       402
     ],
     "associated_anki_card_ids": [
-      63,
       402
     ],
     "audit_status": "verified"
@@ -3353,11 +3379,9 @@
       "civil_and_criminal_immunity": true
     },
     "associated_question_ids": [
-      65,
       404
     ],
     "associated_anki_card_ids": [
-      65,
       404
     ],
     "audit_status": "verified"
@@ -3398,9 +3422,13 @@
         "16-6-5.1"
       ]
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      442
+    ],
+    "associated_anki_card_ids": [
+      442
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-19-7-5-010",
@@ -3433,9 +3461,13 @@
       "delegation_restriction": true,
       "personal_responsibility": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      443
+    ],
+    "associated_anki_card_ids": [
+      443
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-001",
@@ -3449,9 +3481,13 @@
       "victim_age_limit": 16,
       "marriage_exception": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      444
+    ],
+    "associated_anki_card_ids": [
+      444
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-002",
@@ -3464,9 +3500,13 @@
     "key_parameters": {
       "requires_corroboration": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      445
+    ],
+    "associated_anki_card_ids": [
+      445
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-003",
@@ -3481,9 +3521,13 @@
       "min_sentence_years": 1,
       "max_sentence_years": 20
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      446
+    ],
+    "associated_anki_card_ids": [
+      446
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-004",
@@ -3498,9 +3542,13 @@
       "mandatory_min_years": 10,
       "max_years": 20
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      447
+    ],
+    "associated_anki_card_ids": [
+      447
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-005",
@@ -3519,9 +3567,13 @@
       "max_age_gap_years": 4,
       "penalty": "misdemeanor"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      448
+    ],
+    "associated_anki_card_ids": [
+      448
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-3-006",
@@ -3535,9 +3587,13 @@
       "repeat_offender_penalty": "life_imprisonment_or_life_probation",
       "electronic_monitoring_required": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      449
+    ],
+    "associated_anki_card_ids": [
+      449
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-001",
@@ -3551,9 +3607,13 @@
       "victim_age_limit": 16,
       "intent": "satisfy_sexual_desires"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      450
+    ],
+    "associated_anki_card_ids": [
+      450
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-002",
@@ -3568,9 +3628,13 @@
       "max_sentence_years": 20,
       "mandatory_counseling": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      451
+    ],
+    "associated_anki_card_ids": [
+      451
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-003",
@@ -3589,9 +3653,13 @@
       "max_age_gap_years": 4,
       "penalty": "misdemeanor"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      452
+    ],
+    "associated_anki_card_ids": [
+      452
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-004",
@@ -3609,9 +3677,13 @@
       "min_sentence_years": 25,
       "max_sentence_years": 50
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      453
+    ],
+    "associated_anki_card_ids": [
+      453
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-005",
@@ -3630,9 +3702,13 @@
       "max_age_gap_years": 4,
       "penalty": "misdemeanor"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      454
+    ],
+    "associated_anki_card_ids": [
+      454
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-4-006",
@@ -3646,9 +3722,13 @@
       "electronic_transmission_covered": true,
       "extraterritorial_jurisdiction": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      455
+    ],
+    "associated_anki_card_ids": [
+      455
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-5-001",
@@ -3662,9 +3742,13 @@
       "victim_age_limit": 16,
       "action": "soliciting_enticing_taking"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      456
+    ],
+    "associated_anki_card_ids": [
+      456
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-5-002",
@@ -3678,9 +3762,13 @@
       "completed_upon_movement_or_enticement": true,
       "actual_contact_not_required": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      457
+    ],
+    "associated_anki_card_ids": [
+      457
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-5-003",
@@ -3695,9 +3783,13 @@
       "felony_max_years": 30,
       "close_in_age_misdemeanor_exception": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      458
+    ],
+    "associated_anki_card_ids": [
+      458
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-16-6-5-1-001",
@@ -3899,9 +3991,13 @@
       "offense_level": "misdemeanor",
       "mental_state": "knowingly_and_willfully"
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      459
+    ],
+    "associated_anki_card_ids": [
+      459
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-37-3-41-001",
@@ -4106,9 +4202,13 @@
       "court_ordered_eval_not_privileged": true,
       "requires_prior_notice": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      460
+    ],
+    "associated_anki_card_ids": [
+      460
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-24-5-501-005",
@@ -4121,9 +4221,13 @@
     "key_parameters": {
       "team_privilege_maintained": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      461
+    ],
+    "associated_anki_card_ids": [
+      461
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-43-1-19-001",
@@ -4242,9 +4346,13 @@
       ],
       "fingerprinting_required": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      462
+    ],
+    "associated_anki_card_ids": [
+      462
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-31-7-161-001",
@@ -4399,9 +4507,13 @@
       "scored_items": 50,
       "unscored_experimental_items": 10
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      463
+    ],
+    "associated_anki_card_ids": [
+      463
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-002",
@@ -4414,9 +4526,13 @@
     "key_parameters": {
       "exam_duration_minutes": 60
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      464
+    ],
+    "associated_anki_card_ids": [
+      464
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-003",
@@ -4431,9 +4547,13 @@
       "scored_items_total": 50,
       "passing_percentage": 76.0
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      465
+    ],
+    "associated_anki_card_ids": [
+      465
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-004",
@@ -4447,9 +4567,13 @@
       "tutorial_duration_minutes": 15,
       "counts_against_exam_time": false
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      466
+    ],
+    "associated_anki_card_ids": [
+      466
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-005",
@@ -4482,9 +4606,13 @@
       "exam_fee_dollars": 85,
       "non_refundable": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      467
+    ],
+    "associated_anki_card_ids": [
+      467
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-007",
@@ -4497,9 +4625,13 @@
     "key_parameters": {
       "fax_processing_business_days": 4
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      468
+    ],
+    "associated_anki_card_ids": [
+      468
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-008",
@@ -4512,9 +4644,13 @@
     "key_parameters": {
       "storage_disposal_days": 30
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      469
+    ],
+    "associated_anki_card_ids": [
+      469
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-009",
@@ -4532,9 +4668,13 @@
       "privacy_items": 5,
       "recordkeeping_items": 3
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      470
+    ],
+    "associated_anki_card_ids": [
+      470
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-010",
@@ -4552,9 +4692,13 @@
         "signature"
       ]
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      471
+    ],
+    "associated_anki_card_ids": [
+      471
+    ],
+    "audit_status": "verified"
   },
   {
     "fact_id": "FACT-PSI-011",
@@ -4593,8 +4737,12 @@
       "closed_book": true,
       "reference_materials_prohibited": true
     },
-    "associated_question_ids": [],
-    "associated_anki_card_ids": [],
-    "audit_status": "draft"
+    "associated_question_ids": [
+      472
+    ],
+    "associated_anki_card_ids": [
+      472
+    ],
+    "audit_status": "verified"
   }
 ]

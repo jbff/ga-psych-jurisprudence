@@ -142,7 +142,7 @@ def test_domain_slugs_valid(facts: list[dict]):
 
 def test_100_percent_fact_coverage(facts: list[dict]):
     """Asserts that len(fact['associated_question_ids']) >= 1 and len(fact['associated_anki_card_ids']) >= 1 for every fact."""
-    errors = verify_fact_coverage(facts)
+    errors = verify_fact_coverage(facts, check_drafts=True)
     assert not errors, f"Uncovered facts found:\n" + "\n".join(errors)
 
 

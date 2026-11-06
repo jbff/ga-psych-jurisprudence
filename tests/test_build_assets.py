@@ -179,7 +179,7 @@ def test_generate_compendium(tmp_path: Path):
     assert html_path.exists()
 
     q_text = q_md.read_text(encoding="utf-8")
-    assert "435-Question Self-Study Compendium" in q_text
+    assert "Question Self-Study Compendium" in q_text
     assert "Part I: Question Bank by Domain" in q_text
     assert "Question Pool" in q_text
     assert "10/25/2026" in q_text
