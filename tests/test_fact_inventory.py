@@ -259,6 +259,34 @@ def test_verify_fact_coverage_catches_uncovered_facts():
     assert any("FACT-NO-ANKI-002" in err and "anki" in err for err in errors)
 
 
+def test_verify_fact_coverage_handles_draft_facts():
+    """verify_fact_coverage skips draft facts by default, and checks them when check_drafts=True."""
+    draft_facts = [
+        {
+            "fact_id": "FACT-DRAFT-001",
+            "source_type": "OCGA",
+            "citation": "O.C.G.A. § 43-39-8",
+            "domain": "licensure",
+            "domain_display": "Licensure and Regulations",
+            "subtopic": "test",
+            "rule_summary": "Draft summary",
+            "key_parameters": {},
+            "associated_question_ids": [],
+            "associated_anki_card_ids": [],
+            "audit_status": "draft",
+        }
+    ]
+    # Default: drafts skipped, no errors
+    assert verify_fact_coverage(draft_facts) == []
+    assert verify_fact_coverage(draft_facts, check_drafts=False) == []
+
+    # When check_drafts=True: flags uncovered draft facts
+    errors = verify_fact_coverage(draft_facts, check_drafts=True)
+    assert len(errors) == 2
+    assert any("FACT-DRAFT-001" in err and "question" in err for err in errors)
+    assert any("FACT-DRAFT-001" in err and "anki" in err for err in errors)
+
+
 def test_validate_fact_inventory_catches_invalid_foreign_keys(question_pool: list[dict], anki_lines: list[str]):
     """validate_fact_inventory flags associated IDs that do not exist in question pool or Anki deck."""
     bad_fk_fact = [

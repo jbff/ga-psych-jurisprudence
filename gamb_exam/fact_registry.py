@@ -89,11 +89,19 @@ def save_facts(facts: list[dict[str, Any]], path: Path | str | None = None) -> N
         f.write("\n")
 
 
-def verify_fact_coverage(facts: list[dict[str, Any]]) -> list[str]:
+def verify_fact_coverage(
+    facts: list[dict[str, Any]],
+    check_drafts: bool = False,
+) -> list[str]:
     """Verify that every atomic fact is covered by at least one question and one Anki card.
+
+    Draft facts (audit_status == 'draft') represent facts pending question authoring in Task 5
+    and are skipped unless check_drafts=True. Verified facts (audit_status == 'verified')
+    must have at least one question ID and one Anki card ID.
 
     Args:
         facts: List of atomic fact dictionaries.
+        check_drafts: When True, enforce coverage on draft facts as well.
 
     Returns:
         A list of error strings identifying uncovered facts (empty if 100% covered).
@@ -108,6 +116,10 @@ def verify_fact_coverage(facts: list[dict[str, Any]]) -> list[str]:
             continue
 
         fid = fact.get("fact_id", "<missing fact_id>")
+        status = fact.get("audit_status")
+        if status == "draft" and not check_drafts:
+            continue
+
         qids = fact.get("associated_question_ids")
         cids = fact.get("associated_anki_card_ids")
 

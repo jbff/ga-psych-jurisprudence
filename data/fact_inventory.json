@@ -1,11 +1,1157 @@
 [
   {
-    "fact_id": "FACT-510-2-001",
+    "fact_id": "FACT-43-39-1-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-1(7)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "practice-of-psychology-definition",
+    "rule_summary": "To practice psychology means rendering or offering to render services for a fee or remuneration involving the application of recognized psychological principles, including diagnosing and treating mental disorders, psychotherapy, and testing.",
+    "key_parameters": {
+      "requires_remuneration_or_fee": true,
+      "includes_diagnosis_and_treatment": true
+    },
+    "associated_question_ids": [
+      14
+    ],
+    "associated_anki_card_ids": [
+      14
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-1-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-1(6)",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "psychological-testing-definition",
+    "rule_summary": "Psychological testing is statutory defined as assessment instruments used both to measure mental abilities, personality, or neuropsychological functioning AND to diagnose, evaluate, or classify mental disorders.",
+    "key_parameters": {
+      "two_prong_definition": true,
+      "prong_a": "measurement",
+      "prong_b": "diagnosis_and_classification"
+    },
+    "associated_question_ids": [
+      14,
+      337,
+      338
+    ],
+    "associated_anki_card_ids": [
+      14,
+      337,
+      338
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-1-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-1(4)",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "neuropsychology-definition",
+    "rule_summary": "Neuropsychology is defined as the subspecialty of psychology concerned with the relationship between brain and behavior, including the diagnosis of brain pathology through psychological tests.",
+    "key_parameters": {
+      "focus": "brain_behavior_relationship",
+      "includes_brain_pathology_diagnosis": true
+    },
+    "associated_question_ids": [
+      15,
+      339
+    ],
+    "associated_anki_card_ids": [
+      15,
+      339
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-1-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-1(3)",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "neuropsychological-functioning-definition",
+    "rule_summary": "Neuropsychological functioning means the psychological manifestations of brain functioning, including sensory motor functioning, attention, concentration, memory, language, abstraction, problem solving, visual-spatial ability, executive functioning, and personality.",
+    "key_parameters": {
+      "manifestations": [
+        "sensory_motor",
+        "attention",
+        "memory",
+        "language",
+        "executive_functioning"
+      ]
+    },
+    "associated_question_ids": [
+      15
+    ],
+    "associated_anki_card_ids": [
+      15
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-1-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-1(7)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "medical-testing-prescription-prohibition",
+    "rule_summary": "The statutory definition of practicing psychology explicitly prohibits the administration or prescription of drugs and prohibits infringing upon or restricting the practice of medicine.",
+    "key_parameters": {
+      "prescription_of_drugs_permitted": false,
+      "practice_of_medicine_prohibited": true
+    },
+    "associated_question_ids": [
+      16,
+      54
+    ],
+    "associated_anki_card_ids": [
+      16,
+      54
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-2-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-2",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-creation",
+    "rule_summary": "The State Board of Examiners of Psychologists is created under the executive branch of state government to protect public health, safety, and welfare by regulating psychology practice.",
+    "key_parameters": {
+      "board_name": "State Board of Examiners of Psychologists",
+      "branch": "executive"
+    },
+    "associated_question_ids": [
+      9
+    ],
+    "associated_anki_card_ids": [
+      9
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-3-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-3(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-composition",
+    "rule_summary": "The Georgia State Board of Examiners of Psychologists consists of 6 members: 5 licensed psychologists and 1 consumer member who has no connection whatsoever with the practice of psychology.",
+    "key_parameters": {
+      "total_members": 6,
+      "psychologist_members": 5,
+      "consumer_members": 1
+    },
+    "associated_question_ids": [
+      6,
+      202
+    ],
+    "associated_anki_card_ids": [
+      6,
+      202
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-3-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-3(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-appointment",
+    "rule_summary": "All 6 members of the Georgia State Board of Examiners of Psychologists are appointed by the Governor.",
+    "key_parameters": {
+      "appointing_official": "Governor"
+    },
+    "associated_question_ids": [
+      7
+    ],
+    "associated_anki_card_ids": [
+      7
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-3-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-terms",
+    "rule_summary": "Members of the Board serve terms of 5 years and until their successors are appointed and qualified.",
+    "key_parameters": {
+      "term_duration_years": 5
+    },
+    "associated_question_ids": [
+      8
+    ],
+    "associated_anki_card_ids": [
+      8
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-3-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-vacancies",
+    "rule_summary": "Vacancies on the Board are filled by the Governor for the remainder of the unexpired term.",
+    "key_parameters": {
+      "vacancy_duration": "unexpired_term"
+    },
+    "associated_question_ids": [
+      8
+    ],
+    "associated_anki_card_ids": [
+      8
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-3-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-member-removal",
+    "rule_summary": "The Governor may remove any Board member after notice and hearing for incompetence, neglect of duty, malfeasance in office, or commission of a crime involving moral turpitude.",
+    "key_parameters": {
+      "removal_authority": "Governor",
+      "requires_notice_and_hearing": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-4-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-4",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-oath-of-office",
+    "rule_summary": "Board members must take and subscribe to the constitutional oath of office before entering upon the discharge of their official duties.",
+    "key_parameters": {
+      "requires_oath": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-5-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-officers",
+    "rule_summary": "The Board must elect annually from its members a president and a vice president.",
+    "key_parameters": {
+      "election_frequency": "annual",
+      "officers": [
+        "president",
+        "vice_president"
+      ]
+    },
+    "associated_question_ids": [
+      10
+    ],
+    "associated_anki_card_ids": [
+      10
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-5-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-meetings-frequency",
+    "rule_summary": "The Board must hold at least one regular meeting each year, and may hold special meetings upon call of the president or written request of two or more members.",
+    "key_parameters": {
+      "min_regular_meetings_per_year": 1
+    },
+    "associated_question_ids": [
+      11
+    ],
+    "associated_anki_card_ids": [
+      11
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-5-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-quorum",
+    "rule_summary": "A majority of the Board members constitutes a quorum for the transaction of business.",
+    "key_parameters": {
+      "quorum": "majority"
+    },
+    "associated_question_ids": [
+      12
+    ],
+    "associated_anki_card_ids": [
+      12
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-6-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-6",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-rulemaking-powers",
+    "rule_summary": "The Board has the authority to establish rules, adopt a code of ethics, examine applicants, issue licenses, and conduct disciplinary hearings consistent with Georgia law.",
+    "key_parameters": {
+      "powers": [
+        "rulemaking",
+        "code_of_ethics",
+        "examination",
+        "licensing"
+      ]
+    },
+    "associated_question_ids": [
+      13,
+      203,
+      340
+    ],
+    "associated_anki_card_ids": [
+      13,
+      203,
+      340
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-6-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-6",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-subpoena-power",
+    "rule_summary": "The Board is authorized to issue subpoenas to compel attendance of witnesses and production of books, papers, and documents in investigations.",
+    "key_parameters": {
+      "subpoena_power": true
+    },
+    "associated_question_ids": [
+      341,
+      342
+    ],
+    "associated_anki_card_ids": [
+      341,
+      342
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "title-protection-and-unlicensed-practice",
+    "rule_summary": "A person who is not licensed shall not practice psychology, use the title 'psychologist', or imply they are a psychologist, unless an express statutory exception applies.",
+    "key_parameters": {
+      "unlicensed_practice_illegal": true,
+      "title_protected": [
+        "psychologist",
+        "psychological"
+      ]
+    },
+    "associated_question_ids": [
+      17
+    ],
+    "associated_anki_card_ids": [
+      17
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "school-psychologist-exemption",
+    "rule_summary": "Certified school psychologists working in recognized educational institutions are exempt from psychology licensure, provided no direct or third-party client fees are charged.",
+    "key_parameters": {
+      "setting": "recognized_educational_institution",
+      "direct_or_third_party_fees_barred": true
+    },
+    "associated_question_ids": [
+      204,
+      205
+    ],
+    "associated_anki_card_ids": [
+      204,
+      205
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(2)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "academic-teaching-and-research-exemption",
+    "rule_summary": "Teaching psychology and conducting psychological research are exempt from licensure if no direct psychological services are delivered or supervised to clients and no fees are charged; doctoral researchers may use the title 'psychologist'.",
+    "key_parameters": {
+      "direct_clinical_services_prohibited": true,
+      "doctoral_faculty_may_use_title": true
+    },
+    "associated_question_ids": [
+      206
+    ],
+    "associated_anki_card_ids": [
+      206
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(3)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "state-employee-grandfather-exemption",
+    "rule_summary": "State agency or community service board employees practicing prior to July 1, 1996 (at intermediate care facilities) or July 1, 1997 (at other facilities) are exempt from licensure solely while engaged as employees of those entities.",
+    "key_parameters": {
+      "intermediate_care_date": "1996-07-01",
+      "other_state_offices_date": "1997-07-01"
+    },
+    "associated_question_ids": [
+      207
+    ],
+    "associated_anki_card_ids": [
+      207
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(4)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "religious-organization-exemption",
+    "rule_summary": "Activities and services of persons serving for recognized religious organizations are exempt from licensure, provided the title 'psychologist' is not used and psychologist status is not implied.",
+    "key_parameters": {
+      "title_use_prohibited": true,
+      "setting": "recognized_religious_organization"
+    },
+    "associated_question_ids": [
+      208
+    ],
+    "associated_anki_card_ids": [
+      208
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(5)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "postdoctoral-supervised-experience-exemption",
+    "rule_summary": "Persons holding a doctoral degree in psychology may practice under the supervision of a licensed psychologist in order to acquire the experience required for licensure.",
+    "key_parameters": {
+      "requires_doctoral_degree": true,
+      "requires_licensed_psychologist_supervision": true
+    },
+    "associated_question_ids": [
+      21
+    ],
+    "associated_anki_card_ids": [
+      21
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-007",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(6)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "other-licensed-professions-exemption",
+    "rule_summary": "Licensed physicians, nurses, professional counselors, social workers, and marriage and family therapists may practice within their lawful scopes of practice but cannot use the title 'psychologist' or imply they are psychologists.",
+    "key_parameters": {
+      "scope": "allied_mental_health",
+      "title_psychologist_prohibited": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-7-008",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(7)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "students-and-trainees-exemption",
+    "rule_summary": "Psychology students, interns, and assistants may engage in activities defined as the practice of psychology provided they are under direct supervision and responsibility of a licensed psychologist and do not represent themselves as psychologists.",
+    "key_parameters": {
+      "requires_direct_supervision": true,
+      "representation_as_psychologist_barred": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-7-009",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(8)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "out-of-state-psychologist-30-day-temporary-practice",
+    "rule_summary": "An out-of-state psychologist licensed in a jurisdiction with equal or higher standards may practice in Georgia without applying for a license for no more than 30 days per calendar year.",
+    "key_parameters": {
+      "max_days_per_year": 30,
+      "requires_equivalent_standards": true
+    },
+    "associated_question_ids": [
+      155,
+      174,
+      175
+    ],
+    "associated_anki_card_ids": [
+      155,
+      174,
+      175
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-010",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(9)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "psypact-interjurisdictional-practice-authority",
+    "rule_summary": "An individual authorized to practice interjurisdictional telepsychology, temporary practice, or both under PSYPACT may practice in Georgia in accordance with the compact provisions.",
+    "key_parameters": {
+      "compact": "PSYPACT",
+      "covers_telepsychology_and_temporary_practice": true
+    },
+    "associated_question_ids": [
+      156,
+      176
+    ],
+    "associated_anki_card_ids": [
+      156,
+      176
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-7-011",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-7(10)",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "lpc-testing-and-assessment-authority",
+    "rule_summary": "Licensed professional counselors under Chapter 10A are authorized to administer and interpret educational, vocational, marital/family, and symptom screening assessments within their competence; the Composite Board has sole authority to regulate LPC testing.",
+    "key_parameters": {
+      "regulatory_body": "Composite Board",
+      "testing_types": [
+        "educational",
+        "vocational",
+        "symptom_screening",
+        "marital_family"
+      ]
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-8-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-8(b)(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "licensure-good-moral-character",
+    "rule_summary": "Candidates for psychology licensure must furnish the Board with satisfactory evidence of good moral character.",
+    "key_parameters": {
+      "requires_good_moral_character": true
+    },
+    "associated_question_ids": [
+      20
+    ],
+    "associated_anki_card_ids": [
+      20
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-8-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-8(b)(2)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "licensure-doctoral-degree-requirement",
+    "rule_summary": "Candidates must have completed the requirements of a doctoral degree from an accredited professional training program in applied psychology (clinical, counseling, I/O, school) or an approved retraining program.",
+    "key_parameters": {
+      "degree_level": "doctoral",
+      "program_types": [
+        "clinical",
+        "counseling",
+        "industrial_organizational",
+        "school"
+      ]
+    },
+    "associated_question_ids": [
+      225
+    ],
+    "associated_anki_card_ids": [
+      225
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-8-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-8(b)(3)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "licensure-experience-requirement",
+    "rule_summary": "Candidates must have had at least two years of qualifying supervised experience in psychology (minimum 3,000 total hours: 1,500 predoctoral internship + 1,500 postdoctoral).",
+    "key_parameters": {
+      "min_years_experience": 2,
+      "total_hours": 3000
+    },
+    "associated_question_ids": [
+      18,
+      343
+    ],
+    "associated_anki_card_ids": [
+      18,
+      343
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-8-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-8(b)(4)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "licensure-examinations-requirement",
+    "rule_summary": "Candidates must demonstrate competence by passing examinations (written, oral, or both) deemed necessary by the Board.",
+    "key_parameters": {
+      "exam_types": [
+        "written",
+        "oral"
+      ]
+    },
+    "associated_question_ids": [
+      2,
+      3
+    ],
+    "associated_anki_card_ids": [
+      2,
+      3
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-8-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-8(b)(5)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "exam-failure-six-month-waiting-period",
+    "rule_summary": "A candidate is ineligible for licensure if they have failed an examination given by the Board within the preceding six months.",
+    "key_parameters": {
+      "waiting_period_months": 6
+    },
+    "associated_question_ids": [
+      19
+    ],
+    "associated_anki_card_ids": [
+      19
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-9-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-9",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "examination-frequency-and-contracting",
+    "rule_summary": "The Board administers examinations at least once per year and has authority to contract with qualified testing services for exam development and administration.",
+    "key_parameters": {
+      "min_frequency_per_year": 1,
+      "contracting_authorized": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-10-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-10",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "licensure-by-endorsement-and-credentials",
+    "rule_summary": "The Board may license an out-of-state psychologist without examination if standards equal or exceed Georgia's, or if applicant holds a Certificate of Professional Qualification (CPQ) or ABPP diploma.",
+    "key_parameters": {
+      "qualifying_credentials": [
+        "CPQ",
+        "ABPP",
+        "equivalent_state_license"
+      ]
+    },
+    "associated_question_ids": [
+      4,
+      305
+    ],
+    "associated_anki_card_ids": [
+      4,
+      305
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-11-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-11",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "provisional-license-statutory-authority",
+    "rule_summary": "The Board may issue provisional licenses to qualified applicants completing supervised postdoctoral experience under conditions established by Board rules.",
+    "key_parameters": {
+      "provisional_license_authorized": true
+    },
+    "associated_question_ids": [
+      306
+    ],
+    "associated_anki_card_ids": [
+      306
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-12-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-12",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "biennial-renewal-cycle",
+    "rule_summary": "Psychology licenses expire biennially and must be renewed by submitting the prescribed renewal application, fee, and proof of required continuing education.",
+    "key_parameters": {
+      "renewal_cycle_years": 2
+    },
+    "associated_question_ids": [
+      34,
+      372
+    ],
+    "associated_anki_card_ids": [
+      34,
+      372
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-12-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-12",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "license-expiration-and-reinstatement",
+    "rule_summary": "Licenses not renewed by the expiration deadline lapse; reinstatement is subject to the sole discretion of the Board upon payment of fees and proof of CE.",
+    "key_parameters": {
+      "reinstatement_discretionary": true
+    },
+    "associated_question_ids": [
+      43,
+      44
+    ],
+    "associated_anki_card_ids": [
+      43,
+      44
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-13-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-disciplinary-grounds",
+    "rule_summary": "The Board may sanction a licensee or refuse a license for fraud in application, felony conviction, practicing under an assumed name, alcohol/substance intemperance causing incapacity, or negligence.",
+    "key_parameters": {
+      "grounds": [
+        "fraud",
+        "felony",
+        "assumed_name",
+        "substance_incapacity",
+        "negligence"
+      ]
+    },
+    "associated_question_ids": [
+      46,
+      47
+    ],
+    "associated_anki_card_ids": [
+      46,
+      47
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-13-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(a)(1)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "compelled-mental-physical-examination",
+    "rule_summary": "If reasonable basis exists that a psychologist is incapacitated by substance abuse or mental/physical illness, the Board may compel a mental/physical examination; results are admissible notwithstanding privilege.",
+    "key_parameters": {
+      "threshold": "reasonable_basis_of_incapacity",
+      "privilege_abrogated": true
+    },
+    "associated_question_ids": [
+      48
+    ],
+    "associated_anki_card_ids": [
+      48
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-13-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(a)(2)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "compelled-production-of-personal-records",
+    "rule_summary": "The Board may compel a licensee to produce or grant access to personal psychiatric and psychological records if a reasonable basis of incapacity exists.",
+    "key_parameters": {
+      "includes_personal_psychiatric_records": true,
+      "threshold": "reasonable_basis_of_incapacity"
+    },
+    "associated_question_ids": [
+      49
+    ],
+    "associated_anki_card_ids": [
+      49
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-13-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(a)(1)-(2)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "summary-suspension-for-exam-records-refusal",
+    "rule_summary": "If a licensee refuses to submit to a compelled mental/physical examination or provide medical records, the Board may summarily suspend the license if public safety imperatively requires.",
+    "key_parameters": {
+      "trigger": "refusal_of_exam_or_records",
+      "standard": "public_safety_imperatively_requires"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-39-13-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "administrative-procedure-act-hearing-requirement",
+    "rule_summary": "The Board cannot revoke, suspend, or refuse to renew a license without providing the opportunity for a hearing conducted in accordance with the Georgia Administrative Procedure Act (Title 50, Chapter 13).",
+    "key_parameters": {
+      "governing_act": "Georgia Administrative Procedure Act",
+      "requires_hearing_opportunity": true
+    },
+    "associated_question_ids": [
+      50
+    ],
+    "associated_anki_card_ids": [
+      50
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-13-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-13(c)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "judicial-review-appeal-standard",
+    "rule_summary": "Board disciplinary decisions are appealable to Superior Court under the Georgia APA; the court must accept Board findings if supported by 'any evidence'.",
+    "key_parameters": {
+      "appellate_court": "Superior Court",
+      "evidentiary_standard": "any_evidence"
+    },
+    "associated_question_ids": [
+      346,
+      347
+    ],
+    "associated_anki_card_ids": [
+      346,
+      347
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-14-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-14",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "hearing-officer-powers-under-apa",
+    "rule_summary": "In disciplinary hearings, the Board or its appointed hearing officer exercises all powers granted to tribunals under the APA, including swearing witnesses, taking testimony, and issuing subpoenas.",
+    "key_parameters": {
+      "hearing_officer_powers": "full_apa_tribunal_powers"
+    },
+    "associated_question_ids": [
+      348
+    ],
+    "associated_anki_card_ids": [
+      348
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-15-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-15",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "injunctions-against-unlawful-practice",
+    "rule_summary": "The Board may file an action in Superior Court to enjoin unlicensed practice in the county where the defendant resides or maintains a principal office.",
+    "key_parameters": {
+      "action_type": "permanent_injunction",
+      "venue": "county_of_residence_or_office"
+    },
+    "associated_question_ids": [
+      64,
+      349
+    ],
+    "associated_anki_card_ids": [
+      64,
+      349
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-15-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-15",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "injunction-equitable-relief-standard",
+    "rule_summary": "The Board is NOT required to allege or prove there is no adequate remedy at law to obtain an injunction; unlicensed practice is legally declared a public nuisance and menace.",
+    "key_parameters": {
+      "no_adequate_remedy_showing_required": false,
+      "declared_menace_and_nuisance": true
+    },
+    "associated_question_ids": [
+      66
+    ],
+    "associated_anki_card_ids": [
+      66
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-16-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-16",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "psychologist-patient-privilege-scope",
+    "rule_summary": "Confidential relations and communications between licensed psychologist and client are placed upon the same legal basis as those between attorney and client, and cannot be compelled to be disclosed.",
+    "key_parameters": {
+      "legal_standard": "attorney_client_privilege",
+      "disclosure_cannot_be_compelled": true
+    },
+    "associated_question_ids": [
+      61,
+      62,
+      355
+    ],
+    "associated_anki_card_ids": [
+      61,
+      62,
+      355
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-18-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-18",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-member-and-investigator-immunity",
+    "rule_summary": "Board members, agents, and investigators are immune from civil liability for official acts performed in good faith within the scope of their duties.",
+    "key_parameters": {
+      "requires_good_faith": true,
+      "civil_immunity": true
+    },
+    "associated_question_ids": [
+      9
+    ],
+    "associated_anki_card_ids": [
+      9
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-19-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-19",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "criminal-penalty-for-unlicensed-practice",
+    "rule_summary": "Any violation of Chapter 39 is a misdemeanor punishable by a fine between $100.00 and $1,000.00 and/or imprisonment up to 12 months.",
+    "key_parameters": {
+      "classification": "misdemeanor",
+      "min_fine_dollars": 100,
+      "max_fine_dollars": 1000,
+      "max_imprisonment_months": 12
+    },
+    "associated_question_ids": [
+      67
+    ],
+    "associated_anki_card_ids": [
+      67
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-20-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-20",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "peer-review-good-faith-immunity",
+    "rule_summary": "A licensed psychologist testifying in good faith without fraud or malice in a fitness proceeding or making a peer review report to the Board is immune from civil and criminal liability.",
+    "key_parameters": {
+      "requires_good_faith_no_fraud_no_malice": true,
+      "civil_and_criminal_immunity": true
+    },
+    "associated_question_ids": [
+      68
+    ],
+    "associated_anki_card_ids": [
+      68
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-39-20-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-39-20",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "board-ordered-monitor-immunity",
+    "rule_summary": "A licensed psychologist serving as a supervising or monitoring psychologist pursuant to a Board order is immune from civil damages in any action brought by the supervisee, provided they acted in good faith.",
+    "key_parameters": {
+      "requires_board_order": true,
+      "requires_good_faith": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-RULE-510-1-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-1-.03",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "administration-and-board-location",
+    "rule_summary": "The Georgia State Board of Examiners of Psychologists is administered by the Division Director of the Professional Licensing Boards Division located at 237 Coliseum Drive, Macon, Georgia.",
+    "key_parameters": {
+      "location": "237 Coliseum Dr, Macon, GA",
+      "administrator": "Division Director"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-RULE-510-1-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-1-.02",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "annual-officer-elections",
+    "rule_summary": "Board officers (President and Vice President) are elected annually at the first meeting held after July 1 of each year.",
+    "key_parameters": {
+      "election_timeframe": "first_meeting_after_july_1",
+      "term_years": 1
+    },
+    "associated_question_ids": [
+      10
+    ],
+    "associated_anki_card_ids": [
+      10
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-1-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-1-.04",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "public-roster-of-licensees",
+    "rule_summary": "An official roster showing names, license numbers, and addresses of all licensed psychologists is maintained by the Division Director and available to the public.",
+    "key_parameters": {
+      "publicly_accessible": true,
+      "maintained_by": "Division Director"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-RULE-510-1-004",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-1-.05",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "non-refundability-of-fees",
+    "rule_summary": "All fees paid to the Georgia State Board of Examiners of Psychologists are strictly non-refundable and non-transferable.",
+    "key_parameters": {
+      "non_refundable": true,
+      "non_transferable": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-001",
     "source_type": "RULE",
     "citation": "Ga. Comp. R. & Regs. r. 510-2-.01",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
-    "subtopic": "rules-510-2",
+    "subtopic": "gamb-retake-waiting-period",
     "rule_summary": "A candidate who fails the Georgia Jurisprudence Examination (GAMB) must wait at least 30 days before retaking the examination.",
     "key_parameters": {
       "retake_waiting_period_days": 30
@@ -17,5 +1163,3034 @@
       1
     ],
     "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.01",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "eppp-prerequisite-before-gamb",
+    "rule_summary": "Candidates for psychology licensure must pass the EPPP before sitting for the Georgia Psychology Jurisprudence Examination (GAMB).",
+    "key_parameters": {
+      "eppp_prerequisite_for_gamb": true
+    },
+    "associated_question_ids": [
+      2
+    ],
+    "associated_anki_card_ids": [
+      2
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.01",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "oral-examination-final-sequence",
+    "rule_summary": "After attaining passing scores on both the EPPP and the Georgia Jurisprudence Examination, qualified candidates must take the Board Oral Examination as the final examination.",
+    "key_parameters": {
+      "sequence": [
+        "EPPP",
+        "GAMB",
+        "Oral Examination"
+      ]
+    },
+    "associated_question_ids": [
+      3
+    ],
+    "associated_anki_card_ids": [
+      3
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-004",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.04",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "doctoral-program-accreditation",
+    "rule_summary": "The doctoral degree in applied psychology must be accredited by APA or CPA, or designated by ASPPB/National Register as meeting designated doctoral program criteria.",
+    "key_parameters": {
+      "accreditations": [
+        "APA",
+        "CPA",
+        "ASPPB_National_Register_designated"
+      ]
+    },
+    "associated_question_ids": [
+      226
+    ],
+    "associated_anki_card_ids": [
+      226
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-005",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.04",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "academic-residency-requirement",
+    "rule_summary": "The doctoral curriculum must involve at least one continuous academic year of full-time residency on the campus of the degree-granting institution.",
+    "key_parameters": {
+      "min_continuous_residency_years": 1,
+      "full_time_on_campus": true
+    },
+    "associated_question_ids": [
+      227
+    ],
+    "associated_anki_card_ids": [
+      227
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-006",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "predoctoral-internship-hours",
+    "rule_summary": "The predoctoral internship must consist of a minimum of 1,500 hours of qualifying supervised psychological work experience.",
+    "key_parameters": {
+      "min_predoctoral_hours": 1500
+    },
+    "associated_question_ids": [
+      25,
+      230
+    ],
+    "associated_anki_card_ids": [
+      25,
+      230
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-007",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "predoctoral-internship-timeframe",
+    "rule_summary": "The 1,500 predoctoral internship hours must be completed in no less than 11 months and no more than 24 consecutive months.",
+    "key_parameters": {
+      "min_months": 11,
+      "max_months": 24
+    },
+    "associated_question_ids": [
+      26,
+      231
+    ],
+    "associated_anki_card_ids": [
+      26,
+      231
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-008",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "predoctoral-supervision-weekly-hours",
+    "rule_summary": "Predoctoral internship interns must receive a minimum of 2 hours per week of formal, individual face-to-face supervision by a licensed psychologist.",
+    "key_parameters": {
+      "min_individual_supervision_hours_per_week": 2,
+      "face_to_face_required": true
+    },
+    "associated_question_ids": [
+      27,
+      232
+    ],
+    "associated_anki_card_ids": [
+      27,
+      232
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-009",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "postdoctoral-swe-hours",
+    "rule_summary": "Postdoctoral supervised work experience (SWE) must consist of a minimum of 1,500 hours of qualifying psychological experience.",
+    "key_parameters": {
+      "min_postdoctoral_hours": 1500
+    },
+    "associated_question_ids": [
+      21,
+      233
+    ],
+    "associated_anki_card_ids": [
+      21,
+      233
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-010",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "postdoctoral-swe-timeframe",
+    "rule_summary": "The 1,500 postdoctoral SWE hours must be completed in no less than 11 months and no more than 24 consecutive months.",
+    "key_parameters": {
+      "min_months": 11,
+      "max_months": 24
+    },
+    "associated_question_ids": [
+      22,
+      234
+    ],
+    "associated_anki_card_ids": [
+      22,
+      234
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-011",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "postdoctoral-supervision-weekly-hours",
+    "rule_summary": "Postdoctoral supervisees must receive at least 1 hour per week of individual face-to-face supervision with the primary licensed psychologist supervisor.",
+    "key_parameters": {
+      "min_supervision_hours_per_week": 1,
+      "face_to_face_required": true
+    },
+    "associated_question_ids": [
+      28,
+      235
+    ],
+    "associated_anki_card_ids": [
+      28,
+      235
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-012",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "supervisor-qualification-licensed-duration",
+    "rule_summary": "The primary supervisor for postdoctoral SWE must have been licensed as a psychologist for at least 3 years prior to beginning supervision.",
+    "key_parameters": {
+      "min_supervisor_licensure_years": 3
+    },
+    "associated_question_ids": [
+      29
+    ],
+    "associated_anki_card_ids": [
+      29
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-013",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "supervisor-multiple-relationship-ban",
+    "rule_summary": "A supervisor shall not be a spouse, close relative, former therapist, or have any other dual or multiple relationship that could compromise objectivity with the supervisee.",
+    "key_parameters": {
+      "dual_relationships_barred": [
+        "spouse",
+        "close_relative",
+        "former_therapist"
+      ]
+    },
+    "associated_question_ids": [
+      30
+    ],
+    "associated_anki_card_ids": [
+      30
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-014",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "supervisor-full-responsibility-for-practice",
+    "rule_summary": "The primary supervisor assumes full professional, ethical, and legal responsibility for all client services rendered by the postdoctoral supervisee.",
+    "key_parameters": {
+      "supervisor_full_responsibility": true
+    },
+    "associated_question_ids": [
+      31
+    ],
+    "associated_anki_card_ids": [
+      31
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-015",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.05",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "supervisee-client-disclosure",
+    "rule_summary": "Supervisees must inform clients in advance of their supervisory status, identify their licensed supervisor, and explain that the supervisor has access to their clinical records.",
+    "key_parameters": {
+      "mandatory_disclosure_of_supervision": true,
+      "supervisor_access_disclosed": true
+    },
+    "associated_question_ids": [
+      326
+    ],
+    "associated_anki_card_ids": [
+      326
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-2-016",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.06",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "application-file-validity-duration",
+    "rule_summary": "An application for licensure remains valid for one year from the date of filing; files inactive for over one year become void and require a new application and fee.",
+    "key_parameters": {
+      "max_application_validity_years": 1
+    },
+    "associated_question_ids": [
+      236
+    ],
+    "associated_anki_card_ids": [
+      236
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-3-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-3-.01",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "military-spouse-provisional-license",
+    "rule_summary": "A military spouse holding a valid unencumbered psychology license in another jurisdiction may obtain an expedited provisional license to practice while fulfilling Georgia requirements.",
+    "key_parameters": {
+      "expedited_processing": true,
+      "military_spouse_eligible": true
+    },
+    "associated_question_ids": [
+      74,
+      307
+    ],
+    "associated_anki_card_ids": [
+      74,
+      307
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-3-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-3-.03",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "temporary-license-duration",
+    "rule_summary": "A temporary license issued to an applicant awaiting the Board Oral Examination is valid for up to one year or until the Board acts on the examination results.",
+    "key_parameters": {
+      "max_temporary_license_duration_years": 1
+    },
+    "associated_question_ids": [
+      75
+    ],
+    "associated_anki_card_ids": [
+      75
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.01",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "apa-ethics-code-incorporation",
+    "rule_summary": "The Georgia State Board of Examiners of Psychologists explicitly incorporates the APA Ethical Principles of Psychologists and Code of Conduct into its enforceable rules.",
+    "key_parameters": {
+      "incorporated_code": "APA Ethics Code"
+    },
+    "associated_question_ids": [
+      101,
+      308
+    ],
+    "associated_anki_card_ids": [
+      101,
+      308
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "boundaries-of-competence",
+    "rule_summary": "Psychologists provide services, teach, and conduct research only within the boundaries of their competence based on education, training, supervised experience, or professional study.",
+    "key_parameters": {
+      "standard": "education_training_supervised_experience"
+    },
+    "associated_question_ids": [
+      102,
+      309
+    ],
+    "associated_anki_card_ids": [
+      102,
+      309
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "competence-in-new-specialties",
+    "rule_summary": "When expanding into new practice areas or techniques, psychologists must undertake relevant education, training, supervised experience, consultation, or study prior to independent practice.",
+    "key_parameters": {
+      "requires_training_or_consultation_before_practice": true
+    },
+    "associated_question_ids": [
+      103,
+      310
+    ],
+    "associated_anki_card_ids": [
+      103,
+      310
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-004",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "emergency-services-competence-exception",
+    "rule_summary": "In emergencies when other mental health services are unavailable, psychologists may provide services outside their competence to ensure care is not denied, discontinuing as soon as emergency ends.",
+    "key_parameters": {
+      "emergency_exception_allowed": true,
+      "discontinue_when_emergency_ends": true
+    },
+    "associated_question_ids": [
+      104,
+      311
+    ],
+    "associated_anki_card_ids": [
+      104,
+      311
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-005",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "maintaining-competence",
+    "rule_summary": "Psychologists undertake ongoing efforts to develop and maintain their professional competence through continuing education and scientific literature review.",
+    "key_parameters": {
+      "ongoing_duty": true
+    },
+    "associated_question_ids": [
+      105,
+      312
+    ],
+    "associated_anki_card_ids": [
+      105,
+      312
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-006",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "personal-problems-and-impairment",
+    "rule_summary": "Psychologists must refrain from initiating activities when they know or should know that personal problems will likely impair competent performance, and must seek consultation to limit or suspend practice.",
+    "key_parameters": {
+      "duty_to_refrain_when_impaired": true,
+      "duty_to_limit_suspend_or_terminate": true
+    },
+    "associated_question_ids": [
+      106,
+      313
+    ],
+    "associated_anki_card_ids": [
+      106,
+      313
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-007",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "conflict-between-ethics-and-law",
+    "rule_summary": "When ethical responsibilities conflict with law or regulations, psychologists make known their commitment to the Ethics Code and take reasonable steps to resolve the conflict; if unresolvable, they may adhere to law.",
+    "key_parameters": {
+      "cannot_justify_violating_human_rights": true,
+      "adhere_to_law_if_unresolvable": true
+    },
+    "associated_question_ids": [
+      107,
+      314
+    ],
+    "associated_anki_card_ids": [
+      107,
+      314
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-008",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "informal-resolution-of-ethical-violations",
+    "rule_summary": "When a psychologist believes another psychologist has committed an ethical violation, they attempt informal resolution by bringing it to that individual's attention if appropriate and if confidentiality is preserved.",
+    "key_parameters": {
+      "informal_attempt_preferred": true,
+      "must_not_violate_client_confidentiality": true
+    },
+    "associated_question_ids": [
+      108,
+      315
+    ],
+    "associated_anki_card_ids": [
+      108,
+      315
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-009",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "formal-reporting-of-ethical-violations",
+    "rule_summary": "If an ethical violation has substantially harmed or is likely to substantially harm a person and is not amenable to informal resolution, psychologist takes formal reporting action unless violating confidentiality.",
+    "key_parameters": {
+      "standard": "substantial_harm_likely",
+      "confidentiality_takes_precedence": true
+    },
+    "associated_question_ids": [
+      109,
+      316
+    ],
+    "associated_anki_card_ids": [
+      109,
+      316
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-010",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "cooperating-with-ethics-investigations",
+    "rule_summary": "Psychologists must cooperate in ethics investigations, proceedings, and resulting requirements of APA or the Georgia Board; failure to cooperate is itself an independent ethical violation.",
+    "key_parameters": {
+      "mandatory_cooperation": true,
+      "failure_to_cooperate_is_violation": true
+    },
+    "associated_question_ids": [
+      110,
+      317
+    ],
+    "associated_anki_card_ids": [
+      110,
+      317
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-011",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "improper-ethics-complaints",
+    "rule_summary": "Psychologists do not file or encourage filing of ethics complaints that are made with reckless disregard for or willful ignorance of facts that would disprove the allegation.",
+    "key_parameters": {
+      "reckless_or_malicious_complaints_banned": true
+    },
+    "associated_question_ids": [
+      111,
+      318
+    ],
+    "associated_anki_card_ids": [
+      111,
+      318
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-012",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "multiple-relationships-definition",
+    "rule_summary": "A multiple relationship occurs when a psychologist is in a professional role with a person and concurrently in another role with that person, or closely related person, or promises a future relationship.",
+    "key_parameters": {
+      "includes_concurrent_roles": true,
+      "includes_promises_of_future_roles": true
+    },
+    "associated_question_ids": [
+      112,
+      319
+    ],
+    "associated_anki_card_ids": [
+      112,
+      319
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-013",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "multiple-relationships-prohibition-standard",
+    "rule_summary": "Psychologists refrain from entering a multiple relationship if it could reasonably be expected to impair objectivity, competence, or effectiveness, or risks exploitation or harm.",
+    "key_parameters": {
+      "standard": "impairs_objectivity_or_risks_harm",
+      "multiple_relationships_not_all_unethical": true
+    },
+    "associated_question_ids": [
+      113,
+      320
+    ],
+    "associated_anki_card_ids": [
+      113,
+      320
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-014",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "conflict-of-interest-standard",
+    "rule_summary": "Psychologists refrain from taking on a professional role when personal, scientific, professional, legal, or financial interests could impair objectivity or expose the client to harm or exploitation.",
+    "key_parameters": {
+      "duty_to_refrain": true
+    },
+    "associated_question_ids": [
+      114,
+      321
+    ],
+    "associated_anki_card_ids": [
+      114,
+      321
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-015",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "third-party-requests-for-service",
+    "rule_summary": "When providing services at the request of a third party, psychologists clarify at the outset the nature of the relationship, the role, who is the client, probable uses of services, and confidentiality limits.",
+    "key_parameters": {
+      "clarify_at_outset": true,
+      "identify_who_is_client": true
+    },
+    "associated_question_ids": [
+      115,
+      322
+    ],
+    "associated_anki_card_ids": [
+      115,
+      322
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-016",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "services-delivered-to-or-through-organizations",
+    "rule_summary": "Psychologists delivering services to/through organizations inform clients in advance of the nature of services, intended recipients, which individuals are clients, and limits of confidentiality.",
+    "key_parameters": {
+      "advance_notice_required": true,
+      "organizational_context": true
+    },
+    "associated_question_ids": [
+      116,
+      323
+    ],
+    "associated_anki_card_ids": [
+      116,
+      323
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-017",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "exploitative-relationships-ban",
+    "rule_summary": "Psychologists do not exploit persons over whom they have supervisory, evaluative, or other authority such as clients, students, supervisees, research participants, or employees.",
+    "key_parameters": {
+      "exploitation_prohibited": true
+    },
+    "associated_question_ids": [
+      117,
+      324
+    ],
+    "associated_anki_card_ids": [
+      117,
+      324
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-018",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "informed-consent-for-therapy",
+    "rule_summary": "Psychologists obtain informed consent to therapy as early as feasible, informing clients about the nature and course of therapy, fees, third-party involvement, and confidentiality limits.",
+    "key_parameters": {
+      "timing": "as_early_as_feasible",
+      "elements": [
+        "nature",
+        "fees",
+        "third_parties",
+        "confidentiality_limits"
+      ]
+    },
+    "associated_question_ids": [
+      118,
+      325
+    ],
+    "associated_anki_card_ids": [
+      118,
+      325
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-019",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "informed-consent-developing-treatments",
+    "rule_summary": "When providing developing treatments for which established techniques have not been universally recognized, psychologists inform clients of the experimental nature, risks, and alternative treatments.",
+    "key_parameters": {
+      "disclose_developing_nature": true,
+      "disclose_risks_and_alternatives": true
+    },
+    "associated_question_ids": [
+      119
+    ],
+    "associated_anki_card_ids": [
+      119
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-020",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "informed-consent-with-trainee-therapists",
+    "rule_summary": "When the therapist is a trainee/intern, the client must be informed that the therapist is in training and under supervision, and given the name of the supervisor who has legal responsibility.",
+    "key_parameters": {
+      "disclose_trainee_status": true,
+      "provide_supervisor_name": true
+    },
+    "associated_question_ids": [
+      120,
+      326
+    ],
+    "associated_anki_card_ids": [
+      120,
+      326
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-021",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "couple-and-family-therapy-role-clarification",
+    "rule_summary": "When providing services to multiple persons having a relationship (spouses, parents/children), psychologist clarifies at outset which individuals are clients and the relationship to each person.",
+    "key_parameters": {
+      "clarify_who_is_client": true,
+      "clarify_role_with_each_person": true
+    },
+    "associated_question_ids": [
+      121,
+      327
+    ],
+    "associated_anki_card_ids": [
+      121,
+      327
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-022",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "group-therapy-confidentiality-limits",
+    "rule_summary": "When providing services to several persons in a group setting, psychologists describe at the outset the roles and responsibilities of all parties and the limits of confidentiality.",
+    "key_parameters": {
+      "group_confidentiality_limits_disclosed": true
+    },
+    "associated_question_ids": [
+      122,
+      328
+    ],
+    "associated_anki_card_ids": [
+      122,
+      328
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-023",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "therapy-with-individuals-served-by-others",
+    "rule_summary": "In deciding whether to offer services to persons already receiving mental health services elsewhere, psychologists carefully consider treatment issues, client welfare, and discuss with client to minimize conflict.",
+    "key_parameters": {
+      "consult_client_welfare": true,
+      "proceed_with_caution_and_sensitivity": true
+    },
+    "associated_question_ids": [
+      123,
+      329
+    ],
+    "associated_anki_card_ids": [
+      123,
+      329
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-024",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-intimacies-with-current-clients",
+    "rule_summary": "Psychologists do not engage in sexual intimacies with current therapy clients under any circumstances; the prohibition is absolute.",
+    "key_parameters": {
+      "absolute_ban": true,
+      "exceptions_allowed": false
+    },
+    "associated_question_ids": [
+      124,
+      330
+    ],
+    "associated_anki_card_ids": [
+      124,
+      330
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-025",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-intimacies-with-relatives-of-current-clients",
+    "rule_summary": "Psychologists do not engage in sexual intimacies with individuals known to be close relatives, guardians, or significant others of current clients, and do not terminate therapy to circumvent this standard.",
+    "key_parameters": {
+      "prohibited_with_close_relatives": true,
+      "termination_to_circumvent_prohibited": true
+    },
+    "associated_question_ids": [
+      125,
+      331
+    ],
+    "associated_anki_card_ids": [
+      125,
+      331
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-026",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "therapy-with-former-sexual-partners",
+    "rule_summary": "Psychologists do not accept as therapy clients persons with whom they have engaged in sexual intimacies; the prohibition is absolute.",
+    "key_parameters": {
+      "absolute_ban": true
+    },
+    "associated_question_ids": [
+      126,
+      332
+    ],
+    "associated_anki_card_ids": [
+      126,
+      332
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-027",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-intimacies-with-former-clients-two-year-ban",
+    "rule_summary": "Psychologists do not engage in sexual intimacies with former clients for at least two years after cessation or termination of therapy.",
+    "key_parameters": {
+      "min_post_termination_years": 2
+    },
+    "associated_question_ids": [
+      127,
+      333
+    ],
+    "associated_anki_card_ids": [
+      127,
+      333
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-028",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "post-two-year-sexual-intimacies-burden-of-proof",
+    "rule_summary": "Even after two years post-termination, sexual intimacies are prohibited except in the most unusual circumstances, with the psychologist bearing the heavy burden of demonstrating no exploitation in light of 7 factors.",
+    "key_parameters": {
+      "allowed_only_in_most_unusual_circumstances": true,
+      "burden_of_proof_on_psychologist": true,
+      "statutory_factors_count": 7
+    },
+    "associated_question_ids": [
+      128,
+      334
+    ],
+    "associated_anki_card_ids": [
+      128,
+      334
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-029",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-intimacies-with-students-supervisees",
+    "rule_summary": "Psychologists do not engage in sexual relationships with students or supervisees who are in their department or over whom they have or are likely to have evaluative authority.",
+    "key_parameters": {
+      "prohibited_over_evaluative_authority": true
+    },
+    "associated_question_ids": [
+      129,
+      335
+    ],
+    "associated_anki_card_ids": [
+      129,
+      335
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-030",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "continuity-of-care-interruption-planning",
+    "rule_summary": "Psychologists make reasonable efforts to facilitate continuity of care in the event therapy is interrupted by illness, death, unavailability, relocation, or retirement.",
+    "key_parameters": {
+      "duty_to_plan_for_interruption": true
+    },
+    "associated_question_ids": [
+      130,
+      336
+    ],
+    "associated_anki_card_ids": [
+      130,
+      336
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-031",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "terminating-therapy-standards",
+    "rule_summary": "Psychologists terminate therapy when it is reasonably clear the client no longer needs service, is not benefiting, or is being harmed; pre-termination counseling and alternative referrals must be provided.",
+    "key_parameters": {
+      "duty_to_terminate_when_not_benefiting": true,
+      "requires_pretermination_counseling": true
+    },
+    "associated_question_ids": [
+      131
+    ],
+    "associated_anki_card_ids": [
+      131
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-032",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "pretermination-counseling-exceptions",
+    "rule_summary": "Pre-termination counseling is not required if precluded by the actions of clients or third-party payors, or if the psychologist is threatened or endangered by the client or related person.",
+    "key_parameters": {
+      "exception_client_actions": true,
+      "exception_therapist_endangerment": true
+    },
+    "associated_question_ids": [
+      132
+    ],
+    "associated_anki_card_ids": [
+      132
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-033",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "test-security-and-raw-data-release",
+    "rule_summary": "Psychologists maintain test security and integrity of copyrighted assessment instruments; raw test data may be released only pursuant to client release, court order, or to qualified professionals.",
+    "key_parameters": {
+      "maintain_test_security": true,
+      "release_only_with_authorization": true
+    },
+    "associated_question_ids": [
+      133
+    ],
+    "associated_anki_card_ids": [
+      133
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-034",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "obsolete-tests-and-outdated-results",
+    "rule_summary": "Psychologists do not base assessment decisions, recommendations, or interventions on outdated test data or obsolete tests and measures.",
+    "key_parameters": {
+      "reliance_on_obsolete_tests_prohibited": true
+    },
+    "associated_question_ids": [
+      134
+    ],
+    "associated_anki_card_ids": [
+      134
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-035",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "automated-scoring-and-interpretation-services",
+    "rule_summary": "Psychologists who use automated scoring/interpretation services retain ultimate professional responsibility for the appropriate application, interpretation, and use of assessment instruments.",
+    "key_parameters": {
+      "psychologist_retains_responsibility": true
+    },
+    "associated_question_ids": [
+      135
+    ],
+    "associated_anki_card_ids": [
+      135
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-036",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "explaining-assessment-results",
+    "rule_summary": "Psychologists take reasonable steps to ensure explanations of assessment results are given to the individual in understandable language, unless explicitly precluded by forensic contract.",
+    "key_parameters": {
+      "explain_in_understandable_language": true,
+      "forensic_exception": true
+    },
+    "associated_question_ids": [
+      136
+    ],
+    "associated_anki_card_ids": [
+      136
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-037",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "basis-for-assessment-opinions",
+    "rule_summary": "Psychologists base clinical and forensic opinions on techniques sufficient to substantiate findings; an in-person individual examination is required unless explicitly noted and qualified in the report.",
+    "key_parameters": {
+      "requires_in_person_examination": true,
+      "qualification_required_if_not_examined": true
+    },
+    "associated_question_ids": [
+      137,
+      169
+    ],
+    "associated_anki_card_ids": [
+      137,
+      169
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-4-038",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-4-.02",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "informed-consent-for-assessment",
+    "rule_summary": "Psychologists obtain informed consent for assessments, evaluations, or diagnostic services, detailing purpose, fees, third-party involvement, and confidentiality limits, except when testing is mandated by law.",
+    "key_parameters": {
+      "mandated_testing_exception": true,
+      "requires_informed_consent": true
+    },
+    "associated_question_ids": [
+      138
+    ],
+    "associated_anki_card_ids": [
+      138
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.04",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "adult-records-retention-seven-years",
+    "rule_summary": "Psychologists must retain complete client records for adult clients for a minimum of 7 years from the date of last professional contact.",
+    "key_parameters": {
+      "min_retention_years": 7,
+      "client_type": "adult",
+      "starts_from": "last_professional_contact"
+    },
+    "associated_question_ids": [
+      162,
+      368
+    ],
+    "associated_anki_card_ids": [
+      162,
+      368
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.04",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "minor-records-retention-age-25",
+    "rule_summary": "Psychologists must retain records of minor clients for at least 7 years after the minor reaches the age of majority (18), meaning records must be kept until the individual reaches age 25.",
+    "key_parameters": {
+      "min_retention_years_post_majority": 7,
+      "min_age_of_client_before_disposal": 25
+    },
+    "associated_question_ids": [
+      163,
+      369
+    ],
+    "associated_anki_card_ids": [
+      163,
+      369
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.04",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "professional-executor-records-custodian-plan",
+    "rule_summary": "Psychologists must make advance plans to protect the confidentiality, preservation, and disposal of records in the event of their death, incapacitation, or withdrawal from practice.",
+    "key_parameters": {
+      "requires_advance_records_custodian_plan": true
+    },
+    "associated_question_ids": [
+      164,
+      370
+    ],
+    "associated_anki_card_ids": [
+      164,
+      370
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-004",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.04",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "withholding-records-nonpayment-emergency-ban",
+    "rule_summary": "Psychologists may NOT withhold client records under their control that are requested and needed for a client's emergency treatment solely because payment has not been received.",
+    "key_parameters": {
+      "withholding_prohibited_in_emergency": true,
+      "nonpayment_not_a_defense": true
+    },
+    "associated_question_ids": [
+      165,
+      371
+    ],
+    "associated_anki_card_ids": [
+      165,
+      371
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-005",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.06",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "accuracy-in-billing-and-payor-reports",
+    "rule_summary": "Psychologists must accurately represent the nature of service, fees, identity of provider, and diagnostic findings in billing and reports submitted to third-party payors.",
+    "key_parameters": {
+      "fraudulent_billing_prohibited": true,
+      "accurate_provider_identity_required": true
+    },
+    "associated_question_ids": [
+      166
+    ],
+    "associated_anki_card_ids": [
+      166
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-006",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.06",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "bartering-restrictions",
+    "rule_summary": "Bartering for psychological services is permissible only if it is clinically not contraindicated and the resulting arrangement is not exploitative to the client.",
+    "key_parameters": {
+      "conditions": [
+        "not_clinically_contraindicated",
+        "not_exploitative"
+      ]
+    },
+    "associated_question_ids": [
+      167
+    ],
+    "associated_anki_card_ids": [
+      167
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-007",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.06",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "referral-fees-and-kickbacks-ban",
+    "rule_summary": "Psychologists do not pay or receive referral fees, kickbacks, or split fees based solely on client referrals; any division of fees must be based on actual services provided.",
+    "key_parameters": {
+      "kickbacks_banned": true,
+      "fee_division_must_reflect_services": true
+    },
+    "associated_question_ids": [
+      168
+    ],
+    "associated_anki_card_ids": [
+      168
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-008",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.07",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "telepsychology-georgia-jurisdiction",
+    "rule_summary": "Delivery of telepsychology services to a client physically located in Georgia constitutes the practice of psychology in Georgia, requiring Georgia licensure or PSYPACT authority.",
+    "key_parameters": {
+      "jurisdiction_determined_by": "client_physical_location",
+      "requires_ga_license_or_psypact": true
+    },
+    "associated_question_ids": [
+      152,
+      237,
+      435
+    ],
+    "associated_anki_card_ids": [
+      152,
+      237,
+      435
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-009",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.07",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "telepsychology-emergency-protocols",
+    "rule_summary": "Psychologists practicing telepsychology must establish verifiable emergency management protocols, including identifying local emergency services in the client's physical geographic location.",
+    "key_parameters": {
+      "requires_local_emergency_protocols": true
+    },
+    "associated_question_ids": [
+      153,
+      238
+    ],
+    "associated_anki_card_ids": [
+      153,
+      238
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-010",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.07",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "telepsychology-client-identity-location-verification",
+    "rule_summary": "Psychologists delivering telepsychology must verify the client's identity and exact physical location at the beginning of each electronic session.",
+    "key_parameters": {
+      "verify_each_session": [
+        "client_identity",
+        "client_physical_location"
+      ]
+    },
+    "associated_question_ids": [
+      154,
+      239
+    ],
+    "associated_anki_card_ids": [
+      154,
+      239
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-011",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.08",
+    "domain": "assessment",
+    "domain_display": "Assessment",
+    "subtopic": "forensic-assessment-objectivity-and-dual-roles",
+    "rule_summary": "In forensic evaluations, psychologists must maintain strict objectivity and avoid conducting forensic evaluations of current or former therapy clients (dual role prohibition).",
+    "key_parameters": {
+      "dual_role_prohibition": "treating_therapist_and_forensic_evaluator",
+      "requires_objectivity": true
+    },
+    "associated_question_ids": [
+      170,
+      243,
+      244
+    ],
+    "associated_anki_card_ids": [
+      170,
+      243,
+      244
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-012",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.02",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "advertising-testimonial-prohibition",
+    "rule_summary": "Psychologists do not solicit testimonials from current therapy clients or from persons who because of particular circumstances are vulnerable to undue influence.",
+    "key_parameters": {
+      "testimonials_from_current_clients_banned": true
+    },
+    "associated_question_ids": [
+      150,
+      334
+    ],
+    "associated_anki_card_ids": [
+      150,
+      334
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-013",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.02",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "advertising-false-deceptive-statements",
+    "rule_summary": "Psychologists do not make false, deceptive, or fraudulent public statements concerning their training, credentials, degrees, affiliations, or services.",
+    "key_parameters": {
+      "deceptive_statements_banned": true
+    },
+    "associated_question_ids": [
+      151,
+      335
+    ],
+    "associated_anki_card_ids": [
+      151,
+      335
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-014",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.02",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "advertising-responsibility-for-retained-promoters",
+    "rule_summary": "Psychologists who retain others to promote their practice retain full professional responsibility for such statements and cannot compensate media employees for news publicity.",
+    "key_parameters": {
+      "retains_full_responsibility": true,
+      "paid_news_publicity_banned": true
+    },
+    "associated_question_ids": [
+      336
+    ],
+    "associated_anki_card_ids": [
+      336
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-015",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.11",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "mandatory-ten-day-notice-of-conviction-sanction",
+    "rule_summary": "Licensed psychologists must notify the Georgia Board in writing within 10 days of any criminal conviction (felony or misdemeanor) or disciplinary sanction by another licensing board.",
+    "key_parameters": {
+      "reporting_deadline_days": 10,
+      "requires_written_notice": true
+    },
+    "associated_question_ids": [
+      55,
+      350
+    ],
+    "associated_anki_card_ids": [
+      55,
+      350
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-5-016",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-5-.10",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "aiding-illegal-practice-prohibition",
+    "rule_summary": "Psychologists shall not aid, abet, or assist any unlicensed person in the unauthorized practice of psychology or delegate psychological duties to unqualified persons.",
+    "key_parameters": {
+      "aiding_unlicensed_practice_banned": true
+    },
+    "associated_question_ids": [
+      172,
+      173,
+      250,
+      251
+    ],
+    "associated_anki_card_ids": [
+      172,
+      173,
+      250,
+      251
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-7-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-7-.01",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "license-expiration-even-numbered-years",
+    "rule_summary": "Georgia psychology licenses expire on December 31 of even-numbered years; late renewal period extends through January 31 with a late penalty fee.",
+    "key_parameters": {
+      "expiration_date": "December 31 of even years",
+      "late_renewal_deadline": "January 31"
+    },
+    "associated_question_ids": [
+      34,
+      35,
+      372,
+      373
+    ],
+    "associated_anki_card_ids": [
+      34,
+      35,
+      372,
+      373
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-7-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-7-.02",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "lapsed-license-reinstatement",
+    "rule_summary": "Licenses not renewed by January 31 lapse; practicing with a lapsed license constitutes unauthorized practice, and reinstatement requires formal petition and Board approval.",
+    "key_parameters": {
+      "lapse_date": "February 1",
+      "practice_prohibited_while_lapsed": true
+    },
+    "associated_question_ids": [
+      36,
+      45
+    ],
+    "associated_anki_card_ids": [
+      36,
+      45
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-7-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-7-.03",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "inactive-license-status",
+    "rule_summary": "A psychologist placed on inactive status by the Board cannot engage in the practice of psychology in Georgia until the license is reactivated by the Board.",
+    "key_parameters": {
+      "practice_prohibited_while_inactive": true
+    },
+    "associated_question_ids": [
+      32,
+      374,
+      375
+    ],
+    "associated_anki_card_ids": [
+      32,
+      374,
+      375
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-8-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-8-.01",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "biennial-continuing-education-forty-hours",
+    "rule_summary": "Licensees must complete a minimum of 40 approved continuing education hours during each two-year renewal cycle.",
+    "key_parameters": {
+      "total_ce_hours": 40,
+      "renewal_cycle_years": 2
+    },
+    "associated_question_ids": [
+      37,
+      38
+    ],
+    "associated_anki_card_ids": [
+      37,
+      38
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-8-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-8-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "ethics-continuing-education-six-hours",
+    "rule_summary": "At least 6 of the 40 required biennial CE hours must be in professional ethics, legal issues, or risk management (Area I live/synchronous workshops).",
+    "key_parameters": {
+      "min_ethics_hours": 6,
+      "format": "Area I live/synchronous"
+    },
+    "associated_question_ids": [
+      39,
+      189
+    ],
+    "associated_anki_card_ids": [
+      39,
+      189
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-8-003",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-8-.02",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "area-iv-online-independent-study-limit",
+    "rule_summary": "A maximum of 16 hours of the 40 required biennial CE hours may be earned through Area IV online, computer-assisted, or independent study courses.",
+    "key_parameters": {
+      "max_area_iv_hours": 16
+    },
+    "associated_question_ids": [
+      40,
+      190,
+      191
+    ],
+    "associated_anki_card_ids": [
+      40,
+      190,
+      191
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-8-004",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-8-.03",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "ce-documentation-retention-audit",
+    "rule_summary": "Licensees must maintain documentation of CE course completion for at least 3 years following the renewal cycle for Board audit verification.",
+    "key_parameters": {
+      "min_retention_years": 3,
+      "audit_compliance": true
+    },
+    "associated_question_ids": [
+      41,
+      192
+    ],
+    "associated_anki_card_ids": [
+      41,
+      192
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-9-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-9-.03",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "limited-practice-permission-thirty-days",
+    "rule_summary": "An out-of-state psychologist practicing under the 30-day temporary practice rule must file written notice with the Georgia Board prior to practice.",
+    "key_parameters": {
+      "max_days": 30,
+      "requires_prior_notice": true
+    },
+    "associated_question_ids": [
+      177
+    ],
+    "associated_anki_card_ids": [
+      177
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-RULE-510-9-002",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-9-.04",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "volunteer-service-license",
+    "rule_summary": "The Board may issue a volunteer service license to a retired psychologist to practice solely in non-profit, indigent care clinics without remuneration.",
+    "key_parameters": {
+      "remuneration_allowed": false,
+      "eligible_setting": "non_profit_indigent_care"
+    },
+    "associated_question_ids": [
+      256,
+      257
+    ],
+    "associated_anki_card_ids": [
+      256,
+      257
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(c)(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "mandatory-reporter-status-psychologists",
+    "rule_summary": "Licensed psychologists and school psychologists are designated mandatory reporters of suspected child abuse under Georgia law.",
+    "key_parameters": {
+      "mandatory_reporter": true,
+      "applies_to": [
+        "licensed_psychologists",
+        "school_psychologists"
+      ]
+    },
+    "associated_question_ids": [
+      76,
+      209
+    ],
+    "associated_anki_card_ids": [
+      76,
+      209
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(c)(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "reasonable-cause-to-believe-standard",
+    "rule_summary": "Mandatory child abuse reporting is triggered whenever a psychologist has reasonable cause to believe that a child has been abused.",
+    "key_parameters": {
+      "legal_standard": "reasonable_cause_to_believe"
+    },
+    "associated_question_ids": [
+      210
+    ],
+    "associated_anki_card_ids": [
+      210
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(e)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "reporting-deadline-twenty-four-hours",
+    "rule_summary": "Child abuse reports must be made immediately and in no case later than 24 hours from the time the suspicion arose.",
+    "key_parameters": {
+      "max_reporting_window_hours": 24,
+      "immediate_oral_report": true
+    },
+    "associated_question_ids": [
+      211
+    ],
+    "associated_anki_card_ids": [
+      211
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(e)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "report-recipients-dfcs-police",
+    "rule_summary": "Child abuse reports must be made to the county Division of Family and Children Services (DFCS) where the child resides or where abuse occurred, OR to law enforcement.",
+    "key_parameters": {
+      "recipients": [
+        "DFCS",
+        "police_department",
+        "sheriff",
+        "district_attorney"
+      ]
+    },
+    "associated_question_ids": [
+      78
+    ],
+    "associated_anki_card_ids": [
+      78
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(e)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "oral-and-written-reporting-format",
+    "rule_summary": "An oral report of child abuse must be made immediately by telephone or electronically, and followed by a written report if requested by DFCS or law enforcement.",
+    "key_parameters": {
+      "initial_report": "oral_immediate",
+      "written_report": "upon_request"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-19-7-5-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(g)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "abrogation-of-privilege-child-abuse",
+    "rule_summary": "The psychologist-patient privilege is explicitly abrogated in child abuse matters; privileged communication does not relieve the psychologist of reporting or testifying.",
+    "key_parameters": {
+      "privilege_abrogated": true,
+      "attorney_client_exception_retained": true
+    },
+    "associated_question_ids": [
+      63
+    ],
+    "associated_anki_card_ids": [
+      63
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-007",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(f)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "good-faith-immunity-child-abuse-reporting",
+    "rule_summary": "Any person who reports suspected child abuse in good faith or participates in resulting proceedings has immunity from civil and criminal liability.",
+    "key_parameters": {
+      "requires_good_faith": true,
+      "civil_and_criminal_immunity": true
+    },
+    "associated_question_ids": [
+      65
+    ],
+    "associated_anki_card_ids": [
+      65
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-008",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(h)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "misdemeanor-penalty-failure-to-report-child-abuse",
+    "rule_summary": "Any mandatory reporter who knowingly and willfully fails to report suspected child abuse is guilty of a misdemeanor.",
+    "key_parameters": {
+      "mental_state": "knowingly_and_willfully",
+      "offense_level": "misdemeanor"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-19-7-5-009",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(b)(17)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "definition-of-sexual-abuse-cross-reference",
+    "rule_summary": "Under O.C.G.A. § 19-7-5(b)(17), sexual abuse incorporates criminal offenses under §§ 16-6-3 (statutory rape), 16-6-4 (child molestation), 16-6-5 (enticing a child), and 16-6-5.1 (sexual assault by authority).",
+    "key_parameters": {
+      "incorporated_statutes": [
+        "16-6-3",
+        "16-6-4",
+        "16-6-5",
+        "16-6-5.1"
+      ]
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-19-7-5-010",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(b)(2)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "child-definition-under-eighteen",
+    "rule_summary": "Under Georgia child abuse reporting law, a child is defined as any person under 18 years of age.",
+    "key_parameters": {
+      "age_threshold_years": 18
+    },
+    "associated_question_ids": [
+      77
+    ],
+    "associated_anki_card_ids": [
+      77
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-19-7-5-011",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 19-7-5(c)(2)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "institutional-reporting-duties",
+    "rule_summary": "Notifying a supervisor or administrator does NOT relieve a mandatory reporter of the duty to make a report directly to DFCS or law enforcement, unless the employer has verified compliance protocols.",
+    "key_parameters": {
+      "delegation_restriction": true,
+      "personal_responsibility": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-elements",
+    "rule_summary": "A person commits statutory rape when he or she engages in sexual intercourse with any person under the age of 16 who is not the spouse of the actor.",
+    "key_parameters": {
+      "victim_age_limit": 16,
+      "marriage_exception": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-uncorroborated-testimony-rule",
+    "rule_summary": "A conviction for statutory rape may NOT be had on the uncorroborated testimony of the victim alone.",
+    "key_parameters": {
+      "requires_corroboration": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-felony-penalties",
+    "rule_summary": "Statutory rape is generally a felony punishable by imprisonment for not less than one nor more than 20 years.",
+    "key_parameters": {
+      "offense_level": "felony",
+      "min_sentence_years": 1,
+      "max_sentence_years": 20
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-mandatory-minimum-older-offender",
+    "rule_summary": "If the defendant is 21 years of age or older, statutory rape carries a mandatory minimum sentence of 10 to 20 years imprisonment.",
+    "key_parameters": {
+      "offender_age_threshold": 21,
+      "mandatory_min_years": 10,
+      "max_years": 20
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-romeo-and-juliet-misdemeanor-exception",
+    "rule_summary": "Statutory rape is punished as a misdemeanor if the victim is 14 or 15 years old and the offender is 18 years old or younger and no more than 4 years older than the victim.",
+    "key_parameters": {
+      "victim_age_bracket": [
+        14,
+        15
+      ],
+      "max_offender_age": 18,
+      "max_age_gap_years": 4,
+      "penalty": "misdemeanor"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-3-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-3(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "statutory-rape-repeat-offender-penalties",
+    "rule_summary": "A second or subsequent conviction for statutory rape requires punishment by life imprisonment or a split sentence with life probation and electronic monitoring.",
+    "key_parameters": {
+      "repeat_offender_penalty": "life_imprisonment_or_life_probation",
+      "electronic_monitoring_required": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "child-molestation-elements",
+    "rule_summary": "Child molestation is committed when a person performs any immoral or indecent act to or in presence of child under 16 with intent to satisfy sexual desires.",
+    "key_parameters": {
+      "victim_age_limit": 16,
+      "intent": "satisfy_sexual_desires"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "child-molestation-felony-penalties",
+    "rule_summary": "Child molestation is a felony punishable by 5 to 20 years imprisonment and mandatory counseling; a second conviction carries 10 to 30 years or life.",
+    "key_parameters": {
+      "min_sentence_years": 5,
+      "max_sentence_years": 20,
+      "mandatory_counseling": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "child-molestation-close-in-age-exception",
+    "rule_summary": "Child molestation is punished as a misdemeanor if the victim is 14 or 15 years old and the offender is 18 years old or younger and no more than 4 years older than the victim.",
+    "key_parameters": {
+      "victim_age_bracket": [
+        14,
+        15
+      ],
+      "max_offender_age": 18,
+      "max_age_gap_years": 4,
+      "penalty": "misdemeanor"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(c)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "aggravated-child-molestation-elements-penalties",
+    "rule_summary": "Aggravated child molestation occurs when molestation involves sodomy or physical injury to a child under 16; felony punishable by 25 to 50 years or life imprisonment.",
+    "key_parameters": {
+      "aggravating_elements": [
+        "sodomy",
+        "physical_injury"
+      ],
+      "min_sentence_years": 25,
+      "max_sentence_years": 50
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(c)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "aggravated-child-molestation-sodomy-close-in-age-exception",
+    "rule_summary": "Aggravated child molestation involving sodomy is punished as a misdemeanor if the victim is 13 to 15 years old and the offender is 18 or younger and no more than 4 years older.",
+    "key_parameters": {
+      "victim_age_bracket": [
+        13,
+        15
+      ],
+      "max_offender_age": 18,
+      "max_age_gap_years": 4,
+      "penalty": "misdemeanor"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-4-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-4(d)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "child-molestation-electronic-transmission-jurisdiction",
+    "rule_summary": "Electronic transmission of sexually explicit material targeting a child in Georgia is subject to Georgia jurisdiction even if initiated from outside the state.",
+    "key_parameters": {
+      "electronic_transmission_covered": true,
+      "extraterritorial_jurisdiction": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-5-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "enticing-a-child-elements",
+    "rule_summary": "A person commits enticing a child for indecent purposes when soliciting, enticing, or taking any child under 16 to any place for the purpose of molestation.",
+    "key_parameters": {
+      "victim_age_limit": 16,
+      "action": "soliciting_enticing_taking"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-5-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5(a)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "enticing-a-child-completion-upon-movement",
+    "rule_summary": "The offense of enticing a child is legally complete upon enticement or movement, regardless of whether any sexual or indecent acts actually occur.",
+    "key_parameters": {
+      "completed_upon_movement_or_enticement": true,
+      "actual_contact_not_required": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-5-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "enticing-a-child-penalties-and-exception",
+    "rule_summary": "Enticing a child is a felony punishable by 10 to 30 years imprisonment; punished as a misdemeanor if victim is 14-15 and offender <= 18 and <= 4 years older.",
+    "key_parameters": {
+      "felony_min_years": 10,
+      "felony_max_years": 30,
+      "close_in_age_misdemeanor_exception": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-16-6-5-1-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5.1(b)(6)",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-assault-by-psychotherapist-elements",
+    "rule_summary": "A psychotherapist commits sexual assault when having sexual contact or intercourse with a patient receiving psychotherapy or counseling from the actor.",
+    "key_parameters": {
+      "applies_to": "psychotherapy_patient",
+      "elements": [
+        "sexual_contact",
+        "sexual_intercourse"
+      ]
+    },
+    "associated_question_ids": [
+      82,
+      83,
+      84,
+      409
+    ],
+    "associated_anki_card_ids": [
+      82,
+      83,
+      84,
+      409
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-16-6-5-1-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5.1(d)",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "consent-no-defense-psychotherapist-assault",
+    "rule_summary": "Lack of consent is NOT an element of sexual assault by a psychotherapist; patient consent is legally invalid and legally barred as a defense.",
+    "key_parameters": {
+      "consent_defense_barred": true,
+      "lack_of_consent_not_element": true
+    },
+    "associated_question_ids": [
+      408
+    ],
+    "associated_anki_card_ids": [
+      408
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-16-6-5-1-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5.1(f)",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "felony-penalties-sexual-assault-by-authority",
+    "rule_summary": "Sexual assault by a psychotherapist is a felony punishable by imprisonment for 1 to 25 years and/or a fine up to $100,000.",
+    "key_parameters": {
+      "min_sentence_years": 1,
+      "max_sentence_years": 25,
+      "max_fine_dollars": 100000
+    },
+    "associated_question_ids": [
+      410
+    ],
+    "associated_anki_card_ids": [
+      410
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-16-6-5-1-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-6-5.1(c)(6)",
+    "domain": "prof-relationships",
+    "domain_display": "Professional Relationships",
+    "subtopic": "sexual-assault-by-supervisory-authority",
+    "rule_summary": "Sexual assault is committed when a person in supervisory, disciplinary, or evaluative authority engages in sexual contact with a student, trainee, or supervisee.",
+    "key_parameters": {
+      "covers_supervisory_and_evaluative_roles": true
+    },
+    "associated_question_ids": [
+      411,
+      412
+    ],
+    "associated_anki_card_ids": [
+      411,
+      412
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-30-5-4-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 30-5-4(a)(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "mandatory-reporter-disabled-elder-abuse",
+    "rule_summary": "Licensed psychologists are mandatory reporters of abuse, neglect, or exploitation of disabled adults (18+) and elder persons (65+).",
+    "key_parameters": {
+      "disabled_adult_age": "18+",
+      "elder_person_age": "65+",
+      "mandatory_reporter": true
+    },
+    "associated_question_ids": [
+      79,
+      212
+    ],
+    "associated_anki_card_ids": [
+      79,
+      212
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-30-5-4-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 30-5-4(a)(1)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "immediate-reporting-timeline-dhs-aps",
+    "rule_summary": "Suspected abuse, neglect, or financial exploitation of disabled adults or elder persons must be reported immediately by phone or electronically to DHS/APS or law enforcement.",
+    "key_parameters": {
+      "reporting_standard": "immediately",
+      "recipients": [
+        "DHS_Adult_Protective_Services",
+        "law_enforcement"
+      ]
+    },
+    "associated_question_ids": [
+      80,
+      213
+    ],
+    "associated_anki_card_ids": [
+      80,
+      213
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-30-5-4-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 30-5-4(d)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "abrogation-of-privilege-elder-disabled-abuse",
+    "rule_summary": "The psychologist-patient privilege is explicitly abrogated in reporting elder and disabled adult abuse and in subsequent protective proceedings.",
+    "key_parameters": {
+      "privilege_abrogated": true
+    },
+    "associated_question_ids": [
+      81,
+      214
+    ],
+    "associated_anki_card_ids": [
+      81,
+      214
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-30-5-4-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 30-5-4(f)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "immunity-good-faith-elder-reporting",
+    "rule_summary": "Any person who reports suspected disabled adult or elder abuse in good faith has immunity from civil or criminal liability.",
+    "key_parameters": {
+      "requires_good_faith": true,
+      "civil_and_criminal_immunity": true
+    },
+    "associated_question_ids": [
+      215
+    ],
+    "associated_anki_card_ids": [
+      215
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-30-5-4-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 30-5-4(b)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "misdemeanor-penalty-failure-to-report-elder-abuse",
+    "rule_summary": "Any mandatory reporter who knowingly and willfully fails to report elder or disabled adult abuse is guilty of a misdemeanor.",
+    "key_parameters": {
+      "offense_level": "misdemeanor",
+      "mental_state": "knowingly_and_willfully"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-37-3-41-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-41(a)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-psychologist-execution-authority",
+    "rule_summary": "A licensed psychologist has independent statutory authority to execute a Form 1013 certificate for emergency involuntary psychiatric examination.",
+    "key_parameters": {
+      "psychologist_authorized": true,
+      "certificate_type": "Form 1013"
+    },
+    "associated_question_ids": [
+      93
+    ],
+    "associated_anki_card_ids": [
+      93
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-37-3-41-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-41(a)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-prior-examination-window-48-hours",
+    "rule_summary": "The executing psychologist must have personally examined the individual within the preceding 48 hours before issuing a Form 1013 certificate.",
+    "key_parameters": {
+      "prior_examination_window_hours": 48
+    },
+    "associated_question_ids": [
+      93
+    ],
+    "associated_anki_card_ids": [
+      93
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-37-3-41-003",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-41(a)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-transport-certificate-validity-48-hours",
+    "rule_summary": "A Form 1013 certificate authorizes a peace officer to take the person into custody and transport them to an emergency facility; it expires 48 hours after execution.",
+    "key_parameters": {
+      "certificate_transport_validity_hours": 48
+    },
+    "associated_question_ids": [
+      94
+    ],
+    "associated_anki_card_ids": [
+      94
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-37-3-41-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-41(b)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-facility-examination-window-48-hours",
+    "rule_summary": "The emergency receiving facility must examine the patient within 48 hours of arrival to determine if involuntary hospitalization criteria continue to be met.",
+    "key_parameters": {
+      "facility_examination_window_hours": 48
+    },
+    "associated_question_ids": [
+      95
+    ],
+    "associated_anki_card_ids": [
+      95
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-37-3-41-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-41(a)",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-involuntary-commitment-standard",
+    "rule_summary": "Form 1013 requires that the person is mentally ill and presents a substantial risk of imminent harm to self or others as evidenced by recent overt acts, or is unable to care for physical safety.",
+    "key_parameters": {
+      "criteria": [
+        "imminent_harm_to_self_or_others",
+        "unable_to_care_for_physical_safety"
+      ]
+    },
+    "associated_question_ids": [
+      96
+    ],
+    "associated_anki_card_ids": [
+      96
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-37-3-41-006",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 37-3-4",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "form-1013-good-faith-immunity",
+    "rule_summary": "Any psychologist who executes a Form 1013 in good faith without negligence is immune from civil or criminal liability.",
+    "key_parameters": {
+      "requires_good_faith_no_negligence": true,
+      "civil_and_criminal_immunity": true
+    },
+    "associated_question_ids": [
+      97
+    ],
+    "associated_anki_card_ids": [
+      97
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-24-5-501-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 24-5-501(a)(6)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "psychologist-patient-privilege-attorney-client-standard",
+    "rule_summary": "Communications between licensed psychologists and patients are privileged on the exact same footing as attorney-client communications under Georgia evidence law.",
+    "key_parameters": {
+      "legal_standard": "attorney_client_privilege",
+      "codification": "O.C.G.A. § 24-5-501(a)(6)"
+    },
+    "associated_question_ids": [
+      61,
+      355
+    ],
+    "associated_anki_card_ids": [
+      61,
+      355
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-24-5-501-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 24-5-501(a)(6)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "client-is-holder-of-privilege",
+    "rule_summary": "The client is the sole holder of the psychologist-patient privilege; a psychologist cannot waive privilege or disclose communications without client waiver or court order.",
+    "key_parameters": {
+      "privilege_holder": "client",
+      "psychologist_cannot_waive": true
+    },
+    "associated_question_ids": [
+      62,
+      356
+    ],
+    "associated_anki_card_ids": [
+      62,
+      356
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-24-5-501-003",
+    "source_type": "OCGA",
+    "citation": "Bradley Center, Inc. v. Wessner, 250 Ga. 199 (1982)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "duty-to-warn-protect-bradley-center-standard",
+    "rule_summary": "Under Georgia common law, a psychologist has a duty to warn and protect when a patient communicates an explicit threat of imminent bodily harm against a clearly identified third party.",
+    "key_parameters": {
+      "case_citation": "Bradley Center v. Wessner",
+      "standard": "imminent_threat_identified_victim"
+    },
+    "associated_question_ids": [
+      354
+    ],
+    "associated_anki_card_ids": [
+      354
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-24-5-501-004",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 24-5-501(a)(6)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "court-ordered-evaluation-privilege-exception",
+    "rule_summary": "Psychologist-patient privilege does not apply to court-ordered evaluations, provided the examinee was informed prior to evaluation that communications would not be confidential.",
+    "key_parameters": {
+      "court_ordered_eval_not_privileged": true,
+      "requires_prior_notice": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-24-5-501-005",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 24-5-501(a)(8)",
+    "domain": "privacy",
+    "domain_display": "Privacy and Confidentiality",
+    "subtopic": "inter-provider-psychotherapy-team-privilege",
+    "rule_summary": "Privileged communications between a patient and members of a multidisciplinary mental health treatment team remain privileged and are not waived by inter-team consultation.",
+    "key_parameters": {
+      "team_privilege_maintained": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-1-19-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-1-19(a)(3)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "mandatory-ten-day-felony-conviction-notice",
+    "rule_summary": "A licensee must notify the licensing board in writing within 10 days of any conviction of any felony.",
+    "key_parameters": {
+      "reporting_window_days": 10,
+      "requires_written_notice": true
+    },
+    "associated_question_ids": [
+      55,
+      350
+    ],
+    "associated_anki_card_ids": [
+      55,
+      350
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-1-19-002",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-1-19(f)",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "board-authority-civil-fines-investigative-costs",
+    "rule_summary": "Professional licensing boards may assess civil fines up to $500.00 per violation and assess the actual costs of investigation and prosecution against a disciplined licensee.",
+    "key_parameters": {
+      "max_fine_per_violation_dollars": 500,
+      "assessment_of_costs_authorized": true
+    },
+    "associated_question_ids": [
+      56,
+      351,
+      352
+    ],
+    "associated_anki_card_ids": [
+      56,
+      351,
+      352
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-43-1-24-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-1-24",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "subpoena-enforcement-superior-court-contempt",
+    "rule_summary": "Administrative subpoenas issued by professional licensing boards are enforceable by petition in Superior Court, punishable by judicial contempt.",
+    "key_parameters": {
+      "enforcement_venue": "Superior Court",
+      "sanction": "contempt_of_court"
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-1-25-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-1-25",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "public-records-exemptions-exam-and-investigations",
+    "rule_summary": "Licensing examination questions and open investigative files of professional licensing boards are confidential and exempt from public disclosure under the Open Records Act.",
+    "key_parameters": {
+      "open_records_exempt": [
+        "exam_questions",
+        "active_investigative_files"
+      ]
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-43-1-27-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 43-1-27",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "criminal-background-checks-gcic-fbi",
+    "rule_summary": "Applicants for professional licensure must submit to fingerprinting and criminal background checks conducted through GCIC and the FBI.",
+    "key_parameters": {
+      "background_check_agencies": [
+        "GCIC",
+        "FBI"
+      ],
+      "fingerprinting_required": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-31-7-161-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 31-7-161",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "hospital-peer-review-thirty-day-reporting",
+    "rule_summary": "Health care facilities must report any adverse peer review action that restricts, revokes, or terminates staff privileges of a licensed practitioner to the licensing board within 30 days.",
+    "key_parameters": {
+      "reporting_window_days": 30,
+      "trigger": "adverse_peer_review_privilege_restriction"
+    },
+    "associated_question_ids": [
+      85,
+      216
+    ],
+    "associated_anki_card_ids": [
+      85,
+      216
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-31-7-162-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 31-7-162",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "confidentiality-peer-review-proceedings",
+    "rule_summary": "Proceedings, records, and reports of medical and health care peer review committees are strictly confidential and privileged from discovery or subpoena in civil litigation.",
+    "key_parameters": {
+      "peer_review_records_confidential": true,
+      "immune_from_subpoena": true
+    },
+    "associated_question_ids": [
+      86,
+      217
+    ],
+    "associated_anki_card_ids": [
+      86,
+      217
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-31-7-164-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 31-7-164",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "peer-review-committee-member-immunity",
+    "rule_summary": "Members of health care peer review committees are immune from civil liability for acts performed within the scope of peer review in good faith and without malice.",
+    "key_parameters": {
+      "requires_good_faith_no_malice": true,
+      "civil_immunity": true
+    },
+    "associated_question_ids": [
+      218
+    ],
+    "associated_anki_card_ids": [
+      218
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-16-13-110-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-13-110",
+    "domain": "competence",
+    "domain_display": "Competence",
+    "subtopic": "no-prescriptive-authority-controlled-substances",
+    "rule_summary": "Psychologists in Georgia have no statutory prescriptive authority and are strictly barred from prescribing or administering controlled substances or dangerous drugs.",
+    "key_parameters": {
+      "prescriptive_authority": false,
+      "controlled_substances_barred": true
+    },
+    "associated_question_ids": [
+      51,
+      357
+    ],
+    "associated_anki_card_ids": [
+      51,
+      357
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-16-13-111-001",
+    "source_type": "OCGA",
+    "citation": "O.C.G.A. § 16-13-111",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "controlled-substance-conviction-sanctions",
+    "rule_summary": "Conviction of a licensed practitioner for controlled substance violations results in mandatory license suspension for a minimum of 3 months on a first offense and revocation on a second offense.",
+    "key_parameters": {
+      "first_offense_min_suspension_months": 3,
+      "second_offense_penalty": "revocation"
+    },
+    "associated_question_ids": [
+      52,
+      53,
+      358
+    ],
+    "associated_anki_card_ids": [
+      52,
+      53,
+      358
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-PSI-001",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "exam-total-questions-and-experimental-items",
+    "rule_summary": "The Georgia Psychology Jurisprudence Examination contains 60 multiple-choice questions total: 50 scored items and 10 unscored experimental items.",
+    "key_parameters": {
+      "total_questions": 60,
+      "scored_items": 50,
+      "unscored_experimental_items": 10
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-002",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "exam-time-limit-sixty-minutes",
+    "rule_summary": "Candidates are allowed 60 minutes (1 hour) of testing time to complete the Georgia Psychology Jurisprudence Examination.",
+    "key_parameters": {
+      "exam_duration_minutes": 60
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-003",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "exam-passing-score-thirty-eight-out-of-fifty",
+    "rule_summary": "The passing score for the Georgia Psychology Jurisprudence Examination is 38 correct answers out of 50 scored questions (76%).",
+    "key_parameters": {
+      "passing_score_raw": 38,
+      "scored_items_total": 50,
+      "passing_percentage": 76.0
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-004",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "computer-tutorial-time-allowance",
+    "rule_summary": "Candidates are provided up to 15 minutes of computer tutorial time prior to starting the examination, which does NOT count against the 60-minute test time.",
+    "key_parameters": {
+      "tutorial_duration_minutes": 15,
+      "counts_against_exam_time": false
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-005",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 2",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "reexamination-thirty-day-waiting-period",
+    "rule_summary": "If a candidate fails the examination, they must wait at least 30 days before they can register to retest.",
+    "key_parameters": {
+      "retake_wait_days": 30
+    },
+    "associated_question_ids": [
+      1
+    ],
+    "associated_anki_card_ids": [
+      1
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-PSI-006",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 2",
+    "domain": "recordkeeping",
+    "domain_display": "Recordkeeping and Fees",
+    "subtopic": "examination-fee-eighty-five-dollars",
+    "rule_summary": "The examination fee is $85 per registration (for both initial and re-examinations), which is non-refundable and non-transferable.",
+    "key_parameters": {
+      "exam_fee_dollars": 85,
+      "non_refundable": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-007",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 2",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "fax-registration-processing-window",
+    "rule_summary": "Fax registrations require 4 business days for PSI to process before the candidate may schedule an examination appointment.",
+    "key_parameters": {
+      "fax_processing_business_days": 4
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-008",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 4",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "unclaimed-personal-items-disposal-thirty-days",
+    "rule_summary": "Personal items left behind at the PSI test center that remain unclaimed after 30 days will be disposed of or donated at PSI's discretion.",
+    "key_parameters": {
+      "storage_disposal_days": 30
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-009",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "examination-content-outline-domain-distribution",
+    "rule_summary": "The 50 scored examination questions are distributed across 6 domains: Professional Relationships (14), Licensure and Regulations (13), Competence (9), Assessment (6), Privacy and Confidentiality (5), and Recordkeeping and Fees (3).",
+    "key_parameters": {
+      "assessment_items": 6,
+      "competence_items": 9,
+      "prof_relationships_items": 14,
+      "licensure_items": 13,
+      "privacy_items": 5,
+      "recordkeeping_items": 3
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-010",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 3",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "candidate-identification-requirements",
+    "rule_summary": "Candidates must present two forms of identification at the test site: one primary government-issued photo ID with signature, and one secondary ID with pre-printed legal name.",
+    "key_parameters": {
+      "id_forms_required": 2,
+      "primary_id_requires": [
+        "government_issued",
+        "photo",
+        "signature"
+      ]
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
+  },
+  {
+    "fact_id": "FACT-PSI-011",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 1",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "three-examination-licensure-sequence",
+    "rule_summary": "Georgia licensure requires passing three examinations in sequence: 1. EPPP, 2. Georgia Jurisprudence Examination (GAMB), and 3. Board Oral Examination.",
+    "key_parameters": {
+      "licensure_exam_sequence": [
+        "EPPP",
+        "GAMB_Jurisprudence",
+        "Board_Oral_Exam"
+      ]
+    },
+    "associated_question_ids": [
+      2,
+      3
+    ],
+    "associated_anki_card_ids": [
+      2,
+      3
+    ],
+    "audit_status": "verified"
+  },
+  {
+    "fact_id": "FACT-PSI-012",
+    "source_type": "PSI_BULLETIN",
+    "citation": "PSI Candidate Information Bulletin #1755 (2023), p. 5",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "closed-book-testing-policy",
+    "rule_summary": "The Georgia Psychology Jurisprudence Examination is strictly closed book; candidates may not bring books, reference materials, or performance aids into the examination room.",
+    "key_parameters": {
+      "closed_book": true,
+      "reference_materials_prohibited": true
+    },
+    "associated_question_ids": [],
+    "associated_anki_card_ids": [],
+    "audit_status": "draft"
   }
 ]
