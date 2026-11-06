@@ -326,7 +326,7 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="gamb-exam 1.0.0",
+        version="gamb-exam 2.0.0",
         help="Show program's version number and exit",
     )
     subparsers = parser.add_subparsers(dest="subcommand", help="Available subcommands")

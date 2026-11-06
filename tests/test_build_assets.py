@@ -38,7 +38,7 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "30 days" in content
     assert "540 hours" in content
     assert "Question Pool" in content
-    assert "10/25/2026" in content
+    assert "11/06/2026" in content
     assert "John B. Fleming, PhD" in content
     assert "http://johnbflemingphd.com" in content
 
@@ -56,7 +56,7 @@ def test_generate_cheat_sheet(tmp_path: Path):
     assert "30 days" in html_content
     assert "540 hours" in html_content
     assert "Question Pool" in html_content
-    assert "10/25/2026" in html_content
+    assert "11/06/2026" in html_content
     assert "John B. Fleming, PhD" in html_content
     assert "http://johnbflemingphd.com" in html_content
 
@@ -182,7 +182,7 @@ def test_generate_compendium(tmp_path: Path):
     assert "Question Self-Study Compendium" in q_text
     assert "Part I: Question Bank by Domain" in q_text
     assert "Question Pool" in q_text
-    assert "10/25/2026" in q_text
+    assert "11/06/2026" in q_text
     assert "John B. Fleming, PhD" in q_text
     assert "http://johnbflemingphd.com" in q_text
     assert "Q1." in q_text
@@ -194,7 +194,7 @@ def test_generate_compendium(tmp_path: Path):
     k_text = k_md.read_text(encoding="utf-8")
     assert "Part II: Annotated Answer Key" in k_text
     assert "Question Pool" in k_text
-    assert "10/25/2026" in k_text
+    assert "11/06/2026" in k_text
     assert "John B. Fleming, PhD" in k_text
     assert "http://johnbflemingphd.com" in k_text
     assert "Q1" in k_text
@@ -377,7 +377,7 @@ def test_generate_web_quizzer(tmp_path: Path):
     assert "PSI Exam Simulation" in content
     assert "Domain Study Drill" in content
     assert "Missed Questions" in content
-    assert "Question Pool v1.0 (10/25/2026)" in content
+    assert "Question Pool:</strong> Version 2.0 (11/06/2026)" in content
     assert "John B. Fleming, PhD" in content
     assert "http://johnbflemingphd.com" in content
     # Ensure legal disclaimer rendered as proper HTML without unrendered Markdown

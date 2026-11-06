@@ -2078,7 +2078,7 @@ WEB_QUIZZER_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <footer>
   <div class="footer-inner">
     <p><strong>LEGAL &amp; REGULATORY DISCLAIMER:</strong> __LEGAL_DISCLAIMER_HTML__</p>
-    <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; <strong>Question Pool:</strong> Version 1.0 (10/25/2026) &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
+    <p>Georgia Psychology Jurisprudence Examination Self-Study Resource &bull; <strong>Question Pool:</strong> Version __POOL_VERSION__ (__POOL_DATE__) &bull; 100% Offline Standalone Application &bull; Runs completely locally without network dependencies.</p>
     <p>&copy; 2026 John B. Fleming, PhD &bull; <a href="http://johnbflemingphd.com" target="_blank" rel="noopener" style="color: var(--primary);">http://johnbflemingphd.com</a></p>
   </div>
 </footer>
@@ -3553,6 +3553,8 @@ def generate_web_quizzer(
         .replace("__DOMAIN_DISPLAY_NAMES_JSON__", domain_names_json)
         .replace("__DOMAIN_QUOTAS_JSON__", domain_quotas_json)
         .replace("__LEGAL_DISCLAIMER_HTML__", LEGAL_DISCLAIMER_HTML)
+        .replace("__POOL_VERSION__", POOL_VERSION)
+        .replace("__POOL_DATE__", POOL_DATE)
     )
 
     output_path.write_text(rendered_html, encoding="utf-8")

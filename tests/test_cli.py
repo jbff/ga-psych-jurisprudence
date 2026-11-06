@@ -69,7 +69,7 @@ def test_cli_version(capsys: pytest.CaptureFixture[str]):
     ret = main(["--version"])
     assert ret == 0
     captured = capsys.readouterr()
-    assert "gamb-exam 1.0.0" in captured.out
+    assert "gamb-exam 2.0.0" in captured.out
 
 
 def test_cli_no_args_prints_help(capsys: pytest.CaptureFixture[str]):

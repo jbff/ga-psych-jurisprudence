@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gamb-exam"
-version = "1.0.0"
+version = "2.0.0"
 description = "Georgia Psychology Jurisprudence Examination Simulator and Study Kit"
 readme = "README.md"
 license = { text = "PolyForm Noncommercial License 1.0.0" }

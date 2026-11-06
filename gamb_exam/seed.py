@@ -35,8 +35,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TSV_PATH = PROJECT_ROOT / "anki" / "gamb_deck.tsv"
 QUESTION_POOL_JSON = Path(__file__).parent / "question_pool.json"
 QUESTION_POOL_METADATA_JSON = Path(__file__).parent / "question_pool_metadata.json"
-QUESTION_POOL_VERSION = "1.0"
-QUESTION_POOL_DATE = "10/25/2026"
+QUESTION_POOL_VERSION = "2.0"
+QUESTION_POOL_DATE = "11/06/2026"
 
 
 def get_pool_metadata() -> dict[str, Any]:

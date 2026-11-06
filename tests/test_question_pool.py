@@ -220,7 +220,7 @@ def test_fallback_to_tsv_when_json_missing(monkeypatch, tmp_path: Path):
 
 
 def test_question_pool_metadata():
-    """Verify question_pool_metadata.json exists, parses cleanly, and defines version 1.0 with 10/25/2026."""
+    """Verify question_pool_metadata.json exists, parses cleanly, and defines version 2.0 with 11/06/2026."""
     from gamb_exam.seed import (
         QUESTION_POOL_DATE,
         QUESTION_POOL_METADATA_JSON,
@@ -232,14 +232,14 @@ def test_question_pool_metadata():
     with open(QUESTION_POOL_METADATA_JSON, "r", encoding="utf-8") as f:
         meta = json.load(f)
 
-    assert meta["version"] == "1.0"
-    assert meta["date"] == "10/25/2026"
+    assert meta["version"] == "2.0"
+    assert meta["date"] == "11/06/2026"
     assert meta["total_questions"] == 472
-    assert QUESTION_POOL_VERSION == "1.0"
-    assert QUESTION_POOL_DATE == "10/25/2026"
+    assert QUESTION_POOL_VERSION == "2.0"
+    assert QUESTION_POOL_DATE == "11/06/2026"
 
     helper_meta = get_pool_metadata()
-    assert helper_meta["version"] == "1.0"
-    assert helper_meta["date"] == "10/25/2026"
+    assert helper_meta["version"] == "2.0"
+    assert helper_meta["date"] == "11/06/2026"
 
 
