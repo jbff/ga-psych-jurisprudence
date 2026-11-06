@@ -1627,14 +1627,14 @@
 ### Q270 (Pool Item #448)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** B
-- **Source Citation:** O.C.G.A. § 16-6-3(b)
-- **Explanation:** O.C.G.A. § 16-6-3(b) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.
+- **Source Citation:** O.C.G.A. § 16-6-3(c)
+- **Explanation:** O.C.G.A. § 16-6-3(c) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.
 
 ### Q271 (Pool Item #449)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** B
-- **Source Citation:** O.C.G.A. § 16-6-3(b)
-- **Explanation:** Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
+- **Source Citation:** O.C.G.A. § 16-6-3(d)(2)
+- **Explanation:** Under O.C.G.A. § 16-6-3(d)(2) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
 
 ### Q272 (Pool Item #450)
 - **Domain:** Licensure and Regulations
@@ -1657,20 +1657,20 @@
 ### Q275 (Pool Item #453)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** D
-- **Source Citation:** O.C.G.A. § 16-6-4(c)
-- **Explanation:** O.C.G.A. § 16-6-4(c) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.
+- **Source Citation:** O.C.G.A. § 16-6-4(d)(1)
+- **Explanation:** O.C.G.A. § 16-6-4(d)(1) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.
 
 ### Q276 (Pool Item #454)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** B
-- **Source Citation:** O.C.G.A. § 16-6-4(c)
-- **Explanation:** O.C.G.A. § 16-6-4(c) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.
+- **Source Citation:** O.C.G.A. § 16-6-4(d)(2)
+- **Explanation:** O.C.G.A. § 16-6-4(d)(2) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.
 
 ### Q277 (Pool Item #455)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** A
-- **Source Citation:** O.C.G.A. § 16-6-4(d)
-- **Explanation:** O.C.G.A. § 16-6-4(d) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.
+- **Source Citation:** O.C.G.A. § 16-6-4(e)
+- **Explanation:** O.C.G.A. § 16-6-4(e) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.
 
 ### Q278 (Pool Item #456)
 - **Domain:** Licensure and Regulations
@@ -1687,14 +1687,14 @@
 ### Q280 (Pool Item #458)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** D
-- **Source Citation:** O.C.G.A. § 16-6-5(b)
-- **Explanation:** O.C.G.A. § 16-6-5(b) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.
+- **Source Citation:** O.C.G.A. § 16-6-5(c)
+- **Explanation:** O.C.G.A. § 16-6-5(c) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.
 
 ### Q281 (Pool Item #459)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** D
-- **Source Citation:** O.C.G.A. § 30-5-4(b)
-- **Explanation:** O.C.G.A. § 30-5-4(b) provides that any person required to report elder or disabled adult abuse who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.
+- **Source Citation:** O.C.G.A. § 30-5-8(a)(1)
+- **Explanation:** O.C.G.A. § 30-5-8(a)(1) provides that any person required to report elder or disabled adult abuse under O.C.G.A. § 30-5-4 who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.
 
 ### Q282 (Pool Item #462)
 - **Domain:** Licensure and Regulations

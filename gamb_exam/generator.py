@@ -329,6 +329,10 @@ def generate_exam(
     rng: random.Random | None = None,
 ) -> list[dict[str, Any]]:
     """Convenience alias for generate_exam_questions returning 50 questions."""
+    if count != 50:
+        raise ValueError(
+            f"Georgia jurisprudence exam simulation requires count=50 to satisfy statutory domain quotas, got {count}"
+        )
     return generate_exam_questions(
         db_path=db_path,
         prioritize_unseen=prioritize_unseen,

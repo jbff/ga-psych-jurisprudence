@@ -1901,14 +1901,14 @@
 - **C)** Mandatory life imprisonment with no probation allowed
 - **D)** Imprisonment for not less than 10 nor more than 20 years
 
-### Q270. Under Georgia's 'Romeo and Juliet' provision in O.C.G.A. § 16-6-3(b), under what exact age conditions is statutory rape punished as a misdemeanor rather than a felony?
+### Q270. Under Georgia's 'Romeo and Juliet' provision in O.C.G.A. § 16-6-3(c), under what exact age conditions is statutory rape punished as a misdemeanor rather than a felony?
 
 - **A)** When the victim is 13 or 14 years old and the offender is under 17 years old and within 2 years of the victim
 - **B)** When the victim is 14 or 15 years old and the offender is 18 years old or younger and no more than 4 years older than the victim
 - **C)** When the victim is under 16 years old and the offender is enrolled in the same secondary school
 - **D)** When the victim is 15 years old and the offender is under 21 years old and has no prior convictions
 
-### Q271. Under O.C.G.A. § 16-6-3(b), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
+### Q271. Under O.C.G.A. § 16-6-3(d)(2), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
 
 - **A)** Imprisonment for 5 to 10 years with standard administrative parole eligibility
 - **B)** Mandatory sentence of life imprisonment, or a split sentence with life probation and electronic monitoring
@@ -1936,21 +1936,21 @@
 - **C)** If the act occurred without physical touching and both parties were under 19 years of age
 - **D)** If the victim's parents execute a written consent waiver prior to the filing of formal criminal charges
 
-### Q275. Under O.C.G.A. § 16-6-4(c), what distinguishes aggravated child molestation from child molestation, and what penalty applies?
+### Q275. Under O.C.G.A. § 16-6-4(d)(1), what distinguishes aggravated child molestation from child molestation, and what penalty applies?
 
 - **A)** Commission on school grounds; punishable by 10 to 20 years imprisonment
 - **B)** Commission by an educator or therapist; punishable by 15 to 30 years imprisonment
 - **C)** Involving electronic photography; punishable by 5 to 15 years imprisonment
 - **D)** Involving an act of sodomy or causing physical injury to a child under 16; punishable by 25 to 50 years or life imprisonment
 
-### Q276. Under O.C.G.A. § 16-6-4(c), what close-in-age misdemeanor exception applies to aggravated child molestation involving sodomy?
+### Q276. Under O.C.G.A. § 16-6-4(d)(2), what close-in-age misdemeanor exception applies to aggravated child molestation involving sodomy?
 
 - **A)** The offense is a misdemeanor if the victim is 11 or 12 years old and the offender is within 2 years of age
 - **B)** The offense is a misdemeanor if the victim is 13, 14, or 15 years of age, the offender is 18 or younger, and the offender is no more than 4 years older
 - **C)** The offense is a misdemeanor only if both parties were legally married at the time of the act
 - **D)** Georgia law provides no misdemeanor exception for any offense involving aggravated child molestation
 
-### Q277. Under O.C.G.A. § 16-6-4(d), does Georgia have criminal jurisdiction over child molestation committed via electronic transmission if the defendant initiated the transmission from outside the State of Georgia?
+### Q277. Under O.C.G.A. § 16-6-4(e), does Georgia have criminal jurisdiction over child molestation committed via electronic transmission if the defendant initiated the transmission from outside the State of Georgia?
 
 - **A)** Yes; Georgia courts possess subject-matter jurisdiction if the transmission was accessed or intended to be accessed by a child within Georgia
 - **B)** Yes; provided the transmission was routed through an internet server physically located in Fulton County
@@ -1971,14 +1971,14 @@
 - **C)** No; the offense is legally classified as an attempt until an act of child molestation is fully consummated
 - **D)** No; Georgia criminal law requires proof of completed sexual battery before an enticing conviction may stand
 
-### Q280. Under O.C.G.A. § 16-6-5(b), what is the statutory penalty for felony enticing a child for indecent purposes, and what close-in-age exception applies?
+### Q280. Under O.C.G.A. § 16-6-5(c), what is the statutory penalty for felony enticing a child for indecent purposes, and what close-in-age exception applies?
 
 - **A)** Felony punishable by 2 to 10 years; misdemeanor if victim is 13 and offender is within 1 year
 - **B)** Felony punishable by 5 to 20 years; misdemeanor if victim is 16 and offender is 21 or younger
 - **C)** Felony punishable by mandatory life imprisonment with no close-in-age exception
 - **D)** Felony punishable by 10 to 30 years; misdemeanor if victim is 14 or 15, offender is 18 or younger, and offender is no more than 4 years older
 
-### Q281. Under O.C.G.A. § 30-5-4(b), what criminal penalty applies to a psychologist or other mandatory reporter who knowingly and willfully fails to report abuse, neglect, or exploitation of a disabled adult or elder person?
+### Q281. Under O.C.G.A. § 30-5-8(a)(1), what criminal penalty applies to a psychologist or other mandatory reporter who knowingly and willfully fails to report abuse, neglect, or exploitation of a disabled adult or elder person as required by O.C.G.A. § 30-5-4?
 
 - **A)** Guilty of a felony punishable by 1 to 5 years imprisonment
 - **B)** Administrative license suspension without criminal sanctions

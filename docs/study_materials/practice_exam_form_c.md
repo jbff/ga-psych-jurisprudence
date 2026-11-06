@@ -354,7 +354,7 @@
 - **C)** Photographs of the client and personal contact details of all extended family members
 - **D)** Complete transcripts of all spoken dialogue and personal feelings of the therapist
 
-### Q47. Under O.C.G.A. § 16-6-3(b), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
+### Q47. Under O.C.G.A. § 16-6-3(d)(2), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
 
 - **A)** Mandatory sentence of life imprisonment, or a split sentence with life probation and electronic monitoring
 - **B)** Imprisonment for 5 to 10 years with standard administrative parole eligibility
@@ -494,7 +494,7 @@ Record your responses below. Mark only one letter per item. After completing the
 | 44 | Assessment | **D** | Rule 510-4-.02 Standard 9.04, 9.11 |
 | 45 | Privacy and Confidentiality | **A** | O.C.G.A. § 24-5-501(a)(6) |
 | 46 | Recordkeeping and Fees | **A** | Rule 510-5-.04 |
-| 47 | Licensure and Regulations | **A** | O.C.G.A. § 16-6-3(b) |
+| 47 | Licensure and Regulations | **A** | O.C.G.A. § 16-6-3(d)(2) |
 | 48 | Professional Relationships | **B** | Rule 510-5-.06 |
 | 49 | Privacy and Confidentiality | **C** | APA 4.05 |
 | 50 | Licensure and Regulations | **B** | OCGA 43-39-11 |
@@ -780,8 +780,8 @@ Record your responses below. Mark only one letter per item. After completing the
 ### Q47 (Pool Item #449)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** A
-- **Source Citation:** O.C.G.A. § 16-6-3(b)
-- **Explanation:** Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
+- **Source Citation:** O.C.G.A. § 16-6-3(d)(2)
+- **Explanation:** Under O.C.G.A. § 16-6-3(d)(2) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
 
 ### Q48 (Pool Item #167)
 - **Domain:** Professional Relationships

@@ -27,11 +27,11 @@ Everything required to master the Georgia Jurisprudence Examination is packaged 
 | :--- | :---: | :--- | :--- |
 | **Numbers & Deadlines Cram Sheet** | `PDF` | Chronological fast-lookup tables for every statutory hour, day, month, year, and supervision ratio on the exam. | [Download Numbers Cheat Sheet PDF](pdfs/GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf) |
 | **Statutory Cheat Sheet** | `PDF` | Thematic deep-dive cross-referencing O.C.G.A. Titles 16, 19, 30, 37, 43, 50 and Board Rules Chapter 510. | [Download Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf) |
-| **435-Question Compendium** | `PDF` | Complete self-study worktext organized by domain (Part I: Questions without answers; Part II: Back-of-book annotated key & citations). | [Download Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf) |
+| **472-Question Compendium** | `PDF` | Complete self-study worktext organized by domain (Part I: Questions without answers; Part II: Back-of-book annotated key & citations). | [Download Compendium PDF](pdfs/GAMB_Question_Compendium.pdf) |
 | **Practice Exam Form A** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form A PDF](pdfs/GAMB_Practice_Exam_Form_A.pdf) |
 | **Practice Exam Form B** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form B PDF](pdfs/GAMB_Practice_Exam_Form_B.pdf) |
 | **Practice Exam Form C** | `PDF` | 50-question mock exam booklet with instructions, bubble sheet, and annotated answer key in back. | [Download Form C PDF](pdfs/GAMB_Practice_Exam_Form_C.pdf) |
-| **Anki Flashcard Deck** | `TSV` | 435 atomic flashcards for Anki, AnkiDroid, and AnkiMobile. | [anki/gamb_deck.tsv](anki/gamb_deck.tsv) |
+| **Anki Flashcard Deck** | `TSV` | 472 atomic flashcards for Anki, AnkiDroid, and AnkiMobile. | [anki/gamb_deck.tsv](anki/gamb_deck.tsv) |
 
 *(Note: Raw Markdown versions of all study guides and exam forms are also available in [`docs/study_materials/`](docs/study_materials/).)*
 
@@ -53,8 +53,8 @@ Typeset with professional CSS Paged Media standards for crisp printing or digita
   - Groups every testable statutory timeframe into four clean tables: **The Clock (Hours)** for emergency commitments and mandatory reporting; **The Calendar (Days)** for application deadlines, temporary practice limits, conviction notices, and late renewal grace periods; **Months & Years** for training completion windows, license durations, and record retention; and **Supervision & Standards** for supervision ratios, CE caps, and passing cutoffs.
 - **[Statutory Cheat Sheet PDF](pdfs/GAMB_Statutory_Cheat_Sheet.pdf)** (and [Markdown](docs/study_materials/cheat_sheet.md)):
   - Thematic quick-reference summary cross-referencing Georgia Code and Board rules across 4 core domains: *Licensure, Supervision & Continuing Education*; *Mandatory Reporting & Emergency Involuntary Commitment*; *Confidentiality, Evidentiary Privilege & Prohibited Relationships*; and *Recordkeeping, Practice Limits & Disciplinary Penalties*.
-- **[435-Question Compendium PDF](pdfs/GAMB_435_Question_Compendium.pdf)** (Comprehensive Worktext):
-  - **Part I (Question Bank)**: All 435 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
+- **[472-Question Compendium PDF](pdfs/GAMB_Question_Compendium.pdf)** (Comprehensive Worktext):
+  - **Part I (Question Bank)**: All 472 curated questions organized by domain with multiple-choice stems. Questions contain **no spoilers or answers** on the page.
   - **Part II (Annotated Answer Key)**: Located in the back of the book, providing the correct option, primary statutory citation, and detailed legal rationale for every question.
 - **Practice Exam Booklets ([Form A](pdfs/GAMB_Practice_Exam_Form_A.pdf), [Form B](pdfs/GAMB_Practice_Exam_Form_B.pdf), [Form C](pdfs/GAMB_Practice_Exam_Form_C.pdf))**:
   - Three distinct, non-overlapping 50-question mock exams generated with stratified blueprint quotas (14/13/9/6/5/3).
@@ -68,7 +68,7 @@ Typeset with professional CSS Paged Media standards for crisp printing or digita
 
 ### 🗂️ 2. Spaced-Repetition Anki Flashcards (`anki/gamb_deck.tsv`)
 
-A curated deck of 435 atomic flashcards formatted for [Anki](https://apps.ankiweb.net/), [AnkiDroid](https://play.google.com/store/apps/details?id=com.ichi2.anki), and [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387).
+A curated deck of 472 atomic flashcards formatted for [Anki](https://apps.ankiweb.net/), [AnkiDroid](https://play.google.com/store/apps/details?id=com.ichi2.anki), and [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387).
 
 - **How to Import into Desktop Anki:**
   1. Open Anki (2.1+), select **File > Import...**
@@ -86,7 +86,7 @@ A curated deck of 435 atomic flashcards formatted for [Anki](https://apps.ankiwe
 
 ### 🌐 3. Interactive Web Quizzer (`web/index.html`)
 
-A standalone, self-contained single-file web application with all 435 questions, distractors, legal rationales, and statutory citations embedded directly in the file. It runs completely offline with zero installation or external network requests.
+A standalone, self-contained single-file web application with all 472 questions, distractors, legal rationales, and statutory citations embedded directly in the file. It runs completely offline with zero installation or external network requests.
 
 - **How to Open Locally:**
   - Double-click [`web/index.html`](web/index.html) in your computer's file manager (Finder, Windows Explorer).
@@ -179,7 +179,7 @@ uv run gamb-exam test
 ### Complete CLI Subcommands Reference
 
 - **`uv run gamb-exam test`**  
-  Launches the full 60-minute timed 50-question mock exam. Stratified sampling guarantees exact Board domain quotas (14/13/9/6/5/3) with randomized distractor order. Draws from a 100% curated 435-question bank where every multiple-choice option is a plausible Georgia legal foil. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
+  Launches the full 60-minute timed 50-question mock exam. Stratified sampling guarantees exact Board domain quotas (14/13/9/6/5/3) with randomized distractor order. Draws from a 100% curated 472-question bank where every multiple-choice option is a plausible Georgia legal foil. Features live countdown timer, flag tracking, navigation jump grid, and post-exam score diagnostics with domain-level breakdown and review mode.
 
 - **`uv run gamb-exam study [--domain <domain>] [--count <N>]`**  
   Untimed study drill mode. Questions reveal immediate feedback, full statutory explanations, and legal citations upon answering.
@@ -237,12 +237,12 @@ The study corpus in `study_corpus/` contains reference copies of Georgia statute
 
 ## Curated Question Bank & Quality Guarantees
 
-The full 435-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit and is officially versioned:
+The full 472-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit and is officially versioned:
 - **Versioned Pool Standard**: Labeled **Version 1.0 (Release Date: 10/25/2026)** with schema metadata in `gamb_exam/question_pool_metadata.json`. All generated PDF documents, markdown booklets, and the web application display this version in running headers and cover pages.
 - **100% Context-Responsive Options**: Every distractor directly answers the question asked using plausible Georgia statutory numbers, procedures, or standards (no nonsense cross-domain fallback options).
 - **Zero Test-Wiseness Flaws**: No bare "Yes" or "No" answers; all options are expanded into parallel explanatory clauses with uniform syntactic tone and balanced lengths.
 - **Unambiguous Legal Accuracy**: Exactly one legally correct answer per question under O.C.G.A. Titles 43, 31, 37, 19, 30, 16, 24, 50, Georgia Board Rules (Chapter 510), and the APA Ethics Code.
-- **Balanced Key Distribution**: Perfectly distributed answer keys across all 435 items (~25% each across A, B, C, and D).
+- **Balanced Key Distribution**: Perfectly distributed answer keys across all 472 items (~25% each across A, B, C, and D).
 - **Stateless Database Generation**: The SQLite database (`data/gamb_exam.db`) is generated on-demand at runtime from `gamb_exam/question_pool.json` and kept strictly outside git tracking.
 
 ---
@@ -259,7 +259,7 @@ The full 435-question examination pool (`gamb_exam/question_pool.json`) has unde
 uv run pytest
 ```
 All 78 unit, pool, CLI, TUI, and asset build tests verify:
-- SQLite question pool integrity, unique IDs 1–435, schema conformity, distractor uniqueness, and citation validity (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
+- SQLite question pool integrity, unique IDs 1–472, schema conformity, distractor uniqueness, and citation validity (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
 - Stratified 50-question mock exam sampler and Markdown export formatting (`test_generator.py`).
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
 - CLI argument parsing, help output, and subcommands (`test_cli.py`).

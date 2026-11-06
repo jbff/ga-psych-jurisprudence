@@ -641,7 +641,7 @@ def generate_compendium(
     html_path: Path | None = None,
     pool_path: Path | None = None,
 ) -> None:
-    """Generate the full 435-question domain compendium booklet and back-of-book key."""
+    """Generate the full question domain compendium booklet and back-of-book key."""
     repo_root = Path(__file__).resolve().parent.parent
     q_md = q_md or repo_root / "docs" / "study_materials" / "compendium_questions.md"
     k_md = k_md or repo_root / "docs" / "study_materials" / "compendium_key.md"
@@ -3517,7 +3517,7 @@ def generate_web_quizzer(
 ) -> Path:
     """Generate self-contained standalone HTML5 quizzer application.
 
-    Embeds all 435 curated questions with JSON, pure native responsive CSS (light/dark mode),
+    Embeds all 472 curated questions with JSON, pure native responsive CSS (light/dark mode),
     and a JavaScript engine supporting PSI Exam Simulation (50 items matching quotas, 60-min timer,
     5x10 jump grid, 38/50 pass scoring, review mode), Domain Study Drill (instant green/red feedback,
     statutory citations, explanations), and Missed Questions drill with browser localStorage persistence.
@@ -3568,7 +3568,7 @@ def build_all_assets(
     Creates subdirectories under `output_dir`:
     - `pdfs/`:
         - `GAMB_Statutory_Cheat_Sheet.pdf`
-        - `GAMB_435_Question_Compendium.pdf`
+        - `GAMB_Question_Compendium.pdf`
         - `GAMB_Practice_Exam_Form_A.pdf`
         - `GAMB_Practice_Exam_Form_B.pdf`
         - `GAMB_Practice_Exam_Form_C.pdf`
@@ -3624,7 +3624,7 @@ def build_all_assets(
     compendium_q_md = docs_dir / "compendium_questions.md"
     compendium_k_md = docs_dir / "compendium_key.md"
     compendium_html = docs_dir / "compendium.html"
-    compendium_pdf = pdfs_dir / "GAMB_435_Question_Compendium.pdf"
+    compendium_pdf = pdfs_dir / "GAMB_Question_Compendium.pdf"
     generate_compendium(
         q_md=compendium_q_md,
         k_md=compendium_k_md,

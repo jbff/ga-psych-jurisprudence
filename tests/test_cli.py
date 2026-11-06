@@ -393,7 +393,7 @@ def test_build_assets_cli_execution(tmp_path: Path, monkeypatch: pytest.MonkeyPa
 
     assert (tmp_path / "pdfs" / "GAMB_Statutory_Cheat_Sheet.pdf").exists()
     assert (tmp_path / "pdfs" / "GAMB_Numbers_And_Deadlines_Cheat_Sheet.pdf").exists()
-    assert (tmp_path / "pdfs" / "GAMB_435_Question_Compendium.pdf").exists()
+    assert (tmp_path / "pdfs" / "GAMB_Question_Compendium.pdf").exists()
     assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_A.pdf").exists()
     assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_B.pdf").exists()
     assert (tmp_path / "pdfs" / "GAMB_Practice_Exam_Form_C.pdf").exists()

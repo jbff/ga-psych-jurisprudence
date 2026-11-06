@@ -188,3 +188,15 @@ def test_export_mock_markdown_invalid_count(tmp_path: Path):
     """Verifies export_mock_markdown raises ValueError if questions count != 50."""
     with pytest.raises(ValueError, match="Expected 50 questions"):
         export_mock_markdown([], output_dir=tmp_path)
+
+
+def test_generate_exam_count_validation():
+    """Verifies generate_exam requires count=50 to satisfy domain quotas."""
+    from gamb_exam.generator import generate_exam
+
+    exam = generate_exam(50, db_path=DEFAULT_DB_PATH)
+    assert len(exam) == 50
+
+    with pytest.raises(ValueError, match="Georgia jurisprudence exam simulation requires count=50"):
+        generate_exam(25, db_path=DEFAULT_DB_PATH)
+

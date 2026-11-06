@@ -8072,8 +8072,8 @@
     "id": 448,
     "domain": "licensure",
     "subtopic": "statutory-rape-romeo-and-juliet-misdemeanor-exception",
-    "source_citation": "O.C.G.A. § 16-6-3(b)",
-    "question_text": "Under Georgia's 'Romeo and Juliet' provision in O.C.G.A. § 16-6-3(b), under what exact age conditions is statutory rape punished as a misdemeanor rather than a felony?",
+    "source_citation": "O.C.G.A. § 16-6-3(c)",
+    "question_text": "Under Georgia's 'Romeo and Juliet' provision in O.C.G.A. § 16-6-3(c), under what exact age conditions is statutory rape punished as a misdemeanor rather than a felony?",
     "options": {
       "A": "When the victim is 13 or 14 years old and the offender is under 17 years old and within 2 years of the victim",
       "B": "When the victim is 14 or 15 years old and the offender is 18 years old or younger and no more than 4 years older than the victim",
@@ -8081,7 +8081,7 @@
       "D": "When the victim is 15 years old and the offender is under 21 years old and has no prior convictions"
     },
     "correct_option": "B",
-    "explanation": "O.C.G.A. § 16-6-3(b) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.",
+    "explanation": "O.C.G.A. § 16-6-3(c) provides a misdemeanor exception if the victim is 14 or 15 years of age and the person convicted is 18 years of age or younger and is no more than four years older than the victim.",
     "fact_ids": [
       "FACT-16-6-3-005"
     ]
@@ -8090,8 +8090,8 @@
     "id": 449,
     "domain": "licensure",
     "subtopic": "statutory-rape-repeat-offender-penalties",
-    "source_citation": "O.C.G.A. § 16-6-3(b)",
-    "question_text": "Under O.C.G.A. § 16-6-3(b), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?",
+    "source_citation": "O.C.G.A. § 16-6-3(d)(2)",
+    "question_text": "Under O.C.G.A. § 16-6-3(d)(2), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?",
     "options": {
       "A": "Imprisonment for 5 to 10 years with standard administrative parole eligibility",
       "B": "Mandatory sentence of life imprisonment, or a split sentence with life probation and electronic monitoring",
@@ -8099,7 +8099,7 @@
       "D": "Indefinite civil commitment under the Sexually Dangerous Predator Act"
     },
     "correct_option": "B",
-    "explanation": "Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.",
+    "explanation": "Under O.C.G.A. § 16-6-3(d)(2) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.",
     "fact_ids": [
       "FACT-16-6-3-006"
     ]
@@ -8162,8 +8162,8 @@
     "id": 453,
     "domain": "licensure",
     "subtopic": "aggravated-child-molestation-elements-penalties",
-    "source_citation": "O.C.G.A. § 16-6-4(c)",
-    "question_text": "Under O.C.G.A. § 16-6-4(c), what distinguishes aggravated child molestation from child molestation, and what penalty applies?",
+    "source_citation": "O.C.G.A. § 16-6-4(d)(1)",
+    "question_text": "Under O.C.G.A. § 16-6-4(d)(1), what distinguishes aggravated child molestation from child molestation, and what penalty applies?",
     "options": {
       "A": "Commission on school grounds; punishable by 10 to 20 years imprisonment",
       "B": "Commission by an educator or therapist; punishable by 15 to 30 years imprisonment",
@@ -8171,7 +8171,7 @@
       "D": "Involving an act of sodomy or causing physical injury to a child under 16; punishable by 25 to 50 years or life imprisonment"
     },
     "correct_option": "D",
-    "explanation": "O.C.G.A. § 16-6-4(c) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.",
+    "explanation": "O.C.G.A. § 16-6-4(d)(1) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.",
     "fact_ids": [
       "FACT-16-6-4-004"
     ]
@@ -8180,8 +8180,8 @@
     "id": 454,
     "domain": "licensure",
     "subtopic": "aggravated-child-molestation-sodomy-close-in-age-exception",
-    "source_citation": "O.C.G.A. § 16-6-4(c)",
-    "question_text": "Under O.C.G.A. § 16-6-4(c), what close-in-age misdemeanor exception applies to aggravated child molestation involving sodomy?",
+    "source_citation": "O.C.G.A. § 16-6-4(d)(2)",
+    "question_text": "Under O.C.G.A. § 16-6-4(d)(2), what close-in-age misdemeanor exception applies to aggravated child molestation involving sodomy?",
     "options": {
       "A": "The offense is a misdemeanor if the victim is 11 or 12 years old and the offender is within 2 years of age",
       "B": "The offense is a misdemeanor if the victim is 13, 14, or 15 years of age, the offender is 18 or younger, and the offender is no more than 4 years older",
@@ -8189,7 +8189,7 @@
       "D": "Georgia law provides no misdemeanor exception for any offense involving aggravated child molestation"
     },
     "correct_option": "B",
-    "explanation": "O.C.G.A. § 16-6-4(c) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.",
+    "explanation": "O.C.G.A. § 16-6-4(d)(2) contains a specific close-in-age exception: if the offense involves an act of sodomy, the victim is 13 to 15 years of age, and the offender is 18 years of age or younger and no more than four years older than the victim, it is punished as a misdemeanor.",
     "fact_ids": [
       "FACT-16-6-4-005"
     ]
@@ -8198,8 +8198,8 @@
     "id": 455,
     "domain": "licensure",
     "subtopic": "child-molestation-electronic-transmission-jurisdiction",
-    "source_citation": "O.C.G.A. § 16-6-4(d)",
-    "question_text": "Under O.C.G.A. § 16-6-4(d), does Georgia have criminal jurisdiction over child molestation committed via electronic transmission if the defendant initiated the transmission from outside the State of Georgia?",
+    "source_citation": "O.C.G.A. § 16-6-4(e)",
+    "question_text": "Under O.C.G.A. § 16-6-4(e), does Georgia have criminal jurisdiction over child molestation committed via electronic transmission if the defendant initiated the transmission from outside the State of Georgia?",
     "options": {
       "A": "Yes; Georgia courts possess subject-matter jurisdiction if the transmission was accessed or intended to be accessed by a child within Georgia",
       "B": "Yes; provided the transmission was routed through an internet server physically located in Fulton County",
@@ -8207,7 +8207,7 @@
       "D": "No; extraterritorial internet transmissions fall under exclusive federal jurisdiction and cannot be prosecuted in Georgia state courts"
     },
     "correct_option": "A",
-    "explanation": "O.C.G.A. § 16-6-4(d) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.",
+    "explanation": "O.C.G.A. § 16-6-4(e) explicitly confers jurisdiction upon Georgia courts for electronically transmitted acts of child molestation if the transmission originated outside the state but was directed to or accessed by a child within the State of Georgia.",
     "fact_ids": [
       "FACT-16-6-4-006"
     ]
@@ -8252,8 +8252,8 @@
     "id": 458,
     "domain": "licensure",
     "subtopic": "enticing-a-child-penalties-and-exception",
-    "source_citation": "O.C.G.A. § 16-6-5(b)",
-    "question_text": "Under O.C.G.A. § 16-6-5(b), what is the statutory penalty for felony enticing a child for indecent purposes, and what close-in-age exception applies?",
+    "source_citation": "O.C.G.A. § 16-6-5(c)",
+    "question_text": "Under O.C.G.A. § 16-6-5(c), what is the statutory penalty for felony enticing a child for indecent purposes, and what close-in-age exception applies?",
     "options": {
       "A": "Felony punishable by 2 to 10 years; misdemeanor if victim is 13 and offender is within 1 year",
       "B": "Felony punishable by 5 to 20 years; misdemeanor if victim is 16 and offender is 21 or younger",
@@ -8261,7 +8261,7 @@
       "D": "Felony punishable by 10 to 30 years; misdemeanor if victim is 14 or 15, offender is 18 or younger, and offender is no more than 4 years older"
     },
     "correct_option": "D",
-    "explanation": "O.C.G.A. § 16-6-5(b) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.",
+    "explanation": "O.C.G.A. § 16-6-5(c) establishes that enticing a child for indecent purposes is a felony punishable by imprisonment for not less than 10 nor more than 30 years, but provides a misdemeanor exception if the victim is 14 or 15, the offender is 18 or younger, and no more than four years older than the victim.",
     "fact_ids": [
       "FACT-16-6-5-003"
     ]
@@ -8270,8 +8270,8 @@
     "id": 459,
     "domain": "licensure",
     "subtopic": "misdemeanor-penalty-failure-to-report-elder-abuse",
-    "source_citation": "O.C.G.A. § 30-5-4(b)",
-    "question_text": "Under O.C.G.A. § 30-5-4(b), what criminal penalty applies to a psychologist or other mandatory reporter who knowingly and willfully fails to report abuse, neglect, or exploitation of a disabled adult or elder person?",
+    "source_citation": "O.C.G.A. § 30-5-8(a)(1)",
+    "question_text": "Under O.C.G.A. § 30-5-8(a)(1), what criminal penalty applies to a psychologist or other mandatory reporter who knowingly and willfully fails to report abuse, neglect, or exploitation of a disabled adult or elder person as required by O.C.G.A. § 30-5-4?",
     "options": {
       "A": "Guilty of a felony punishable by 1 to 5 years imprisonment",
       "B": "Administrative license suspension without criminal sanctions",
@@ -8279,7 +8279,7 @@
       "D": "Guilty of a misdemeanor"
     },
     "correct_option": "D",
-    "explanation": "O.C.G.A. § 30-5-4(b) provides that any person required to report elder or disabled adult abuse who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.",
+    "explanation": "O.C.G.A. § 30-5-8(a)(1) provides that any person required to report elder or disabled adult abuse under O.C.G.A. § 30-5-4 who knowingly and willfully fails to make such report shall be guilty of a misdemeanor.",
     "fact_ids": [
       "FACT-30-5-4-005"
     ]

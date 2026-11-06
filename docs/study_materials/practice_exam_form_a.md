@@ -144,7 +144,7 @@
 - **C)** Universal cultural applicability without need for normative adaptations
 - **D)** Formal endorsement and certification by the Georgia Department of Education
 
-### Q17. Under O.C.G.A. § 16-6-4(c), what distinguishes aggravated child molestation from child molestation, and what penalty applies?
+### Q17. Under O.C.G.A. § 16-6-4(d)(1), what distinguishes aggravated child molestation from child molestation, and what penalty applies?
 
 - **A)** Commission on school grounds; punishable by 10 to 20 years imprisonment
 - **B)** Involving an act of sodomy or causing physical injury to a child under 16; punishable by 25 to 50 years or life imprisonment
@@ -214,7 +214,7 @@
 - **C)** Intuitive clinical impressions gathered during an informal initial meeting
 - **D)** Information and techniques sufficient to substantiate findings
 
-### Q27. Under O.C.G.A. § 16-6-3(b), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
+### Q27. Under O.C.G.A. § 16-6-3(d)(2), what penalty is mandated upon a second or subsequent conviction for felony statutory rape in Georgia?
 
 - **A)** Imprisonment for 5 to 10 years with standard administrative parole eligibility
 - **B)** A non-negotiable fine of $50,000 and 3 years in a county correctional diversion center
@@ -464,7 +464,7 @@ Record your responses below. Mark only one letter per item. After completing the
 | 14 | Licensure and Regulations | **C** | Rule 510-6-.02 |
 | 15 | Assessment | **C** | Rule 510-5-.08 |
 | 16 | Assessment | **A** | APA 9.02 / Rule 510-4-.02 |
-| 17 | Licensure and Regulations | **B** | O.C.G.A. § 16-6-4(c) |
+| 17 | Licensure and Regulations | **B** | O.C.G.A. § 16-6-4(d)(1) |
 | 18 | Competence | **C** | Rule 510-9-.04 |
 | 19 | Assessment | **B** | APA 9.11 / Rule 510-4-.02 |
 | 20 | Recordkeeping and Fees | **A** | APA 6.01 |
@@ -474,7 +474,7 @@ Record your responses below. Mark only one letter per item. After completing the
 | 24 | Licensure and Regulations | **A** | Rule 510-6-.02 |
 | 25 | Competence | **C** | Rule 510-5-.01 |
 | 26 | Assessment | **D** | APA 9.01 / Rule 510-4-.02 |
-| 27 | Licensure and Regulations | **D** | O.C.G.A. § 16-6-3(b) |
+| 27 | Licensure and Regulations | **D** | O.C.G.A. § 16-6-3(d)(2) |
 | 28 | Professional Relationships | **A** | APA 3.12 / Rule 510-4-.02 |
 | 29 | Professional Relationships | **B** | OCGA 16-6-5.1 |
 | 30 | Licensure and Regulations | **D** | APA 5.02 |
@@ -600,8 +600,8 @@ Record your responses below. Mark only one letter per item. After completing the
 ### Q17 (Pool Item #453)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** B
-- **Source Citation:** O.C.G.A. § 16-6-4(c)
-- **Explanation:** O.C.G.A. § 16-6-4(c) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.
+- **Source Citation:** O.C.G.A. § 16-6-4(d)(1)
+- **Explanation:** O.C.G.A. § 16-6-4(d)(1) provides that a person commits aggravated child molestation when an act of child molestation involves an act of sodomy or causes physical injury to a child under 16, punishable by 25 to 50 years imprisonment or life imprisonment.
 
 ### Q18 (Pool Item #259)
 - **Domain:** Competence
@@ -660,8 +660,8 @@ Record your responses below. Mark only one letter per item. After completing the
 ### Q27 (Pool Item #449)
 - **Domain:** Licensure and Regulations
 - **Correct Option:** D
-- **Source Citation:** O.C.G.A. § 16-6-3(b)
-- **Explanation:** Under O.C.G.A. § 16-6-3(b) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
+- **Source Citation:** O.C.G.A. § 16-6-3(d)(2)
+- **Explanation:** Under O.C.G.A. § 16-6-3(d)(2) and Georgia repeat sex offender sentencing statutes, a second or subsequent conviction for statutory rape mandates punishment by life imprisonment or a split sentence that includes life probation and mandatory electronic monitoring.
 
 ### Q28 (Pool Item #111)
 - **Domain:** Professional Relationships

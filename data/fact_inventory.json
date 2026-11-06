@@ -3553,7 +3553,7 @@
   {
     "fact_id": "FACT-16-6-3-005",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-3(b)",
+    "citation": "O.C.G.A. § 16-6-3(c)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "statutory-rape-romeo-and-juliet-misdemeanor-exception",
@@ -3578,7 +3578,7 @@
   {
     "fact_id": "FACT-16-6-3-006",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-3(b)",
+    "citation": "O.C.G.A. § 16-6-3(d)(2)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "statutory-rape-repeat-offender-penalties",
@@ -3664,7 +3664,7 @@
   {
     "fact_id": "FACT-16-6-4-004",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-4(c)",
+    "citation": "O.C.G.A. § 16-6-4(d)(1)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "aggravated-child-molestation-elements-penalties",
@@ -3688,7 +3688,7 @@
   {
     "fact_id": "FACT-16-6-4-005",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-4(c)",
+    "citation": "O.C.G.A. § 16-6-4(d)(2)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "aggravated-child-molestation-sodomy-close-in-age-exception",
@@ -3713,7 +3713,7 @@
   {
     "fact_id": "FACT-16-6-4-006",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-4(d)",
+    "citation": "O.C.G.A. § 16-6-4(e)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "child-molestation-electronic-transmission-jurisdiction",
@@ -3773,7 +3773,7 @@
   {
     "fact_id": "FACT-16-6-5-003",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 16-6-5(b)",
+    "citation": "O.C.G.A. § 16-6-5(c)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "enticing-a-child-penalties-and-exception",
@@ -3982,7 +3982,7 @@
   {
     "fact_id": "FACT-30-5-4-005",
     "source_type": "OCGA",
-    "citation": "O.C.G.A. § 30-5-4(b)",
+    "citation": "O.C.G.A. § 30-5-8(a)(1)",
     "domain": "licensure",
     "domain_display": "Licensure and Regulations",
     "subtopic": "misdemeanor-penalty-failure-to-report-elder-abuse",
