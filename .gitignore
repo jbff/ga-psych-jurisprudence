@@ -13,6 +13,7 @@ build/
 .vscode/
 .idea/
 *.swp
-data/
+data/*
+!data/fact_inventory.json
 *.db
 *.sqlite*

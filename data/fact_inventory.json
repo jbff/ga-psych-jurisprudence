@@ -1,0 +1,21 @@
+[
+  {
+    "fact_id": "FACT-510-2-001",
+    "source_type": "RULE",
+    "citation": "Ga. Comp. R. & Regs. r. 510-2-.01",
+    "domain": "licensure",
+    "domain_display": "Licensure and Regulations",
+    "subtopic": "rules-510-2",
+    "rule_summary": "A candidate who fails the Georgia Jurisprudence Examination (GAMB) must wait at least 30 days before retaking the examination.",
+    "key_parameters": {
+      "retake_waiting_period_days": 30
+    },
+    "associated_question_ids": [
+      1
+    ],
+    "associated_anki_card_ids": [
+      1
+    ],
+    "audit_status": "verified"
+  }
+]
