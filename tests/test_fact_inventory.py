@@ -297,3 +297,45 @@ def test_save_and_load_facts_roundtrip(tmp_path: Path, facts: list[dict]):
     loaded = load_facts(custom_path)
     assert loaded == facts
 
+
+def test_validate_and_verify_malformed_facts(question_pool: list[dict], anki_lines: list[str]):
+    """validate_fact_inventory and verify_fact_coverage handle malformed facts cleanly without crashing."""
+    malformed_facts = [
+        "not-a-dict",
+        {
+            "fact_id": "FACT-MALFORMED-001",
+            "source_type": "RULE",
+            "citation": "Rule 510-1",
+            "domain": "licensure",
+            "domain_display": "Licensure",
+            "subtopic": "test",
+            "rule_summary": "Test summary",
+            "key_parameters": {},
+            "associated_question_ids": None,
+            "associated_anki_card_ids": None,
+            "audit_status": "verified",
+        },
+    ]
+
+    cov_errors = verify_fact_coverage(malformed_facts)  # type: ignore[arg-type]
+    assert any("must be a dict" in err for err in cov_errors)
+    assert any("FACT-MALFORMED-001" in err and "question" in err for err in cov_errors)
+    assert any("FACT-MALFORMED-001" in err and "anki" in err for err in cov_errors)
+
+    val_errors = validate_fact_inventory(
+        malformed_facts,  # type: ignore[arg-type]
+        question_pool=question_pool,
+        anki_lines=anki_lines,
+    )
+    assert any("must be a dict" in err for err in val_errors)
+    assert any("associated_question_ids" in err for err in val_errors)
+    assert any("associated_anki_card_ids" in err for err in val_errors)
+
+    # Test non-list input handling
+    non_list_cov = verify_fact_coverage("not-a-list")  # type: ignore[arg-type]
+    assert any("must be a list" in err for err in non_list_cov)
+    non_list_val = validate_fact_inventory("not-a-list")  # type: ignore[arg-type]
+    assert any("must be a list" in err for err in non_list_val)
+
+
+

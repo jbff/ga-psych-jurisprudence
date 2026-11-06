@@ -99,7 +99,14 @@ def verify_fact_coverage(facts: list[dict[str, Any]]) -> list[str]:
         A list of error strings identifying uncovered facts (empty if 100% covered).
     """
     errors: list[str] = []
-    for fact in facts:
+    if not isinstance(facts, list):
+        return [f"Fact inventory must be a list, got {type(facts).__name__}"]
+
+    for idx, fact in enumerate(facts):
+        if not isinstance(fact, dict):
+            errors.append(f"Fact at index {idx} must be a dict, got {type(fact).__name__}")
+            continue
+
         fid = fact.get("fact_id", "<missing fact_id>")
         qids = fact.get("associated_question_ids")
         cids = fact.get("associated_anki_card_ids")
@@ -225,12 +232,16 @@ def validate_fact_inventory(
             if isinstance(q, dict) and isinstance(q.get("id"), int)
         }
         for fact in facts:
+            if not isinstance(fact, dict):
+                continue
             fid = fact.get("fact_id", "<unknown>")
-            for qid in fact.get("associated_question_ids", []):
-                if qid not in valid_qids:
-                    errors.append(
-                        f"Fact {fid} references question_id {qid} not found in question_pool"
-                    )
+            qids = fact.get("associated_question_ids")
+            if isinstance(qids, list):
+                for qid in qids:
+                    if qid not in valid_qids:
+                        errors.append(
+                            f"Fact {fid} references question_id {qid} not found in question_pool"
+                        )
 
     # 15. Anki TSV foreign key validation
     if anki_lines is not None:
@@ -238,11 +249,15 @@ def validate_fact_inventory(
             1 for line in anki_lines if line.strip() and not line.startswith("#")
         )
         for fact in facts:
+            if not isinstance(fact, dict):
+                continue
             fid = fact.get("fact_id", "<unknown>")
-            for cid in fact.get("associated_anki_card_ids", []):
-                if not (1 <= cid <= card_count):
-                    errors.append(
-                        f"Fact {fid} references anki card_id {cid} outside valid range (1..{card_count})"
-                    )
+            cids = fact.get("associated_anki_card_ids")
+            if isinstance(cids, list):
+                for cid in cids:
+                    if not (1 <= cid <= card_count):
+                        errors.append(
+                            f"Fact {fid} references anki card_id {cid} outside valid range (1..{card_count})"
+                        )
 
     return errors
