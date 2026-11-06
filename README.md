@@ -21,7 +21,7 @@ A comprehensive, rigorously audited jurisprudence examination study kit, printab
 
 ## 📦 Study Products & Downloads (No Installation Required)
 
-Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 2.0 (Release Date: 11/06/2026)**.
+Everything required to master the Georgia Jurisprudence Examination is packaged in ready-to-use, zero-dependency consumer formats. You do **not** need programming knowledge, Python, or command-line tools to start studying immediately. All study products are compiled from **Question Pool Version 2.0 (Release Date: 11/06/2026)** and systematically mapped against our **205-item Atomic Fact Inventory** (`data/fact_inventory.json`).
 
 ### 📚 Downloadable Study Packets & Flashcards
 
@@ -143,10 +143,13 @@ uv run gamb-exam build-assets
 
 The Georgia Jurisprudence Examination (GAMB) tests knowledge of Georgia statutory law (O.C.G.A.) and official Rules and Regulations of the State of Georgia (Department 510) governing the practice of psychology.
 
-- **Format**: 50 scored multiple-choice questions (4 options each: A, B, C, D)
-- **Time Limit**: 60 minutes
+- **Exam Delivery**: Computer-based testing administered at PSI testing centers (or approved remote proctoring)
+- **Format**: **60 multiple-choice questions** presented in 60 minutes (4 options each: A, B, C, D)
+  - **50 Scored Items**: Sampled strictly according to the official 6-domain Board blueprint below
+  - **Up to 10 Unscored Pretest Items**: As documented in PSI Candidate Information Bulletin #1755, the testing vendor includes unscored experimental questions to evaluate items for future forms; these do not count toward your score
+- **Time Limit**: 60 minutes (averaging 60 seconds per item across all 60 questions)
 - **Condition**: Closed book, computer-based testing via PSI
-- **Passing Cutoff**: **38 / 50 (76.0%)**
+- **Passing Cutoff**: **38 / 50 scored items (76.0%)**
 
 ### Official 6-Domain Blueprint & Weighting
 
@@ -228,12 +231,30 @@ uv run gamb-exam test
 
 ## Study Corpus & Source Materials
 
-The study corpus in `study_corpus/` contains reference copies of Georgia statutes and administrative rules governing the practice of psychology in Georgia:
+The study corpus in `study_corpus/` and modular source repository in `sources/` contain complete, unabridged reference copies of all Georgia statutes, administrative rules, and incorporated authorities governing the practice of psychology in Georgia:
 
-- **`study_corpus/STATUTES_OC_GA.md`**: Complete, unabridged primary text of all 44 Georgia Code sections on the Board reference list (Title 43 Ch. 39 Psychologists, Title 43 Ch. 1 General Provisions, Title 19 Ch. 7 Child Abuse Reporting, Title 30 Ch. 5 Disabled Adults, Title 31 Health, Title 37 Mental Health, Title 16 Crimes, Title 24 Evidence, Title 50 Open Records).
-- **`study_corpus/RULES_510_FULL.md`**: Complete official text of the Rules and Regulations of the State of Georgia, Department 510 (State Board of Examiners of Psychologists), Chapters 510-1 through 510-10, including the complete Code of Conduct.
+- **`study_corpus/STATUTES_OC_GA.md`**: Complete, unabridged primary text of all **48 Georgia Code sections** governing the exam—including all 44 sections on the Board's reference list plus the **4 critical 1-hop incorporated satellite statutes** audited in Version 2.0:
+  - **Title 43 Ch. 39**: Georgia Psychology Practice Act (O.C.G.A. §§ 43-39-1 through 43-39-20).
+  - **Title 43 Ch. 1**: General Provisions for Professional Licensing Boards (§§ 43-1-19 through 43-1-25, and § 43-1-27 felony notification).
+  - **Title 19 Ch. 7**: Mandatory Child Abuse Reporting (§ 19-7-5, with 2025 recodification notes).
+  - **Title 16 Ch. 6**: Sexual Offenses incorporated into child abuse reporting and psychotherapist misconduct:
+    - **§ 16-6-3**: Statutory rape (elements, victim < 16, and close-in-age Romeo & Juliet misdemeanor exceptions).
+    - **§ 16-6-4**: Child molestation & aggravated child molestation (elements, digital transmission, physical injury/sodomy aggravating factors, and close-in-age misdemeanor exceptions).
+    - **§ 16-6-5**: Enticing a child for indecent purposes (luring/asportation elements and close-in-age misdemeanor exceptions).
+    - **§ 16-6-5.1**: Sexual assault by persons with supervisory authority / psychotherapists.
+  - **Title 24 Evidence**: Privileged communications:
+    - **§ 24-5-501**: Privileged communications under the post-2013 Evidence Code, anchoring psychologist-patient privilege to attorney-client standards and creating multidisciplinary psychotherapy team privilege.
+    - **§ 24-9-21**: Predecessor privilege statute referenced in historical board materials.
+  - **Title 30 Ch. 5**: Protection of Disabled Adults and Elder Persons (§ 30-5-4 reporting mandate).
+  - **Title 31 Ch. 7**: Health Service Provider Psychologists and hospital staff privileges (§§ 31-7-160 through 31-7-165).
+  - **Title 37 Ch. 3**: Examination, Treatment, and Involuntary Patients (§ 37-3-41 Form 1013 emergency admission authority).
+  - **Title 16 Ch. 13**: Controlled Substances license sanctions (§§ 16-13-110 through 16-13-114).
+  - **Title 50 Ch. 13 & 18**: Georgia Administrative Procedure Act and Open Records Act provisions referenced in board hearings and child abuse record confidentiality.
+- **`study_corpus/RULES_510_FULL.md`**: Complete official text of the Rules and Regulations of the State of Georgia, Department 510 (State Board of Examiners of Psychologists), Chapters 510-1 through 510-10, including Chapter 510-4 (APA Ethics Code) and Chapter 510-5 (Supplemental Code of Conduct).
 - **`study_corpus/EXAM_SYLLABUS_AND_TOPIC_MAPPING.md`**: Detailed mapping linking each of the 6 exam domains to statutory and administrative rule sections.
-- **`MANIFEST.md`**: Full inventory and character/word counts of all source statutes.
+- **`data/fact_inventory.json`**: Comprehensive inventory of **205 atomic testable legal and regulatory facts** systematically extracted from primary sources during the curriculum audit, each tagged with statutory citations, machine domain slugs, question IDs, and Anki card tags.
+- **`sources/`**: Modular directory preserving individual statute files (`sources/ocga_43-39/`, `sources/ocga_satellites/`), Department 510 official rules, and PSI Candidate Bulletin #1755.
+- **`MANIFEST.md`**: Full audit manifest, line/word counts, and verification status for all primary source files.
 
 ---
 
@@ -241,6 +262,8 @@ The study corpus in `study_corpus/` contains reference copies of Georgia statute
 
 The full 472-question examination pool (`gamb_exam/question_pool.json`) has undergone a comprehensive, psychometric distractor audit and is officially versioned:
 - **Versioned Pool Standard**: Labeled **Version 2.0 (Release Date: 11/06/2026)** with schema metadata in `gamb_exam/question_pool_metadata.json`. All generated PDF documents, markdown booklets, and the web application display this version in running headers and cover pages.
+- **100% Atomic Fact Coverage**: Every question in the pool is mapped 1:1 to an atomic legal fact in `data/fact_inventory.json` with bidirectional verification.
+- **Distractor Renovation & Zero Giveaway Bias**: Polar questions have been systematically renovated to eliminate giveaway distractors (no 3-Yes/1-No or 1-Yes/3-No options; strictly balanced 2-Yes/2-No with distinct legal rationales or declarative non-polar choices).
 - **100% Context-Responsive Options**: Every distractor directly answers the question asked using plausible Georgia statutory numbers, procedures, or standards (no nonsense cross-domain fallback options).
 - **Zero Test-Wiseness Flaws**: No bare "Yes" or "No" answers; all options are expanded into parallel explanatory clauses with uniform syntactic tone and balanced lengths.
 - **Unambiguous Legal Accuracy**: Exactly one legally correct answer per question under O.C.G.A. Titles 43, 31, 37, 19, 30, 16, 24, 50, Georgia Board Rules (Chapter 510), and the APA Ethics Code.
@@ -260,8 +283,9 @@ The full 472-question examination pool (`gamb_exam/question_pool.json`) has unde
 # Run pytest with uv
 uv run pytest
 ```
-All 78 unit, pool, CLI, TUI, and asset build tests verify:
-- SQLite question pool integrity, unique IDs 1–472, schema conformity, distractor uniqueness, and citation validity (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
+All **103 unit, pool, CLI, TUI, fact inventory, and asset build tests** verify:
+- Atomic fact inventory integrity, 100% coverage across questions and flashcards, valid statutory citations, non-empty fact statements, and schema conformity (`test_fact_inventory.py`).
+- SQLite question pool integrity, unique IDs 1–472, schema conformity, distractor uniqueness, and polar giveaway prevention (`test_question_pool.py`, `test_seed.py`, `test_db.py`).
 - Stratified 50-question mock exam sampler and Markdown export formatting (`test_generator.py`).
 - TUI state machines, navigation, flag toggling, answer scoring, timer operations, and review mode (`test_tui.py`).
 - CLI argument parsing, help output, and subcommands (`test_cli.py`).

@@ -70,7 +70,7 @@ Corpus complete: True
 ## Combined and Filtered Corpora
 
 1. **`corpus_combined/`** — All materials from `sources/` consolidated into Markdown:
-   - `STATUTES_OC_GA.md` (171 KB, all 44 statutes, unabridged)
+   - `STATUTES_OC_GA.md` (all 48 statutes: 44 primary Board reference statutes + 4 incorporated satellite statutes, unabridged)
    - `RULES_510_FULL.md` (223 KB, complete Department 510 rules)
    - `EXAM_ADMINISTRATION_PSI.md` (30 KB, PSI bulletin)
    - `DOVERSPIKE_PREP_GUIDE.md` (35 KB, Doverspike guide)
@@ -78,4 +78,4 @@ Corpus complete: True
 2. **`study_corpus/`** — **ALL and ONLY** the testable source material for the exam:
    - Contains NO PSI administrative policies ($85 fee, directions, check-in clothing).
    - Contains NO secondary study advice or untested case law commentary.
-   - Includes single canonical copies of `STATUTES_OC_GA.md`, `RULES_510_FULL.md`, and `EXAM_SYLLABUS_AND_TOPIC_MAPPING.md` (zero duplication).
+   - Includes single canonical copies of `STATUTES_OC_GA.md` (48 statutes), `RULES_510_FULL.md`, and `EXAM_SYLLABUS_AND_TOPIC_MAPPING.md` (zero duplication).

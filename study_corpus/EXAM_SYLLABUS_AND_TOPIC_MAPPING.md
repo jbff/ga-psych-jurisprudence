@@ -31,14 +31,17 @@ The Board's official examination specifications derive questions exclusively fro
    - `OCGA § 43-39-1` through `§ 43-39-20` (Definitions, Board creation, powers, licensure requirements, examination, reciprocity, renewals, disciplinary grounds/hearings, temporary/provisional licenses, CE, privileged communications, title restrictions, injunctions, penalties, immunity).
 2. **General Licensing Provisions:**
    - `OCGA § 43-1-19` through `§ 43-1-25`, and `§ 43-1-27` (Disciplinary authority of professional licensing boards, hearings, subpoenas, reprimands, probation, emergency suspension, corporate practice rules, and § 43-1-27 mandatory 10-day notification of felony convictions). *Note: § 43-1-26 is reserved in the current Georgia code.*
-3. **Sexual Misconduct / Crimes:**
+3. **Sexual Misconduct & Crimes (Incorporated Criminal Statutes):**
    - `OCGA § 16-6-5.1` (Improper sexual contact by employee, agent, psychotherapist, or person in position of trust; consent is not a defense; 1st & 2nd degree felony penalties).
+   - `OCGA § 16-6-3` (Statutory rape; elements, victim < 16, Romeo & Juliet close-in-age misdemeanor exception; incorporated by reference into child abuse reporting under § 19-7-5).
+   - `OCGA § 16-6-4` (Child molestation & aggravated child molestation; intent, electronic transmission, physical injury/sodomy aggravating factors, close-in-age exceptions; incorporated into child abuse reporting).
+   - `OCGA § 16-6-5` (Enticing a child for indecent purposes; soliciting/luring minor < 16; close-in-age exception; incorporated into child abuse reporting).
 4. **Controlled Substances Sanctions:**
    - `OCGA § 16-13-110` through `§ 16-13-114` (Sanctions against licensed individuals for offenses involving controlled substances or marijuana; mandatory suspension/revocation rules).
 5. **Mandated Child Abuse Reporting:**
-   - `OCGA § 19-7-5` (Mandated reporting of suspected child abuse; reporting immediately but no later than 24 hours; immunity; override of privilege).
+   - `OCGA § 19-7-5` (Mandated reporting of suspected child abuse; reporting immediately but no later than 24 hours; immunity; override of privilege; 2025 recodification of sexual abuse at subsection (b)(17)).
 6. **Privileged Communications:**
-   - `OCGA § 24-9-21` (Statutory privilege placing psychologist-client relations on the same basis as attorney-client; codified at § 24-5-501 in post-2013 code).
+   - `OCGA § 24-5-501` & `§ 24-9-21` (Statutory privilege placing psychologist-client relations on the same basis as attorney-client under § 43-39-16; codified at § 24-5-501 in post-2013 Georgia Evidence Code; establishes multidisciplinary mental health team privilege under § 24-5-501(a)(8)).
 7. **Protection of Disabled Adults & Elder Persons:**
    - `OCGA § 30-5-4` (Mandatory reporting of abuse, neglect, or exploitation of disabled adults or elders; immediate reporting; statutory immunity; privilege override).
 8. **Health Service Provider Psychologists & Hospital Practice:**

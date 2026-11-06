@@ -466,6 +466,19 @@ Georgia Code § 43-39-20 (2018) - Immunity from civil and criminal liability for
 
 *Source: Justia, 2025-edition page (law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-5/), full statute — fetched 2026-10-12. Replaces earlier truncated 2022-mirror copy.*
 
+> **IMPORTANT CROSS-REFERENCE & RECODIFICATION NOTE ON SUBSECTION (b)(10) vs. (b)(17):**  
+> In earlier codifications of O.C.G.A. § 19-7-5 (pre-2018/2020 legislative expansions), the definition of **"Sexual abuse"** was codified at **subsection (b)(10)** [subparagraphs (A)–(J)], and "Sexual exploitation" was codified at **subsection (b)(11)**.  
+> Following subsequent statutory additions (e.g., adding definitions for abandonment, emotional abuse, labor servitude, etc.), the Georgia General Assembly redesignated former paragraph (b)(10) ("Sexual abuse") as present **subsection (b)(17)**, and former paragraph (b)(11) ("Sexual exploitation") as present **subsection (b)(18)**.  
+> As a result:
+> - Case law (e.g., *Ga. Dep't of Human Servs. v. Steiner*, 303 Ga. 890 (2018)), older legal commentary, and legacy exam prep items cite **§ 19-7-5(b)(10)** when referencing statutory sexual abuse.
+> - In current Georgia law, these exact same definitions are located at **§ 19-7-5(b)(17)**.
+> - **1-Hop Incorporated Criminal Statutes**: The definition of sexual abuse incorporates core substantive elements from Georgia criminal statutes:
+>   - **O.C.G.A. § 16-6-3** (*Statutory rape*): Subparagraph (b)(17)(A) (former (b)(10)(A)) — sexual intercourse with person under 16, non-spouse; close-in-age Romeo & Juliet provisions. See `sources/ocga_satellites/16-6-3.md`.
+>   - **O.C.G.A. § 16-6-4** (*Child molestation*): Subparagraph (b)(17)(G) (former (b)(10)(G)) — immoral/indecent acts or physical contact with sexual stimulation intent. See `sources/ocga_satellites/16-6-4.md`.
+>   - **O.C.G.A. § 16-6-5** (*Enticing a child for indecent purposes*): Paragraph (b)(17) (former (b)(10)) — enticing/luring minor under 16 for indecent acts. See `sources/ocga_satellites/16-6-5.md`.
+>   - **O.C.G.A. § 16-6-5.1** (*Sexual assault by person with supervisory authority / psychotherapist*): See `sources/ocga_satellites/16-6-5_1.md`.
+>   - **O.C.G.A. § 24-5-501** (former § 24-9-21) (*Privilege override*): Under subsection (g), all privileges except attorney-client are abrogated for mandatory child abuse reporting. See `sources/ocga_satellites/24-5-501.md`.
+
 [![Image 1: Justia](https://justatic.com/v/20260924131710/branding/logos/sites/justia.svg)![Image 2: Case Law](https://justatic.com/v/20260924131710/branding/logos/sites/law.svg)](https://law.justia.com/ "Justia")
 
 ![Image 3: search](https://justatic.com/v/20260924131710/shared/images/icons/svgfiles/white/search.svg)
@@ -1628,3 +1641,185 @@ Georgia Code § 31-7-165 (2022) - Report of Denial of Staff Privileges :: 2022 G
 (3) The total number of individuals examined in each emergency receiving facility designated or utilized by the department in accordance with subsection (a) of this Code section; and
 
 (4) The total number of individuals admitted to each emergency receiving facility designated or utilized by the department following an examination in accordance with subsection (a) of this Code section.
+
+---
+
+# OCGA section-16-6-3
+
+*Source: Official Code of Georgia Annotated (O.C.G.A.) § 16-6-3 — Statutory rape; penalties; close-in-age exception. Cross-referenced as an incorporated substantive definition in child abuse reporting under O.C.G.A. § 19-7-5(b)(17) (former (b)(10)).*
+
+# Georgia Code Title 16 - Crimes and Offenses, Chapter 6 - Sexual Offenses, § 16-6-3. Statutory rape
+
+(a) A person commits the offense of statutory rape when he or she engages in sexual intercourse with any person under the age of 16 years and not his or her spouse, provided that no conviction shall be had for this offense on the unsupported testimony of the victim.
+
+(b) Except as provided in subsection (c) of this Code section, a person convicted of the offense of statutory rape shall be punished by imprisonment for not less than one nor more than 20 years; provided, however, that if the person so convicted is 21 years of age or older, such person shall be punished by imprisonment for not less than ten nor more than 20 years. Any person convicted under this subsection of the offense of statutory rape shall, in addition, be subject to the sentencing and punishment provisions of Code Section 17-10-6.2.
+
+(c) If the victim is at least 14 but less than 16 years of age and the person convicted of statutory rape is 18 years of age or younger and is no more than four years older than the victim, such person shall be guilty of a misdemeanor.
+
+(d)(1) As used in this subsection, the term "sexual felony" shall have the same meaning as set forth in paragraph (2) of subsection (j) of Code Section 16-5-21.
+
+(2) A person convicted of a felony offense of statutory rape who has a prior conviction for a sexual felony, when the individual convicted was 21 years of age or older at the time of the offense, shall be punished by imprisonment for life or by a split sentence consisting of a term of imprisonment followed by probation for life. As a condition of probation, the court shall require electronic monitoring.
+
+---
+
+## Statutory Notes & 1-Hop Jurisprudential Crosswalk
+
+1. **Incorporation into Child Abuse Reporting (O.C.G.A. § 19-7-5)**:
+   - O.C.G.A. § 19-7-5(b)(17)(A) defines reportable "sexual abuse" as employing, using, persuading, inducing, enticing, or coercing any minor who is not such person's spouse to engage in sexual intercourse.
+   - Under O.C.G.A. § 19-7-5, sexual abuse includes consensual sex acts between minors if either individual is under 14 years of age.
+   - It expressly excludes consensual sex acts between a minor and an adult who is not more than four years older than the minor (parallel to the Romeo & Juliet principle, though criminal liability under Title 16 remains governed by § 16-6-3).
+
+2. **Core Testable Elements for Psychology Jurisprudence**:
+   - **Age Threshold**: Minor under 16 years of age (age of consent in Georgia is 16).
+   - **Spousal Exception**: The statute explicitly exempts sexual intercourse with one's lawful spouse ("and not his or her spouse").
+   - **Corroboration Rule**: No conviction may be sustained solely on the unsupported testimony of the victim.
+   - **Close-in-Age / "Romeo and Juliet" Provision (§ 16-6-3(c))**: Reduced to a **misdemeanor** if:
+     - The victim is at least 14 but less than 16 years of age; AND
+     - The offender is 18 years of age or younger; AND
+     - The offender is no more than four (4) years older than the victim.
+   - **Felony Penalties (§ 16-6-3(b))**:
+     - General baseline: Imprisonment for 1 to 20 years.
+     - Adult offender aged 21 or older: Mandatory minimum of 10 to 20 years.
+
+---
+
+# OCGA section-16-6-4
+
+*Source: Official Code of Georgia Annotated (O.C.G.A.) § 16-6-4 — Child molestation; aggravated child molestation; penalties. Cross-referenced as an incorporated substantive definition in child abuse reporting under O.C.G.A. § 19-7-5(b)(17) (former (b)(10)).*
+
+# Georgia Code Title 16 - Crimes and Offenses, Chapter 6 - Sexual Offenses, § 16-6-4. Child molestation; aggravated child molestation
+
+(a) A person commits the offense of child molestation when such person:
+
+(1) Does an immoral or indecent act to or in the presence of or with any child under the age of 16 years with the intent to arouse or satisfy the sexual desires of either the child or the person; or
+
+(2) By means of an electronic device, transmits images of a person engaging in, inducing, or otherwise participating in an immoral or indecent act to a child under the age of 16 years with the intent to arouse or satisfy the sexual desires of either the child or the person.
+
+(b)(1) Except as provided in paragraph (2) of this subsection, a person convicted of a first offense of child molestation shall be punished by imprisonment for not less than five nor more than 20 years and shall be subject to the sentencing and punishment provisions of Code Sections 17-10-6.2 and 17-10-7. Upon incarceration of a person convicted of a first offense of child molestation, the Department of Corrections shall provide counseling to such person. Upon a second or subsequent conviction of child molestation, the defendant shall be punished by imprisonment for not less than ten nor more than 30 years or by imprisonment for life; provided, however, that if the state intends to seek imprisonment for life, notice shall be given to the defendant prior to trial.
+
+(2) If the victim is at least 14 but less than 16 years of age and the person convicted of child molestation is 18 years of age or younger and is no more than four years older than the victim, such person shall be guilty of a misdemeanor and shall not be subject to the sentencing and punishment provisions of Code Section 17-10-6.2.
+
+(c) A person commits the offense of aggravated child molestation when such person commits an offense of child molestation which act physically injures the child or involves an act of sodomy.
+
+(d)(1) Except as provided in paragraph (2) of this subsection, a person convicted of the offense of aggravated child molestation shall be punished by imprisonment for life or by a split sentence that is a term of imprisonment for not less than 25 years and not exceeding life imprisonment, followed by probation for life, and shall be subject to the sentencing and punishment provisions of Code Sections 17-10-6.1 and 17-10-7.
+
+(2) A person convicted of the offense of aggravated child molestation when:
+
+(A) The victim is at least 13 but less than 16 years of age;
+
+(B) The person convicted of aggravated child molestation is 18 years of age or younger and is no more than four years older than the victim; and
+
+(C) The basis of the charge of aggravated child molestation involves an act of sodomy,
+
+shall be guilty of a misdemeanor and shall not be subject to the sentencing and punishment provisions of Code Section 17-10-6.1.
+
+(e) A person shall be subject to prosecution in this state pursuant to Code Section 17-2-1 for any conduct made unlawful by paragraph (2) of subsection (a) of this Code section which the person engages in while:
+
+(1) Either within or outside of this state if, by such conduct, the person commits a violation of paragraph (2) of subsection (a) of this Code section which involves a child who resides in this state; or
+
+(2) Within this state if, by such conduct, the person commits a violation of paragraph (2) of subsection (a) of this Code section which involves a child who resides either within or outside of this state.
+
+---
+
+## Statutory Notes & 1-Hop Jurisprudential Crosswalk
+
+1. **Incorporation into Child Abuse Reporting (O.C.G.A. § 19-7-5)**:
+   - O.C.G.A. § 19-7-5(b)(17)(G) defines reportable sexual abuse to include physical contact in an act of apparent sexual stimulation or gratification with any person's clothed or unclothed genitals, pubic area, buttocks, or female breasts.
+   - Child molestation elements under § 16-6-4 supply the criminal definition and mental state standard for indecent acts involving minors.
+
+2. **Core Testable Elements for Psychology Jurisprudence**:
+   - **Victim Age Threshold**: Child under 16 years of age.
+   - **Actus Reus**:
+     - Performing an immoral or indecent act to, in the presence of, or with the child; OR
+     - Transmitting images of immoral or indecent acts via electronic device to the child.
+   - **Mens Rea (Specific Intent)**: Intent to arouse or satisfy the sexual desires of either the child or the person.
+   - **Aggravated Child Molestation (§ 16-6-4(c))**: An act of child molestation that either:
+     - (1) Physically injures the child; OR
+     - (2) Involves an act of sodomy.
+   - **Close-in-Age Misdemeanor Exceptions**:
+     - Basic child molestation (§ 16-6-4(b)(2)): Victim 14–15, defendant 18 or younger, age difference <= 4 years.
+     - Aggravated child molestation (§ 16-6-4(d)(2)): Victim 13–15, defendant 18 or younger, age difference <= 4 years, and charge involves sodomy.
+
+---
+
+# OCGA section-16-6-5
+
+*Source: Official Code of Georgia Annotated (O.C.G.A.) § 16-6-5 — Enticing a child for indecent purposes; penalties. Cross-referenced as an incorporated substantive definition in child abuse reporting under O.C.G.A. § 19-7-5(b)(17) (former (b)(10)).*
+
+# Georgia Code Title 16 - Crimes and Offenses, Chapter 6 - Sexual Offenses, § 16-6-5. Enticing a child for indecent purposes
+
+(a) A person commits the offense of enticing a child for indecent purposes when he or she solicits, entices, or takes any child under the age of 16 years to any place whatsoever for the purpose of child molestation or indecent acts.
+
+(b) Except as provided in subsection (c) of this Code section, a person convicted of the offense of enticing a child for indecent purposes shall be punished by imprisonment for not less than ten nor more than 30 years. Any person convicted under this Code section of the offense of enticing a child for indecent purposes shall, in addition, be subject to the sentencing and punishment provisions of Code Section 17-10-6.2.
+
+(c) If the victim is at least 14 but less than 16 years of age and the person convicted of enticing a child for indecent purposes is 18 years of age or younger and is no more than four years older than the victim, such person shall be guilty of a misdemeanor and shall not be subject to the sentencing and punishment provisions of Code Section 17-10-6.2.
+
+---
+
+## Statutory Notes & 1-Hop Jurisprudential Crosswalk
+
+1. **Incorporation into Child Abuse Reporting (O.C.G.A. § 19-7-5)**:
+   - O.C.G.A. § 19-7-5(b)(17) defines sexual abuse as "a person's employing, using, persuading, inducing, enticing, or coercing any minor who is not such person's spouse to engage in any act" of sexual nature.
+   - O.C.G.A. § 16-6-5 provides the criminal baseline for enticement, solicitation, or asportation of minors for indecent or molestation purposes.
+
+2. **Core Testable Elements for Psychology Jurisprudence**:
+   - **Victim Age Threshold**: Child under 16 years of age.
+   - **Actus Reus**: Soliciting, enticing, or taking the child to any place whatsoever (asportation/luring/movement).
+   - **Mens Rea**: Done for the purpose of child molestation or indecent acts.
+   - **Completion of Offense**: The offense is complete upon the enticement, solicitation, or moving of the child for the prohibited purpose; actual completion of an act of molestation is not required.
+   - **Felony Baseline Penalties**: 10 to 30 years imprisonment, plus sex offender sentencing provisions under O.C.G.A. § 17-10-6.2.
+   - **Close-in-Age Misdemeanor Exception (§ 16-6-5(c))**: Victim 14–15, defendant 18 or younger, and no more than four (4) years older than the victim.
+
+---
+
+# OCGA section-24-5-501
+
+*Source: Official Code of Georgia Annotated (O.C.G.A.) § 24-5-501 — Certain admissions and communications privileged. (Recodified from former O.C.G.A. § 24-9-21 under the 2013 Georgia Evidence Code overhaul). Incorporated by reference into the Georgia Psychology Practice Act under O.C.G.A. § 43-39-16.*
+
+# Georgia Code Title 24 - Evidence, Chapter 5 - Privileges, Article 5 - Privileged Communications, § 24-5-501. Certain admissions and communications privileged
+
+(a) There are certain admissions and communications excluded from evidence on grounds of public policy, including, but not limited to, the following:
+
+(1) Communications between husband and wife;
+
+(2) Communications between attorney and client;
+
+(3) Communications among grand jurors;
+
+(4) Secrets of state;
+
+(5) Communications between psychiatrist and patient;
+
+(6) Communications between licensed psychologist and patient as provided in Code Section 43-39-16;
+
+(7) Communications between a licensed clinical social worker, clinical nurse specialist in psychiatric/mental health, licensed marriage and family therapist, or licensed professional counselor and patient;
+
+(8) Communications between or among any psychiatrist, psychologist, licensed clinical social worker, clinical nurse specialist in psychiatric/mental health, licensed marriage and family therapist, and licensed professional counselor who are rendering psychotherapy or have rendered psychotherapy to a patient, regarding that patient's communications which are otherwise privileged by paragraph (5), (6), or (7) of this subsection;
+
+(9) Communications between accountant and client as provided by Code Section 43-3-29; and
+
+(10) Communications made in the context of victim centered practices or victim-offender dialogues as provided for in Code Section 24-5-511.
+
+(b) As used in this Code section, the term:
+
+(1) "Psychotherapy" means the employment of psychotherapeutic techniques.
+
+(2) "Psychotherapeutic techniques" shall have the same meaning as provided in Code Section 43-10A-3.
+
+---
+
+## Statutory Notes & 1-Hop Jurisprudential Crosswalk
+
+1. **Recodification History & Relationship to § 24-9-21**:
+   - Prior to January 1, 2013, Georgia's privilege statute was codified at O.C.G.A. § 24-9-21.
+   - Effective January 1, 2013, the General Assembly enacted a comprehensive overhaul of Title 24, recodifying the privilege provisions at O.C.G.A. § 24-5-501.
+   - The Georgia Psychology Practice Act (O.C.G.A. § 43-39-16) provides that confidential relations and communications between a licensed psychologist and client are placed upon the same basis as those provided by law between attorney and client (§ 24-5-501(a)(2)).
+
+2. **Core Testable Elements for Psychology Jurisprudence**:
+   - **Attorney-Client Standard**: Under O.C.G.A. § 43-39-16, the psychologist-patient privilege is anchored to the attorney-client standard (§ 24-5-501(a)(2)).
+   - **Direct Statutory Exclusion**: O.C.G.A. § 24-5-501(a)(6) explicitly lists communications between a licensed psychologist and patient as excluded on public policy grounds.
+   - **Multidisciplinary Psychotherapy Team Privilege (§ 24-5-501(a)(8))**: Protects inter-professional communications between or among psychiatrists, psychologists, LCSWs, psychiatric CNSs, LMFTs, and LPCs who are rendering or have rendered psychotherapy to a patient regarding that patient's privileged communications.
+   - **Statutory Overrides / Limits to Privilege**:
+     - *Child Abuse Reporting* (O.C.G.A. § 19-7-5(g)): The mandatory reporting of suspected child abuse abrogates all confidential communications *except* attorney-client communications (psychologist-patient privilege does NOT excuse failure to report).
+     - *Disabled Adult / Elder Abuse Reporting* (O.C.G.A. § 30-5-4(d)): Reporting required notwithstanding any legal privilege or confidentiality, except clergy confession.
+     - *Board Investigations* (O.C.G.A. § 43-1-19(h)(2) & § 43-39-13): The Board possesses subpoena authority for records in disciplinary proceedings.

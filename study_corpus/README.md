@@ -8,23 +8,24 @@ There is **zero duplication**: every piece of material exists in exactly a singl
 
 ## Directory Contents (Single Canonical Copy of Each Source)
 
-- **`STATUTES_OC_GA.md`** (171 KB)  
-  The single, consolidated, unabridged statutory corpus comprising all 44 Official Code of Georgia Annotated (OCGA) sections mandated by the Board:
+- **`STATUTES_OC_GA.md`**  
+  The single, consolidated, unabridged statutory corpus comprising all 48 Official Code of Georgia Annotated (OCGA) sections—including the 44 primary Board reference sections and the 4 critical 1-hop incorporated satellite criminal and evidence statutes:
   - OCGA §§ 43-39-1 through 43-39-20 (Psychology Practice Act)
+  - OCGA §§ 16-6-3, 16-6-4, 16-6-5 (Statutory rape, child molestation, enticing a child; incorporated by reference into child abuse reporting)
   - OCGA § 16-6-5.1 (Psychotherapist sexual misconduct / position of trust)
   - OCGA §§ 16-13-110 through 16-13-114 (Controlled substances license sanctions)
-  - OCGA § 19-7-5 (Mandated child abuse reporting)
-  - OCGA § 24-9-21 / § 24-5-501 (Psychologist-patient privileged communications)
+  - OCGA § 19-7-5 (Mandated child abuse reporting with 2025 recodification notes)
+  - OCGA § 24-5-501 & § 24-9-21 (Psychologist-patient privileged communications)
   - OCGA § 30-5-4 (Mandated elder and disabled adult abuse reporting)
   - OCGA §§ 31-7-160 through 31-7-165 (Health service provider psychologists / hospital privileges)
   - OCGA § 37-3-41 (Emergency involuntary admission / Form 1013 authority)
   - OCGA §§ 43-1-19 through 43-1-25, and § 43-1-27 (General licensing provisions; felony notification)
 
-- **`RULES_510_FULL.md`** (223 KB)  
+- **`RULES_510_FULL.md`**  
   The single, consolidated, unabridged official Rules of the Georgia State Board of Examiners of Psychologists (Department 510):
   - Chapters 510-1 through 510-10 complete, including Chapter 510-4 (APA Ethics Code adopted verbatim) and Chapter 510-5 (Supplemental Code of Conduct).
 
-- **`EXAM_SYLLABUS_AND_TOPIC_MAPPING.md`** (15 KB)  
+- **`EXAM_SYLLABUS_AND_TOPIC_MAPPING.md`**  
   The pure substantive examination blueprint: the 6 domains, 50 item topics, domain weightings, and exact statutory/rule cross-references, with zero administrative filler.
 
 ---
@@ -47,4 +48,5 @@ There is **zero duplication**: every piece of material exists in exactly a singl
    - Licensure and Regulations: 13 questions (26%)
    - Competence: 9 questions (18%)
    Together, these three domains account for **72% of the examination** (36 out of 50 questions).
-3. **Practice with Spaced Repetition**: Use the 414-card deck in `../anki/gamb_deck.tsv` and the 50-question mock exam in `../mocks/`.
+3. **Master Atomic Testable Facts**: Review the 205 atomic legal facts in `../data/fact_inventory.json`.
+4. **Practice with Spaced Repetition**: Use the 472-card deck in `../anki/gamb_deck.tsv`, the practice exams in `../pdfs/` and `../docs/study_materials/`, or the zero-install web quizzer in `../web/index.html`.
